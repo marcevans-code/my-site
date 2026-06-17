@@ -1,152 +1,641 @@
 ---
 const { title } = Astro.props;
 ---
+
 <html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{title}</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;600;700;800&display=swap" rel="stylesheet" />
-  <style is:global>
-  @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;600;700;800&display=swap');
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <style is:global>
+      @import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;600;700;800&display=swap");
 
-  * { box-sizing: border-box; margin: 0; padding: 0; }
-  html { font-size: 17px; }
-  body { font-family: 'Lato', sans-serif; font-size: 1rem; color: #1a1a1a; background: #fff; }
-  a { color: #1a4a8a; text-decoration: none; }
-  a:hover { text-decoration: underline; }
-  header { display: flex; align-items: center; justify-content: space-between; padding: 1.2rem 2rem; border-bottom: 1px solid #eee; }
-  .logo { display: flex; align-items: center; gap: 0.8rem; }
-.logo img { height: 100px; width: 100px; object-fit: contain; }
-  .logo-text h1 { font-size: 1.6rem; font-weight: 700; color: #1a1a1a; }
-  .logo-text p { font-size: 0.95rem; color: #555; }
-  .logo img { height: 100px; width: 100px; object-fit: contain; }
-  header { position: sticky; top: 0; z-index: 100; display: flex; align-items: center; justify-content: space-between; padding: 0.8rem 1rem; border-bottom: 1px solid #eee; background: #fff; flex-wrap: nowrap; }
-.logo-text h1 { font-size: 1.1rem; font-weight: 700; color: #1a1a1a; white-space: nowrap; }
-.logo-text p { font-size: 0.7rem; color: #555; white-space: nowrap; }
-.hamburger { display: none; background: none; border: none; font-size: 1.8rem; cursor: pointer; }
-nav { display: flex; gap: 1.5rem; font-size: 1rem; }
-nav a { color: #1a1a1a; font-weight: 500; }
-nav a:hover { color: #1a4a8a; }
-@media (max-width: 768px) {
-  .hamburger { display: block; }
-  nav { display: none; position: absolute; top: 80px; right: 1rem; background: #fff; border: 1px solid #eee; flex-direction: column; padding: 1rem; gap: 1rem; width: 200px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); z-index: 200; }
-  nav.open { display: flex; }
-}
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      html {
+        font-size: 17px;
+      }
+      body {
+        font-family: "Lato", sans-serif;
+        font-size: 1rem;
+        color: #1a1a1a;
+        background: #fff;
+      }
+      a {
+        color: #1a4a8a;
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+      header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1.2rem 2rem;
+        border-bottom: 1px solid #eee;
+      }
+      .logo {
+        display: flex;
+        align-items: center;
+        gap: 0.8rem;
+      }
+      .logo img {
+        height: 100px;
+        width: 100px;
+        object-fit: contain;
+      }
+      .logo-text h1 {
+        font-size: 1.6rem;
+        font-weight: 700;
+        color: #1a1a1a;
+      }
+      .logo-text p {
+        font-size: 0.95rem;
+        color: #555;
+      }
+      .logo img {
+        height: 100px;
+        width: 100px;
+        object-fit: contain;
+      }
+      header {
+        position: sticky;
+        top: 0;
+        z-index: 100;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0.8rem 1rem;
+        border-bottom: 1px solid #eee;
+        background: #fff;
+        flex-wrap: nowrap;
+      }
+      .logo-text h1 {
+        font-size: 1.1rem;
+        font-weight: 700;
+        color: #1a1a1a;
+        white-space: nowrap;
+      }
+      .logo-text p {
+        font-size: 0.7rem;
+        color: #555;
+        white-space: nowrap;
+      }
+      .hamburger {
+        display: none;
+        background: none;
+        border: none;
+        font-size: 1.8rem;
+        cursor: pointer;
+      }
+      nav {
+        display: flex;
+        gap: 1.5rem;
+        font-size: 1rem;
+      }
+      nav a {
+        color: #1a1a1a;
+        font-weight: 500;
+      }
+      nav a:hover {
+        color: #1a4a8a;
+      }
+      @media (max-width: 768px) {
+        .hamburger {
+          display: block;
+        }
+        nav {
+          display: none;
+          position: absolute;
+          top: 80px;
+          right: 1rem;
+          background: #fff;
+          border: 1px solid #eee;
+          flex-direction: column;
+          padding: 1rem;
+          gap: 1rem;
+          width: 200px;
+          box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+          z-index: 200;
+        }
+        nav.open {
+          display: flex;
+        }
+      }
 
-  footer { text-align: center; padding: 1.5rem; font-size: 1rem; color: #666; border-top: 1px solid #eee; margin-top: 2rem; }
-  .btn { display: inline-block; background: #4a90c8; color: #fff; padding: 0.8rem 1.8rem; border-radius: 10px; font-size: 1.05rem; font-weight: 600; border: none; cursor: pointer; }
-.btn:hover { background: #357ab5; text-decoration: none; }
-  .hero { background: #1a3a6a; padding: 3rem 2rem; margin: 2rem; border-radius: 15px; color: #fff; text-align: center; }
-  .hero h2 { font-size: 2.2rem; font-weight: 800; max-width: 700px; margin: 0 auto 1rem; line-height: 1.25; }
-.hero p { font-size: 1.2rem; font-weight: 600; max-width: 680px; margin: 0 auto 1.5rem; line-height: 1.6; }
-.intro { padding: 2rem 2rem 0; width: 100%; }
-.intro p { font-size: 1.5rem; font-weight: 700; line-height: 1.6; text-align: center; }
-  .cards { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; }
-  @media (max-width: 900px) { .cards { grid-template-columns: repeat(2, 1fr); } }
-  @media (max-width: 600px) { .cards { grid-template-columns: 1fr; } }
-  .card { border: 1px solid #ddd; border-radius: 8px; padding: 1.2rem; display: flex; flex-direction: column; gap: 0.5rem; box-shadow: 0 2px 8px rgba(0,0,0,0.08); transition: box-shadow 0.2s; }
-.card:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.15); }
-  .card hr { border: none; border-top: 2px solid #ccc; margin: 0.4rem 0; }
- .card h3 { font-size: 1.05rem; font-weight: 700; line-height: 1.3; height: 3.5rem; overflow: hidden; }
-.card p { font-size: 0.95rem; line-height: 1.6; color: #333; height: 21rem; overflow: hidden; }
-.card ul { font-size: 0.92rem; line-height: 1.8; color: #333; padding-left: 1.2rem; height: 20rem; overflow: hidden; }
-  .card .learn-more { font-size: 0.95rem; font-weight: 600; color: #1a4a8a; display: block; margin-bottom: 0.8rem; }
-  .card .title a { font-size: 1rem; font-weight: 700; color: #1a4a8a; line-height: 1.4; }
-  .card .description { font-size: 0.95rem; color: #333; line-height: 1.6; }
-  .card .provider { font-size: 0.88rem; color: #1a6a2a; }
-  .card .readmore { font-size: 0.95rem; font-weight: 700; color: #1a1a1a; }
-  .cards-section { padding: 2rem; }
-  .cards-section h2 { font-size: 1.6rem; font-weight: 700; margin-bottom: 1.5rem; text-align: center; }
- .posts-section h2 { font-size: 1.6rem; font-weight: 700; margin-bottom: 1rem; }
- .posts-section { padding: 2rem; max-width: 1200px; margin: 0 auto; background: #f4f4f4; border-radius: 10px; }
-  .post-page { max-width: 800px; margin: 0 auto; padding: 2rem; }
-.post-image { width: 100%; height: auto; border-radius: 10px; margin-bottom: 2rem; }
-.post-content h1 { font-size: 2rem; font-weight: 800; margin-bottom: 0.5rem; line-height: 1.3; }
-.posts-list .post .date { font-size: 0.88rem; color: #666; margin: 0.2rem 0 0.4rem; }
-.posts-list .post p { font-size: 0.95rem; color: #444; line-height: 1.6; }
-.post-content h2 { font-size: 1.3rem; font-weight: 700; margin: 2rem 0 0.8rem; }
-.post-content h3 { font-size: 1.1rem; font-weight: 700; margin: 1.2rem 0 0.5rem; }
-.post-content p { font-size: 1rem; line-height: 1.8; margin-bottom: 1rem; color: #222; }
-.post-related { background: #f4f4f4; border-radius: 8px; padding: 1.2rem 1.5rem; margin: 2rem 0; }
-.posts-list .post h3 { font-size: 1rem; font-weight: 600; }
-.posts-list .post h3 a { color: #1a4a8a; font-size: 1rem; }
-.post-content ul { padding-left: 1.4rem; margin-bottom: 1rem; }
-.post-content ul li { font-size: 1rem; line-height: 1.8; color: #222; }
-.post-cta { background: #1a3a6a; color: #fff; padding: 2rem; border-radius: 10px; margin-top: 2rem; text-align: center; }
-.post-cta p { color: #fff; margin-bottom: 1rem; }
-.post-table { width: 100%; border-collapse: collapse; margin: 1.5rem 0; }
-.post-table th { background: #1a3a6a; color: #fff; padding: 0.8rem 1rem; text-align: left; font-size: 0.95rem; }
-.post-table td { padding: 0.8rem 1rem; border-bottom: 1px solid #ddd; font-size: 0.95rem; }
-.post-table tr:nth-child(even) { background: #f4f4f8; }
-.posts-summary { max-width: 1100px; margin: 0 auto; padding: 2rem; }
-.posts-summary h1 { font-size: 1.8rem; font-weight: 700; margin-bottom: 0.5rem; }
-.posts-intro { font-size: 1rem; color: #555; margin-bottom: 2rem; }
-.posts-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
-@media (max-width: 900px) { .posts-grid { grid-template-columns: 1fr; } }
-.post-card { border: 1px solid #ddd; border-radius: 10px; overflow: hidden; }
-.post-card img { width: 100%; height: 220px; object-fit: cover; }
-.post-card-body { padding: 1.2rem; }
-.post-card-body h2 { font-size: 1rem; font-weight: 700; margin-bottom: 0.4rem; line-height: 1.4; }
-.post-card-body h2 a { color: #1a4a8a; }
-.post-card-date { font-size: 0.85rem; color: #666; margin-bottom: 0.8rem; }
-.post-card-body p { font-size: 0.9rem; color: #444; line-height: 1.6; margin-bottom: 1rem; }
-.read-more { font-size: 0.85rem; font-weight: 700; color: #1a1a1a; text-decoration: none; }
-.read-more:hover { color: #1a4a8a; }
-  .faq-section { padding: 2rem; max-width: 820px; }
-  .faq-section h2 { font-size: 1.6rem; font-weight: 700; margin-bottom: 1.5rem; text-align: center; }
-  details { border: 1px solid #ddd; border-radius: 6px; margin-bottom: 0.5rem; overflow: hidden; }
-  details[open] { border-left: 4px solid #1a4a8a; }
-  summary { padding: 1rem 1.2rem; font-weight: 600; font-size: 1rem; cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center; }
-  summary::after { content: '⌄'; font-size: 1rem; color: #666; }
-  details[open] summary::after { content: '⌃'; }
-  .faq-answer { padding: 0 1.2rem 1rem; font-size: 1rem; line-height: 1.7; color: #333; }
-  .closing { background: #1a1a2e; color: #fff; padding: 3rem 2rem; margin: 2rem; border-radius: 12px; }
-  .closing p { font-size: 1.5rem; font-weight: 700; line-height: 1.5; max-width: 100%; }
-  .content { max-width: 820px; margin: 0 auto; padding: 3rem 2rem; }
-  .content h2 { font-size: 1.7rem; font-weight: 700; margin-bottom: 1rem; }
-  .content h3 { font-size: 1.1rem; font-weight: 700; margin: 1.8rem 0 0.6rem; }
-  .content p { font-size: 1rem; line-height: 1.8; margin-bottom: 1rem; color: #222; }
-  .content ul { padding-left: 1.4rem; margin-bottom: 1rem; }
-  .content ul li { font-size: 1rem; line-height: 1.8; color: #222; }
-  .form-section { max-width: 560px; margin: 0 auto; padding: 0 2rem 3rem; }
-  .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 1rem; }
-  @media (max-width: 600px) { .form-row { grid-template-columns: 1fr; } }
-  .field { display: flex; flex-direction: column; gap: 0.3rem; margin-bottom: 1rem; }
-  label { font-size: 0.95rem; font-weight: 600; }
-  .required { color: red; }
-  input, textarea { border: 1px solid #ccc; border-radius: 4px; padding: 0.6rem 0.8rem; font-size: 1rem; font-family: 'Lato', sans-serif; width: 100%; }
-  textarea { height: 120px; resize: vertical; }
-  input:focus, textarea:focus { outline: 2px solid #1a4a8a; border-color: #1a4a8a; }
-  .newsletter { background: #f4f4f4; padding: 3rem 2rem; margin-top: 2rem; }
-  .newsletter-inner { max-width: 560px; margin: 0 auto; }
-  .newsletter h3 { font-size: 1.5rem; font-weight: 700; margin-bottom: 0.6rem; }
-  .newsletter p { font-size: 1rem; color: #444; margin-bottom: 1.2rem; }
-  .page-header { text-align: center; padding: 3rem 2rem 2rem; max-width: 600px; margin: 0 auto; }
-  .page-header h2 { font-size: 1.9rem; font-weight: 700; margin-bottom: 1rem; }
-  .page-header p { font-size: 1rem; color: #444; line-height: 1.7; }
-</style>
+      footer {
+        text-align: center;
+        padding: 1.5rem;
+        font-size: 1rem;
+        color: #666;
+        border-top: 1px solid #eee;
+        margin-top: 2rem;
+      }
+      .btn {
+        display: inline-block;
+        background: #4a90c8;
+        color: #fff;
+        padding: 0.8rem 1.8rem;
+        border-radius: 10px;
+        font-size: 1.05rem;
+        font-weight: 600;
+        border: none;
+        cursor: pointer;
+      }
+      .btn:hover {
+        background: #357ab5;
+        text-decoration: none;
+      }
+      .hero {
+        background: #1a3a6a;
+        padding: 3rem 2rem;
+        margin: 2rem;
+        border-radius: 15px;
+        color: #fff;
+        text-align: center;
+      }
+      .hero h2 {
+        font-size: 2.2rem;
+        font-weight: 800;
+        max-width: 700px;
+        margin: 0 auto 1rem;
+        line-height: 1.25;
+      }
+      .hero p {
+        font-size: 1.2rem;
+        font-weight: 600;
+        max-width: 680px;
+        margin: 0 auto 1.5rem;
+        line-height: 1.6;
+      }
+      .intro {
+        padding: 2rem 2rem 0;
+        width: 100%;
+      }
+      .intro p {
+        font-size: 1.5rem;
+        font-weight: 700;
+        line-height: 1.6;
+        text-align: center;
+      }
+      .cards {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1rem;
+      }
+      @media (max-width: 900px) {
+        .cards {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+      @media (max-width: 600px) {
+        .cards {
+          grid-template-columns: 1fr;
+        }
+      }
+      .card {
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        padding: 1.2rem;
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+        transition: box-shadow 0.2s;
+      }
+      .card:hover {
+        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+      }
+      .card hr {
+        border: none;
+        border-top: 2px solid #ccc;
+        margin: 0.4rem 0;
+      }
+      .card h3 {
+        font-size: 1.05rem;
+        font-weight: 700;
+        line-height: 1.3;
+        height: 3.5rem;
+        overflow: hidden;
+      }
+      .card p {
+        font-size: 0.95rem;
+        line-height: 1.6;
+        color: #333;
+        height: 21rem;
+        overflow: hidden;
+      }
+      .card ul {
+        font-size: 0.92rem;
+        line-height: 1.8;
+        color: #333;
+        padding-left: 1.2rem;
+        height: 20rem;
+        overflow: hidden;
+      }
+      .card .learn-more {
+        font-size: 0.95rem;
+        font-weight: 600;
+        color: #1a4a8a;
+        display: block;
+        margin-bottom: 0.8rem;
+      }
+      .card .title { height: 5.6rem; overflow: hidden; color: #000080; font-weight: 700; }
+      .card .description { font-size: 0.95rem; color: #333; line-height: 1.6; display: -webkit-box; -webkit-line-clamp: 5; -webkit-box-orient: vertical; overflow: hidden; }
+      .card .provider {
+        font-size: 0.88rem;
+        color: #1a6a2a;
+      }
+
+      .card .readmore {
+        font-size: 0.95rem;
+        font-weight: 700;
+        color: #1a1a1a;
+      }
+      .cards-section {
+        padding: 2rem;
+      }
+      .cards-section h2 {
+        font-size: 1.6rem;
+        font-weight: 700;
+        margin-bottom: 1.5rem;
+        text-align: center;
+      }
+      .posts-section h2 {
+        font-size: 1.6rem;
+        font-weight: 700;
+        margin-bottom: 1rem;
+      }
+      .posts-section {
+        padding: 2rem;
+        max-width: 1200px;
+        margin: 0 auto;
+        background: #f4f4f4;
+        border-radius: 10px;
+      }
+      .post-page {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 2rem;
+      }
+      .post-image {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+        margin-bottom: 2rem;
+      }
+      .post-content h1 {
+        font-size: 2rem;
+        font-weight: 800;
+        margin-bottom: 0.5rem;
+        line-height: 1.3;
+      }
+      .posts-list .post .date {
+        font-size: 0.88rem;
+        color: #666;
+        margin: 0.2rem 0 0.4rem;
+      }
+      .posts-list .post p {
+        font-size: 0.95rem;
+        color: #444;
+        line-height: 1.6;
+      }
+      .post-content h2 {
+        font-size: 1.3rem;
+        font-weight: 700;
+        margin: 2rem 0 0.8rem;
+      }
+      .post-content h3 {
+        font-size: 1.1rem;
+        font-weight: 700;
+        margin: 1.2rem 0 0.5rem;
+      }
+      .post-content p {
+        font-size: 1rem;
+        line-height: 1.8;
+        margin-bottom: 1rem;
+        color: #222;
+      }
+      .post-related {
+        background: #f4f4f4;
+        border-radius: 8px;
+        padding: 1.2rem 1.5rem;
+        margin: 2rem 0;
+      }
+      .posts-list .post h3 {
+        font-size: 1rem;
+        font-weight: 600;
+      }
+      .posts-list .post h3 a {
+        color: #1a4a8a;
+        font-size: 1rem;
+      }
+      .post-content ul {
+        padding-left: 1.4rem;
+        margin-bottom: 1rem;
+      }
+      .post-content ul li {
+        font-size: 1rem;
+        line-height: 1.8;
+        color: #222;
+      }
+      .post-cta {
+        background: #1a3a6a;
+        color: #fff;
+        padding: 2rem;
+        border-radius: 10px;
+        margin-top: 2rem;
+        text-align: center;
+      }
+      .post-cta p {
+        color: #fff;
+        margin-bottom: 1rem;
+      }
+      .post-table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 1.5rem 0;
+      }
+      .post-table th {
+        background: #1a3a6a;
+        color: #fff;
+        padding: 0.8rem 1rem;
+        text-align: left;
+        font-size: 0.95rem;
+      }
+      .post-table td {
+        padding: 0.8rem 1rem;
+        border-bottom: 1px solid #ddd;
+        font-size: 0.95rem;
+      }
+      .post-table tr:nth-child(even) {
+        background: #f4f4f8;
+      }
+      .posts-summary {
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 2rem;
+      }
+      .posts-summary h1 {
+        font-size: 1.8rem;
+        font-weight: 700;
+        margin-bottom: 0.5rem;
+      }
+      .posts-intro {
+        font-size: 1rem;
+        color: #555;
+        margin-bottom: 2rem;
+      }
+      .posts-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.5rem;
+      }
+      @media (max-width: 900px) {
+        .posts-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+      .post-card {
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        overflow: hidden;
+      }
+      .post-card img {
+        width: 100%;
+        height: 220px;
+        object-fit: cover;
+      }
+      .post-card-body {
+        padding: 1.2rem;
+      }
+      .post-card-body h2 {
+        font-size: 1rem;
+        font-weight: 700;
+        margin-bottom: 0.4rem;
+        line-height: 1.4;
+      }
+      .post-card-body h2 a {
+        color: #1a4a8a;
+      }
+      .post-card-date {
+        font-size: 0.85rem;
+        color: #666;
+        margin-bottom: 0.8rem;
+      }
+      .post-card-body p {
+        font-size: 0.9rem;
+        color: #444;
+        line-height: 1.6;
+        margin-bottom: 1rem;
+      }
+      .read-more {
+        font-size: 0.85rem;
+        font-weight: 700;
+        color: #1a1a1a;
+        text-decoration: none;
+      }
+      .read-more:hover {
+        color: #1a4a8a;
+      }
+      .faq-section {
+        padding: 2rem;
+        max-width: 820px;
+      }
+      .faq-section h2 {
+        font-size: 1.6rem;
+        font-weight: 700;
+        margin-bottom: 1.5rem;
+        text-align: center;
+      }
+      details {
+        border: 1px solid #ddd;
+        border-radius: 6px;
+        margin-bottom: 0.5rem;
+        overflow: hidden;
+      }
+      details[open] {
+        border-left: 4px solid #1a4a8a;
+      }
+      summary {
+        padding: 1rem 1.2rem;
+        font-weight: 600;
+        font-size: 1rem;
+        cursor: pointer;
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      summary::after {
+        content: "⌄";
+        font-size: 1rem;
+        color: #666;
+      }
+      details[open] summary::after {
+        content: "⌃";
+      }
+      .faq-answer {
+        padding: 0 1.2rem 1rem;
+        font-size: 1rem;
+        line-height: 1.7;
+        color: #333;
+      }
+      .closing {
+        background: #1a1a2e;
+        color: #fff;
+        padding: 3rem 2rem;
+        margin: 2rem;
+        border-radius: 12px;
+      }
+      .closing p {
+        font-size: 1.5rem;
+        font-weight: 700;
+        line-height: 1.5;
+        max-width: 100%;
+      }
+      .content {
+        max-width: 820px;
+        margin: 0 auto;
+        padding: 3rem 2rem;
+      }
+      .content h2 {
+        font-size: 1.7rem;
+        font-weight: 700;
+        margin-bottom: 1rem;
+      }
+      .content h3 {
+        font-size: 1.1rem;
+        font-weight: 700;
+        margin: 1.8rem 0 0.6rem;
+      }
+      .content p {
+        font-size: 1rem;
+        line-height: 1.8;
+        margin-bottom: 1rem;
+        color: #222;
+      }
+      .content ul {
+        padding-left: 1.4rem;
+        margin-bottom: 1rem;
+      }
+      .content ul li {
+        font-size: 1rem;
+        line-height: 1.8;
+        color: #222;
+      }
+      .form-section {
+        max-width: 560px;
+        margin: 0 auto;
+        padding: 0 2rem 3rem;
+      }
+      .form-row {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+        margin-bottom: 1rem;
+      }
+      @media (max-width: 600px) {
+        .form-row {
+          grid-template-columns: 1fr;
+        }
+      }
+      .field {
+        display: flex;
+        flex-direction: column;
+        gap: 0.3rem;
+        margin-bottom: 1rem;
+      }
+      label {
+        font-size: 0.95rem;
+        font-weight: 600;
+      }
+      .required {
+        color: red;
+      }
+      input,
+      textarea {
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        padding: 0.6rem 0.8rem;
+        font-size: 1rem;
+        font-family: "Lato", sans-serif;
+        width: 100%;
+      }
+      textarea {
+        height: 120px;
+        resize: vertical;
+      }
+      input:focus,
+      textarea:focus {
+        outline: 2px solid #1a4a8a;
+        border-color: #1a4a8a;
+      }
+      .newsletter {
+        background: #f4f4f4;
+        padding: 3rem 2rem;
+        margin-top: 2rem;
+      }
+      .newsletter-inner {
+        max-width: 560px;
+        margin: 0 auto;
+      }
+      .newsletter h3 {
+        font-size: 1.5rem;
+        font-weight: 700;
+        margin-bottom: 0.6rem;
+      }
+      .newsletter p {
+        font-size: 1rem;
+        color: #444;
+        margin-bottom: 1.2rem;
+      }
+      .page-header {
+        text-align: center;
+        padding: 3rem 2rem 2rem;
+        max-width: 600px;
+        margin: 0 auto;
+      }
+      .page-header h2 {
+        font-size: 1.9rem;
+        font-weight: 700;
+        margin-bottom: 1rem;
+      }
+      .page-header p {
+        font-size: 1rem;
+        color: #444;
+        line-height: 1.7;
+      }
+    </style>
   </head>
   <body>
-   <header>
-  <div class="logo">
-    <img src="/logo.webp" alt="Power Grab TX" />
-    <div class="logo-text">
-      <h1>Power Grab TX</h1>
-      <p>Inside the AI Data Center Surge Redefining Texas</p>
-    </div>
-  </div>
-  <button class="hamburger" id="hamburger">☰</button>
-<nav id="nav">
-  <a href="/">Home</a>
-  <a href="/news">Latest News</a>
-  <a href="/stay-informed">Stay Informed</a>
-  <a href="/privacy">Privacy</a>
-  <a href="/terms">Terms</a>
-  <a href="/posts">Posts</a>
-</nav>
-</header>
+    <header>
+      <div class="logo">
+        <img src="/logo.webp" alt="Power Grab TX" />
+        <div class="logo-text">
+          <h1>Power Grab TX</h1>
+          <p>Inside the AI Data Center Surge In Texas</p>
+        </div>
+      </div>
+      <button class="hamburger" id="hamburger">☰</button>
+      <nav id="nav">
+        <a href="/">Home</a>
+        <a href="/news">Latest News</a>
+        <a href="/stay-informed">Stay Informed</a>
+        <a href="/privacy">Privacy</a>
+        <a href="/terms">Terms</a>
+        <a href="/posts">Posts</a>
+      </nav>
+    </header>
 
     <slot />
 
@@ -154,11 +643,11 @@ nav a:hover { color: #1a4a8a; }
       <p>© 2026 Power Grab TX. All Rights Reserved.</p>
     </footer>
     <script>
-  const hamburger = document.getElementById('hamburger');
-  const nav = document.getElementById('nav');
-  hamburger.addEventListener('click', () => {
-    nav.classList.toggle('open');
-  });
-</script>
+      const hamburger = document.getElementById("hamburger");
+      const nav = document.getElementById("nav");
+      hamburger.addEventListener("click", () => {
+        nav.classList.toggle("open");
+      });
+    </script>
   </body>
 </html>
