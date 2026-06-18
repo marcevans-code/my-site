@@ -249,13 +249,26 @@ const { title } = Astro.props;
         display: block;
         margin-bottom: 0.8rem;
       }
-      .card .title { height: 5.6rem; overflow: hidden; color: #000080; font-weight: 700; }
-      .card .description { font-size: 0.95rem; color: #333; line-height: 1.6; display: -webkit-box; -webkit-line-clamp: 5; -webkit-box-orient: vertical; overflow: hidden; }
+      .card .title { 
+        height: 5.6rem; 
+        overflow: hidden; 
+        color: #000080; 
+        font-weight: 700; 
+      }
+      .card .description { 
+        font-size: 0.95rem; 
+        color: #333; 
+        line-height: 1.6; 
+        display: -webkit-box; 
+        -webkit-line-clamp: 5; 
+        -webkit-box-orient: 
+        vertical; overflow: 
+        hidden; 
+      }
       .card .provider {
         font-size: 0.88rem;
         color: #1a6a2a;
       }
-
       .card .readmore {
         font-size: 0.95rem;
         font-weight: 700;
@@ -620,10 +633,11 @@ const { title } = Astro.props;
   <body>
     <header>
       <div class="logo">
+        <a href="/">
         <img src="/logo.webp" alt="Power Grab TX" />
         <div class="logo-text">
           <h1>Power Grab TX</h1>
-          <p>Inside the AI Data Center Surge In Texas</p>
+          <p>Inside the AI Data Center Surge In Texas</p></a>
         </div>
       </div>
       <button class="hamburger" id="hamburger">☰</button>
