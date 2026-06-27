@@ -957,18 +957,26 @@ const { title } = Astro.props;
     <slot />
 
     <footer>
-      <nav class="footer-nav">
+      <div class="footer-nav">
         <a href="/privacy">Privacy</a>
         <a href="/terms">Terms</a>
-      </nav>
+      </div>
       <p>© 2026 Power Grab TX. All Rights Reserved.</p>
     </footer>
 
     <script>
       const hamburger = document.getElementById("hamburger");
       const nav = document.getElementById("nav");
-      hamburger.addEventListener("click", () => {
+
+      hamburger.addEventListener("click", (e) => {
+        e.stopPropagation();
         nav.classList.toggle("open");
+      });
+
+      document.addEventListener("click", (e) => {
+        if (!nav.contains(e.target) && !hamburger.contains(e.target)) {
+          nav.classList.remove("open");
+        }
       });
     </script>
   </body>
