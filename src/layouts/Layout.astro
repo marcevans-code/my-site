@@ -368,6 +368,26 @@ const { title } = Astro.props;
         color: #3a2010;
       }
 
+      @media (max-width: 768px) {
+  .about-body {
+    grid-template-columns: 1fr;
+  }
+
+  .about-photo img {
+    max-width: 280px;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .about-section {
+    padding: 2rem 1rem;
+  }
+
+  .about-hero h1 {
+    font-size: 1.8rem;
+  }
+}
+
       /* ── Right Now Page ── */
 
       .rn-hero {
