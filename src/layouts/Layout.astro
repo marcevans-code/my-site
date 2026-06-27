@@ -154,6 +154,11 @@ const { title } = Astro.props;
         opacity: 1;
       }
 
+      footer p {
+        font-size: 0.75rem;
+        white-space: nowrap;
+      }
+
       .btn {
         display: inline-block;
         background: #4a90c8;
@@ -369,24 +374,24 @@ const { title } = Astro.props;
       }
 
       @media (max-width: 768px) {
-  .about-body {
-    grid-template-columns: 1fr;
-  }
+        .about-body {
+          grid-template-columns: 1fr;
+        }
 
-  .about-photo img {
-    max-width: 280px;
-    margin: 0 auto;
-    display: block;
-  }
+        .about-photo img {
+          max-width: 280px;
+          margin: 0 auto;
+          display: block;
+        }
 
-  .about-section {
-    padding: 2rem 1rem;
-  }
+        .about-section {
+          padding: 2rem 1rem;
+        }
 
-  .about-hero h1 {
-    font-size: 1.8rem;
-  }
-}
+        .about-hero h1 {
+          font-size: 1.8rem;
+        }
+      }
 
       /* ── Right Now Page ── */
 
