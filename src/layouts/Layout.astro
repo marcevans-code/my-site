@@ -37,37 +37,7 @@ const { title } = Astro.props;
       a:hover {
         text-decoration: underline;
       }
-      header {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 1.2rem 2rem;
-        border-bottom: 1px solid #eee;
-      }
-      .logo {
-        display: flex;
-        align-items: center;
-        gap: 0.8rem;
-      }
-      .logo img {
-        height: 100px;
-        width: 100px;
-        object-fit: contain;
-      }
-      .logo-text h1 {
-        font-size: 1.6rem;
-        font-weight: 700;
-        color: #1a1a1a;
-      }
-      .logo-text p {
-        font-size: 0.95rem;
-        color: #555;
-      }
-      .logo img {
-        height: 100px;
-        width: 100px;
-        object-fit: contain;
-      }
+
       header {
         position: sticky;
         top: 0;
@@ -80,17 +50,41 @@ const { title } = Astro.props;
         background: #fff;
         flex-wrap: nowrap;
       }
+
+      .logo {
+        display: flex;
+        align-items: center;
+        gap: 0.8rem;
+      }
+
+      .logo-title {
+        font-size: 1.6rem;
+        font-weight: 700;
+        white-space: nowrap;
+      }
+
+      .logo-title a {
+        color: #1a1a1a;
+        text-decoration: none;
+      }
+
+      .logo img {
+        height: 60px;
+        width: 60px;
+        object-fit: contain;
+      }
+
+      .logo-text {
+        max-width: 200px;
+      }
+
       .logo-text h1 {
         font-size: 1.1rem;
         font-weight: 700;
         color: #1a1a1a;
         white-space: nowrap;
       }
-      .logo-text p {
-        font-size: 0.7rem;
-        color: #555;
-        white-space: nowrap;
-      }
+
       .hamburger {
         display: none;
         background: none;
@@ -98,18 +92,22 @@ const { title } = Astro.props;
         font-size: 1.8rem;
         cursor: pointer;
       }
+
       nav {
         display: flex;
         gap: 1.5rem;
         font-size: 1rem;
       }
+
       nav a {
         color: #1a1a1a;
         font-weight: 500;
       }
+
       nav a:hover {
         color: #1a4a8a;
       }
+
       @media (max-width: 768px) {
         .hamburger {
           display: block;
@@ -134,13 +132,28 @@ const { title } = Astro.props;
       }
 
       footer {
-        text-align: center;
-        padding: 1.5rem;
-        font-size: 1rem;
-        color: #666;
-        border-top: 1px solid #eee;
-        margin-top: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+        padding: 1.5rem 2rem;
       }
+
+      .footer-nav {
+        display: flex;
+        gap: 1.5rem;
+      }
+
+      .footer-nav a {
+        font-size: 0.85rem;
+        color: inherit;
+        opacity: 0.7;
+      }
+
+      .footer-nav a:hover {
+        opacity: 1;
+      }
+
       .btn {
         display: inline-block;
         background: #4a90c8;
@@ -181,7 +194,7 @@ const { title } = Astro.props;
       .intro {
         padding: 2rem 2rem 0;
         margin: 0 auto;
-         max-width: 700px;
+        max-width: 700px;
       }
       .intro p {
         font-size: 1.5rem;
@@ -205,6 +218,284 @@ const { title } = Astro.props;
           grid-template-columns: 1fr;
         }
       }
+
+      /* ── Home Cards Section ── */
+
+      .home-cards-section {
+        padding: 2rem 2rem 3rem;
+        max-width: 1400px;
+        margin: 0 auto;
+      }
+
+      .home-cards-section > h2 {
+        text-align: center;
+        margin-bottom: 2rem;
+        padding-top: 1rem;
+        border-top: 2px solid #e05c2a;
+        color: #b03a1a;
+      }
+
+      .home-cards {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 1rem;
+      }
+
+      .home-card {
+        display: flex;
+        flex-direction: column;
+        border: 1px solid #e8c9b0;
+        border-radius: 8px;
+        padding: 1rem;
+        box-sizing: border-box;
+        background-color: #fff8f4;
+      }
+
+      .home-card h3 {
+        font-size: 1rem;
+        min-height: 3.5rem;
+        margin: 0 0 0.5rem 0;
+        color: #b03a1a;
+      }
+
+      .home-card hr {
+        border: none;
+        border-top: 1px solid #e8c9b0;
+        margin: 0 0 1rem 0;
+      }
+
+      .home-card ul {
+        flex: 1;
+        padding-left: 1.2rem;
+        margin: 0;
+      }
+
+      .home-card ul li {
+        margin-bottom: 0.4rem;
+        font-size: 0.9rem;
+        color: #3a2010;
+      }
+
+      .home-card-link {
+        display: block;
+        margin-top: 1.5rem;
+        font-size: 0.9rem;
+        color: #e05c2a;
+        font-weight: 600;
+      }
+
+      .home-card-link:hover {
+        color: #b03a1a;
+      }
+
+      /* ── About Page ── */
+
+      .about-section {
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 3rem 2rem;
+      }
+
+      .about-hero {
+        text-align: center;
+        margin-bottom: 3rem;
+        padding-bottom: 2rem;
+        border-bottom: 2px solid #e05c2a;
+      }
+
+      .about-hero h1 {
+        color: #b03a1a;
+        margin-bottom: 0.75rem;
+      }
+
+      .about-tagline {
+        font-size: 1.2rem;
+        color: #555;
+        font-style: italic;
+      }
+
+      .about-body {
+        display: grid;
+        grid-template-columns: 280px 1fr;
+        gap: 3rem;
+        align-items: start;
+      }
+
+      .about-photo img {
+        width: 100%;
+        border-radius: 8px;
+        border: 3px solid #e8c9b0;
+      }
+
+      .about-content p {
+        margin-bottom: 1.2rem;
+        line-height: 1.7;
+        color: #3a2010;
+      }
+
+      .about-mission {
+        background-color: #fff8f4;
+        border: 1px solid #e8c9b0;
+        border-radius: 8px;
+        padding: 1.5rem;
+        margin-top: 2rem;
+      }
+
+      .about-mission h2 {
+        color: #b03a1a;
+        margin-bottom: 1rem;
+        font-size: 1.1rem;
+      }
+
+      .about-mission ul {
+        padding-left: 1.2rem;
+      }
+
+      .about-mission ul li {
+        margin-bottom: 0.5rem;
+        color: #3a2010;
+      }
+
+      /* ── Right Now Page ── */
+
+      .rn-hero {
+        position: relative;
+        max-width: 900px;
+        max-height: 450px;
+        margin: 2rem auto;
+        border-radius: 12px;
+        overflow: hidden;
+      }
+
+      .rn-hero img {
+        width: 100%;
+        height: 450px;
+        object-fit: cover;
+        object-position: top;
+        display: block;
+      }
+
+      .rn-hero-text {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        padding: 2rem;
+        background: linear-gradient(transparent, rgba(0, 0, 0, 0.75));
+        color: white;
+        border-radius: 0 0 12px 12px;
+        text-align: center;
+      }
+
+      .rn-hero-text h1 {
+        margin: 0 0 0.5rem 0;
+        font-size: 2.5rem;
+      }
+
+      .rn-hero-text p {
+        margin: 0;
+        font-size: 1.3rem;
+        opacity: 0.9;
+      }
+
+      .rn-section {
+        padding: 3rem 2rem;
+      }
+
+      .rn-inner {
+        max-width: 900px;
+        margin: 0 auto;
+      }
+
+      .rn-intro {
+        font-size: 1.15rem;
+        line-height: 1.8;
+        margin-bottom: 3rem;
+        padding-bottom: 2rem;
+        border-bottom: 2px solid #e05c2a;
+      }
+
+      .rn-block {
+        margin-bottom: 3rem;
+        padding-bottom: 3rem;
+        border-bottom: 1px solid #e8c9b0;
+      }
+
+      .rn-block h2 {
+        color: #b03a1a;
+        margin-bottom: 1.2rem;
+        scroll-margin-top: 6rem;
+      }
+
+      .rn-block p {
+        line-height: 1.8;
+        color: #3a2010;
+        margin-bottom: 1.2rem;
+      }
+
+      .rn-stat-row {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1rem;
+        margin-top: 2rem;
+      }
+
+      .rn-stat {
+        background: #fff8f4;
+        border: 1px solid #e8c9b0;
+        border-radius: 8px;
+        padding: 1rem;
+        text-align: center;
+        font-size: 0.85rem;
+        color: #3a2010;
+      }
+
+      .rn-stat span {
+        display: block;
+        font-size: 1.8rem;
+        font-weight: 700;
+        color: #b03a1a;
+        margin-bottom: 0.3rem;
+      }
+
+      .rn-callout {
+        background: #fff8f4;
+        border-left: 4px solid #e05c2a;
+        padding: 1.2rem 1.5rem;
+        margin-top: 1.5rem;
+        border-radius: 0 8px 8px 0;
+      }
+
+      .rn-callout p {
+        font-style: italic;
+        font-size: 1.1rem;
+        margin: 0 0 0.5rem 0 !important;
+      }
+
+      .rn-callout cite {
+        font-size: 0.85rem;
+        color: #b03a1a;
+      }
+
+      .rn-sources {
+        margin-top: 2rem;
+      }
+
+      .rn-sources h3 {
+        color: #b03a1a;
+        margin-bottom: 1rem;
+      }
+
+      .rn-sources ul {
+        padding-left: 1.2rem;
+      }
+
+      .rn-sources ul li {
+        font-size: 0.85rem;
+        color: #555;
+        margin-bottom: 0.4rem;
+      }
+
       .card {
         border: 1px solid #ddd;
         border-radius: 8px;
@@ -252,21 +543,20 @@ const { title } = Astro.props;
         display: block;
         margin-bottom: 0.8rem;
       }
-      .card .title { 
-        height: 5.6rem; 
-        overflow: hidden; 
-        color: #000080; 
-        font-weight: 700; 
+      .card .title {
+        height: 5.6rem;
+        overflow: hidden;
+        color: #000080;
+        font-weight: 700;
       }
-      .card .description { 
-        font-size: 0.95rem; 
-        color: #333; 
-        line-height: 1.6; 
-        display: -webkit-box; 
-        -webkit-line-clamp: 5; 
-        -webkit-box-orient: 
-        vertical; overflow: 
-        hidden; 
+      .card .description {
+        font-size: 0.95rem;
+        color: #333;
+        line-height: 1.6;
+        display: -webkit-box;
+        -webkit-line-clamp: 5;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
       }
       .card .provider {
         font-size: 0.88rem;
@@ -633,32 +923,33 @@ const { title } = Astro.props;
       }
     </style>
     <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-2VYV6CZJKY"></script>
-<script is:inline>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2VYV6CZJKY"
+    ></script>
+    <script is:inline>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-  gtag('config', 'G-2VYV6CZJKY');
-</script>
+      gtag("config", "G-2VYV6CZJKY");
+    </script>
   </head>
   <body>
     <header>
       <div class="logo">
         <a href="/">
-        <img src="/logo.webp" alt="Power Grab TX" />
-        <div class="logo-text">
-          <h1>Power Grab TX</h1>
-          <p>Inside the AI Data Center Surge In Texas</p></a>
-        </div>
+          <img src="/logo.webp" alt="Power Grab TX" />
+        </a>
+        <h1 class="logo-title"><a href="/">Power Grab TX</a></h1>
       </div>
       <button class="hamburger" id="hamburger">☰</button>
       <nav id="nav">
         <a href="/">Home</a>
+        <a href="/right-now">Right Now</a>
         <a href="/news">Latest News</a>
+        <a href="/about">About</a>
         <a href="/stay-informed">Stay Informed</a>
-        <a href="/privacy">Privacy</a>
-        <a href="/terms">Terms</a>
         <a href="/posts">Posts</a>
       </nav>
     </header>
@@ -666,8 +957,13 @@ const { title } = Astro.props;
     <slot />
 
     <footer>
+      <nav class="footer-nav">
+        <a href="/privacy">Privacy</a>
+        <a href="/terms">Terms</a>
+      </nav>
       <p>© 2026 Power Grab TX. All Rights Reserved.</p>
     </footer>
+
     <script>
       const hamburger = document.getElementById("hamburger");
       const nav = document.getElementById("nav");
