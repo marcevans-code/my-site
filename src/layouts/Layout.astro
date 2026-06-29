@@ -13,9 +13,12 @@ const { title } = Astro.props;
       href="https://fonts.googleapis.com/css2?family=Lato:wght@400;600;700;800&display=swap"
       rel="stylesheet"
     />
-    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
 
-    <meta name="google-site-verification" content="r5GOhIsqfQ63OHWvvFDI0nWOyCLEC_fmERLyogCXg8A" />
+    <meta
+      name="google-site-verification"
+      content="r5GOhIsqfQ63OHWvvFDI0nWOyCLEC_fmERLyogCXg8A"
+    />
     <style is:global>
       @import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;600;700;800&display=swap");
 
@@ -1026,14 +1029,17 @@ const { title } = Astro.props;
       const hamburger = document.getElementById("hamburger");
       const nav = document.getElementById("nav");
 
-      hamburger.addEventListener("click", (e) => {
+      hamburger?.addEventListener("click", (e) => {
         e.stopPropagation();
-        nav.classList.toggle("open");
+        nav?.classList.toggle("open");
       });
 
       document.addEventListener("click", (e) => {
-        if (!nav.contains(e.target) && !hamburger.contains(e.target)) {
-          nav.classList.remove("open");
+        if (
+          !nav?.contains(e.target as Node) &&
+          !hamburger?.contains(e.target as Node)
+        ) {
+          nav?.classList.remove("open");
         }
       });
     </script>
