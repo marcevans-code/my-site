@@ -949,7 +949,9 @@ const { title } = Astro.props;
       }
       .newsletter {
         background: #f4f4f4;
-        padding: 3rem 2rem;
+        border-radius: 10px;
+         max-width: 1200px;
+         margin: 0 auto;
         margin-top: 2rem;
       }
       .newsletter-inner {
@@ -959,6 +961,7 @@ const { title } = Astro.props;
       .newsletter h3 {
         font-size: 1.5rem;
         font-weight: 700;
+        padding-top: 2.0rem;
         margin-bottom: 0.6rem;
       }
       .newsletter p {
@@ -981,6 +984,33 @@ const { title } = Astro.props;
         font-size: 1rem;
         color: #444;
         line-height: 1.7;
+      }
+
+      .thank-you-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 4rem 1.5rem;
+        max-width: 600px;
+        margin: 0 auto;
+      }
+
+      .thank-you-logo {
+        width: 180px;
+        height: auto;
+        margin-bottom: 1.5rem;
+      }
+
+      .thank-you-section h1 {
+        font-size: 2rem;
+        margin-bottom: 0.75rem;
+      }
+
+      .thank-you-section p {
+        color: #555;
+        margin-bottom: 2rem;
+        line-height: 1.5;
       }
     </style>
     <!-- Google tag (gtag.js) -->
