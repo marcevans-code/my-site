@@ -1,0 +1,102 @@
+---
+// src/pages/trackers.astro
+// Route: /trackers
+// Lightweight tracker: a running, dated, sourced list of what's happening
+// with AI data centers in Texas — built from your own Latest News curation
+// plus a one-line editorial take on each. No verified stats/tables to
+// maintain — just append a new entry whenever you add something to /news.
+import Layout from "../layouts/Layout.astro";
+
+// To add a new entry: copy one of these objects, fill it in, and add it
+// to the TOP of the array (newest first).
+//
+// - date: when it happened / was reported
+// - headline: the original article's headline
+// - source: publication name (add author name too if the article bylines one)
+// - url: link to the original article — always attribute out
+// - take: one sentence of your own analysis/context. This is what makes
+//   the page yours, not just a copy of your News page.
+
+const entries = [
+  {
+    date: "July 2, 2026",
+    headline:
+      "Proposed Texas AI power plants could emit 287 million tons of greenhouse gases annually, report says",
+    source: "KERA News",
+    url: "https://www.keranews.org/energy-environment/2026-07-02/ai-data-centers-texas-power-plants-pollution-climate-change",
+    take: "Worth watching whether this shifts the water/reliability debate toward an emissions angle too.",
+  },
+  {
+    date: "June 27, 2026",
+    headline:
+      "Texas Stargate AI site saw 14 emergency calls, broken legs, and water called 'a luxury'",
+    source: "Yahoo News",
+    url: "https://www.yahoo.com/news/us/articles/texas-stargate-ai-saw-14-231800269.html",
+    take: "Construction-phase safety concerns at the Abilene Stargate site — separate issue from the grid capacity debate, but part of the same growth story.",
+  },
+  {
+    date: "June 22, 2026",
+    headline:
+      "Powering the next wave of AI: Expanding capacity with our new datacenter in Pecos",
+    source: "Microsoft (official announcement)",
+    url: "https://blogs.microsoft.com/blog/2026/06/22/powering-the-next-wave-of-ai-expanding-capacity-with-our-new-datacenter-in-pecos/",
+    take: "Described by Microsoft as one of its largest single capacity additions — exact MW not yet public.",
+  },
+  {
+    date: "June 19, 2026",
+    headline:
+      "Meta signs 1.6 gigawatt AI compute deals with Crusoe Energy across Texas and Missouri",
+    source: "Crypto Briefing (citing Bloomberg)",
+    url: "https://cryptobriefing.com/meta-crusoe-ai-compute-deals/",
+    take: "1.6 GW is combined across two states — the Texas-only share isn't broken out yet.",
+  },
+  {
+    date: "June 18, 2026",
+    headline: "Texas Tackles AI Power Demand With New Data Center Grid Rules",
+    source: "Bloomberg Government",
+    url: "https://news.bgov.com/bloomberg-government-news/texas-tackles-ai-power-demand-with-new-data-center-grid-rules",
+    take: "A direct regulatory response to the interconnection queue backlog — worth a closer read on the actual rule text.",
+  },
+  {
+    date: "June 16, 2026",
+    headline:
+      " Nvidia's Huang pledges AI will boost manufacturing jobs. A test will come in Texas",
+    source: "AP News",
+    url: "https://apnews.com/article/nvidia-artificial-intelligence-infrastructure-9bf560fa2365e4d6b57804438cda579e",
+    take: "Time will tell if this in fact the case or 'smoke and mirrors' to allay the public's fear."
+  },
+];
+---
+
+<Layout title="AI Data Center Tracker | Power Grab TX">
+  <section class="page-header">
+    <h2>Texas AI Data Center Tracker</h2>
+    <p>
+      A running, dated record of what's happening as the AI data center
+      boom reshapes Texas — grid strain, water use, land deals, and who's
+      building where. Every entry links back to its original source.
+      Updated as new stories break.
+    </p>
+  </section>
+
+  <section class="rn-section">
+    <div class="rn-inner">
+      {
+        entries.map((e) => (
+          <div class="tracker-entry">
+            <p class="tracker-date">{e.date}</p>
+            <h3>
+              <a href={e.url} target="_blank" rel="noopener">
+                {e.headline}
+              </a>
+            </h3>
+            <p class="tracker-source">{e.source}</p>
+            <p class="tracker-take">{e.take}</p>
+          </div>
+        ))
+      }
+    </div>
+  </section>
+</Layout>
+
+

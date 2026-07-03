@@ -950,8 +950,8 @@ const { title } = Astro.props;
       .newsletter {
         background: #f4f4f4;
         border-radius: 10px;
-         max-width: 1200px;
-         margin: 0 auto;
+        max-width: 1200px;
+        margin: 0 auto;
         margin-top: 2rem;
       }
       .newsletter-inner {
@@ -962,7 +962,8 @@ const { title } = Astro.props;
       .newsletter h3 {
         font-size: 1.5rem;
         font-weight: 700;
-        padding-top: 2.0rem;   margin-bottom: 0.6rem;
+        padding-top: 2rem;
+        margin-bottom: 0.6rem;
       }
       .newsletter p {
         font-size: 1rem;
@@ -1012,6 +1013,46 @@ const { title } = Astro.props;
         margin-bottom: 2rem;
         line-height: 1.5;
       }
+
+       .tracker-entry {
+    padding: 1.5rem 0;
+    border-bottom: 1px solid #e8c9b0;
+  }
+
+  .tracker-entry:first-child {
+    padding-top: 0;
+  }
+
+  .tracker-date {
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: #b03a1a;
+    margin-bottom: 0.3rem;
+  }
+
+  .tracker-entry h3 {
+    font-size: 1.15rem;
+    margin-bottom: 0.3rem;
+    line-height: 1.4;
+  }
+
+  .tracker-entry h3 a {
+    color: #1a4a8a;
+  }
+
+  .tracker-source {
+    font-size: 0.85rem;
+    color: #666;
+    margin-bottom: 0.5rem;
+  }
+
+  .tracker-take {
+    font-size: 0.95rem;
+    color: #3a2010;
+    line-height: 1.6;
+  }
     </style>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-2VYV6CZJKY"
@@ -1038,6 +1079,7 @@ const { title } = Astro.props;
       <nav id="nav">
         <a href="/">Home</a>
         <a href="/right-now">Right Now</a>
+        <a href="/trackers">Trackers</a>
         <a href="/news">Latest News</a>
         <a href="/about">About</a>
         <a href="/stay-informed">Stay Informed</a>
