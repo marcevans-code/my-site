@@ -207,3 +207,201 @@ import Layout from "../layouts/Layout.astro";
     });
   </script>
 </Layout>
+<style>
+  /* ══════════════════════════════════════════════════════════════
+         MOVE TO → src/pages/index.astro
+         Homepage hero, intro, cards, closing CTA.
+         ══════════════════════════════════════════════════════════════ */
+
+      .hero {
+        background: #1a3a6a;
+        padding: 3rem 2rem;
+        margin: 0.5rem;
+        border-radius: 15px;
+        color: #fff;
+        text-align: center;
+      }
+      .hero h2 {
+        font-size: 2.2rem;
+        font-weight: 800;
+        max-width: 700px;
+        margin: 0 auto 1rem;
+        line-height: 1.25;
+      }
+      .hero p {
+        font-size: 1.2rem;
+        font-weight: 600;
+        max-width: 680px;
+        margin: 0 auto 1.5rem;
+        line-height: 1.6;
+      }
+      .intro {
+        padding: 2rem 2rem 0;
+        margin: 0 auto;
+        max-width: 700px;
+      }
+      .intro p {
+        font-size: 1.5rem;
+        font-weight: 700;
+        line-height: 1.6;
+        max-width: 680px;
+        text-align: center;
+      }
+      .cards {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 0.5rem;
+      }
+      @media (max-width: 900px) {
+        .cards {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+      @media (max-width: 600px) {
+        .cards {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      .home-cards-section {
+        padding: 2rem 2rem 3rem;
+        max-width: 1400px;
+        margin: 0 auto;
+      }
+
+      .home-cards-section > h2 {
+        text-align: center;
+        margin-bottom: 2rem;
+        padding-top: 1rem;
+        border-top: 2px solid #e05c2a;
+        color: #b03a1a;
+      }
+
+      .home-cards {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 1rem;
+      }
+
+      .home-card {
+        display: flex;
+        flex-direction: column;
+        border: 1px solid #e8c9b0;
+        border-radius: 8px;
+        padding: 1rem;
+        box-sizing: border-box;
+        background-color: #fff8f4;
+      }
+
+      .home-card h3 {
+        font-size: 1rem;
+        min-height: 3.5rem;
+        margin: 0 0 0.5rem 0;
+        color: #b03a1a;
+      }
+
+      .home-card hr {
+        border: none;
+        border-top: 1px solid #e8c9b0;
+        margin: 0 0 1rem 0;
+      }
+
+      .home-card ul {
+        flex: 1;
+        padding-left: 1.2rem;
+        margin: 0;
+      }
+
+      .home-card ul li {
+        margin-bottom: 0.4rem;
+        font-size: 0.9rem;
+        color: #3a2010;
+      }
+
+      .home-card-link {
+        display: block;
+        margin-top: 1.5rem;
+        font-size: 0.9rem;
+        color: #e05c2a;
+        font-weight: 600;
+      }
+
+      .home-card-link:hover {
+        color: #b03a1a;
+      }
+
+      @media (max-width: 768px) {
+        .home-cards {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      @media (min-width: 769px) and (max-width: 1024px) {
+        .home-cards {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+      }
+
+      .closing {
+        background: #1a1a2e;
+        color: #fff;
+        padding: 3rem 2rem;
+        margin: 2rem;
+        border-radius: 12px;
+      }
+      .closing p {
+        font-size: 1.5rem;
+        font-weight: 700;
+        line-height: 1.5;
+        max-width: 100%;
+      }
+       /* ══════════════════════════════════════════════════════════════
+         MOVE TO → wherever your FAQ section lives
+         (e.g. src/pages/index.astro if FAQ is on homepage, or its own page —
+         check which page actually renders <details>/.faq-section first)
+         ══════════════════════════════════════════════════════════════ */
+
+      .faq-section {
+        padding: 2rem;
+        max-width: 820px;
+      }
+      .faq-section h2 {
+        font-size: 1.6rem;
+        font-weight: 700;
+        margin-bottom: 1.5rem;
+        text-align: center;
+      }
+      details {
+        border: 1px solid #ddd;
+        border-radius: 6px;
+        margin-bottom: 0.5rem;
+        overflow: hidden;
+      }
+      details[open] {
+        border-left: 4px solid #1a4a8a;
+      }
+      summary {
+        padding: 1rem 1.2rem;
+        font-weight: 600;
+        font-size: 1rem;
+        cursor: pointer;
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      summary::after {
+        content: "⌄";
+        font-size: 1rem;
+        color: #666;
+      }
+      details[open] summary::after {
+        content: "⌃";
+      }
+      .faq-answer {
+        padding: 0 1.2rem 1rem;
+        font-size: 1rem;
+        line-height: 1.7;
+        color: #333;
+      }
+</style>

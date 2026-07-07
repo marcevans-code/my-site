@@ -25,7 +25,6 @@ const entries = [
     source: "El Paso Times",
     url: "https://www.elpasotimes.com/story/news/texasregion/2026/07/03/what-new-limits-did-gov-greg-abbott-call-for-on-texas-data-centers/90770021007/",
     take: "Flip flopping seems to be the flavor of the month, Is Gov. Abbot up for reelection?",
-
   },
   {
     date: "July 2, 2026",
@@ -72,7 +71,7 @@ const entries = [
       " Nvidia's Huang pledges AI will boost manufacturing jobs. A test will come in Texas",
     source: "AP News",
     url: "https://apnews.com/article/nvidia-artificial-intelligence-infrastructure-9bf560fa2365e4d6b57804438cda579e",
-    take: "Time will tell if this in fact the case or 'smoke and mirrors' to allay the public's fear."
+    take: "Time will tell if this in fact the case or 'smoke and mirrors' to allay the public's fear.",
   },
 ];
 ---
@@ -81,15 +80,15 @@ const entries = [
   <section class="page-header">
     <h2>Texas AI Data Center Tracker</h2>
     <p>
-      A running, dated record of what's happening as the AI data center
-      boom reshapes Texas — grid strain, water use, land deals, and who's
-      building where. Every entry links back to its original source.
-      Updated as new stories break.
+      A running, dated record of what's happening as the AI data center boom
+      reshapes Texas — grid strain, water use, land deals, and who's building
+      where. Every entry links back to its original source. Updated as new
+      stories break.
     </p>
   </section>
 
-  <section class="rn-section">
-    <div class="rn-inner">
+  <section class="tracker-section">
+    <div class="tracker-inner">
       {
         entries.map((e) => (
           <div class="tracker-entry">
@@ -107,5 +106,56 @@ const entries = [
     </div>
   </section>
 </Layout>
+<style>
+  /* ══════════════════════════════════════════════════════════════
+         MOVE TO → src/pages/trackers.astro
+         ══════════════════════════════════════════════════════════════ */
 
+  .tracker-entry {
+    padding: 1.5rem 0;
+    border-bottom: 1px solid #e8c9b0;
+  }
 
+  .tracker-entry:first-child {
+    padding-top: 0;
+  }
+
+  .tracker-section {
+    padding: 3rem 2rem;
+  }
+  .tracker-inner {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  .tracker-date {
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: #b03a1a;
+    margin-bottom: 0.3rem;
+  }
+
+  .tracker-entry h3 {
+    font-size: 1.15rem;
+    margin-bottom: 0.3rem;
+    line-height: 1.4;
+  }
+
+  .tracker-entry h3 a {
+    color: #1a4a8a;
+  }
+
+  .tracker-source {
+    font-size: 0.85rem;
+    color: #666;
+    margin-bottom: 0.5rem;
+  }
+
+  .tracker-take {
+    font-size: 0.95rem;
+    color: #3a2010;
+    line-height: 1.6;
+  }
+</style>
