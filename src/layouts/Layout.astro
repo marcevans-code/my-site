@@ -742,24 +742,29 @@ import "@fontsource/lato/700.css";
       <p>© 2026 Power Grab TX. All Rights Reserved.</p>
     </footer>
 
-    <script>
-      const hamburger = document.getElementById("hamburger");
-      const nav = document.getElementById("nav");
+   <script>
+  const hamburger = document.getElementById("hamburger");
+  const nav = document.getElementById("nav");
 
-      hamburger?.addEventListener("click", (e) => {
-        e.stopPropagation();
-        nav?.classList.toggle("open");
-      });
+  hamburger?.addEventListener("click", (e) => {
+    e.stopPropagation();
+    nav?.classList.toggle("open");
+  });
 
-      document.addEventListener("click", (e) => {
-        if (
-          !nav?.contains(e.target as Node) &&
-          !hamburger?.contains(e.target as Node)
-        ) {
-          nav?.classList.remove("open");
-        }
-      });
-    </script>
+ document.addEventListener("click", (e) => {
+  // Safe type-guard check to satisfy TypeScript
+  const target = e.target as HTMLElement;
+
+  if (
+    !nav?.contains(target) &&
+    !hamburger?.contains(target)
+  ) {
+    nav?.classList.remove("open");
+  }
+});
+
+</script>
+
      <script is:inline>
       window.dataLayer = window.dataLayer || [];
       function gtag() {
