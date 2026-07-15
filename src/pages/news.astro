@@ -10,11 +10,11 @@ import Layout from "../layouts/Layout.astro";
         Explore our recent insights on Texas AI data centers and digital
         infrastructure.
       </p>
-      <a href="/posts" class="btn">View All Posts</a>
+      <a href="trackers" class="btn">View All Trackers</a>
     </div>
 
-    <p class="intro">
-      The latest news from PowerGrabTX continuously tracks new reporting, data
+    <p class="intro" style="max-width: 1200px; font-size: 1.3rem; font-weight: 900; line-height: 1.6;">
+      The latest aggregated news from PowerGrabTX continuously tracks new reporting, data
       releases, and community developments related to rapidly expanding AI Data
       Center demand. This section is updated every day or two as fresh
       information emerges—from grid forecasts and regulatory actions to local
@@ -26,6 +26,25 @@ import Layout from "../layouts/Layout.astro";
 
     <div class="cards" style="padding: 2rem;">
       <!-- New cards start below here. -->
+
+      <div class="card">
+        <div class="title">
+          Corpus Christi gave $100M in water discounts to industry giants.
+          Locals picked up the bill
+        </div>
+        <div class="description">
+          Residents and small businesses across the Corpus Christi region
+          subsidized big industrial plants’ water bills for years, city
+          officials say. The companies are now fighting to keep the subsidy.
+        </div>
+        <div class="provider">Texas Standard - 7/14/26</div>
+        <a
+          href="https://texasstandard.org/stories/corpus-christi-tx-water-valero-subsidy-rates-industry-energy-utilities/"
+          class="readmore"
+          target="_blank"
+          rel="noopener noreferrer">Read more ...</a
+        >
+      </div>
 
       <div class="card">
         <div class="title">
@@ -921,14 +940,14 @@ import Layout from "../layouts/Layout.astro";
       </div>
     </div>
   </div>
+
+  <style>
+    .news-page {
+      background: #f4f4f4;
+    }
+
+    .card {
+      background: #fff;
+    }
+  </style>
 </Layout>
-
-<style>
-  .news-page {
-    background: #f4f4f4;
-  }
-
-  .card {
-    background: #fff;
-  }
-</style>
