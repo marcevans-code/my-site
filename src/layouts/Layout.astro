@@ -2,6 +2,29 @@
 const { title } = Astro.props;
 import "@fontsource/lato/400.css";
 import "@fontsource/lato/700.css";
+
+// Auto-discover Morning Briefing pages so new ones show up in the nav
+// without editing this file. Sorted newest first by the date in the filename.
+const briefingModules = import.meta.glob("/src/pages/briefings/*.astro");
+const briefings = Object.keys(briefingModules)
+  .map((path) => {
+    const match = path.match(/morning-briefing-(\d{4}-\d{2}-\d{2})\.astro$/);
+    return match ? { path, dateStr: match[1] } : null;
+  })
+  .filter((b) => b !== null)
+  .sort((a, b) => b.dateStr.localeCompare(a.dateStr))
+  .map((b) => {
+    const [y, m, d] = b.dateStr.split("-").map(Number);
+    const date = new Date(y, m - 1, d);
+    return {
+      href: `/briefings/morning-briefing-${b.dateStr}`,
+      label: date.toLocaleDateString("en-US", {
+        month: "long",
+        day: "numeric",
+        year: "numeric",
+      }),
+    };
+  });
 ---
 
 <html lang="en">
@@ -115,6 +138,78 @@ import "@fontsource/lato/700.css";
         color: #1a4a8a;
       }
 
+      .nav-dropdown {
+        position: relative;
+      }
+
+      /* Invisible bridge over the gap between the toggle and the
+         dropdown-menu below it, so moving the mouse down into the
+         menu doesn't briefly leave the hoverable area and close it.
+         Positioned out of flow, so it doesn't affect nav layout. */
+      .nav-dropdown::after {
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        height: 0.7rem;
+      }
+
+      .dropdown-toggle {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.3rem;
+        background: none;
+        border: none;
+        font: inherit;
+        font-weight: 500;
+        color: #1a1a1a;
+        cursor: pointer;
+        padding: 0;
+      }
+
+      .dropdown-toggle:hover {
+        color: #1a4a8a;
+      }
+
+      .dropdown-toggle .caret {
+        font-size: 0.65rem;
+      }
+
+      .dropdown-menu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        margin-top: 0.7rem;
+        background: #fff;
+        border: 1px solid #eee;
+        border-radius: 8px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        padding: 0.5rem 0;
+        min-width: 210px;
+        z-index: 150;
+      }
+
+      .dropdown-menu a {
+        display: block;
+        padding: 0.5rem 1.2rem;
+        white-space: nowrap;
+        font-weight: 500;
+      }
+
+      .dropdown-menu a:hover {
+        background: #f4f8fc;
+        text-decoration: none;
+      }
+
+      @media (min-width: 769px) {
+        .nav-dropdown:hover .dropdown-menu,
+        .nav-dropdown.open .dropdown-menu {
+          display: block;
+        }
+      }
+
       @media (max-width: 768px) {
         .hamburger {
           display: block;
@@ -135,6 +230,15 @@ import "@fontsource/lato/700.css";
         }
         nav.open {
           display: flex;
+        }
+        .nav-dropdown.open .dropdown-menu {
+          display: block;
+          position: static;
+          border: none;
+          box-shadow: none;
+          margin-top: 0.4rem;
+          padding-left: 0.8rem;
+          min-width: unset;
         }
       }
 
@@ -723,8 +827,25 @@ import "@fontsource/lato/700.css";
       <button class="hamburger" id="hamburger">☰</button>
       <nav id="nav">
         <a href="/">Home</a>
-        <a href="/right-now">Right Now</a>
-        <a href="/trackers">Trackers</a>
+        <div class="nav-dropdown">
+          <button type="button" class="dropdown-toggle">
+            Trackers <span class="caret">▾</span>
+          </button>
+          <div class="dropdown-menu">
+            <a href="/trackers">All Trackers</a>
+            <a href="/right-now">Right Now</a>
+          </div>
+        </div>
+        <div class="nav-dropdown">
+          <button type="button" class="dropdown-toggle">
+            Morning Briefing <span class="caret">▾</span>
+          </button>
+          <div class="dropdown-menu">
+            {briefings.map((b) => (
+              <a href={b.href}>{b.label}</a>
+            ))}
+          </div>
+        </div>
         <a href="/news">Latest News</a>
         <a href="/about">About</a>
         <a href="/stay-informed">Stay Informed</a>
@@ -742,28 +863,46 @@ import "@fontsource/lato/700.css";
       <p>© 2026 Power Grab TX. All Rights Reserved.</p>
     </footer>
 
-   <script>
+  <script>
   const hamburger = document.getElementById("hamburger");
   const nav = document.getElementById("nav");
 
-  hamburger?.addEventListener("click", (e) => {
-    e.stopPropagation();
-    nav?.classList.toggle("open");
+  document.addEventListener("click", (e) => {
+    if (!(e.target instanceof HTMLElement)) return;
+    const target = e.target;
+
+    // 1. Handle Hamburger toggle
+    if (hamburger?.contains(target) || target === hamburger) {
+      e.stopPropagation();
+      nav?.classList.toggle("open");
+      return;
+    }
+
+    // 2. Handle Dropdown toggles
+    const toggle = target.closest(".dropdown-toggle");
+    if (toggle) {
+      e.stopPropagation();
+      const parent = toggle.closest(".nav-dropdown");
+      const isOpen = parent?.classList.contains("open");
+
+      // Close all dropdowns
+      document.querySelectorAll(".nav-dropdown.open").forEach((d) => d.classList.remove("open"));
+
+      // Open this one if it wasn't already open
+      if (!isOpen) parent?.classList.add("open");
+      return;
+    }
+
+    // 3. Clicked outside? Close everything.
+    if (!nav?.contains(target)) {
+      nav?.classList.remove("open");
+    }
+    if (!target.closest(".nav-dropdown")) {
+      document.querySelectorAll(".nav-dropdown.open").forEach((d) => d.classList.remove("open"));
+    }
   });
-
- document.addEventListener("click", (e) => {
-  // Safe type-guard check to satisfy TypeScript
-  const target = e.target as HTMLElement;
-
-  if (
-    !nav?.contains(target) &&
-    !hamburger?.contains(target)
-  ) {
-    nav?.classList.remove("open");
-  }
-});
-
 </script>
+
 
      <script is:inline>
       window.dataLayer = window.dataLayer || [];
