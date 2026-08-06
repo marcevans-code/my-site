@@ -1,19 +1,33 @@
 ---
-import Layout from '../layouts/Layout.astro';
+import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="AI Data Center Glossary — Power Grab TX">
   <div class="glossary-page">
-
     <div class="glossary-header">
       <h1>AI Data Center Glossary</h1>
-      <p>Plain-language explanations of the terms you'll run into when reading about AI data centers — the massive facilities being built to train and run today's AI systems.</p>
+      <p>
+        Plain-language explanations of the terms you'll run into when reading
+        about AI data centers — the massive facilities being built to train and
+        run today's AI systems.
+      </p>
       <p>No jargon left unexplained. Search or browse by category below.</p>
-      <a class="pdf-btn" href="/ai-data-center-glossary.pdf" download>⭳ Download the PDF version</a>
+      <p>
+        If you find additional terminology, drop me a quick message <a
+          href="stay-informed">here</a
+        > and I will add it to the list.
+      </p>
+      <a class="pdf-btn" href="/ai-data-center-glossary.pdf" download
+        >⭳ Download the PDF version</a
+      >
     </div>
 
     <div class="search-wrap">
-      <input type="text" id="glossary-search" placeholder="Search for a term (e.g. GPU, cooling, PUE)…" />
+      <input
+        type="text"
+        id="glossary-search"
+        placeholder="Search for a term (e.g. GPU, cooling, PUE)…"
+      />
     </div>
 
     <nav class="toc">
@@ -30,277 +44,551 @@ import Layout from '../layouts/Layout.astro';
 
     <section class="category" id="compute" style="--cat-color:#b5461f">
       <h2>AI &amp; Compute Basics</h2>
-      <p class="cat-desc">The concepts behind what these data centers are actually built to do.</p>
+      <p class="cat-desc">
+        The concepts behind what these data centers are actually built to do.
+      </p>
 
       <div class="term">
         <h3>Artificial Intelligence (AI)</h3>
-        <p>Software that performs tasks — recognizing images, writing text, making predictions — that normally require human judgment. Modern AI mostly refers to systems trained on huge amounts of data rather than programmed with explicit rules.</p>
+        <p>
+          Software that performs tasks — recognizing images, writing text,
+          making predictions — that normally require human judgment. Modern AI
+          mostly refers to systems trained on huge amounts of data rather than
+          programmed with explicit rules.
+        </p>
       </div>
       <div class="term">
         <h3>Machine Learning</h3>
-        <p>The technique behind most modern AI: instead of writing step-by-step instructions, engineers show a computer program millions of examples and let it work out the patterns for itself.</p>
+        <p>
+          The technique behind most modern AI: instead of writing step-by-step
+          instructions, engineers show a computer program millions of examples
+          and let it work out the patterns for itself.
+        </p>
       </div>
       <div class="term">
         <h3>Large Language Model (LLM)</h3>
-        <p>An AI system trained on huge amounts of text so it can generate and understand language — the technology behind chatbots like Claude, ChatGPT, and Gemini.</p>
+        <p>
+          An AI system trained on huge amounts of text so it can generate and
+          understand language — the technology behind chatbots like Claude,
+          ChatGPT, and Gemini.
+        </p>
       </div>
       <div class="term">
         <h3>Neural Network</h3>
-        <p>The general structure most AI models are built from — layers of simple mathematical units loosely inspired by neurons in the brain, connected together to find patterns in data.</p>
+        <p>
+          The general structure most AI models are built from — layers of simple
+          mathematical units loosely inspired by neurons in the brain, connected
+          together to find patterns in data.
+        </p>
       </div>
       <div class="term">
         <h3>Parameters</h3>
-        <p>The internal "knobs" a model adjusts while learning — often numbering in the billions. Roughly speaking, more parameters mean a more capable but more computationally expensive model.</p>
-        <p class="analogy">Think of them as the settings a giant mixing board would need to reproduce a specific sound — an AI model has billions of tiny settings tuned during training.</p>
+        <p>
+          The internal "knobs" a model adjusts while learning — often numbering
+          in the billions. Roughly speaking, more parameters mean a more capable
+          but more computationally expensive model.
+        </p>
+        <p class="analogy">
+          Think of them as the settings a giant mixing board would need to
+          reproduce a specific sound — an AI model has billions of tiny settings
+          tuned during training.
+        </p>
       </div>
       <div class="term">
         <h3>Training</h3>
-        <p>The process of "teaching" a model by having it process massive datasets and adjust its parameters over and over. This is the most computationally intensive part of AI and the main reason new, huge data centers are being built.</p>
+        <p>
+          The process of "teaching" a model by having it process massive
+          datasets and adjust its parameters over and over. This is the most
+          computationally intensive part of AI and the main reason new, huge
+          data centers are being built.
+        </p>
       </div>
       <div class="term">
         <h3>Inference</h3>
-        <p>Using an already-trained model to actually answer a question or generate a response — what happens every time you send a message to a chatbot. Training happens once (or periodically); inference happens constantly, at massive scale, for every user.</p>
+        <p>
+          Using an already-trained model to actually answer a question or
+          generate a response — what happens every time you send a message to a
+          chatbot. Training happens once (or periodically); inference happens
+          constantly, at massive scale, for every user.
+        </p>
       </div>
       <div class="term">
         <h3>Compute</h3>
-        <p>Shorthand for raw processing power — the amount of computing capacity available to do a task. When people say "AI needs more compute," they mean more chips, more electricity, and more data centers.</p>
+        <p>
+          Shorthand for raw processing power — the amount of computing capacity
+          available to do a task. When people say "AI needs more compute," they
+          mean more chips, more electricity, and more data centers.
+        </p>
       </div>
       <div class="term">
         <h3>Cluster</h3>
-        <p>A large group of computers (or chips) wired together and coordinated to work on one job as if they were a single, much more powerful machine.</p>
+        <p>
+          A large group of computers (or chips) wired together and coordinated
+          to work on one job as if they were a single, much more powerful
+          machine.
+        </p>
       </div>
       <div class="term">
         <h3>Supercomputer</h3>
-        <p>An extremely powerful computing system built from thousands of interconnected chips. Many of today's "AI supercomputers" are really just very large, purpose-built GPU clusters.</p>
+        <p>
+          An extremely powerful computing system built from thousands of
+          interconnected chips. Many of today's "AI supercomputers" are really
+          just very large, purpose-built GPU clusters.
+        </p>
       </div>
     </section>
 
     <section class="category" id="hardware" style="--cat-color:#4a6b5a">
       <h2>Chips &amp; Hardware</h2>
-      <p class="cat-desc">The physical components that do the actual computing.</p>
+      <p class="cat-desc">
+        The physical components that do the actual computing.
+      </p>
 
       <div class="term">
         <h3>GPU (Graphics Processing Unit)</h3>
-        <p>A chip originally designed to render video game graphics that turns out to be extremely good at the type of math AI training needs. GPUs (mainly from Nvidia and AMD) are the single biggest driver of AI data center demand and cost.</p>
+        <p>
+          A chip originally designed to render video game graphics that turns
+          out to be extremely good at the type of math AI training needs. GPUs
+          (mainly from Nvidia and AMD) are the single biggest driver of AI data
+          center demand and cost.
+        </p>
       </div>
       <div class="term">
         <h3>CPU (Central Processing Unit)</h3>
-        <p>The traditional "brain" of a computer, good at doing tasks one after another very quickly. CPUs still run the general software in a data center, but they're too slow for large-scale AI training compared to GPUs.</p>
+        <p>
+          The traditional "brain" of a computer, good at doing tasks one after
+          another very quickly. CPUs still run the general software in a data
+          center, but they're too slow for large-scale AI training compared to
+          GPUs.
+        </p>
       </div>
       <div class="term">
         <h3>TPU (Tensor Processing Unit)</h3>
-        <p>Google's custom-designed chip, built specifically for AI workloads instead of general computing or graphics. It's a competitor/alternative to Nvidia's GPUs.</p>
+        <p>
+          Google's custom-designed chip, built specifically for AI workloads
+          instead of general computing or graphics. It's a
+          competitor/alternative to Nvidia's GPUs.
+        </p>
       </div>
       <div class="term">
         <h3>Accelerator</h3>
-        <p>An umbrella term for any chip — GPU, TPU, or other custom design — built to speed up AI workloads specifically, as opposed to general-purpose computing.</p>
+        <p>
+          An umbrella term for any chip — GPU, TPU, or other custom design —
+          built to speed up AI workloads specifically, as opposed to
+          general-purpose computing.
+        </p>
       </div>
       <div class="term">
         <h3>ASIC (Application-Specific Integrated Circuit)</h3>
-        <p>A chip custom-designed for one narrow job rather than general use. Some companies build their own AI ASICs to reduce reliance on Nvidia and cut costs at scale.</p>
+        <p>
+          A chip custom-designed for one narrow job rather than general use.
+          Some companies build their own AI ASICs to reduce reliance on Nvidia
+          and cut costs at scale.
+        </p>
       </div>
       <div class="term">
         <h3>Semiconductor / Chip</h3>
-        <p>The physical piece of silicon that hardware like GPUs and CPUs is built on. "The chip shortage" and "chip war" headlines are about the global supply of these components.</p>
+        <p>
+          The physical piece of silicon that hardware like GPUs and CPUs is
+          built on. "The chip shortage" and "chip war" headlines are about the
+          global supply of these components.
+        </p>
       </div>
       <div class="term">
         <h3>Server</h3>
-        <p>A computer designed to be housed in a data center and run continuously, providing computing power or storage over a network rather than being used directly by one person.</p>
+        <p>
+          A computer designed to be housed in a data center and run
+          continuously, providing computing power or storage over a network
+          rather than being used directly by one person.
+        </p>
       </div>
       <div class="term">
         <h3>Rack</h3>
-        <p>A standardized metal frame that servers slide into, stacked vertically, so a data center can pack many machines into a small footprint. AI racks are far denser and hungrier for power than traditional ones.</p>
+        <p>
+          A standardized metal frame that servers slide into, stacked
+          vertically, so a data center can pack many machines into a small
+          footprint. AI racks are far denser and hungrier for power than
+          traditional ones.
+        </p>
       </div>
       <div class="term">
         <h3>Node</h3>
-        <p>One individual computing unit within a larger cluster — often a single server containing several GPUs.</p>
+        <p>
+          One individual computing unit within a larger cluster — often a single
+          server containing several GPUs.
+        </p>
       </div>
       <div class="term">
         <h3>HBM (High Bandwidth Memory)</h3>
-        <p>A specialized, very fast type of memory stacked directly onto or next to a GPU so it can feed the chip data quickly enough to keep it busy. It's also one of the most supply-constrained components in the current AI chip market.</p>
+        <p>
+          A specialized, very fast type of memory stacked directly onto or next
+          to a GPU so it can feed the chip data quickly enough to keep it busy.
+          It's also one of the most supply-constrained components in the current
+          AI chip market.
+        </p>
       </div>
     </section>
 
     <section class="category" id="power" style="--cat-color:#a8791a">
       <h2>Power &amp; Energy</h2>
-      <p class="cat-desc">AI data centers are, first and foremost, enormous consumers of electricity — much of the current conversation about them is really about power.</p>
+      <p class="cat-desc">
+        AI data centers are, first and foremost, enormous consumers of
+        electricity — much of the current conversation about them is really
+        about power.
+      </p>
 
       <div class="term">
         <h3>Megawatt (MW) / Gigawatt (GW)</h3>
-        <p>Units used to describe how much electricity a data center draws. One megawatt can power roughly a thousand average homes; large AI data center campuses are now being described in gigawatts (thousands of megawatts) — comparable to the output of a full-sized power plant.</p>
+        <p>
+          Units used to describe how much electricity a data center draws. One
+          megawatt can power roughly a thousand average homes; large AI data
+          center campuses are now being described in gigawatts (thousands of
+          megawatts) — comparable to the output of a full-sized power plant.
+        </p>
       </div>
       <div class="term">
         <h3>Power Purchase Agreement (PPA)</h3>
-        <p>A long-term contract where a data center operator agrees to buy a fixed amount of electricity from a power producer (a wind farm, solar farm, or even a nuclear plant) for years at a set price — used to lock in supply for facilities that need power around the clock.</p>
+        <p>
+          A long-term contract where a data center operator agrees to buy a
+          fixed amount of electricity from a power producer (a wind farm, solar
+          farm, or even a nuclear plant) for years at a set price — used to lock
+          in supply for facilities that need power around the clock.
+        </p>
       </div>
       <div class="term">
         <h3>Grid Interconnection</h3>
-        <p>The process of physically and administratively connecting a new data center to the regional electricity grid. Long waiting lists for interconnection are one of the biggest bottlenecks slowing down new AI data center construction today.</p>
+        <p>
+          The process of physically and administratively connecting a new data
+          center to the regional electricity grid. Long waiting lists for
+          interconnection are one of the biggest bottlenecks slowing down new AI
+          data center construction today.
+        </p>
       </div>
       <div class="term">
         <h3>Substation</h3>
-        <p>A facility that steps electricity down from high-voltage transmission lines to a voltage a data center can actually use — essentially the plug between the power grid and the building.</p>
+        <p>
+          A facility that steps electricity down from high-voltage transmission
+          lines to a voltage a data center can actually use — essentially the
+          plug between the power grid and the building.
+        </p>
       </div>
       <div class="term">
         <h3>Behind-the-Meter Power</h3>
-        <p>Electricity generated on-site (say, from a dedicated gas plant or small reactor next to the data center) and used directly, without passing through the public grid — a workaround some operators are using to get power faster than grid connections allow.</p>
+        <p>
+          Electricity generated on-site (say, from a dedicated gas plant or
+          small reactor next to the data center) and used directly, without
+          passing through the public grid — a workaround some operators are
+          using to get power faster than grid connections allow.
+        </p>
       </div>
       <div class="term">
         <h3>UPS (Uninterruptible Power Supply)</h3>
-        <p>A large battery system that instantly kicks in if grid power cuts out, keeping servers running for the seconds or minutes it takes backup generators to start.</p>
+        <p>
+          A large battery system that instantly kicks in if grid power cuts out,
+          keeping servers running for the seconds or minutes it takes backup
+          generators to start.
+        </p>
       </div>
       <div class="term">
         <h3>Backup Generator</h3>
-        <p>Typically diesel or gas engines on-site that can power the entire facility if the electrical grid fails, kept ready to run for hours or days.</p>
+        <p>
+          Typically diesel or gas engines on-site that can power the entire
+          facility if the electrical grid fails, kept ready to run for hours or
+          days.
+        </p>
       </div>
       <div class="term">
         <h3>Redundancy (e.g. "N+1")</h3>
-        <p>Building in spare capacity — extra generators, cooling units, or power feeds beyond what's strictly needed — so that if one piece of equipment fails, there's a backup ready and nothing goes down.</p>
+        <p>
+          Building in spare capacity — extra generators, cooling units, or power
+          feeds beyond what's strictly needed — so that if one piece of
+          equipment fails, there's a backup ready and nothing goes down.
+        </p>
       </div>
       <div class="term">
         <h3>PUE (Power Usage Effectiveness)</h3>
-        <p>A measure of data center efficiency: total facility power divided by the power actually used by the computers themselves. A PUE of 1.0 would mean zero energy wasted on cooling, lighting, and other overhead; well-run facilities today aim for around 1.1–1.3.</p>
+        <p>
+          A measure of data center efficiency: total facility power divided by
+          the power actually used by the computers themselves. A PUE of 1.0
+          would mean zero energy wasted on cooling, lighting, and other
+          overhead; well-run facilities today aim for around 1.1–1.3.
+        </p>
       </div>
     </section>
 
     <section class="category" id="cooling" style="--cat-color:#2f6f8f">
       <h2>Cooling</h2>
-      <p class="cat-desc">AI chips run extremely hot and densely packed, which has made cooling technology a major topic on its own.</p>
+      <p class="cat-desc">
+        AI chips run extremely hot and densely packed, which has made cooling
+        technology a major topic on its own.
+      </p>
 
       <div class="term">
         <h3>Air Cooling</h3>
-        <p>The traditional method: large fans and air conditioning units push cool air across servers to carry heat away. It's cheap and simple but increasingly can't keep up with how much heat dense AI hardware produces.</p>
+        <p>
+          The traditional method: large fans and air conditioning units push
+          cool air across servers to carry heat away. It's cheap and simple but
+          increasingly can't keep up with how much heat dense AI hardware
+          produces.
+        </p>
       </div>
       <div class="term">
         <h3>Liquid Cooling</h3>
-        <p>Using fluid instead of air to remove heat, since liquid carries heat away far more efficiently. This has become close to essential for high-end AI hardware.</p>
+        <p>
+          Using fluid instead of air to remove heat, since liquid carries heat
+          away far more efficiently. This has become close to essential for
+          high-end AI hardware.
+        </p>
       </div>
       <div class="term">
         <h3>Direct-to-Chip Cooling</h3>
-        <p>A liquid cooling method where coolant runs through small pipes or plates that sit directly on top of the hottest chips, pulling heat away right at the source rather than cooling the whole room.</p>
+        <p>
+          A liquid cooling method where coolant runs through small pipes or
+          plates that sit directly on top of the hottest chips, pulling heat
+          away right at the source rather than cooling the whole room.
+        </p>
       </div>
       <div class="term">
         <h3>Immersion Cooling</h3>
-        <p>An even more intensive approach where entire servers are submerged in a special, non-conductive fluid that absorbs heat directly from every component at once.</p>
+        <p>
+          An even more intensive approach where entire servers are submerged in
+          a special, non-conductive fluid that absorbs heat directly from every
+          component at once.
+        </p>
       </div>
       <div class="term">
         <h3>WUE (Water Usage Effectiveness)</h3>
-        <p>A measure of how much water a data center consumes (often for evaporative cooling) relative to the computing power it delivers — a growing concern in drought-prone regions where new data centers are being built.</p>
+        <p>
+          A measure of how much water a data center consumes (often for
+          evaporative cooling) relative to the computing power it delivers — a
+          growing concern in drought-prone regions where new data centers are
+          being built.
+        </p>
       </div>
       <div class="term">
         <h3>Waste Heat Reuse</h3>
-        <p>Capturing the heat a data center generates and putting it to use elsewhere — for example, piping it to warm nearby homes or greenhouses — instead of simply venting it outside.</p>
+        <p>
+          Capturing the heat a data center generates and putting it to use
+          elsewhere — for example, piping it to warm nearby homes or greenhouses
+          — instead of simply venting it outside.
+        </p>
       </div>
     </section>
 
     <section class="category" id="network" style="--cat-color:#6b5a9e">
       <h2>Networking &amp; Connectivity</h2>
-      <p class="cat-desc">How thousands of chips are wired together so they can act as one machine, and how data moves in and out.</p>
+      <p class="cat-desc">
+        How thousands of chips are wired together so they can act as one
+        machine, and how data moves in and out.
+      </p>
 
       <div class="term">
         <h3>Interconnect</h3>
-        <p>The wiring and switching technology that links chips, servers, and racks together. In AI clusters, how fast and cleanly chips can talk to each other often matters as much as how fast any single chip is.</p>
+        <p>
+          The wiring and switching technology that links chips, servers, and
+          racks together. In AI clusters, how fast and cleanly chips can talk to
+          each other often matters as much as how fast any single chip is.
+        </p>
       </div>
       <div class="term">
         <h3>Bandwidth</h3>
-        <p>How much data can move through a connection at once — like the width of a pipe. Higher bandwidth means more information can flow between chips or across the internet per second.</p>
+        <p>
+          How much data can move through a connection at once — like the width
+          of a pipe. Higher bandwidth means more information can flow between
+          chips or across the internet per second.
+        </p>
       </div>
       <div class="term">
         <h3>Latency</h3>
-        <p>The delay between sending data and it arriving. Low latency matters enormously for AI training, where thousands of chips must constantly exchange small amounts of data in near-perfect sync.</p>
+        <p>
+          The delay between sending data and it arriving. Low latency matters
+          enormously for AI training, where thousands of chips must constantly
+          exchange small amounts of data in near-perfect sync.
+        </p>
       </div>
       <div class="term">
         <h3>InfiniBand / NVLink</h3>
-        <p>Two specific high-speed connection technologies (InfiniBand is an industry standard; NVLink is Nvidia's own) used to link GPUs together far faster than typical internet or office networking hardware could manage.</p>
+        <p>
+          Two specific high-speed connection technologies (InfiniBand is an
+          industry standard; NVLink is Nvidia's own) used to link GPUs together
+          far faster than typical internet or office networking hardware could
+          manage.
+        </p>
       </div>
       <div class="term">
         <h3>Network Switch</h3>
-        <p>A device that directs data traffic between servers, racks, and rows within a data center — the traffic-control layer that keeps thousands of machines from talking over one another.</p>
+        <p>
+          A device that directs data traffic between servers, racks, and rows
+          within a data center — the traffic-control layer that keeps thousands
+          of machines from talking over one another.
+        </p>
       </div>
       <div class="term">
         <h3>Fiber Optic Cable</h3>
-        <p>Cabling that sends data as pulses of light rather than electricity, allowing much faster and longer-distance data transmission — used both within data centers and to connect them to the wider internet.</p>
+        <p>
+          Cabling that sends data as pulses of light rather than electricity,
+          allowing much faster and longer-distance data transmission — used both
+          within data centers and to connect them to the wider internet.
+        </p>
       </div>
     </section>
 
     <section class="category" id="business" style="--cat-color:#7a4a6b">
       <h2>Facilities &amp; Business Terms</h2>
-      <p class="cat-desc">Who builds and owns these facilities, and how the industry talks about them.</p>
+      <p class="cat-desc">
+        Who builds and owns these facilities, and how the industry talks about
+        them.
+      </p>
 
       <div class="term">
         <h3>Hyperscaler</h3>
-        <p>One of the handful of companies operating at massive, global scale — Amazon (AWS), Microsoft (Azure), Google, and Meta are the most commonly cited examples. They build and run their own vast networks of data centers.</p>
+        <p>
+          One of the handful of companies operating at massive, global scale —
+          Amazon (AWS), Microsoft (Azure), Google, and Meta are the most
+          commonly cited examples. They build and run their own vast networks of
+          data centers.
+        </p>
       </div>
       <div class="term">
         <h3>Neocloud</h3>
-        <p>A newer breed of company that builds data centers and rents out raw GPU computing power, without offering the full suite of cloud software services a hyperscaler does. They've emerged specifically to meet AI-driven GPU demand (examples often cited include CoreWeave and Lambda).</p>
+        <p>
+          A newer breed of company that builds data centers and rents out raw
+          GPU computing power, without offering the full suite of cloud software
+          services a hyperscaler does. They've emerged specifically to meet
+          AI-driven GPU demand (examples often cited include CoreWeave and
+          Lambda).
+        </p>
       </div>
       <div class="term">
         <h3>Colocation ("Colo")</h3>
-        <p>A facility where multiple different companies rent space, power, and cooling for their own servers inside a shared building, rather than each building their own data center from scratch.</p>
+        <p>
+          A facility where multiple different companies rent space, power, and
+          cooling for their own servers inside a shared building, rather than
+          each building their own data center from scratch.
+        </p>
       </div>
       <div class="term">
         <h3>Cloud Computing</h3>
-        <p>Renting computing power, storage, or software over the internet from someone else's data center, instead of buying and running your own hardware.</p>
+        <p>
+          Renting computing power, storage, or software over the internet from
+          someone else's data center, instead of buying and running your own
+          hardware.
+        </p>
       </div>
       <div class="term">
         <h3>On-Premises ("On-Prem")</h3>
-        <p>The opposite of cloud computing: a company owns and runs its computers in its own building rather than renting capacity elsewhere.</p>
+        <p>
+          The opposite of cloud computing: a company owns and runs its computers
+          in its own building rather than renting capacity elsewhere.
+        </p>
       </div>
       <div class="term">
         <h3>Data Center Campus</h3>
-        <p>A cluster of multiple large data center buildings on one site, often the scale being described when a company announces a multi-billion-dollar, multi-gigawatt AI facility.</p>
+        <p>
+          A cluster of multiple large data center buildings on one site, often
+          the scale being described when a company announces a
+          multi-billion-dollar, multi-gigawatt AI facility.
+        </p>
       </div>
       <div class="term">
         <h3>Tier Rating (e.g. Tier III, Tier IV)</h3>
-        <p>An industry classification (I through IV) describing how much redundancy and fault tolerance a data center has — Tier IV facilities are built so that even planned maintenance or equipment failure shouldn't cause downtime.</p>
+        <p>
+          An industry classification (I through IV) describing how much
+          redundancy and fault tolerance a data center has — Tier IV facilities
+          are built so that even planned maintenance or equipment failure
+          shouldn't cause downtime.
+        </p>
       </div>
       <div class="term">
         <h3>Uptime</h3>
-        <p>The percentage of time a data center (or the services running in it) is actually operational, as opposed to down for maintenance or an outage. Even "99.99% uptime" still allows for roughly 53 minutes of downtime a year.</p>
+        <p>
+          The percentage of time a data center (or the services running in it)
+          is actually operational, as opposed to down for maintenance or an
+          outage. Even "99.99% uptime" still allows for roughly 53 minutes of
+          downtime a year.
+        </p>
       </div>
       <div class="term">
         <h3>Edge Data Center</h3>
-        <p>A smaller facility placed closer to the people or devices using it, to reduce latency — as opposed to a giant, centralized campus that may be hundreds of miles from its users.</p>
+        <p>
+          A smaller facility placed closer to the people or devices using it, to
+          reduce latency — as opposed to a giant, centralized campus that may be
+          hundreds of miles from its users.
+        </p>
       </div>
       <div class="term">
         <h3>Sovereign AI / Sovereign Cloud</h3>
-        <p>The push by individual countries to build or control their own AI infrastructure and data centers domestically, rather than depending entirely on foreign-owned cloud providers.</p>
+        <p>
+          The push by individual countries to build or control their own AI
+          infrastructure and data centers domestically, rather than depending
+          entirely on foreign-owned cloud providers.
+        </p>
       </div>
       <div class="term">
         <h3>AI Factory</h3>
-        <p>A marketing and industry term (popularized by Nvidia) for a data center purpose-built around AI computation, framed less like a traditional IT facility and more like an industrial plant that manufactures "intelligence" as its output.</p>
+        <p>
+          A marketing and industry term (popularized by Nvidia) for a data
+          center purpose-built around AI computation, framed less like a
+          traditional IT facility and more like an industrial plant that
+          manufactures "intelligence" as its output.
+        </p>
       </div>
     </section>
 
     <section class="category" id="enviro" style="--cat-color:#3c7a4e">
       <h2>Environment &amp; Sustainability</h2>
-      <p class="cat-desc">Terms that come up around the resource footprint of AI data centers.</p>
+      <p class="cat-desc">
+        Terms that come up around the resource footprint of AI data centers.
+      </p>
 
       <div class="term">
         <h3>Carbon-Free Energy</h3>
-        <p>Electricity generated without direct carbon emissions — including renewables like wind and solar, as well as nuclear power. Many operators have made public pledges to run on carbon-free power.</p>
+        <p>
+          Electricity generated without direct carbon emissions — including
+          renewables like wind and solar, as well as nuclear power. Many
+          operators have made public pledges to run on carbon-free power.
+        </p>
       </div>
       <div class="term">
         <h3>Renewable Energy Credit (REC)</h3>
-        <p>A certificate representing one unit of renewable electricity generated somewhere on the grid. Companies buy RECs to offset their electricity use on paper, even if the actual power reaching their data center isn't directly renewable.</p>
+        <p>
+          A certificate representing one unit of renewable electricity generated
+          somewhere on the grid. Companies buy RECs to offset their electricity
+          use on paper, even if the actual power reaching their data center
+          isn't directly renewable.
+        </p>
       </div>
       <div class="term">
         <h3>Small Modular Reactor (SMR)</h3>
-        <p>A newer, smaller class of nuclear reactor designed to be manufactured in factories and deployed faster and more cheaply than traditional nuclear plants — several tech companies have signed deals to use SMRs to power future AI data centers.</p>
+        <p>
+          A newer, smaller class of nuclear reactor designed to be manufactured
+          in factories and deployed faster and more cheaply than traditional
+          nuclear plants — several tech companies have signed deals to use SMRs
+          to power future AI data centers.
+        </p>
       </div>
       <div class="term">
         <h3>Water Consumption</h3>
-        <p>The actual volume of water used for cooling, which can be substantial for large facilities using evaporative cooling — a source of local community concern in water-stressed areas.</p>
+        <p>
+          The actual volume of water used for cooling, which can be substantial
+          for large facilities using evaporative cooling — a source of local
+          community concern in water-stressed areas.
+        </p>
       </div>
     </section>
 
     <p class="glossary-footnote">
-      Compiled for a general, non-technical reader. Terminology in this space evolves quickly as the industry grows — treat this as a starting reference rather than an exhaustive or permanently up-to-date list.
+      Compiled for a general, non-technical reader. Terminology in this space
+      evolves quickly as the industry grows — treat this as a starting reference
+      rather than an exhaustive or permanently up-to-date list.
     </p>
 
-    <button id="scroll-top-btn" class="scroll-top-btn" aria-label="Scroll to top" title="Scroll to top">↑</button>
-
+    <button
+      id="scroll-top-btn"
+      class="scroll-top-btn"
+      aria-label="Scroll to top"
+      title="Scroll to top">↑</button
+    >
   </div>
 
   <style>
@@ -436,8 +724,12 @@ import Layout from '../layouts/Layout.astro';
       font-style: italic;
     }
 
-    .glossary-page .term.hidden { display: none; }
-    section.category.hidden { display: none; }
+    .glossary-page .term.hidden {
+      display: none;
+    }
+    section.category.hidden {
+      display: none;
+    }
 
     .no-results {
       display: none;
@@ -474,7 +766,10 @@ import Layout from '../layouts/Layout.astro';
       opacity: 0;
       visibility: hidden;
       transform: translateY(0.5rem);
-      transition: opacity 0.25s ease, transform 0.25s ease, background 0.2s ease;
+      transition:
+        opacity 0.25s ease,
+        transform 0.25s ease,
+        background 0.2s ease;
       z-index: 50;
     }
     .scroll-top-btn.visible {
@@ -498,44 +793,46 @@ import Layout from '../layouts/Layout.astro';
   <script>
     function filterGlossaryTerms(query) {
       const q = query.trim().toLowerCase();
-      const sections = document.querySelectorAll('.glossary-page section.category');
+      const sections = document.querySelectorAll(
+        ".glossary-page section.category",
+      );
       let anyVisible = false;
 
       sections.forEach((section) => {
-        const terms = section.querySelectorAll('.term');
+        const terms = section.querySelectorAll(".term");
         let sectionHasMatch = false;
 
         terms.forEach((term) => {
-          const text = term.textContent?.toLowerCase() ?? '';
-          const matches = q === '' || text.includes(q);
-          term.classList.toggle('hidden', !matches);
+          const text = term.textContent?.toLowerCase() ?? "";
+          const matches = q === "" || text.includes(q);
+          term.classList.toggle("hidden", !matches);
           if (matches) sectionHasMatch = true;
         });
 
-        section.classList.toggle('hidden', !sectionHasMatch);
+        section.classList.toggle("hidden", !sectionHasMatch);
         if (sectionHasMatch) anyVisible = true;
       });
 
-      const noResults = document.getElementById('no-results');
-      if (noResults) noResults.style.display = anyVisible ? 'none' : 'block';
+      const noResults = document.getElementById("no-results");
+      if (noResults) noResults.style.display = anyVisible ? "none" : "block";
     }
 
-    const searchInput = document.getElementById('glossary-search');
-    searchInput?.addEventListener('input', (e) => {
+    const searchInput = document.getElementById("glossary-search");
+    searchInput?.addEventListener("input", (e) => {
       filterGlossaryTerms(e.target.value);
     });
 
     // Scroll-to-top button: fade in after scrolling down, smooth-scroll to top on click.
-    const scrollTopBtn = document.getElementById('scroll-top-btn');
+    const scrollTopBtn = document.getElementById("scroll-top-btn");
     if (scrollTopBtn) {
       const toggleVisibility = () => {
-        scrollTopBtn.classList.toggle('visible', window.scrollY > 400);
+        scrollTopBtn.classList.toggle("visible", window.scrollY > 400);
       };
-      window.addEventListener('scroll', toggleVisibility, { passive: true });
+      window.addEventListener("scroll", toggleVisibility, { passive: true });
       toggleVisibility();
 
-      scrollTopBtn.addEventListener('click', () => {
-        window.scrollTo({ top: 0, behavior: 'smooth' });
+      scrollTopBtn.addEventListener("click", () => {
+        window.scrollTo({ top: 0, behavior: "smooth" });
       });
     }
   </script>
