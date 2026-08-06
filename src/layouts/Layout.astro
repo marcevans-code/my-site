@@ -2,6 +2,12 @@
 const { title } = Astro.props;
 import "@fontsource/lato/400.css";
 import "@fontsource/lato/700.css";
+import StayInformedPopup from "../components/StayInformedPopup.astro";
+
+// Don't show the "Stay Informed" popup on the Stay Informed page itself —
+// the visitor is already looking at both forms it links to.
+const pathname = Astro.url.pathname.replace(/\/$/, "") || "/";
+const showStayInformedPopup = pathname !== "/stay-informed";
 
 // Auto-discover Morning Briefing pages so new ones show up in the nav
 // without editing this file. Sorted newest first by the date in the filename.
@@ -864,6 +870,8 @@ const briefings = Object.keys(briefingModules)
       </div>
       <p>© 2026 Power Grab TX. All Rights Reserved.</p>
     </footer>
+
+    {showStayInformedPopup && <StayInformedPopup />}
 
   <script>
   const hamburger = document.getElementById("hamburger");

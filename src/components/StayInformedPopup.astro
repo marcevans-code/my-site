@@ -1,0 +1,231 @@
+---
+// Timed popup that nudges visitors toward the Morning Briefing signup
+// or the contact form, both on /stay-informed.
+//
+// Behavior:
+// - Appears 30s after page load.
+// - Clicking outside the box, the × button, "No thanks", Escape, or a
+//   CTA link all dismiss it and snooze it (via localStorage) for 14 days.
+// - Rendered on every page except /stay-informed itself (see Layout.astro).
+---
+
+<div id="pgtx-popup-overlay" class="pgtx-popup-overlay" hidden>
+  <div
+    class="pgtx-popup-box"
+    role="dialog"
+    aria-modal="true"
+    aria-labelledby="pgtx-popup-heading"
+  >
+    <button
+      type="button"
+      class="pgtx-popup-close"
+      id="pgtx-popup-close"
+      aria-label="Close"
+    >&times;</button>
+
+    <h2 id="pgtx-popup-heading">Stay ahead of the grid</h2>
+    <p class="pgtx-popup-sub">
+      Get the Morning Briefing in your inbox, or reach out directly —
+      we read every message.
+    </p>
+
+    <div class="pgtx-popup-actions">
+      <a href="/stay-informed#newsletter" class="pgtx-popup-btn-primary">
+        Get the Morning Briefing
+      </a>
+      <a href="/stay-informed#contact" class="pgtx-popup-btn-secondary">
+        Contact Us
+      </a>
+    </div>
+
+    <button type="button" class="pgtx-popup-dismiss" id="pgtx-popup-dismiss">
+      No thanks
+    </button>
+  </div>
+</div>
+
+<style>
+  .pgtx-popup-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(10, 20, 40, 0.55);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
+    z-index: 500;
+    opacity: 0;
+    transition: opacity 0.25s ease;
+  }
+  .pgtx-popup-overlay.pgtx-visible {
+    opacity: 1;
+  }
+  .pgtx-popup-overlay[hidden] {
+    display: none;
+  }
+
+  .pgtx-popup-box {
+    position: relative;
+    background: #fff;
+    border-radius: 14px;
+    max-width: 440px;
+    width: 100%;
+    padding: 2.2rem 2rem 1.6rem;
+    text-align: center;
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.25);
+    transform: translateY(12px) scale(0.97);
+    transition: transform 0.25s ease;
+  }
+  .pgtx-popup-overlay.pgtx-visible .pgtx-popup-box {
+    transform: translateY(0) scale(1);
+  }
+
+  .pgtx-popup-close {
+    position: absolute;
+    top: 0.6rem;
+    right: 0.8rem;
+    background: none;
+    border: none;
+    font-size: 1.6rem;
+    line-height: 1;
+    color: #888;
+    cursor: pointer;
+    padding: 0.2rem;
+  }
+  .pgtx-popup-close:hover {
+    color: #1a1a1a;
+  }
+
+  #pgtx-popup-heading {
+    font-family: "Lato", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: #1a1a1a;
+    margin-bottom: 0.6rem;
+    padding-right: 1rem;
+  }
+
+  .pgtx-popup-sub {
+    font-size: 1rem;
+    color: #444;
+    line-height: 1.6;
+    margin-bottom: 1.6rem;
+  }
+
+  .pgtx-popup-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+    margin-bottom: 1rem;
+  }
+
+  .pgtx-popup-btn-primary,
+  .pgtx-popup-btn-secondary {
+    display: inline-block;
+    padding: 0.8rem 1.8rem;
+    border-radius: 10px;
+    font-size: 1.05rem;
+    font-weight: 600;
+    text-decoration: none;
+  }
+
+  .pgtx-popup-btn-primary {
+    background: #4a90c8;
+    color: #fff;
+  }
+  .pgtx-popup-btn-primary:hover {
+    background: #357ab5;
+    text-decoration: none;
+  }
+
+  .pgtx-popup-btn-secondary {
+    background: #fff;
+    color: #1a4a8a;
+    border: 2px solid #1a4a8a;
+    padding: 0.75rem 1.8rem;
+  }
+  .pgtx-popup-btn-secondary:hover {
+    background: #f4f8fc;
+    text-decoration: none;
+  }
+
+  .pgtx-popup-dismiss {
+    background: none;
+    border: none;
+    font-size: 0.85rem;
+    color: #888;
+    cursor: pointer;
+    text-decoration: underline;
+    padding: 0.2rem;
+  }
+  .pgtx-popup-dismiss:hover {
+    color: #555;
+  }
+</style>
+
+<script>
+  const SHOW_DELAY_MS = 30_000;
+  const SNOOZE_DAYS = 14;
+  const STORAGE_KEY = "pgtxPopupDismissedUntil";
+
+  const overlay = document.getElementById("pgtx-popup-overlay");
+  const closeBtn = document.getElementById("pgtx-popup-close");
+  const dismissBtn = document.getElementById("pgtx-popup-dismiss");
+
+  if (overlay && closeBtn && dismissBtn) {
+    function alreadySnoozed() {
+      try {
+        const until = Number(localStorage.getItem(STORAGE_KEY));
+        return Number.isFinite(until) && Date.now() < until;
+      } catch {
+        // localStorage unavailable (private browsing, etc.) — just show it.
+        return false;
+      }
+    }
+
+    function snooze() {
+      try {
+        const until = Date.now() + SNOOZE_DAYS * 24 * 60 * 60 * 1000;
+        localStorage.setItem(STORAGE_KEY, String(until));
+      } catch {
+        // Ignore — worst case it shows again next visit.
+      }
+    }
+
+    function onKeydown(e) {
+      if (e.key === "Escape") hidePopup(true);
+    }
+
+    function hidePopup(remember) {
+      overlay.classList.remove("pgtx-visible");
+      setTimeout(() => overlay.setAttribute("hidden", ""), 250);
+      if (remember) snooze();
+      document.removeEventListener("keydown", onKeydown);
+    }
+
+    function showPopup() {
+      if (alreadySnoozed()) return;
+      overlay.removeAttribute("hidden");
+      // Wait a frame so the opacity/transform transition actually runs.
+      requestAnimationFrame(() => overlay.classList.add("pgtx-visible"));
+      document.addEventListener("keydown", onKeydown);
+    }
+
+    // Click on the backdrop (not the box itself) closes it.
+    overlay.addEventListener("click", (e) => {
+      if (e.target === overlay) hidePopup(true);
+    });
+    closeBtn.addEventListener("click", () => hidePopup(true));
+    dismissBtn.addEventListener("click", () => hidePopup(true));
+
+    // A CTA click is heading to /stay-informed already — snooze so it
+    // doesn't pop back up right after they land there.
+    overlay.querySelectorAll("a").forEach((a) => {
+      a.addEventListener("click", () => snooze());
+    });
+
+    if (!alreadySnoozed()) {
+      setTimeout(showPopup, SHOW_DELAY_MS);
+    }
+  }
+</script>
