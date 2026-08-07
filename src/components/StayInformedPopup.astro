@@ -168,11 +168,21 @@
   const SNOOZE_DAYS = 14;
   const STORAGE_KEY = "pgtxPopupDismissedUntil";
 
-  const overlay = document.getElementById("pgtx-popup-overlay");
-  const closeBtn = document.getElementById("pgtx-popup-close");
-  const dismissBtn = document.getElementById("pgtx-popup-dismiss");
+  const HIDE_TRANSITION_MS = 250; // keep in sync with the .pgtx-popup-overlay opacity transition
+
+  // Cast past `HTMLElement | null`: the guard below already covers the
+  // runtime case where the markup is missing these ids, but TypeScript
+  // can't see that guard's narrowing inside the nested functions and
+  // timer/rAF callbacks further down, so it would otherwise flag every
+  // later `overlay.foo()` as "possibly null".
+  const overlay = document.getElementById("pgtx-popup-overlay") as HTMLElement;
+  const closeBtn = document.getElementById("pgtx-popup-close") as HTMLElement;
+  const dismissBtn = document.getElementById("pgtx-popup-dismiss") as HTMLElement;
 
   if (overlay && closeBtn && dismissBtn) {
+    let hideTimeoutId: ReturnType<typeof setTimeout> | undefined;
+    let keydownController: AbortController | null = null;
+
     function alreadySnoozed() {
       try {
         const until = Number(localStorage.getItem(STORAGE_KEY));
@@ -192,23 +202,37 @@
       }
     }
 
-    function onKeydown(e) {
-      if (e.key === "Escape") hidePopup(true);
-    }
-
-    function hidePopup(remember) {
+    function hidePopup(remember: boolean) {
       overlay.classList.remove("pgtx-visible");
-      setTimeout(() => overlay.setAttribute("hidden", ""), 250);
+      clearTimeout(hideTimeoutId);
+      hideTimeoutId = setTimeout(
+        () => overlay.setAttribute("hidden", ""),
+        HIDE_TRANSITION_MS
+      );
       if (remember) snooze();
-      document.removeEventListener("keydown", onKeydown);
+      keydownController?.abort();
+      keydownController = null;
     }
 
     function showPopup() {
       if (alreadySnoozed()) return;
+      clearTimeout(hideTimeoutId);
       overlay.removeAttribute("hidden");
-      // Wait a frame so the opacity/transform transition actually runs.
-      requestAnimationFrame(() => overlay.classList.add("pgtx-visible"));
-      document.addEventListener("keydown", onKeydown);
+      // Wait two frames: the first commits the display-change layout, the
+      // second adds the class so the transition has a starting frame to
+      // animate from (a single rAF can fire before the initial style
+      // paints, causing the transition to snap instead of animate).
+      requestAnimationFrame(() => {
+        requestAnimationFrame(() => overlay.classList.add("pgtx-visible"));
+      });
+      keydownController = new AbortController();
+      document.addEventListener(
+        "keydown",
+        (e) => {
+          if (e.key === "Escape") hidePopup(true);
+        },
+        { signal: keydownController.signal }
+      );
     }
 
     // Click on the backdrop (not the box itself) closes it.
