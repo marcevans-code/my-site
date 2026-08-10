@@ -16,8 +16,20 @@ const posts = allPosts.sort(
     <p class="posts-intro">
       Stories from Texans about the grid, AI data centers, and utility bills in their own
       communities. Every submission is reviewed before it's published.
-      <a href="/blog/submit">Share your story →</a>
     </p>
+
+    <div class="blog-engage-cta">
+      <h2>Why Your Story Matters</h2>
+      <p>
+        Regulators can't manage what they don't know about. Every substation going up
+        overnight, every water permit dispute, every utility bill that doesn't add up is a
+        data point Texans deserve to see — and the people closest to it are usually the
+        first to notice. When you share what you're seeing, you're not just telling a
+        story. You're helping build a public record that keeps the AI data center boom
+        honest.
+      </p>
+      <a href="/blog/submit" class="btn">Share Your Story</a>
+    </div>
 
     <div class="posts-grid">
       {posts.map((post) => (
@@ -40,3 +52,26 @@ const posts = allPosts.sort(
     </div>
   </div>
 </Layout>
+<style>
+  .blog-engage-cta {
+    background: #1a3a6a;
+    color: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    margin-bottom: 2.5rem;
+    text-align: center;
+  }
+  .blog-engage-cta h2 {
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-bottom: 0.8rem;
+  }
+  .blog-engage-cta p {
+    color: #fff;
+    line-height: 1.7;
+    margin-bottom: 1.3rem;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+</style>
