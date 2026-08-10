@@ -152,3 +152,105 @@ npx wrangler kv key get "sub:<id>" --binding=BLOG_SUBMISSIONS_KV --remote
 - Renaming the section (e.g. "Community Voices" instead of "Blog") just means editing the
   page titles/headings and, if you want the URL to change too, renaming the
   `src/pages/blog` folder — happy to do that if you'd rather it be called something else.
+
+---
+
+# Comments
+
+Every blog post now has a comments section underneath it. Comments post live immediately
+after passing automated checks — you don't approve each one — but you get pulled in
+automatically if something's actually a problem, and you can browse/delete anything,
+anytime, from one page.
+
+## How it works
+
+1. A reader fills out the comment form at the bottom of a post. It's checked with the same
+   Turnstile + honeypot + rate limit pattern as everything else, then run through a simple
+   keyword/spam filter.
+2. **Passes the filter** → posts immediately, visible to everyone right away.
+3. **Trips the filter** (spam keywords, multiple links, profanity) → held, not shown
+   publicly, and you get an email with a review link — same one-click-link style as blog
+   post approval, with **Publish** and **Delete** buttons.
+4. **Any reader can click "Report"** under any comment. That doesn't hide it, but it
+   immediately emails you a review link with a **Delete** button, so you can pull it if it's
+   genuinely a problem.
+5. **You can also just browse everything, anytime** at a private admin URL (see setup below)
+   — every comment across every post, newest first, each with its own Delete button. No
+   approval required to check it, and nothing is required of you regularly — it's there for
+   whenever you want to skim.
+
+Nothing here required changing how blog post moderation works — that's untouched.
+
+## One-time setup
+
+### 1. Create the comments KV namespace
+
+```
+cd ~/powergrabtx-forms-worker
+npx wrangler kv namespace create COMMENTS_KV
+```
+
+Same as before — say yes when it offers to fill in the id for you.
+
+### 2. Set the admin key
+
+This is the "password" for your private browse-all-comments page. I generated one for you
+already, so there's no website signup for this step — just run this one line, typed by hand
+(not copied, to avoid the clipboard issue from earlier):
+
+```
+npx wrangler secret put ADMIN_KEY <<< "3ff54f7f32cd7d91bd10aff4493136c284b36c77a3777f59bdf5c00f846afd06"
+```
+
+### 3. Deploy
+
+```
+npx wrangler deploy
+```
+
+### 4. Push the Astro changes
+
+```
+cd ~/my-site
+git pull
+git add .
+git commit -m "Add comments to blog posts"
+git push origin main
+```
+
+## Your private comments page
+
+Bookmark this — it's the one URL that shows you every comment on the site with a Delete
+button next to each:
+
+```
+https://forms-worker.marc-897.workers.dev/comments/admin?key=3ff54f7f32cd7d91bd10aff4493136c284b36c77a3777f59bdf5c00f846afd06
+```
+
+Treat that link like a password — anyone with it can delete comments. Don't post it
+publicly or forward it. If it ever leaks, generate a new random value (ask me, or run
+`openssl rand -hex 32` yourself) and redo step 2 above with the new value.
+
+## Testing it end-to-end
+
+1. Visit a published post (e.g. `/blog/welcome-to-the-community-blog`) and post a test
+   comment. It should appear immediately below the form.
+2. Click **Report** on it. You should get an email within a few seconds with a review
+   link — open it and click **Delete**, then refresh the post page to confirm it's gone.
+3. Post another test comment containing an obvious spam word (e.g. "viagra") — it should
+   *not* appear on the page, and you should get a "held for review" email instead. Open
+   that link and try **Publish & Show Comment**, then check it now appears on the post.
+4. Visit your admin browse page (above) and confirm you can see all your test comments
+   there, and that Delete works from that page too.
+5. Clean up any test comments when you're done.
+
+## Notes
+
+- The spam/profanity filter is a short, plain-English word list living in
+  `powergrabtx-forms-worker/src/comments.js` (the `BLOCKED_WORDS` array near the top) — easy
+  to add words to later if something keeps slipping through.
+- Comments don't rebuild the site or touch GitHub at all — they live entirely in the
+  `COMMENTS_KV` namespace and load into the page live via a small script, which is why they
+  show up instantly instead of waiting on a Cloudflare Pages build.
+- This is currently only wired into `/blog/*` posts, not the `/posts/*` articles — let me
+  know if you'd like those to have comments too.

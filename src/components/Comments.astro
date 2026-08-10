@@ -1,0 +1,223 @@
+---
+// Reads/writes go straight to the forms-worker (not through Astro/Pages),
+// since comments need to appear without a full site rebuild. See
+// BLOG-SETUP-AND-MODERATION.md for how the moderation side of this works.
+const { slug } = Astro.props;
+---
+<section class="comments-section" id="comments">
+  <h2>Comments</h2>
+  <div id="comments-list" class="comments-list">
+    <p class="comments-loading">Loading comments…</p>
+  </div>
+
+  <form id="comment-form" class="comment-form">
+    <input type="text" name="company" style="display:none" tabindex="-1" autocomplete="off" />
+    <div class="field">
+      <label>Your Name</label>
+      <input type="text" name="author_name" placeholder="Leave blank to post as Anonymous" maxlength="80" />
+    </div>
+    <div class="field">
+      <label>Comment <span class="required">*</span></label>
+      <textarea name="body" placeholder="Join the conversation..." required rows="4" maxlength="2000"></textarea>
+    </div>
+    <div class="cf-turnstile" data-sitekey="0x4AAAAAADwCpEAeGLLtdeFU"></div>
+    <button type="submit" class="btn">Post Comment</button>
+    <p id="comment-status" class="comment-status" hidden></p>
+  </form>
+</section>
+
+<script define:vars={{ slug }}>
+  const COMMENTS_API = "https://forms-worker.marc-897.workers.dev";
+  const listEl = document.getElementById("comments-list");
+  const form = document.getElementById("comment-form");
+  const statusEl = document.getElementById("comment-status");
+
+  function escapeHtml(str) {
+    const div = document.createElement("div");
+    div.textContent = str;
+    return div.innerHTML;
+  }
+
+  function commentHtml(c) {
+    const date = new Date(c.createdAt).toLocaleDateString("en-US", {
+      month: "long",
+      day: "numeric",
+      year: "numeric",
+    });
+    return `<div class="comment" data-id="${escapeHtml(c.id)}">
+      <div class="comment-meta">
+        <strong>${escapeHtml(c.authorName)}</strong>
+        <span>${date}</span>
+      </div>
+      <p class="comment-body">${escapeHtml(c.body)}</p>
+      <button type="button" class="comment-report" data-id="${escapeHtml(c.id)}">Report</button>
+    </div>`;
+  }
+
+  function renderComments(comments) {
+    if (!comments.length) {
+      listEl.innerHTML = '<p class="comments-empty">No comments yet — be the first to share your thoughts.</p>';
+      return;
+    }
+    listEl.innerHTML = comments.map(commentHtml).join("");
+  }
+
+  async function loadComments() {
+    try {
+      const res = await fetch(`${COMMENTS_API}/comments?slug=${encodeURIComponent(slug)}`);
+      const data = await res.json();
+      renderComments(data.comments || []);
+    } catch {
+      listEl.innerHTML = "<p class=\"comments-empty\">Couldn't load comments right now — try refreshing.</p>";
+    }
+  }
+
+  listEl.addEventListener("click", async (e) => {
+    const btn = e.target.closest(".comment-report");
+    if (!btn || btn.disabled) return;
+    btn.disabled = true;
+    btn.textContent = "Reported";
+    try {
+      await fetch(`${COMMENTS_API}/comment-report`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ slug, id: btn.dataset.id }),
+      });
+    } catch {
+      // Best-effort from the reader's side — nothing to show them either way.
+    }
+  });
+
+  form.addEventListener("submit", async (e) => {
+    e.preventDefault();
+    const submitBtn = form.querySelector('button[type="submit"]');
+    submitBtn.disabled = true;
+    statusEl.hidden = true;
+
+    const turnstileResponse = form.querySelector('[name="cf-turnstile-response"]')?.value || "";
+
+    const payload = {
+      slug,
+      author_name: form.author_name.value,
+      body: form.body.value,
+      company: form.company.value,
+      "cf-turnstile-response": turnstileResponse,
+    };
+
+    try {
+      const res = await fetch(`${COMMENTS_API}/comment-submit`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payload),
+      });
+      const data = await res.json();
+
+      if (!data.ok) {
+        statusEl.textContent = data.error || "Something went wrong — please try again.";
+        statusEl.hidden = false;
+      } else if (data.status === "held") {
+        statusEl.textContent = "Thanks — your comment is awaiting a quick review and will appear once approved.";
+        statusEl.hidden = false;
+        form.reset();
+      } else {
+        form.reset();
+        const emptyMsg = listEl.querySelector(".comments-empty");
+        if (emptyMsg) emptyMsg.remove();
+        listEl.insertAdjacentHTML("beforeend", commentHtml(data.comment));
+      }
+
+      if (window.turnstile) {
+        window.turnstile.reset();
+      }
+    } catch {
+      statusEl.textContent = "Something went wrong — please try again.";
+      statusEl.hidden = false;
+    } finally {
+      submitBtn.disabled = false;
+    }
+  });
+
+  loadComments();
+</script>
+
+<style>
+  .comments-section {
+    max-width: 800px;
+    margin: 3rem auto 0;
+    padding: 0 2rem 3rem;
+  }
+  .comments-section h2 {
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-bottom: 1.2rem;
+  }
+  .comments-list {
+    margin-bottom: 2rem;
+  }
+  .comment {
+    border-bottom: 1px solid #eee;
+    padding: 1rem 0;
+  }
+  .comment-meta {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.85rem;
+    color: #666;
+    margin-bottom: 0.4rem;
+  }
+  .comment-body {
+    font-size: 0.98rem;
+    line-height: 1.6;
+    color: #222;
+    margin-bottom: 0.4rem;
+    white-space: pre-wrap;
+  }
+  .comment-report {
+    background: none;
+    border: none;
+    color: #888;
+    font-size: 0.8rem;
+    text-decoration: underline;
+    cursor: pointer;
+    padding: 0;
+  }
+  .comment-report:hover {
+    color: #555;
+  }
+  .comment-report:disabled {
+    cursor: default;
+    text-decoration: none;
+  }
+  .comments-empty,
+  .comments-loading {
+    color: #666;
+    font-size: 0.95rem;
+  }
+  .comment-form .field {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    margin-bottom: 1rem;
+  }
+  .comment-form label {
+    font-size: 0.9rem;
+    font-weight: 600;
+  }
+  .comment-form input,
+  .comment-form textarea {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 0.6rem 0.8rem;
+    font-size: 1rem;
+    font-family: "Lato", sans-serif;
+    width: 100%;
+  }
+  .comment-form textarea {
+    resize: vertical;
+  }
+  .comment-status {
+    margin-top: 0.8rem;
+    font-size: 0.9rem;
+    color: #1a4a8a;
+  }
+</style>
