@@ -1,0 +1,35 @@
+---
+import { getCollection, render } from "astro:content";
+import Layout from "../../layouts/Layout.astro";
+
+export async function getStaticPaths() {
+  const posts = await getCollection("blog");
+  return posts.map((post) => ({
+    params: { slug: post.id },
+    props: { post },
+  }));
+}
+
+const { post } = Astro.props;
+const { Content } = await render(post);
+---
+<Layout title={`${post.data.title} — Power Grab TX`} description={post.data.summary}>
+  <div class="post-page">
+    <div class="post-content">
+      <h1>{post.data.title}</h1>
+      <p class="post-card-date">
+        {post.data.pubDate.toLocaleDateString("en-US", {
+          month: "long",
+          day: "numeric",
+          year: "numeric",
+        })}
+        {" · "}{post.data.author}
+      </p>
+      <Content />
+    </div>
+    <div class="post-cta">
+      <p>Have your own story about the grid, data centers, or utility bills in your area?</p>
+      <a href="/blog/submit" class="btn">Share Your Story</a>
+    </div>
+  </div>
+</Layout>

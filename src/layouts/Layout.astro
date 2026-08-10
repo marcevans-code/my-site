@@ -9,9 +9,12 @@ import "@fontsource/lato/700.css";
 import StayInformedPopup from "../components/StayInformedPopup.astro";
 
 // Don't show the "Stay Informed" popup on the Stay Informed page itself —
-// the visitor is already looking at both forms it links to.
+// the visitor is already looking at both forms it links to. Also skip it
+// on the blog submission form so a mid-form interruption doesn't cost us
+// a submission.
 const pathname = Astro.url.pathname.replace(/\/$/, "") || "/";
-const showStayInformedPopup = pathname !== "/stay-informed";
+const showStayInformedPopup =
+  pathname !== "/stay-informed" && pathname !== "/blog/submit";
 
 // Auto-discover Morning Briefing pages so new ones show up in the nav
 // without editing this file. Sorted newest first by the date in the filename.
@@ -690,6 +693,7 @@ const briefings = Object.keys(briefingModules)
         <a href="/about">About</a>
         <a href="/stay-informed">Stay Informed</a>
         <a href="/posts">Posts</a>
+        <a href="/blog">Blog</a>
       </nav>
     </header>
 

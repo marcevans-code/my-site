@@ -1,0 +1,96 @@
+---
+import Layout from "../../layouts/Layout.astro";
+---
+<Layout
+  title="Share Your Story — Power Grab TX"
+  description="Submit a post for the Power Grab TX Community Blog. Every submission is reviewed before it's published."
+>
+  <div class="page-header">
+    <h2>Share Your Story</h2>
+    <p>
+      Seeing something worth telling other Texans about — a new substation, a utility bill
+      that doesn't add up, a public meeting about a data center project? Tell us about it
+      below. Every submission is read by a real person before anything is published, so it
+      may take a little while to appear.
+    </p>
+  </div>
+
+  <div class="form-section">
+    <form action="https://forms-worker.marc-897.workers.dev/blog-submit" method="POST">
+      <input type="text" name="company" style="display:none" tabindex="-1" autocomplete="off" />
+
+      <div class="field">
+        <label>Post Title <span class="required">*</span></label>
+        <input type="text" name="title" placeholder="Give your post a title" required maxlength="200" />
+      </div>
+
+      <div class="form-row">
+        <div class="field">
+          <label>Your Name</label>
+          <input type="text" name="author_name" placeholder="Leave blank to post anonymously" maxlength="100" />
+        </div>
+        <div class="field">
+          <label>Your Email <span class="required">*</span></label>
+          <input type="email" name="email" placeholder="Kept private — never published" required />
+        </div>
+      </div>
+
+      <div class="field">
+        <label>Your Story <span class="required">*</span></label>
+        <textarea name="body" placeholder="Tell us what you're seeing..." required rows="10"></textarea>
+      </div>
+
+      <div class="cf-turnstile" data-sitekey="0x4AAAAAADwCpEAeGLLtdeFU"></div>
+
+      <button type="submit" class="btn">Submit for Review</button>
+    </form>
+  </div>
+</Layout>
+<style>
+  .form-section {
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 0 2rem 3rem;
+  }
+  .form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+  @media (max-width: 600px) {
+    .form-row {
+      grid-template-columns: 1fr;
+    }
+  }
+  .field {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    margin-bottom: 1rem;
+  }
+  label {
+    font-size: 0.95rem;
+    font-weight: 600;
+  }
+  .required {
+    color: red;
+  }
+  input,
+  textarea {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 0.6rem 0.8rem;
+    font-size: 1rem;
+    font-family: "Lato", sans-serif;
+    width: 100%;
+  }
+  textarea {
+    resize: vertical;
+  }
+  input:focus,
+  textarea:focus {
+    outline: 2px solid #1a4a8a;
+    border-color: #1a4a8a;
+  }
+</style>

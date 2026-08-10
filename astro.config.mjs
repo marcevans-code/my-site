@@ -5,8 +5,9 @@ export default defineConfig({
   site: 'https://powergrabtx.com', // ← this is required
   integrations: [
     sitemap({
-      // Keep the noindex'd thank-you page out of the sitemap Google crawls.
-      filter: (page) => !page.includes('/thank-you'),
+      // Keep the noindex'd thank-you page, and the blog submission form,
+      // out of the sitemap Google crawls.
+      filter: (page) => !page.includes('/thank-you') && !page.includes('/blog/submit'),
     }),
   ],
   build: {

@@ -1,0 +1,42 @@
+---
+import { getCollection } from "astro:content";
+import Layout from "../../layouts/Layout.astro";
+
+const allPosts = await getCollection("blog");
+const posts = allPosts.sort(
+  (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
+);
+---
+<Layout
+  title="Community Blog — Power Grab TX"
+  description="Reader-submitted stories about the Texas grid, AI data centers, and utility costs — every post reviewed before it's published."
+>
+  <div class="posts-summary">
+    <h1>Community Blog</h1>
+    <p class="posts-intro">
+      Stories from Texans about the grid, AI data centers, and utility bills in their own
+      communities. Every submission is reviewed before it's published.
+      <a href="/blog/submit">Share your story →</a>
+    </p>
+
+    <div class="posts-grid">
+      {posts.map((post) => (
+        <div class="post-card">
+          <div class="post-card-body">
+            <p class="post-card-date">
+              {post.data.pubDate.toLocaleDateString("en-US", {
+                month: "long",
+                day: "numeric",
+                year: "numeric",
+              })}
+              {" · "}{post.data.author}
+            </p>
+            <h2><a href={`/blog/${post.id}`}>{post.data.title}</a></h2>
+            {post.data.summary && <p>{post.data.summary}</p>}
+            <a href={`/blog/${post.id}`} class="read-more">READ MORE →</a>
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</Layout>
