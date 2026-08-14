@@ -7,19 +7,27 @@
   },
   "scripts": {
     "dev": "astro dev",
+    "prebuild": "node scripts/build-tracker-pdf.mjs",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "tracker-pdf": "node scripts/build-tracker-pdf.mjs"
   },
   "dependencies": {
     "@astrojs/sitemap": "^3.7.3",
     "@fontsource/lato": "^5.2.7",
-    "astro": "^7.1.5"
+    "astro": "^7.1.5",
+    "pdfkit": "^0.19.1"
   },
   "devDependencies": {
     "wrangler": "^4.106.0"
   },
   "overrides": {
     "esbuild": "0.28.1"
+  },
+  "allowScripts": {
+    "esbuild@0.28.1": true,
+    "fsevents@2.3.3": true,
+    "workerd@1.20260811.1": true
   }
 }

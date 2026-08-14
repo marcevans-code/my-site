@@ -1,5 +1,46 @@
 ---
 import Layout from "../layouts/Layout.astro";
+
+// ─────────────────────────────────────────────────────────────
+// Pull today's (most recent) Morning Briefing straight from its
+// source file so the homepage preview never goes stale — no manual
+// daily edit needed here. Reads the title/description off the
+// <Layout ...> tag and the first "Today's Signal" pull-quote.
+// Uses a raw Vite glob import (bundle-safe) rather than Node's fs,
+// since fs paths resolved from import.meta.url break once Astro
+// bundles this frontmatter into dist/.
+// ─────────────────────────────────────────────────────────────
+const briefingSources = import.meta.glob("/src/pages/briefings/*.astro", {
+  eager: true,
+  query: "?raw",
+  import: "default",
+});
+const briefingEntries = Object.entries(briefingSources)
+  .map(([filePath, source]) => {
+    const match = filePath.match(/morning-briefing-(\d{4}-\d{2}-\d{2})\.astro$/);
+    return match ? { dateStr: match[1], source } : null;
+  })
+  .filter((b) => b !== null)
+  .sort((a, b) => b.dateStr.localeCompare(a.dateStr));
+
+let latestBriefing = null;
+if (briefingEntries.length > 0) {
+  const { dateStr, source } = briefingEntries[0];
+  const descMatch = source.match(/description="([^"]+)"/);
+  const signalMatch = source.match(/<strong>Today's Signal:<\/strong>\s*([^<]+)/);
+  const [y, m, d] = dateStr.split("-").map(Number);
+
+  latestBriefing = {
+    href: `/briefings/morning-briefing-${dateStr}`,
+    dateLabel: new Date(y, m - 1, d).toLocaleDateString("en-US", {
+      month: "long",
+      day: "numeric",
+      year: "numeric",
+    }),
+    description: descMatch ? descMatch[1] : "",
+    signal: signalMatch ? signalMatch[1].trim() : "",
+  };
+}
 ---
 
 <Layout title="Power Grab TX — Who's Really Paying for the AI Boom in Texas?">
@@ -11,10 +52,82 @@ import Layout from "../layouts/Layout.astro";
       communities. PowerGrab TX follows the money, the megawatts, and the impact
       on the people living next door.
     </p>
-    <a href="/stay-informed" class="btn">
-      Stay informed about AI's impact in Texas
+
+    <div class="hero-signup" id="hero-signup">
+      <p class="hero-signup-lead">
+        Enter your email to instantly download the free{" "}
+        <strong>2026 Texas AI Data Center Tracker Sheet</strong>{" "}
+        &mdash; plus join the weekday Morning Briefing.
+      </p>
+      <form
+        action="https://forms-worker.marc-897.workers.dev/newsletter"
+        method="POST"
+        class="hero-signup-form"
+      >
+        <input type="text" name="company" style="display:none" tabindex="-1" autocomplete="off" />
+        <div class="hero-signup-row">
+          <input
+            type="text"
+            name="first_name"
+            placeholder="First Name"
+            required
+            aria-label="First Name"
+          />
+          <input
+            type="email"
+            name="email"
+            placeholder="Email Address"
+            required
+            aria-label="Email Address"
+          />
+          <button type="submit" class="btn hero-signup-btn">Get the Free Tracker</button>
+        </div>
+        <div class="cf-turnstile" data-sitekey="0x4AAAAAADwCpEAeGLLtdeFU"></div>
+        <p class="hero-signup-fineprint">
+          Free instant download. Weekday mornings, no spam, unsubscribe anytime.
+        </p>
+      </form>
+      {/*
+        TODO(Marc): once you know your real subscriber count, swap this
+        line for something like "Join 1,200+ Texas residents, energy
+        watchdogs, and grid engineers." Don't invent a number before then.
+      */}
+      <p class="hero-social-proof">
+        Join Texas residents, energy watchdogs, and grid engineers staying
+        ahead of the boom.
+      </p>
+    </div>
+
+    <a href="/stay-informed#contact" class="hero-secondary-link">
+      Have a tip or a story? Contact us directly →
     </a>
   </section>
+
+  {latestBriefing && (
+    <section class="today-snapshot">
+      <div class="today-snapshot-inner">
+        <h2>📊 Today's Infrastructure Snapshot</h2>
+        <p class="today-snapshot-date">{latestBriefing.dateLabel}</p>
+        {latestBriefing.signal && (
+          <p class="today-snapshot-signal">
+            <strong>Today's Signal:</strong> {latestBriefing.signal}
+          </p>
+        )}
+        {latestBriefing.description && (
+          <p class="today-snapshot-desc">{latestBriefing.description}</p>
+        )}
+        <div class="today-snapshot-actions">
+          <a href={latestBriefing.href} class="btn">Read Today's Full Briefing →</a>
+        </div>
+        <div class="today-snapshot-cta">
+          <p>
+            Want the next Morning Briefing sent straight to your inbox?
+            <a href="#hero-signup">Subscribe free ↑</a>
+          </p>
+        </div>
+      </div>
+    </section>
+  )}
 
   <div class="intro">
     <p>
@@ -287,6 +400,127 @@ import Layout from "../layouts/Layout.astro";
       margin: 0 auto 1.5rem;
       line-height: 1.6;
     }
+
+    .hero-signup {
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.25);
+      border-radius: 12px;
+      max-width: 640px;
+      margin: 0 auto 1rem;
+      padding: 1.3rem 1.5rem;
+    }
+    .hero-signup-lead {
+      font-size: 1.05rem;
+      font-weight: 700;
+      margin-bottom: 0.9rem;
+      line-height: 1.5;
+    }
+    .hero-signup-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.6rem;
+      justify-content: center;
+    }
+    .hero-signup-row input {
+      flex: 1 1 180px;
+      min-width: 0;
+      border: none;
+      border-radius: 8px;
+      padding: 0.75rem 1rem;
+      font-size: 1rem;
+      font-family: "Lato", sans-serif;
+    }
+    .hero-signup-btn {
+      flex: 1 1 auto;
+      white-space: nowrap;
+    }
+    .hero-signup .cf-turnstile {
+      margin: 0.8rem auto 0;
+      display: flex;
+      justify-content: center;
+    }
+    .hero-signup-fineprint {
+      font-size: 0.8rem;
+      font-weight: 400;
+      opacity: 0.8;
+      margin: 0.6rem 0 0;
+    }
+    .hero-social-proof {
+      font-size: 0.9rem;
+      font-weight: 600;
+      opacity: 0.85;
+      margin: 0.8rem 0 0;
+    }
+    .hero-secondary-link {
+      display: inline-block;
+      margin-top: 0.5rem;
+      color: #fff;
+      opacity: 0.8;
+      font-size: 0.9rem;
+      font-weight: 600;
+    }
+    .hero-secondary-link:hover {
+      opacity: 1;
+    }
+
+    .today-snapshot {
+      background: #fff8f4;
+      border: 1px solid #e8c9b0;
+      border-radius: 15px;
+      margin: 1.5rem 0.5rem;
+      padding: 2rem;
+    }
+    .today-snapshot-inner {
+      max-width: 760px;
+      margin: 0 auto;
+      text-align: center;
+    }
+    .today-snapshot h2 {
+      color: #b03a1a;
+      margin-bottom: 0.3rem;
+    }
+    .today-snapshot-date {
+      font-size: 0.85rem;
+      color: #666;
+      margin-bottom: 1rem;
+    }
+    .today-snapshot-signal {
+      text-align: left;
+      background: #fff;
+      border-left: 4px solid #e05c2a;
+      padding: 0.8rem 1rem;
+      border-radius: 4px;
+      font-size: 0.95rem;
+      color: #3a2010;
+      margin-bottom: 1rem;
+    }
+    .today-snapshot-desc {
+      text-align: left;
+      font-size: 1rem;
+      color: #3a2010;
+      line-height: 1.6;
+      margin-bottom: 1.2rem;
+    }
+    .today-snapshot-actions {
+      margin-bottom: 1.2rem;
+    }
+    .today-snapshot-cta {
+      background: #1a1a2e;
+      border-radius: 10px;
+      padding: 0.9rem 1.2rem;
+    }
+    .today-snapshot-cta p {
+      color: #fff;
+      font-size: 0.95rem;
+      font-weight: 600;
+      margin: 0;
+    }
+    .today-snapshot-cta a {
+      color: #ffb08a;
+      font-weight: 700;
+      margin-left: 0.4rem;
+    }
+
     .intro {
       padding: 2rem 2rem 0;
       margin: 0 auto;

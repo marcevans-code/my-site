@@ -14,7 +14,21 @@ import Layout from "../layouts/Layout.astro";
       Your message has been received. We'll get back to you as soon as
       possible.
     </p>
-    <a href="/" class="btn">Back to Home</a>
+
+    <div class="thank-you-download">
+      <p class="thank-you-download-lead">
+        If you signed up for the Morning Briefing, here's your free download:
+      </p>
+      <a
+        href="/texas-data-center-tracker.pdf"
+        class="btn"
+        download
+      >
+        📄 Download the Texas AI Data Center Tracker Sheet
+      </a>
+    </div>
+
+    <a href="/" class="btn thank-you-home-btn">Back to Home</a>
   </div>
 </Layout>
 <style>
@@ -47,6 +61,27 @@ import Layout from "../layouts/Layout.astro";
         color: #555;
         margin-bottom: 2rem;
         line-height: 1.5;
+      }
+
+      .thank-you-download {
+        background: #fff8f4;
+        border: 1px solid #e8c9b0;
+        border-radius: 10px;
+        padding: 1.3rem 1.5rem;
+        margin-bottom: 1.5rem;
+      }
+      .thank-you-download-lead {
+        font-weight: 700;
+        color: #3a2010;
+        margin-bottom: 1rem;
+      }
+      .thank-you-home-btn {
+        background: transparent;
+        color: #1a4a8a;
+        border: 2px solid #1a4a8a;
+      }
+      .thank-you-home-btn:hover {
+        background: #f4f8fc;
       }
 
 </style>
