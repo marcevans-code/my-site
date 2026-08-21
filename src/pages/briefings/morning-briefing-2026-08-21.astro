@@ -1,0 +1,116 @@
+---
+import Layout from '../../layouts/Layout.astro';
+---
+<Layout
+  title="Morning Briefing - 08/21/26: Power Grab TX"
+  description="The PUC of Texas set a Dec. 10 audit deadline and Dec. 17 ERCOT report date, as Westlake's Circle T developer agreed to comply with the same rules."
+>
+  <div class="post-page">
+    <div class="post-content">
+      <h1>⭐ Morning Briefing — Texas &amp; DFW AI Data Centers, Grid, Land Use</h1>
+      <p class="briefing-subtitle">(Latest updates through August 21, 2026)</p>
+
+      <p class="top-story"><strong>Top Story:</strong> The Public Utility Commission of Texas put firm dates on its long-awaited data-center audit — a Dec. 10 project-verification deadline and a Dec. 17 ERCOT report to the commission — the same week Gov. Abbott's office confirmed the Westlake Circle T developer at the center of the Keller fight has agreed to comply with those same audit rules.</p>
+
+      <hr class="section-divider" />
+
+      <h2>📰 Today's News</h2>
+
+      <h3>1. 📅 PUC Puts a Real Calendar on the Data-Center Audit</h3>
+      <ul>
+        <li>The Public Utility Commission of Texas approved a plan Thursday setting a mid-December deadline for the project reviews Gov. Abbott ordered earlier this month, according to Bloomberg's report (republished by Communications Today): regulators will verify ownership documents, site access, and purchase orders for queued projects by Dec. 10, and ERCOT will file its report on which projects passed vetting at the PUC's Dec. 17 meeting.</li>
+        <li>ERCOT told the commission the initial "Batch Zero" review phase covers projects totaling 8.8 gigawatts of demand, with a separate list of 157 "medium" data-center and crypto projects (8,766 MW of capacity) also getting a community-impact report by Dec. 10; projects that clear the process could still come online as early as the first half of 2027, before accounting for delays.</li>
+        <li>Separately, Gov. Abbott's office confirmed this week that PowerHouse, the developer behind Westlake's contested Circle T data center, has agreed to comply with the state's audit requirements — with ERCOT saying that specific compliance review begins after Aug. 20, per the Fort Worth Star-Telegram.</li>
+      </ul>
+      <p class="signal"><strong>Today's Signal:</strong> This is the first time the audit Abbott ordered on Aug. 3 has had actual dates attached to it — and the fact that PowerHouse, the developer already fighting Keller in court, is one of the named compliant projects means the statewide regulatory timeline and the DFW-area legal fight are now running on the same clock.</p>
+
+      <h3>2. ⚡ A Small Nasdaq Miner Pivots to a 500 MW South Texas AI Campus</h3>
+      <ul>
+        <li>Azio AI Holdings (Nasdaq: AZIO) — a former electric-vehicle-ticker shell company that completed its rebrand into an AI-infrastructure platform in July — announced Thursday that it has named "Atlas One," the first development phase of its more-than-548-acre South Texas campus, "Project Atlas," which the company says is engineered for up to 500 megawatts of additional behind-the-meter natural gas power.</li>
+        <li>The company says roughly 11 MW of behind-the-meter power is already secured on-site, currently running about 6 MW of active Bitcoin-mining compute at close to 97.8% uptime, while a separate Master Services Agreement with AT&#38;T commits about $2.4 million to build dedicated fiber connectivity for the site's planned pivot toward AI/GPU hosting.</li>
+        <li>AZIO, a Houston-based company with a market cap of roughly $17 million, has separately disclosed a pipeline agreement for up to 128 Nvidia HGX B300 GPU systems; its stock fell more than 11% the day of the Atlas One announcement, and the planned 500 MW buildout remains contingent on additional generation, permitting, financing, and customer commitments that haven't yet been secured.</li>
+      </ul>
+      <p class="signal"><strong>Today's Signal:</strong> Atlas One is a reminder that the "crypto miner becomes AI landlord" pivot showing up at bigger Texas operators is also playing out at the smallest end of the Nasdaq — a $17 million company promising 500 MW is a useful gauge of how much of the state's on-site-gas-generation pipeline right now is still plan rather than steel in the ground.</p>
+
+      <p>Quiet today on new ERCOT interconnection filings, TCEQ air-permit activity, and land-use filings in the eight tracked DFW counties beyond the news above.</p>
+
+      <hr class="section-divider" />
+
+      <h2>📍 Today's Watch List</h2>
+      <p class="section-tagline">Actionable Signals for Friday, August 21</p>
+      <ul>
+        <li>The Dec. 10 verification deadline and Dec. 17 PUC meeting where ERCOT reports which Batch Zero projects passed audit</li>
+        <li>Whether PowerHouse's compliance holds up once its post-Aug. 20 audit review actually begins</li>
+        <li>The Aug. 26 Tarrant County injunction hearing that will decide whether Westlake's Circle T vote stays blocked</li>
+        <li>Whether Keller files its promised lawsuit against Westlake, and on what specific legal claims</li>
+        <li>Whether AZIO secures the additional generation, financing, and customer commitments its planned 500 MW South Texas buildout still needs beyond the initial 11 MW phase</li>
+        <li>Any new filings or public notices in the eight tracked DFW counties (Collin, Ellis, Johnson, Denton, Wise, Tarrant, Parker, Hood)</li>
+      </ul>
+
+      <div class="post-related">
+        <h3>Related Pages</h3>
+        <ul>
+          <li><a href="/trackers">AI Data Center Tracker</a> — The full running, dated record of Texas AI data center developments.</li>
+          <li><a href="/news">Latest News</a> — Updates on Texas energy, AI expansion, and infrastructure changes.</li>
+          <li><a href="/stay-informed">Stay Informed</a> — Get alerts and updates about developments affecting Texas communities.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</Layout>
+<style>
+  /* ══════════════════════════════════════════════════════════════
+       MOVE TO → src/pages/briefings/[slug].astro
+       Briefing-specific styles: subtitle, top-story lead, section
+       dividers, and the "Signal" callout used to close out each
+       story.
+       ══════════════════════════════════════════════════════════════ */
+
+  .briefing-subtitle {
+    font-size: 0.95rem;
+    text-align: center;
+    color: #666;
+    margin-bottom: 1.5rem;
+  }
+
+  .post-content h1 {
+    text-align: center;
+  }
+
+  .top-story {
+    text-align: center;
+    font-size: 1.05rem;
+    color: #3a2010;
+    background: #fff8f4;
+    border: 1px solid #e8c9b0;
+    border-radius: 6px;
+    padding: 0.9rem 1.2rem;
+    margin: 0 0 1.5rem 0;
+  }
+
+  .section-divider {
+    border: none;
+    border-top: 1px solid #e8c9b0;
+    margin: 1.5rem 0;
+  }
+
+  .section-tagline {
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: #b03a1a;
+    margin-top: -0.5rem;
+    margin-bottom: 0.8rem;
+  }
+
+  .signal {
+    background: #fff8f4;
+    border-left: 4px solid #e05c2a;
+    padding: 0.8rem 1rem;
+    border-radius: 4px;
+    margin-bottom: 1.5rem;
+    font-size: 0.95rem;
+    color: #3a2010;
+  }
+</style>
