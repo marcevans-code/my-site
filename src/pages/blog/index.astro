@@ -28,7 +28,7 @@ const posts = allPosts.sort(
         story. You're helping build a public record that keeps the AI data center boom
         honest.
       </p>
-      <a href="/blog/submit" class="btn">Share Your Story</a>
+      <a href="/blog/submit/" class="btn">Share Your Story</a>
     </div>
 
     <div class="posts-grid">
@@ -43,9 +43,9 @@ const posts = allPosts.sort(
               })}
               {" · "}{post.data.author}
             </p>
-            <h2><a href={`/blog/${post.id}`}>{post.data.title}</a></h2>
+            <h2><a href={`/blog/${post.id}/`}>{post.data.title}</a></h2>
             {post.data.summary && <p>{post.data.summary}</p>}
-            <a href={`/blog/${post.id}`} class="read-more">READ MORE →</a>
+            <a href={`/blog/${post.id}/`} class="read-more">READ MORE →</a>
           </div>
         </div>
       ))}

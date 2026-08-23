@@ -32,7 +32,7 @@ const briefings = Object.keys(briefingModules)
     const [y, m, d] = b.dateStr.split("-").map(Number);
     const date = new Date(y, m - 1, d);
     return {
-      href: `/briefings/morning-briefing-${b.dateStr}`,
+      href: `/briefings/morning-briefing-${b.dateStr}/`,
       label: date.toLocaleDateString("en-US", {
         month: "long",
         day: "numeric",
@@ -49,13 +49,33 @@ const briefings = Object.keys(briefingModules)
     <title>{title}</title>
     <meta name="description" content={description} />
     {noindex && <meta name="robots" content="noindex, nofollow" />}
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="canonical" href={new URL(Astro.url.pathname, Astro.site)} />
 
     <meta
       name="google-site-verification"
       content="r5GOhIsqfQ63OHWvvFDI0nWOyCLEC_fmERLyogCXg8A"
     />
+    <script type="application/ld+json" set:html={JSON.stringify({
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "https://powergrabtx.com/#organization",
+          "name": "Power Grab TX",
+          "url": "https://powergrabtx.com/",
+          "logo": "https://powergrabtx.com/logo.webp",
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://powergrabtx.com/#website",
+          "url": "https://powergrabtx.com/",
+          "name": "Power Grab TX",
+          "description": "PowerGrab TX tracks the real cost of AI data centers in Texas — on the grid, the water table, and the communities in their shadow.",
+          "publisher": { "@id": "https://powergrabtx.com/#organization" },
+        },
+      ],
+    })} />
     <style is:global>
       /* ══════════════════════════════════════════════════════════════
          KEEP HERE — SHARED / GLOBAL
@@ -675,8 +695,8 @@ const briefings = Object.keys(briefingModules)
             Trackers <span class="caret">▾</span>
           </button>
           <div class="dropdown-menu">
-            <a href="/trackers">All Trackers</a>
-            <a href="/right-now">Right Now</a>
+            <a href="/trackers/">All Trackers</a>
+            <a href="/right-now/">Right Now</a>
           </div>
         </div>
         <div class="nav-dropdown">
@@ -689,21 +709,23 @@ const briefings = Object.keys(briefingModules)
             ))}
           </div>
         </div>
-        <a href="/news">Latest News</a>
-        <a href="/glossary">Glossary</a>
-        <a href="/about">About</a>
-        <a href="/stay-informed">Stay Informed</a>
-        <a href="/posts">Posts</a>
-        <a href="/blog">Blog</a>
+        <a href="/news/">Latest News</a>
+        <a href="/glossary/">Glossary</a>
+        <a href="/about/">About</a>
+        <a href="/stay-informed/">Stay Informed</a>
+        <a href="/posts/">Posts</a>
+        <a href="/blog/">Blog</a>
       </nav>
     </header>
 
-    <slot />
+    <main>
+      <slot />
+    </main>
 
     <footer>
       <div class="footer-nav">
-        <a href="/privacy">Privacy</a>
-        <a href="/terms">Terms</a>
+        <a href="/privacy/">Privacy</a>
+        <a href="/terms/">Terms</a>
       </div>
       <p>© 2026 Power Grab TX. All Rights Reserved.</p>
     </footer>

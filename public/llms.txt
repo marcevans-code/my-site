@@ -1,0 +1,28 @@
+# Power Grab TX
+
+> Power Grab TX tracks the real cost of the AI data center boom in Texas — on
+> the power grid, the water table, and the communities living in its shadow.
+> Independent, reader-supported reporting and data tracking, not affiliated
+> with any data center developer, utility, or government agency.
+
+Power Grab TX publishes original reporting, a running news tracker, and a
+plain-language glossary covering AI data center construction, ERCOT grid
+strain, water use, tax incentives, and community impact across Texas.
+
+## Reporting
+
+- [Posts](https://powergrabtx.com/posts/): Original articles and analysis on Texas AI data centers.
+- [Latest News](https://powergrabtx.com/news/): Continuously updated aggregation of Texas AI data center news.
+- [AI Data Center Tracker](https://powergrabtx.com/trackers/): A dated, sourced log of developments with editorial commentary.
+- [Right Now](https://powergrabtx.com/right-now/): A snapshot of what's currently happening across the state.
+- [Morning Briefing](https://powergrabtx.com/briefings/): Daily briefings on Texas & DFW AI data center, grid, and land-use news.
+
+## Reference
+
+- [AI Data Center Glossary](https://powergrabtx.com/glossary/): Plain-language definitions of AI data center and grid terminology.
+- [About](https://powergrabtx.com/about/): Who publishes Power Grab TX and why.
+
+## Community
+
+- [Community Blog](https://powergrabtx.com/blog/): Reader-submitted stories, reviewed before publication.
+- [Stay Informed](https://powergrabtx.com/stay-informed/): Subscribe to updates or contact Power Grab TX directly.
