@@ -64,7 +64,6 @@ const entries = [
     date: "August 13, 2026",
     headline: "Morning Briefing: Texas & DFW AI Data Centers, Grid, Land Use",
     source: "Power Grab TX (internal briefing)",
-    url: "/briefings/morning-briefing-2026-08-13/",
     take: "Keller didn't just object to Westlake's approved 88-acre data center — it voted to lawyer up and sent a formal resolution demanding a pause, less than 24 hours after Fort Worth started its own 90-day moratorium clock, which tells you the fight has moved from council chambers to courtrooms.",
   },
   {
@@ -74,13 +73,6 @@ const entries = [
     source: "Power Grab TX (editorial)",
     url: "/posts/the-biggest-polluter/",
     take: "TCEQ's air permit for Amazon's 35-turbine, 7.65-GW Pecos County plant authorizes up to 33 million tons of CO2 a year — nearly double the country's current largest polluter — and because the campus is behind-the-meter and never touches ERCOT, it sails right past the interconnection freeze meant to slow this whole boom down.",
-  },
-  {
-    date: "August 12, 2026",
-    headline: "Morning Briefing: Texas & DFW AI Data Centers, Grid, Land Use",
-    source: "Power Grab TX (internal briefing)",
-    url: "/briefings/morning-briefing-2026-08-12/",
-    take: "Fort Worth's unanimous vote sounds like a moratorium landing today, but read the fine print and the actual construction pause doesn't bind anyone until Feb. 16, 2027 — meanwhile Abbott signed up three more operators overnight (EdgeConneX, Stream, Oracle) and a Bowie County project just keeps pouring concrete because it sits on the SPP grid, entirely outside the audit's reach.",
   },
   {
     date: "August 10, 2026",
@@ -211,9 +203,13 @@ const entries = [
           <div class="tracker-entry">
             <p class="tracker-date">{e.date}</p>
             <h3>
-              <a href={e.url} target="_blank" rel="noopener">
-                {e.headline}
-              </a>
+              {e.url ? (
+                <a href={e.url} target="_blank" rel="noopener">
+                  {e.headline}
+                </a>
+              ) : (
+                e.headline
+              )}
             </h3>
             <p class="tracker-source">{e.source}</p>
             <p class="tracker-take">{e.take}</p>
