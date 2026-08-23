@@ -1,9 +1,18 @@
 ---
-const {
-  title,
-  noindex = false,
-  description = "PowerGrab TX tracks the real cost of AI data centers in Texas — on the grid, the water table, and the communities in their shadow.",
-} = Astro.props;
+const { title, noindex = false, description } = Astro.props;
+
+// No default description here on purpose. A silent fallback is exactly how
+// 17 pages ended up sharing one meta description (Semrush flagged it in the
+// Aug 2026 audit). Every page must pass its own — this throws at build time
+// instead of shipping a duplicate, so a missing description breaks the
+// Cloudflare Pages build loudly rather than shipping quietly.
+if (!description) {
+  throw new Error(
+    `Layout: "${Astro.url.pathname}" is missing a description prop. ` +
+      `Every page needs its own unique <Layout description="..."> — see ` +
+      `src/pages/about.astro for an example.`
+  );
+}
 import "@fontsource/lato/400.css";
 import "@fontsource/lato/700.css";
 import StayInformedPopup from "../components/StayInformedPopup.astro";

@@ -31,7 +31,7 @@ if (briefingEntries.length > 0) {
   const [y, m, d] = dateStr.split("-").map(Number);
 
   latestBriefing = {
-    href: `/briefings/morning-briefing-${dateStr}`,
+    href: `/briefings/morning-briefing-${dateStr}/`,
     dateLabel: new Date(y, m - 1, d).toLocaleDateString("en-US", {
       month: "long",
       day: "numeric",
@@ -43,7 +43,10 @@ if (briefingEntries.length > 0) {
 }
 ---
 
-<Layout title="Power Grab TX — Who's Really Paying for the AI Boom in Texas?">
+<Layout
+  title="Power Grab TX — Who's Really Paying for the AI Boom in Texas?"
+  description="PowerGrab TX tracks the real cost of AI data centers in Texas — on the grid, the water table, and the communities in their shadow."
+>
   <section class="hero">
     <h2>Texas Is Paying the Price for the AI Boom</h2>
     <p>

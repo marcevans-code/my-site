@@ -9,6 +9,7 @@
     "dev": "astro dev",
     "prebuild": "node scripts/build-tracker-pdf.mjs",
     "build": "astro build",
+    "postbuild": "node scripts/check-duplicate-descriptions.mjs",
     "preview": "astro preview",
     "astro": "astro",
     "tracker-pdf": "node scripts/build-tracker-pdf.mjs"
