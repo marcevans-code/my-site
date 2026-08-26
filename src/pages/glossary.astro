@@ -20,9 +20,51 @@ import Layout from "../layouts/Layout.astro";
           href="/stay-informed/">here</a
         > and I will add it to the list.
       </p>
-      <a class="pdf-btn" href="/ai-data-center-glossary.pdf" download
-        >⭳ Download the PDF version</a
-      >
+
+      <div class="glossary-signup" id="glossary-signup">
+        <p class="glossary-signup-lead">
+          Want this as a PDF you can keep? Enter your email for instant
+          access — plus the weekday Morning Briefing.
+        </p>
+        <form
+          action="https://forms-worker.marc-897.workers.dev/newsletter"
+          method="POST"
+          class="glossary-signup-form"
+        >
+          <input
+            type="text"
+            name="company"
+            style="display:none"
+            tabindex="-1"
+            autocomplete="off"
+          />
+          <div class="glossary-signup-row">
+            <input
+              type="text"
+              name="first_name"
+              placeholder="First Name"
+              required
+              aria-label="First Name"
+            />
+            <input
+              type="email"
+              name="email"
+              placeholder="Email Address"
+              required
+              aria-label="Email Address"
+            />
+            <button type="submit" class="glossary-signup-btn"
+              >⭳ Get the Free PDF</button
+            >
+          </div>
+          <div class="cf-turnstile" data-sitekey="0x4AAAAAADwCpEAeGLLtdeFU">
+          </div>
+          <p class="glossary-signup-fineprint">
+            Direct to your inbox every weekday morning, no spam, no ads,
+            unsubscribe anytime.
+          </p>
+        </form>
+      </div>
     </div>
 
     <div class="search-wrap">
@@ -41,6 +83,10 @@ import Layout from "../layouts/Layout.astro";
       <a href="#network">Networking</a>
       <a href="#business">Facilities &amp; Business Terms</a>
       <a href="#enviro">Environment &amp; Sustainability</a>
+      <a href="#interconnection">Texas Grid Interconnection</a>
+      <a href="#permitting">Environmental Permitting</a>
+      <a href="#land">Land &amp; Local Government</a>
+      <a href="#policy">State &amp; Federal AI Policy</a>
     </nav>
 
     <div class="no-results" id="no-results">No terms match your search.</div>
@@ -580,6 +626,347 @@ import Layout from "../layouts/Layout.astro";
       </div>
     </section>
 
+    <section class="category" id="interconnection" style="--cat-color:#1f5c99">
+      <h2>Texas Grid Interconnection</h2>
+      <p class="cat-desc">
+        How a data center actually gets permission to draw power from the
+        Texas grid — a process now moving faster than the rules were
+        originally built for.
+      </p>
+
+      <div class="term">
+        <h3>ERCOT (Electric Reliability Council of Texas)</h3>
+        <p>
+          The independent, nonprofit grid operator that manages the flow of
+          electricity to roughly 90% of Texas. Because ERCOT runs a grid
+          largely separate from the rest of the country, it sets its own
+          rules for how new large loads — like AI data centers — connect.
+        </p>
+      </div>
+      <div class="term">
+        <h3>PUC / PUCT (Public Utility Commission of Texas)</h3>
+        <p>
+          The state agency that regulates ERCOT and Texas electric
+          utilities, and — since a 2025 law — writes the actual rules
+          governing how AI data centers connect to the grid.
+        </p>
+      </div>
+      <div class="term">
+        <h3>PURA (Public Utility Regulatory Act)</h3>
+        <p>
+          The Texas law governing the electric industry, including the
+          section that defines a "large load" — any single site drawing 75
+          megawatts or more — and requires new interconnection rules for it.
+        </p>
+      </div>
+      <div class="term">
+        <h3>NPRR (Nodal Protocol Revision Request)</h3>
+        <p>
+          The formal process ERCOT uses to change its own market rules.
+          Most of the new AI data center frameworks, including the one
+          behind WLPUN, started life as an NPRR.
+        </p>
+      </div>
+      <div class="term">
+        <h3>LLIS (Large Load Interconnection Study)</h3>
+        <p>
+          The technical study a transmission utility must run before a data
+          center can connect, checking steady-state, short-circuit, and
+          stability impacts on the grid — the large-load equivalent of the
+          study generators go through.
+        </p>
+      </div>
+      <div class="term">
+        <h3>FIS (Full Interconnection Study)</h3>
+        <p>
+          The longer-standing study process used for new power plants
+          connecting to the grid, and the model the newer large-load study
+          process was built from.
+        </p>
+      </div>
+      <div class="term">
+        <h3>POI (Point of Interconnection)</h3>
+        <p>
+          The single physical point where a data center's electrical load —
+          and any on-site generation — connects to the ERCOT grid.
+        </p>
+      </div>
+      <div class="term">
+        <h3>TSP (Transmission Service Provider)</h3>
+        <p>
+          The utility company (such as Oncor) that owns and builds the
+          wires connecting a data center to the grid, and studies whether a
+          given connection request is workable.
+        </p>
+      </div>
+      <div class="term">
+        <h3>BYOG (Bring Your Own Generation)</h3>
+        <p>
+          A setup where a data center is built alongside its own on-site
+          power plant — gas, fuel cells, or renewables plus batteries —
+          behind a single connection point, drawing from its own generator
+          first and the grid as backup.
+        </p>
+      </div>
+      <div class="term">
+        <h3>CLR (Controllable Load Resource)</h3>
+        <p>
+          A large load that registers with ERCOT as a resource it can
+          dispatch — meaning ERCOT can order it to power down within a set
+          range when the grid is under strain, in exchange for faster or
+          larger grid access.
+        </p>
+      </div>
+      <div class="term">
+        <h3>WLPUN (Withdrawal-Limited Profile Unit)</h3>
+        <p>
+          The ERCOT framework — what most people mean by the "self-limiting"
+          model — that lets a co-located data center generate its own power
+          while capping, through hardware, how much it can pull from the
+          grid at any moment.
+        </p>
+      </div>
+      <div class="term">
+        <h3>SLF (Self-Limiting Facility)</h3>
+        <p>
+          The physical and regulatory setup — breaker logic and protective
+          relays — that enforces a site's grid-draw cap under the WLPUN
+          model, so it can never exceed its approved interconnection limit.
+        </p>
+      </div>
+      <div class="term">
+        <h3>SCED (Security-Constrained Economic Dispatch)</h3>
+        <p>
+          The real-time process ERCOT uses to decide which power plants —
+          and, increasingly, which dispatchable loads like CLRs — run at
+          any given moment, balancing cost against grid reliability.
+        </p>
+      </div>
+      <div class="term">
+        <h3>CIAC (Contributions in Aid of Construction)</h3>
+        <p>
+          The fee a data center developer pays to cover the direct cost of
+          the wires, transformers, and other equipment needed to physically
+          connect it to the grid.
+        </p>
+      </div>
+      <div class="term">
+        <h3>QSA (Quarterly Stability Assessment)</h3>
+        <p>
+          An ERCOT review a data center must pass before it's allowed to
+          actually draw power, confirming its connection won't destabilize
+          the grid.
+        </p>
+      </div>
+      <div class="term">
+        <h3>VRT (Voltage Ride-Through)</h3>
+        <p>
+          A technical standard requiring large loads to keep operating,
+          rather than tripping offline, through brief voltage disturbances
+          on the grid — increasingly important as AI data centers make up
+          more of Texas's total demand.
+        </p>
+      </div>
+    </section>
+
+    <section class="category" id="permitting" style="--cat-color:#2a8f7a">
+      <h2>Environmental Permitting</h2>
+      <p class="cat-desc">
+        The environmental review and permitting process a data center has
+        to clear before and during construction.
+      </p>
+
+      <div class="term">
+        <h3>TCEQ (Texas Commission on Environmental Quality)</h3>
+        <p>
+          The primary state regulator for a Texas data center's
+          environmental footprint — issues stormwater permits, air quality
+          permits, and oversees water quality.
+        </p>
+      </div>
+      <div class="term">
+        <h3>EPA (Environmental Protection Agency)</h3>
+        <p>
+          The federal environmental regulator. It usually lets TCEQ handle
+          Texas permits directly, but gets involved when a federal law like
+          the Clean Water Act or Clean Air Act applies.
+        </p>
+      </div>
+      <div class="term">
+        <h3>USACE (U.S. Army Corps of Engineers)</h3>
+        <p>
+          The federal agency that regulates wetlands and other "waters of
+          the United States." Any construction that would fill or disturb a
+          jurisdictional wetland needs a Corps permit first.
+        </p>
+      </div>
+      <div class="term">
+        <h3>USFWS (U.S. Fish &amp; Wildlife Service)</h3>
+        <p>
+          The federal agency that enforces the Endangered Species Act. If a
+          protected species or its habitat — like the Golden-cheeked
+          Warbler in the Texas Hill Country — might be on a proposed site,
+          USFWS consultation is required before construction.
+        </p>
+      </div>
+      <div class="term">
+        <h3>NSR (New Source Review)</h3>
+        <p>
+          An air-quality permitting process triggered by large or
+          non-emergency backup generators (roughly 10 megawatts and up) —
+          the kind of diesel or gas generators data centers keep on-site
+          for outages.
+        </p>
+      </div>
+      <div class="term">
+        <h3>SWPPP (Stormwater Pollution Prevention Plan)</h3>
+        <p>
+          A required plan for controlling erosion and runoff during
+          construction once a site disturbs an acre or more of land —
+          standard for any data center build.
+        </p>
+      </div>
+      <div class="term">
+        <h3>NOI (Notice of Intent)</h3>
+        <p>
+          The filing that starts the stormwater permitting process with
+          TCEQ, submitted before construction begins on a large enough
+          site.
+        </p>
+      </div>
+      <div class="term">
+        <h3>BMP (Best Management Practices)</h3>
+        <p>
+          The specific erosion and runoff controls — silt fences, sediment
+          basins, and similar measures — a construction site is required to
+          put in place and maintain.
+        </p>
+      </div>
+      <div class="term">
+        <h3>LID (Low Impact Development)</h3>
+        <p>
+          Site-design features like bioretention areas, permeable pavement,
+          and retention ponds that many Texas cities now encourage or
+          require to manage stormwater runoff from large developments.
+        </p>
+      </div>
+      <div class="term">
+        <h3>ESA</h3>
+        <p>
+          Two different meanings worth knowing apart: the Endangered
+          Species Act, the federal law protecting threatened wildlife and
+          habitat; and Environmental Site Assessment, the Phase I
+          due-diligence report — checking for contamination, prior
+          industrial use, buried tanks — that's standard practice before
+          buying data center land. Same three letters, two very different
+          documents.
+        </p>
+      </div>
+    </section>
+
+    <section class="category" id="land" style="--cat-color:#8a6d3b">
+      <h2>Land &amp; Local Government</h2>
+      <p class="cat-desc">
+        The zoning, districts, and utility-service designations that shape
+        where — and how — a data center actually gets built.
+      </p>
+
+      <div class="term">
+        <h3>ETJ (Extraterritorial Jurisdiction)</h3>
+        <p>
+          A buffer zone around a Texas city — often a mile or more — where
+          the city can still enforce some land-use and platting rules even
+          though the land is technically outside its limits.
+        </p>
+      </div>
+      <div class="term">
+        <h3>CCN (Certificate of Convenience and Necessity)</h3>
+        <p>
+          The Texas designation determining which specific utility has the
+          exclusive legal right to serve a given area with electricity or
+          water/wastewater. A site's CCN determines who it's actually
+          allowed to buy power or water from.
+        </p>
+      </div>
+      <div class="term">
+        <h3>MUD (Municipal Utility District)</h3>
+        <p>
+          A special local government district, common on undeveloped land
+          in Texas, created to finance and build water, sewer, and drainage
+          infrastructure for new development — including large data center
+          campuses.
+        </p>
+      </div>
+      <div class="term">
+        <h3>PID (Public Improvement District)</h3>
+        <p>
+          Another type of special assessment district, used to fund public
+          infrastructure — roads, utilities, lighting — tied to a specific
+          development, with costs recovered through added property
+          assessments.
+        </p>
+      </div>
+      <div class="term">
+        <h3>TIRZ / TIF (Tax Increment Reinvestment Zone / Financing)</h3>
+        <p>
+          A mechanism where the growth in property tax revenue within a
+          defined zone is set aside to pay for infrastructure improvements
+          inside that zone, rather than going to the city's general fund —
+          often used to help finance large projects.
+        </p>
+      </div>
+    </section>
+
+    <section class="category" id="policy" style="--cat-color:#9e4a6b">
+      <h2>State &amp; Federal AI Policy</h2>
+      <p class="cat-desc">
+        The laws, incentive programs, and frameworks shaping how Texas and
+        Washington are responding to the AI buildout.
+      </p>
+
+      <div class="term">
+        <h3>TAC (Texas Administrative Code)</h3>
+        <p>
+          The official compilation of Texas state agency rules, including
+          the PUCT's actual interconnection regulations for large loads,
+          published as specific TAC sections.
+        </p>
+      </div>
+      <div class="term">
+        <h3>TEF (Texas Energy Fund)</h3>
+        <p>
+          A $10 billion state loan and grant program created to finance new
+          dispatchable power plants — mostly natural gas — inside ERCOT,
+          partly a response to rising demand from data centers.
+        </p>
+      </div>
+      <div class="term">
+        <h3>JETI (Jobs, Energy, Technology, and Innovation Act)</h3>
+        <p>
+          Texas's current property-tax incentive program for large capital
+          projects like data centers and manufacturing plants — it replaced
+          the older "Chapter 313" program.
+        </p>
+      </div>
+      <div class="term">
+        <h3>NIST AI RMF (AI Risk Management Framework)</h3>
+        <p>
+          A voluntary federal framework, from the National Institute of
+          Standards and Technology, for identifying and managing the risks
+          of AI systems — not a law, but a widely-referenced standard
+          shaping how companies and agencies approach AI governance.
+        </p>
+      </div>
+      <div class="term">
+        <h3>OSTP (Office of Science and Technology Policy)</h3>
+        <p>
+          The White House office that develops federal science and
+          technology policy, including the administration's AI Action Plan
+          and related executive orders on AI infrastructure.
+        </p>
+      </div>
+    </section>
+
     <p class="glossary-footnote">
       Compiled for a general, non-technical reader. Terminology in this space
       evolves quickly as the industry grows — treat this as a starting reference
@@ -621,19 +1008,65 @@ import Layout from "../layouts/Layout.astro";
       line-height: 1.55;
     }
 
-    .pdf-btn {
-      display: inline-block;
-      margin-top: 1rem;
-      padding: 0.6rem 1.2rem;
+    .glossary-signup {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-left: 4px solid var(--accent);
+      border-radius: 10px;
+      padding: 1.3rem 1.5rem;
+      margin-top: 1.2rem;
+    }
+    .glossary-signup-lead {
+      font-size: 1rem;
+      font-weight: 700;
+      color: #1a1a1a;
+      margin: 0 0 0.9rem;
+      line-height: 1.5;
+    }
+    .glossary-signup-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.6rem;
+    }
+    .glossary-signup-row input {
+      flex: 1 1 180px;
+      min-width: 0;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 0.7rem 1rem;
+      font-size: 1rem;
+      font-family: inherit;
+      color: #1a1a1a;
+      background: var(--card-bg);
+    }
+    .glossary-signup-row input:focus {
+      outline: none;
+      border-color: var(--accent);
+    }
+    .glossary-signup-btn {
+      flex: 1 1 auto;
+      white-space: nowrap;
       background: var(--accent);
       color: #fff !important;
+      border: none;
       border-radius: 8px;
+      padding: 0.75rem 1.2rem;
       font-weight: 600;
-      font-size: 0.92rem;
-      text-decoration: none !important;
+      font-size: 0.95rem;
+      font-family: inherit;
+      cursor: pointer;
     }
-    .pdf-btn:hover {
+    .glossary-signup-btn:hover {
       background: #8f3717;
+    }
+    .glossary-signup .cf-turnstile {
+      margin: 0.8rem 0 0;
+      display: flex;
+    }
+    .glossary-signup-fineprint {
+      font-size: 0.78rem;
+      color: var(--muted);
+      margin: 0.6rem 0 0;
     }
 
     .search-wrap {

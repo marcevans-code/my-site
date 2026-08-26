@@ -7,12 +7,13 @@
   },
   "scripts": {
     "dev": "astro dev",
-    "prebuild": "node scripts/build-tracker-pdf.mjs",
+    "prebuild": "node scripts/build-tracker-pdf.mjs && node scripts/build-glossary-pdf.mjs",
     "build": "astro build",
     "postbuild": "node scripts/check-duplicate-descriptions.mjs",
     "preview": "astro preview",
     "astro": "astro",
-    "tracker-pdf": "node scripts/build-tracker-pdf.mjs"
+    "tracker-pdf": "node scripts/build-tracker-pdf.mjs",
+    "glossary-pdf": "node scripts/build-glossary-pdf.mjs"
   },
   "dependencies": {
     "@astrojs/sitemap": "^3.7.3",
