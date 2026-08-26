@@ -1109,11 +1109,31 @@ import Layout from "../layouts/Layout.astro";
       border-radius: 999px;
       background: var(--card-bg);
       font-weight: 500;
+      white-space: nowrap;
     }
     nav.toc a:hover {
       border-color: var(--accent);
       color: var(--accent);
       text-decoration: none;
+    }
+
+    /* On narrow screens the longer category labels ("Facilities & Business
+       Terms", "Texas Grid Interconnection", etc.) can't fit two-per-row, so
+       wrapping leaves a lot of them stranded alone on their own line. A
+       single horizontally-scrollable row (the same pattern as a mobile tab
+       bar) reads far cleaner than that ragged stack. */
+    @media (max-width: 600px) {
+      nav.toc {
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: thin;
+        margin: 0 -1.5rem 0.5rem;
+        padding: 0 1.5rem 0.5rem;
+      }
+      nav.toc a {
+        flex: 0 0 auto;
+      }
     }
 
     section.category {
