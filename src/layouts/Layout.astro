@@ -170,18 +170,18 @@ const briefings = Object.keys(briefingModules)
         cursor: pointer;
       }
 
-      nav {
+      #nav {
         display: flex;
         gap: 1.5rem;
         font-size: 1rem;
       }
 
-      nav a {
+      #nav a {
         color: #1a1a1a;
         font-weight: 500;
       }
 
-      nav a:hover {
+      #nav a:hover {
         color: #1a4a8a;
       }
 
@@ -261,7 +261,7 @@ const briefings = Object.keys(briefingModules)
         .hamburger {
           display: block;
         }
-        nav {
+        #nav {
           display: none;
           position: absolute;
           top: 80px;
@@ -275,7 +275,7 @@ const briefings = Object.keys(briefingModules)
           box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
           z-index: 200;
         }
-        nav.open {
+        #nav.open {
           display: flex;
         }
         .nav-dropdown.open .dropdown-menu {
