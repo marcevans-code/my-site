@@ -88,7 +88,7 @@ import Layout from "../layouts/Layout.astro";
       <a href="#land">Land &amp; Local Government</a>
       <a href="#policy">State &amp; Federal AI Policy</a>
     </nav>
-    <div><p>Scroll left on your phone to view more categories.</p></div>
+    <p class="toc-hint">⇠ Swipe to see more categories</p>
 
     <div class="no-results" id="no-results">No terms match your search.</div>
 
@@ -1118,6 +1118,17 @@ import Layout from "../layouts/Layout.astro";
       text-decoration: none;
     }
 
+    /* Only relevant once nav.toc becomes a horizontally-scrolling strip
+       (see the max-width: 600px block below) — on wider screens every
+       category is already visible via wrap, so the hint would just be
+       confusing clutter. Hidden by default, switched on there. */
+    .toc-hint {
+      display: none;
+      font-size: 0.78rem;
+      color: var(--muted);
+      margin: -0.2rem 0 0.9rem;
+    }
+
     /* On narrow screens the longer category labels ("Facilities & Business
        Terms", "Texas Grid Interconnection", etc.) can't fit two-per-row, so
        wrapping leaves a lot of them stranded alone on their own line. A
@@ -1134,6 +1145,9 @@ import Layout from "../layouts/Layout.astro";
       }
       nav.toc a {
         flex: 0 0 auto;
+      }
+      .toc-hint {
+        display: block;
       }
     }
 
