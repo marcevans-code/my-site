@@ -1262,7 +1262,7 @@ import Layout from "../layouts/Layout.astro";
   </style>
 
   <script>
-    function filterGlossaryTerms(query) {
+    function filterGlossaryTerms(query: string) {
       const q = query.trim().toLowerCase();
       const sections = document.querySelectorAll(
         ".glossary-page section.category",
@@ -1290,7 +1290,7 @@ import Layout from "../layouts/Layout.astro";
 
     const searchInput = document.getElementById("glossary-search");
     searchInput?.addEventListener("input", (e) => {
-      filterGlossaryTerms(e.target.value);
+      filterGlossaryTerms((e.target as HTMLInputElement).value);
     });
 
     // Scroll-to-top button: fade in after scrolling down, smooth-scroll to top on click.
