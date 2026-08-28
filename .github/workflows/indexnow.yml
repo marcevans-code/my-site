@@ -1,11 +1,10 @@
 name: Submit sitemap to IndexNow
 
-# Runs whenever you push to main — the same push that triggers your
-# Cloudflare Pages deploy. Submitting the URL list doesn't require the
-# new pages to be live yet; the engines simply queue them for a re-crawl.
+# Manual only - trigger from the Actions tab (e.g. weekly) rather than on
+# every push. IndexNow's own backend was rejecting the key verification
+# (UserForbiddedToAccessSite) independent of anything in this repo, so
+# running it on every push just produced a red X on every commit.
 on:
-  push:
-    branches: [main]
   workflow_dispatch: {} # lets you trigger it manually from the Actions tab
 
 jobs:
