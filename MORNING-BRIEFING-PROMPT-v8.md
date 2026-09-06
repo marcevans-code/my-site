@@ -1,5 +1,9 @@
 # Morning Briefing prompt — v8
 
+**Patched September 5, 2026** (at the user's request, after Claude-in-Chrome's per-site permission prompts kept interrupting this task) — one substantive change:
+
+- **Step 2** now runs primarily on the native **WebSearch** and **WebFetch** tools instead of Claude in Chrome. Those two tools don't trigger the browser extension's per-site approval prompts, which matters because this task is meant to run unattended — the user reviews the finished draft before pushing, not each site visited along the way. Claude in Chrome is now the last-resort exception for one stubborn source (a heavily JS-rendered page, or a regulatory portal that needs an interactive search form), not the default research path. The old **FALLBACK** paragraph — direct-fetch only if Chrome was unavailable — is replaced accordingly, since the native tools no longer need a fallback of their own for the common case.
+
 **Patched Aug 31, 2026** (by Claude, after a Search Console indexing review) — one substantive change from v7:
 
 - **Step 7** no longer recommends deleting old briefing pages. The original rationale — that briefings beyond the nav dropdown's 6-most-recent window are "dead weight" that "likely hurt rather than help search indexing" — had it backwards. Each dated briefing contains unique, citable facts (specific dockets, filings, dollar figures, named parties) that keep earning long-tail search traffic long after the day it was published, the same way a newspaper never deletes yesterday's article. Deleting them also shrinks the site's indexed footprint and cuts internal link paths right when a brand-new domain most needs to build trust and crawl depth with Google. Old briefings were also never actually orphaned from navigation the way Step 7 assumed — every entry in `trackers.astro`'s permanent `entries` array (Step 6) links to its briefing page forever, so they stay internally linked even after they age out of the 6-item nav dropdown. Step 7 is now a verification check instead of a pruning check, and no longer produces `rm` commands. The Step 5 cross-reference and the CRITICAL CONSTRAINTS pruning exception are updated to match.
@@ -27,11 +31,13 @@ Produce today's "Power Grab TX" morning briefing and publish it to the live site
 
 **STEP 1 — Get today's date.** Use the current date already available in this run's own context (the environment's current-date value provided when this task starts). Do not guess, and do not carry over a date from any prior run. Convert it to `YYYY-MM-DD` for filenames and headers, to `Month D, YYYY` for the tracker entry, and to `MM/DD/YY` for the page title, as used throughout the steps below.
 
-**STEP 2 — Research.** This step requires Claude in Chrome for real search-engine access and JS-rendered pages — do not rely on the thin direct-fetch fallback except as a last resort, since it covers only a handful of sites and search engines return empty on plain fetch.
+**STEP 2 — Research.** Use the native **WebSearch** tool for every search query below, and the native **WebFetch** tool to read specific articles — either ones WebSearch surfaces, or the direct-source URLs listed further down. Neither tool triggers the per-site browser-permission prompts that Claude in Chrome does, which is why they're the default here.
 
-Run actual search queries (via Claude in Chrome, against Google and/or Bing) for each of the areas below — don't just visit a fixed list of homepages. Example queries to run and adapt with today's date:
+Only reach for Claude in Chrome when WebFetch genuinely can't get a specific source (a heavily JS-rendered page, or a regulatory portal whose docket search is an interactive form rather than a fetchable page) — and treat that as a last resort for that one source, not a default path for the whole step, since every new domain it touches can prompt the user for approval. If a run ends up leaning on Chrome for more than one or two sources, say so in the draft's intro line so it's visible on review.
 
-Broad catch-all sweeps (run these against Google News specifically — e.g. news.google.com, or google.com/search with the News tab/`tbm=nws` — not plain web search. Plain web search mixes in old SEO/evergreen pages; News results are dated and recency-sorted, which is what actually makes a broad sweep useful and is how a Google Alert surfaces same-day trade/financial coverage a narrower search misses):
+Run actual search queries for each of the areas below — don't just visit a fixed list of homepages. Example queries to run and adapt with today's date:
+
+Broad catch-all sweeps (phrase these for recency — work today's date and a word like "news" into the query — and when scanning results, favor items with a clearly recent/dated snippet over evergreen reference or explainer pages. WebSearch has no dedicated News-only mode the way Google News does, so that filtering has to happen by eye rather than by URL parameter):
 
 * "AI data center Texas [date]"
 * "data center Texas news [date]"
@@ -75,7 +81,7 @@ Gather today's actual, dated developments across these five areas. These five ar
 
 Aim to cite at least 10-15 distinct sources across today's coverage combined, now that the research step casts a wider net — treat this as a floor, not a ceiling; a big-news day should cite more. If there is genuinely no new dated news in one of the five research areas today, that's fine — it just won't produce a story. Never fabricate facts, figures, or events to fill a gap.
 
-**FALLBACK** (only if Claude in Chrome is genuinely unavailable this run): fetch the sources listed above directly via URL (skip search-engine URLs, which return empty on plain fetch) and gather whatever dated content is available. Note in the draft's intro line that this run used the limited fallback mode, so coverage was narrower than usual.
+**IF a source genuinely can't be reached** (WebFetch fails on it and Claude in Chrome is either unavailable this run or still blocked on it after one retry): skip that source rather than fabricating what it might have said, and note in the draft's intro line which source was skipped and why.
 
 **STEP 3 — Write the markdown draft.** Match the "Power Grab TX" morning briefing house style — a "⭐ Morning Briefing — Texas & DFW AI Data Centers, Grid, Land Use" header — but with a bigger structural change from earlier editions: there are no more fixed topic-category headers at all (no more standing "ERCOT & Grid Signals" / "Data Center Construction & Corporate Activity" / etc. section names). The five research areas from Step 2 are scaffolding for gathering the news, not a publishing structure. Instead, present today's edition as a single running list of today's actual stories:
 
