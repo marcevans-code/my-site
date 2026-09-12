@@ -1,5 +1,9 @@
 # Morning Briefing prompt — v8
 
+**Patched September 12, 2026** (at the user's request) — one structural change:
+
+- **Monday editions now cover the whole weekend.** This task doesn't run every Saturday and Sunday, so a Monday-only briefing was leaving weekend developments unreported. Step 1 now has Monday runs compute the preceding Saturday and Sunday alongside Monday itself; Step 2's research queries and direct-source checks widen to all three days on a Monday run; Step 3's subtitle, Top Story line, and per-story dating adapt to a 3-day window instead of a single day; and Step 6's tracker `take` may draw on the whole weekend. The output is still a single dated file and a single tracker entry — dated Monday, not three separate ones — just built from three days of research instead of one.
+
 **Patched September 8, 2026** (at the user's request, after a malfunctioning unattended run fabricated a "resolved" Westlake court ruling and a Prosper Project Tomahawk vote outcome — neither had actually happened — and briefly published that invented entry to the live `trackers.astro`) — two changes:
 
 - **CRITICAL CONSTRAINTS** now includes a hard requirement to verify that live research actually happened before writing anything to `trackers.astro` or creating a new `briefings/*.astro` file. A run that can't complete real research — for any reason — must stop and report itself as unfinished rather than publish a guess dressed up as news.
@@ -36,7 +40,11 @@ Produce today's "Power Grab TX" morning briefing and publish it to the live site
 
 **STEP 1 — Get today's date.** Use the current date already available in this run's own context (the environment's current-date value provided when this task starts). Do not guess, and do not carry over a date from any prior run. Convert it to `YYYY-MM-DD` for filenames and headers, to `Month D, YYYY` for the tracker entry, and to `MM/DD/YY` for the page title, as used throughout the steps below.
 
+If today is a **Monday**, this edition also covers the preceding Saturday and Sunday — this task does not run every Saturday and Sunday, so Monday's edition is the chance those two days' developments get reported. Work out all three calendar dates (Saturday, Sunday, and today's Monday) and carry all three into Step 2's research. The filename, tracker date, and page title still use only today's (Monday's) date — there is still just one file and one tracker entry per Monday, now covering three days of news instead of one.
+
 **STEP 2 — Research.** Use the native **WebSearch** tool for every search query below, and the native **WebFetch** tool to read specific articles — either ones WebSearch surfaces, or the direct-source URLs listed further down. Neither tool triggers the per-site browser-permission prompts that Claude in Chrome does, which is why they're the default here.
+
+**On a Monday run**, widen every query below to the 3-day window from Step 1 (Saturday through Monday) instead of a single date — run each query across all three dates, or phrase it as a range covering Saturday through Monday instead of a single date — and check the direct sources further down for anything dated across all three days, not just today. Everything else in this step (the five research areas, the 10-15 source floor, the no-fabrication rule) applies the same way, just against three days of news instead of one.
 
 Only reach for Claude in Chrome when WebFetch genuinely can't get a specific source (a heavily JS-rendered page, or a regulatory portal whose docket search is an interactive form rather than a fetchable page) — and treat that as a last resort for that one source, not a default path for the whole step, since every new domain it touches can prompt the user for approval. If a run ends up leaning on Chrome for more than one or two sources, say so in the draft's intro line so it's visible on review.
 
@@ -90,6 +98,8 @@ Aim to cite at least 10-15 distinct sources across today's coverage combined, no
 
 **STEP 3 — Write the markdown draft.** Match the "Power Grab TX" morning briefing house style — a "⭐ Morning Briefing — Texas & DFW AI Data Centers, Grid, Land Use" header — but with a bigger structural change from earlier editions: there are no more fixed topic-category headers at all (no more standing "ERCOT & Grid Signals" / "Data Center Construction & Corporate Activity" / etc. section names). The five research areas from Step 2 are scaffolding for gathering the news, not a publishing structure. Instead, present today's edition as a single running list of today's actual stories:
 
+**On a Monday edition**, the subtitle states the covered range instead of a single date — e.g. `(Covering Saturday, [Month D] – Monday, [Month D], [YYYY])` — and the Top Story line and every story block draw from whichever of the three days actually produced the news. Date individual developments within their bullets (a Saturday filing, Sunday's statement, Monday's vote) so a reader can tell when each thing actually happened. The newsworthiness ranking, no-fixed-story-count, and no-padding rules below are unchanged — they just draw from a 3-day pool instead of 1 day's.
+
 * Right after the subtitle, add one Top Story line — a single punchy sentence, displayed on the page itself (not just the hidden meta description below), naming today's single most significant development.
 * Under one heading, "📰 Today's News," present every distinct genuine development found today as its own story block, numbered sequentially (1, 2, 3, ...) in descending order of newsworthiness — judge newsworthiness by concrete outcomes over process: a lawsuit filed, a vote taken, a permit granted or denied, a project blocked or approved outranks a hearing merely scheduled, a meeting merely held, or a study merely published. There is no fixed number of stories — some days might have two, some might have seven; let the actual news set the count, the same way bullet counts within a story are already uncapped.
 * Each story block gets its own short headline/tagline and an emoji that fits that specific story (not a fixed emoji tied to a topic identity), a bulleted list of every distinct real development belonging to that story, and a "Today's Signal" callout — same bullet-count flexibility and no-padding rules as before.
@@ -119,7 +129,7 @@ Create a new file `/Users/development/Development/my-site/src/pages/briefings/mo
 * `headline`: "Morning Briefing: Texas & DFW AI Data Centers, Grid, Land Use"
 * `source`: "Power Grab TX (internal briefing)"
 * `url`: **"/briefings/morning-briefing-\<YYYY-MM-DD\>/"** — note the trailing slash. Every page on the site lives at a trailing-slash URL; leaving it off makes this entry 301-redirect on every crawl, which is exactly the "25 redirects" issue the Aug 23, 2026 Semrush audit flagged.
-* `take`: one sentence of original editorial analysis on today's most notable development(s) — i.e., today's Top Story — written in the same voice as prior entries (direct, a little wry, specific about dates/numbers) — but composed fresh, not adapted from a prior entry's sentence structure.
+* `take`: one sentence of original editorial analysis on today's most notable development(s) — i.e., today's Top Story — written in the same voice as prior entries (direct, a little wry, specific about dates/numbers) — but composed fresh, not adapted from a prior entry's sentence structure. On a Monday edition, this can range across the whole Saturday-through-Monday window, not just Monday itself.
 
 Only touch the `entries` array — do not change anything else in the file (styles, layout, header text, etc.).
 
