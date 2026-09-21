@@ -74,6 +74,7 @@ details[open] summary::after { content: '⌃'; }
 
 /* Prose content (privacy, terms) */
 .content { max-width: 820px; margin: 0 auto; padding: 3rem 2rem; }
+.content h1 { font-size: 1.7rem; font-weight: 700; margin-bottom: 1rem; }
 .content h2 { font-size: 1.7rem; font-weight: 700; margin-bottom: 1rem; }
 .content h3 { font-size: 1.1rem; font-weight: 700; margin: 1.8rem 0 0.6rem; }
 .content p { font-size: 1rem; line-height: 1.8; margin-bottom: 1rem; color: #222; }
@@ -99,5 +100,6 @@ input:focus, textarea:focus { outline: 2px solid #1a4a8a; border-color: #1a4a8a;
 
 /* Page header */
 .page-header { text-align: center; padding: 3rem 2rem 2rem; max-width: 600px; margin: 0 auto; }
+.page-header h1 { font-size: 1.9rem; font-weight: 700; margin-bottom: 1rem; }
 .page-header h2 { font-size: 1.9rem; font-weight: 700; margin-bottom: 1rem; }
 .page-header p { font-size: 1rem; color: #444; line-height: 1.7; }

@@ -3,8 +3,8 @@ import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout
-  title="Thank You | Power Grab TX"
-  description="Thanks for reaching out to Power Grab TX — we'll get back to you soon."
+  title="You're Subscribed! | Power Grab TX"
+  description="You're subscribed to the Power Grab TX Morning Briefing — plus your free download of the AI Data Center Glossary."
   noindex={true}
 >
   <div class="thank-you-section">
@@ -15,11 +15,22 @@ import Layout from "../layouts/Layout.astro";
       width="630"
       height="630"
     />
-    <h1>Thank You!</h1>
+    <h1>You're Subscribed!</h1>
     <p>
-      Your message has been received. We'll get back to you as soon as
-      possible.
+      Thanks for signing up for the Morning Briefing. Watch your inbox for
+      the next one.
     </p>
+
+    <div class="thank-you-download">
+      <p class="thank-you-download-lead">Here's your free download:</p>
+      <a
+        href="/ai-data-center-glossary.pdf"
+        class="btn"
+        download
+      >
+        📄 Download the AI Data Center Glossary
+      </a>
+    </div>
 
     <a href="/" class="btn thank-you-home-btn">Back to Home</a>
   </div>
@@ -52,6 +63,18 @@ import Layout from "../layouts/Layout.astro";
         line-height: 1.5;
       }
 
+      .thank-you-download {
+        background: #fff8f4;
+        border: 1px solid #e8c9b0;
+        border-radius: 10px;
+        padding: 1.3rem 1.5rem;
+        margin-bottom: 1.5rem;
+      }
+      .thank-you-download-lead {
+        font-weight: 700;
+        color: #3a2010;
+        margin-bottom: 1rem;
+      }
       .thank-you-home-btn {
         background: transparent;
         color: #1a4a8a;
