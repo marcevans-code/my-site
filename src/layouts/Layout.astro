@@ -80,12 +80,10 @@ import StayInformedPopup from "../components/StayInformedPopup.astro";
 
 // Don't show the "Stay Informed" popup on the Stay Informed page itself —
 // the visitor is already looking at both forms it links to. Also skip it
-// on the blog submission form so a mid-form interruption doesn't cost us
-// a submission, and on the homepage, which now has its own inline signup
-// box in the hero — a popup on top of that would just be redundant.
+// on the homepage, which now has its own inline signup box in the hero —
+// a popup on top of that would just be redundant.
 const pathname = Astro.url.pathname.replace(/\/$/, "") || "/";
-const showStayInformedPopup =
-  pathname !== "/stay-informed" && pathname !== "/blog/submit" && pathname !== "/";
+const showStayInformedPopup = pathname !== "/stay-informed" && pathname !== "/";
 
 // Auto-discover Morning Briefing pages so the nav link always points at
 // whichever one is newest, without editing this file by hand. Older
@@ -781,7 +779,6 @@ const latestBriefingHref = latestBriefing
         <a href="/about/">About</a>
         <a href="/stay-informed/">Stay Informed</a>
         <a href="/posts/">Posts</a>
-        <a href="/blog/">Blog</a>
       </nav>
     </header>
 
