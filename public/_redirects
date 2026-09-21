@@ -1,3 +1,5 @@
 https://www.powergrabtx.com/* https://powergrabtx.com/:splat 301
 /category/technology/ /news 301
 /economic-impact-of-ai-data-centers-in-texas/ /posts/transforming-texas 301
+# Community Blog retired — send any indexed/bookmarked links home instead of a 404.
+/blog/* / 301

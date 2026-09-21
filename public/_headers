@@ -1,2 +1,13 @@
 /*
   Strict-Transport-Security: max-age=31536000; includeSubDomains
+  X-Frame-Options: SAMEORIGIN
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  # NOTE FOR MARC: test this specifically before pushing. Unlike the other
+  # headers, a wrong Content-Security-Policy can silently break things —
+  # the newsletter/comment forms, Turnstile, or Google Analytics — with no
+  # error visible except in the browser console. After `npm run build &&
+  # npm run preview`, open the homepage, a post, and the comments section,
+  # open DevTools > Console, and look for lines starting "Refused to...".
+  # If you see one, that resource's domain needs adding below.
+  Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://challenges.cloudflare.com; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self' https://forms-worker.marc-897.workers.dev https://www.google-analytics.com https://*.google-analytics.com https://*.analytics.google.com; frame-src https://challenges.cloudflare.com; form-action 'self' https://forms-worker.marc-897.workers.dev; object-src 'none'; base-uri 'self'; frame-ancestors 'self'

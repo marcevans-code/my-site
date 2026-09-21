@@ -22,7 +22,6 @@ strain, water use, tax incentives, and community impact across Texas.
 - [AI Data Center Glossary](https://powergrabtx.com/glossary/): Plain-language definitions of AI data center and grid terminology.
 - [About](https://powergrabtx.com/about/): Who publishes Power Grab TX and why.
 
-## Community
+## Get Involved
 
-- [Community Blog](https://powergrabtx.com/blog/): Reader-submitted stories, reviewed before publication.
 - [Stay Informed](https://powergrabtx.com/stay-informed/): Subscribe to updates or contact Power Grab TX directly.

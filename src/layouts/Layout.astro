@@ -1,5 +1,23 @@
 ---
-const { title, noindex = false, description } = Astro.props;
+const {
+  title,
+  noindex = false,
+  description,
+  // Social-share + structured-data props. All optional so every existing
+  // <Layout ...> call keeps working unchanged; pages that want richer
+  // sharing/SEO just add these.
+  //   image         — path relative to site root (e.g. "/post-featured-image.webp").
+  //                   Falls back to the sitewide logo graphic below.
+  //   type          — "website" (default) or "article" for posts/blog entries.
+  //   publishedTime — ISO date string. Only set this when you know the REAL
+  //                   publish date — leave it off rather than guessing, since
+  //                   a wrong date on a news article is worse than no date.
+  //   author        — display name, for byline + JSON-LD author.
+  image = "/powergrabtx.png",
+  type = "website",
+  publishedTime,
+  author,
+} = Astro.props;
 
 // No default description here on purpose. A silent fallback is exactly how
 // 17 pages ended up sharing one meta description (Semrush flagged it in the
@@ -13,6 +31,49 @@ if (!description) {
       `src/pages/about.astro for an example.`
   );
 }
+
+const canonicalURL = new URL(Astro.url.pathname, Astro.site);
+const imageURL = new URL(image, Astro.site);
+
+// Structured data graph. Organization + WebSite are always present; an
+// Article node is added only for type="article" pages, and only carries
+// the fields we actually know — no invented dates or authors.
+const structuredData = [
+  {
+    "@type": "Organization",
+    "@id": "https://powergrabtx.com/#organization",
+    name: "Power Grab TX",
+    url: "https://powergrabtx.com/",
+    logo: "https://powergrabtx.com/logo.webp",
+  },
+  {
+    "@type": "WebSite",
+    "@id": "https://powergrabtx.com/#website",
+    url: "https://powergrabtx.com/",
+    name: "Power Grab TX",
+    description:
+      "PowerGrab TX tracks the real cost of AI data centers in Texas — on the grid, the water table, and the communities in their shadow.",
+    publisher: { "@id": "https://powergrabtx.com/#organization" },
+  },
+];
+
+if (type === "article") {
+  structuredData.push({
+    "@type": "NewsArticle",
+    "@id": `${canonicalURL}#article`,
+    headline: title,
+    description,
+    image: [imageURL.toString()],
+    url: canonicalURL.toString(),
+    mainEntityOfPage: canonicalURL.toString(),
+    ...(publishedTime ? { datePublished: publishedTime, dateModified: publishedTime } : {}),
+    author: author
+      ? { "@type": "Person", name: author }
+      : { "@id": "https://powergrabtx.com/#organization" },
+    publisher: { "@id": "https://powergrabtx.com/#organization" },
+  });
+}
+
 import "@fontsource/lato/400.css";
 import "@fontsource/lato/700.css";
 import StayInformedPopup from "../components/StayInformedPopup.astro";
@@ -56,31 +117,36 @@ const latestBriefingHref = latestBriefing
     <meta name="msvalidate.01" content="F41BBE6F2E3E274F8C18E662BD1C9BB8" />
     {noindex && <meta name="robots" content="noindex, nofollow" />}
     <link rel="icon" type="image/x-icon" href="/favicon.ico" />
-    <link rel="canonical" href={new URL(Astro.url.pathname, Astro.site)} />
+    <link rel="canonical" href={canonicalURL} />
 
     <meta
       name="google-site-verification"
       content="r5GOhIsqfQ63OHWvvFDI0nWOyCLEC_fmERLyogCXg8A"
     />
+
+    <!-- Open Graph (Facebook, LinkedIn, Slack, iMessage, etc.) -->
+    <meta property="og:type" content={type} />
+    <meta property="og:site_name" content="Power Grab TX" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonicalURL} />
+    <meta property="og:image" content={imageURL} />
+    {type === "article" && publishedTime && (
+      <meta property="article:published_time" content={publishedTime} />
+    )}
+    {type === "article" && author && (
+      <meta property="article:author" content={author} />
+    )}
+
+    <!-- Twitter/X card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={imageURL} />
+
     <script type="application/ld+json" set:html={JSON.stringify({
       "@context": "https://schema.org",
-      "@graph": [
-        {
-          "@type": "Organization",
-          "@id": "https://powergrabtx.com/#organization",
-          "name": "Power Grab TX",
-          "url": "https://powergrabtx.com/",
-          "logo": "https://powergrabtx.com/logo.webp",
-        },
-        {
-          "@type": "WebSite",
-          "@id": "https://powergrabtx.com/#website",
-          "url": "https://powergrabtx.com/",
-          "name": "Power Grab TX",
-          "description": "PowerGrab TX tracks the real cost of AI data centers in Texas — on the grid, the water table, and the communities in their shadow.",
-          "publisher": { "@id": "https://powergrabtx.com/#organization" },
-        },
-      ],
+      "@graph": structuredData,
     })} />
     <style is:global>
       /* ══════════════════════════════════════════════════════════════
@@ -689,9 +755,13 @@ const latestBriefingHref = latestBriefing
     <header>
       <div class="logo">
         <a href="/">
-          <img src="/logo.webp" alt="Power Grab TX" />
+          <img src="/logo.webp" alt="Power Grab TX" width="365" height="282" />
         </a>
-        <h1 class="logo-title"><a href="/">Power Grab TX</a></h1>
+        <!-- Was <h1>: this renders on every page, so it was competing with
+             (or replacing) each page's real content H1. Site branding
+             belongs in the header as a styled link, not a heading — each
+             page's own <h1> in its content is now the only one. -->
+        <p class="logo-title"><a href="/">Power Grab TX</a></p>
       </div>
       <button class="hamburger" id="hamburger">☰</button>
       <nav id="nav">

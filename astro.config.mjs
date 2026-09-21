@@ -8,6 +8,17 @@ export default defineConfig({
       // Keep the noindex'd thank-you page, and the blog submission form,
       // out of the sitemap Google crawls.
       filter: (page) => !page.includes('/thank-you') && !page.includes('/blog/submit'),
+      // Morning Briefing URLs already encode their real publish date
+      // (morning-briefing-YYYY-MM-DD), so we can give Google an accurate
+      // <lastmod> for those without guessing. Everything else is left
+      // alone rather than stamped with a fake date.
+      serialize(item) {
+        const match = item.url.match(/\/briefings\/morning-briefing-(\d{4}-\d{2}-\d{2})\/?$/);
+        if (match) {
+          return { ...item, lastmod: new Date(`${match[1]}T00:00:00Z`).toISOString() };
+        }
+        return item;
+      },
     }),
   ],
   build: {

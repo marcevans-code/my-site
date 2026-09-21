@@ -48,7 +48,10 @@ if (briefingEntries.length > 0) {
   description="PowerGrab TX tracks the real cost of AI data centers in Texas — on the grid, the water table, and the communities in their shadow."
 >
   <section class="hero">
-    <h2>Texas Is Paying the Price for the AI Boom</h2>
+    <!-- The site's one real H1: the header logo used to be an <h1> too,
+         which meant the homepage had no distinct, descriptive heading of
+         its own. See src/layouts/Layout.astro for the matching fix. -->
+    <h1>Texas Is Paying the Price for the AI Boom</h1>
     <p>
       Tech giants are racing to plant massive data centers across Texas —
       draining the power grid, straining water supplies, and reshaping
@@ -390,7 +393,7 @@ if (briefingEntries.length > 0) {
       color: #fff;
       text-align: center;
     }
-    .hero h2 {
+    .hero h1 {
       font-size: 2.2rem;
       font-weight: 800;
       max-width: 700px;
