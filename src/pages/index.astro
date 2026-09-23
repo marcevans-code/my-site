@@ -110,6 +110,37 @@ if (briefingEntries.length > 0) {
     </a>
   </section>
 
+  <section class="near-you" aria-labelledby="near-you-heading">
+    <div class="near-you-inner">
+      <h2 id="near-you-heading">📍 A Data Center Is Proposed Near You. What Now?</h2>
+      <p class="near-you-lead">
+        Most residents find out too late. In Texas you may get only 10 days’
+        notice before a zoning hearing, and some state permit rights are lost
+        30 days after a newspaper notice. Here’s where to start:
+      </p>
+      <ol class="near-you-steps">
+        <li>
+          <strong>Get on the lists.</strong> Join TCEQ’s county mailing list and watch your city and county agendas.
+        </li>
+        <li>
+          <strong>Know who decides.</strong> Inside city limits it’s a zoning vote. In the county it may be only a
+          state air or water permit.
+        </li>
+        <li>
+          <strong>Get into the record.</strong> File written comments before the deadline. Issues not raised in time
+          can’t be argued later.
+        </li>
+        <li>
+          <strong>Ask for the documents.</strong> NDAs, applications and emails are public records you can request.
+        </li>
+      </ol>
+      <a href="/guides/data-center-near-you/" class="btn near-you-btn">Read the full step-by-step guide →</a>
+      <p class="near-you-pdf">
+        Or <a href="/data-center-near-you-checklist.pdf" download>download the printable one-page checklist (PDF)</a>
+      </p>
+    </div>
+  </section>
+
   {latestBriefing && (
     <section class="today-snapshot">
       <div class="today-snapshot-inner">
@@ -468,6 +499,101 @@ if (briefingEntries.length > 0) {
     }
     .hero-secondary-link:hover {
       opacity: 1;
+    }
+
+    /* "Data center near you" guide teaser, directly under the hero sign-up */
+    .near-you {
+      background: #f0f5fb;
+      border: 1px solid #c9d6e6;
+      border-radius: 15px;
+      margin: 1.5rem 0.5rem;
+      padding: 1.5rem 1rem;
+    }
+    .near-you-inner {
+      max-width: 760px;
+      margin: 0 auto;
+    }
+    .near-you h2 {
+      color: #1a3a6a;
+      font-size: 1.35rem;
+      line-height: 1.3;
+      margin-bottom: 0.6rem;
+      text-align: center;
+    }
+    .near-you-lead {
+      font-size: 1rem;
+      line-height: 1.6;
+      color: #222;
+      margin-bottom: 1rem;
+    }
+    .near-you-steps {
+      list-style: none;
+      counter-reset: nearyou;
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 0.7rem;
+      padding: 0;
+      margin: 0 0 1.2rem;
+    }
+    .near-you-steps li {
+      counter-increment: nearyou;
+      position: relative;
+      background: #fff;
+      border: 1px solid #dde6f0;
+      border-radius: 10px;
+      padding: 0.8rem 0.9rem 0.8rem 3rem;
+      font-size: 0.95rem;
+      line-height: 1.5;
+      color: #333;
+    }
+    .near-you-steps li::before {
+      content: counter(nearyou);
+      position: absolute;
+      left: 0.8rem;
+      top: 0.8rem;
+      width: 1.6rem;
+      height: 1.6rem;
+      border-radius: 50%;
+      background: #1a3a6a;
+      color: #fff;
+      font-size: 0.85rem;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .near-you-steps strong {
+      display: block;
+      color: #1a3a6a;
+    }
+    .near-you-btn {
+      display: block;
+      text-align: center;
+      white-space: normal;
+    }
+    .near-you-pdf {
+      text-align: center;
+      font-size: 0.9rem;
+      margin: 0.8rem 0 0;
+    }
+    .near-you-pdf a {
+      color: #1a4a8a;
+      font-weight: 700;
+    }
+    @media (min-width: 700px) {
+      .near-you {
+        padding: 2rem;
+      }
+      .near-you h2 {
+        font-size: 1.6rem;
+      }
+      .near-you-steps {
+        grid-template-columns: 1fr 1fr;
+      }
+      .near-you-btn {
+        display: table;
+        margin: 0 auto;
+      }
     }
 
     .today-snapshot {

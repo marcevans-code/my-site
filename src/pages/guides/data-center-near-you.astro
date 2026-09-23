@@ -1,0 +1,933 @@
+---
+// src/pages/guides/data-center-near-you.astro
+// Route: /guides/data-center-near-you/
+// Evergreen "what to do" guide for residents facing a proposed data center.
+// Linked from the main menu ("Your Rights") and the home page block under
+// the hero sign-up. Tables are built from the arrays below and collapse into
+// stacked cards on phones (see the <style> block at the bottom).
+//
+// The contacts table and the checklist live in src/data/data-center-near-you.json
+// so this page and the printable PDF (scripts/build-near-you-checklist-pdf.mjs,
+// run on every build) always match. When the law or a deadline changes,
+// edit that file and/or the text below, and update `reviewed` there.
+import Layout from "../../layouts/Layout.astro";
+import guideData from "../../data/data-center-near-you.json";
+
+const { reviewed, contacts: contactRows, checklist } = guideData;
+const checklistPdf = "/data-center-near-you-checklist.pdf";
+
+const noticeRows = [
+  {
+    approval: "City rezoning or special use permit",
+    who: "City",
+    how: "Newspaper and city website at least 15 days before the council hearing. Letter to property owners within 200 feet at least 10 days before the zoning commission hearing.",
+  },
+  {
+    approval: "City rezoning (home-rule cities, since Sept. 2025)",
+    who: "City or applicant",
+    how: "A 24 × 48 inch sign on the property from 10 days before the commission hearing until the final vote.",
+  },
+  {
+    approval: "TCEQ air permit, first notice (NORI)",
+    who: "Applicant",
+    how: "Published in a newspaper within 30 days of TCEQ accepting the application, plus signs posted around the site.",
+  },
+  {
+    approval: "TCEQ air permit, second notice (NAPD)",
+    who: "TCEQ",
+    how: "Preliminary decision mailed to the mailing list and published in a newspaper.",
+  },
+];
+
+const airSteps = [
+  "Application filed",
+  "First notice (NORI) + site signs",
+  "Technical review",
+  "Draft permit (NAPD) + comment period",
+  "Response to comments + decision letter",
+  "30 days to request a hearing or reconsideration",
+  "Commissioners vote or SOAH hearing",
+];
+
+const airRows = [
+  { action: "Written comment", deadline: "During the comment period, usually at least 30 days after the NAPD is published", who: "Anyone" },
+  { action: "Request a public meeting", deadline: "During the comment period. Ask for a “public meeting” by name.", who: "Anyone. TCEQ also holds one if a local legislator asks." },
+  { action: "Request a contested case hearing", deadline: "Within the NORI window for some air permits; otherwise within 30 days of the decision letter", who: "An “affected person”" },
+  { action: "Request for reconsideration", deadline: "Within 30 days of the decision letter", who: "Anyone" },
+  { action: "Motion to overturn", deadline: "Within 23 days of TCEQ mailing notice of the signed permit", who: "Anyone" },
+  { action: "Motion for rehearing (needed before a court appeal)", deadline: "Within 25 days of the commissioners’ decision", who: "Parties" },
+];
+
+
+
+const toc = [
+  { id: "find-out-early", label: "1. Find out early" },
+  { id: "zoning", label: "2. Zoning hearings" },
+  { id: "air-permits", label: "3. Air permits" },
+  { id: "water", label: "4. Water" },
+  { id: "tax-breaks", label: "5. Tax breaks" },
+  { id: "records", label: "6. Get the records" },
+  { id: "contacts", label: "Who to contact" },
+  { id: "checklist", label: "Checklist" },
+];
+---
+
+<Layout
+  title="A Data Center Is Proposed Near You: What Now? — Power Grab TX"
+  description="A step-by-step Texas guide for residents: public notice rules, zoning hearings and protest petitions, commenting on TCEQ air permits, water, tax breaks and public records."
+  image="/powergrabtx-research.webp"
+  type="article"
+  publishedTime={reviewed}
+>
+  <article class="guide">
+    <div class="guide-hero">
+      <p class="guide-kicker">Resident Guide</p>
+      <h1>A Data Center Is Proposed Near You: What Now?</h1>
+      <p class="guide-lead">
+        Timing decides most data center fights. In Texas you may get only 10
+        days’ notice before a zoning hearing, and some state permit rights are
+        lost 30 days after a newspaper notice. Here is where to look, what to
+        file and who to call, in the order it usually comes up.
+      </p>
+      <p class="guide-date">
+        Last reviewed <time datetime={reviewed}>September 2026</time>
+      </p>
+      <a href={checklistPdf} class="guide-download" download>
+        Download the one-page checklist (PDF)
+      </a>
+    </div>
+
+    <nav class="guide-toc" aria-label="On this page">
+      <p class="guide-toc-title">On this page</p>
+      <ul>
+        {toc.map((t) => (
+          <li><a href={`#${t.id}`}>{t.label}</a></li>
+        ))}
+      </ul>
+    </nav>
+
+    <aside class="guide-alert">
+      <p>
+        <strong>Update, September 2026:</strong> On September 21, Governor
+        Abbott directed TCEQ to issue no permits for data center projects until
+        ERCOT’s audit is complete. Applications can still be filed and notices
+        still published, so keep commenting. Anything not raised during a
+        comment period can’t be argued later.
+      </p>
+    </aside>
+
+    <!-- STEP 1 -->
+    <section class="guide-step" id="find-out-early">
+      <h2><span class="step-num">1</span> Find out early</h2>
+      <p>
+        You usually get only 10 to 15 days’ warning before a city zoning
+        hearing, and 30 days to act on a state air permit notice. Set up alerts
+        before a project is announced. Official notice comes through these
+        channels:
+      </p>
+
+      <table class="guide-table">
+        <thead>
+          <tr><th>Approval</th><th>Who gives notice</th><th>How and when</th></tr>
+        </thead>
+        <tbody>
+          {noticeRows.map((r) => (
+            <tr>
+              <td data-label="Approval"><strong>{r.approval}</strong></td>
+              <td data-label="Who gives notice">{r.who}</td>
+              <td data-label="How and when">{r.how}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+
+      <p>
+        The 200-foot mailing rule means most neighbors never get a letter,
+        because a data center tract is often hundreds of acres. Don’t count on
+        the mail.
+      </p>
+      <ul>
+        <li><strong>Join TCEQ’s county mailing list.</strong> Send the Chief Clerk your name, address and county. You’ll get every air, water and waste notice filed there.</li>
+        <li><strong>Watch city and county agendas.</strong> By law they are posted at least 72 hours before each meeting, usually online.</li>
+        <li><strong>Watch the legal notices</strong> in your local paper, and look for rezoning signs on large tracts.</li>
+        <li><strong>Search TCEQ’s Commissioners’ Integrated Database</strong> for new permits by county or company name.</li>
+        <li><strong>Follow the tax breaks.</strong> Abatement and economic development deals often reach a council or school board agenda before any zoning request.</li>
+      </ul>
+      <p class="guide-note">
+        Some projects need no rezoning at all. A site already zoned for
+        industrial use is “permitted by right”, and unincorporated county land
+        has no zoning. Then the TCEQ permit may be the first public notice there is.
+      </p>
+    </section>
+
+    <!-- STEP 2 -->
+    <section class="guide-step" id="zoning">
+      <h2><span class="step-num">2</span> Zoning hearings</h2>
+      <p>
+        Zoning is the strongest local lever, but only inside city limits.
+        Texas counties have no general zoning power, so on unincorporated land
+        there may be no zoning vote at all.
+      </p>
+      <h3>Inside a city</h3>
+      <p>
+        A data center usually needs a rezoning, a specific use permit or a
+        development agreement. That means a public hearing at the planning or
+        zoning commission, then another at city council. At both:
+      </p>
+      <ol>
+        <li>Sign up to speak. Most cities cap comments at 2 to 3 minutes and require sign-up before the item.</li>
+        <li>Submit written comments too, so they go into the record.</li>
+        <li>Stick to what the council can legally weigh: land use, noise, traffic, water and sewer capacity, and fit with the comprehensive plan.</li>
+        <li>Bring neighbors. Council members count heads.</li>
+      </ol>
+
+      <div class="guide-callout">
+        <h3>The protest petition</h3>
+        <p>
+          If owners of at least <strong>20% of the land within 200 feet</strong> of the site sign a written protest, the change needs a <strong>three-fourths vote of the full council</strong> instead of a
+          simple majority. Street and alley area counts toward the 20%, and the
+          land is added up in total, not per tract. File it with the city
+          before the council vote.
+        </p>
+      </div>
+
+      <h3>After a decision</h3>
+      <p>
+        A person aggrieved by a city staff decision on a specific project who
+        owns property within 200 feet can appeal to the Board of Adjustment
+        within 20 days. A Board of Adjustment decision can be challenged in
+        court within 10 days.
+      </p>
+      <h3>Outside city limits</h3>
+      <p>
+        The county can still act on roads and driveway permits, floodplain
+        rules, subdivision plats and some nuisance issues. Commissioners court
+        meetings are public and take public comment. Tell your state
+        representative too: the lack of county authority is a live issue for
+        the 2027 legislative session.
+      </p>
+      <p class="guide-note">
+        <strong>Open meetings law applies.</strong> Councils and commissions
+        must post agendas at least 72 hours ahead and deliberate in public. If
+        a deal seems to have been decided behind closed doors, write down what
+        you saw and when.
+      </p>
+    </section>
+
+    <!-- STEP 3 -->
+    <section class="guide-step" id="air-permits">
+      <h2><span class="step-num">3</span> Air permits</h2>
+      <p>
+        Any data center with its own gas turbines or diesel backup generators
+        needs a TCEQ air permit. For some air permits, the right to a contested
+        case hearing is lost if nobody requests one within the window in the
+        first notice (NORI). Read that notice the day you see it.
+      </p>
+
+      <ol class="guide-flow" aria-label="How a TCEQ air permit moves">
+        {airSteps.map((s) => <li>{s}</li>)}
+      </ol>
+
+      <p>
+        The NORI and the NAPD are your two chances to get into the record.
+        Anything you want argued later has to be raised in a comment during the
+        comment period.
+      </p>
+
+      <h3>What to file, and when</h3>
+      <table class="guide-table">
+        <thead>
+          <tr><th>Action</th><th>Deadline</th><th>Who can do it</th></tr>
+        </thead>
+        <tbody>
+          {airRows.map((r) => (
+            <tr>
+              <td data-label="Action"><strong>{r.action}</strong></td>
+              <td data-label="Deadline">{r.deadline}</td>
+              <td data-label="Who can do it">{r.who}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+
+      <p>
+        <strong>File online</strong> at <a href="https://www.tceq.texas.gov/goto/comment" target="_blank" rel="noopener">tceq.texas.gov/goto/comment</a>,
+        or by mail to the Office of the Chief Clerk, MC 105, TCEQ, PO Box 13087,
+        Austin TX 78711-3087. Include the permit number and the applicant’s name.
+      </p>
+
+      <div class="guide-callout">
+        <h3>“Public hearing” and “public meeting” are not the same</h3>
+        <p>
+          TCEQ treats the word “hearing” as a request for a contested case
+          hearing. A <strong>public meeting</strong> is a Q&amp;A where formal
+          comments are taken, but no decision is made. Ask for the one you
+          want by name.
+        </p>
+      </div>
+
+      <h3>To qualify as an affected person</h3>
+      <p>
+        You must show the permit would harm you in a way not shared by the
+        general public, such as your health, safety or use of your property.
+        Your request needs:
+      </p>
+      <ul>
+        <li>Your name, address and daytime phone</li>
+        <li>The permit number and applicant name</li>
+        <li>A clear statement that you are requesting a “contested case hearing”</li>
+        <li>Where your home or property is, and how far it is from the facility</li>
+        <li>How you would be harmed differently from the general public</li>
+        <li>The disputed issues, each one raised in a comment during the comment period</li>
+      </ul>
+      <p>
+        A group can request a hearing if it names at least one member who
+        qualifies. A contested case is a trial-like proceeding before the State
+        Office of Administrative Hearings (SOAH). A lawyer isn’t required, but
+        it helps.
+      </p>
+      <p class="guide-note">
+        <strong>Free help:</strong> TCEQ’s Office of Public Interest Counsel
+        (<a href="tel:5122396363">512-239-6363</a>) explains the hearing
+        process. The Public Education Program
+        (<a href="tel:8006874040">800-687-4040</a>) can tell you where an
+        application stands.
+      </p>
+    </section>
+
+    <!-- STEP 4 -->
+    <section class="guide-step" id="water">
+      <h2><span class="step-num">4</span> Water</h2>
+      <p>
+        Water approvals are split among several bodies. Start by finding out
+        where the project’s water will come from: a city utility, new wells or
+        surface water.
+      </p>
+      <ul>
+        <li><strong>New wells: your groundwater conservation district.</strong> Most of Texas is covered by a local district that permits large wells. Applications get public notice and a hearing before the district board. Many districts want a written contested case request shortly before that hearing (Lost Pines GCD, for example, asks for it at least five days ahead). Rules differ, so read your district’s as soon as an application is filed.</li>
+        <li><strong>River or lake water: TCEQ water rights.</strong> New surface water rights go through TCEQ, with the same comment and hearing process as air permits.</li>
+        <li><strong>City water and wastewater.</strong> If the city supplies it, capacity comes up at the zoning hearing and in any development agreement. Ask how many gallons a day the site will use at full build-out, and in a drought.</li>
+      </ul>
+      <div class="guide-callout">
+        <h3>The state is now enforcing water reporting</h3>
+        <p>
+          The Texas Water Development Board’s water use survey is mandatory,
+          yet only 97 of 324 known data centers had answered it by early
+          September. On September 14, 2026, Governor Abbott directed TWDB to
+          enforce the law. Skipping the survey is a criminal offense, and a data
+          center that doesn’t return it on time is ineligible for TCEQ
+          water-rights permits.
+        </p>
+        <p>
+          <strong>Ask it everywhere:</strong> has this company filed its TWDB
+          water use survey for its existing Texas facilities?
+        </p>
+      </div>
+    </section>
+
+    <!-- STEP 5 -->
+    <section class="guide-step" id="tax-breaks">
+      <h2><span class="step-num">5</span> Tax breaks</h2>
+      <p>
+        A property tax abatement needs two public votes, and the second
+        requires 30 days’ notice. That makes it one of the most predictable
+        openings to weigh in. Tax breaks are also a real bargaining chip: in
+        September 2026, AWS dropped its Hood County bid rather than give up a
+        90% property-tax rebate.
+      </p>
+      <h3>How a Chapter 312 abatement works</h3>
+      <ol>
+        <li><strong>The city or county designates a “reinvestment zone.”</strong> It must hold a public hearing first, with newspaper notice at least 7 days ahead. Anyone may speak and present evidence for or against.</li>
+        <li><strong>It votes on the abatement agreement.</strong> The meeting notice must go out at least 30 days ahead, naming the property owner and applicant, the zone, what will be built and the estimated cost. A majority of the full governing body must approve it at a regular meeting.</li>
+        <li><strong>The agreement can last up to 10 years,</strong> and each other taxing unit (county, hospital district, college district) can sign its own deal.</li>
+      </ol>
+      <h3>What to ask for at the hearing</h3>
+      <ul>
+        <li>Clawback terms that recapture the taxes if promised jobs or investment don’t materialize. The law allows them but doesn’t require them.</li>
+        <li>Annual compliance reports, which the owner must certify to each taxing unit.</li>
+        <li>Water use, noise and setback conditions written into the agreement itself.</li>
+      </ul>
+      <p class="guide-note">
+        <strong>Watch for the side doors.</strong> Details the company submits
+        with its application are confidential until the agreement is signed,
+        and public after. Cities and counties can also offer incentives as
+        economic development grants (Chapter 380 for cities, 381 for counties),
+        which don’t follow the same 30-day notice rule. School districts can’t
+        grant 312 abatements but can offer value limitations under the state’s
+        JETI program. Signed abatements are reported to the Texas Comptroller,
+        and the Governor has said he will ask the Legislature to eliminate data
+        center incentives in 2027.
+      </p>
+    </section>
+
+    <!-- STEP 6 -->
+    <section class="guide-step" id="records">
+      <h2><span class="step-num">6</span> Get the records</h2>
+      <p>
+        The Texas Public Information Act lets anyone get copies of existing
+        government records without saying why. If a city or county needs more
+        than 10 business days, it must tell you when the records will arrive.
+        To withhold anything, it usually has to ask the Attorney General for a
+        ruling.
+      </p>
+      <h3>How to ask</h3>
+      <ul>
+        <li>Send a written request to the public information officer by email, mail or hand delivery. Many cities have an online portal.</li>
+        <li>Ask for records that already exist. The office doesn’t have to answer questions or create new documents.</li>
+        <li>Keep a copy of your request and proof it was received.</li>
+      </ul>
+      <h3>What to request</h3>
+      <ul>
+        <li>Nondisclosure agreements (NDAs) signed with the developer or a consultant by the city, county or economic development corporation</li>
+        <li>Emails and texts between officials and the developer, its lawyers or site selectors, for a set date range</li>
+        <li>The zoning, platting or permit application and any site plans</li>
+        <li>Tax abatement or Chapter 380/381 applications and draft agreements</li>
+        <li>Water and wastewater capacity studies, and any “will serve” letters</li>
+        <li>Meeting calendars for the mayor, city manager and economic development director</li>
+      </ul>
+      <p class="guide-note">
+        <strong>If they stall,</strong> call the Attorney General’s Open
+        Government Hotline at <a href="tel:5124786736">512-478-6736</a> or
+        toll-free <a href="tel:8776736839">877-673-6839</a>, or file a
+        complaint with your district or county attorney.
+      </p>
+    </section>
+
+    <!-- CONTACTS -->
+    <section class="guide-step" id="contacts">
+      <h2>Your rights and who to contact</h2>
+      <p>
+        You have a right to notice, to speak at zoning and tax hearings, to
+        comment on state permits and to see public records. If you own nearby
+        property, you may also be able to protest a rezoning or request a
+        contested case hearing.
+      </p>
+      <table class="guide-table">
+        <thead>
+          <tr><th>Need</th><th>Contact</th><th>How</th></tr>
+        </thead>
+        <tbody>
+          {contactRows.map((r) => (
+            <tr>
+              <td data-label="Need"><strong>{r.need}</strong></td>
+              <td data-label="Contact">{r.contact}</td>
+              <td data-label="How">
+                {r.href ? <a href={r.href} target="_blank" rel="noopener">{r.how}</a> : r.how}
+              </td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </section>
+
+    <!-- CHECKLIST -->
+    <section class="guide-step" id="checklist">
+      <h2>Checklist and timeline</h2>
+      <p>Most of the first two groups can be done in the first week.</p>
+      <p class="guide-note">
+        Want it on paper? <a href={checklistPdf} download>Download the printable
+        one-page checklist (PDF)</a> with the key deadlines and phone numbers,
+        to hand out to neighbors or bring to a meeting.
+      </p>
+      <div class="guide-checklist">
+        {checklist.map((group) => (
+          <div class="checklist-group">
+            <h3>{group.title}</h3>
+            <ul>
+              {group.items.map((item) => (
+                <li>
+                  <label>
+                    <input type="checkbox" />
+                    <span>{item}</span>
+                  </label>
+                </li>
+              ))}
+            </ul>
+          </div>
+        ))}
+      </div>
+    </section>
+
+    <p class="guide-disclaimer">
+      This guide is general information, not legal advice. Deadlines are short
+      and rules change, so confirm dates with the agency or a Texas lawyer.
+    </p>
+
+    <div class="post-related">
+      <h3>Sources</h3>
+      <ul>
+        <li><a href="https://statutes.capitol.texas.gov/Docs/LG/htm/LG.211.htm" target="_blank" rel="noopener">Texas Local Government Code, Chapter 211</a> — municipal zoning notice, signs, protest petitions, Board of Adjustment appeals</li>
+        <li><a href="https://statutes.capitol.texas.gov/Docs/TX/htm/TX.312.htm" target="_blank" rel="noopener">Texas Tax Code, Chapter 312</a> — tax abatement hearings, 30-day meeting notice, confidentiality</li>
+        <li><a href="https://www.tceq.texas.gov/agency/decisions/participation/permitting-participation/overview-public-participation-in-environmental-permitting" target="_blank" rel="noopener">TCEQ</a> — “Overview: Public Participation in Environmental Permitting”</li>
+        <li><a href="https://gov.texas.gov/news/post/governor-abbott-directs-twdb-to-penalize-data-center-reporting-failures" target="_blank" rel="noopener">Office of the Texas Governor</a> — “Governor Abbott Directs TWDB To Penalize Data Center Reporting Failures”</li>
+        <li><a href="https://gov.texas.gov/news/post/governor-abbott-directs-tceq-to-halt-data-center-permits" target="_blank" rel="noopener">Office of the Texas Governor</a> — “Governor Abbott Directs TCEQ To Halt Data Center Permits”</li>
+        <li><a href="https://www.texasattorneygeneral.gov/open-government/members-public/how-request-public-information" target="_blank" rel="noopener">Texas Attorney General</a> — “How to Request Public Information”</li>
+        <li><a href="https://www.texasattorneygeneral.gov/open-government/members-public/overview-public-information-act" target="_blank" rel="noopener">Texas Attorney General</a> — “Overview of the Public Information Act”</li>
+        <li><a href="http://www.lostpineswater.org/faq" target="_blank" rel="noopener">Lost Pines Groundwater Conservation District</a> — FAQ on contested case hearings</li>
+      </ul>
+    </div>
+
+    <div class="post-related">
+      <h3>Related Pages</h3>
+      <ul>
+        <li><a href="/trackers/">AI Data Center Tracker</a> — A running, dated, sourced record of the boom as it unfolds.</li>
+        <li><a href="/glossary/">AI Data Center Glossary</a> — Plain-language definitions of the terms in this guide.</li>
+        <li><a href="/news/">Latest News</a> — Updates on Texas energy, AI expansion and infrastructure changes.</li>
+        <li><a href="/posts/">Posts</a> — Original reporting and analysis from Power Grab TX.</li>
+      </ul>
+    </div>
+
+    <div class="post-cta">
+      <p>
+        Fighting a project in your area? We want to hear about it, and our
+        weekday Morning Briefing tracks new filings across Texas.
+      </p>
+      <a href="/stay-informed/" class="btn">Stay informed about AI's impact in Texas</a>
+    </div>
+  </article>
+</Layout>
+
+<style>
+  /* Mobile-first. Everything below reads as one column on a phone; the
+     wider breakpoints only add room, never required content. */
+
+  .guide {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 1rem 1rem 2rem;
+  }
+
+  /* Hero */
+  .guide-hero {
+    background: #1a3a6a;
+    color: #fff;
+    border-radius: 15px;
+    padding: 1.6rem 1.2rem;
+    margin-bottom: 1.2rem;
+  }
+  .guide-kicker {
+    font-size: 0.8rem;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #ffb08a;
+    margin-bottom: 0.5rem;
+  }
+  .guide-hero h1 {
+    font-size: 1.6rem;
+    font-weight: 800;
+    line-height: 1.25;
+    margin-bottom: 0.8rem;
+  }
+  .guide-lead {
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.6;
+    margin-bottom: 0.8rem;
+  }
+  .guide-date {
+    font-size: 0.85rem;
+    opacity: 0.8;
+  }
+  .guide-download {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.7rem 1rem;
+    border-radius: 8px;
+    background: #fff;
+    color: #1a3a6a;
+    font-size: 0.95rem;
+    font-weight: 700;
+    text-decoration: none;
+    max-width: 100%;
+    white-space: normal;
+    text-align: center;
+  }
+  .guide-download:hover {
+    background: #ffe9dd;
+  }
+
+  /* On-this-page menu: wrapping chips, easy to tap on a phone */
+  .guide-toc {
+    margin-bottom: 1.2rem;
+  }
+  .guide-toc-title {
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: #666;
+    margin-bottom: 0.5rem;
+  }
+  .guide-toc ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    padding: 0;
+  }
+  .guide-toc a {
+    display: inline-block;
+    padding: 0.5rem 0.8rem;
+    border: 1px solid #c9d6e6;
+    border-radius: 999px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #1a4a8a;
+    background: #f4f8fc;
+    text-decoration: none;
+  }
+  .guide-toc a:hover {
+    background: #e2ecf7;
+  }
+
+  /* Alert (matches the home page snapshot palette) */
+  .guide-alert {
+    background: #fff8f4;
+    border: 1px solid #e8c9b0;
+    border-left: 4px solid #e05c2a;
+    border-radius: 8px;
+    padding: 0.9rem 1rem;
+    margin-bottom: 1.5rem;
+  }
+  .guide-alert p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: #3a2010;
+  }
+
+  /* Step sections */
+  .guide-step {
+    padding: 1.5rem 0;
+    border-top: 1px solid #e5e5e5;
+    scroll-margin-top: 110px; /* clears the sticky header on jump links */
+  }
+  .guide-step h2 {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    font-size: 1.35rem;
+    font-weight: 800;
+    line-height: 1.3;
+    margin-bottom: 0.8rem;
+  }
+  .step-num {
+    flex: 0 0 auto;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    background: #1a3a6a;
+    color: #fff;
+    font-size: 1rem;
+  }
+  .guide-step h3 {
+    font-size: 1.05rem;
+    font-weight: 700;
+    margin: 1.2rem 0 0.5rem;
+  }
+  .guide-step p,
+  .guide-step li {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: #222;
+  }
+  .guide-step p {
+    margin-bottom: 0.9rem;
+  }
+  .guide-step ul,
+  .guide-step ol {
+    padding-left: 1.3rem;
+    margin-bottom: 1rem;
+  }
+  .guide-step li {
+    margin-bottom: 0.4rem;
+  }
+  .guide-step a {
+    color: #1a4a8a;
+    overflow-wrap: anywhere; /* long URLs never push the page sideways */
+  }
+
+  .guide-note {
+    background: #f4f4f4;
+    border-radius: 8px;
+    padding: 0.8rem 1rem;
+    font-size: 0.95rem !important;
+  }
+  .guide-callout {
+    background: #f0f5fb;
+    border-left: 4px solid #1a4a8a;
+    border-radius: 8px;
+    padding: 0.9rem 1rem 0.2rem;
+    margin: 1.2rem 0;
+  }
+  .guide-callout h3 {
+    margin-top: 0;
+  }
+
+  /* Tables: stacked cards on phones, a real table from 700px up */
+  .guide-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1rem 0 1.2rem;
+  }
+  .guide-table thead {
+    display: none;
+  }
+  .guide-table tr {
+    display: block;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 0.8rem 1rem;
+    margin-bottom: 0.7rem;
+    background: #fff;
+  }
+  .guide-table td {
+    display: block;
+    padding: 0.2rem 0;
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+  .guide-table td + td::before {
+    content: attr(data-label);
+    display: block;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: #666;
+    margin-top: 0.4rem;
+  }
+  .guide-table td:first-child strong {
+    color: #1a3a6a;
+  }
+
+  /* Air-permit flow: vertical steps on phones, wrapping row on desktop */
+  .guide-flow {
+    list-style: none;
+    counter-reset: flow;
+    padding: 0 !important;
+    margin: 1rem 0 1.2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+  .guide-flow li {
+    counter-increment: flow;
+    position: relative;
+    background: #f0f5fb;
+    border: 1px solid #c9d6e6;
+    border-radius: 8px;
+    padding: 0.6rem 0.8rem 0.6rem 2.6rem;
+    margin: 0 0 1.3rem !important;
+    font-size: 0.92rem !important;
+    font-weight: 600;
+    line-height: 1.4 !important;
+  }
+  .guide-flow li::before {
+    content: counter(flow);
+    position: absolute;
+    left: 0.7rem;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 1.4rem;
+    height: 1.4rem;
+    border-radius: 50%;
+    background: #1a3a6a;
+    color: #fff;
+    font-size: 0.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .guide-flow li:not(:last-child)::after {
+    content: "↓";
+    position: absolute;
+    left: 50%;
+    bottom: -1.25rem;
+    transform: translateX(-50%);
+    color: #1a4a8a;
+    font-weight: 800;
+  }
+  .guide-flow li:last-child {
+    margin-bottom: 0 !important;
+  }
+
+  /* Checklist */
+  .guide-checklist {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  .checklist-group {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 0.9rem 1rem;
+  }
+  .checklist-group h3 {
+    margin-top: 0;
+    color: #1a3a6a;
+  }
+  .checklist-group ul {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 0;
+  }
+  .checklist-group label {
+    display: flex;
+    gap: 0.6rem;
+    align-items: flex-start;
+    cursor: pointer;
+  }
+  .checklist-group input[type="checkbox"] {
+    width: 1.2rem;
+    height: 1.2rem;
+    flex: 0 0 auto;
+    margin-top: 0.25rem;
+    accent-color: #1a3a6a;
+  }
+  .checklist-group input:checked + span {
+    color: #777;
+    text-decoration: line-through;
+  }
+
+  .guide-disclaimer {
+    font-size: 0.85rem;
+    color: #666;
+    font-style: italic;
+    margin: 1.5rem 0 0;
+  }
+
+  /* Shared post blocks (same look as individual posts) */
+  .post-related {
+    background: #f4f4f4;
+    border-radius: 8px;
+    padding: 1.2rem 1.2rem;
+    margin: 1.5rem 0;
+  }
+  .post-related h3 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+  }
+  .post-related ul {
+    padding-left: 1.2rem;
+  }
+  .post-related li {
+    font-size: 0.95rem;
+    line-height: 1.7;
+    color: #222;
+    overflow-wrap: anywhere;
+  }
+  .post-cta {
+    background: #1a3a6a;
+    color: #fff;
+    padding: 1.5rem 1.2rem;
+    border-radius: 10px;
+    margin-top: 1.5rem;
+    text-align: center;
+  }
+  .post-cta p {
+    color: #fff;
+    margin-bottom: 1rem;
+    line-height: 1.6;
+  }
+  .post-cta .btn {
+    max-width: 100%;
+    white-space: normal;
+  }
+
+  /* Tablet and up */
+  @media (min-width: 700px) {
+    .guide {
+      padding: 2rem;
+    }
+    .guide-hero {
+      padding: 2.4rem 2.2rem;
+    }
+    .guide-hero h1 {
+      font-size: 2.1rem;
+    }
+    .guide-lead {
+      font-size: 1.1rem;
+    }
+    .guide-step h2 {
+      font-size: 1.5rem;
+    }
+
+    .guide-table thead {
+      display: table-header-group;
+    }
+    .guide-table tr {
+      display: table-row;
+      border: none;
+      border-radius: 0;
+      padding: 0;
+      margin: 0;
+    }
+    .guide-table th {
+      background: #1a3a6a;
+      color: #fff;
+      padding: 0.7rem 0.9rem;
+      text-align: left;
+      font-size: 0.9rem;
+    }
+    .guide-table td {
+      display: table-cell;
+      padding: 0.7rem 0.9rem;
+      border-bottom: 1px solid #ddd;
+      vertical-align: top;
+    }
+    .guide-table td + td::before {
+      display: none;
+    }
+    .guide-table tbody tr:nth-child(even) {
+      background: #f4f4f8;
+    }
+
+    .guide-checklist {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  /* Desktop: the permit flow becomes a wrapping row with arrows */
+  @media (min-width: 900px) {
+    .guide-flow {
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 0.5rem 1.6rem;
+    }
+    .guide-flow li {
+      flex: 1 1 180px;
+      margin: 0 !important;
+    }
+    .guide-flow li:not(:last-child)::after {
+      content: "→";
+      left: auto;
+      right: -1.25rem;
+      top: 50%;
+      bottom: auto;
+      transform: translateY(-50%);
+    }
+  }
+
+  /* Print: a clean handout */
+  @media print {
+    .guide-toc,
+    .guide-download,
+    .post-cta {
+      display: none;
+    }
+    .guide-hero {
+      background: none;
+      color: #000;
+      padding: 0;
+    }
+    .guide-kicker {
+      color: #000;
+    }
+    .guide-step {
+      break-inside: avoid-page;
+    }
+  }
+</style>

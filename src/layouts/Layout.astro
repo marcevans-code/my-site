@@ -317,6 +317,15 @@ const latestBriefingHref = latestBriefing
         }
       }
 
+      /* Nine menu items: tighten spacing on narrower desktops/tablets so
+         the menu stays on one line before the hamburger takes over. */
+      @media (min-width: 769px) and (max-width: 1200px) {
+        #nav {
+          gap: 1rem;
+          font-size: 0.95rem;
+        }
+      }
+
       @media (max-width: 768px) {
         .hamburger {
           display: block;
@@ -764,18 +773,19 @@ const latestBriefingHref = latestBriefing
       <button class="hamburger" id="hamburger">☰</button>
       <nav id="nav">
         <a href="/">Home</a>
+        <a href="/trackers/">Trackers</a>
+        <a href={latestBriefingHref}>Morning Briefing</a>
         <div class="nav-dropdown">
           <button type="button" class="dropdown-toggle">
-            Trackers <span class="caret">▾</span>
+            Latest News <span class="caret">▾</span>
           </button>
           <div class="dropdown-menu">
-            <a href="/trackers/">All Trackers</a>
+            <a href="/news/">All News</a>
             <a href="/right-now/">Right Now</a>
           </div>
         </div>
-        <a href={latestBriefingHref}>Morning Briefing</a>
-        <a href="/news/">Latest News</a>
         <a href="/glossary/">Glossary</a>
+        <a href="/guides/data-center-near-you/">Your Rights</a>
         <a href="/about/">About</a>
         <a href="/stay-informed/">Stay Informed</a>
         <a href="/posts/">Posts</a>

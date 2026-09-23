@@ -20,6 +20,7 @@ strain, water use, tax incentives, and community impact across Texas.
 ## Reference
 
 - [AI Data Center Glossary](https://powergrabtx.com/glossary/): Plain-language definitions of AI data center and grid terminology.
+- [A Data Center Is Proposed Near You: What Now?](https://powergrabtx.com/guides/data-center-near-you/): Step-by-step Texas resident guide to public notice, zoning hearings, TCEQ permit comments, water, tax breaks and public records.
 - [About](https://powergrabtx.com/about/): Who publishes Power Grab TX and why.
 
 ## Get Involved

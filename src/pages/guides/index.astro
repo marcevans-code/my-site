@@ -1,0 +1,93 @@
+---
+// src/pages/guides/index.astro
+// Route: /guides/
+// Evergreen how-to guides for Texas residents. Add new guides to the
+// `guides` array (newest first) as they're published.
+import Layout from "../../layouts/Layout.astro";
+
+const guides = [
+  {
+    href: "/guides/data-center-near-you/",
+    title: "A Data Center Is Proposed Near You: What Now?",
+    summary:
+      "Public notice rules, zoning hearings and protest petitions, commenting on TCEQ air permits, water, tax breaks and public records — step by step, with deadlines and who to call.",
+    pdf: "/data-center-near-you-checklist.pdf",
+  },
+];
+---
+
+<Layout
+  title="Resident Guides — Power Grab TX"
+  description="Plain-language, step-by-step guides for Texans affected by the AI data center boom: your rights, deadlines, and who to contact."
+>
+  <section class="page-header">
+    <h1>Resident Guides</h1>
+    <p>
+      Plain-language, step-by-step help for Texans living with the AI data
+      center boom: what your rights are, which deadlines matter, and who to call.
+    </p>
+  </section>
+
+  <section class="guides-list">
+    {guides.map((g) => (
+      <div class="guide-card">
+        <h2><a href={g.href}>{g.title}</a></h2>
+        <p>{g.summary}</p>
+        <div class="guide-card-links">
+          <a href={g.href} class="read-more">READ THE GUIDE →</a>
+          {g.pdf && <a href={g.pdf} download class="guide-card-pdf">Printable checklist (PDF)</a>}
+        </div>
+      </div>
+    ))}
+  </section>
+</Layout>
+
+<style>
+  .guides-list {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 0 1rem 2rem;
+    display: grid;
+    gap: 1rem;
+  }
+  .guide-card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 1.2rem;
+  }
+  .guide-card h2 {
+    font-size: 1.15rem;
+    font-weight: 700;
+    line-height: 1.4;
+    margin-bottom: 0.5rem;
+  }
+  .guide-card h2 a {
+    color: #1a4a8a;
+  }
+  .guide-card p {
+    font-size: 0.95rem;
+    color: #444;
+    line-height: 1.6;
+    margin-bottom: 0.9rem;
+  }
+  .guide-card-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem 1.2rem;
+    align-items: center;
+  }
+  .read-more {
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: #1a1a1a;
+    text-decoration: none;
+  }
+  .read-more:hover,
+  .guide-card-pdf {
+    color: #1a4a8a;
+  }
+  .guide-card-pdf {
+    font-size: 0.85rem;
+    font-weight: 700;
+  }
+</style>

@@ -20,11 +20,25 @@ import Layout from "../layouts/Layout.astro";
 const entries = [
   {
     date: "September 23, 2026",
+    headline: "Morning Briefing: Texas & DFW AI Data Centers, Grid, Land Use",
+    source: "Power Grab TX (internal briefing)",
+    url: "/briefings/morning-briefing-2026-09-23/",
+    take: "CNBC confirmed data centers are now a top-tier issue in a governor's race Abbott leads by just 2.2 points — with 57% of Texans opposing one in their own community — as Denton drew a unanimous crowd for its 90-day moratorium, Fort Worth scheduled its own, and Google and Crusoe's Panhandle site showed the math driving the backlash: 7,500 construction workers, about 50 permanent jobs.",
+  },
+  {
+    date: "September 23, 2026",
     headline:
       "Speed of Light: Can Photonics Ease the AI Data Center Power Crunch?",
     source: "Power Grab TX (editorial)",
     url: "/posts/speed-of-light/",
     take: "NVIDIA's co-packaged optics switches — claiming 3.5x better power efficiency than pluggable optics — are now shipping, and the indium phosphide lasers behind them are made at Coherent's CHIPS-funded Sherman fab, but history says efficiency gains get spent on bigger clusters rather than shrinking ERCOT's 474-GW queue.",
+  },
+  {
+    date: "September 22, 2026",
+    headline: "Morning Briefing: Texas & DFW AI Data Centers, Grid, Land Use",
+    source: "Power Grab TX (internal briefing)",
+    url: "/briefings/morning-briefing-2026-09-22/",
+    take: "Abbott finally shut the behind-the-meter door, freezing every TCEQ permit a data center seeks until the ERCOT and water audits are done — the same day environmental groups sued Vantage and VoltaGrid for permitting 405 MW of San Antonio gas plants as \"minor\" sources, and days after the PUC quietly dropped its $50,000-per-MW interconnection fee.",
   },
   {
     date: "September 21, 2026",
@@ -300,6 +314,49 @@ const entries = [
     take: "Time will tell if this in fact the case or 'smoke and mirrors' to allay the public's fear.",
   },
 ];
+
+// ─────────────────────────────────────────────────────────────
+// Safety net: every published Morning Briefing always appears here,
+// even if a day's run skipped Step 6 of the briefing prompt.
+// Any briefing file in src/pages/briefings/ that has no hand-written
+// entry above gets one automatically, using the page's own meta
+// description as the take. A hand-written entry (added to the array
+// above) always wins, so write one whenever you want a sharper take.
+// Same raw-glob approach as the home page's "Today's Snapshot".
+// ─────────────────────────────────────────────────────────────
+const briefingSources = import.meta.glob("/src/pages/briefings/*.astro", {
+  eager: true,
+  query: "?raw",
+  import: "default",
+});
+const listedUrls = new Set(entries.map((e) => e.url));
+const autoEntries = Object.entries(briefingSources)
+  .map(([filePath, source]) => {
+    const match = filePath.match(/morning-briefing-(\d{4}-\d{2}-\d{2})\.astro$/);
+    if (!match) return null;
+    const url = `/briefings/morning-briefing-${match[1]}/`;
+    if (listedUrls.has(url)) return null;
+    const [y, m, d] = match[1].split("-").map(Number);
+    const descMatch = String(source).match(/description="([^"]+)"/);
+    return {
+      date: new Date(y, m - 1, d).toLocaleDateString("en-US", {
+        month: "long",
+        day: "numeric",
+        year: "numeric",
+      }),
+      headline: "Morning Briefing: Texas & DFW AI Data Centers, Grid, Land Use",
+      source: "Power Grab TX (internal briefing)",
+      url,
+      take: descMatch ? descMatch[1] : "",
+    };
+  })
+  .filter((e) => e !== null);
+
+// Newest first. The sort is stable, so hand-written entries that share a
+// date keep their order and sit above any auto-added briefing that day.
+const allEntries = [...entries, ...autoEntries].sort(
+  (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
+);
 ---
 
 <Layout
@@ -321,7 +378,7 @@ const entries = [
   <section class="tracker-section">
     <div class="tracker-inner">
       {
-        entries.map((e) => (
+        allEntries.map((e) => (
           <div class="tracker-entry">
             <p class="tracker-date">{e.date}</p>
             <h3>

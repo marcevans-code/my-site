@@ -1,0 +1,90 @@
+{
+  "reviewed": "2026-09-23",
+  "contacts": [
+    {
+      "need": "Comment on or track a TCEQ permit",
+      "contact": "TCEQ Office of the Chief Clerk",
+      "how": "tceq.texas.gov/goto/comment · 512-239-3300",
+      "href": "https://www.tceq.texas.gov/goto/comment"
+    },
+    {
+      "need": "Get on a county-wide TCEQ mailing list",
+      "contact": "TCEQ Office of the Chief Clerk",
+      "how": "Written request with your name, address and county"
+    },
+    {
+      "need": "Understand contested case hearings",
+      "contact": "TCEQ Office of Public Interest Counsel",
+      "how": "512-239-6363"
+    },
+    {
+      "need": "Check where a permit application stands",
+      "contact": "TCEQ Public Education Program",
+      "how": "800-687-4040 · pep@tceq.texas.gov"
+    },
+    {
+      "need": "Mediate a permit dispute",
+      "contact": "TCEQ Alternative Dispute Resolution",
+      "how": "512-239-0687"
+    },
+    {
+      "need": "Records request stalled",
+      "contact": "Attorney General Open Government Hotline",
+      "how": "512-478-6736 · toll-free 877-673-6839"
+    },
+    {
+      "need": "Zoning, agendas, speaker sign-up",
+      "contact": "Your city secretary or county clerk",
+      "how": "City or county website"
+    },
+    {
+      "need": "New wells",
+      "contact": "Your groundwater conservation district",
+      "how": "District website or office"
+    },
+    {
+      "need": "Pressure and public meetings",
+      "contact": "Your state representative and senator",
+      "how": "A local legislator’s request triggers a TCEQ public meeting"
+    }
+  ],
+  "checklist": [
+    {
+      "title": "Right away",
+      "items": [
+        "Find out whether the site is inside city limits, in the city’s extraterritorial jurisdiction (ETJ) or on unincorporated county land",
+        "Join TCEQ’s mailing list for your county",
+        "Search TCEQ’s Commissioners’ Integrated Database for the company and address",
+        "Pull up the next planning commission, council, commissioners court and school board agendas",
+        "Contact neighbors within 200 feet about a protest petition"
+      ]
+    },
+    {
+      "title": "When a notice appears",
+      "items": [
+        "Write down every deadline in the notice. The NORI window for air permits is the one people miss.",
+        "File a written TCEQ comment, and a contested case hearing request if you are an affected person",
+        "Request a TCEQ “public meeting” by name, and ask your legislator to request one too",
+        "Sign up to speak at the zoning hearing and submit written comments",
+        "File public information requests for NDAs, emails and applications"
+      ]
+    },
+    {
+      "title": "Before the final vote",
+      "items": [
+        "File the protest petition with the city",
+        "Ask for clawbacks, water limits, noise rules and setbacks in any abatement or development agreement",
+        "Ask whether the company has filed its TWDB water use survey"
+      ]
+    },
+    {
+      "title": "After a decision",
+      "items": [
+        "20 days to appeal a city staff decision to the Board of Adjustment",
+        "23 days after notice of a signed TCEQ permit to file a motion to overturn",
+        "25 days after a TCEQ commissioners’ decision to file a motion for rehearing",
+        "Talk to a lawyer early if you may go to court. Some deadlines are only 10 days."
+      ]
+    }
+  ]
+}
