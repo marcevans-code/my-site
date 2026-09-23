@@ -1,0 +1,355 @@
+---
+import Layout from '../../layouts/Layout.astro';
+---
+<Layout
+  title="Speed of Light: Photonics and the AI Power Crunch — Power Grab TX"
+  description="Photonics swaps copper for light inside AI data centers, promising big power savings — and Texas is where much of the hardware gets made."
+  image="/post-featured-image.webp"
+  type="article"
+>
+  <article class="post-page">
+    <img src="/post-featured-image.webp" alt="Speed of Light: Can Photonics Ease the AI Data Center Power Crunch?" class="post-image" width="1536" height="1024" />
+
+    <div class="post-content">
+      <h1>Speed of Light: Can Photonics Ease the AI Data Center Power Crunch?</h1>
+      <p class="post-card-date"><time datetime="2026-09">September 2026</time></p>
+
+      <h2>📘 Introduction</h2>
+      <p>Every conversation about AI data centers in Texas eventually comes back to the same number: how many megawatts. The grid queue, the gas plants, the nuclear bets, the ERCOT audit — all of it is downstream of how much power these facilities pull. So it's worth paying attention when the industry starts talking about a technology whose main selling point is using less of it.</p>
+      <p>That technology is photonics: moving data with light instead of electrons. Light has carried the internet across oceans for decades through fiber optic cable. What's new is the push to bring it all the way inside the data center — between racks, between servers, and increasingly right up against the chips themselves. "I think we're at the end of copper," Digital Realty CTO Chris Sharp told the BBC this week. That's a bold claim. It's also, increasingly, a Texas story.</p>
+
+      <h2>💡 What Photonics Actually Changes</h2>
+      <p>Inside a data center today, most of the data moving between GPUs travels over copper. Copper is cheap, well understood, and works fine over short distances. The problem is that as AI clusters grow, the distances get longer and the data rates get higher — and at those speeds, a copper connection's useful reach shrinks. Pushing signals farther means burning power on extra electronics just to keep the signal clean, and that power turns into heat that then has to be cooled.</p>
+      <p>Light doesn't have that problem. Converting an electrical signal to light costs some energy up front, but once the data is traveling as photons, distance is nearly free and heat is minimal. NVIDIA put it bluntly at a June groundbreaking in Texas: when 576 GPUs spread across eight racks need to act as one machine, copper simply can't carry the signal that far. The only way to connect hundreds of thousands of processors across a building, CEO Jensen Huang said, is silicon photonics.</p>
+      <p>By the BBC's count, a typical 100-megawatt data center uses around 400 tonnes of copper, with up to 20 tonnes of it in the network wiring connecting servers together. That wiring is the first target for replacement.</p>
+
+      <h2>⚡ The Power Math</h2>
+      <p>The newest step is called co-packaged optics (CPO). Instead of plugging a separate optical module — a transceiver about the size of a USB stick — into the front of a network switch, CPO builds the optical engine directly into the switch package. Fewer conversions, fewer lasers, shorter electrical paths.</p>
+      <p>NVIDIA claims its Spectrum-X Photonics switches use four times fewer lasers and deliver 3.5 times better power efficiency than traditional pluggable optics. Industry trade reporting from TrendForce in late July said NVIDIA had begun shipping those switches to select partners, with Broadcom ramping its own CPO switch alongside it. Market researcher Yole Group now forecasts CPO optical-engine revenue growing from about $0.6 billion in 2026 to roughly $112 billion by 2031.</p>
+      <p>Here's the part worth keeping in perspective: networking is only one slice of a data center's power bill. The GPUs themselves and the cooling systems are the heavy hitters. Photonics can shave real power off the interconnect layer, and less heat means less cooling — but it doesn't make a gigawatt campus a small one.</p>
+
+      <h2>🏭 The Texas Connection</h2>
+      <p>If light is the future backbone of AI, a lot of it is being made about an hour north of Dallas. In June, Coherent broke ground on an expanded manufacturing building at its Sherman campus, home to what the company calls the world's first volume-production 6-inch indium phosphide fab. Indium phosphide is the material that makes the lasers inside optical transceivers — including the external laser modules that plug into NVIDIA's co-packaged optics switches.</p>
+      <p>The public money is significant. Coherent announced a $50 million federal CHIPS Act grant for the expansion, on top of roughly $17 million in earlier support from the Texas CHIPS program and the Sherman Economic Development Corporation. NVIDIA separately committed a $2 billion investment in Coherent in March, alongside a multibillion-dollar purchase commitment. Coherent says the site will support more than 550 direct jobs at full capacity.</p>
+      <p>That's a different kind of data center economy than the one most Texans are seeing — a factory with a fixed footprint and a jobs number, rather than a hyperscale campus asking for a 90% tax rebate and a new gas plant.</p>
+
+      <h2>🚧 What Could Slow It Down</h2>
+      <p>None of this is plug-and-play. Optical components are sensitive to heat, and the rest of the data center is still running hot, which raises reliability concerns unless operators hold strict thermal limits. Costs are still coming down: HPE Labs' Andrew Wheeler told the BBC the industry has spent decades optimizing electrical manufacturing and is still working out the same for optics, with final assembly largely concentrated in Taiwan's packaging houses. And the workforce has to catch up — fiber can't take tight turns, and installers and field technicians need new skills.</p>
+      <p>Yole Group also warns that AI models are growing so fast the industry would need roughly 70 times more interconnects every two years — a pace the optics industry isn't yet equipped to sustain. Copper, it notes, isn't dying overnight; it's being deliberately stretched while CPO enters service narrowly, in a handful of proprietary platforms.</p>
+
+      <h2>🧭 What Texans Should Be Watching</h2>
+      <p>Whether efficiency gains actually show up as lower demand — or just get spent on bigger clusters. History says the latter: when computing gets more efficient, the industry usually builds more of it, not less. A switch that uses 3.5 times less power per port doesn't shrink ERCOT's 474-gigawatt interconnection queue if developers simply pack in more ports.</p>
+      <p>Whether data center operators disclose any of it. Texas already struggles to get facilities to answer a legally required water survey. If photonics really cuts power and cooling loads, the public should be able to see it in actual reported usage — not just in vendor press releases.</p>
+      <p>And whether North Texas's photonics manufacturing base — Sherman today, and a growing cluster of optics research around Dallas — delivers the stable, long-term jobs that the hyperscale campuses have struggled to prove.</p>
+
+      <h2>🧾 Conclusion</h2>
+      <p>Photonics is one of the few pieces of the AI boom whose whole pitch is doing more with less energy, and Texas is building a real share of it. That's worth welcoming. But light-speed networking is an efficiency upgrade, not an off switch for the power crunch. The megawatts Texas communities are being asked to host are still coming — the question is whether the savings get passed on to the grid, or just reinvested into even bigger buildings.</p>
+      <p>For more analysis on Texas energy and AI, visit <a href="/">PowerGrabTX.com</a>.</p>
+
+      <div class="post-related">
+        <h3>Sources</h3>
+        <ul>
+          <li><a href="https://www.bbc.com/news/articles/c2dwg3zexkpo" target="_blank" rel="noopener">BBC News</a> — "Will a switch to light speed cut power use at data centres?"</li>
+          <li><a href="https://blogs.nvidia.com/blog/coherent-texas-ai-optical/" target="_blank" rel="noopener">NVIDIA Newsroom</a> — "Coherent Breaks Ground on Expanded Texas Facility, Scaling AI's Optical Backbone"</li>
+          <li><a href="https://investor.nvidia.com/news/press-release-details/2025/NVIDIA-Announces-Spectrum-X-Photonics-Co-Packaged-Optics-Networking-Switches-to-Scale-AI-Factories-to-Millions-of-GPUs/default.aspx" target="_blank" rel="noopener">NVIDIA</a> — "NVIDIA Announces Spectrum-X Photonics, Co-Packaged Optics Networking Switches to Scale AI Factories to Millions of GPUs"</li>
+          <li><a href="https://www.eetasia.com/trendforce-nvidia-and-broadcom-begin-volume-ramp-of-cpo-switches/" target="_blank" rel="noopener">EE Times Asia / TrendForce</a> — "NVIDIA and Broadcom Begin Volume Ramp of CPO Switches"</li>
+          <li><a href="https://www.yolegroup.com/press-release/photonics-at-the-speed-of-ai-yole-group-charts-the-industrys-shift-from-compute-to-communication/" target="_blank" rel="noopener">Yole Group</a> — "Photonics at the speed of AI: Yole Group charts the industry's shift from compute to communication"</li>
+        </ul>
+      </div>
+
+      <div class="post-related">
+        <h3>Related Pages</h3>
+        <ul>
+          <li><a href="/news/">Latest News</a> — Updates on Texas energy, AI expansion, and infrastructure changes.</li>
+          <li><a href="/trackers/">AI Data Center Tracker</a> — A running, dated, sourced record of the boom as it unfolds.</li>
+          <li><a href="/stay-informed/">Stay Informed</a> — Get alerts and updates about developments affecting Texas communities.</li>
+          <li><a href="/privacy/">Privacy Policy</a> — Learn how we handle data and protect your information.</li>
+          <li><a href="/terms/">Terms &amp; Conditions</a> — Understand how PowerGrabTX content and services are provided.</li>
+        </ul>
+      </div>
+
+      <div class="post-related">
+        <h3>Other Posts</h3>
+        <ul>
+          <li><a href="/posts/the-biggest-polluter/">The Biggest Polluter: Amazon's Pecos County Gas Plant</a></li>
+          <li><a href="/posts/the-nuclear-bet/">The Nuclear Bet: Texas Wagers on Unproven Reactors</a></li>
+          <li><a href="/posts/in-the-dark-by-design/">In the Dark by Design: What AI Data Centers Won't Disclose</a></li>
+          <li><a href="/posts/transforming-texas/">How AI Data Centers Are Transforming Texas</a></li>
+          <li><a href="/posts/billion-dollar-boom/">Billion-Dollar Boom: Texas AI Data Centers in 2026</a></li>
+          <li><a href="/posts/exploding-in-texas/">Why AI Data Centers Are Exploding in Texas</a></li>
+        </ul>
+      </div>
+
+      <div class="post-cta">
+        <p>AI data centers are reshaping Texas faster than most people realize. If you want to stay ahead of the changes affecting your community, energy costs, and local environment, join our update list.</p>
+        <a href="/stay-informed/" class="btn">Stay informed about AI's impact in Texas</a>
+      </div>
+    </div>
+  </article>
+</Layout>
+<style>
+    /* ══════════════════════════════════════════════════════════════
+         MOVE TO → src/pages/posts.astro AND src/pages/posts/[slug].astro
+         (Split further if post listing vs. single-post styles diverge —
+         check which classes are used on which template before moving.)
+         ══════════════════════════════════════════════════════════════ */
+
+      .card {
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        padding: 1.2rem;
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+        transition: box-shadow 0.2s;
+      }
+      .card:hover {
+        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+      }
+      .card hr {
+        border: none;
+        border-top: 2px solid #ccc;
+        margin: 0.4rem 0;
+      }
+      .card h3 {
+        font-size: 1.05rem;
+        font-weight: 700;
+        line-height: 1.3;
+        height: 3.5rem;
+        overflow: hidden;
+      }
+      .card p {
+        font-size: 0.95rem;
+        line-height: 1.6;
+        color: #333;
+        height: 21rem;
+        overflow: hidden;
+      }
+      .card ul {
+        font-size: 0.92rem;
+        line-height: 1.8;
+        color: #333;
+        padding-left: 1.2rem;
+        height: 20rem;
+        overflow: hidden;
+      }
+      .card .learn-more {
+        font-size: 0.95rem;
+        font-weight: 600;
+        color: #1a4a8a;
+        display: block;
+        margin-bottom: 0.8rem;
+      }
+      .card .title {
+        height: 5.6rem;
+        overflow: hidden;
+        color: #000080;
+        font-weight: 700;
+      }
+      .card .description {
+        font-size: 0.95rem;
+        color: #333;
+        line-height: 1.6;
+        display: -webkit-box;
+        -webkit-line-clamp: 5;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+      }
+      .card .provider {
+        font-size: 0.88rem;
+        color: #1a6a2a;
+      }
+      .card .readmore {
+        font-size: 0.95rem;
+        font-weight: 700;
+        color: #1a1a1a;
+      }
+      .cards-section {
+        padding: 2rem;
+      }
+      .cards-section h2 {
+        font-size: 1.6rem;
+        font-weight: 700;
+        margin-bottom: 1.5rem;
+        text-align: center;
+      }
+      .posts-section h2 {
+        font-size: 1.6rem;
+        font-weight: 700;
+        margin-bottom: 1rem;
+      }
+      .posts-section {
+        padding: 2rem;
+        max-width: 1200px;
+        margin: 0 auto;
+        background: #f4f4f4;
+        border-radius: 10px;
+      }
+      .post-page {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 2rem;
+      }
+      .post-image {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+        margin-bottom: 2rem;
+      }
+      .post-content h1 {
+        font-size: 2rem;
+        font-weight: 800;
+        margin-bottom: 0.5rem;
+        line-height: 1.3;
+      }
+      .posts-list .post .date {
+        font-size: 0.88rem;
+        color: #666;
+        margin: 0.2rem 0 0.4rem;
+      }
+      .posts-list .post p {
+        font-size: 0.95rem;
+        color: #444;
+        line-height: 1.6;
+      }
+      .post-content h2 {
+        font-size: 1.3rem;
+        font-weight: 700;
+        margin: 2rem 0 0.8rem;
+      }
+      .post-content h3 {
+        font-size: 1.1rem;
+        font-weight: 700;
+        margin: 1.2rem 0 0.5rem;
+      }
+      .post-content p {
+        font-size: 1rem;
+        line-height: 1.8;
+        margin-bottom: 1rem;
+        color: #222;
+      }
+      .post-related {
+        background: #f4f4f4;
+        border-radius: 8px;
+        padding: 1.2rem 1.5rem;
+        margin: 2rem 0;
+      }
+      .posts-list .post h3 {
+        font-size: 1rem;
+        font-weight: 600;
+      }
+      .posts-list .post h3 a {
+        color: #1a4a8a;
+        font-size: 1rem;
+      }
+      .post-content ul {
+        padding-left: 1.4rem;
+        margin-bottom: 1rem;
+      }
+      .post-content ul li {
+        font-size: 1rem;
+        line-height: 1.8;
+        color: #222;
+      }
+      .post-cta {
+        background: #1a3a6a;
+        color: #fff;
+        padding: 2rem;
+        border-radius: 10px;
+        margin-top: 2rem;
+        text-align: center;
+      }
+      .post-cta p {
+        color: #fff;
+        margin-bottom: 1rem;
+      }
+      .post-table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 1.5rem 0;
+      }
+      .post-table th {
+        background: #1a3a6a;
+        color: #fff;
+        padding: 0.8rem 1rem;
+        text-align: left;
+        font-size: 0.95rem;
+      }
+      .post-table td {
+        padding: 0.8rem 1rem;
+        border-bottom: 1px solid #ddd;
+        font-size: 0.95rem;
+      }
+      .post-table tr:nth-child(even) {
+        background: #f4f4f8;
+      }
+      .posts-summary {
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 2rem;
+      }
+      .posts-summary h1 {
+        font-size: 1.8rem;
+        font-weight: 700;
+        margin-bottom: 0.5rem;
+      }
+      .posts-intro {
+        font-size: 1rem;
+        color: #555;
+        margin-bottom: 2rem;
+      }
+      .posts-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.5rem;
+      }
+      @media (max-width: 900px) {
+        .posts-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+      .post-card {
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        overflow: hidden;
+      }
+      .post-card img {
+        width: 100%;
+        height: 220px;
+        object-fit: cover;
+      }
+      .post-card-body {
+        padding: 1.2rem;
+      }
+      .post-card-body h2 {
+        font-size: 1rem;
+        font-weight: 700;
+        margin-bottom: 0.4rem;
+        line-height: 1.4;
+      }
+      .post-card-body h2 a {
+        color: #1a4a8a;
+      }
+      .post-card-date {
+        font-size: 0.85rem;
+        color: #666;
+        margin-bottom: 0.8rem;
+      }
+      .post-card-body p {
+        font-size: 0.9rem;
+        color: #444;
+        line-height: 1.6;
+        margin-bottom: 1rem;
+      }
+      .read-more {
+        font-size: 0.85rem;
+        font-weight: 700;
+        color: #1a1a1a;
+        text-decoration: none;
+      }
+      .read-more:hover {
+        color: #1a4a8a;
+      }
+
+</style>
