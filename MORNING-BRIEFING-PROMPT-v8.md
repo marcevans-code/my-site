@@ -132,7 +132,7 @@ Create a new file `/Users/development/Development/my-site/src/pages/briefings/mo
 **STEP 6 — Update the tracker.** Read `/Users/development/Development/my-site/src/pages/trackers.astro`. Prepend ONE new object to the TOP of the `entries` array (do not alter or remove any existing entries) following the existing object shape exactly:
 
 * `date`: today's date in "Month D, YYYY" format
-* `headline`: "Morning Briefing: Texas & DFW AI Data Centers, Grid, Land Use"
+* `headline`: "Morning Briefing: [#1 story headline]" — the same headline used in Step 5's page title, without its number or emoji. (`trackers.astro` also swaps in each briefing's real lead headline at build time, so older entries that still carry the generic "Texas & DFW AI Data Centers, Grid, Land Use" label display correctly; don't edit those old entries.)
 * `source`: "Power Grab TX (internal briefing)"
 * `url`: **"/briefings/morning-briefing-\<YYYY-MM-DD\>/"** — note the trailing slash. Every page on the site lives at a trailing-slash URL; leaving it off makes this entry 301-redirect on every crawl, which is exactly the "25 redirects" issue the Aug 23, 2026 Semrush audit flagged.
 * `take`: one sentence of original editorial analysis on today's most notable development(s) — i.e., today's Top Story — written in the same voice as prior entries (direct, a little wry, specific about dates/numbers) — but composed fresh, not adapted from a prior entry's sentence structure. On a Monday edition, this can range across the whole Saturday-through-Monday window, not just Monday itself.

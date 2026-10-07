@@ -6,6 +6,7 @@
 // plus a one-line editorial take on each. No verified stats/tables to
 // maintain — just append a new entry whenever you add something to /news.
 import Layout from "../layouts/Layout.astro";
+import { briefings } from "../data/briefings";
 
 // To add a new entry: copy one of these objects, fill it in, and add it
 // to the TOP of the array (newest first).
@@ -417,9 +418,20 @@ const autoEntries = Object.entries(briefingSources)
 
 // Newest first. The sort is stable, so hand-written entries that share a
 // date keep their order and sit above any auto-added briefing that day.
-const allEntries = [...entries, ...autoEntries].sort(
-  (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
-);
+// Briefing entries all carry the same generic headline in the array above
+// ("Morning Briefing: Texas & DFW AI Data Centers, Grid, Land Use"), which
+// made dozens of identical links on this page. Swap in each briefing's real
+// lead story instead (read from the briefing file via src/data/briefings.ts),
+// so every link says what that day's edition is actually about.
+const briefingByUrl = new Map(briefings.map((b) => [b.href, b]));
+const withRealHeadlines = (e) => {
+  const b = briefingByUrl.get(e.url);
+  return b && b.headline ? { ...e, headline: `Morning Briefing: ${b.headline}` } : e;
+};
+
+const allEntries = [...entries, ...autoEntries]
+  .map(withRealHeadlines)
+  .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
 ---
 
 <Layout
@@ -427,7 +439,7 @@ const allEntries = [...entries, ...autoEntries].sort(
   description="A dated, sourced tracker of what's happening with AI data centers in Texas, built from Power Grab TX's own news coverage plus editorial takes."
 >
   <section class="page-header">
-    <h2>Texas AI Data Center Tracker</h2>
+    <h1 class="tracker-title">Texas AI Data Center Tracker</h1>
     <p
       style="max-width: 600px; margin: 0 auto; text-align: left; padding: 0 10px; font-weight: 900;"
     >
@@ -446,9 +458,13 @@ const allEntries = [...entries, ...autoEntries].sort(
             <p class="tracker-date">{e.date}</p>
             <h3>
               {e.url ? (
-                <a href={e.url} target="_blank" rel="noopener">
-                  {e.headline}
-                </a>
+                e.url.startsWith("/") ? (
+                  <a href={e.url}>{e.headline}</a>
+                ) : (
+                  <a href={e.url} target="_blank" rel="noopener">
+                    {e.headline}
+                  </a>
+                )
               ) : (
                 e.headline
               )}
@@ -462,6 +478,14 @@ const allEntries = [...entries, ...autoEntries].sort(
   </section>
 </Layout>
 <style>
+  /* Page title is the H1 (it was an H2, which left this page with no H1);
+     sized to match the old .page-header h2 look. */
+  .tracker-title {
+    font-size: 1.9rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+
   /* ══════════════════════════════════════════════════════════════
          MOVE TO → src/pages/trackers.astro
          ══════════════════════════════════════════════════════════════ */
