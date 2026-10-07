@@ -1,9 +1,13 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import { briefings, formatBriefingDate } from "../data/briefings";
+
+// Show the three newest briefings as a live sample of what subscribers get.
+const recentBriefings = briefings.slice(0, 3);
 ---
 
 <Layout
-  title="Stay Informed — Power Grab TX"
+  title="Get the Texas AI Data Center Morning Briefing by Email | Power Grab TX"
   description="Subscribe to the Power Grab TX Morning Briefing or send a message directly — stay on top of Texas's AI data center boom as it develops."
 >
   <div class="page-header">
@@ -14,6 +18,46 @@ import Layout from "../layouts/Layout.astro";
       reach out directly using the contact form.
     </p>
   </div>
+
+  <section class="why-subscribe">
+    <h2>What you get with the Morning Briefing</h2>
+    <p>
+      Texas is approving AI data centers, gas plants, and transmission lines faster
+      than most local news can follow. The Morning Briefing tracks it all every
+      weekday, so you hear about a rezoning vote or permit hearing before it
+      happens instead of after. Subscribe and we'll send updates straight to your inbox.
+    </p>
+    <ul>
+      <li><strong>The day's most important developments, ranked.</strong> ERCOT and PUC decisions, new campuses and power plants, water-use disclosure fights, and local moratoriums, recalls, and lawsuits.</li>
+      <li><strong>A plain-English "Signal" on every story.</strong> What it means for your power bill, your water supply, and your neighborhood, not just what happened.</li>
+      <li><strong>A watch list of upcoming votes and deadlines.</strong> Council meetings, public hearings, and comment periods where residents can still weigh in.</li>
+      <li><strong>Weekend coverage on Mondays.</strong> Monday editions cover Saturday and Sunday too, so nothing slips through.</li>
+    </ul>
+    <p>
+      See our <a href="/privacy/">privacy policy</a> for how we handle your email address.
+    </p>
+
+    {recentBriefings.length > 0 && (
+      <div class="recent-briefings">
+        <h3>Recent editions</h3>
+        <ul>
+          {recentBriefings.map((b) => (
+            <li>
+              <a href={b.href}>{b.headline}</a>
+              <span> · {formatBriefingDate(b.date, "short")}</span>
+            </li>
+          ))}
+        </ul>
+        <p><a href="/briefings/">Browse every past Morning Briefing →</a></p>
+      </div>
+    )}
+
+    <p class="jump-links">
+      <a href="#newsletter">Subscribe to the briefing ↓</a>
+      <span aria-hidden="true">·</span>
+      <a href="#contact">Send us a tip or question ↓</a>
+    </p>
+  </section>
 
   <div class="form-section" id="contact">
   <form action="https://forms-worker.marc-897.workers.dev" method="POST">
@@ -165,5 +209,57 @@ import Layout from "../layouts/Layout.astro";
         font-size: 1rem;
         color: #444;
         margin-bottom: 1.2rem;
+      }
+
+      /* "What you get" explainer above the forms */
+      .why-subscribe {
+        max-width: 640px;
+        margin: 0 auto 2.5rem;
+        padding: 0 2rem;
+        color: #333;
+        line-height: 1.7;
+      }
+      .why-subscribe h2 {
+        font-size: 1.4rem;
+        margin-bottom: 0.75rem;
+      }
+      .why-subscribe h3 {
+        font-size: 1.1rem;
+        margin-bottom: 0.5rem;
+      }
+      .why-subscribe p {
+        margin-bottom: 1rem;
+      }
+      .why-subscribe ul {
+        margin: 0 0 1rem 1.2rem;
+      }
+      .why-subscribe li {
+        margin-bottom: 0.5rem;
+      }
+      .why-subscribe a {
+        color: #b03a1a;
+      }
+      .recent-briefings {
+        background: #fff8f4;
+        border: 1px solid #e8c9b0;
+        border-radius: 6px;
+        padding: 1rem 1.2rem 0.25rem;
+        margin: 1.5rem 0;
+      }
+      .recent-briefings ul {
+        list-style: none;
+        margin-left: 0;
+      }
+      .recent-briefings li span {
+        color: #666;
+        font-size: 0.9rem;
+      }
+      .jump-links {
+        text-align: center;
+        font-weight: 700;
+      }
+      .jump-links span {
+        margin: 0 0.5rem;
+        color: #999;
       }
 </style>

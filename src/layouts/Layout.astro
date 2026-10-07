@@ -1,6 +1,8 @@
 ---
+import { briefings, findBriefing, briefingTitle, formatBriefingDate } from "../data/briefings";
+
 const {
-  title,
+  title: titleProp,
   noindex = false,
   description,
   // Social-share + structured-data props. All optional so every existing
@@ -14,10 +16,29 @@ const {
   //                   a wrong date on a news article is worse than no date.
   //   author        — display name, for byline + JSON-LD author.
   image = "/powergrabtx.png",
-  type = "website",
-  publishedTime,
+  type: typeProp = "website",
+  publishedTime: publishedTimeProp,
   author,
 } = Astro.props;
+
+// ── Morning Briefing pages ────────────────────────────────────────────
+// Briefings get three things automatically, with no per-file edits:
+//   1. A search-friendly <title> that leads with the day's top headline.
+//      Files still using the old date-only pattern
+//      ("Morning Briefing - MM/DD/YY: Power Grab TX") are upgraded here;
+//      a briefing that passes any other title keeps it as-is.
+//   2. NewsArticle structured data with the real publish date (from the URL).
+//   3. Previous / next / all-briefings links under the content, so every
+//      briefing is reachable by crawling, not just via the Trackers page.
+const briefingInfo = findBriefing(Astro.url.pathname);
+const OLD_BRIEFING_TITLE = /^Morning Briefing - \d{2}\/\d{2}\/\d{2}: Power Grab TX$/;
+const title =
+  briefingInfo && (!titleProp || OLD_BRIEFING_TITLE.test(titleProp))
+    ? briefingTitle(briefingInfo.current)
+    : titleProp;
+const type = briefingInfo ? "article" : typeProp;
+const publishedTime =
+  publishedTimeProp ?? (briefingInfo ? `${briefingInfo.current.dateStr}T07:00:00-05:00` : undefined);
 
 // No default description here on purpose. A silent fallback is exactly how
 // 17 pages ended up sharing one meta description (Semrush flagged it in the
@@ -85,25 +106,10 @@ import StayInformedPopup from "../components/StayInformedPopup.astro";
 const pathname = Astro.url.pathname.replace(/\/$/, "") || "/";
 const showStayInformedPopup = pathname !== "/stay-informed" && pathname !== "/";
 
-// Auto-discover Morning Briefing pages so the nav link always points at
-// whichever one is newest, without editing this file by hand. Older
-// briefings are intentionally NOT linked from the nav anymore — they stay
-// published, indexed, and permanently reachable from the Trackers archive
-// (src/pages/trackers.astro), which links every one of them and is never
-// trimmed. See MORNING-BRIEFING-PROMPT-v8.md for why the old "6 most
-// recent in a dropdown" approach was replaced.
-const briefingModules = import.meta.glob("/src/pages/briefings/*.astro");
-const latestBriefing = Object.keys(briefingModules)
-  .map((path) => {
-    const match = path.match(/morning-briefing-(\d{4}-\d{2}-\d{2})\.astro$/);
-    return match ? { path, dateStr: match[1] } : null;
-  })
-  .filter((b) => b !== null)
-  .sort((a, b) => b.dateStr.localeCompare(a.dateStr))[0]; // newest only
-
-const latestBriefingHref = latestBriefing
-  ? `/briefings/morning-briefing-${latestBriefing.dateStr}/`
-  : "/trackers/"; // fallback if the briefings folder is ever empty
+// The nav's "Today's Briefing" link always points at the newest briefing
+// (auto-discovered in src/data/briefings.ts). Every briefing is also listed
+// on the /briefings/ archive page and linked from trackers.astro.
+const latestBriefingHref = briefings[0]?.href ?? "/briefings/";
 ---
 
 <html lang="en">
@@ -754,6 +760,64 @@ const latestBriefingHref = latestBriefing
         line-height: 1.7;
       }
 
+      /* Morning Briefing prev / all / next links (rendered by this layout
+         under every /briefings/morning-briefing-* page). */
+      .briefing-pager {
+        max-width: 800px;
+        margin: 0 auto 2.5rem;
+        padding: 1.25rem 2rem 0;
+        border-top: 1px solid #e8c9b0;
+        display: grid;
+        grid-template-columns: 1fr auto 1fr;
+        gap: 1rem;
+        align-items: start;
+      }
+      .briefing-pager a {
+        color: #3a2010;
+        text-decoration: none;
+      }
+      .briefing-pager .pager-next {
+        text-align: right;
+      }
+      .briefing-pager .pager-label {
+        display: block;
+        font-size: 0.8rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.03em;
+        color: #b03a1a;
+        margin-bottom: 0.25rem;
+      }
+      .briefing-pager .pager-headline {
+        display: block;
+        font-size: 0.95rem;
+        line-height: 1.4;
+      }
+      .briefing-pager a:hover .pager-headline {
+        text-decoration: underline;
+      }
+      .briefing-pager .pager-all {
+        align-self: center;
+        font-size: 0.9rem;
+        font-weight: 700;
+        padding: 0.5rem 0.9rem;
+        border: 1px solid #e8c9b0;
+        border-radius: 6px;
+        white-space: nowrap;
+      }
+      @media (max-width: 640px) {
+        .briefing-pager {
+          grid-template-columns: 1fr;
+        }
+        .briefing-pager .pager-next {
+          text-align: left;
+        }
+        .briefing-pager .pager-all {
+          justify-self: start;
+          order: 3;
+        }
+      }
+
     </style>
    
    
@@ -774,7 +838,15 @@ const latestBriefingHref = latestBriefing
       <nav id="nav">
         <a href="/">Home</a>
         <a href="/trackers/">Trackers</a>
-        <a href={latestBriefingHref}>Morning Briefing</a>
+        <div class="nav-dropdown">
+          <button type="button" class="dropdown-toggle">
+            Morning Briefing <span class="caret">▾</span>
+          </button>
+          <div class="dropdown-menu">
+            <a href={latestBriefingHref}>Today's Briefing</a>
+            <a href="/briefings/">All Briefings</a>
+          </div>
+        </div>
         <div class="nav-dropdown">
           <button type="button" class="dropdown-toggle">
             Latest News <span class="caret">▾</span>
@@ -794,6 +866,23 @@ const latestBriefingHref = latestBriefing
 
     <main>
       <slot />
+      {briefingInfo && (
+        <nav class="briefing-pager" aria-label="More Morning Briefings">
+          {briefingInfo.older ? (
+            <a class="pager-prev" href={briefingInfo.older.href} rel="prev">
+              <span class="pager-label">← Previous briefing · {formatBriefingDate(briefingInfo.older.date, "short")}</span>
+              <span class="pager-headline">{briefingInfo.older.headline}</span>
+            </a>
+          ) : <span />}
+          <a class="pager-all" href="/briefings/">All Morning Briefings</a>
+          {briefingInfo.newer ? (
+            <a class="pager-next" href={briefingInfo.newer.href} rel="next">
+              <span class="pager-label">Next briefing · {formatBriefingDate(briefingInfo.newer.date, "short")} →</span>
+              <span class="pager-headline">{briefingInfo.newer.headline}</span>
+            </a>
+          ) : <span />}
+        </nav>
+      )}
     </main>
 
     <footer>

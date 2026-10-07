@@ -3,3 +3,15 @@ https://www.powergrabtx.com/* https://powergrabtx.com/:splat 301
 /economic-impact-of-ai-data-centers-in-texas/ /posts/transforming-texas 301
 # Community Blog retired — send any indexed/bookmarked links home instead of a 404.
 /blog/* / 301
+# Old WordPress-era URLs that Google still had in its index (Search Console
+# "Not found (404)" report, Oct 2026). Each points at the closest live page
+# so the search impressions they'd earned aren't thrown away.
+/latest-news/ /news 301
+/texas-ai-data-centers/ /trackers 301
+/texas-ai-data-centers-2026/ /trackers 301
+/how-ai-data-centers-are-transforming-texas/ /posts/transforming-texas 301
+/concerns/ /right-now 301
+/infrastructure-needs-for-ai-data-centers/ /posts/exploding-in-texas 301
+/category/infrastructure/ /news 301
+/category/* /news 301
+/sitemap_index.xml /sitemap-index.xml 301

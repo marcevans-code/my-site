@@ -1,0 +1,173 @@
+---
+// /briefings/ — permanent archive of every Morning Briefing, newest first,
+// grouped by month. Built automatically from src/data/briefings.ts, so a
+// new briefing file shows up here on the next build with no edits.
+import Layout from "../../layouts/Layout.astro";
+import { briefings, formatBriefingDate } from "../../data/briefings";
+
+const byMonth = new Map<string, typeof briefings>();
+for (const b of briefings) {
+  const key = b.date.toLocaleDateString("en-US", { month: "long", year: "numeric", timeZone: "UTC" });
+  if (!byMonth.has(key)) byMonth.set(key, []);
+  byMonth.get(key)!.push(b);
+}
+
+const latest = briefings[0];
+
+const itemList = {
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  name: "Morning Briefing Archive — Power Grab TX",
+  url: "https://powergrabtx.com/briefings/",
+  mainEntity: {
+    "@type": "ItemList",
+    numberOfItems: briefings.length,
+    itemListElement: briefings.map((b, i) => ({
+      "@type": "ListItem",
+      position: i + 1,
+      url: `https://powergrabtx.com${b.href}`,
+      name: b.headline,
+    })),
+  },
+};
+---
+<Layout
+  title="Texas AI Data Center News: Morning Briefing Archive | Power Grab TX"
+  description="Every Power Grab TX Morning Briefing in one place — daily coverage of Texas AI data centers, ERCOT, water use, local moratoriums, and the fight over who pays."
+>
+  <div class="briefings-archive">
+    <h1>Morning Briefing Archive</h1>
+    <p class="archive-intro">
+      Each weekday morning, Power Grab TX rounds up what changed in the Texas AI
+      data center boom: ERCOT and PUC decisions, new campuses and power plants,
+      water-use disclosure fights, local moratoriums and lawsuits, and what it
+      means for the communities next door. Monday editions cover the weekend too.
+      Here is every edition, newest first.
+    </p>
+    <p class="archive-links">
+      Want the big picture? See the <a href="/trackers/">AI Data Center Tracker</a>,
+      read our <a href="/posts/">in-depth posts</a>,
+      or <a href="/stay-informed/">get the briefing by email</a>.
+    </p>
+
+    {latest && (
+      <a class="latest-card" href={latest.href}>
+        <span class="latest-label">Latest · {formatBriefingDate(latest.date)}</span>
+        <span class="latest-headline">{latest.headline}</span>
+        <span class="latest-desc">{latest.description}</span>
+      </a>
+    )}
+
+    {[...byMonth.entries()].map(([month, items]) => (
+      <section class="archive-month">
+        <h2>{month}</h2>
+        <ul>
+          {items.map((b) => (
+            <li>
+              <time datetime={b.dateStr}>{formatBriefingDate(b.date, "short")}</time>
+              <div>
+                <a href={b.href}>{b.headline || `Morning Briefing — ${formatBriefingDate(b.date)}`}</a>
+                {b.description && <p>{b.description}</p>}
+              </div>
+            </li>
+          ))}
+        </ul>
+      </section>
+    ))}
+  </div>
+  <script type="application/ld+json" set:html={JSON.stringify(itemList)} />
+</Layout>
+
+<style>
+  .briefings-archive {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+  .briefings-archive h1 {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  .archive-intro,
+  .archive-links {
+    color: #444;
+    line-height: 1.7;
+    margin-bottom: 1rem;
+  }
+  .archive-links a,
+  .archive-month a {
+    color: #b03a1a;
+  }
+  .latest-card {
+    display: block;
+    background: #fff8f4;
+    border: 1px solid #e8c9b0;
+    border-radius: 6px;
+    padding: 1rem 1.2rem;
+    margin: 1.5rem 0 2rem;
+    color: #3a2010;
+    text-decoration: none;
+  }
+  .latest-card:hover .latest-headline {
+    text-decoration: underline;
+  }
+  .latest-label {
+    display: block;
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: #b03a1a;
+    margin-bottom: 0.35rem;
+  }
+  .latest-headline {
+    display: block;
+    font-size: 1.2rem;
+    font-weight: 700;
+    line-height: 1.35;
+    margin-bottom: 0.4rem;
+  }
+  .latest-desc {
+    display: block;
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+  .archive-month h2 {
+    font-size: 1.3rem;
+    border-bottom: 1px solid #e8c9b0;
+    padding-bottom: 0.4rem;
+    margin: 2rem 0 0.75rem;
+  }
+  .archive-month ul {
+    list-style: none;
+  }
+  .archive-month li {
+    display: grid;
+    grid-template-columns: 6.5rem 1fr;
+    gap: 0.75rem;
+    padding: 0.7rem 0;
+    border-bottom: 1px solid #f1e3d8;
+  }
+  .archive-month time {
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: #666;
+    padding-top: 0.15rem;
+  }
+  .archive-month li a {
+    font-weight: 700;
+    line-height: 1.4;
+  }
+  .archive-month li p {
+    font-size: 0.9rem;
+    color: #555;
+    line-height: 1.55;
+    margin-top: 0.25rem;
+  }
+  @media (max-width: 600px) {
+    .archive-month li {
+      grid-template-columns: 1fr;
+      gap: 0.2rem;
+    }
+  }
+</style>

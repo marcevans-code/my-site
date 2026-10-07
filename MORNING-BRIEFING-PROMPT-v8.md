@@ -1,5 +1,11 @@
 # Morning Briefing prompt — v8
 
+**Patched October 7, 2026** (at the user's request, after a Google Search Console review showed 45 of 60 pages "Discovered – currently not indexed", almost all of them briefings) — three changes:
+
+- **Step 5 title format.** The `<Layout title>` now leads with the day's #1 headline instead of the date: `<Layout title="[#1 story headline] | Morning Briefing, [Mon D, YYYY]" ...>` (e.g. `Granbury Puts Its Recall Election on Hold After a Lawyer With an Unnamed Client Says He's Suing | Morning Briefing, Oct 7, 2026`). Use the first numbered story's headline text with its number and emoji removed. Nobody searches for "Morning Briefing 10/07/26"; they search for the news. As a safety net, `Layout.astro` automatically rewrites any briefing that still uses the old `Morning Briefing - MM/DD/YY: Power Grab TX` title into this format at build time, so an older run of this prompt can't regress it.
+- **New `/briefings/` archive page** (`src/pages/briefings/index.astro`), linked from the nav ("Morning Briefing ▸ All Briefings"). It is built automatically from `src/data/briefings.ts`, which reads every `morning-briefing-*.astro` file, so this task never needs to edit it. Do not edit `briefings/index.astro` or `src/data/briefings.ts` as part of a daily run.
+- **Previous / Next links and NewsArticle structured data** are now added to every briefing automatically by `Layout.astro`. Do not add your own prev/next links or `type`/`publishedTime` props to the briefing file.
+
 **Patched September 12, 2026** (at the user's request) — one structural change:
 
 - **Monday editions now cover the whole weekend.** This task doesn't run every Saturday and Sunday, so a Monday-only briefing was leaving weekend developments unreported. Step 1 now has Monday runs compute the preceding Saturday and Sunday alongside Monday itself; Step 2's research queries and direct-source checks widen to all three days on a Monday run; Step 3's subtitle, Top Story line, and per-story dating adapt to a 3-day window instead of a single day; and Step 6's tracker `take` may draw on the whole weekend. The output is still a single dated file and a single tracker entry — dated Monday, not three separate ones — just built from three days of research instead of one.
@@ -38,7 +44,7 @@ Daily DFW Texas data center briefing (VM edition, v7 — no fixed category heade
 
 Produce today's "Power Grab TX" morning briefing and publish it to the live site. This is a recurring daily task with no memory of any prior conversation — work only from this prompt, from today's date, and from what you find on the web today.
 
-**STEP 1 — Get today's date.** Use the current date already available in this run's own context (the environment's current-date value provided when this task starts). Do not guess, and do not carry over a date from any prior run. Convert it to `YYYY-MM-DD` for filenames and headers, to `Month D, YYYY` for the tracker entry, and to `MM/DD/YY` for the page title, as used throughout the steps below.
+**STEP 1 — Get today's date.** Use the current date already available in this run's own context (the environment's current-date value provided when this task starts). Do not guess, and do not carry over a date from any prior run. Convert it to `YYYY-MM-DD` for filenames and headers, to `Month D, YYYY` for the tracker entry, and to `Mon D, YYYY` (e.g. `Oct 7, 2026`) for the page title, as used throughout the steps below.
 
 If today is a **Monday**, this edition also covers the preceding Saturday and Sunday — this task does not run every Saturday and Sunday, so Monday's edition is the chance those two days' developments get reported. Work out all three calendar dates (Saturday, Sunday, and today's Monday) and carry all three into Step 2's research. The filename, tracker date, and page title still use only today's (Monday's) date — there is still just one file and one tracker entry per Monday, now covering three days of news instead of one.
 
@@ -118,10 +124,10 @@ Also write a one-to-two sentence plain-text summary of today's single most notab
 Create a new file `/Users/development/Development/my-site/src/pages/briefings/morning-briefing-<YYYY-MM-DD>.astro` that:
 
 * Follows the same Layout import and overall HTML structure as above.
-* Uses `<Layout title="Morning Briefing - MM/DD/YY: Power Grab TX" description="...">`, where `description` is the unique one-to-two sentence summary you wrote at the end of Step 3. **This is required, not optional** — `Layout.astro` has no default description and throws a build error if a page omits it, so every briefing must pass one, or the Cloudflare Pages build will fail.
+* Uses `<Layout title="[#1 story headline] | Morning Briefing, [Mon D, YYYY]" description="...">` (headline = the first numbered story's `<h3>` text without its number or emoji), where `description` is the unique one-to-two sentence summary you wrote at the end of Step 3. **This is required, not optional** — `Layout.astro` has no default description and throws a build error if a page omits it, so every briefing must pass one, or the Cloudflare Pages build will fail.
 * Includes the Top Story line from Step 3 right after the subtitle, before the "Today's News" heading.
 * Populates the content from today's research (Step 2) instead of copying old content, following the story-based structure from Step 3 (one numbered block per genuine story, in newsworthiness order; the optional quiet-areas sentence; the flat Watch List).
-* Do not modify or delete any existing briefing file — only add the new dated one. (The nav only ever links to the single most recent briefing, auto-detected by `Layout.astro` — this file needs no edits when that changes. Every other briefing, old and new, stays published, indexed, and permanently reachable via its link in trackers.astro — see Step 7 below, which checks on the archive's health rather than trimming it.)
+* Do not modify or delete any existing briefing file — only add the new dated one. (The nav only ever links to the single most recent briefing, auto-detected by `Layout.astro` — this file needs no edits when that changes. Every other briefing, old and new, stays published, indexed, and permanently reachable via the auto-built `/briefings/` archive page, the Previous/Next links `Layout.astro` adds to every briefing, and its link in trackers.astro — see Step 7 below, which checks on the archive's health rather than trimming it.)
 
 **STEP 6 — Update the tracker.** Read `/Users/development/Development/my-site/src/pages/trackers.astro`. Prepend ONE new object to the TOP of the `entries` array (do not alter or remove any existing entries) following the existing object shape exactly:
 
