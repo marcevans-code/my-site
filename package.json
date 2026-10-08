@@ -17,9 +17,9 @@
     "glossary-pdf": "node scripts/build-glossary-pdf.mjs"
   },
   "dependencies": {
-    "@astrojs/sitemap": "^3.7.3",
+    "@astrojs/sitemap": "^3.7.4",
     "@fontsource/lato": "^5.2.7",
-    "astro": "^7.1.5",
+    "astro": "^7.3.7",
     "pdfkit": "^0.19.1"
   },
   "devDependencies": {
