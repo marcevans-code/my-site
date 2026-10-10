@@ -1,0 +1,411 @@
+---
+import Layout from '../../layouts/Layout.astro';
+---
+<Layout
+  title="Pipe Dreams: How AI Is Rewiring Texas's Gas Network — Power Grab TX"
+  description="Data centers that bring their own gas power need pipelines, compressors and firm supply. Here's how gas reaches a turbine, and what a Uri-style freeze could do."
+  image="/data_centers.webp"
+  type="article"
+>
+  <article class="post-page">
+    <img src="/data_centers.webp" alt="Pipe Dreams: How AI Is Rewiring Texas's Natural Gas Network" class="post-image" width="1536" height="1024" />
+
+    <div class="post-content">
+      <h1>Pipe Dreams: How AI Is Rewiring Texas's Natural Gas Network</h1>
+      <p class="post-card-date"><time datetime="2026-10">October 2026</time></p>
+
+      <h2>📘 Introduction</h2>
+      <p>"Bring your own power" has become the answer to almost every Texas data center question. The grid queue is jammed, ERCOT has paused new approvals pending an audit, and state leaders keep saying data centers should supply their own electricity. In practice, that power almost always means natural gas: turbines on site, or a dedicated plant next door.</p>
+      <p>A gas plant is only as reliable as the gas that reaches it. This month brought two reminders of how big that supply question is getting. A Kinder Morgan pipeline affiliate is asking federal regulators to expand capacity in the Panhandle, partly to serve a power plant for a planned data center. And Washington and Seoul are backing Project Star, a 6.47-gigawatt gas plant in La Salle County built to feed a 5-gigawatt data center campus next door.</p>
+      <p>This explainer covers how gas gets from a well to a turbine, why the type of pipeline contract matters, and the question every Texan who lived through February 2021 should be asking: what happens to these private power plants in a hard freeze?</p>
+
+      <h2>🔥 From Wellhead to Turbine</h2>
+      <p>Natural gas takes several steps to reach a power plant, and each one can fail:</p>
+      <ul>
+        <li><strong>Production.</strong> Gas comes out of wells, often mixed with oil and water. In the Permian Basin and South Texas, much of it is produced alongside oil.</li>
+        <li><strong>Gathering and processing.</strong> Small lines carry it to processing plants, which strip out water and liquids so it can travel in a pipeline. These plants need electricity to run.</li>
+        <li><strong>Transmission pipelines.</strong> Large, high-pressure lines move it long distances. Pipelines that cross state lines are regulated by the Federal Energy Regulatory Commission (FERC). Pipelines that stay inside Texas are overseen by the Texas Railroad Commission.</li>
+        <li><strong>Compressor stations.</strong> Gas loses pressure as it moves, so compressor stations along the line push it forward. Many run on gas engines; some run on electric motors.</li>
+        <li><strong>Delivery.</strong> A lateral line and a meter station deliver gas to the plant at the pressure its turbines need.</li>
+      </ul>
+      <p>Pipeline capacity is measured in <strong>dekatherms per day</strong>. A dekatherm is roughly 1,000 cubic feet of gas, or one million British thermal units (MMBtu) of energy. That's the unit that ties a pipeline to a power plant: turbines are rated by how many Btus they burn per kilowatt-hour.</p>
+
+      <h2>📜 Firm vs. Interruptible: The Contract That Decides Who Gets Gas</h2>
+      <p>A power plant doesn't just need a pipeline nearby. It needs the right kind of contract.</p>
+      <table class="post-table">
+        <thead>
+          <tr><th></th><th>Firm transportation</th><th>Interruptible transportation</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>What it is</td><td>Reserved pipeline capacity the pipeline is obligated to deliver</td><td>Space on the pipeline when there's room left over</td></tr>
+          <tr><td>Cost</td><td>Higher; the customer pays for the capacity whether it uses it or not</td><td>Lower; pay only for what moves</td></tr>
+          <tr><td>In a cold snap</td><td>Delivered first, if the gas exists</td><td>Cut first when the pipeline is full</td></tr>
+        </tbody>
+      </table>
+      <p>That's why pipeline expansions are announced in terms of "firm" capacity. The Kinder Morgan project described below is a sale of firm service. It's also why the Uri findings below matter: a firm contract guarantees space on the pipe, not gas in it.</p>
+
+      <h2>🏗️ The Texas Buildout</h2>
+      <h3>The Panhandle: the Amarillo Expansion Project</h3>
+      <p>Natural Gas Pipeline Company of America, a Kinder Morgan affiliate, is developing the Amarillo Expansion Project to meet growing demand in the Texas Panhandle. Kinder Morgan describes up to <strong>550,000 dekatherms per day</strong> of firm transportation capacity, at an estimated cost of about $200 million, with service targeted for the third quarter of 2028.</p>
+      <p>Its FERC application adds detail, as Gas Compression Magazine reported and <a href="/briefings/morning-briefing-2026-10-08/">our Oct. 8 briefing</a> covered: 321,200 dekatherms per day of new firm capacity, combined with capacity that was already unsubscribed; a new delivery point in Deaf Smith County to supply power generation, including a gas plant for a planned data center; and a new compressor station in Moore County with four Caterpillar engines totaling 22,000 horsepower. The data center's operator hasn't been named in the coverage.</p>
+
+      <h3>South Texas: Project Star</h3>
+      <p>Project Star is a $22 billion plan for a <strong>6.47-gigawatt combined-cycle gas plant</strong> in Encinal, run by NextEra Energy Resources and Related Companies, with Lewis Energy Group as a partner. It's designed to power a 5-gigawatt Related Digital data center next door and sell leftover power to the grid, FOX 7 Austin reported. The first phase is targeted for 2029 and full operation for 2032. The developers are exploring produced water from oil and gas operations for cooling.</p>
+      <p>Lewis Energy's founder says the project will make sure South Texas gas benefits the region. Coverage so far hasn't described how the gas will be contracted or delivered. The project still needs permits, and it's arriving while TCEQ's freeze on data center permits remains in effect.</p>
+
+      <h3>The coast: gas first, nuclear later</h3>
+      <p>Blue Energy's plan at the Port of Victoria, which could supply a Crusoe data center, starts with two GE Vernova gas turbines producing about 1 gigawatt, with small modular reactors added later, POWER Magazine reported. Gas power could come as early as 2030 and nuclear as early as 2032. If the reactors slip, the gas plant is what gets built. (Our <a href="/posts/the-nuclear-bet/">Nuclear Bet</a> post covers the reactor side.)</p>
+
+      <h2>📐 How Much Gas Is That?</h2>
+      <p>Pipeline capacity and plant size are easier to compare with a rough conversion. A modern combined-cycle plant burns about 6,500 Btu of gas per kilowatt-hour; a simple-cycle turbine burns closer to 10,000. Using those assumptions:</p>
+      <table class="post-table">
+        <thead>
+          <tr><th>Comparison</th><th>Our estimate</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Project Star's 6.47 GW running flat out for a day</td><td>About 1 million dekatherms of gas per day</td></tr>
+          <tr><td>Combined-cycle capacity that the full 550,000 Dth/day Amarillo expansion could run at full output</td><td>About 3.5 GW</td></tr>
+          <tr><td>Simple-cycle turbines the same expansion could run</td><td>About 2.3 GW</td></tr>
+        </tbody>
+      </table>
+      <p>These are our back-of-the-envelope figures, not company numbers. Real plants rarely run at full output around the clock, and heat rates vary by turbine. But they show the scale: at full output, one South Texas campus would burn close to twice the gas that a $200 million Panhandle pipeline expansion is built to carry.</p>
+
+      <h2>🥶 The Uri Question</h2>
+      <p>In February 2021, Winter Storm Uri left millions of Texans without power for days. The joint FERC and NERC investigation found that freezing and natural gas fuel supply problems were the two largest causes of power plant failures. Across ERCOT, SPP and MISO South, <strong>55% of natural gas generating capacity</strong> had unplanned outages or derates, compared with 22% of wind and 1% of solar.</p>
+      <p>The fuel problem started upstream. An R Street Institute analysis of the federal findings notes that about 31% of plant outages during the storm came from fuel supply problems, nearly all involving gas. Combined gas production in Texas, Oklahoma and Louisiana fell by more than half that month, the largest monthly drop on record, as wellheads froze and compression failed. Pipelines were "largely able to meet their firm transportation commitments," the investigators found. The pipe was there. The gas wasn't.</p>
+      <p>Since then, Texas has required weatherization. The Railroad Commission's Statewide Rule 66, adopted in 2022 under Senate Bill 3, requires covered gas facilities to prepare for winter each year, file attestations and report weather-related outages, with penalties of up to $1 million. But it applies only to facilities on the state's electricity supply chain map, and the pipeline provisions cover facilities that serve gas generation in ERCOT. Critics, including R Street, faulted an early interpretation that let some gas facilities avoid weatherization by opting out of the "critical" designation.</p>
+      <p>That raises questions the industry hasn't answered in public:</p>
+      <ul>
+        <li><strong>No grid to fall back on.</strong> An islanded campus that loses its gas supply has nowhere to turn. A grid-connected campus that loses its private plant may suddenly pull from ERCOT at the worst moment.</li>
+        <li><strong>Outside the map.</strong> Much of the Panhandle sits outside ERCOT. Whether a pipeline serving a private plant there, or an off-grid campus anywhere, falls under Rule 66 depends on how the supply chain map is drawn, and that isn't clear from the public record.</li>
+        <li><strong>Competing for gas.</strong> A freeze is when homes, hospitals and grid power plants need gas the most. Every new private plant is another customer on the same production and pipelines.</li>
+        <li><strong>Backup fuel.</strong> Industry consultants note that dual-fuel capability, typically fuel oil stored on site, can keep plants running when gas runs short. Data center developers rarely say whether their plants will have it.</li>
+      </ul>
+      <p>To be fair, there's a real case for on-site gas. A data center with its own plant isn't adding demand to an already stretched grid in a crisis, and NERC says a repeat of February 2021 in Texas is unlikely, partly because of the batteries added to the grid since. But most of those batteries discharge for only a few hours, and a data center draws power around the clock, which makes a long cold snap harder to ride out. NERC has also warned that data center growth in Texas is "contributing to continued risk of supply shortfalls," TechCrunch reported.</p>
+
+      <h2>🧭 What Texans Should Be Watching</h2>
+      <ul>
+        <li><strong>The FERC docket for the Amarillo Expansion Project.</strong> Filings at FERC are public, and landowners and other affected parties can file comments or ask to intervene, including those near the Moore County compressor site.</li>
+        <li><strong>Project Star's TCEQ air permits</strong>, and any disclosure of how its gas will be contracted.</li>
+        <li><strong>Firm fuel and winterization disclosures.</strong> SB 6 already requires large loads to disclose on-site backup generation. Lawmakers could ask the same about fuel contracts, dual-fuel capability and weatherization.</li>
+        <li><strong>The 2027 Legislature.</strong> Nearly every legislator who answered KPRC 2's survey supported requiring data centers to supply their own power, as <a href="/briefings/morning-briefing-2026-10-08/">our Oct. 8 briefing</a> reported. Requiring that power to survive a freeze would be the logical next step.</li>
+      </ul>
+
+      <h2>🧾 Conclusion</h2>
+      <p>"Bring your own power" moves the reliability question from the grid to the gas system. That's not necessarily worse, but it isn't solved either. Texas is building pipelines, compressor stations and multi-gigawatt plants for private customers faster than it's deciding what those plants owe the public in a crisis. Uri showed that a gas plant is only as strong as the weakest frozen wellhead behind it. Before the next storm, Texans deserve to know which data center plants have firm supply, backup fuel and weatherized equipment, and which are betting on mild winters.</p>
+      <p>For more analysis on Texas energy and AI, visit <a href="/">PowerGrabTX.com</a>.</p>
+
+      <div class="post-related">
+        <h3>Sources</h3>
+        <ul>
+          <li><a href="https://kindermorgan.com/Operations/Projects/Amarillo-Expansion-Project" target="_blank" rel="noopener">Kinder Morgan</a> — "Amarillo Expansion Project"</li>
+          <li><a href="https://pboilandgasmagazine.com/kinder-morgan-affiliate-advances-amarillo-expansion-project-to-meet-demand/" target="_blank" rel="noopener">Permian Basin Oil and Gas Magazine</a> — "Kinder Morgan affiliate advances Amarillo expansion project to meet demand" (April 28, 2026)</li>
+          <li>Gas Compression Magazine — NGPL Amarillo Expansion Project FERC application (Oct. 8, 2026), as reported in our <a href="/briefings/morning-briefing-2026-10-08/">Oct. 8 briefing</a></li>
+          <li><a href="https://www.fox7austin.com/news/south-texas-get-22b-power-project-tied-data-center" target="_blank" rel="noopener">FOX 7 Austin</a> — "South Texas to get $22B power project tied to data center" (Oct. 7, 2026)</li>
+          <li><a href="https://www.powermag.com/blue-energy-ge-vernova-advance-gas-bridge-model-to-unlock-nuclear-finance/" target="_blank" rel="noopener">POWER Magazine</a> — "Blue Energy, GE Vernova Advance 'Gas Bridge' Model to Unlock Nuclear Finance" (July 1, 2026)</li>
+          <li><a href="https://www.power-eng.com/gas/turbines/investigation-into-february-freeze-highlights-natural-gas-fired-plant-failures-frequency-of-cold-weather-events/" target="_blank" rel="noopener">Power Engineering</a> — "Joint FERC/NERC probe into February freeze highlights natural gas-fired plant failures" (Sept. 24, 2021)</li>
+          <li><a href="https://www.rstreet.org/commentary/texas-grid-reforms-must-not-overlook-natural-gas-supply/" target="_blank" rel="noopener">R Street Institute</a> — "Texas grid reforms must not overlook natural gas supply" (Oct. 15, 2021)</li>
+          <li><a href="https://www.jw.com/news/insights-weatherization-rules-rrc-texas/" target="_blank" rel="noopener">Jackson Walker</a> — "Three Key Provisions in New 'Weatherization' Rules by Railroad Commission of Texas" (Sept. 9, 2022)</li>
+          <li><a href="https://www.power-eng.com/gas/need-reliable-power-consider-dual-fuel-capability/" target="_blank" rel="noopener">Power Engineering</a> — "Need reliable power? Consider dual-fuel capability" (May 24, 2022)</li>
+          <li><a href="https://techcrunch.com/2025/11/19/rising-data-center-electricity-use-risks-blackouts-during-winter-storms" target="_blank" rel="noopener">TechCrunch</a> — "Rising data center electricity use risks blackouts during winter storms" (Nov. 19, 2025)</li>
+        </ul>
+      </div>
+
+      <div class="post-related">
+        <h3>Related Pages</h3>
+        <ul>
+          <li><a href="/briefings/morning-briefing-2026-10-08/">Morning Briefing: October 8, 2026</a> — Project Star, the Amarillo Expansion filing and the KPRC 2 legislator survey.</li>
+          <li><a href="/briefings/morning-briefing-2026-10-07/">Morning Briefing: October 7, 2026</a> — Blue Energy files ERCOT's first small modular reactor request.</li>
+          <li><a href="/guides/data-center-near-you/">Data Center Near You</a> — What to check, who to call and which records to request when a project lands nearby.</li>
+          <li><a href="/glossary/">AI Data Center Glossary</a> — Plain-English definitions of the power and permitting terms in this post.</li>
+          <li><a href="/trackers/">AI Data Center Tracker</a> — A running, dated, sourced record of the boom as it unfolds.</li>
+          <li><a href="/stay-informed/">Stay Informed</a> — Get alerts and updates about developments affecting Texas communities.</li>
+        </ul>
+      </div>
+
+      <div class="post-related">
+        <h3>Other Posts</h3>
+        <ul>
+          <li><a href="/posts/the-20-percent-walkaway/">The 20% Walkaway: Who Pays When a Texas Data Center Never Shows Up</a></li>
+          <li><a href="/posts/annex-or-lose-it/">Annex or Lose It: Why Texas Towns Are Cornered Into Data Center Deals</a></li>
+          <li><a href="/posts/black-mountain-fact-check/">Fact vs. Fiction: Black Mountain's "Quiet, Low-Impact" Pitch to Parker County</a></li>
+          <li><a href="/posts/speed-of-light/">Speed of Light: Can Photonics Ease the AI Data Center Power Crunch?</a></li>
+          <li><a href="/posts/the-biggest-polluter/">The Biggest Polluter: Amazon's Pecos County Gas Plant</a></li>
+          <li><a href="/posts/the-nuclear-bet/">The Nuclear Bet: Texas Wagers on Unproven Reactors</a></li>
+          <li><a href="/posts/exploding-in-texas/">Why AI Data Centers Are Exploding in Texas</a></li>
+        </ul>
+      </div>
+
+      <div class="post-cta">
+        <p>AI data centers are reshaping Texas faster than most people realize. If you want to stay ahead of the changes affecting your community, energy costs, and local environment, join our update list.</p>
+        <a href="/stay-informed/" class="btn">Stay informed about AI's impact in Texas</a>
+      </div>
+    </div>
+  </article>
+</Layout>
+<style>
+    /* ══════════════════════════════════════════════════════════════
+         MOVE TO → src/pages/posts.astro AND src/pages/posts/[slug].astro
+         (Split further if post listing vs. single-post styles diverge —
+         check which classes are used on which template before moving.)
+         ══════════════════════════════════════════════════════════════ */
+
+      .card {
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        padding: 1.2rem;
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+        transition: box-shadow 0.2s;
+      }
+      .card:hover {
+        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+      }
+      .card hr {
+        border: none;
+        border-top: 2px solid #ccc;
+        margin: 0.4rem 0;
+      }
+      .card h3 {
+        font-size: 1.05rem;
+        font-weight: 700;
+        line-height: 1.3;
+        height: 3.5rem;
+        overflow: hidden;
+      }
+      .card p {
+        font-size: 0.95rem;
+        line-height: 1.6;
+        color: #333;
+        height: 21rem;
+        overflow: hidden;
+      }
+      .card ul {
+        font-size: 0.92rem;
+        line-height: 1.8;
+        color: #333;
+        padding-left: 1.2rem;
+        height: 20rem;
+        overflow: hidden;
+      }
+      .card .learn-more {
+        font-size: 0.95rem;
+        font-weight: 600;
+        color: #1a4a8a;
+        display: block;
+        margin-bottom: 0.8rem;
+      }
+      .card .title {
+        height: 5.6rem;
+        overflow: hidden;
+        color: #000080;
+        font-weight: 700;
+      }
+      .card .description {
+        font-size: 0.95rem;
+        color: #333;
+        line-height: 1.6;
+        display: -webkit-box;
+        -webkit-line-clamp: 5;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+      }
+      .card .provider {
+        font-size: 0.88rem;
+        color: #1a6a2a;
+      }
+      .card .readmore {
+        font-size: 0.95rem;
+        font-weight: 700;
+        color: #1a1a1a;
+      }
+      .cards-section {
+        padding: 2rem;
+      }
+      .cards-section h2 {
+        font-size: 1.6rem;
+        font-weight: 700;
+        margin-bottom: 1.5rem;
+        text-align: center;
+      }
+      .posts-section h2 {
+        font-size: 1.6rem;
+        font-weight: 700;
+        margin-bottom: 1rem;
+      }
+      .posts-section {
+        padding: 2rem;
+        max-width: 1200px;
+        margin: 0 auto;
+        background: #f4f4f4;
+        border-radius: 10px;
+      }
+      .post-page {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 2rem;
+      }
+      .post-image {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+        margin-bottom: 2rem;
+      }
+      .post-content h1 {
+        font-size: 2rem;
+        font-weight: 800;
+        margin-bottom: 0.5rem;
+        line-height: 1.3;
+      }
+      .posts-list .post .date {
+        font-size: 0.88rem;
+        color: #666;
+        margin: 0.2rem 0 0.4rem;
+      }
+      .posts-list .post p {
+        font-size: 0.95rem;
+        color: #444;
+        line-height: 1.6;
+      }
+      .post-content h2 {
+        font-size: 1.3rem;
+        font-weight: 700;
+        margin: 2rem 0 0.8rem;
+      }
+      .post-content h3 {
+        font-size: 1.1rem;
+        font-weight: 700;
+        margin: 1.2rem 0 0.5rem;
+      }
+      .post-content p {
+        font-size: 1rem;
+        line-height: 1.8;
+        margin-bottom: 1rem;
+        color: #222;
+      }
+      .post-related {
+        background: #f4f4f4;
+        border-radius: 8px;
+        padding: 1.2rem 1.5rem;
+        margin: 2rem 0;
+      }
+      .posts-list .post h3 {
+        font-size: 1rem;
+        font-weight: 600;
+      }
+      .posts-list .post h3 a {
+        color: #1a4a8a;
+        font-size: 1rem;
+      }
+      .post-content ul {
+        padding-left: 1.4rem;
+        margin-bottom: 1rem;
+      }
+      .post-content ul li {
+        font-size: 1rem;
+        line-height: 1.8;
+        color: #222;
+      }
+      .post-cta {
+        background: #1a3a6a;
+        color: #fff;
+        padding: 2rem;
+        border-radius: 10px;
+        margin-top: 2rem;
+        text-align: center;
+      }
+      .post-cta p {
+        color: #fff;
+        margin-bottom: 1rem;
+      }
+      .post-table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 1.5rem 0;
+      }
+      .post-table th {
+        background: #1a3a6a;
+        color: #fff;
+        padding: 0.8rem 1rem;
+        text-align: left;
+        font-size: 0.95rem;
+      }
+      .post-table td {
+        padding: 0.8rem 1rem;
+        border-bottom: 1px solid #ddd;
+        font-size: 0.95rem;
+      }
+      .post-table tr:nth-child(even) {
+        background: #f4f4f8;
+      }
+      .posts-summary {
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 2rem;
+      }
+      .posts-summary h1 {
+        font-size: 1.8rem;
+        font-weight: 700;
+        margin-bottom: 0.5rem;
+      }
+      .posts-intro {
+        font-size: 1rem;
+        color: #555;
+        margin-bottom: 2rem;
+      }
+      .posts-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.5rem;
+      }
+      @media (max-width: 900px) {
+        .posts-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+      .post-card {
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        overflow: hidden;
+      }
+      .post-card img {
+        width: 100%;
+        height: 220px;
+        object-fit: cover;
+      }
+      .post-card-body {
+        padding: 1.2rem;
+      }
+      .post-card-body h2 {
+        font-size: 1rem;
+        font-weight: 700;
+        margin-bottom: 0.4rem;
+        line-height: 1.4;
+      }
+      .post-card-body h2 a {
+        color: #1a4a8a;
+      }
+      .post-card-date {
+        font-size: 0.85rem;
+        color: #666;
+        margin-bottom: 0.8rem;
+      }
+      .post-card-body p {
+        font-size: 0.9rem;
+        color: #444;
+        line-height: 1.6;
+        margin-bottom: 1rem;
+      }
+      .read-more {
+        font-size: 0.85rem;
+        font-weight: 700;
+        color: #1a1a1a;
+        text-decoration: none;
+      }
+      .read-more:hover {
+        color: #1a4a8a;
+      }
+
+</style>
