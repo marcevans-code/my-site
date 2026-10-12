@@ -1,5 +1,9 @@
 # Morning Briefing prompt — v8
 
+**Patched October 12, 2026** (at the user's request, after the Oct 8 and Oct 12 runs, both told to use Claude in Chrome, lost a dozen sources to blocks) — one change:
+
+- **Step 2 now has a "When a source is blocked" ladder.** It says what to do when Chrome refuses a domain ("Navigation to this domain is not allowed"), when a page shows a bot check or blank shell, and when a page is paywalled. The steps, in order: the native WebFetch tool, a syndicated or rewritten copy of the same story, then an independent outlet covering the same development. It also lists the domains that were blocked on recent runs, so a run can go straight to the fallback instead of failing on them first. The "IF a source genuinely can't be reached" rule is unchanged and comes after the ladder.
+
 **Patched October 7, 2026** (at the user's request, after a Google Search Console review showed 45 of 60 pages "Discovered – currently not indexed", almost all of them briefings) — three changes:
 
 - **Step 5 title format.** The `<Layout title>` now leads with the day's #1 headline instead of the date: `<Layout title="[#1 story headline] | Morning Briefing, [Mon D, YYYY]" ...>` (e.g. `Granbury Puts Its Recall Election on Hold After a Lawyer With an Unnamed Client Says He's Suing | Morning Briefing, Oct 7, 2026`). Use the first numbered story's headline text with its number and emoji removed. Nobody searches for "Morning Briefing 10/07/26"; they search for the news. As a safety net, `Layout.astro` automatically rewrites any briefing that still uses the old `Morning Briefing - MM/DD/YY: Power Grab TX` title into this format at build time, so an older run of this prompt can't regress it.
