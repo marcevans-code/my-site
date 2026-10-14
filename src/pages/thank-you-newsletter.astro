@@ -4,7 +4,7 @@ import Layout from "../layouts/Layout.astro";
 
 <Layout
   title="You're Subscribed! | Power Grab TX"
-  description="You're subscribed to the Power Grab TX Morning Briefing — plus your free download of the AI Data Center Glossary."
+  description="You're subscribed to the Power Grab TX Morning Briefing — plus your free downloads: the AI Data Center Glossary and the ERCOT queue county spreadsheet."
   noindex={true}
 >
   <div class="thank-you-section">
@@ -22,13 +22,20 @@ import Layout from "../layouts/Layout.astro";
     </p>
 
     <div class="thank-you-download">
-      <p class="thank-you-download-lead">Here's your free download:</p>
+      <p class="thank-you-download-lead">Here are your free downloads:</p>
       <a
         href="/ai-data-center-glossary.pdf"
         class="btn"
         download
       >
         📄 Download the AI Data Center Glossary
+      </a>
+      <a
+        href="/powergrabtx-ercot-queue-by-county-sep-2026.xlsx"
+        class="btn thank-you-second-download"
+        download
+      >
+        📊 Download the ERCOT Queue by County Spreadsheet
       </a>
     </div>
 
@@ -74,6 +81,9 @@ import Layout from "../layouts/Layout.astro";
         font-weight: 700;
         color: #3a2010;
         margin-bottom: 1rem;
+      }
+      .thank-you-second-download {
+        margin-top: 0.8rem;
       }
       .thank-you-home-btn {
         background: transparent;

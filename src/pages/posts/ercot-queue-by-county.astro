@@ -1,0 +1,439 @@
+---
+import Layout from '../../layouts/Layout.astro';
+---
+<Layout
+  title="ERCOT's Generation Queue, County by County — Power Grab TX"
+  description="1,758 power projects totaling 438.5 GW want to connect to the Texas grid. Here are the 15 counties where the most capacity is lined up, led by Pecos County."
+  image="/ercot-queue-by-county.webp"
+  type="article"
+>
+  <article class="post-page">
+    <img src="/ercot-queue-by-county.webp" alt="A glowing circuit-board map of Texas dotted with energy nodes floating over the Dallas skyline at sunset, with solar panels, battery storage containers, a gas plant and transmission towers below" class="post-image" width="1248" height="832" />
+
+    <div class="post-content">
+      <h1>Lining Up for the Grid: Where 438 GW of New Texas Power Wants to Plug In</h1>
+      <p class="post-card-date"><time datetime="2026-10">October 2026</time></p>
+
+      <h2>📘 Summary</h2>
+      <p>Every power plant that wants to connect to the Texas grid has to get in line first. That line is ERCOT's generation interconnection queue, and ERCOT publishes it every month in its GIS Report. The September 2026 report lists <strong>1,758 proposed projects totaling 438.5 gigawatts</strong>, spread across <strong>192 of Texas's 254 counties</strong>.</p>
+      <p>To put that in perspective, it's roughly five times the most power Texans have ever used at one moment. It's also close in size to the other side of the boom: more than 474 GW of large-load requests, mostly data centers, waiting to <em>draw</em> power from the same grid, as we covered in <a href="/posts/the-20-percent-walkaway/">The 20% Walkaway</a>. Both queues are full of projects that will never be built. But together they show where developers are betting, and which communities may be next to host a solar farm, a battery yard or a gas plant.</p>
+      <p>We added up the September queue county by county. Here's what stands out:</p>
+      <ul>
+        <li><strong>Pecos County is in a league of its own.</strong> 56 projects and 21.4 GW, nearly double the next county and about 5% of the entire statewide queue.</li>
+        <li><strong>Batteries and solar dominate.</strong> Battery storage makes up about 36% of queued capacity (157 GW) and solar about 34% (150 GW). Gas is 18% (79 GW) and wind 11% (48 GW).</li>
+        <li><strong>Gas is concentrated.</strong> In Wilbarger, Reeves, Hill and Fisher counties, gas is the largest fuel in the queue, including a single 3,000 MW gas project in Fisher County.</li>
+        <li><strong>Most of it is early.</strong> About two-thirds of the queued capacity (290 GW) doesn't have a signed interconnection agreement yet. Only about 10 GW is listed as under construction.</li>
+      </ul>
+
+      <h2>🗺️ The Top 15 Counties</h2>
+      <p>These 15 counties hold 407 projects and 127.7 GW, about 29% of all the capacity in ERCOT's queue. Capacity is the total nameplate size of every proposed project in the county; "largest fuel" is the fuel type with the most megawatts there.</p>
+      <table class="post-table">
+        <thead>
+          <tr><th>#</th><th>County</th><th>Projects</th><th>Capacity</th><th>Largest fuel</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>1</td><td>Pecos</td><td>56</td><td>21.36 GW</td><td>Solar</td></tr>
+          <tr><td>2</td><td>Brazoria</td><td>53</td><td>11.46 GW</td><td>Battery</td></tr>
+          <tr><td>3</td><td>Wharton</td><td>40</td><td>8.61 GW</td><td>Solar</td></tr>
+          <tr><td>4</td><td>Wilbarger</td><td>21</td><td>8.51 GW</td><td>Gas</td></tr>
+          <tr><td>5</td><td>Reeves</td><td>22</td><td>8.33 GW</td><td>Gas</td></tr>
+          <tr><td>6</td><td>Milam</td><td>29</td><td>8.29 GW</td><td>Solar</td></tr>
+          <tr><td>7</td><td>Jack</td><td>17</td><td>7.98 GW</td><td>Battery</td></tr>
+          <tr><td>8</td><td>Hill</td><td>22</td><td>7.76 GW</td><td>Gas</td></tr>
+          <tr><td>9</td><td>Harris</td><td>31</td><td>6.82 GW</td><td>Battery</td></tr>
+          <tr><td>10</td><td>Mitchell</td><td>15</td><td>6.79 GW</td><td>Battery</td></tr>
+          <tr><td>11</td><td>San Patricio</td><td>26</td><td>6.65 GW</td><td>Battery</td></tr>
+          <tr><td>12</td><td>Deaf Smith</td><td>11</td><td>6.39 GW</td><td>Solar</td></tr>
+          <tr><td>13</td><td>Fisher</td><td>13</td><td>6.38 GW</td><td>Gas</td></tr>
+          <tr><td>14</td><td>Zapata</td><td>27</td><td>6.29 GW</td><td>Solar</td></tr>
+          <tr><td>15</td><td>Lamar</td><td>24</td><td>6.05 GW</td><td>Solar</td></tr>
+        </tbody>
+      </table>
+
+      <h3>What's behind the numbers</h3>
+      <ul>
+        <li><strong>Pecos County</strong> has a bit of everything: about 8.9 GW of solar, 5.9 GW of gas, 4.7 GW of wind and 1.9 GW of batteries. Its largest single entry is the 1,500 MW Big Canyon Wind project. Amazon's off-grid gas plant, which we covered in <a href="/posts/the-biggest-polluter/">The Biggest Polluter</a>, isn't meant to connect to the ERCOT grid, so it isn't part of these numbers.</li>
+        <li><strong>Brazoria County</strong>, south of Houston, is the battery capital of the queue, with about 5.7 GW of storage proposed, plus solar, wind and gas.</li>
+        <li><strong>Harris County</strong> is almost all batteries: about 6.2 GW of its 6.8 GW is storage, sited close to the region's biggest demand center.</li>
+        <li><strong>Wilbarger, Reeves, Hill and Fisher counties</strong> lead with gas. Fisher County's 6.4 GW includes a single 3,000 MW gas project, Brazos Energy Security, and Hill County's largest entry is a 1,400 MW gas plant.</li>
+        <li><strong>Lamar County</strong>, on the Red River, includes a 1,232 MW pumped-storage hydro project named Southeast Oklahoma Pumped Storage, which ERCOT lists under Lamar County.</li>
+      </ul>
+
+      <h2>⚠️ What the Queue Does and Doesn't Tell You</h2>
+      <p>A spot in the queue is a request, not a promise. Developers often file for more sites than they'll ever build, and many projects drop out after the first studies show what grid upgrades would cost. In the September report, about 66% of the queued capacity hadn't reached a signed interconnection agreement, and only about 2% was listed as under construction.</p>
+      <p>ERCOT also doesn't publish exact project locations in this report, only the county. So the table shows where developers are looking, not which property line a project will sit on. If a large project is listed in your county, the next places to look are your county commissioners' agendas, any tax abatement requests, and TCEQ air permits for gas plants. Our <a href="/guides/data-center-near-you/">Data Center Near You guide</a> walks through how to find them.</p>
+
+      <div class="queue-download" id="download">
+        <h2>📥 Get the Full County Spreadsheet</h2>
+        <p>The top 15 is only the start. Our spreadsheet lists <strong>all 192 counties</strong> with a project in ERCOT's queue, with the number of projects, total MW and GW, and the largest fuel type for each. It's sortable and filterable, so you can find your county in seconds.</p>
+        <p><strong>It's free when you sign up for the Power Grab TX Morning Briefing</strong>, our weekday summary of the Texas data center and grid news that matters, from ERCOT and PUC decisions to local votes and permit hearings.</p>
+        <form action="https://forms-worker.marc-897.workers.dev/newsletter" method="POST" class="queue-signup-form">
+          <input type="text" name="company" style="display:none" tabindex="-1" autocomplete="off" />
+          <div class="queue-signup-row">
+            <input type="text" name="first_name" placeholder="First Name" required aria-label="First Name" />
+            <input type="email" name="email" placeholder="Email Address" required aria-label="Email Address" />
+            <button type="submit" class="btn">Get the Spreadsheet</button>
+          </div>
+          <div class="cf-turnstile" data-sitekey="0x4AAAAAADwCpEAeGLLtdeFU"></div>
+          <p class="queue-signup-fineprint">Your download link appears right after you subscribe. Weekday mornings, no spam, no ads, unsubscribe anytime.</p>
+        </form>
+      </div>
+
+      <h2>🧾 Conclusion</h2>
+      <p>Texas's grid queue is huge, and most of it is speculative. But speculation still has an address. The counties at the top of this list are where land agents, developers and tax abatement requests are most likely to show up next, and where residents have the most reason to watch their local agendas now, before projects are locked in.</p>
+      <p>We'll update these numbers as ERCOT publishes new monthly reports. For more analysis on Texas energy and AI, visit <a href="/">PowerGrabTX.com</a>.</p>
+
+      <div class="post-related">
+        <h3>Sources</h3>
+        <ul>
+          <li><a href="https://www.ercot.com/gridinfo/resource" target="_blank" rel="noopener">ERCOT</a> — Generation Interconnection Status (GIS) Report, September 2026 (GIS_Report_September_2026.xlsx)</li>
+          <li><a href="https://www.ercotqueue.com/system-map" target="_blank" rel="noopener">ERCOTQueue System Map</a> — county-level aggregation of the September 2026 GIS Report; reviewed October 14, 2026</li>
+          <li><a href="https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/State_County/MapServer" target="_blank" rel="noopener">U.S. Census Bureau</a> — TIGERweb county boundaries (January 1, 2025)</li>
+        </ul>
+      </div>
+
+      <div class="post-related">
+        <h3>Related Pages</h3>
+        <ul>
+          <li><a href="/guides/data-center-near-you/">Data Center Near You</a> — What to check, who to call and which records to request when a project lands nearby.</li>
+          <li><a href="/trackers/">AI Data Center Tracker</a> — A running, dated, sourced record of the boom as it unfolds.</li>
+          <li><a href="/glossary/">AI Data Center Glossary</a> — Plain-English definitions of interconnection, large loads and other grid terms.</li>
+          <li><a href="/stay-informed/">Stay Informed</a> — Get alerts and updates about developments affecting Texas communities.</li>
+        </ul>
+      </div>
+
+      <div class="post-related">
+        <h3>Other Posts</h3>
+        <ul>
+          <li><a href="/posts/black-mountain-fact-check/">Fact vs. Fiction: Black Mountain's "Quiet, Low-Impact" Pitch to Parker County</a></li>
+          <li><a href="/posts/the-20-percent-walkaway/">The 20% Walkaway: Who Pays When a Texas Data Center Never Shows Up</a></li>
+          <li><a href="/posts/pipe-dreams/">Pipe Dreams: How AI Is Rewiring Texas's Natural Gas Network</a></li>
+          <li><a href="/posts/annex-or-lose-it/">Annex or Lose It: Why Texas Towns Are Cornered Into Data Center Deals</a></li>
+          <li><a href="/posts/speed-of-light/">Speed of Light: Can Photonics Ease the AI Data Center Power Crunch?</a></li>
+          <li><a href="/posts/the-biggest-polluter/">The Biggest Polluter: Amazon's Pecos County Gas Plant</a></li>
+          <li><a href="/posts/the-nuclear-bet/">The Nuclear Bet: Texas Wagers on Unproven Reactors</a></li>
+          <li><a href="/posts/in-the-dark-by-design/">In the Dark by Design: What AI Data Centers Won't Disclose</a></li>
+          <li><a href="/posts/transforming-texas/">How AI Data Centers Are Transforming Texas</a></li>
+          <li><a href="/posts/billion-dollar-boom/">Billion-Dollar Boom: Texas AI Data Centers in 2026</a></li>
+          <li><a href="/posts/exploding-in-texas/">Why AI Data Centers Are Exploding in Texas</a></li>
+        </ul>
+      </div>
+
+      <div class="post-cta">
+        <p>AI data centers are reshaping Texas faster than most people realize. If you want to stay ahead of the changes affecting your community, energy costs, and local environment, join our update list.</p>
+        <a href="/stay-informed/" class="btn">Stay informed about AI's impact in Texas</a>
+      </div>
+    </div>
+  </article>
+</Layout>
+<style>
+    /* ══════════════════════════════════════════════════════════════
+         MOVE TO → src/pages/posts.astro AND src/pages/posts/[slug].astro
+         (Split further if post listing vs. single-post styles diverge —
+         check which classes are used on which template before moving.)
+         ══════════════════════════════════════════════════════════════ */
+
+      .card {
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        padding: 1.2rem;
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+        transition: box-shadow 0.2s;
+      }
+      .card:hover {
+        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+      }
+      .card hr {
+        border: none;
+        border-top: 2px solid #ccc;
+        margin: 0.4rem 0;
+      }
+      .card h3 {
+        font-size: 1.05rem;
+        font-weight: 700;
+        line-height: 1.3;
+        height: 3.5rem;
+        overflow: hidden;
+      }
+      .card p {
+        font-size: 0.95rem;
+        line-height: 1.6;
+        color: #333;
+        height: 21rem;
+        overflow: hidden;
+      }
+      .card ul {
+        font-size: 0.92rem;
+        line-height: 1.8;
+        color: #333;
+        padding-left: 1.2rem;
+        height: 20rem;
+        overflow: hidden;
+      }
+      .card .learn-more {
+        font-size: 0.95rem;
+        font-weight: 600;
+        color: #1a4a8a;
+        display: block;
+        margin-bottom: 0.8rem;
+      }
+      .card .title {
+        height: 5.6rem;
+        overflow: hidden;
+        color: #000080;
+        font-weight: 700;
+      }
+      .card .description {
+        font-size: 0.95rem;
+        color: #333;
+        line-height: 1.6;
+        display: -webkit-box;
+        -webkit-line-clamp: 5;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+      }
+      .card .provider {
+        font-size: 0.88rem;
+        color: #1a6a2a;
+      }
+      .card .readmore {
+        font-size: 0.95rem;
+        font-weight: 700;
+        color: #1a1a1a;
+      }
+      .cards-section {
+        padding: 2rem;
+      }
+      .cards-section h2 {
+        font-size: 1.6rem;
+        font-weight: 700;
+        margin-bottom: 1.5rem;
+        text-align: center;
+      }
+      .posts-section h2 {
+        font-size: 1.6rem;
+        font-weight: 700;
+        margin-bottom: 1rem;
+      }
+      .posts-section {
+        padding: 2rem;
+        max-width: 1200px;
+        margin: 0 auto;
+        background: #f4f4f4;
+        border-radius: 10px;
+      }
+      .post-page {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 2rem;
+      }
+      .post-image {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+        margin-bottom: 2rem;
+      }
+      .post-content h1 {
+        font-size: 2rem;
+        font-weight: 800;
+        margin-bottom: 0.5rem;
+        line-height: 1.3;
+      }
+      .posts-list .post .date {
+        font-size: 0.88rem;
+        color: #666;
+        margin: 0.2rem 0 0.4rem;
+      }
+      .posts-list .post p {
+        font-size: 0.95rem;
+        color: #444;
+        line-height: 1.6;
+      }
+      .post-content h2 {
+        font-size: 1.3rem;
+        font-weight: 700;
+        margin: 2rem 0 0.8rem;
+      }
+      .post-content h3 {
+        font-size: 1.1rem;
+        font-weight: 700;
+        margin: 1.2rem 0 0.5rem;
+      }
+      .post-content p {
+        font-size: 1rem;
+        line-height: 1.8;
+        margin-bottom: 1rem;
+        color: #222;
+      }
+      .post-related {
+        background: #f4f4f4;
+        border-radius: 8px;
+        padding: 1.2rem 1.5rem;
+        margin: 2rem 0;
+      }
+      .posts-list .post h3 {
+        font-size: 1rem;
+        font-weight: 600;
+      }
+      .posts-list .post h3 a {
+        color: #1a4a8a;
+        font-size: 1rem;
+      }
+      .post-content ul {
+        padding-left: 1.4rem;
+        margin-bottom: 1rem;
+      }
+      .post-content ul li {
+        font-size: 1rem;
+        line-height: 1.8;
+        color: #222;
+      }
+      .post-cta {
+        background: #1a3a6a;
+        color: #fff;
+        padding: 2rem;
+        border-radius: 10px;
+        margin-top: 2rem;
+        text-align: center;
+      }
+      .post-cta p {
+        color: #fff;
+        margin-bottom: 1rem;
+      }
+      .post-table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 1.5rem 0;
+      }
+      .post-table th {
+        background: #1a3a6a;
+        color: #fff;
+        padding: 0.8rem 1rem;
+        text-align: left;
+        font-size: 0.95rem;
+      }
+      .post-table td {
+        padding: 0.8rem 1rem;
+        border-bottom: 1px solid #ddd;
+        font-size: 0.95rem;
+      }
+      .post-table tr:nth-child(even) {
+        background: #f4f4f8;
+      }
+      .posts-summary {
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 2rem;
+      }
+      .posts-summary h1 {
+        font-size: 1.8rem;
+        font-weight: 700;
+        margin-bottom: 0.5rem;
+      }
+      .posts-intro {
+        font-size: 1rem;
+        color: #555;
+        margin-bottom: 2rem;
+      }
+      .posts-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.5rem;
+      }
+      @media (max-width: 900px) {
+        .posts-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+      .post-card {
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        overflow: hidden;
+      }
+      .post-card img {
+        width: 100%;
+        height: 220px;
+        object-fit: cover;
+      }
+      .post-card-body {
+        padding: 1.2rem;
+      }
+      .post-card-body h2 {
+        font-size: 1rem;
+        font-weight: 700;
+        margin-bottom: 0.4rem;
+        line-height: 1.4;
+      }
+      .post-card-body h2 a {
+        color: #1a4a8a;
+      }
+      .post-card-date {
+        font-size: 0.85rem;
+        color: #666;
+        margin-bottom: 0.8rem;
+      }
+      .post-card-body p {
+        font-size: 0.9rem;
+        color: #444;
+        line-height: 1.6;
+        margin-bottom: 1rem;
+      }
+      .read-more {
+        font-size: 0.85rem;
+        font-weight: 700;
+        color: #1a1a1a;
+        text-decoration: none;
+      }
+      .read-more:hover {
+        color: #1a4a8a;
+      }
+
+      .queue-download {
+        background: #fff8f4;
+        border: 1px solid #e8c9b0;
+        border-radius: 10px;
+        padding: 1.5rem;
+        margin: 2rem 0;
+      }
+      .queue-download h2 {
+        margin-top: 0;
+        color: #b03a1a;
+      }
+      .queue-signup-row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.6rem;
+      }
+      .queue-signup-row input {
+        flex: 1 1 180px;
+        min-width: 0;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        padding: 0.75rem 1rem;
+        font-size: 1rem;
+        font-family: "Lato", sans-serif;
+      }
+      .queue-signup-row .btn {
+        flex: 1 1 auto;
+        white-space: nowrap;
+      }
+      .queue-signup-form .cf-turnstile {
+        margin-top: 0.8rem;
+      }
+      .post-content .queue-signup-fineprint {
+        font-size: 0.85rem;
+        color: #666;
+        margin: 0.6rem 0 0;
+      }
+      @media (max-width: 600px) {
+        .post-table th,
+        .post-table td {
+          padding: 0.6rem 0.5rem;
+          font-size: 0.88rem;
+        }
+      }
+
+</style>
