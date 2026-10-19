@@ -1,5 +1,9 @@
 # Morning Briefing prompt — v8
 
+**Patched October 16, 2026** (at the user's request, after a run Marc asked to do entirely in Claude in Chrome) — one addition:
+
+- **Chrome-only runs.** When Marc asks for the research step to run in Claude in Chrome, that request overrides Step 2's WebSearch/WebFetch default for that run. See the new "Chrome-only runs" paragraph in Step 2 for how to handle that mode, especially the extension's per-site blocks.
+
 **Patched October 7, 2026** (at the user's request, after a Google Search Console review showed 45 of 60 pages "Discovered – currently not indexed", almost all of them briefings) — three changes:
 
 - **Step 5 title format.** The `<Layout title>` now leads with the day's #1 headline instead of the date: `<Layout title="[#1 story headline] | Morning Briefing, [Mon D, YYYY]" ...>` (e.g. `Granbury Puts Its Recall Election on Hold After a Lawyer With an Unnamed Client Says He's Suing | Morning Briefing, Oct 7, 2026`). Use the first numbered story's headline text with its number and emoji removed. Nobody searches for "Morning Briefing 10/07/26"; they search for the news. As a safety net, `Layout.astro` automatically rewrites any briefing that still uses the old `Morning Briefing - MM/DD/YY: Power Grab TX` title into this format at build time, so an older run of this prompt can't regress it.
