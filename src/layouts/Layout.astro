@@ -837,16 +837,8 @@ const latestBriefingHref = briefings[0]?.href ?? "/briefings/";
       <button class="hamburger" id="hamburger">☰</button>
       <nav id="nav">
         <a href="/">Home</a>
-        <a href="/trackers/">Trackers</a>
-        <div class="nav-dropdown">
-          <button type="button" class="dropdown-toggle">
-            Morning Briefing <span class="caret">▾</span>
-          </button>
-          <div class="dropdown-menu">
-            <a href={latestBriefingHref}>Today's Briefing</a>
-            <a href="/briefings/">All Briefings</a>
-          </div>
-        </div>
+        <a href={latestBriefingHref}>Morning Briefing</a>
+        <a href="/briefings/">All Briefings</a>
         <a href="/glossary/">Glossary</a>
         <a href="/guides/data-center-near-you/">Your Rights</a>
         <a href="/about/">About</a>
