@@ -1,5 +1,10 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import { briefings, formatBriefingDate } from "../data/briefings";
+
+// The few editions before today's, linked by headline so Google can reach
+// new briefings from the homepage instead of only through the sitemap.
+const recentBriefings = briefings.slice(1, 7);
 
 // ─────────────────────────────────────────────────────────────
 // Pull today's (most recent) Morning Briefing straight from its
@@ -157,6 +162,20 @@ if (briefingEntries.length > 0) {
         <div class="today-snapshot-actions">
           <a href={latestBriefing.href} class="btn">Read Today's Full Briefing →</a>
         </div>
+        {recentBriefings.length > 0 && (
+          <div class="recent-briefings">
+            <h3>Recent Morning Briefings</h3>
+            <ul>
+              {recentBriefings.map((b) => (
+                <li>
+                  <time datetime={b.dateStr}>{formatBriefingDate(b.date, "short")}</time>
+                  <a href={b.href}>{b.headline || `Morning Briefing — ${formatBriefingDate(b.date)}`}</a>
+                </li>
+              ))}
+            </ul>
+            <a href="/briefings/" class="recent-briefings-all">See every briefing →</a>
+          </div>
+        )}
         <div class="today-snapshot-cta">
           <p>
             Want the next Morning Briefing sent straight to your inbox?
@@ -715,6 +734,49 @@ if (briefingEntries.length > 0) {
     }
     .today-snapshot-actions {
       margin-bottom: 1.2rem;
+    }
+    .recent-briefings {
+      text-align: left;
+      margin-bottom: 1.2rem;
+    }
+    .recent-briefings h3 {
+      font-size: 1rem;
+      color: #b03a1a;
+      margin-bottom: 0.5rem;
+    }
+    .recent-briefings ul {
+      list-style: none;
+      padding: 0;
+      margin: 0 0 0.6rem;
+    }
+    .recent-briefings li {
+      display: grid;
+      grid-template-columns: 6.5rem 1fr;
+      gap: 0.75rem;
+      padding: 0.5rem 0;
+      border-bottom: 1px solid #f1e3d8;
+    }
+    .recent-briefings time {
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: #666;
+      padding-top: 0.1rem;
+    }
+    .recent-briefings li a {
+      color: #3a2010;
+      font-weight: 600;
+      line-height: 1.4;
+    }
+    .recent-briefings-all {
+      font-size: 0.9rem;
+      font-weight: 700;
+      color: #b03a1a;
+    }
+    @media (max-width: 600px) {
+      .recent-briefings li {
+        grid-template-columns: 1fr;
+        gap: 0.15rem;
+      }
     }
     .today-snapshot-cta {
       background: #1a1a2e;
