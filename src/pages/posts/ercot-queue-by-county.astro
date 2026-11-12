@@ -13,6 +13,7 @@ import Layout from '../../layouts/Layout.astro';
     <div class="post-content">
       <h1>Lining Up for the Grid: Where 438 GW of New Texas Power Wants to Plug In</h1>
       <p class="post-card-date"><time datetime="2026-10">October 2026</time></p>
+      <p class="post-update-note"><strong>Update, November 2026:</strong> ERCOT's October report added 10.8 GW of gas and reshuffled the top 15. <a href="/posts/ercot-queue-october-2026-update/">See what changed →</a></p>
 
       <h2>📘 Summary</h2>
       <p>Every power plant that wants to connect to the Texas grid has to get in line first. That line is ERCOT's generation interconnection queue, and ERCOT publishes it every month in its GIS Report. The September 2026 report lists <strong>1,758 proposed projects totaling 438.5 gigawatts</strong>, spread across <strong>192 of Texas's 254 counties</strong>.</p>
@@ -105,6 +106,7 @@ import Layout from '../../layouts/Layout.astro';
       <div class="post-related">
         <h3>Other Posts</h3>
         <ul>
+          <li><a href="/posts/ercot-queue-october-2026-update/">Queue Update: Gas Jumps 10.8 GW in a Month as Black Mountain Doubles Down</a></li>
           <li><a href="/posts/black-mountain-fact-check/">Fact vs. Fiction: Black Mountain's "Quiet, Low-Impact" Pitch to Parker County</a></li>
           <li><a href="/posts/the-20-percent-walkaway/">The 20% Walkaway: Who Pays When a Texas Data Center Never Shows Up</a></li>
           <li><a href="/posts/pipe-dreams/">Pipe Dreams: How AI Is Rewiring Texas's Natural Gas Network</a></li>
@@ -391,6 +393,13 @@ import Layout from '../../layouts/Layout.astro';
         color: #1a4a8a;
       }
 
+      .post-content .post-update-note {
+        background: #fff8f4;
+        border-left: 4px solid #e05c2a;
+        border-radius: 4px;
+        padding: 0.8rem 1rem;
+        font-size: 0.95rem;
+      }
       .queue-download {
         background: #fff8f4;
         border: 1px solid #e8c9b0;
