@@ -1,0 +1,204 @@
+- generic [active] [ref=f32e1]:
+  - link "Skip to main content" [ref=f32e2] [cursor=pointer]:
+    - /url: "#main"
+  - generic [ref=f32e3]:
+    - navigation [ref=f32e4]:
+      - link:
+        - /url: https://www.puc.texas.gov/
+        - img [ref=f32e5] [cursor=pointer]
+      - generic [ref=f32e6]: Public Utility Commission of Texas Interchange Filing Search
+    - main [ref=f32e7]:
+      - generic [ref=f32e8]:
+        - heading [level=1]
+      - menu [ref=f32e10]:
+        - menuitem [ref=f32e11]:
+          - link [ref=f32e12] [cursor=pointer]:
+            - /url: /
+            - emphasis [ref=f32e13]: 
+            - text: Filing Search
+        - menuitem [ref=f32e14]:
+          - link [ref=f32e15] [cursor=pointer]:
+            - /url: /search/daily/
+            - emphasis [ref=f32e16]: 
+            - text: Daily Filing Search
+        - menuitem [ref=f32e17]:
+          - link [ref=f32e18] [cursor=pointer]:
+            - /url: https://www.puc.texas.gov/industry/filings/Default.aspx
+            - emphasis [ref=f32e19]: 
+            - text: Learn More
+        - menuitem [ref=f32e20]:
+          - link [ref=f32e21] [cursor=pointer]:
+            - /url: https://portal.puc.texas.gov/portal/
+            - emphasis [ref=f32e22]: 
+            - text: Filing Notification System
+        - menuitem [ref=f32e23]:
+          - link [ref=f32e24] [cursor=pointer]:
+            - /url: https://interchange.puc.texas.gov/filer
+            - emphasis [ref=f32e25]: 
+            - text: PUC Interchange Filer
+      - text:      
+      - generic [ref=f32e26]:
+        - generic:
+          - list
+        - generic [ref=f32e27]:
+          - generic [ref=f32e28]:
+            - generic [ref=f32e29]:
+              - generic [ref=f32e30]:
+                - generic [ref=f32e31]:
+                  - generic [ref=f32e32]: Utility Type
+                  - button "Utility Type field help." [ref=f32e33] [cursor=pointer]:
+                    - generic [aria-hidden] [ref=f32e34]: 
+                  - combobox "Utility Type" [ref=f32e35]:
+                    - option "All" [selected]
+                    - option "Electric"
+                    - option "Water"
+                    - option "Telephone"
+                    - option "Others"
+                - generic [ref=f32e36]:
+                  - generic [ref=f32e37]: Control Number
+                  - button "Control Number field help." [ref=f32e38] [cursor=pointer]:
+                    - generic [aria-hidden] [ref=f32e39]: 
+                  - textbox "Control Number" [ref=f32e40]
+                - generic [ref=f32e41]:
+                  - generic [ref=f32e42]: Item Number
+                  - button "Item Number field help." [ref=f32e43] [cursor=pointer]:
+                    - generic [aria-hidden] [ref=f32e44]: 
+                  - combobox "Comparison Operator" [ref=f32e45]:
+                    - option "Equal to ( = )" [selected]
+                    - option "Less than ( < )"
+                    - option "Greater than ( > )"
+                  - textbox "Item Number" [ref=f32e46]
+                - generic [ref=f32e47]:
+                  - generic [ref=f32e48]: CCN/Registration Number
+                  - button "CCN/Registration Number field help." [ref=f32e49] [cursor=pointer]:
+                    - generic [aria-hidden] [ref=f32e50]: 
+                  - textbox "CCN/Registration Number" [ref=f32e51]
+              - generic [ref=f32e52]:
+                - generic [ref=f32e53]:
+                  - generic [ref=f32e54]: Utility Name
+                  - button "Utility Name field help." [ref=f32e55] [cursor=pointer]:
+                    - generic [aria-hidden] [ref=f32e56]: 
+                  - textbox "Utility Name" [ref=f32e57]
+                - generic [ref=f32e58]:
+                  - generic [ref=f32e59]: Filing Party
+                  - button "Filing Party field help." [ref=f32e60] [cursor=pointer]:
+                    - generic [aria-hidden] [ref=f32e61]: 
+                  - textbox "Filing Party" [ref=f32e62]
+                - generic [ref=f32e63]:
+                  - generic [ref=f32e64]: Item Type
+                  - button "Item Type field help." [ref=f32e65] [cursor=pointer]:
+                    - generic [aria-hidden] [ref=f32e66]: 
+                  - combobox "Item Type" [ref=f32e67]:
+                    - option "All" [selected]
+                    - option "ADMIN. MTG. TRANSCRIPT"
+                    - option "BRIEFS"
+                    - option "CITATION"
+                    - option "COMMENTS"
+                    - option "CONFIDENTIAL INFORMATION"
+                    - option "EXHIBITS"
+                    - option "F.O. MTG. TRANSCRIPT"
+                    - option "HIGHLY SENSITIVE PROTECTED MATERIAL"
+                    - option "LETTERS"
+                    - option "MAPS (ARCHIVES)"
+                    - option "MISCELLANEOUS"
+                    - option "PUBLIC COMMENTS"
+                    - option "PLEADINGS"
+                    - option "PROTECTED MATERIAL"
+                    - option "PROJECT"
+                    - option "REGISTRATIONS"
+                    - option "REQUEST FOR INFORMATION"
+                    - option "TARIFF"
+                    - option "TESTIMONY"
+                    - option "TRANSCRIPTS"
+            - generic [ref=f32e68]:
+              - generic [ref=f32e70]:
+                - generic [ref=f32e71]: Date Filed From
+                - button "Date Filed From field help." [ref=f32e72] [cursor=pointer]:
+                  - generic [aria-hidden] [ref=f32e73]: 
+                - textbox "Date Filed From" [ref=f32e74]
+              - generic [ref=f32e76]:
+                - generic [ref=f32e77]: Date Filed To
+                - button "Date Filed To field help." [ref=f32e78] [cursor=pointer]:
+                  - generic [aria-hidden] [ref=f32e79]: 
+                - textbox "Date Filed To" [ref=f32e80]
+            - generic [ref=f32e83]:
+              - generic [ref=f32e84]: Case Style
+              - button "Case Style field help." [ref=f32e85] [cursor=pointer]:
+                - generic [aria-hidden] [ref=f32e86]: 
+              - textbox "Case Style" [ref=f32e87]
+            - generic [ref=f32e90]:
+              - generic [ref=f32e91]: Filing Description
+              - button "Filing Description field help." [ref=f32e92] [cursor=pointer]:
+                - generic [aria-hidden] [ref=f32e93]: 
+              - textbox "Filing Description" [ref=f32e94]
+            - generic [ref=f32e97]:
+              - button "Search" [ref=f32e98] [cursor=pointer]
+              - text: 
+          - alert [ref=f32e100]:
+            - generic "Close" [ref=f32e101]: ×
+            - heading "Instructions" [level=3] [ref=f32e102]
+            - paragraph [ref=f32e103]: You may search by any of the criteria on this page.
+            - paragraph [ref=f32e104]: The easiest way to find a filing is to enter the Control Number, if known.
+            - paragraph [ref=f32e105]: If you do not know the control number, you may search by Case Style (the Docket Description), as well as any of the other criteria such as Utility Type, Utility Name, Filing Party, Item Type, and the date range.
+            - paragraph [ref=f32e106]: Once you've selected your criteria, click the Search button to view results.
+  - contentinfo [ref=f32e107]:
+    - generic [ref=f32e108]:
+      - generic [ref=f32e109]:
+        - generic [ref=f32e110]:
+          - heading "Public Utility Commission of Texas" [level=5] [ref=f32e111]
+          - generic [ref=f32e112]: 1701 N. Congress Ave. PO Box 13326 Austin, TX 78711-3326
+          - generic [ref=f32e113]:
+            - link " Phone 512-936-7000" [ref=f32e115] [cursor=pointer]:
+              - /url: tel://1-512-936-7000
+              - generic [ref=f32e116]: 
+              - generic "Phone"
+              - text: 512-936-7000
+            - link " Contact Us" [ref=f32e118] [cursor=pointer]:
+              - /url: https://www.puc.texas.gov/agency/about/contact/Default.aspx
+              - generic [ref=f32e119]: 
+              - text: Contact Us
+        - generic [ref=f32e120]:
+          - heading "AGENCY INFO" [level=5] [ref=f32e121]
+          - list [ref=f32e122]:
+            - listitem [ref=f32e123]:
+              - link "Site Policies" [ref=f32e124] [cursor=pointer]:
+                - /url: http://www.puc.texas.gov/agency/about/policies/Default.aspx
+            - listitem [ref=f32e125]:
+              - link "Sitemap" [ref=f32e126] [cursor=pointer]:
+                - /url: http://www.puc.texas.gov/agency/Sitemap.aspx
+        - generic [ref=f32e127]:
+          - heading "OTHER GOVERNMENT RESOURCES" [level=5] [ref=f32e128]
+          - list [ref=f32e129]:
+            - listitem [ref=f32e130]:
+              - link "Report Fraud, Waste or Abuse" [ref=f32e131] [cursor=pointer]:
+                - /url: http://sao.fraud.state.tx.us/
+            - listitem [ref=f32e132]:
+              - link "Texas Homeland Security" [ref=f32e133] [cursor=pointer]:
+                - /url: http://governor.state.tx.us/homeland
+            - listitem [ref=f32e134]:
+              - link "Ready.gov" [ref=f32e135] [cursor=pointer]:
+                - /url: http://www.ready.gov/
+            - listitem [ref=f32e136]:
+              - link "Texas.gov" [ref=f32e137] [cursor=pointer]:
+                - /url: http://texas.gov
+            - listitem [ref=f32e138]:
+              - link "Texas Veterans" [ref=f32e139] [cursor=pointer]:
+                - /url: https://veterans.portal.texas.gov/
+            - listitem [ref=f32e140]:
+              - link "TRAIL" [ref=f32e141] [cursor=pointer]:
+                - /url: https://www.tsl.state.tx.us/trail/index.html
+      - navigation [ref=f32e144]:
+        - list [ref=f32e145]:
+          - listitem [ref=f32e146]:
+            - link "PUC Calendar RSS Feed" [ref=f32e147] [cursor=pointer]:
+              - /url: http://www.puc.texas.gov/agency/calendar/GetCalendarRss.aspx
+              - generic [ref=f32e148]: 
+          - listitem [ref=f32e149]:
+            - link "Facebook" [ref=f32e150] [cursor=pointer]:
+              - /url: http://www.facebook.com/pages/Public-Utility-Commission-of-Texas/207063229365425
+              - generic [ref=f32e151]: 
+          - listitem [ref=f32e152]:
+            - link "Twitter" [ref=f32e153] [cursor=pointer]:
+              - /url: https://twitter.com/PUCTx
+              - generic [ref=f32e154]: 
+      - generic [ref=f32e155]: Copyright © 2026 Public Utility Commission of Texas Version 2.2.11.0

@@ -1,0 +1,12 @@
+[     163ms] [LOG] JQMIGRATE: Migrate is installed, version 3.4.1 @ https://c0.wp.com/c/7.1.4/wp-includes/js/jquery/jquery-migrate.min.js:2
+[     344ms] [WARNING] [GPT] PubAdsService.enableLazyLoad is deprecated, use googletag.setConfig({lazyLoad: ...}) instead.
+https://goo.gle/gpt-message#170 @ https://securepubads.g.doubleclick.net/pagead/managed/js/gpt/m202611120201/pubads_impl.js:23
+[     348ms] [WARNING] [GPT] Slot.setTargeting is deprecated, use Slot.setConfig({targeting: ...}) instead.
+https://goo.gle/gpt-message#171 @ https://securepubads.g.doubleclick.net/pagead/managed/js/gpt/m202611120201/pubads_impl.js:23
+[    1211ms] Failed to register a ServiceWorker for scope ('https://www.texastribune.org/') with script ('https://www.texastribune.org/wp.serviceworker'): ServiceWorker script evaluation failed
+[    1334ms] [WARNING] Untrusted origin: https://www.google.com @ https://giving.classy.org/embedded/api/sdk/js/99623:5
+[    1334ms] [WARNING] Untrusted origin: https://www.google.com @ https://giving.classy.org/embedded/api/sdk/js/99623:5
+[   15838ms] [WARNING] Untrusted origin: https://www.google.com @ https://giving.classy.org/embedded/api/sdk/js/99623:5
+[   15838ms] [WARNING] Untrusted origin: https://www.google.com @ https://giving.classy.org/embedded/api/sdk/js/99623:5
+[   16095ms] [WARNING] Untrusted origin: https://www.google.com @ https://giving.classy.org/embedded/api/sdk/js/99623:5
+[   16095ms] [WARNING] Untrusted origin: https://www.google.com @ https://giving.classy.org/embedded/api/sdk/js/99623:5

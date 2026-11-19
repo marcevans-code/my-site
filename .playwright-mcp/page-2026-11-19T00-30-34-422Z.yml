@@ -1,0 +1,895 @@
+- generic [ref=f1e3]:
+  - banner [ref=f1e4]:
+    - generic [ref=f1e7]:
+      - textbox "Search" [ref=f1e8]
+      - button [ref=f1e9] [cursor=pointer]
+    - generic [ref=f1e11]:
+      - link [ref=f1e12] [cursor=pointer]:
+        - /url: https://www.ercot.com
+        - img "Electric Reliability Council of Texas" [ref=f1e13]
+      - button [ref=f1e14] [cursor=pointer]
+      - navigation [ref=f1e16]:
+        - list [ref=f1e17]:
+          - listitem [ref=f1e18]:
+            - link "About ERCOT":
+              - /url: /about
+            - generic:
+              - list [ref=f1e19]:
+                - listitem [ref=f1e20]:
+                  - link "Company Profile" [ref=f1e21] [cursor=pointer]:
+                    - /url: /about/profile
+                  - list [ref=f1e22]:
+                    - listitem [ref=f1e23]:
+                      - link "Vision and Mission" [ref=f1e24] [cursor=pointer]:
+                        - /url: /about/profile/vision
+                    - listitem [ref=f1e25]:
+                      - link "Community Involvement" [ref=f1e26] [cursor=pointer]:
+                        - /url: /about/profile/community
+                - listitem [ref=f1e27]:
+                  - link "Governance" [ref=f1e28] [cursor=pointer]:
+                    - /url: /about/governance
+                  - list [ref=f1e29]:
+                    - listitem [ref=f1e30]:
+                      - link "Board of Directors" [ref=f1e31] [cursor=pointer]:
+                        - /url: /about/governance/directors
+                    - listitem [ref=f1e32]:
+                      - link "Executive Team" [ref=f1e33] [cursor=pointer]:
+                        - /url: /about/governance/executives
+                    - listitem [ref=f1e34]:
+                      - link "Membership" [ref=f1e35] [cursor=pointer]:
+                        - /url: /about/governance/members
+                    - listitem [ref=f1e36]:
+                      - link "Ethics" [ref=f1e37] [cursor=pointer]:
+                        - /url: /about/governance/ethics
+                    - listitem [ref=f1e38]:
+                      - link "Financial Information" [ref=f1e39] [cursor=pointer]:
+                        - /url: /about/governance/FinancialInformation
+                - listitem [ref=f1e40]:
+                  - link "HB 4492 Securitization" [ref=f1e41] [cursor=pointer]:
+                    - /url: /about/hb4492securitization
+                  - list [ref=f1e42]:
+                    - listitem [ref=f1e43]:
+                      - link "Subchapter M Default Balance Securitization" [ref=f1e44] [cursor=pointer]:
+                        - /url: /about/hb4492securitization/subchapterm
+                    - listitem [ref=f1e45]:
+                      - link "Subchapter N Uplift Balance Securitization" [ref=f1e46] [cursor=pointer]:
+                        - /url: /about/hb4492securitization/subchaptern
+              - list [ref=f1e47]:
+                - listitem [ref=f1e48]:
+                  - link "Legal Policies and Notices" [ref=f1e49] [cursor=pointer]:
+                    - /url: /about/legal
+                  - list [ref=f1e50]:
+                    - listitem [ref=f1e51]:
+                      - link "Proposed Brazos and ERCOT Bankruptcy Settlement" [ref=f1e52] [cursor=pointer]:
+                        - /url: /about/legal/brazos
+                    - listitem [ref=f1e53]:
+                      - link "Board Ethics Agreements" [ref=f1e54] [cursor=pointer]:
+                        - /url: /about/legal/boardethicsagmts
+                    - listitem [ref=f1e55]:
+                      - link "Legal Notices" [ref=f1e56] [cursor=pointer]:
+                        - /url: /about/legal/legal_notices
+                    - listitem [ref=f1e57]:
+                      - link "February 2021 Extreme Weather Event" [ref=f1e58] [cursor=pointer]:
+                        - /url: /about/legal/february2021
+                    - listitem [ref=f1e59]:
+                      - link "January 24 and 25, 2026, DOE 202(c) Orders" [ref=f1e60] [cursor=pointer]:
+                        - /url: /about/legal/doe202c
+                    - listitem [ref=f1e61]:
+                      - link "Data Center Impact RFI" [ref=f1e62] [cursor=pointer]:
+                        - /url: /about/legal/data-center-impact-rfi
+                - listitem [ref=f1e63]:
+                  - link "Grid Research Innovation and Transformation" [ref=f1e64] [cursor=pointer]:
+                    - /url: /about/grit
+                  - list [ref=f1e65]:
+                    - listitem [ref=f1e66]:
+                      - link "Grid Transformation" [ref=f1e67] [cursor=pointer]:
+                        - /url: /about/grit/grid-transformation
+                    - listitem [ref=f1e68]:
+                      - link "Research and Innovation" [ref=f1e69] [cursor=pointer]:
+                        - /url: /about/grit/research-and-innovation
+                    - listitem [ref=f1e70]:
+                      - link "ERCOT Innovation Summit" [ref=f1e71] [cursor=pointer]:
+                        - /url: /about/grit/ercot-innovation-summit
+              - list [ref=f1e72]:
+                - listitem [ref=f1e73]:
+                  - link "News and Publications" [ref=f1e74] [cursor=pointer]:
+                    - /url: /about/news
+                  - list [ref=f1e75]:
+                    - listitem [ref=f1e76]:
+                      - link "Media Kit" [ref=f1e77] [cursor=pointer]:
+                        - /url: /about/news/mediakit
+                    - listitem [ref=f1e78]:
+                      - link "Helpful Resources" [ref=f1e79] [cursor=pointer]:
+                        - /url: /about/news/presentations
+                    - listitem [ref=f1e80]:
+                      - link "News Releases" [ref=f1e81] [cursor=pointer]:
+                        - /url: /about/news/releases
+                    - listitem [ref=f1e82]:
+                      - link "Trending Topics" [ref=f1e83] [cursor=pointer]:
+                        - /url: /about/news/trendingtopics
+                    - listitem [ref=f1e84]:
+                      - link "ERCOT PowerCast Podcast" [ref=f1e85] [cursor=pointer]:
+                        - /url: /about/news/podcast
+                    - listitem [ref=f1e86]:
+                      - link "Grid Insights" [ref=f1e87] [cursor=pointer]:
+                        - /url: /about/news/grid-insights
+                    - listitem [ref=f1e88]:
+                      - link "Fall 2026" [ref=f1e89] [cursor=pointer]:
+                        - /url: /about/news/seasonal-updates
+                - listitem [ref=f1e90]:
+                  - link "ERCOT Reliability Monitor Program" [ref=f1e91] [cursor=pointer]:
+                    - /url: /about/reliability-monitor
+                  - list
+                - listitem [ref=f1e92]:
+                  - link "Careers" [ref=f1e93] [cursor=pointer]:
+                    - /url: /about/careers
+                  - list [ref=f1e94]:
+                    - listitem [ref=f1e95]:
+                      - link "Life at ERCOT" [ref=f1e96] [cursor=pointer]:
+                        - /url: /about/careers/culture
+                    - listitem [ref=f1e97]:
+                      - link "Development Programs" [ref=f1e98] [cursor=pointer]:
+                        - /url: /about/careers/programs
+                    - listitem [ref=f1e99]:
+                      - link "Internship Program" [ref=f1e100] [cursor=pointer]:
+                        - /url: /about/careers/ercotinternship
+                - listitem [ref=f1e101]:
+                  - link "Procurement" [ref=f1e102] [cursor=pointer]:
+                    - /url: /about/procurement
+                  - list [ref=f1e103]:
+                    - listitem [ref=f1e104]:
+                      - link "Request for Proposal" [ref=f1e105] [cursor=pointer]:
+                        - /url: /about/procurement/rfp
+                - listitem [ref=f1e106]:
+                  - link "Locations" [ref=f1e107] [cursor=pointer]:
+                    - /url: /about/locations
+                  - list
+                - listitem [ref=f1e108]:
+                  - link "Contact Us" [ref=f1e109] [cursor=pointer]:
+                    - /url: /about/contact
+                  - list [ref=f1e110]:
+                    - listitem [ref=f1e111]:
+                      - link "Information Request" [ref=f1e112] [cursor=pointer]:
+                        - /url: /about/contact/inforequest
+          - listitem [ref=f1e113]:
+            - link "Services":
+              - /url: /services
+            - generic:
+              - list [ref=f1e114]:
+                - listitem [ref=f1e115]:
+                  - link "Client Services" [ref=f1e116] [cursor=pointer]:
+                    - /url: /services/client_svcs
+                  - list [ref=f1e117]:
+                    - listitem [ref=f1e118]:
+                      - link "Account Management" [ref=f1e119] [cursor=pointer]:
+                        - /url: /services/client_svcs/acctmgmt
+                    - listitem [ref=f1e120]:
+                      - link "Market Support" [ref=f1e121] [cursor=pointer]:
+                        - /url: /services/client_svcs/mktsupport
+                    - listitem [ref=f1e122]:
+                      - link "MarkeTrak Information" [ref=f1e123] [cursor=pointer]:
+                        - /url: /services/client_svcs/mktrk_info
+                - listitem [ref=f1e124]:
+                  - link "Market Participant Communications" [ref=f1e125] [cursor=pointer]:
+                    - /url: /services/comm
+                  - list [ref=f1e126]:
+                    - listitem [ref=f1e127]:
+                      - link "Market Notice Archives" [ref=f1e128] [cursor=pointer]:
+                        - /url: /services/comm/archives
+                    - listitem [ref=f1e129]:
+                      - link "Operations Messages" [ref=f1e130] [cursor=pointer]:
+                        - /url: /services/comm/opsmessages
+                    - listitem [ref=f1e131]:
+                      - link "Power Operations Bulletins" [ref=f1e132] [cursor=pointer]:
+                        - /url: /services/comm/pobs
+                    - listitem [ref=f1e133]:
+                      - link "Public Notices" [ref=f1e134] [cursor=pointer]:
+                        - /url: /services/comm/notices
+                - listitem [ref=f1e135]:
+                  - link "Programs" [ref=f1e136] [cursor=pointer]:
+                    - /url: /services/programs
+                  - list [ref=f1e137]:
+                    - listitem [ref=f1e138]:
+                      - link "Demand Response" [ref=f1e139] [cursor=pointer]:
+                        - /url: /services/programs/load
+                    - listitem [ref=f1e140]:
+                      - link "Firm Fuel Supply Service" [ref=f1e141] [cursor=pointer]:
+                        - /url: /services/programs/firmfuelsupply
+                    - listitem [ref=f1e142]:
+                      - link "QSE Services Available on Short Notice" [ref=f1e143] [cursor=pointer]:
+                        - /url: /services/programs/qse
+                    - listitem [ref=f1e144]:
+                      - link "Renewable Energy Credit" [ref=f1e145] [cursor=pointer]:
+                        - /url: /services/programs/rec
+                    - listitem [ref=f1e146]:
+                      - link "Texas Cybersecurity Monitor Program" [ref=f1e147] [cursor=pointer]:
+                        - /url: /services/programs/tcmp
+              - list [ref=f1e148]:
+                - listitem [ref=f1e149]:
+                  - link "Projects" [ref=f1e150] [cursor=pointer]:
+                    - /url: /services/projects
+                  - list [ref=f1e151]:
+                    - listitem [ref=f1e152]:
+                      - link "Market Participant Service Portal and Future-Ready IAM" [ref=f1e153] [cursor=pointer]:
+                        - /url: /services/projects/mpsp-iam-modernization
+                - listitem [ref=f1e154]:
+                  - link "Registration and Qualification" [ref=f1e155] [cursor=pointer]:
+                    - /url: /services/rq
+                  - list [ref=f1e156]:
+                    - listitem [ref=f1e157]:
+                      - link "Congestion Revenue Rights Account Holder" [ref=f1e158] [cursor=pointer]:
+                        - /url: /services/rq/crr
+                    - listitem [ref=f1e159]:
+                      - link "Credit" [ref=f1e160] [cursor=pointer]:
+                        - /url: /services/rq/credit
+                    - listitem [ref=f1e161]:
+                      - link "Independent Market Information System Registered Entity" [ref=f1e162] [cursor=pointer]:
+                        - /url: /services/rq/imre
+                    - listitem [ref=f1e163]:
+                      - link "Load Serving Entities" [ref=f1e164] [cursor=pointer]:
+                        - /url: /services/rq/lse
+                    - listitem [ref=f1e165]:
+                      - link "Qualified Scheduling Entities" [ref=f1e166] [cursor=pointer]:
+                        - /url: /services/rq/qse
+                    - listitem [ref=f1e167]:
+                      - link "Large Load Integration" [ref=f1e168] [cursor=pointer]:
+                        - /url: /services/rq/large-load-integration
+                    - listitem [ref=f1e169]:
+                      - link "Resource Entities" [ref=f1e170] [cursor=pointer]:
+                        - /url: /services/rq/re
+                    - listitem [ref=f1e171]:
+                      - link "Resource Integration" [ref=f1e172] [cursor=pointer]:
+                        - /url: /services/rq/integration
+                    - listitem [ref=f1e173]:
+                      - link "Transmission/Distribution Service Providers" [ref=f1e174] [cursor=pointer]:
+                        - /url: /services/rq/tdsp
+                - listitem [ref=f1e175]:
+                  - link "Service Level Agreements" [ref=f1e176] [cursor=pointer]:
+                    - /url: /services/sla
+                  - list
+              - list [ref=f1e177]:
+                - listitem [ref=f1e178]:
+                  - link "Training" [ref=f1e179] [cursor=pointer]:
+                    - /url: /services/training
+                  - list [ref=f1e180]:
+                    - listitem [ref=f1e181]:
+                      - link "Course Catalog" [ref=f1e182] [cursor=pointer]:
+                        - /url: /services/training/courses
+                    - listitem [ref=f1e183]:
+                      - link "Course Recommendations" [ref=f1e184] [cursor=pointer]:
+                        - /url: /services/training/recommendations
+                    - listitem [ref=f1e185]:
+                      - link "ERCOT System Operator Certification Exam" [ref=f1e186] [cursor=pointer]:
+                        - /url: /services/training/exams
+                - listitem [ref=f1e187]:
+                  - link "Market Data Transparency" [ref=f1e188] [cursor=pointer]:
+                    - /url: /services/mdt
+                  - list [ref=f1e189]:
+                    - listitem [ref=f1e190]:
+                      - link "DDLs" [ref=f1e191] [cursor=pointer]:
+                        - /url: /services/mdt/ddls
+                    - listitem [ref=f1e192]:
+                      - link "User Guides" [ref=f1e193] [cursor=pointer]:
+                        - /url: /services/mdt/userguides
+                    - listitem [ref=f1e194]:
+                      - link "Digital Certificate Security Information" [ref=f1e195] [cursor=pointer]:
+                        - /url: /services/mdt/webservices
+                    - listitem [ref=f1e196]:
+                      - link "XSDs" [ref=f1e197] [cursor=pointer]:
+                        - /url: /services/mdt/xsds
+                    - listitem [ref=f1e198]:
+                      - link "ERCOT Public API Applications" [ref=f1e199] [cursor=pointer]:
+                        - /url: /services/mdt/data-portal
+          - listitem [ref=f1e200]:
+            - link "Committees and Groups":
+              - /url: /committees
+            - generic:
+              - list [ref=f1e201]:
+                - listitem [ref=f1e202]:
+                  - link "Meeting Calendar" [ref=f1e203] [cursor=pointer]:
+                    - /url: /committees/calendar
+                  - list
+                - listitem [ref=f1e204]:
+                  - link "PUCT" [ref=f1e205] [cursor=pointer]:
+                    - /url: /committees/puct
+                  - list
+                - listitem [ref=f1e206]:
+                  - link "Board of Directors" [ref=f1e207] [cursor=pointer]:
+                    - /url: /committees/board
+                  - list [ref=f1e208]:
+                    - listitem [ref=f1e209]:
+                      - link "Finance and Audit Committee" [ref=f1e210] [cursor=pointer]:
+                        - /url: /committees/board/finance_audit
+                    - listitem [ref=f1e211]:
+                      - link "HR and Governance Committee" [ref=f1e212] [cursor=pointer]:
+                        - /url: /committees/board/hr_governance
+                    - listitem [ref=f1e213]:
+                      - link "Technology and Security Committee" [ref=f1e214] [cursor=pointer]:
+                        - /url: /committees/board/tech-security
+                - listitem [ref=f1e215]:
+                  - link "Technical Advisory Committee" [ref=f1e216] [cursor=pointer]:
+                    - /url: /committees/tac
+                  - list [ref=f1e217]:
+                    - listitem [ref=f1e218]:
+                      - link "Large Load Working Group" [ref=f1e219] [cursor=pointer]:
+                        - /url: /committees/tac/llwg
+                    - listitem [ref=f1e220]:
+                      - link "Credit Finance Sub Group" [ref=f1e221] [cursor=pointer]:
+                        - /url: /committees/tac/cfsg
+                - listitem [ref=f1e222]:
+                  - link "Protocol Revision Subcommittee" [ref=f1e223] [cursor=pointer]:
+                    - /url: /committees/prs
+                  - list [ref=f1e224]:
+                    - listitem [ref=f1e225]:
+                      - link "Protocol Revision Subcommittee" [ref=f1e226] [cursor=pointer]:
+                        - /url: /committees/prs/2025
+                - listitem [ref=f1e227]:
+                  - link "Retail Market Subcommittee" [ref=f1e228] [cursor=pointer]:
+                    - /url: /committees/rms
+                  - list [ref=f1e229]:
+                    - listitem [ref=f1e230]:
+                      - link "Retail Market Training Task Force" [ref=f1e231] [cursor=pointer]:
+                        - /url: /committees/rms/rmttf
+                    - listitem [ref=f1e232]:
+                      - link "Texas Data Transport and MarkeTrak Systems Working Group" [ref=f1e233] [cursor=pointer]:
+                        - /url: /committees/rms/tdtms
+                    - listitem [ref=f1e234]:
+                      - link "Texas Standard Electronic Transaction/Load Profiling Working Group" [ref=f1e235] [cursor=pointer]:
+                        - /url: /committees/rms/txsetlp
+              - list [ref=f1e236]:
+                - listitem [ref=f1e237]:
+                  - link "Reliability and Operations Subcommittee" [ref=f1e238] [cursor=pointer]:
+                    - /url: /committees/ros
+                  - list [ref=f1e239]:
+                    - listitem [ref=f1e240]:
+                      - link "Black Start Working Group" [ref=f1e241] [cursor=pointer]:
+                        - /url: /committees/ros/bswg
+                    - listitem [ref=f1e242]:
+                      - link "Dynamics Working Group" [ref=f1e243] [cursor=pointer]:
+                        - /url: /committees/ros/dwg
+                    - listitem [ref=f1e244]:
+                      - link "Inverter-Based Resource Working Group" [ref=f1e245] [cursor=pointer]:
+                        - /url: /committees/ros/ibrwg
+                    - listitem [ref=f1e246]:
+                      - link "Meter Working Group" [ref=f1e247] [cursor=pointer]:
+                        - /url: /committees/ros/mwg
+                    - listitem [ref=f1e248]:
+                      - link "Network Data Support Working Group" [ref=f1e249] [cursor=pointer]:
+                        - /url: /committees/ros/ndswg
+                    - listitem [ref=f1e250]:
+                      - link "Operations Training Working Group" [ref=f1e251] [cursor=pointer]:
+                        - /url: /committees/ros/otwg
+                    - listitem [ref=f1e252]:
+                      - link "Operations Working Group" [ref=f1e253] [cursor=pointer]:
+                        - /url: /committees/ros/owg
+                    - listitem [ref=f1e254]:
+                      - link "Performance, Disturbance, Compliance Working Group" [ref=f1e255] [cursor=pointer]:
+                        - /url: /committees/ros/pdcwg
+                    - listitem [ref=f1e256]:
+                      - link "Planning Working Group" [ref=f1e257] [cursor=pointer]:
+                        - /url: /committees/ros/plwg
+                    - listitem [ref=f1e258]:
+                      - link "System Protection Working Group" [ref=f1e259] [cursor=pointer]:
+                        - /url: /committees/ros/spwg
+                    - listitem [ref=f1e260]:
+                      - link "Steady State Working Group" [ref=f1e261] [cursor=pointer]:
+                        - /url: /committees/ros/sswg
+                    - listitem [ref=f1e262]:
+                      - link "Voltage Profile Working Group" [ref=f1e263] [cursor=pointer]:
+                        - /url: /committees/ros/vpwg
+              - list [ref=f1e264]:
+                - listitem [ref=f1e265]:
+                  - link "Wholesale Market Subcommittee" [ref=f1e266] [cursor=pointer]:
+                    - /url: /committees/wms
+                  - list [ref=f1e267]:
+                    - listitem [ref=f1e268]:
+                      - link "Congestion Management Working Group" [ref=f1e269] [cursor=pointer]:
+                        - /url: /committees/wms/cmwg
+                    - listitem [ref=f1e270]:
+                      - link "Demand Side Working Group" [ref=f1e271] [cursor=pointer]:
+                        - /url: /committees/wms/dswg
+                    - listitem [ref=f1e272]:
+                      - link "Supply Analysis Working Group" [ref=f1e273] [cursor=pointer]:
+                        - /url: /committees/wms/sawg
+                    - listitem [ref=f1e274]:
+                      - link "Wholesale Market Working Group" [ref=f1e275] [cursor=pointer]:
+                        - /url: /committees/wms/wmwg
+                - listitem [ref=f1e276]:
+                  - link "Inactive Groups" [ref=f1e277] [cursor=pointer]:
+                    - /url: /committees/inactive
+                  - list
+                - listitem [ref=f1e278]:
+                  - link "Other Groups" [ref=f1e279] [cursor=pointer]:
+                    - /url: /committees/other
+                  - list
+                - listitem [ref=f1e280]:
+                  - link "Workshops" [ref=f1e281] [cursor=pointer]:
+                    - /url: /committees/workshops
+                  - list
+                - listitem [ref=f1e282]:
+                  - link "Market Participants" [ref=f1e283] [cursor=pointer]:
+                    - /url: /committees/mktparticipants
+                  - list
+          - listitem [ref=f1e284]:
+            - link "Market Rules":
+              - /url: /mktrules
+            - generic:
+              - list [ref=f1e285]:
+                - listitem [ref=f1e286]:
+                  - link "Protocols - Nodal" [ref=f1e287] [cursor=pointer]:
+                    - /url: /mktrules/nprotocols
+                  - list [ref=f1e288]:
+                    - listitem [ref=f1e289]:
+                      - link "Current Protocols - Nodal" [ref=f1e290] [cursor=pointer]:
+                        - /url: /mktrules/nprotocols/current
+                    - listitem [ref=f1e291]:
+                      - link "Protocol Library - Nodal" [ref=f1e292] [cursor=pointer]:
+                        - /url: /mktrules/nprotocols/library
+                    - listitem [ref=f1e293]:
+                      - link "Nodal Protocol Revision Requests" [ref=f1e294] [cursor=pointer]:
+                        - /url: /mktrules/nprotocols/nprr
+                    - listitem [ref=f1e295]:
+                      - link "NPRR Submission Process" [ref=f1e296] [cursor=pointer]:
+                        - /url: /mktrules/nprotocols/nprr_process
+                    - listitem [ref=f1e297]:
+                      - link "Protocol Interpretation Request Submission Process" [ref=f1e298] [cursor=pointer]:
+                        - /url: /mktrules/nprotocols/pir_process
+                - listitem [ref=f1e299]:
+                  - link "Archives - Zonal" [ref=f1e300] [cursor=pointer]:
+                    - /url: /mktrules/protocols
+                  - list
+                - listitem [ref=f1e301]:
+                  - link "PUCT Directives" [ref=f1e302] [cursor=pointer]:
+                    - /url: /mktrules/puctDirectives
+                  - list [ref=f1e303]:
+                    - listitem [ref=f1e304]:
+                      - link "Phase 2 Bridging Options" [ref=f1e305] [cursor=pointer]:
+                        - /url: /mktrules/puctDirectives/phase-2-bridging-options
+                    - listitem [ref=f1e306]:
+                      - link "Southern Cross Transmission" [ref=f1e307] [cursor=pointer]:
+                        - /url: /mktrules/puctDirectives/southernCross
+                    - listitem [ref=f1e308]:
+                      - link "Emergency Operations Plans" [ref=f1e309] [cursor=pointer]:
+                        - /url: /mktrules/puctDirectives/emergencyoperationsplans
+              - list [ref=f1e310]:
+                - listitem [ref=f1e311]:
+                  - link "Market Guides" [ref=f1e312] [cursor=pointer]:
+                    - /url: /mktrules/guides
+                  - list [ref=f1e313]:
+                    - listitem [ref=f1e314]:
+                      - link "Commercial Operations Market Guide" [ref=f1e315] [cursor=pointer]:
+                        - /url: /mktrules/guides/commercialops
+                    - listitem [ref=f1e316]:
+                      - link "Data Transport Guides" [ref=f1e317] [cursor=pointer]:
+                        - /url: /mktrules/guides/data_transport
+                    - listitem [ref=f1e318]:
+                      - link "Load Profiling Guide" [ref=f1e319] [cursor=pointer]:
+                        - /url: /mktrules/guides/loadprofiling
+                    - listitem [ref=f1e320]:
+                      - link "Nodal Operating Guide" [ref=f1e321] [cursor=pointer]:
+                        - /url: /mktrules/guides/noperating
+                    - listitem [ref=f1e322]:
+                      - link "Operating Procedures" [ref=f1e323] [cursor=pointer]:
+                        - /url: /mktrules/guides/procedures
+                    - listitem [ref=f1e324]:
+                      - link "Planning Guide" [ref=f1e325] [cursor=pointer]:
+                        - /url: /mktrules/guides/planning
+                    - listitem [ref=f1e326]:
+                      - link "Resource Registration Glossary" [ref=f1e327] [cursor=pointer]:
+                        - /url: /mktrules/guides/resourcereg
+                    - listitem [ref=f1e328]:
+                      - link "Retail Market Guide" [ref=f1e329] [cursor=pointer]:
+                        - /url: /mktrules/guides/retail
+                    - listitem [ref=f1e330]:
+                      - link "Settlement Metering Operating Guide" [ref=f1e331] [cursor=pointer]:
+                        - /url: /mktrules/guides/settlement
+                    - listitem [ref=f1e332]:
+                      - link "Texas Standard Electronic Transaction Guides" [ref=f1e333] [cursor=pointer]:
+                        - /url: /mktrules/guides/txset
+                    - listitem [ref=f1e334]:
+                      - link "Verifiable Cost Manual" [ref=f1e335] [cursor=pointer]:
+                        - /url: /mktrules/guides/vcm
+                    - listitem [ref=f1e336]:
+                      - link "Inactive Market Guides" [ref=f1e337] [cursor=pointer]:
+                        - /url: /mktrules/guides/archives
+              - list [ref=f1e338]:
+                - listitem [ref=f1e339]:
+                  - link "Pilot Projects" [ref=f1e340] [cursor=pointer]:
+                    - /url: /mktrules/pilots
+                  - list [ref=f1e341]:
+                    - listitem [ref=f1e342]:
+                      - link "Aggregate Distributed Energy Resource (ADER) Pilot Project" [ref=f1e343] [cursor=pointer]:
+                        - /url: /mktrules/pilots/ader
+                    - listitem [ref=f1e344]:
+                      - link "30-Minute Emergency Response Service - Completed" [ref=f1e345] [cursor=pointer]:
+                        - /url: /mktrules/pilots/ers
+                    - listitem [ref=f1e346]:
+                      - link "Fast Responding Regulation Service - Completed" [ref=f1e347] [cursor=pointer]:
+                        - /url: /mktrules/pilots/frrs
+                    - listitem [ref=f1e348]:
+                      - link "Weather-Sensitive Emergency Response Service - Completed" [ref=f1e349] [cursor=pointer]:
+                        - /url: /mktrules/pilots/wsers
+                - listitem [ref=f1e350]:
+                  - link "System Changes" [ref=f1e351] [cursor=pointer]:
+                    - /url: /mktrules/syschangereq
+                  - list [ref=f1e352]:
+                    - listitem [ref=f1e353]:
+                      - link "System Change Requests" [ref=f1e354] [cursor=pointer]:
+                        - /url: /mktrules/syschangereq/scr
+                - listitem [ref=f1e355]:
+                  - link "Compliance in ERCOT" [ref=f1e356] [cursor=pointer]:
+                    - /url: /mktrules/compliance
+                  - list
+                - listitem [ref=f1e357]:
+                  - link "Business Practice Manual" [ref=f1e358] [cursor=pointer]:
+                    - /url: /mktrules/bpm
+                  - list
+                - listitem [ref=f1e359]:
+                  - link "Other Binding Documents" [ref=f1e360] [cursor=pointer]:
+                    - /url: /mktrules/obd
+                  - list [ref=f1e361]:
+                    - listitem [ref=f1e362]:
+                      - link "Other Binding Documents List" [ref=f1e363] [cursor=pointer]:
+                        - /url: /mktrules/obd/obdlist
+                    - listitem [ref=f1e364]:
+                      - link "Other Binding Documents Revision Requests" [ref=f1e365] [cursor=pointer]:
+                        - /url: /mktrules/obd/obdrr
+                - listitem [ref=f1e366]:
+                  - link "Key Priorities" [ref=f1e367] [cursor=pointer]:
+                    - /url: /mktrules/keypriorities
+                  - list [ref=f1e368]:
+                    - listitem [ref=f1e369]:
+                      - link "Battery Energy Storage" [ref=f1e370] [cursor=pointer]:
+                        - /url: /mktrules/keypriorities/bes
+          - listitem [ref=f1e371]:
+            - link "Market Information":
+              - /url: /mktinfo
+            - generic:
+              - list [ref=f1e372]:
+                - listitem [ref=f1e373]:
+                  - link "Congestion Revenue Rights" [ref=f1e374] [cursor=pointer]:
+                    - /url: /mktinfo/crr
+                  - list
+                - listitem [ref=f1e375]:
+                  - link "Day-Ahead Market" [ref=f1e376] [cursor=pointer]:
+                    - /url: /mktinfo/dam
+                  - list
+                - listitem [ref=f1e377]:
+                  - link "Real-Time Market" [ref=f1e378] [cursor=pointer]:
+                    - /url: /mktinfo/rtm
+                  - list [ref=f1e379]:
+                    - listitem [ref=f1e380]:
+                      - link "Marginal Losses" [ref=f1e381] [cursor=pointer]:
+                        - /url: /mktinfo/rtm/marginallosses
+                - listitem [ref=f1e382]:
+                  - link "Market Prices" [ref=f1e383] [cursor=pointer]:
+                    - /url: /mktinfo/prices
+                  - list
+                - listitem [ref=f1e384]:
+                  - link "Retail" [ref=f1e385] [cursor=pointer]:
+                    - /url: /mktinfo/retail
+                  - list [ref=f1e386]:
+                    - listitem [ref=f1e387]:
+                      - link "Labeling of Electricity" [ref=f1e388] [cursor=pointer]:
+                        - /url: /mktinfo/retail/electric
+              - list [ref=f1e389]:
+                - listitem [ref=f1e390]:
+                  - link "Load Profiling" [ref=f1e391] [cursor=pointer]:
+                    - /url: /mktinfo/loadprofile
+                  - list [ref=f1e392]:
+                    - listitem [ref=f1e393]:
+                      - link "Backcasted (Actual) Load Profiles - Historical" [ref=f1e394] [cursor=pointer]:
+                        - /url: /mktinfo/loadprofile/alp
+                - listitem [ref=f1e395]:
+                  - link "Metering" [ref=f1e396] [cursor=pointer]:
+                    - /url: /mktinfo/metering
+                  - list [ref=f1e397]:
+                    - listitem [ref=f1e398]:
+                      - link "Competitive Metering" [ref=f1e399] [cursor=pointer]:
+                        - /url: /mktinfo/metering/competitive
+                    - listitem [ref=f1e400]:
+                      - link "ERCOT-Polled Settlement Metering" [ref=f1e401] [cursor=pointer]:
+                        - /url: /mktinfo/metering/eps
+                    - listitem [ref=f1e402]:
+                      - link "TDSP Distribution Loss Factors - Methodology" [ref=f1e403] [cursor=pointer]:
+                        - /url: /mktinfo/metering/dlfmethodology
+              - list [ref=f1e404]:
+                - listitem [ref=f1e405]:
+                  - link "Data Aggregation" [ref=f1e406] [cursor=pointer]:
+                    - /url: /mktinfo/data_agg
+                  - list [ref=f1e407]:
+                    - listitem [ref=f1e408]:
+                      - link "IDR Protocol Compliance Verification - Historical" [ref=f1e409] [cursor=pointer]:
+                        - /url: /mktinfo/data_agg/idr_pcv
+                    - listitem [ref=f1e410]:
+                      - link "ERCOT Four Coincident Peak Calculations" [ref=f1e411] [cursor=pointer]:
+                        - /url: /mktinfo/data_agg/4cp
+                    - listitem [ref=f1e412]:
+                      - link "Shadow Settlement Instruction Guides" [ref=f1e413] [cursor=pointer]:
+                        - /url: /mktinfo/data_agg/ssig
+                    - listitem [ref=f1e414]:
+                      - link "UFE Analysis Reports" [ref=f1e415] [cursor=pointer]:
+                        - /url: /mktinfo/data_agg/ufe
+                - listitem [ref=f1e416]:
+                  - link "Settlements" [ref=f1e417] [cursor=pointer]:
+                    - /url: /mktinfo/settlements
+                  - list
+                - listitem [ref=f1e418]:
+                  - link "Market Reports" [ref=f1e419] [cursor=pointer]:
+                    - /url: /mktinfo/reports
+                  - list
+          - listitem [ref=f1e420]:
+            - link "Grid Information":
+              - /url: /gridinfo
+            - generic:
+              - list [ref=f1e421]:
+                - listitem [ref=f1e422]:
+                  - link "Current System Conditions" [ref=f1e423] [cursor=pointer]:
+                    - /url: /gridinfo/csc
+                  - list
+                - listitem [ref=f1e424]:
+                  - link "Generation" [ref=f1e425] [cursor=pointer]:
+                    - /url: /gridinfo/generation
+                  - list [ref=f1e426]:
+                    - listitem [ref=f1e427]:
+                      - link "Inverter Based Resources Integration Reports" [ref=f1e428] [cursor=pointer]:
+                        - /url: /gridinfo/generation/ibr-integration-reports
+                - listitem [ref=f1e429]:
+                  - link "Load" [ref=f1e430] [cursor=pointer]:
+                    - /url: /gridinfo/load
+                  - list [ref=f1e431]:
+                    - listitem [ref=f1e432]:
+                      - link "Hourly Load Data Archives" [ref=f1e433] [cursor=pointer]:
+                        - /url: /gridinfo/load/load_hist
+                    - listitem [ref=f1e434]:
+                      - link "Supplemental Data for COVID-19 Scenario" [ref=f1e435] [cursor=pointer]:
+                        - /url: /gridinfo/load/covid-19-load-forecast
+                    - listitem [ref=f1e436]:
+                      - link "Load Forecast" [ref=f1e437] [cursor=pointer]:
+                        - /url: /gridinfo/load/forecast
+              - list [ref=f1e438]:
+                - listitem [ref=f1e439]:
+                  - link "Transmission" [ref=f1e440] [cursor=pointer]:
+                    - /url: /gridinfo/transmission
+                  - list [ref=f1e441]:
+                    - listitem [ref=f1e442]:
+                      - link "Production Load Schedule" [ref=f1e443] [cursor=pointer]:
+                        - /url: /gridinfo/transmission/opsys-change-schedule
+                - listitem [ref=f1e444]:
+                  - link "Resource Adequacy" [ref=f1e445] [cursor=pointer]:
+                    - /url: /gridinfo/resource
+                  - list
+                - listitem [ref=f1e446]:
+                  - link "Market Reports" [ref=f1e447] [cursor=pointer]:
+                    - /url: /gridinfo/sysplan
+                  - list
+                - listitem [ref=f1e448]:
+                  - link "Planning" [ref=f1e449] [cursor=pointer]:
+                    - /url: /gridinfo/planning
+                  - list
+              - list [ref=f1e450]:
+                - listitem [ref=f1e451]:
+                  - link "Resiliency" [ref=f1e452] [cursor=pointer]:
+                    - /url: /gridinfo/resiliency
+                  - list [ref=f1e453]:
+                    - listitem [ref=f1e454]:
+                      - link "Winter Weather Readiness" [ref=f1e455] [cursor=pointer]:
+                        - /url: /gridinfo/resiliency/winterready
+                    - listitem [ref=f1e456]:
+                      - link "Summer Weather Readiness" [ref=f1e457] [cursor=pointer]:
+                        - /url: /gridinfo/resiliency/summerready
+                    - listitem [ref=f1e458]:
+                      - link "Gas-Electric Coordination" [ref=f1e459] [cursor=pointer]:
+                        - /url: /gridinfo/resiliency/gas-electric
+                - listitem [ref=f1e460]:
+                  - link "Modeling" [ref=f1e461] [cursor=pointer]:
+                    - /url: /gridinfo/modeling
+                  - list
+          - listitem [ref=f1e462]:
+            - link "Market Participants":
+              - /url: /mp
+            - list [ref=f1e463]:
+              - listitem [ref=f1e464]:
+                - link "EMIL" [ref=f1e465] [cursor=pointer]:
+                  - /url: /mp/data-products
+                - list
+              - listitem [ref=f1e466]:
+                - link "MIS Log In" [ref=f1e467] [cursor=pointer]:
+                  - /url: /mp/mis-ercot-com
+                - list
+              - listitem [ref=f1e468]:
+                - link "RIOO Log In" [ref=f1e469] [cursor=pointer]:
+                  - /url: /mp/rioo-rs
+                - list
+              - listitem [ref=f1e470]:
+                - link "Renewable Energy Credit" [ref=f1e471] [cursor=pointer]:
+                  - /url: /mp/rec
+                - list
+          - list
+  - generic [ref=f1e474]:
+    - list [ref=f1e476]:
+      - listitem [ref=f1e477]:
+        - link "Home" [ref=f1e478] [cursor=pointer]:
+          - /url: /
+      - listitem [ref=f1e479]: News and Publications
+    - heading "News and Publications" [level=1] [ref=f1e480]
+    - generic [ref=f1e481]:
+      - paragraph [ref=f1e482]: The Electric Reliability Council of Texas (ERCOT) manages the flow of about 90 percent of the electricity used in Texas. As the independent system operator serving most of the state, we work to maintain a reliable electric grid, world-class efficient electric markets, open access to the transmission system, and competitive retail choice.
+      - paragraph [ref=f1e483]: Below are various tools you can subscribe to in order to receive the latest updates from ERCOT, along with resources to help you learn more about the ERCOT grid and market.
+    - generic [ref=f1e484]:
+      - generic [ref=f1e486]:
+        - heading "ERCOT PowerCast" [level=2] [ref=f1e488]
+        - generic [ref=f1e491]:
+          - paragraph [ref=f1e492]: ERCOT PowerCast is a monthly podcast series that brings Texans inside the policies and topics shaping one of the most dynamic electric grids in the world. Available in audio and video, featuring ERCOT subject-matter experts and industry guests exploring what's driving change across the Texas grid — hosted by Gordon Drake, ERCOT's Director of Market Design and Analysis.
+          - paragraph [ref=f1e494]:
+            - link "Podcast Home" [ref=f1e495] [cursor=pointer]:
+              - /url: /news/podcast
+      - generic [ref=f1e497]:
+        - heading "Subscribe to Receive Emails" [level=2] [ref=f1e499]
+        - generic [ref=f1e501]:
+          - generic [ref=f1e503]:
+            - generic [ref=f1e504]: "News Releases:"
+            - table [ref=f1e505]:
+              - rowgroup [ref=f1e506]:
+                - row
+                - row [ref=f1e507]:
+                  - cell [ref=f1e508]
+                  - cell [ref=f1e509]:
+                    - textbox "Enter your email" [ref=f1e510]
+                  - cell [ref=f1e511]:
+                    - button "Subscribe" [ref=f1e512] [cursor=pointer]
+          - generic [ref=f1e514]:
+            - generic [ref=f1e515]: "Media Advisories (for members of the media only):"
+            - table [ref=f1e516]:
+              - rowgroup [ref=f1e517]:
+                - row
+                - row [ref=f1e518]:
+                  - cell [ref=f1e519]
+                  - cell [ref=f1e520]:
+                    - textbox "Enter your email" [ref=f1e521]
+                  - cell [ref=f1e522]:
+                    - button "Subscribe" [ref=f1e523] [cursor=pointer]
+      - generic [ref=f1e525]:
+        - heading "Follow ERCOT on Social Media" [level=2] [ref=f1e527]
+        - paragraph [ref=f1e531]:
+          - link [ref=f1e532] [cursor=pointer]:
+            - /url: https://www.facebook.com/pages/Electric-Reliability-Council-of-Texas/208282585857723
+            - img "internalName" [ref=f1e533]
+          - link [ref=f1e534] [cursor=pointer]:
+            - /url: https://www.instagram.com/ercot_iso
+            - img "internalName" [ref=f1e535]
+          - link [ref=f1e536] [cursor=pointer]:
+            - /url: https://twitter.com/ercot_iso
+            - img "internalName" [ref=f1e537]
+          - link [ref=f1e538] [cursor=pointer]:
+            - /url: https://www.linkedin.com/company/ercot/
+            - img "LinkedIn Icon" [ref=f1e539]
+      - generic [ref=f1e541]:
+        - heading "Download Our App" [level=2] [ref=f1e543]
+        - generic [ref=f1e545]:
+          - paragraph [ref=f1e546]: For Real-Time system conditions, wholesale prices and other features, download ERCOT's app to Android devices in Google Play or to iPhone or iPad in the Apple App Store.
+          - paragraph [ref=f1e547]:
+            - link [ref=f1e548] [cursor=pointer]:
+              - /url: https://play.google.com/store/apps/details?id=com.ercot.ercotMobileOne&hl=en
+              - img "google play badge" [ref=f1e549]
+            - link [ref=f1e550] [cursor=pointer]:
+              - /url: http://itunes.apple.com/us/app/ercot/id520829355?mt=8
+              - img "Available on the App Store" [ref=f1e551]
+          - paragraph [ref=f1e552]
+          - paragraph [ref=f1e553]
+      - generic [ref=f1e555]:
+        - heading "IN THIS SECTION" [level=2] [ref=f1e557]
+        - generic [ref=f1e559]:
+          - generic [ref=f1e563]:
+            - link "News Releases" [ref=f1e564] [cursor=pointer]:
+              - /url: /news/releases
+            - generic [ref=f1e565]: News releases published by ERCOT
+          - generic [ref=f1e570]:
+            - link "Media Kit" [ref=f1e571] [cursor=pointer]:
+              - /url: /news/mediakit
+            - generic [ref=f1e572]: Includes quick facts, corporate logos/images and maps of the ERCOT region
+          - generic [ref=f1e577]:
+            - link "Trending Topics" [ref=f1e578] [cursor=pointer]:
+              - /url: /news/trendingtopics
+            - generic [ref=f1e579]: Information about trending topics in the ERCOT market and region
+          - generic [ref=f1e584]:
+            - link "Grid Insights" [ref=f1e585] [cursor=pointer]:
+              - /url: /about/news/grid-insights
+            - generic [ref=f1e586]: Information on issues important to maintaining a reliable and resilient grid
+          - generic [ref=f1e591]:
+            - link "Texas Advisory and Notification System (TXANS)" [ref=f1e592] [cursor=pointer]:
+              - /url: /txans?utm_source=navigation&utm_medium=pagelink&utm_campaign=txans&utm_term=txans-launch&utm_content=in-this-section
+            - generic [ref=f1e593]: A communications tool that delivers clear and reliable information on ERCOT grid conditions.
+          - generic [ref=f1e598]:
+            - link "Helpful Resources" [ref=f1e599] [cursor=pointer]:
+              - /url: /news/presentations
+            - generic [ref=f1e600]: Includes reports and documents on a variety of topics, including monthly demand and energy information, resource capacity trend charts and data about new generation projects
+          - generic [ref=f1e605]:
+            - link "Winter 2025-2026" [ref=f1e606] [cursor=pointer]:
+              - /url: /news/winter
+            - generic [ref=f1e607]: Resources and updates related to operations during Winter 2025-2026
+          - generic [ref=f1e612]:
+            - link "February 2021 Extreme Weather Event" [ref=f1e613] [cursor=pointer]:
+              - /url: /news/february2021
+            - generic [ref=f1e614]: Texas State Legislature, Texas ERCOT hearings, Winter Weather
+  - contentinfo [ref=f1e616]:
+    - generic [ref=f1e617]:
+      - link "About ERCOT" [ref=f1e618] [cursor=pointer]:
+        - /url: /about
+      - link "Services" [ref=f1e619] [cursor=pointer]:
+        - /url: /services
+      - link "Committees & Groups" [ref=f1e620] [cursor=pointer]:
+        - /url: /committees
+      - link "Market Rules" [ref=f1e621] [cursor=pointer]:
+        - /url: /mktrules
+      - link "Market Information" [ref=f1e622] [cursor=pointer]:
+        - /url: /mktinfo
+      - link "Grid Information" [ref=f1e623] [cursor=pointer]:
+        - /url: /gridinfo
+      - link "Market Participants" [ref=f1e624] [cursor=pointer]:
+        - /url: /mp
+    - generic [ref=f1e625]:
+      - link "Contact Us" [ref=f1e626] [cursor=pointer]:
+        - /url: /about/contact
+      - link "Glossary" [ref=f1e627] [cursor=pointer]:
+        - /url: /glossary
+      - link "Careers" [ref=f1e628] [cursor=pointer]:
+        - /url: /careers
+      - link "Locations" [ref=f1e629] [cursor=pointer]:
+        - /url: /about/locations
+      - link "Calendar" [ref=f1e630] [cursor=pointer]:
+        - /url: /calendar
+    - generic [ref=f1e631]:
+      - heading "Quick Links" [level=5] [ref=f1e632]
+      - link "Ethics Point" [ref=f1e633] [cursor=pointer]:
+        - /url: /about/governance/ethics
+      - link "Operations Messages" [ref=f1e634] [cursor=pointer]:
+        - /url: /services/comm/mkt_notices/opsmessages
+      - link "Project Status" [ref=f1e635] [cursor=pointer]:
+        - /url: /services/projects
+      - link "Service Level Agreements" [ref=f1e636] [cursor=pointer]:
+        - /url: /services/sla
+      - link "MIS Applications" [ref=f1e637] [cursor=pointer]:
+        - /url: https://mis.ercot.com/secure/applications
+      - link "Grid and Market Conditions" [ref=f1e638] [cursor=pointer]:
+        - /url: /gridmktinfo/dashboards
+      - link "ERCOT Market Information List" [ref=f1e639] [cursor=pointer]:
+        - /url: /mp/data-products
+      - link "Resource Integration & Ongoing Operations – Resource Services" [ref=f1e640] [cursor=pointer]:
+        - /url: https://sa.ercot.com/rioo-rs/
+      - link "Texas Advisory and Notification System" [ref=f1e641] [cursor=pointer]:
+        - /url: /txans?utm_source=navigation&utm_medium=footer&utm_campaign=txans&utm_term=txans-launch
+    - generic [ref=f1e642]:
+      - heading "STAY CONNECTED" [level=5] [ref=f1e643]
+      - heading "SOCIAL" [level=6] [ref=f1e644]
+      - generic [ref=f1e645]:
+        - link [ref=f1e646] [cursor=pointer]:
+          - /url: https://www.facebook.com/ERCOTISO/
+        - link [ref=f1e649] [cursor=pointer]:
+          - /url: https://instagram.com/ercot_iso
+        - link [ref=f1e652] [cursor=pointer]:
+          - /url: https://twitter.com/ercot_iso
+        - link [ref=f1e655] [cursor=pointer]:
+          - /url: https://www.linkedin.com/company/ercot/
+        - link [ref=f1e658] [cursor=pointer]:
+          - /url: https://www.youtube.com/user/ERCOTISO
+        - link [ref=f1e661] [cursor=pointer]:
+          - /url: http://www.ercot.com/news
+      - heading "News & Press" [level=6] [ref=f1e664]
+      - link "Mailing Lists" [ref=f1e665] [cursor=pointer]:
+        - /url: https://lists.ercot.com
+      - link "News & Publications" [ref=f1e668] [cursor=pointer]:
+        - /url: /news
+    - paragraph [ref=f1e672]:
+      - text: Use of this site constitutes agreement to our
+      - link "Terms of Use" [ref=f1e674] [cursor=pointer]:
+        - /url: /help/terms
+      - text: .
+    - generic [ref=f1e675]: © 1996-2026 Electric Reliability Council of Texas, Inc. All rights reserved.
+    - generic [ref=f1e676]:
+      - link "Sitemap" [ref=f1e677] [cursor=pointer]:
+        - /url: /help/sitemap
+      - link "Privacy" [ref=f1e678] [cursor=pointer]:
+        - /url: /help/privacy
+    - link [ref=f1e680] [cursor=pointer]:
+      - /url: https://www.ercot.com

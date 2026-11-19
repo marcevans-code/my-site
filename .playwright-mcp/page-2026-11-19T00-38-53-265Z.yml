@@ -1,0 +1,146 @@
+- generic [active] [ref=f66e1]:
+  - link "Skip to main content" [ref=f66e2] [cursor=pointer]:
+    - /url: "#main"
+  - generic [ref=f66e3]:
+    - navigation [ref=f66e4]:
+      - link:
+        - /url: https://www.puc.texas.gov/
+        - img [ref=f66e5] [cursor=pointer]
+      - generic [ref=f66e6]: Public Utility Commission of Texas Interchange Filing Search
+    - main [ref=f66e7]:
+      - heading "Case 58481-218" [level=1] [ref=f66e9]
+      - menu [ref=f66e11]:
+        - menuitem [ref=f66e12]:
+          - link [ref=f66e13] [cursor=pointer]:
+            - /url: /
+            - emphasis [ref=f66e14]: 
+            - text: Filing Search
+        - menuitem [ref=f66e15]:
+          - link [ref=f66e16] [cursor=pointer]:
+            - /url: /search/daily/
+            - emphasis [ref=f66e17]: 
+            - text: Daily Filing Search
+        - menuitem [ref=f66e18]:
+          - link [ref=f66e19] [cursor=pointer]:
+            - /url: https://www.puc.texas.gov/industry/filings/Default.aspx
+            - emphasis [ref=f66e20]: 
+            - text: Learn More
+        - menuitem [ref=f66e21]:
+          - link [ref=f66e22] [cursor=pointer]:
+            - /url: https://portal.puc.texas.gov/portal/
+            - emphasis [ref=f66e23]: 
+            - text: Filing Notification System
+        - menuitem [ref=f66e24]:
+          - link [ref=f66e25] [cursor=pointer]:
+            - /url: https://interchange.puc.texas.gov/filer
+            - emphasis [ref=f66e26]: 
+            - text: PUC Interchange Filer
+      - text:      
+      - paragraph [ref=f66e27]:
+        - strong [ref=f66e28]: File Stamp
+        - text: 9/18/2026
+      - paragraph [ref=f66e29]:
+        - strong [ref=f66e30]: Filing Party
+        - text: PUC OPDM
+      - paragraph [ref=f66e31]:
+        - strong [ref=f66e32]: Case Style
+        - text: RULEMAKING TO IMPLEMENT LARGE LOAD INTERCONNECTION STANDARDS UNDER PURA 37.0561
+      - paragraph [ref=f66e33]:
+        - strong [ref=f66e34]: Filing Description
+        - text: ORDER ADOPTING NEW 16 TAC §25.194
+      - paragraph [ref=f66e35]: 4 document(s).
+      - table [ref=f66e36]:
+        - rowgroup [ref=f66e37]:
+          - row [ref=f66e38]:
+            - columnheader "Name" [ref=f66e39]
+            - columnheader "Description" [ref=f66e40]
+            - columnheader "Type" [ref=f66e41]
+          - row [ref=f66e42]:
+            - cell [ref=f66e43]:
+              - strong [ref=f66e44]:
+                - link "58481_218_1684653" [ref=f66e45] [cursor=pointer]:
+                  - /url: https://interchange.puc.texas.gov/Documents/58481_218_1684653.ZIP
+            - cell "Pages 0 to -2" [ref=f66e46]
+            - cell "ZIP" [ref=f66e47]
+          - row [ref=f66e48]:
+            - cell [ref=f66e49]:
+              - strong [ref=f66e50]:
+                - link "58481_218_1684654" [ref=f66e51] [cursor=pointer]:
+                  - /url: https://interchange.puc.texas.gov/Documents/58481_218_1684654.PDF
+            - cell "Pages 1 to 100" [ref=f66e52]
+            - cell "PDF" [ref=f66e53]
+          - row [ref=f66e54]:
+            - cell [ref=f66e55]:
+              - strong [ref=f66e56]:
+                - link "58481_218_1684655" [ref=f66e57] [cursor=pointer]:
+                  - /url: https://interchange.puc.texas.gov/Documents/58481_218_1684655.PDF
+            - cell "Pages 101 to 200" [ref=f66e58]
+            - cell "PDF" [ref=f66e59]
+          - row [ref=f66e60]:
+            - cell [ref=f66e61]:
+              - strong [ref=f66e62]:
+                - link "58481_218_1684656" [ref=f66e63] [cursor=pointer]:
+                  - /url: https://interchange.puc.texas.gov/Documents/58481_218_1684656.PDF
+            - cell "Pages 201 to 271" [ref=f66e64]
+            - cell "PDF" [ref=f66e65]
+  - contentinfo [ref=f66e66]:
+    - generic [ref=f66e67]:
+      - generic [ref=f66e68]:
+        - generic [ref=f66e69]:
+          - heading "Public Utility Commission of Texas" [level=5] [ref=f66e70]
+          - generic [ref=f66e71]: 1701 N. Congress Ave. PO Box 13326 Austin, TX 78711-3326
+          - generic [ref=f66e72]:
+            - link " Phone 512-936-7000" [ref=f66e74] [cursor=pointer]:
+              - /url: tel://1-512-936-7000
+              - generic [ref=f66e75]: 
+              - generic "Phone"
+              - text: 512-936-7000
+            - link " Contact Us" [ref=f66e77] [cursor=pointer]:
+              - /url: https://www.puc.texas.gov/agency/about/contact/Default.aspx
+              - generic [ref=f66e78]: 
+              - text: Contact Us
+        - generic [ref=f66e79]:
+          - heading "AGENCY INFO" [level=5] [ref=f66e80]
+          - list [ref=f66e81]:
+            - listitem [ref=f66e82]:
+              - link "Site Policies" [ref=f66e83] [cursor=pointer]:
+                - /url: http://www.puc.texas.gov/agency/about/policies/Default.aspx
+            - listitem [ref=f66e84]:
+              - link "Sitemap" [ref=f66e85] [cursor=pointer]:
+                - /url: http://www.puc.texas.gov/agency/Sitemap.aspx
+        - generic [ref=f66e86]:
+          - heading "OTHER GOVERNMENT RESOURCES" [level=5] [ref=f66e87]
+          - list [ref=f66e88]:
+            - listitem [ref=f66e89]:
+              - link "Report Fraud, Waste or Abuse" [ref=f66e90] [cursor=pointer]:
+                - /url: http://sao.fraud.state.tx.us/
+            - listitem [ref=f66e91]:
+              - link "Texas Homeland Security" [ref=f66e92] [cursor=pointer]:
+                - /url: http://governor.state.tx.us/homeland
+            - listitem [ref=f66e93]:
+              - link "Ready.gov" [ref=f66e94] [cursor=pointer]:
+                - /url: http://www.ready.gov/
+            - listitem [ref=f66e95]:
+              - link "Texas.gov" [ref=f66e96] [cursor=pointer]:
+                - /url: http://texas.gov
+            - listitem [ref=f66e97]:
+              - link "Texas Veterans" [ref=f66e98] [cursor=pointer]:
+                - /url: https://veterans.portal.texas.gov/
+            - listitem [ref=f66e99]:
+              - link "TRAIL" [ref=f66e100] [cursor=pointer]:
+                - /url: https://www.tsl.state.tx.us/trail/index.html
+      - navigation [ref=f66e103]:
+        - list [ref=f66e104]:
+          - listitem [ref=f66e105]:
+            - link "PUC Calendar RSS Feed" [ref=f66e106] [cursor=pointer]:
+              - /url: http://www.puc.texas.gov/agency/calendar/GetCalendarRss.aspx
+              - generic [ref=f66e107]: 
+          - listitem [ref=f66e108]:
+            - link "Facebook" [ref=f66e109] [cursor=pointer]:
+              - /url: http://www.facebook.com/pages/Public-Utility-Commission-of-Texas/207063229365425
+              - generic [ref=f66e110]: 
+          - listitem [ref=f66e111]:
+            - link "Twitter" [ref=f66e112] [cursor=pointer]:
+              - /url: https://twitter.com/PUCTx
+              - generic [ref=f66e113]: 
+      - generic [ref=f66e114]: Copyright © 2026 Public Utility Commission of Texas Version 2.2.11.0

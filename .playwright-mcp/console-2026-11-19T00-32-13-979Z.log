@@ -1,0 +1,7 @@
+[     912ms] [ERROR] Connecting to 'https://api.ipify.org/?format=json' violates the following Content Security Policy directive: "default-src 'self' 'unsafe-inline' 'unsafe-eval'". Note that 'connect-src' was not explicitly set, so 'default-src' is used as a fallback. The action has been blocked. @ https://records.tceq.texas.gov/cs/idcplg?IdcService=TCEQ_SEARCH:1542
+[     913ms] [ERROR] Fetch API cannot load https://api.ipify.org/?format=json. Refused to connect because it violates the document's Content Security Policy. @ https://records.tceq.texas.gov/cs/idcplg?IdcService=TCEQ_SEARCH:1542
+[     913ms] [WARNING] Could not fetch IP: TypeError: Failed to fetch
+    at getAccess (https://records.tceq.texas.gov/cs/idcplg?IdcService=TCEQ_SEARCH:1542:32)
+    at onload (https://records.tceq.texas.gov/cs/idcplg?IdcService=TCEQ_SEARCH:1575:29) @ https://records.tceq.texas.gov/cs/idcplg?IdcService=TCEQ_SEARCH:1551
+[     913ms] [LOG] document.getElementById(clientIP).value:  @ https://records.tceq.texas.gov/cs/idcplg?IdcService=TCEQ_SEARCH:1555
+[     974ms] [LOG] document.getElementById(accessID).value: 7859180 @ https://records.tceq.texas.gov/cs/idcplg?IdcService=TCEQ_SEARCH:1560

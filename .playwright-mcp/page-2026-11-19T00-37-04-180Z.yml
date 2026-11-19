@@ -1,0 +1,1021 @@
+- generic [active] [ref=f57e1]:
+  - iframe [ref=f57e2]
+  - link "Skip navigation" [ref=f57e3] [cursor=pointer]:
+    - /url: "#skip_nav_bar_target"
+  - table [ref=f57e4]:
+    - rowgroup [ref=f57e5]:
+      - row [ref=f57e6]:
+        - cell [ref=f57e7]:
+          - link [ref=f57e8] [cursor=pointer]:
+            - /url: /cs/idcplg?IdcService=TCEQ_SEARCH
+            - img "Oracle Content Management Home" [ref=f57e9]
+        - cell [ref=f57e10]:
+          - link "Welcome to the TCEQ Records Online" [ref=f57e11] [cursor=pointer]:
+            - /url: /cs/idcplg?IdcService=TCEQ_SEARCH
+  - generic [ref=f57e12]: This application will allow you to search and view publicly available electronic recordsand information on many of the facilities regulated by the agency.
+  - generic [ref=f57e13]:
+    - generic:
+      - option "1" [selected]
+      - option "2"
+      - option "3"
+      - option "4"
+      - option "5"
+      - option "6"
+      - option "7"
+      - option "8"
+      - option "9"
+      - option "10"
+      - option "11"
+      - option "12"
+      - option "13"
+      - option "14"
+      - option "15"
+      - option "16"
+      - option "17"
+      - option "18"
+      - option "19"
+      - option "20"
+      - option "21"
+      - option "22"
+      - option "23"
+      - option "24"
+      - option "25"
+      - option "26"
+      - option "27"
+      - option "28"
+      - option "29"
+      - option "30"
+    - heading "Search Results" [level=1] [ref=f57e14]
+    - text: Potential items 1-20 of 179
+    - generic [ref=f57e15]:
+      - button "Search Within" [ref=f57e16]
+      - text: Use the Search Within function to narrow search results.
+    - generic [ref=f57e17]:
+      - generic:
+        - table:
+          - rowgroup:
+            - row:
+              - cell
+              - cell
+    - table [ref=f57e18]:
+      - rowgroup [ref=f57e19]:
+        - row [ref=f57e20]:
+          - cell "Filter by Category:" [ref=f57e21]
+          - cell [ref=f57e22]:
+            - generic [ref=f57e23]:
+              - img "xItemType" [ref=f57e24]
+              - text: Item Type
+          - cell [ref=f57e25]:
+            - generic [ref=f57e26]:
+              - img "xRecordSeries" [ref=f57e27]
+              - text: Record Series
+          - cell "Security Group:Public" [ref=f57e28]
+          - cell [ref=f57e29]:
+            - generic [ref=f57e30]:
+              - img "xAssignedLocation" [ref=f57e31]
+              - text: Assigned Location
+          - cell [ref=f57e32]:
+            - generic [ref=f57e33]:
+              - img "xMedia" [ref=f57e34]
+              - text: Media
+    - link "Search form" [ref=f57e35] [cursor=pointer]:
+      - /url: /cs/idcplg?IdcService=TCEQ_SEARCH
+    - text: "--> Search Results"
+    - table [ref=f57e37]:
+      - rowgroup [ref=f57e38]:
+        - row [ref=f57e39]:
+          - cell [ref=f57e40]
+          - cell "Page" [ref=f57e41]
+          - cell [ref=f57e43]:
+            - combobox "Page" [ref=f57e45]:
+              - option "1" [selected]
+              - option "2"
+              - option "3"
+              - option "4"
+              - option "5"
+              - option "6"
+              - option "7"
+              - option "8"
+              - option "9"
+          - cell "of 9" [ref=f57e46]
+          - cell [ref=f57e48]:
+            - link [ref=f57e49] [cursor=pointer]:
+              - /url: /cs/idcplg?IdcService=TCEQ_PERFORM_SEARCH&QueryText=dSecurityGroup+%3cmatches%3e+%60Public%60%3cAND%3e%28xRegEntName+%3csubstring%3e+%60Starbase%60%29&SortField=dInDate&SortOrder=Desc&ResultCount=20&SearchEngineName=ELASTICSEARCH&SearchQueryFormat=UNIVERSAL&searchFormType=standard&listTemplateId=SearchResultsHeadline&SearchProviders=tceq4avrwccecmp_4444&SortSpec=xRecordSeries%20asc%2cxPrimaryID%20asc%2cxSecondaryID%20asc%2cxInsightDocumentType%20asc%2cdDocTitle%20asc%2cxBeginDate%20asc&SearchEngineName=ELASTICSEARCH&&IsExternalSearch=1&PageNumber=2&StartRow=21&EndRow=40&columnsString=dDocName,xRecordSeries,xPrimaryID,xSecondaryID,xInsightDocumentType,dDocTitle,xBeginDate,xEndDate,xLitigationHold,xRegEntName,xMedia,xComments,dSecurityGroup&accessID=7859187&newSearch=0
+              - img "Link To More Results" [ref=f57e50]
+    - table
+    - table [ref=f57e51]:
+      - rowgroup [ref=f57e52]:
+        - row [ref=f57e53]:
+          - cell [ref=f57e54]:
+            - table [ref=f57e56]:
+              - rowgroup [ref=f57e57]:
+                - row [ref=f57e58]:
+                  - cell [ref=f57e59]:
+                    - button "Hide/Show" [ref=f57e60]
+                - row [ref=f57e61]:
+                  - cell "Select Columns" [ref=f57e62]
+          - cell [ref=f57e63]:
+            - table [ref=f57e69]:
+              - rowgroup [ref=f57e70]:
+                - row [ref=f57e71]:
+                  - cell [ref=f57e72]:
+                    - list [ref=f57e75]:
+                      - listitem [ref=f57e76]:
+                        - link "Select" [ref=f57e77] [cursor=pointer]:
+                          - /url: "#menu_1_DOCUMENTS_SELECT"
+                      - listitem [ref=f57e78]:
+                        - link "Change View" [ref=f57e79] [cursor=pointer]:
+                          - /url: "#menu_1_VIEWS"
+                      - listitem [ref=f57e80]:
+                        - link "Search Actions" [ref=f57e81] [cursor=pointer]:
+                          - /url: "#menu_1_QUERY_ACTIONS"
+                      - listitem [ref=f57e82]:
+                        - link "Request" [ref=f57e83] [cursor=pointer]:
+                          - /url: javascript:searchRequest()
+                      - listitem [ref=f57e84]:
+                        - link "Tag" [ref=f57e85] [cursor=pointer]:
+                          - /url: javascript:addTag()
+                      - listitem [ref=f57e86]:
+                        - link "Remove Tag" [ref=f57e87] [cursor=pointer]:
+                          - /url: javascript:removeTag()
+                      - listitem [ref=f57e88]:
+                        - link "Records Tagged" [ref=f57e89] [cursor=pointer]:
+                          - /url: javascript:taggedSearch()
+                      - listitem [ref=f57e90]:
+                        - link "Full Search" [ref=f57e91] [cursor=pointer]:
+                          - /url: javascript:fullSearch()
+                  - cell [ref=f57e92]
+            - table "Table with a list of content items resulting from a search." [ref=f57e93]:
+              - rowgroup [ref=f57e94]:
+                - row [ref=f57e95]:
+                  - cell "Select" [ref=f57e96]
+                  - cell "Spacer Column" [ref=f57e98]
+                  - cell "Content ID" [ref=f57e99]
+                  - cell "Spacer Column" [ref=f57e101]
+                  - cell "Record Series" [ref=f57e102]
+                  - cell "Spacer Column" [ref=f57e104]
+                  - cell [ref=f57e105]:
+                    - generic "Click to sort ascending" [ref=f57e106]:
+                      - link "Primary ID" [ref=f57e107] [cursor=pointer]:
+                        - /url: /cs/idcplg?IdcService=TCEQ_PERFORM_SEARCH&QueryText=dSecurityGroup+%3cmatches%3e+%60Public%60%3cAND%3e%28xRegEntName+%3csubstring%3e+%60Starbase%60%29&SortField=xPrimaryID&SortOrder=Asc&ResultCount=20&SearchEngineName=ELASTICSEARCH&SearchQueryFormat=UNIVERSAL&searchFormType=standard&listTemplateId=SearchResultsHeadline&SearchProviders=tceq4avrwccecmp_4444&SortSpec=xRecordSeries%20asc%2cxPrimaryID%20asc%2cxSecondaryID%20asc%2cxInsightDocumentType%20asc%2cdDocTitle%20asc%2cxBeginDate%20asc&SearchEngineName=ELASTICSEARCH&&IsExternalSearch=1&columnsString=dDocName,xRecordSeries,xPrimaryID,xSecondaryID,xInsightDocumentType,dDocTitle,xBeginDate,xEndDate,xLitigationHold,xRegEntName,xMedia,xComments,dSecurityGroup&accessID=7859187&sortSearch=1&newSearch=0
+                  - cell "Spacer Column" [ref=f57e108]
+                  - cell [ref=f57e109]:
+                    - generic "Click to sort ascending" [ref=f57e110]:
+                      - link "Secondary ID" [ref=f57e111] [cursor=pointer]:
+                        - /url: /cs/idcplg?IdcService=TCEQ_PERFORM_SEARCH&QueryText=dSecurityGroup+%3cmatches%3e+%60Public%60%3cAND%3e%28xRegEntName+%3csubstring%3e+%60Starbase%60%29&SortField=xSecondaryID&SortOrder=Asc&ResultCount=20&SearchEngineName=ELASTICSEARCH&SearchQueryFormat=UNIVERSAL&searchFormType=standard&listTemplateId=SearchResultsHeadline&SearchProviders=tceq4avrwccecmp_4444&SortSpec=xRecordSeries%20asc%2cxPrimaryID%20asc%2cxSecondaryID%20asc%2cxInsightDocumentType%20asc%2cdDocTitle%20asc%2cxBeginDate%20asc&SearchEngineName=ELASTICSEARCH&&IsExternalSearch=1&columnsString=dDocName,xRecordSeries,xPrimaryID,xSecondaryID,xInsightDocumentType,dDocTitle,xBeginDate,xEndDate,xLitigationHold,xRegEntName,xMedia,xComments,dSecurityGroup&accessID=7859187&sortSearch=1&newSearch=0
+                  - cell "Spacer Column" [ref=f57e112]
+                  - cell [ref=f57e113]:
+                    - generic "Click to sort ascending" [ref=f57e114]:
+                      - link "Document Type" [ref=f57e115] [cursor=pointer]:
+                        - /url: /cs/idcplg?IdcService=TCEQ_PERFORM_SEARCH&QueryText=dSecurityGroup+%3cmatches%3e+%60Public%60%3cAND%3e%28xRegEntName+%3csubstring%3e+%60Starbase%60%29&SortField=xInsightDocumentType&SortOrder=Asc&ResultCount=20&SearchEngineName=ELASTICSEARCH&SearchQueryFormat=UNIVERSAL&searchFormType=standard&listTemplateId=SearchResultsHeadline&SearchProviders=tceq4avrwccecmp_4444&SortSpec=xRecordSeries%20asc%2cxPrimaryID%20asc%2cxSecondaryID%20asc%2cxInsightDocumentType%20asc%2cdDocTitle%20asc%2cxBeginDate%20asc&SearchEngineName=ELASTICSEARCH&&IsExternalSearch=1&columnsString=dDocName,xRecordSeries,xPrimaryID,xSecondaryID,xInsightDocumentType,dDocTitle,xBeginDate,xEndDate,xLitigationHold,xRegEntName,xMedia,xComments,dSecurityGroup&accessID=7859187&sortSearch=1&newSearch=0
+                  - cell "Spacer Column" [ref=f57e116]
+                  - cell [ref=f57e117]:
+                    - generic "Click to sort ascending" [ref=f57e118]:
+                      - link "Title" [ref=f57e119] [cursor=pointer]:
+                        - /url: /cs/idcplg?IdcService=TCEQ_PERFORM_SEARCH&QueryText=dSecurityGroup+%3cmatches%3e+%60Public%60%3cAND%3e%28xRegEntName+%3csubstring%3e+%60Starbase%60%29&SortField=dDocTitle&SortOrder=Asc&ResultCount=20&SearchEngineName=ELASTICSEARCH&SearchQueryFormat=UNIVERSAL&searchFormType=standard&listTemplateId=SearchResultsHeadline&SearchProviders=tceq4avrwccecmp_4444&SortSpec=xRecordSeries%20asc%2cxPrimaryID%20asc%2cxSecondaryID%20asc%2cxInsightDocumentType%20asc%2cdDocTitle%20asc%2cxBeginDate%20asc&SearchEngineName=ELASTICSEARCH&&IsExternalSearch=1&columnsString=dDocName,xRecordSeries,xPrimaryID,xSecondaryID,xInsightDocumentType,dDocTitle,xBeginDate,xEndDate,xLitigationHold,xRegEntName,xMedia,xComments,dSecurityGroup&accessID=7859187&sortSearch=1&newSearch=0
+                  - cell "Spacer Column" [ref=f57e120]
+                  - cell [ref=f57e121]:
+                    - generic "Click to sort ascending" [ref=f57e122]:
+                      - link "Begin Date" [ref=f57e123] [cursor=pointer]:
+                        - /url: /cs/idcplg?IdcService=TCEQ_PERFORM_SEARCH&QueryText=dSecurityGroup+%3cmatches%3e+%60Public%60%3cAND%3e%28xRegEntName+%3csubstring%3e+%60Starbase%60%29&SortField=xBeginDate&SortOrder=Asc&ResultCount=20&SearchEngineName=ELASTICSEARCH&SearchQueryFormat=UNIVERSAL&searchFormType=standard&listTemplateId=SearchResultsHeadline&SearchProviders=tceq4avrwccecmp_4444&SortSpec=xRecordSeries%20asc%2cxPrimaryID%20asc%2cxSecondaryID%20asc%2cxInsightDocumentType%20asc%2cdDocTitle%20asc%2cxBeginDate%20asc&SearchEngineName=ELASTICSEARCH&&IsExternalSearch=1&columnsString=dDocName,xRecordSeries,xPrimaryID,xSecondaryID,xInsightDocumentType,dDocTitle,xBeginDate,xEndDate,xLitigationHold,xRegEntName,xMedia,xComments,dSecurityGroup&accessID=7859187&sortSearch=1&newSearch=0
+                  - cell "Spacer Column" [ref=f57e124]
+                  - cell "End Date" [ref=f57e125]
+                  - cell "Spacer Column" [ref=f57e127]
+                  - cell "Litigation Hold" [ref=f57e128]
+                  - cell "Spacer Column" [ref=f57e130]
+                  - cell "Regulated Entity Name" [ref=f57e131]
+                  - cell "Spacer Column" [ref=f57e133]
+                  - cell "Media" [ref=f57e134]
+                  - cell "Spacer Column" [ref=f57e136]
+                  - cell "Description" [ref=f57e137]
+                  - cell "Spacer Column" [ref=f57e139]
+                  - cell [ref=f57e140]:
+                    - generic "Click to sort ascending" [ref=f57e141]:
+                      - link "Security Group" [ref=f57e142] [cursor=pointer]:
+                        - /url: /cs/idcplg?IdcService=TCEQ_PERFORM_SEARCH&QueryText=dSecurityGroup+%3cmatches%3e+%60Public%60%3cAND%3e%28xRegEntName+%3csubstring%3e+%60Starbase%60%29&SortField=dSecurityGroup&SortOrder=Asc&ResultCount=20&SearchEngineName=ELASTICSEARCH&SearchQueryFormat=UNIVERSAL&searchFormType=standard&listTemplateId=SearchResultsHeadline&SearchProviders=tceq4avrwccecmp_4444&SortSpec=xRecordSeries%20asc%2cxPrimaryID%20asc%2cxSecondaryID%20asc%2cxInsightDocumentType%20asc%2cdDocTitle%20asc%2cxBeginDate%20asc&SearchEngineName=ELASTICSEARCH&&IsExternalSearch=1&columnsString=dDocName,xRecordSeries,xPrimaryID,xSecondaryID,xInsightDocumentType,dDocTitle,xBeginDate,xEndDate,xLitigationHold,xRegEntName,xMedia,xComments,dSecurityGroup&accessID=7859187&sortSearch=1&newSearch=0
+                  - cell "Spacer Column" [ref=f57e143]
+                  - cell "Actions" [ref=f57e144]
+                - row [ref=f57e146]:
+                  - cell [ref=f57e147]:
+                    - generic [ref=f57e149]:
+                      - generic: Select '7337340'
+                      - checkbox "Select '7337340'" [ref=f57e150]
+                  - cell [ref=f57e151]
+                  - cell [ref=f57e152]:
+                    - link "7337340" [ref=f57e154] [cursor=pointer]:
+                      - /url: /cs/idcplg?IdcService=TCEQ_EXTERNAL_SEARCH_GET_FILE&dID=8288996&Rendition=Web&SearchID=20746268&searchType=External
+                  - cell [ref=f57e155]
+                  - cell "AIR / New Source Review Permit" [ref=f57e156]
+                  - cell [ref=f57e158]
+                  - cell "155544" [ref=f57e159]
+                  - cell [ref=f57e161]
+                  - cell "381827" [ref=f57e162]
+                  - cell [ref=f57e164]
+                  - cell "Permits" [ref=f57e165]
+                  - cell [ref=f57e167]
+                  - cell "Final Action" [ref=f57e168]
+                  - cell [ref=f57e170]
+                  - cell "10/16/2024 12:00AM" [ref=f57e171]
+                  - cell [ref=f57e173]
+                  - cell "10/16/2024 12:00AM" [ref=f57e174]
+                  - cell [ref=f57e176]
+                  - cell "No" [ref=f57e177]
+                  - cell [ref=f57e179]
+                  - cell "STARBASE PRODUCTION SITE" [ref=f57e180]
+                  - cell [ref=f57e182]
+                  - cell "Electronic" [ref=f57e183]
+                  - cell [ref=f57e185]
+                  - cell [ref=f57e186]
+                  - cell [ref=f57e188]
+                  - cell "Public" [ref=f57e189]
+                  - cell [ref=f57e191]
+                  - cell [ref=f57e192]:
+                    - link [ref=f57e194] [cursor=pointer]:
+                      - /url: /cs/idcplg?IdcService=TCEQ_EXTERNAL_SEARCH_DOC_INFO&dID=8288996&dDocName=7337340&SearchID=20746268&searchType=External&coreContentOnly=1&IsExternalSearch=1
+                      - img "Info" [ref=f57e195]
+                - row [ref=f57e196]:
+                  - cell [ref=f57e197]:
+                    - generic [ref=f57e199]:
+                      - generic: Select '7337342'
+                      - checkbox "Select '7337342'" [ref=f57e200]
+                  - cell [ref=f57e201]
+                  - cell [ref=f57e202]:
+                    - link "7337342" [ref=f57e204] [cursor=pointer]:
+                      - /url: /cs/idcplg?IdcService=TCEQ_EXTERNAL_SEARCH_GET_FILE&dID=8288998&Rendition=Web&SearchID=20746268&searchType=External
+                  - cell [ref=f57e205]
+                  - cell "AIR / New Source Review Permit" [ref=f57e206]
+                  - cell [ref=f57e208]
+                  - cell "155544" [ref=f57e209]
+                  - cell [ref=f57e211]
+                  - cell "381827" [ref=f57e212]
+                  - cell [ref=f57e214]
+                  - cell "Permits" [ref=f57e215]
+                  - cell [ref=f57e217]
+                  - cell "Initial Application" [ref=f57e218]
+                  - cell [ref=f57e220]
+                  - cell "10/16/2024 12:00AM" [ref=f57e221]
+                  - cell [ref=f57e223]
+                  - cell "10/16/2024 12:00AM" [ref=f57e224]
+                  - cell [ref=f57e226]
+                  - cell "No" [ref=f57e227]
+                  - cell [ref=f57e229]
+                  - cell "STARBASE PRODUCTION SITE" [ref=f57e230]
+                  - cell [ref=f57e232]
+                  - cell "Electronic" [ref=f57e233]
+                  - cell [ref=f57e235]
+                  - cell [ref=f57e236]
+                  - cell [ref=f57e238]
+                  - cell "Public" [ref=f57e239]
+                  - cell [ref=f57e241]
+                  - cell [ref=f57e242]:
+                    - link [ref=f57e244] [cursor=pointer]:
+                      - /url: /cs/idcplg?IdcService=TCEQ_EXTERNAL_SEARCH_DOC_INFO&dID=8288998&dDocName=7337342&SearchID=20746268&searchType=External&coreContentOnly=1&IsExternalSearch=1
+                      - img "Info" [ref=f57e245]
+                - row [ref=f57e246]:
+                  - cell [ref=f57e247]:
+                    - generic [ref=f57e249]:
+                      - generic: Select '6454142'
+                      - checkbox "Select '6454142'" [ref=f57e250]
+                  - cell [ref=f57e251]
+                  - cell [ref=f57e252]:
+                    - link "6454142" [ref=f57e254] [cursor=pointer]:
+                      - /url: /cs/idcplg?IdcService=TCEQ_EXTERNAL_SEARCH_GET_FILE&dID=7143978&Rendition=Web&SearchID=20746268&searchType=External
+                  - cell [ref=f57e255]
+                  - cell "AIR / New Source Review Permit" [ref=f57e256]
+                  - cell [ref=f57e258]
+                  - cell "156011" [ref=f57e259]
+                  - cell [ref=f57e261]
+                  - cell [ref=f57e262]
+                  - cell [ref=f57e264]
+                  - cell "Permits" [ref=f57e265]
+                  - cell [ref=f57e267]
+                  - cell "Final Action" [ref=f57e268]
+                  - cell [ref=f57e270]
+                  - cell "11/19/2022 12:00AM" [ref=f57e271]
+                  - cell [ref=f57e273]
+                  - cell "11/19/2022 12:00AM" [ref=f57e274]
+                  - cell [ref=f57e276]
+                  - cell "No" [ref=f57e277]
+                  - cell [ref=f57e279]
+                  - cell "STARBASE PRODUCTION SITE" [ref=f57e280]
+                  - cell [ref=f57e282]
+                  - cell "Electronic" [ref=f57e283]
+                  - cell [ref=f57e285]
+                  - cell [ref=f57e286]
+                  - cell [ref=f57e288]
+                  - cell "Public" [ref=f57e289]
+                  - cell [ref=f57e291]
+                  - cell [ref=f57e292]:
+                    - link [ref=f57e294] [cursor=pointer]:
+                      - /url: /cs/idcplg?IdcService=TCEQ_EXTERNAL_SEARCH_DOC_INFO&dID=7143978&dDocName=6454142&SearchID=20746268&searchType=External&coreContentOnly=1&IsExternalSearch=1
+                      - img "Info" [ref=f57e295]
+                - row [ref=f57e296]:
+                  - cell [ref=f57e297]:
+                    - generic [ref=f57e299]:
+                      - generic: Select '7486492'
+                      - checkbox "Select '7486492'" [ref=f57e300]
+                  - cell [ref=f57e301]
+                  - cell [ref=f57e302]:
+                    - link "7486492" [ref=f57e304] [cursor=pointer]:
+                      - /url: /cs/idcplg?IdcService=TCEQ_EXTERNAL_SEARCH_GET_FILE&dID=8504201&Rendition=Web&SearchID=20746268&searchType=External
+                  - cell [ref=f57e305]
+                  - cell "AIR / New Source Review Permit" [ref=f57e306]
+                  - cell [ref=f57e308]
+                  - cell "156011" [ref=f57e309]
+                  - cell [ref=f57e311]
+                  - cell [ref=f57e312]
+                  - cell [ref=f57e314]
+                  - cell "Permits" [ref=f57e315]
+                  - cell [ref=f57e317]
+                  - cell "Final Action" [ref=f57e318]
+                  - cell [ref=f57e320]
+                  - cell "12/20/2024 12:00AM" [ref=f57e321]
+                  - cell [ref=f57e323]
+                  - cell "12/20/2024 12:00AM" [ref=f57e324]
+                  - cell [ref=f57e326]
+                  - cell "No" [ref=f57e327]
+                  - cell [ref=f57e329]
+                  - cell "STARBASE PRODUCTION SITE" [ref=f57e330]
+                  - cell [ref=f57e332]
+                  - cell "Electronic" [ref=f57e333]
+                  - cell [ref=f57e335]
+                  - cell [ref=f57e336]
+                  - cell [ref=f57e338]
+                  - cell "Public" [ref=f57e339]
+                  - cell [ref=f57e341]
+                  - cell [ref=f57e342]:
+                    - link [ref=f57e344] [cursor=pointer]:
+                      - /url: /cs/idcplg?IdcService=TCEQ_EXTERNAL_SEARCH_DOC_INFO&dID=8504201&dDocName=7486492&SearchID=20746268&searchType=External&coreContentOnly=1&IsExternalSearch=1
+                      - img "Info" [ref=f57e345]
+                - row [ref=f57e346]:
+                  - cell [ref=f57e347]:
+                    - generic [ref=f57e349]:
+                      - generic: Select '7486493'
+                      - checkbox "Select '7486493'" [ref=f57e350]
+                  - cell [ref=f57e351]
+                  - cell [ref=f57e352]:
+                    - link "7486493" [ref=f57e354] [cursor=pointer]:
+                      - /url: /cs/idcplg?IdcService=TCEQ_EXTERNAL_SEARCH_GET_FILE&dID=8504202&Rendition=Web&SearchID=20746268&searchType=External
+                  - cell [ref=f57e355]
+                  - cell "AIR / New Source Review Permit" [ref=f57e356]
+                  - cell [ref=f57e358]
+                  - cell "156011" [ref=f57e359]
+                  - cell [ref=f57e361]
+                  - cell [ref=f57e362]
+                  - cell [ref=f57e364]
+                  - cell "Permits" [ref=f57e365]
+                  - cell [ref=f57e367]
+                  - cell "Initial Application" [ref=f57e368]
+                  - cell [ref=f57e370]
+                  - cell "12/20/2024 12:00AM" [ref=f57e371]
+                  - cell [ref=f57e373]
+                  - cell "12/20/2024 12:00AM" [ref=f57e374]
+                  - cell [ref=f57e376]
+                  - cell "No" [ref=f57e377]
+                  - cell [ref=f57e379]
+                  - cell "STARBASE PRODUCTION SITE" [ref=f57e380]
+                  - cell [ref=f57e382]
+                  - cell "Electronic" [ref=f57e383]
+                  - cell [ref=f57e385]
+                  - cell [ref=f57e386]
+                  - cell [ref=f57e388]
+                  - cell "Public" [ref=f57e389]
+                  - cell [ref=f57e391]
+                  - cell [ref=f57e392]:
+                    - link [ref=f57e394] [cursor=pointer]:
+                      - /url: /cs/idcplg?IdcService=TCEQ_EXTERNAL_SEARCH_DOC_INFO&dID=8504202&dDocName=7486493&SearchID=20746268&searchType=External&coreContentOnly=1&IsExternalSearch=1
+                      - img "Info" [ref=f57e395]
+                - row [ref=f57e396]:
+                  - cell [ref=f57e397]:
+                    - generic [ref=f57e399]:
+                      - generic: Select '7695241'
+                      - checkbox "Select '7695241'" [ref=f57e400]
+                  - cell [ref=f57e401]
+                  - cell [ref=f57e402]:
+                    - link "7695241" [ref=f57e404] [cursor=pointer]:
+                      - /url: /cs/idcplg?IdcService=TCEQ_EXTERNAL_SEARCH_GET_FILE&dID=8803677&Rendition=Web&SearchID=20746268&searchType=External
+                  - cell [ref=f57e405]
+                  - cell "AIR / New Source Review Permit" [ref=f57e406]
+                  - cell [ref=f57e408]
+                  - cell "156011" [ref=f57e409]
+                  - cell [ref=f57e411]
+                  - cell "392058" [ref=f57e412]
+                  - cell [ref=f57e414]
+                  - cell "Permits" [ref=f57e415]
+                  - cell [ref=f57e417]
+                  - cell "Final Action" [ref=f57e418]
+                  - cell [ref=f57e420]
+                  - cell "4/18/2025 12:00AM" [ref=f57e421]
+                  - cell [ref=f57e423]
+                  - cell "4/18/2025 12:00AM" [ref=f57e424]
+                  - cell [ref=f57e426]
+                  - cell "No" [ref=f57e427]
+                  - cell [ref=f57e429]
+                  - cell "STARBASE PRODUCTION SITE" [ref=f57e430]
+                  - cell [ref=f57e432]
+                  - cell "Electronic" [ref=f57e433]
+                  - cell [ref=f57e435]
+                  - cell [ref=f57e436]
+                  - cell [ref=f57e438]
+                  - cell "Public" [ref=f57e439]
+                  - cell [ref=f57e441]
+                  - cell [ref=f57e442]:
+                    - link [ref=f57e444] [cursor=pointer]:
+                      - /url: /cs/idcplg?IdcService=TCEQ_EXTERNAL_SEARCH_DOC_INFO&dID=8803677&dDocName=7695241&SearchID=20746268&searchType=External&coreContentOnly=1&IsExternalSearch=1
+                      - img "Info" [ref=f57e445]
+                - row [ref=f57e446]:
+                  - cell [ref=f57e447]:
+                    - generic [ref=f57e449]:
+                      - generic: Select '7695242'
+                      - checkbox "Select '7695242'" [ref=f57e450]
+                  - cell [ref=f57e451]
+                  - cell [ref=f57e452]:
+                    - link "7695242" [ref=f57e454] [cursor=pointer]:
+                      - /url: /cs/idcplg?IdcService=TCEQ_EXTERNAL_SEARCH_GET_FILE&dID=8803678&Rendition=Web&SearchID=20746268&searchType=External
+                  - cell [ref=f57e455]
+                  - cell "AIR / New Source Review Permit" [ref=f57e456]
+                  - cell [ref=f57e458]
+                  - cell "156011" [ref=f57e459]
+                  - cell [ref=f57e461]
+                  - cell "392058" [ref=f57e462]
+                  - cell [ref=f57e464]
+                  - cell "Permits" [ref=f57e465]
+                  - cell [ref=f57e467]
+                  - cell "Initial Application" [ref=f57e468]
+                  - cell [ref=f57e470]
+                  - cell "4/18/2025 12:00AM" [ref=f57e471]
+                  - cell [ref=f57e473]
+                  - cell "4/18/2025 12:00AM" [ref=f57e474]
+                  - cell [ref=f57e476]
+                  - cell "No" [ref=f57e477]
+                  - cell [ref=f57e479]
+                  - cell "STARBASE PRODUCTION SITE" [ref=f57e480]
+                  - cell [ref=f57e482]
+                  - cell "Electronic" [ref=f57e483]
+                  - cell [ref=f57e485]
+                  - cell [ref=f57e486]
+                  - cell [ref=f57e488]
+                  - cell "Public" [ref=f57e489]
+                  - cell [ref=f57e491]
+                  - cell [ref=f57e492]:
+                    - link [ref=f57e494] [cursor=pointer]:
+                      - /url: /cs/idcplg?IdcService=TCEQ_EXTERNAL_SEARCH_DOC_INFO&dID=8803678&dDocName=7695242&SearchID=20746268&searchType=External&coreContentOnly=1&IsExternalSearch=1
+                      - img "Info" [ref=f57e495]
+                - row [ref=f57e496]:
+                  - cell [ref=f57e497]:
+                    - generic [ref=f57e499]:
+                      - generic: Select '7337369'
+                      - checkbox "Select '7337369'" [ref=f57e500]
+                  - cell [ref=f57e501]
+                  - cell [ref=f57e502]:
+                    - link "7337369" [ref=f57e504] [cursor=pointer]:
+                      - /url: /cs/idcplg?IdcService=TCEQ_EXTERNAL_SEARCH_GET_FILE&dID=8289025&Rendition=Web&SearchID=20746268&searchType=External
+                  - cell [ref=f57e505]
+                  - cell "AIR / New Source Review Permit" [ref=f57e506]
+                  - cell [ref=f57e508]
+                  - cell "161598" [ref=f57e509]
+                  - cell [ref=f57e511]
+                  - cell "381827" [ref=f57e512]
+                  - cell [ref=f57e514]
+                  - cell "Permits" [ref=f57e515]
+                  - cell [ref=f57e517]
+                  - cell "Final Action" [ref=f57e518]
+                  - cell [ref=f57e520]
+                  - cell "10/16/2024 12:00AM" [ref=f57e521]
+                  - cell [ref=f57e523]
+                  - cell "10/16/2024 12:00AM" [ref=f57e524]
+                  - cell [ref=f57e526]
+                  - cell "No" [ref=f57e527]
+                  - cell [ref=f57e529]
+                  - cell "STARBASE PRODUCTION SITE" [ref=f57e530]
+                  - cell [ref=f57e532]
+                  - cell "Electronic" [ref=f57e533]
+                  - cell [ref=f57e535]
+                  - cell [ref=f57e536]
+                  - cell [ref=f57e538]
+                  - cell "Public" [ref=f57e539]
+                  - cell [ref=f57e541]
+                  - cell [ref=f57e542]:
+                    - link [ref=f57e544] [cursor=pointer]:
+                      - /url: /cs/idcplg?IdcService=TCEQ_EXTERNAL_SEARCH_DOC_INFO&dID=8289025&dDocName=7337369&SearchID=20746268&searchType=External&coreContentOnly=1&IsExternalSearch=1
+                      - img "Info" [ref=f57e545]
+                - row [ref=f57e546]:
+                  - cell [ref=f57e547]:
+                    - generic [ref=f57e549]:
+                      - generic: Select '7337371'
+                      - checkbox "Select '7337371'" [ref=f57e550]
+                  - cell [ref=f57e551]
+                  - cell [ref=f57e552]:
+                    - link "7337371" [ref=f57e554] [cursor=pointer]:
+                      - /url: /cs/idcplg?IdcService=TCEQ_EXTERNAL_SEARCH_GET_FILE&dID=8289027&Rendition=Web&SearchID=20746268&searchType=External
+                  - cell [ref=f57e555]
+                  - cell "AIR / New Source Review Permit" [ref=f57e556]
+                  - cell [ref=f57e558]
+                  - cell "161598" [ref=f57e559]
+                  - cell [ref=f57e561]
+                  - cell "381827" [ref=f57e562]
+                  - cell [ref=f57e564]
+                  - cell "Permits" [ref=f57e565]
+                  - cell [ref=f57e567]
+                  - cell "Initial Application" [ref=f57e568]
+                  - cell [ref=f57e570]
+                  - cell "10/16/2024 12:00AM" [ref=f57e571]
+                  - cell [ref=f57e573]
+                  - cell "10/16/2024 12:00AM" [ref=f57e574]
+                  - cell [ref=f57e576]
+                  - cell "No" [ref=f57e577]
+                  - cell [ref=f57e579]
+                  - cell "STARBASE PRODUCTION SITE" [ref=f57e580]
+                  - cell [ref=f57e582]
+                  - cell "Electronic" [ref=f57e583]
+                  - cell [ref=f57e585]
+                  - cell [ref=f57e586]
+                  - cell [ref=f57e588]
+                  - cell "Public" [ref=f57e589]
+                  - cell [ref=f57e591]
+                  - cell [ref=f57e592]:
+                    - link [ref=f57e594] [cursor=pointer]:
+                      - /url: /cs/idcplg?IdcService=TCEQ_EXTERNAL_SEARCH_DOC_INFO&dID=8289027&dDocName=7337371&SearchID=20746268&searchType=External&coreContentOnly=1&IsExternalSearch=1
+                      - img "Info" [ref=f57e595]
+                - row [ref=f57e596]:
+                  - cell [ref=f57e597]:
+                    - generic [ref=f57e599]:
+                      - generic: Select '7487426'
+                      - checkbox "Select '7487426'" [ref=f57e600]
+                  - cell [ref=f57e601]
+                  - cell [ref=f57e602]:
+                    - link "7487426" [ref=f57e604] [cursor=pointer]:
+                      - /url: /cs/idcplg?IdcService=TCEQ_EXTERNAL_SEARCH_GET_FILE&dID=8505136&Rendition=Web&SearchID=20746268&searchType=External
+                  - cell [ref=f57e605]
+                  - cell "AIR / New Source Review Permit" [ref=f57e606]
+                  - cell [ref=f57e608]
+                  - cell "163215" [ref=f57e609]
+                  - cell [ref=f57e611]
+                  - cell [ref=f57e612]
+                  - cell [ref=f57e614]
+                  - cell "Permits" [ref=f57e615]
+                  - cell [ref=f57e617]
+                  - cell "Final Action" [ref=f57e618]
+                  - cell [ref=f57e620]
+                  - cell "12/20/2024 12:00AM" [ref=f57e621]
+                  - cell [ref=f57e623]
+                  - cell "12/20/2024 12:00AM" [ref=f57e624]
+                  - cell [ref=f57e626]
+                  - cell "No" [ref=f57e627]
+                  - cell [ref=f57e629]
+                  - cell "STARBASE PRODUCTION SITE" [ref=f57e630]
+                  - cell [ref=f57e632]
+                  - cell "Electronic" [ref=f57e633]
+                  - cell [ref=f57e635]
+                  - cell [ref=f57e636]
+                  - cell [ref=f57e638]
+                  - cell "Public" [ref=f57e639]
+                  - cell [ref=f57e641]
+                  - cell [ref=f57e642]:
+                    - link [ref=f57e644] [cursor=pointer]:
+                      - /url: /cs/idcplg?IdcService=TCEQ_EXTERNAL_SEARCH_DOC_INFO&dID=8505136&dDocName=7487426&SearchID=20746268&searchType=External&coreContentOnly=1&IsExternalSearch=1
+                      - img "Info" [ref=f57e645]
+                - row [ref=f57e646]:
+                  - cell [ref=f57e647]:
+                    - generic [ref=f57e649]:
+                      - generic: Select '8149024'
+                      - checkbox "Select '8149024'" [ref=f57e650]
+                  - cell [ref=f57e651]
+                  - cell [ref=f57e652]:
+                    - link "8149024" [ref=f57e654] [cursor=pointer]:
+                      - /url: /cs/idcplg?IdcService=TCEQ_EXTERNAL_SEARCH_GET_FILE&dID=9391499&Rendition=Web&SearchID=20746268&searchType=External
+                  - cell [ref=f57e655]
+                  - cell "AIR / New Source Review Permit" [ref=f57e656]
+                  - cell [ref=f57e658]
+                  - cell "163215" [ref=f57e659]
+                  - cell [ref=f57e661]
+                  - cell [ref=f57e662]
+                  - cell [ref=f57e664]
+                  - cell "Permits" [ref=f57e665]
+                  - cell [ref=f57e667]
+                  - cell "Final Action" [ref=f57e668]
+                  - cell [ref=f57e670]
+                  - cell "12/23/2025 12:00AM" [ref=f57e671]
+                  - cell [ref=f57e673]
+                  - cell "12/23/2025 12:00AM" [ref=f57e674]
+                  - cell [ref=f57e676]
+                  - cell "No" [ref=f57e677]
+                  - cell [ref=f57e679]
+                  - cell "STARBASE PRODUCTION SITE" [ref=f57e680]
+                  - cell [ref=f57e682]
+                  - cell "Electronic" [ref=f57e683]
+                  - cell [ref=f57e685]
+                  - cell [ref=f57e686]
+                  - cell [ref=f57e688]
+                  - cell "Public" [ref=f57e689]
+                  - cell [ref=f57e691]
+                  - cell [ref=f57e692]:
+                    - link [ref=f57e694] [cursor=pointer]:
+                      - /url: /cs/idcplg?IdcService=TCEQ_EXTERNAL_SEARCH_DOC_INFO&dID=9391499&dDocName=8149024&SearchID=20746268&searchType=External&coreContentOnly=1&IsExternalSearch=1
+                      - img "Info" [ref=f57e695]
+                - row [ref=f57e696]:
+                  - cell [ref=f57e697]:
+                    - generic [ref=f57e699]:
+                      - generic: Select '7487427'
+                      - checkbox "Select '7487427'" [ref=f57e700]
+                  - cell [ref=f57e701]
+                  - cell [ref=f57e702]:
+                    - link "7487427" [ref=f57e704] [cursor=pointer]:
+                      - /url: /cs/idcplg?IdcService=TCEQ_EXTERNAL_SEARCH_GET_FILE&dID=8505137&Rendition=Web&SearchID=20746268&searchType=External
+                  - cell [ref=f57e705]
+                  - cell "AIR / New Source Review Permit" [ref=f57e706]
+                  - cell [ref=f57e708]
+                  - cell "163215" [ref=f57e709]
+                  - cell [ref=f57e711]
+                  - cell [ref=f57e712]
+                  - cell [ref=f57e714]
+                  - cell "Permits" [ref=f57e715]
+                  - cell [ref=f57e717]
+                  - cell "Initial Application" [ref=f57e718]
+                  - cell [ref=f57e720]
+                  - cell "12/20/2024 12:00AM" [ref=f57e721]
+                  - cell [ref=f57e723]
+                  - cell "12/20/2024 12:00AM" [ref=f57e724]
+                  - cell [ref=f57e726]
+                  - cell "No" [ref=f57e727]
+                  - cell [ref=f57e729]
+                  - cell "STARBASE PRODUCTION SITE" [ref=f57e730]
+                  - cell [ref=f57e732]
+                  - cell "Electronic" [ref=f57e733]
+                  - cell [ref=f57e735]
+                  - cell [ref=f57e736]
+                  - cell [ref=f57e738]
+                  - cell "Public" [ref=f57e739]
+                  - cell [ref=f57e741]
+                  - cell [ref=f57e742]:
+                    - link [ref=f57e744] [cursor=pointer]:
+                      - /url: /cs/idcplg?IdcService=TCEQ_EXTERNAL_SEARCH_DOC_INFO&dID=8505137&dDocName=7487427&SearchID=20746268&searchType=External&coreContentOnly=1&IsExternalSearch=1
+                      - img "Info" [ref=f57e745]
+                - row [ref=f57e746]:
+                  - cell [ref=f57e747]:
+                    - generic [ref=f57e749]:
+                      - generic: Select '8149025'
+                      - checkbox "Select '8149025'" [ref=f57e750]
+                  - cell [ref=f57e751]
+                  - cell [ref=f57e752]:
+                    - link "8149025" [ref=f57e754] [cursor=pointer]:
+                      - /url: /cs/idcplg?IdcService=TCEQ_EXTERNAL_SEARCH_GET_FILE&dID=9391500&Rendition=Web&SearchID=20746268&searchType=External
+                  - cell [ref=f57e755]
+                  - cell "AIR / New Source Review Permit" [ref=f57e756]
+                  - cell [ref=f57e758]
+                  - cell "163215" [ref=f57e759]
+                  - cell [ref=f57e761]
+                  - cell [ref=f57e762]
+                  - cell [ref=f57e764]
+                  - cell "Permits" [ref=f57e765]
+                  - cell [ref=f57e767]
+                  - cell "Initial Application" [ref=f57e768]
+                  - cell [ref=f57e770]
+                  - cell "12/23/2025 12:00AM" [ref=f57e771]
+                  - cell [ref=f57e773]
+                  - cell "12/23/2025 12:00AM" [ref=f57e774]
+                  - cell [ref=f57e776]
+                  - cell "No" [ref=f57e777]
+                  - cell [ref=f57e779]
+                  - cell "STARBASE PRODUCTION SITE" [ref=f57e780]
+                  - cell [ref=f57e782]
+                  - cell "Electronic" [ref=f57e783]
+                  - cell [ref=f57e785]
+                  - cell [ref=f57e786]
+                  - cell [ref=f57e788]
+                  - cell "Public" [ref=f57e789]
+                  - cell [ref=f57e791]
+                  - cell [ref=f57e792]:
+                    - link [ref=f57e794] [cursor=pointer]:
+                      - /url: /cs/idcplg?IdcService=TCEQ_EXTERNAL_SEARCH_DOC_INFO&dID=9391500&dDocName=8149025&SearchID=20746268&searchType=External&coreContentOnly=1&IsExternalSearch=1
+                      - img "Info" [ref=f57e795]
+                - row [ref=f57e796]:
+                  - cell [ref=f57e797]:
+                    - generic [ref=f57e799]:
+                      - generic: Select '7487688'
+                      - checkbox "Select '7487688'" [ref=f57e800]
+                  - cell [ref=f57e801]
+                  - cell [ref=f57e802]:
+                    - link "7487688" [ref=f57e804] [cursor=pointer]:
+                      - /url: /cs/idcplg?IdcService=TCEQ_EXTERNAL_SEARCH_GET_FILE&dID=8505398&Rendition=Web&SearchID=20746268&searchType=External
+                  - cell [ref=f57e805]
+                  - cell "AIR / New Source Review Permit" [ref=f57e806]
+                  - cell [ref=f57e808]
+                  - cell "165259" [ref=f57e809]
+                  - cell [ref=f57e811]
+                  - cell [ref=f57e812]
+                  - cell [ref=f57e814]
+                  - cell "Permits" [ref=f57e815]
+                  - cell [ref=f57e817]
+                  - cell "Final Action" [ref=f57e818]
+                  - cell [ref=f57e820]
+                  - cell "12/20/2024 12:00AM" [ref=f57e821]
+                  - cell [ref=f57e823]
+                  - cell "12/20/2024 12:00AM" [ref=f57e824]
+                  - cell [ref=f57e826]
+                  - cell "No" [ref=f57e827]
+                  - cell [ref=f57e829]
+                  - cell "STARBASE PRODUCTION SITE" [ref=f57e830]
+                  - cell [ref=f57e832]
+                  - cell "Electronic" [ref=f57e833]
+                  - cell [ref=f57e835]
+                  - cell [ref=f57e836]
+                  - cell [ref=f57e838]
+                  - cell "Public" [ref=f57e839]
+                  - cell [ref=f57e841]
+                  - cell [ref=f57e842]:
+                    - link [ref=f57e844] [cursor=pointer]:
+                      - /url: /cs/idcplg?IdcService=TCEQ_EXTERNAL_SEARCH_DOC_INFO&dID=8505398&dDocName=7487688&SearchID=20746268&searchType=External&coreContentOnly=1&IsExternalSearch=1
+                      - img "Info" [ref=f57e845]
+                - row [ref=f57e846]:
+                  - cell [ref=f57e847]:
+                    - generic [ref=f57e849]:
+                      - generic: Select '7487689'
+                      - checkbox "Select '7487689'" [ref=f57e850]
+                  - cell [ref=f57e851]
+                  - cell [ref=f57e852]:
+                    - link "7487689" [ref=f57e854] [cursor=pointer]:
+                      - /url: /cs/idcplg?IdcService=TCEQ_EXTERNAL_SEARCH_GET_FILE&dID=8505399&Rendition=Web&SearchID=20746268&searchType=External
+                  - cell [ref=f57e855]
+                  - cell "AIR / New Source Review Permit" [ref=f57e856]
+                  - cell [ref=f57e858]
+                  - cell "165259" [ref=f57e859]
+                  - cell [ref=f57e861]
+                  - cell [ref=f57e862]
+                  - cell [ref=f57e864]
+                  - cell "Permits" [ref=f57e865]
+                  - cell [ref=f57e867]
+                  - cell "Initial Application" [ref=f57e868]
+                  - cell [ref=f57e870]
+                  - cell "12/20/2024 12:00AM" [ref=f57e871]
+                  - cell [ref=f57e873]
+                  - cell "12/20/2024 12:00AM" [ref=f57e874]
+                  - cell [ref=f57e876]
+                  - cell "No" [ref=f57e877]
+                  - cell [ref=f57e879]
+                  - cell "STARBASE PRODUCTION SITE" [ref=f57e880]
+                  - cell [ref=f57e882]
+                  - cell "Electronic" [ref=f57e883]
+                  - cell [ref=f57e885]
+                  - cell [ref=f57e886]
+                  - cell [ref=f57e888]
+                  - cell "Public" [ref=f57e889]
+                  - cell [ref=f57e891]
+                  - cell [ref=f57e892]:
+                    - link [ref=f57e894] [cursor=pointer]:
+                      - /url: /cs/idcplg?IdcService=TCEQ_EXTERNAL_SEARCH_DOC_INFO&dID=8505399&dDocName=7487689&SearchID=20746268&searchType=External&coreContentOnly=1&IsExternalSearch=1
+                      - img "Info" [ref=f57e895]
+                - row [ref=f57e896]:
+                  - cell [ref=f57e897]:
+                    - generic [ref=f57e899]:
+                      - generic: Select '7916030'
+                      - checkbox "Select '7916030'" [ref=f57e900]
+                  - cell [ref=f57e901]
+                  - cell [ref=f57e902]:
+                    - link "7916030" [ref=f57e904] [cursor=pointer]:
+                      - /url: /cs/idcplg?IdcService=TCEQ_EXTERNAL_SEARCH_GET_FILE&dID=9119293&Rendition=Web&SearchID=20746268&searchType=External
+                  - cell [ref=f57e905]
+                  - cell "AIR / New Source Review Permit" [ref=f57e906]
+                  - cell [ref=f57e908]
+                  - cell "165259" [ref=f57e909]
+                  - cell [ref=f57e911]
+                  - cell "398328" [ref=f57e912]
+                  - cell [ref=f57e914]
+                  - cell "Permits" [ref=f57e915]
+                  - cell [ref=f57e917]
+                  - cell "Final Action" [ref=f57e918]
+                  - cell [ref=f57e920]
+                  - cell "9/18/2025 12:00AM" [ref=f57e921]
+                  - cell [ref=f57e923]
+                  - cell "9/18/2025 12:00AM" [ref=f57e924]
+                  - cell [ref=f57e926]
+                  - cell "No" [ref=f57e927]
+                  - cell [ref=f57e929]
+                  - cell "STARBASE PRODUCTION SITE" [ref=f57e930]
+                  - cell [ref=f57e932]
+                  - cell "Electronic" [ref=f57e933]
+                  - cell [ref=f57e935]
+                  - cell [ref=f57e936]
+                  - cell [ref=f57e938]
+                  - cell "Public" [ref=f57e939]
+                  - cell [ref=f57e941]
+                  - cell [ref=f57e942]:
+                    - link [ref=f57e944] [cursor=pointer]:
+                      - /url: /cs/idcplg?IdcService=TCEQ_EXTERNAL_SEARCH_DOC_INFO&dID=9119293&dDocName=7916030&SearchID=20746268&searchType=External&coreContentOnly=1&IsExternalSearch=1
+                      - img "Info" [ref=f57e945]
+                - row [ref=f57e946]:
+                  - cell [ref=f57e947]:
+                    - generic [ref=f57e949]:
+                      - generic: Select '7916031'
+                      - checkbox "Select '7916031'" [ref=f57e950]
+                  - cell [ref=f57e951]
+                  - cell [ref=f57e952]:
+                    - link "7916031" [ref=f57e954] [cursor=pointer]:
+                      - /url: /cs/idcplg?IdcService=TCEQ_EXTERNAL_SEARCH_GET_FILE&dID=9119294&Rendition=Web&SearchID=20746268&searchType=External
+                  - cell [ref=f57e955]
+                  - cell "AIR / New Source Review Permit" [ref=f57e956]
+                  - cell [ref=f57e958]
+                  - cell "165259" [ref=f57e959]
+                  - cell [ref=f57e961]
+                  - cell "398328" [ref=f57e962]
+                  - cell [ref=f57e964]
+                  - cell "Permits" [ref=f57e965]
+                  - cell [ref=f57e967]
+                  - cell "Initial Application" [ref=f57e968]
+                  - cell [ref=f57e970]
+                  - cell "9/18/2025 12:00AM" [ref=f57e971]
+                  - cell [ref=f57e973]
+                  - cell "9/18/2025 12:00AM" [ref=f57e974]
+                  - cell [ref=f57e976]
+                  - cell "No" [ref=f57e977]
+                  - cell [ref=f57e979]
+                  - cell "STARBASE PRODUCTION SITE" [ref=f57e980]
+                  - cell [ref=f57e982]
+                  - cell "Electronic" [ref=f57e983]
+                  - cell [ref=f57e985]
+                  - cell [ref=f57e986]
+                  - cell [ref=f57e988]
+                  - cell "Public" [ref=f57e989]
+                  - cell [ref=f57e991]
+                  - cell [ref=f57e992]:
+                    - link [ref=f57e994] [cursor=pointer]:
+                      - /url: /cs/idcplg?IdcService=TCEQ_EXTERNAL_SEARCH_DOC_INFO&dID=9119294&dDocName=7916031&SearchID=20746268&searchType=External&coreContentOnly=1&IsExternalSearch=1
+                      - img "Info" [ref=f57e995]
+                - row [ref=f57e996]:
+                  - cell [ref=f57e997]:
+                    - generic [ref=f57e999]:
+                      - generic: Select '7487760'
+                      - checkbox "Select '7487760'" [ref=f57e1000]
+                  - cell [ref=f57e1001]
+                  - cell [ref=f57e1002]:
+                    - link "7487760" [ref=f57e1004] [cursor=pointer]:
+                      - /url: /cs/idcplg?IdcService=TCEQ_EXTERNAL_SEARCH_GET_FILE&dID=8505470&Rendition=Web&SearchID=20746268&searchType=External
+                  - cell [ref=f57e1005]
+                  - cell "AIR / New Source Review Permit" [ref=f57e1006]
+                  - cell [ref=f57e1008]
+                  - cell "166086" [ref=f57e1009]
+                  - cell [ref=f57e1011]
+                  - cell [ref=f57e1012]
+                  - cell [ref=f57e1014]
+                  - cell "Permits" [ref=f57e1015]
+                  - cell [ref=f57e1017]
+                  - cell "Final Action" [ref=f57e1018]
+                  - cell [ref=f57e1020]
+                  - cell "12/20/2024 12:00AM" [ref=f57e1021]
+                  - cell [ref=f57e1023]
+                  - cell "12/20/2024 12:00AM" [ref=f57e1024]
+                  - cell [ref=f57e1026]
+                  - cell "No" [ref=f57e1027]
+                  - cell [ref=f57e1029]
+                  - cell "STARBASE PRODUCTION SITE" [ref=f57e1030]
+                  - cell [ref=f57e1032]
+                  - cell "Electronic" [ref=f57e1033]
+                  - cell [ref=f57e1035]
+                  - cell [ref=f57e1036]
+                  - cell [ref=f57e1038]
+                  - cell "Public" [ref=f57e1039]
+                  - cell [ref=f57e1041]
+                  - cell [ref=f57e1042]:
+                    - link [ref=f57e1044] [cursor=pointer]:
+                      - /url: /cs/idcplg?IdcService=TCEQ_EXTERNAL_SEARCH_DOC_INFO&dID=8505470&dDocName=7487760&SearchID=20746268&searchType=External&coreContentOnly=1&IsExternalSearch=1
+                      - img "Info" [ref=f57e1045]
+                - row [ref=f57e1046]:
+                  - cell [ref=f57e1047]:
+                    - generic [ref=f57e1049]:
+                      - generic: Select '7487761'
+                      - checkbox "Select '7487761'" [ref=f57e1050]
+                  - cell [ref=f57e1051]
+                  - cell [ref=f57e1052]:
+                    - link "7487761" [ref=f57e1054] [cursor=pointer]:
+                      - /url: /cs/idcplg?IdcService=TCEQ_EXTERNAL_SEARCH_GET_FILE&dID=8505471&Rendition=Web&SearchID=20746268&searchType=External
+                  - cell [ref=f57e1055]
+                  - cell "AIR / New Source Review Permit" [ref=f57e1056]
+                  - cell [ref=f57e1058]
+                  - cell "166086" [ref=f57e1059]
+                  - cell [ref=f57e1061]
+                  - cell [ref=f57e1062]
+                  - cell [ref=f57e1064]
+                  - cell "Permits" [ref=f57e1065]
+                  - cell [ref=f57e1067]
+                  - cell "Initial Application" [ref=f57e1068]
+                  - cell [ref=f57e1070]
+                  - cell "12/20/2024 12:00AM" [ref=f57e1071]
+                  - cell [ref=f57e1073]
+                  - cell "12/20/2024 12:00AM" [ref=f57e1074]
+                  - cell [ref=f57e1076]
+                  - cell "No" [ref=f57e1077]
+                  - cell [ref=f57e1079]
+                  - cell "STARBASE PRODUCTION SITE" [ref=f57e1080]
+                  - cell [ref=f57e1082]
+                  - cell "Electronic" [ref=f57e1083]
+                  - cell [ref=f57e1085]
+                  - cell [ref=f57e1086]
+                  - cell [ref=f57e1088]
+                  - cell "Public" [ref=f57e1089]
+                  - cell [ref=f57e1091]
+                  - cell [ref=f57e1092]:
+                    - link [ref=f57e1094] [cursor=pointer]:
+                      - /url: /cs/idcplg?IdcService=TCEQ_EXTERNAL_SEARCH_DOC_INFO&dID=8505471&dDocName=7487761&SearchID=20746268&searchType=External&coreContentOnly=1&IsExternalSearch=1
+                      - img "Info" [ref=f57e1095]
+                - row [ref=f57e1096]:
+                  - cell [ref=f57e1097]:
+                    - generic [ref=f57e1099]:
+                      - generic: Select '6436960'
+                      - checkbox "Select '6436960'" [ref=f57e1100]
+                  - cell [ref=f57e1101]
+                  - cell [ref=f57e1102]:
+                    - link "6436960" [ref=f57e1104] [cursor=pointer]:
+                      - /url: /cs/idcplg?IdcService=TCEQ_EXTERNAL_SEARCH_GET_FILE&dID=7124175&Rendition=Web&SearchID=20746268&searchType=External
+                  - cell [ref=f57e1105]
+                  - cell "AIR / New Source Review Permit" [ref=f57e1106]
+                  - cell [ref=f57e1108]
+                  - cell "166086" [ref=f57e1109]
+                  - cell [ref=f57e1111]
+                  - cell "331911" [ref=f57e1112]
+                  - cell [ref=f57e1114]
+                  - cell "Permits" [ref=f57e1115]
+                  - cell [ref=f57e1117]
+                  - cell "Administrative" [ref=f57e1118]
+                  - cell [ref=f57e1120]
+                  - cell "11/30/2022 12:00AM" [ref=f57e1121]
+                  - cell [ref=f57e1123]
+                  - cell "11/30/2022 12:00AM" [ref=f57e1124]
+                  - cell [ref=f57e1126]
+                  - cell "No" [ref=f57e1127]
+                  - cell [ref=f57e1129]
+                  - cell "STARBASE PRODUCTION SITE" [ref=f57e1130]
+                  - cell [ref=f57e1132]
+                  - cell "Electronic" [ref=f57e1133]
+                  - cell [ref=f57e1135]
+                  - cell [ref=f57e1136]
+                  - cell [ref=f57e1138]
+                  - cell "Public" [ref=f57e1139]
+                  - cell [ref=f57e1141]
+                  - cell [ref=f57e1142]:
+                    - link [ref=f57e1144] [cursor=pointer]:
+                      - /url: /cs/idcplg?IdcService=TCEQ_EXTERNAL_SEARCH_DOC_INFO&dID=7124175&dDocName=6436960&SearchID=20746268&searchType=External&coreContentOnly=1&IsExternalSearch=1
+                      - img "Info" [ref=f57e1145]
+    - table
+    - table [ref=f57e1146]:
+      - rowgroup [ref=f57e1147]:
+        - row [ref=f57e1148]:
+          - cell [ref=f57e1149]
+          - cell "Page" [ref=f57e1150]
+          - cell [ref=f57e1152]:
+            - combobox "Page" [ref=f57e1154]:
+              - option "1" [selected]
+              - option "2"
+              - option "3"
+              - option "4"
+              - option "5"
+              - option "6"
+              - option "7"
+              - option "8"
+              - option "9"
+          - cell "of 9" [ref=f57e1155]
+          - cell [ref=f57e1157]:
+            - link [ref=f57e1158] [cursor=pointer]:
+              - /url: /cs/idcplg?IdcService=TCEQ_PERFORM_SEARCH&QueryText=dSecurityGroup+%3cmatches%3e+%60Public%60%3cAND%3e%28xRegEntName+%3csubstring%3e+%60Starbase%60%29&SortField=dInDate&SortOrder=Desc&ResultCount=20&SearchEngineName=ELASTICSEARCH&SearchQueryFormat=UNIVERSAL&searchFormType=standard&listTemplateId=SearchResultsHeadline&SearchProviders=tceq4avrwccecmp_4444&SortSpec=xRecordSeries%20asc%2cxPrimaryID%20asc%2cxSecondaryID%20asc%2cxInsightDocumentType%20asc%2cdDocTitle%20asc%2cxBeginDate%20asc&type=item&SearchEngineName=ELASTICSEARCH&&IsExternalSearch=1&PageNumber=2&StartRow=21&EndRow=40&columnsString=dDocName,xRecordSeries,xPrimaryID,xSecondaryID,xInsightDocumentType,dDocTitle,xBeginDate,xEndDate,xLitigationHold,xRegEntName,xMedia,xComments,dSecurityGroup&accessID=7859187&newSearch=0
+              - img "Link To More Results" [ref=f57e1159]
+  - table [ref=f57e1160]:
+    - rowgroup [ref=f57e1161]:
+      - row [ref=f57e1162]:
+        - cell [ref=f57e1163]
+      - row [ref=f57e1164]:
+        - cell [ref=f57e1165]
+        - cell [ref=f57e1166]:
+          - generic [ref=f57e1168]:
+            - generic [ref=f57e1169]:
+              - link "Site Help" [ref=f57e1170] [cursor=pointer]:
+                - /url: http://www.tceq.texas.gov/help
+              - text: "|"
+              - link "Disclaimer" [ref=f57e1171] [cursor=pointer]:
+                - /url: http://www.tceq.texas.gov/help/policies/disclaimer_policy.html
+              - text: "|"
+              - link "Web Policies" [ref=f57e1172] [cursor=pointer]:
+                - /url: http://www.tceq.texas.gov/help/policies/index.html
+              - text: "|"
+              - link "Our Compact with Texas" [ref=f57e1173] [cursor=pointer]:
+                - /url: http://www.tceq.texas.gov/agency/working-with-us/compact.html
+              - text: "|"
+              - link "TCEQ Homeland Security" [ref=f57e1174] [cursor=pointer]:
+                - /url: http://www.tceq.texas.gov/response/security/index.html
+              - text: "|"
+              - link "Contact Us" [ref=f57e1175] [cursor=pointer]:
+                - /url: http://www.tceq.texas.gov/agency/directory/
+              - text: "|"
+              - link "Central Registry" [ref=f57e1176] [cursor=pointer]:
+                - /url: http://www15.tceq.texas.gov/crpub/
+            - generic [ref=f57e1177]:
+              - text: "Statewide Links:"
+              - link "Texas.gov" [ref=f57e1178] [cursor=pointer]:
+                - /url: http://www.texas.gov/
+              - text: "|"
+              - link "Texas Homeland Security" [ref=f57e1179] [cursor=pointer]:
+                - /url: https://gov.texas.gov/organization/hsgd
+              - text: "|"
+              - link "TRAIL Statewide Archive" [ref=f57e1180] [cursor=pointer]:
+                - /url: https://www.tsl.texas.gov/trail/index.html
+              - text: "|"
+              - link "Texas Veterans Portal" [ref=f57e1181] [cursor=pointer]:
+                - /url: https://veterans.portal.texas.gov/

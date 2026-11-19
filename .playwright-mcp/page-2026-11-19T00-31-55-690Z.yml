@@ -1,0 +1,373 @@
+- generic [active] [ref=f22e1]:
+  - link "Skip to Content" [ref=f22e2] [cursor=pointer]:
+    - /url: "#contentContainer"
+  - list "Sub Navigation" [ref=f22e4]:
+    - listitem [ref=f22e5]:
+      - link "About Us" [ref=f22e6] [cursor=pointer]:
+        - /url: /agency/about-the-tceq
+    - listitem [ref=f22e7]:
+      - link "Contact Us" [ref=f22e8] [cursor=pointer]:
+        - /url: /agency/directory/
+    - listitem [ref=f22e9]:
+      - link "Calendar" [ref=f22e10] [cursor=pointer]:
+        - /url: /events
+    - listitem [ref=f22e11]:
+      - link "Jobs" [ref=f22e12] [cursor=pointer]:
+        - /url: /jobs
+    - listitem [ref=f22e13]:
+      - link "Org Chart" [ref=f22e14] [cursor=pointer]:
+        - /url: /agency/organization
+    - listitem [ref=f22e15]:
+      - link "Sign Up for Updates" [ref=f22e16] [cursor=pointer]:
+        - /url: https://public.govdelivery.com/accounts/TXTCEQ/subscriber/new
+    - listitem [ref=f22e21]:
+      - link "Español" [ref=f22e22] [cursor=pointer]:
+        - /url: ""
+        - text: ESPAÑOL
+  - banner [ref=f22e26]:
+    - link [ref=f22e28] [cursor=pointer]:
+      - /url: https://www.tceq.texas.gov
+      - img "Texas Commission on Environmental Quality" [ref=f22e29]
+    - navigation [ref=f22e30]:
+      - generic [ref=f22e33]:
+        - list [ref=f22e34]:
+          - listitem [ref=f22e35]:
+            - link "Home" [ref=f22e36] [cursor=pointer]:
+              - /url: /
+          - listitem [ref=f22e37]:
+            - link "Air" [ref=f22e38] [cursor=pointer]:
+              - /url: /agency/air_main.html
+          - listitem [ref=f22e39]:
+            - link "Land" [ref=f22e40] [cursor=pointer]:
+              - /url: /agency/land_main.html
+          - listitem [ref=f22e41]:
+            - link "Water" [ref=f22e42] [cursor=pointer]:
+              - /url: /agency/water_main.html
+          - listitem [ref=f22e43]:
+            - link "Licenses" [ref=f22e44] [cursor=pointer]:
+              - /url: /licensing
+          - listitem [ref=f22e45]:
+            - link "Permits" [ref=f22e46] [cursor=pointer]:
+              - /url: /permitting/business_permitting.html
+          - listitem [ref=f22e47]:
+            - link "Reporting" [ref=f22e48] [cursor=pointer]:
+              - /url: /permitting/reporting.html
+          - listitem
+        - separator
+    - search "Site Search Form" [ref=f22e51]:
+      - generic [ref=f22e52]:
+        - generic [ref=f22e53]: Search Site
+        - textbox "Search Site" [ref=f22e54] [cursor=pointer]
+        - button "TCEQ Site Search" [ref=f22e55] [cursor=pointer]
+    - text: 
+  - main [ref=f22e60]:
+    - article [ref=f22e62]:
+      - navigation "Breadcrumb"
+      - generic [ref=f22e65]:
+        - heading "How do I…" [level=2] [ref=f22e66]
+        - generic [ref=f22e67]:
+          - link "Get licensed" [ref=f22e69] [cursor=pointer]:
+            - /url: /licensing/NewLicReg
+          - link "Find a water well report" [ref=f22e71] [cursor=pointer]:
+            - /url: /gis/waterwellview.html
+          - link "Recycle electronics" [ref=f22e73] [cursor=pointer]:
+            - /url: /p2/recycle/electronics
+        - generic [ref=f22e74]:
+          - link "Check the air quality forecast" [ref=f22e76] [cursor=pointer]:
+            - /url: /airquality/monops/forecast_today.html
+          - link "Track the status of a permit" [ref=f22e78] [cursor=pointer]:
+            - /url: /permitting/permit_data.html
+          - link "Access STEERS" [ref=f22e80] [cursor=pointer]:
+            - /url: https://www3.tceq.texas.gov/steers/
+      - generic [ref=f22e81]:
+        - paragraph [ref=f22e85]:
+          - img "permit-search" [ref=f22e86]
+        - generic [ref=f22e89]:
+          - paragraph [ref=f22e91]: Find regulated facilities and their permits
+          - heading "Use our map-based search" [level=3] [ref=f22e92]
+          - paragraph [ref=f22e93]
+          - paragraph [ref=f22e94]:
+            - link "FIND PERMITS" [ref=f22e95] [cursor=pointer]:
+              - /url: https://permit-search.tceq.texas.gov/
+          - paragraph [ref=f22e96]:
+            - link "Watch the demo" [ref=f22e97] [cursor=pointer]:
+              - /url: https://www.youtube.com/embed/ihkY65FlJHk?si=kWyjxbImpwTJwXVi
+      - generic [ref=f22e98]:
+        - generic [ref=f22e99]:
+          - paragraph [ref=f22e102]:
+            - img "Image depicting search central registry" [ref=f22e104]
+          - generic [ref=f22e107]:
+            - generic [ref=f22e108]: Search Central Registry
+            - generic [ref=f22e109]:
+              - paragraph
+              - list [ref=f22e110]:
+                - listitem [ref=f22e111]:
+                  - link "by Facility/Site (regulated entity)" [ref=f22e112] [cursor=pointer]:
+                    - /url: /goto/cr-searchrn
+                - listitem [ref=f22e113]:
+                  - link "by Name/Company (customer)" [ref=f22e114] [cursor=pointer]:
+                    - /url: /goto/cr-customer
+                - listitem [ref=f22e115]:
+                  - link "by Permit/Registration (program ID number)" [ref=f22e116] [cursor=pointer]:
+                    - /url: /goto/cr-searchid
+        - generic [ref=f22e117]:
+          - paragraph [ref=f22e120]:
+            - img "Image depicting rules, data, forms and publications" [ref=f22e122]
+          - generic [ref=f22e125]:
+            - generic [ref=f22e126]: Rules, Data, Forms, Publications
+            - generic [ref=f22e127]:
+              - paragraph
+              - list [ref=f22e128]:
+                - listitem [ref=f22e129]:
+                  - link "Rules and Rulemaking" [ref=f22e130] [cursor=pointer]:
+                    - /url: /rules/rules_rulemaking.html
+                - listitem [ref=f22e131]:
+                  - link "Data and Records" [ref=f22e132] [cursor=pointer]:
+                    - /url: /agency/data
+                - listitem [ref=f22e133]:
+                  - link "Forms and Publications" [ref=f22e134] [cursor=pointer]:
+                    - /url: /publications
+                - listitem [ref=f22e135]:
+                  - link "Public Notices" [ref=f22e136] [cursor=pointer]:
+                    - /url: /agency/decisions/cc/pub_notice.html
+                - listitem [ref=f22e137]:
+                  - link "Maps and Searches Using Maps" [ref=f22e138] [cursor=pointer]:
+                    - /url: /agency/data/maps.html
+      - generic [ref=f22e139]:
+        - generic [ref=f22e140]:
+          - paragraph [ref=f22e143]:
+            - img "image depicting online services" [ref=f22e145]
+          - generic [ref=f22e148]:
+            - generic [ref=f22e149]: Online Services
+            - generic [ref=f22e150]:
+              - paragraph
+              - list [ref=f22e151]:
+                - listitem [ref=f22e152]:
+                  - link [ref=f22e153] [cursor=pointer]:
+                    - /url: /agency/tceq-online-services
+                    - text: Apply for permits and licenses, report, pay fees, and more—thru
+                    - strong [ref=f22e154]: STEERS
+                    - text: ","
+                    - strong [ref=f22e155]: NetDMR
+                    - text: ", eLicensing, eFiling, ePay"
+        - generic [ref=f22e156]:
+          - paragraph [ref=f22e159]:
+            - img "Image depicting agency deliberations and decisions" [ref=f22e161]
+          - generic [ref=f22e164]:
+            - generic [ref=f22e165]: Agency Deliberations and Decisions
+            - generic [ref=f22e166]:
+              - paragraph
+              - list [ref=f22e167]:
+                - listitem [ref=f22e168]:
+                  - link "Commissioner agenda meetings, work sessions, pending matters, filing documents" [ref=f22e169] [cursor=pointer]:
+                    - /url: /agency/decisions
+                  - link "Agency Deliberations and Decisions":
+                    - /url: /agency/decisions
+        - generic [ref=f22e170]:
+          - paragraph [ref=f22e173]:
+            - img "image depicting permits, registrations, and reporting" [ref=f22e175]
+          - generic [ref=f22e178]:
+            - generic [ref=f22e179]: Process for Issuing Permits
+            - generic [ref=f22e180]:
+              - paragraph
+              - list [ref=f22e181]:
+                - listitem [ref=f22e182]:
+                  - link "Participate in the permitting process" [ref=f22e183] [cursor=pointer]:
+                    - /url: /permitting/agency/decisions/participation/permitting-participation/pending-permits-participating-in-the-process
+                - listitem [ref=f22e184]:
+                  - link "Apply for permits, registrations, and licenses" [ref=f22e185] [cursor=pointer]:
+                    - /url: /permitting
+      - generic [ref=f22e186]:
+        - generic [ref=f22e187]:
+          - paragraph [ref=f22e190]:
+            - img "image depicting connect with us" [ref=f22e192]
+          - generic [ref=f22e195]:
+            - generic [ref=f22e196]: Connect with Us
+            - generic [ref=f22e197]:
+              - paragraph
+              - list [ref=f22e198]:
+                - listitem [ref=f22e199]:
+                  - link "Make an Environmental Complaint" [ref=f22e200] [cursor=pointer]:
+                    - /url: /compliance/complaints
+                - listitem [ref=f22e201]:
+                  - link "Public Representation and Participation" [ref=f22e202] [cursor=pointer]:
+                    - /url: /agency/decisions/participation/participation
+                - listitem [ref=f22e203]:
+                  - link "Sign Up for Email Updates" [ref=f22e204] [cursor=pointer]:
+                    - /url: https://public.govdelivery.com/accounts/TXTCEQ/subscriber/new
+                - listitem [ref=f22e205]:
+                  - link "Customer Satisfaction Survey" [ref=f22e206] [cursor=pointer]:
+                    - /url: /customersurvey
+                - listitem [ref=f22e207]:
+                  - link "Report Suspected Fraud, Waste, or Abuse in TCEQ Operations" [ref=f22e208] [cursor=pointer]:
+                    - /url: /agency/audit/reportfraud.html
+        - generic [ref=f22e209]:
+          - paragraph [ref=f22e212]:
+            - img "image depicting TCEQ News" [ref=f22e214]
+          - generic [ref=f22e217]:
+            - generic [ref=f22e218]: TCEQ News
+            - generic [ref=f22e219]:
+              - paragraph
+              - list [ref=f22e220]:
+                - listitem [ref=f22e221]:
+                  - link "News Releases and Media Relations" [ref=f22e222] [cursor=pointer]:
+                    - /url: /news
+                - listitem [ref=f22e223]:
+                  - 'link "We Were Wondering: a TCEQ Blog" [ref=f22e224] [cursor=pointer]':
+                    - /url: https://blog.tceq.texas.gov/
+              - heading [level=4] [ref=f22e225]:
+                - strong [ref=f22e226]: "Spotlight:"
+              - list [ref=f22e227]:
+                - listitem [ref=f22e228]:
+                  - link "2027 Emissions Inventory and Air Fees Workshop" [ref=f22e229] [cursor=pointer]:
+                    - /url: https://www.tceq.texas.gov/p2/events/industrialemissionsinventoryworkshop
+                - listitem [ref=f22e230]:
+                  - link "Registration now open for TCEQ’s Environmental Trade Fair and Conference" [ref=f22e231] [cursor=pointer]:
+                    - /url: https://www.tceq.texas.gov/p2/events/etfc/etf.html
+                - listitem [ref=f22e232]:
+                  - link "Enforcement Discretion Addressing Federal Temporary Fuel Waiver" [ref=f22e233] [cursor=pointer]:
+                    - /url: https://www.tceq.texas.gov/compliance/temp-waiver-of-rvp-fuel-requirements
+                - listitem [ref=f22e234]:
+                  - link "Drought in Texas" [ref=f22e235] [cursor=pointer]:
+                    - /url: /response/drought
+                - listitem [ref=f22e236]:
+                  - link "2021-2022 Sunset Review of TCEQ" [ref=f22e237] [cursor=pointer]:
+                    - /url: /agency/sunset
+      - separator [ref=f22e242]
+      - generic [ref=f22e243]:
+        - generic [ref=f22e246]:
+          - paragraph [ref=f22e247]:
+            - img "Image depicting the Texas environmenal trade fair" [ref=f22e249]
+          - paragraph [ref=f22e250]:
+            - 'link "TCEQ’s Environmental Trade Fair and Conference: See dates for 2026 thru 2028" [ref=f22e251] [cursor=pointer]':
+              - /url: /p2/events/etfc
+        - generic [ref=f22e254]:
+          - paragraph [ref=f22e255]:
+            - img "Image depicting Take Care of Texas" [ref=f22e257]
+          - paragraph [ref=f22e258]:
+            - link "TakeCareofTexas.org" [ref=f22e259] [cursor=pointer]:
+              - /url: https://takecareoftexas.org
+            - text: Do Your Part
+        - generic [ref=f22e262]:
+          - paragraph [ref=f22e263]:
+            - link [ref=f22e264] [cursor=pointer]:
+              - /url: https://restorethetexascoast.org
+              - img "Image depicting restore the Texas coast" [ref=f22e266]
+          - paragraph [ref=f22e267]:
+            - link "RestoreTheTexasCoast.org" [ref=f22e268] [cursor=pointer]:
+              - /url: https://restorethetexascoast.org
+            - text: Info on Funding Sources for TexasResulting from Deepwater Horizon Oil Spill
+        - generic [ref=f22e271]:
+          - paragraph [ref=f22e272]:
+            - img "Image depicting Texas Veterans Portal" [ref=f22e274]
+          - list [ref=f22e275]:
+            - listitem [ref=f22e276]:
+              - link "Veterans.Portal.Texas.Gov" [ref=f22e277] [cursor=pointer]:
+                - /url: https://veterans.portal.texas.gov
+            - listitem [ref=f22e281]:
+              - strong [ref=f22e282]: "Also:"
+              - link "Occupational Licensing Benefits for Military Service Members, Veterans, or Military Spouses" [ref=f22e283] [cursor=pointer]:
+                - /url: /licensing/information-for-military-service-members-veterans-and-spouses
+  - contentinfo [ref=f22e284]:
+    - generic [ref=f22e286]:
+      - generic [ref=f22e288]:
+        - generic [ref=f22e292]:
+          - generic [ref=f22e293]:
+            - link "Home" [ref=f22e294] [cursor=pointer]:
+              - /url: /
+            - link "About Us" [ref=f22e295] [cursor=pointer]:
+              - /url: /agency/about-the-tceq
+            - link "About the TCEQ":
+              - /url: /agency/about-the-tceq
+            - link "Online Services" [ref=f22e296] [cursor=pointer]:
+              - /url: /agency/tceq-online-services
+            - link "Environmental Emergencies" [ref=f22e297] [cursor=pointer]:
+              - /url: /response
+          - generic [ref=f22e298]:
+            - strong [ref=f22e299]: PROGRAMS
+            - link "Air" [ref=f22e300] [cursor=pointer]:
+              - /url: /agency/air_main.html
+            - link "Land" [ref=f22e301] [cursor=pointer]:
+              - /url: /agency/land_main.html
+            - link "Water" [ref=f22e302] [cursor=pointer]:
+              - /url: /agency/water_main.html
+            - link "Permits" [ref=f22e303] [cursor=pointer]:
+              - /url: /permitting/business_permitting.html
+            - link "Licenses" [ref=f22e304] [cursor=pointer]:
+              - /url: /licensing
+            - link "Reporting" [ref=f22e305] [cursor=pointer]:
+              - /url: /permitting/reporting.html
+          - generic [ref=f22e306]:
+            - strong [ref=f22e307]: DOCUMENTS
+            - link "Data and Records" [ref=f22e308] [cursor=pointer]:
+              - /url: /agency/data
+            - link "Rules" [ref=f22e309] [cursor=pointer]:
+              - /url: /rules/rules_rulemaking.html
+            - link "Forms" [ref=f22e310] [cursor=pointer]:
+              - /url: /publications/search_forms.html
+            - link "Publications" [ref=f22e311] [cursor=pointer]:
+              - /url: /publications/search-pubs
+            - link "Maps" [ref=f22e312] [cursor=pointer]:
+              - /url: /agency/data/maps.html
+            - link "Public Notices" [ref=f22e313] [cursor=pointer]:
+              - /url: /agency/decisions/cc/pub_notice.html
+          - generic [ref=f22e314]:
+            - strong [ref=f22e315]: CONNECT
+            - link "Contact Us" [ref=f22e316] [cursor=pointer]:
+              - /url: /agency/directory
+            - link "Working with Us" [ref=f22e317] [cursor=pointer]:
+              - /url: /agency/public_workingwithus.html
+            - link [ref=f22e318] [cursor=pointer]:
+              - /url: /agency/employees.html
+              - button [ref=f22e319]:
+                - strong [ref=f22e320]: For TCEQEmployees
+          - generic [ref=f22e321]:
+            - link "Sign Up for Updates" [ref=f22e324] [cursor=pointer]:
+              - /url: https://www.tceq.texas.gov/goto/govdelivery
+            - link "Twitter" [ref=f22e327] [cursor=pointer]:
+              - /url: https://twitter.com/TCEQ
+            - link "Facebook" [ref=f22e330] [cursor=pointer]:
+              - /url: https://www.facebook.com/TexasCommissionOnEnvironmentalQuality/
+            - link "Instagram" [ref=f22e333] [cursor=pointer]:
+              - /url: https://www.instagram.com/the_tceq/
+            - link "LinkedIn" [ref=f22e336] [cursor=pointer]:
+              - /url: https://www.linkedin.com/company/tceq
+            - link "YouTube" [ref=f22e339] [cursor=pointer]:
+              - /url: http://www.youtube.com/user/TCEQNews
+        - paragraph [ref=f22e345]:
+          - strong [ref=f22e346]:
+            - link "Site Help" [ref=f22e347] [cursor=pointer]:
+              - /url: /help
+          - text: "|"
+          - link "Disclaimer" [ref=f22e348] [cursor=pointer]:
+            - /url: /help/policies/disclaimer_policy.html
+          - text: "|"
+          - link "Site Policies" [ref=f22e349] [cursor=pointer]:
+            - /url: /help/policies/index.html
+          - text: "|"
+          - link "Accessibility" [ref=f22e350] [cursor=pointer]:
+            - /url: /help/policies/accessibility_policy.html
+          - text: "|"
+          - link "Website Archive" [ref=f22e351] [cursor=pointer]:
+            - /url: https://www.tceq.texas.gov/agency/data/tceq-website-content-archive
+          - text: "|"
+          - link "Our Compact with Texans" [ref=f22e352] [cursor=pointer]:
+            - /url: /agency/decisions/participation/permitting-participation/compact.html
+          - text: "|"
+          - link "TCEQ Homeland Security" [ref=f22e353] [cursor=pointer]:
+            - /url: /response/security/index.html
+          - text: "Statewide Links:"
+          - link "Texas.gov" [ref=f22e354] [cursor=pointer]:
+            - /url: http://www.texas.gov/
+          - text: "|"
+          - link "Texas Homeland Security" [ref=f22e358] [cursor=pointer]:
+            - /url: https://gov.texas.gov/organization/cjd
+          - text: "|"
+          - link "TRAIL Statewide Archive" [ref=f22e362] [cursor=pointer]:
+            - /url: https://www.tsl.texas.gov/trail/index.html
+          - text: "|"
+          - link "Texas Veterans Portal" [ref=f22e366] [cursor=pointer]:
+            - /url: https://veterans.portal.texas.gov/
+          - text: © 2002-2026 Texas Commission on Environmental Quality
+      - generic [ref=f22e370]: Last Modified 2026-11-18
+  - generic "Back to top" [ref=f22e371] [cursor=pointer]: 

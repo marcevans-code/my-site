@@ -1,0 +1,132 @@
+- generic [active] [ref=f35e1]:
+  - link "Skip to main content" [ref=f35e2] [cursor=pointer]:
+    - /url: "#main"
+  - generic [ref=f35e3]:
+    - navigation [ref=f35e4]:
+      - link:
+        - /url: https://www.puc.texas.gov/
+        - img [ref=f35e5] [cursor=pointer]
+      - generic [ref=f35e6]: Public Utility Commission of Texas Interchange Filing Search
+    - main [ref=f35e7]:
+      - heading "Case 59388-5" [level=1] [ref=f35e9]
+      - menu [ref=f35e11]:
+        - menuitem [ref=f35e12]:
+          - link [ref=f35e13] [cursor=pointer]:
+            - /url: /
+            - emphasis [ref=f35e14]: 
+            - text: Filing Search
+        - menuitem [ref=f35e15]:
+          - link [ref=f35e16] [cursor=pointer]:
+            - /url: /search/daily/
+            - emphasis [ref=f35e17]: 
+            - text: Daily Filing Search
+        - menuitem [ref=f35e18]:
+          - link [ref=f35e19] [cursor=pointer]:
+            - /url: https://www.puc.texas.gov/industry/filings/Default.aspx
+            - emphasis [ref=f35e20]: 
+            - text: Learn More
+        - menuitem [ref=f35e21]:
+          - link [ref=f35e22] [cursor=pointer]:
+            - /url: https://portal.puc.texas.gov/portal/
+            - emphasis [ref=f35e23]: 
+            - text: Filing Notification System
+        - menuitem [ref=f35e24]:
+          - link [ref=f35e25] [cursor=pointer]:
+            - /url: https://interchange.puc.texas.gov/filer
+            - emphasis [ref=f35e26]: 
+            - text: PUC Interchange Filer
+      - text:      
+      - paragraph [ref=f35e27]:
+        - strong [ref=f35e28]: File Stamp
+        - text: 2/19/2026
+      - paragraph [ref=f35e29]:
+        - strong [ref=f35e30]: Filing Party
+        - text: NEXUS DATA CENTERS LLC
+      - paragraph [ref=f35e31]:
+        - strong [ref=f35e32]: Case Style
+        - text: APPLICATION OF NEXUS DATA CENTERS, LLC FOR A SERVICE PROVIDER CERTIFICATE OF OPERATING AUTHORITY
+      - paragraph [ref=f35e33]:
+        - strong [ref=f35e34]: Filing Description
+        - text: Email exchange between Nexus Data Centers LLC and the CSEC confirming they are in receipt of our CLEC/SPCOA application and have been notified in accordance with 16 TAC § 26.111.
+      - paragraph [ref=f35e35]: 2 document(s).
+      - table [ref=f35e36]:
+        - rowgroup [ref=f35e37]:
+          - row [ref=f35e38]:
+            - columnheader "Name" [ref=f35e39]
+            - columnheader "Description" [ref=f35e40]
+            - columnheader "Type" [ref=f35e41]
+          - row [ref=f35e42]:
+            - cell [ref=f35e43]:
+              - strong [ref=f35e44]:
+                - link "59388_5_1589236" [ref=f35e45] [cursor=pointer]:
+                  - /url: https://interchange.puc.texas.gov/Documents/59388_5_1589236.ZIP
+            - cell "Pages 0 to -2" [ref=f35e46]
+            - cell "ZIP" [ref=f35e47]
+          - row [ref=f35e48]:
+            - cell [ref=f35e49]:
+              - strong [ref=f35e50]:
+                - link "59388_5_1589237" [ref=f35e51] [cursor=pointer]:
+                  - /url: https://interchange.puc.texas.gov/Documents/59388_5_1589237.PDF
+            - cell "Pages 1 to 4" [ref=f35e52]
+            - cell "PDF" [ref=f35e53]
+  - contentinfo [ref=f35e54]:
+    - generic [ref=f35e55]:
+      - generic [ref=f35e56]:
+        - generic [ref=f35e57]:
+          - heading "Public Utility Commission of Texas" [level=5] [ref=f35e58]
+          - generic [ref=f35e59]: 1701 N. Congress Ave. PO Box 13326 Austin, TX 78711-3326
+          - generic [ref=f35e60]:
+            - link " Phone 512-936-7000" [ref=f35e62] [cursor=pointer]:
+              - /url: tel://1-512-936-7000
+              - generic [ref=f35e63]: 
+              - generic "Phone"
+              - text: 512-936-7000
+            - link " Contact Us" [ref=f35e65] [cursor=pointer]:
+              - /url: https://www.puc.texas.gov/agency/about/contact/Default.aspx
+              - generic [ref=f35e66]: 
+              - text: Contact Us
+        - generic [ref=f35e67]:
+          - heading "AGENCY INFO" [level=5] [ref=f35e68]
+          - list [ref=f35e69]:
+            - listitem [ref=f35e70]:
+              - link "Site Policies" [ref=f35e71] [cursor=pointer]:
+                - /url: http://www.puc.texas.gov/agency/about/policies/Default.aspx
+            - listitem [ref=f35e72]:
+              - link "Sitemap" [ref=f35e73] [cursor=pointer]:
+                - /url: http://www.puc.texas.gov/agency/Sitemap.aspx
+        - generic [ref=f35e74]:
+          - heading "OTHER GOVERNMENT RESOURCES" [level=5] [ref=f35e75]
+          - list [ref=f35e76]:
+            - listitem [ref=f35e77]:
+              - link "Report Fraud, Waste or Abuse" [ref=f35e78] [cursor=pointer]:
+                - /url: http://sao.fraud.state.tx.us/
+            - listitem [ref=f35e79]:
+              - link "Texas Homeland Security" [ref=f35e80] [cursor=pointer]:
+                - /url: http://governor.state.tx.us/homeland
+            - listitem [ref=f35e81]:
+              - link "Ready.gov" [ref=f35e82] [cursor=pointer]:
+                - /url: http://www.ready.gov/
+            - listitem [ref=f35e83]:
+              - link "Texas.gov" [ref=f35e84] [cursor=pointer]:
+                - /url: http://texas.gov
+            - listitem [ref=f35e85]:
+              - link "Texas Veterans" [ref=f35e86] [cursor=pointer]:
+                - /url: https://veterans.portal.texas.gov/
+            - listitem [ref=f35e87]:
+              - link "TRAIL" [ref=f35e88] [cursor=pointer]:
+                - /url: https://www.tsl.state.tx.us/trail/index.html
+      - navigation [ref=f35e91]:
+        - list [ref=f35e92]:
+          - listitem [ref=f35e93]:
+            - link "PUC Calendar RSS Feed" [ref=f35e94] [cursor=pointer]:
+              - /url: http://www.puc.texas.gov/agency/calendar/GetCalendarRss.aspx
+              - generic [ref=f35e95]: 
+          - listitem [ref=f35e96]:
+            - link "Facebook" [ref=f35e97] [cursor=pointer]:
+              - /url: http://www.facebook.com/pages/Public-Utility-Commission-of-Texas/207063229365425
+              - generic [ref=f35e98]: 
+          - listitem [ref=f35e99]:
+            - link "Twitter" [ref=f35e100] [cursor=pointer]:
+              - /url: https://twitter.com/PUCTx
+              - generic [ref=f35e101]: 
+      - generic [ref=f35e102]: Copyright © 2026 Public Utility Commission of Texas Version 2.2.11.0

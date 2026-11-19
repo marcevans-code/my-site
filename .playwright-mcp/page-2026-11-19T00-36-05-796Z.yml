@@ -1,0 +1,297 @@
+- generic [active] [ref=f46e1]:
+  - iframe [ref=f46e2]
+  - link "Skip navigation" [ref=f46e3] [cursor=pointer]:
+    - /url: "#skip_nav_bar_target"
+  - table [ref=f46e4]:
+    - rowgroup [ref=f46e5]:
+      - row [ref=f46e6]:
+        - cell [ref=f46e7]:
+          - link [ref=f46e8] [cursor=pointer]:
+            - /url: /cs/idcplg?IdcService=TCEQ_SEARCH
+            - img "Oracle Content Management Home" [ref=f46e9]
+        - cell [ref=f46e10]:
+          - link "Welcome to the TCEQ Records Online" [ref=f46e11] [cursor=pointer]:
+            - /url: /cs/idcplg?IdcService=TCEQ_SEARCH
+  - generic [ref=f46e12]: This application will allow you to search and view publicly available electronic recordsand information on many of the facilities regulated by the agency.
+  - table [ref=f46e15]:
+    - rowgroup [ref=f46e16]:
+      - row [ref=f46e17]:
+        - cell "Select one or more search criteria below, and click on Search to view results." [ref=f46e18]
+      - row [ref=f46e20]:
+        - cell [ref=f46e21]:
+          - table [ref=f46e22]:
+            - rowgroup [ref=f46e23]:
+              - row [ref=f46e24]:
+                - cell "Record Series" [ref=f46e25]
+                - cell "Document Type" [ref=f46e27]
+                - cell "Media" [ref=f46e29]
+              - row [ref=f46e31]:
+                - cell "---- Select ----" [ref=f46e32]:
+                  - combobox [ref=f46e33]:
+                    - option "---- Select ----" [selected]
+                    - option "AIR / Clean Air Interstate Rule (CAIR)"
+                    - option "AIR / Discrete Emissions Reduction Credit (DERC)"
+                    - option "AIR / Emissions Banking and Trading of Allowances (EBTA)"
+                    - option "AIR / Emissions Reduction Credit (ERC)"
+                    - option "AIR / Federal Operating Permit"
+                    - option "AIR / HRVOC Emissions Cap and Trade (HECT)"
+                    - option "AIR / Mass Emissions Cap and Trade (MECT)"
+                    - option "AIR / New Source Review County General"
+                    - option "AIR / New Source Review Permit"
+                    - option "CCO / Commission Meetings, Agenda, and Work Sessions"
+                    - option "CCO / Marked Agenda, Work Session, and Marked Executive Director Listings"
+                    - option "CFR / Documentation Transmittal Form"
+                    - option "CFR / Records Disposition Request Forms"
+                    - option "CFR / Request for Records - Storage Centers"
+                    - option "FA / Contracts and Leases"
+                    - option "FA / Cost Recovery Documents - Federal & State Superfund"
+                    - option "FA / Purchase Orders"
+                    - option "FA / Travel Vouchers"
+                    - option "OCE / Air Compliance"
+                    - option "OCE / Air Compliance County General"
+                    - option "OCE / Complaints County General / Emergency Response"
+                    - option "OCE / Edwards Aquifer Protection Program (EDAQ)"
+                    - option "OCE / Municipal Solid Waste Unauthorized Sites"
+                    - option "OCE / On-Site Sewage Facilities"
+                    - option "OCE / On-Site Sewage Facilities County General"
+                    - option "OCE / Texas Dam Safety"
+                    - option "OLS / Rule Development History & Annotations"
+                    - option "WA / Certified Filings"
+                    - option "WA / Groundwater Conservation District"
+                    - option "WA / Water Master Closed Diverter Accounts"
+                    - option "WA / Water Master Complaints and Inquiries"
+                    - option "WA / Water Master Original Documents and Court Findings"
+                    - option "WA / Water Master Temporary Permits"
+                    - option "WA / Water Rights Adjudication"
+                    - option "WA / Water Rights Applications"
+                    - option "WA / Water Rights Cancelled, Denied, Dismissed, Abandoned, or Unnumbered"
+                    - option "WA / Water Rights Claims"
+                    - option "WA / Water Rights County General"
+                    - option "WA / Water Rights Permits"
+                    - option "WA / Water Rights Temporary"
+                    - option "WA / Water Supply Contracts"
+                    - option "WA / Water Well Data"
+                    - option "WA / Watermaster Deputy Logs"
+                    - option "WA / Watermasters Notice of Enforcement, Notice of Violation, & Field Citations"
+                    - option "WQ / Agriculture - Animal Feeding Operation (AFO) County General"
+                    - option "WQ / Dredging General Correspondence"
+                    - option "WQ / Dredging Permit"
+                    - option "WQ / Industrial Reclaimed Water"
+                    - option "WQ / Industrial Wastewater Discharge"
+                    - option "WQ / Municipal Wastewater Discharge"
+                    - option "WQ / National Pollutant Discharge Elimination System (NPDES)"
+                    - option "WQ / Permit by Rule - Commercial Livestock Trailer Cleaning Registration"
+                    - option "WQ / Permit by Rule - Dischargers to Surface Waters from Motor Vehicle Cleaning Facilities Registration"
+                    - option "WQ / Permit by Rule - Repealed"
+                    - option "WQ / Permit by Rule - Water Reclamation Facilities Registration"
+                    - option "WQ / Pretreatment Annual Report"
+                    - option "WQ / Pretreatment Program Records"
+                    - option "WQ / Sludge"
+                    - option "WQ / Stormwater Construction General Permit"
+                    - option "WQ / Stormwater Construction General Permit Notices"
+                    - option "WQ / Stormwater Industrial General Permit"
+                    - option "WQ / Stormwater Industrial General Permit Notices"
+                    - option "WQ / Stormwater Phase II Municipal Separate Storm Sewer Systems (MS4) General Permit"
+                    - option "WQ / Stormwater Phase II Municipal Separate Storm Sewer Systems (MS4) General Permit Notices"
+                    - option "WQ / WGP - Aquaculture Production"
+                    - option "WQ / WGP - Aquaculture Production Notices"
+                    - option "WQ / WGP - Bulk Petroleum Stations and Terminal"
+                    - option "WQ / WGP - Bulk Petroleum Stations and Terminal Notices"
+                    - option "WQ / WGP - Compost Manure"
+                    - option "WQ / WGP - Compost Manure Notices"
+                    - option "WQ / WGP - Concentrated Animal Feeding Operation (CAFO)"
+                    - option "WQ / WGP - Concentrated Animal Feeding Operation (CAFO) Notices"
+                    - option "WQ / WGP - Concrete Production"
+                    - option "WQ / WGP - Concrete Production Notices"
+                    - option "WQ / WGP - Discharge from Quarries in Certain WQ Protection Areas"
+                    - option "WQ / WGP - Discharge from Quarries in Certain WQ Protection Areas Notices"
+                    - option "WQ / WGP - Evaporation Pond"
+                    - option "WQ / WGP - Evaporation Pond Notices"
+                    - option "WQ / WGP - Harris County Onsite Discharge"
+                    - option "WQ / WGP - Harris County Onsite Discharge Notices"
+                    - option "WQ / WGP - Hydrostatic Test Water Discharge"
+                    - option "WQ / WGP - Hydrostatic Test Water Discharge Notices"
+                    - option "WQ / WGP - Pesticide"
+                    - option "WQ / WGP - Pesticide Notices"
+                    - option "WQ / WGP - Petroleum Contaminated Waters"
+                    - option "WQ / WGP - Petroleum Contaminated Waters Notices"
+                    - option "WQ / WGP - Water Treatment Plant"
+                    - option "WQ / WGP - Water Treatment Plant Notices"
+                    - option "WQ / Water Quality County General"
+                    - option "WQ / Water Quality Non Permitted / Company Name"
+                    - option "WS / District Audits"
+                    - option "WS / District Bonds"
+                    - option "WS / Public Water Supply"
+                    - option "WS / Public Water Supply County General"
+                    - option "WS / River Authority Management Audits"
+                    - option "WST / Aggregate Production Operations (APO)"
+                    - option "WST / Aggregate Production Operations (APO) General by RN"
+                    - option "WST / Brownfields Site Assessment Program"
+                    - option "WST / EPA Administrative Records"
+                    - option "WST / Industrial Hazardous Waste"
+                    - option "WST / Industrial Hazardous Waste Corrective Action"
+                    - option "WST / Industrial Hazardous Waste Q Maquiladora"
+                    - option "WST / Industrial Hazardous Waste Registration"
+                    - option "WST / Industrial Hazardous Waste Registration Unnumbered"
+                    - option "WST / Innocent Owner / Operator Program"
+                    - option "WST / Leaking Petroleum Storage Tank"
+                    - option "WST / Municipal Setting Designation (MSD) Files"
+                    - option "WST / Municipal Solid Waste County General"
+                    - option "WST / Municipal Solid Waste Medical Waste Transporters"
+                    - option "WST / Municipal Solid Waste Permits"
+                    - option "WST / Municipal Solid Waste Registrations & Notification Files"
+                    - option "WST / Municipal Solid Waste Sub T"
+                    - option "WST / Municipal Solid Waste Tire"
+                    - option "WST / Municipal Solid Waste Used Oil Registration General by Customer Name"
+                    - option "WST / Petroleum Storage Tank Registrations"
+                    - option "WST / Petroleum Storage Tank Registrations Unnumbered County General"
+                    - option "WST / Radioactive Licensed"
+                    - option "WST / Radioactive Unlicensed"
+                    - option "WST / Site Discovery Assessment (SDA) / Preliminary Assessment Site Inspections (PASI)"
+                    - option "WST / Sludge Transporter"
+                    - option "WST / Sludge Transporter General by Customer Name"
+                    - option "WST / Superfund"
+                    - option "WST / Underground Injection Control Class IV"
+                    - option "WST / Underground Injection Control Class V"
+                    - option "WST / Underground Injection Control Program Approvals"
+                    - option "WST / Underground Injection Control Sodium Sulfate Mining"
+                    - option "WST / Underground Injection Control Sulfur Mining"
+                    - option "WST / Underground Injection Control Uranium Mining"
+                    - option "WST / Underground Injection Control Waste Disposal Wells"
+                    - option "WST / Uranium Recovery and Reclamation Licenses"
+                    - option "WST / Used Oil Collection Centers and Used Oil/Used Oil Filter Handlers"
+                    - option "WST / Voluntary Cleanup Program"
+                - cell "---- Select ----" [ref=f46e34]:
+                  - combobox [ref=f46e35]:
+                    - option "---- Select ----" [selected]
+                - cell "---- Select ----" [ref=f46e36]:
+                  - combobox [ref=f46e37]:
+                    - option "---- Select ----" [selected]
+                    - option "Electronic"
+                    - option "Fiche"
+                    - option "Microfilm"
+                    - option "Optical Disc"
+                    - option "Paper"
+                    - option "Tape"
+                - cell [ref=f46e38]:
+                  - generic [ref=f46e39]:
+                    - button "Search" [ref=f46e40]
+                    - button "Reset" [ref=f46e41]
+      - row [ref=f46e42]:
+        - cell "Select one or more search criteria below and enter full text to refine search, and click on Search to view results." [ref=f46e43]
+      - row [ref=f46e115]:
+        - cell [ref=f46e116]:
+          - table [ref=f46e47]:
+            - rowgroup [ref=f46e48]:
+              - row [ref=f46e117]:
+                - cell "Regulated Entity Name" [ref=f46e118]:
+                  - combobox [ref=f46e51]:
+                    - option "---- Select ----"
+                    - option "Address"
+                    - option "Central Registry RN"
+                    - option "Primary ID"
+                    - option "Regulated Entity Name" [selected]
+                    - option "Secondary ID"
+                - cell [ref=f46e52]:
+                  - textbox [ref=f46e53]
+              - row [ref=f46e54]:
+                - cell "---- Select ----" [ref=f46e55]:
+                  - combobox [ref=f46e56]:
+                    - option "---- Select ----" [selected]
+                    - option "Address"
+                    - option "Central Registry RN"
+                    - option "Primary ID"
+                    - option "Regulated Entity Name"
+                    - option "Secondary ID"
+                - cell [ref=f46e57]:
+                  - textbox [ref=f46e58]
+              - row [ref=f46e59]:
+                - cell "---- Select ----" [ref=f46e60]:
+                  - combobox [ref=f46e61]:
+                    - option "---- Select ----" [selected]
+                    - option "Address"
+                    - option "Central Registry RN"
+                    - option "Primary ID"
+                    - option "Regulated Entity Name"
+                    - option "Secondary ID"
+                - cell [ref=f46e62]:
+                  - textbox [ref=f46e63]
+              - row [ref=f46e64]:
+                - cell "---- Select ----" [ref=f46e65]:
+                  - combobox [ref=f46e66]:
+                    - option "---- Select ----" [selected]
+                    - option "Address"
+                    - option "Central Registry RN"
+                    - option "Primary ID"
+                    - option "Regulated Entity Name"
+                    - option "Secondary ID"
+                - cell [ref=f46e67]:
+                  - textbox [ref=f46e68]
+              - row [ref=f46e69]:
+                - cell [ref=f46e70]
+                - cell [ref=f46e71]:
+                  - generic [ref=f46e72]:
+                    - radio [checked] [ref=f46e73]
+                    - text: AND
+                    - radio [ref=f46e74]
+                    - text: OR
+                - cell [ref=f46e75]:
+                  - generic [ref=f46e76]:
+                    - button "Search" [ref=f46e77]
+                    - button "Reset" [ref=f46e78]
+      - row [ref=f46e79]:
+        - cell "Quick Search, enter full text to refine search, and click on Search to view results." [ref=f46e80]
+      - row [ref=f46e82]:
+        - cell [ref=f46e83]:
+          - table [ref=f46e84]:
+            - rowgroup [ref=f46e85]:
+              - row [ref=f46e86]:
+                - cell [ref=f46e87]:
+                  - textbox [ref=f46e88]
+                - cell [ref=f46e89]:
+                  - generic [ref=f46e90]:
+                    - button "Search" [ref=f46e91]
+                    - button "Reset" [ref=f46e92]
+      - row
+  - table [ref=f46e93]:
+    - rowgroup [ref=f46e94]:
+      - row [ref=f46e95]:
+        - cell [ref=f46e96]
+      - row [ref=f46e97]:
+        - cell [ref=f46e98]
+        - cell [ref=f46e99]:
+          - generic [ref=f46e101]:
+            - generic [ref=f46e102]:
+              - link "Site Help" [ref=f46e103] [cursor=pointer]:
+                - /url: http://www.tceq.texas.gov/help
+              - text: "|"
+              - link "Disclaimer" [ref=f46e104] [cursor=pointer]:
+                - /url: http://www.tceq.texas.gov/help/policies/disclaimer_policy.html
+              - text: "|"
+              - link "Web Policies" [ref=f46e105] [cursor=pointer]:
+                - /url: http://www.tceq.texas.gov/help/policies/index.html
+              - text: "|"
+              - link "Our Compact with Texas" [ref=f46e106] [cursor=pointer]:
+                - /url: http://www.tceq.texas.gov/agency/working-with-us/compact.html
+              - text: "|"
+              - link "TCEQ Homeland Security" [ref=f46e107] [cursor=pointer]:
+                - /url: http://www.tceq.texas.gov/response/security/index.html
+              - text: "|"
+              - link "Contact Us" [ref=f46e108] [cursor=pointer]:
+                - /url: http://www.tceq.texas.gov/agency/directory/
+              - text: "|"
+              - link "Central Registry" [ref=f46e109] [cursor=pointer]:
+                - /url: http://www15.tceq.texas.gov/crpub/
+            - generic [ref=f46e110]:
+              - text: "Statewide Links:"
+              - link "Texas.gov" [ref=f46e111] [cursor=pointer]:
+                - /url: http://www.texas.gov/
+              - text: "|"
+              - link "Texas Homeland Security" [ref=f46e112] [cursor=pointer]:
+                - /url: https://gov.texas.gov/organization/hsgd
+              - text: "|"
+              - link "TRAIL Statewide Archive" [ref=f46e113] [cursor=pointer]:
+                - /url: https://www.tsl.texas.gov/trail/index.html
+              - text: "|"
+              - link "Texas Veterans Portal" [ref=f46e114] [cursor=pointer]:
+                - /url: https://veterans.portal.texas.gov/

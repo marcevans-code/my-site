@@ -1,0 +1,276 @@
+- generic [active] [ref=f23e1]:
+  - link "Skip to Content" [ref=f23e2] [cursor=pointer]:
+    - /url: "#contentContainer"
+  - list "Sub Navigation" [ref=f23e4]:
+    - listitem [ref=f23e5]:
+      - link "About Us" [ref=f23e6] [cursor=pointer]:
+        - /url: /agency/about-the-tceq
+    - listitem [ref=f23e7]:
+      - link "Contact Us" [ref=f23e8] [cursor=pointer]:
+        - /url: /agency/directory/
+    - listitem [ref=f23e9]:
+      - link "Calendar" [ref=f23e10] [cursor=pointer]:
+        - /url: /events
+    - listitem [ref=f23e11]:
+      - link "Jobs" [ref=f23e12] [cursor=pointer]:
+        - /url: /jobs
+    - listitem [ref=f23e13]:
+      - link "Org Chart" [ref=f23e14] [cursor=pointer]:
+        - /url: /agency/organization
+    - listitem [ref=f23e15]:
+      - link "Sign Up for Updates" [ref=f23e16] [cursor=pointer]:
+        - /url: https://public.govdelivery.com/accounts/TXTCEQ/subscriber/new
+    - listitem [ref=f23e21]:
+      - link "Español" [ref=f23e22] [cursor=pointer]:
+        - /url: ""
+        - text: ESPAÑOL
+  - banner [ref=f23e26]:
+    - link [ref=f23e28] [cursor=pointer]:
+      - /url: https://www.tceq.texas.gov
+      - img "Texas Commission on Environmental Quality" [ref=f23e29]
+    - navigation [ref=f23e30]:
+      - generic [ref=f23e33]:
+        - list [ref=f23e34]:
+          - listitem [ref=f23e35]:
+            - link "Home" [ref=f23e36] [cursor=pointer]:
+              - /url: /
+          - listitem [ref=f23e37]:
+            - link "Air" [ref=f23e38] [cursor=pointer]:
+              - /url: /agency/air_main.html
+          - listitem [ref=f23e39]:
+            - link "Land" [ref=f23e40] [cursor=pointer]:
+              - /url: /agency/land_main.html
+          - listitem [ref=f23e41]:
+            - link "Water" [ref=f23e42] [cursor=pointer]:
+              - /url: /agency/water_main.html
+          - listitem [ref=f23e43]:
+            - link "Licenses" [ref=f23e44] [cursor=pointer]:
+              - /url: /licensing
+          - listitem [ref=f23e45]:
+            - link "Permits" [ref=f23e46] [cursor=pointer]:
+              - /url: /permitting/business_permitting.html
+          - listitem [ref=f23e47]:
+            - link "Reporting" [ref=f23e48] [cursor=pointer]:
+              - /url: /permitting/reporting.html
+          - listitem
+        - separator
+    - search "Site Search Form" [ref=f23e51]:
+      - generic [ref=f23e52]:
+        - generic [ref=f23e53]: Search Site
+        - textbox "Search Site" [ref=f23e54] [cursor=pointer]
+        - button "TCEQ Site Search" [ref=f23e55] [cursor=pointer]
+    - text: 
+  - generic [ref=f23e59]:
+    - generic "Questions and Comments Link" [ref=f23e60]:
+      - generic [ref=f23e61]: "Questions or Comments:"
+      - link "info@tceq.texas.gov" [ref=f23e62] [cursor=pointer]:
+        - /url: mailto:info@tceq.texas.gov
+    - main [ref=f23e63]:
+      - article [ref=f23e65]:
+        - navigation "Breadcrumb" [ref=f23e66]:
+          - list "Breadcrumb" [ref=f23e67]:
+            - listitem [ref=f23e68]:
+              - link "Breadcrumb Home Link" [ref=f23e69] [cursor=pointer]:
+                - /url: https://www.tceq.texas.gov
+                - text: Home
+              - text: /
+            - listitem "Breadcrumb-Permits, Registrations, and Reporting" [ref=f23e70]:
+              - link "Permits, Registrations, and Reporting" [ref=f23e71] [cursor=pointer]:
+                - /url: https://www.tceq.texas.gov/permitting
+              - text: /
+            - listitem "Breadcrumb-Status of Permits and Registrations" [ref=f23e72]: Status of Permits and Registrations
+        - generic [ref=f23e73]:
+          - heading "Status of Permits and Registrations" [level=1] [ref=f23e74]
+          - paragraph [ref=f23e75]: Find pending applications and completed permits and registrations, everything from oil refineries to small water systems, from chemical complexes to dry cleaners, from landfills to sludge transporters.
+        - generic [ref=f23e78]:
+          - generic [ref=f23e79]:
+            - paragraph [ref=f23e80]:
+              - strong [ref=f23e81]:
+                - 'link "Pending Permit Applications: Participating in the Process" [ref=f23e82] [cursor=pointer]':
+                  - /url: /agency/decisions/participation/permitting-participation/pending-permits-participating-in-the-process
+              - text: Describes the review process for certain types of permits, and how you can comment and participate in other ways.
+            - paragraph [ref=f23e83]:
+              - strong [ref=f23e84]:
+                - link "Records Requests" [ref=f23e85] [cursor=pointer]:
+                  - /url: https://www.tceq.texas.gov/agency/data/records-services/fileroom.html
+              - text: How to place a request for records not available online.
+          - heading "Status of Applications" [level=2] [ref=f23e86]
+          - paragraph [ref=f23e87]:
+            - strong [ref=f23e88]:
+              - link "Status of Air Permits and Permit Applications" [ref=f23e89] [cursor=pointer]:
+                - /url: /permitting/air/nav/air_status_permits.html
+            - text: Find pending and completed air permits.
+          - paragraph [ref=f23e90]:
+            - strong [ref=f23e91]:
+              - link "Status of Stormwater and Wastewater Applications and Specifications" [ref=f23e92] [cursor=pointer]:
+                - /url: https://www.tceq.texas.gov/agency/data/lookup-data/status-stormwater-wastewater.html
+            - text: Track the status of applications for general permits, applications for individual permits, and approval of wastewater system design plans and specifications.
+          - paragraph [ref=f23e93]:
+            - strong [ref=f23e94]:
+              - link "Waste Management Permit Applications, Permits, Registrations, and Facilities" [ref=f23e95] [cursor=pointer]:
+                - /url: /permitting/agency/data/lookup-data/waste-mgmt-data-records.html
+            - text: Find out about pending and recent waste applications.
+          - paragraph [ref=f23e96]:
+            - strong [ref=f23e97]:
+              - link "Status of Water Supply Permits and Applications" [ref=f23e98] [cursor=pointer]:
+                - /url: https://www.tceq.texas.gov/agency/data/lookup-data/status-water-supply-permits.html
+            - text: Track the status of water supply permit applications and system plans and specifications that are under review.
+          - paragraph [ref=f23e99]:
+            - strong [ref=f23e100]:
+              - link "Pending Permit Application Information in Both English and Alternative Languages" [ref=f23e101] [cursor=pointer]:
+                - /url: /agency/decisions/participation/permitting-participation/pending-permits-documents-and-information
+            - text: Find applicant information, public notice documents, and plain language summaries in English and alternative languages for pending permits and licenses per 30 TAC, Chapter 39, Subchapter H.
+          - heading "Licenses and Registrations" [level=2] [ref=f23e102]
+          - paragraph [ref=f23e103]:
+            - strong [ref=f23e104]:
+              - link "Occupational Licenses and Registrations" [ref=f23e105] [cursor=pointer]:
+                - /url: https://www.tceq.texas.gov/goto/lic_reg_search
+            - text: Find licensing, training credits, and registration information for individuals and companies.
+          - paragraph [ref=f23e106]:
+            - strong [ref=f23e107]:
+              - link "Registered Dry-Cleaning Facilities and Drop Stations" [ref=f23e108] [cursor=pointer]:
+                - /url: https://www.tceq.texas.gov/goto/drycleaner
+            - text: Find out whether a dry-cleaning facility or drop station is registered with the TCEQ. And, if they are registered, whether they have opted out of the Dry Cleaning Environmental Remediation Fund. Distributors can find out the solvent fees to collect from each registered facility.
+          - paragraph [ref=f23e109]:
+            - strong [ref=f23e110]:
+              - link "PST Registrations" [ref=f23e111] [cursor=pointer]:
+                - /url: https://www.tceq.texas.gov/goto/centralregistry
+            - text: Find out whether a facility with petroleum storage tanks is registered with the TCEQ. Database also has technical information about registered PSTs.
+      - complementary [ref=f23e112]:
+        - list [ref=f23e117]:
+          - listitem [ref=f23e118]:
+            - link "Permitting Home" [ref=f23e120] [cursor=pointer]:
+              - /url: https://www.tceq.texas.gov/permitting/index.html
+          - listitem [ref=f23e121]:
+            - link "Permits and Registrations" [ref=f23e123] [cursor=pointer]:
+              - /url: https://www.tceq.texas.gov/permitting/business_permitting.html
+          - listitem [ref=f23e124]:
+            - link "Reporting" [ref=f23e126] [cursor=pointer]:
+              - /url: https://www.tceq.texas.gov/permitting/reporting.html
+          - listitem [ref=f23e127]:
+            - link "Status of Permits and Registrations" [ref=f23e129] [cursor=pointer]:
+              - /url: https://www.tceq.texas.gov/permitting/permit_data.html
+        - link [ref=f23e133] [cursor=pointer]:
+          - /url: /goto/customersurvey
+          - 'img "How are we doing: take our customer satisfaction survey" [ref=f23e134]'
+          - text: How are we doing? Take our customer satisfaction survey
+      - complementary [ref=f23e135]:
+        - generic [ref=f23e137]:
+          - paragraph [ref=f23e138]:
+            - strong [ref=f23e139]:
+              - link "Search the Commissioners' Integrated Database" [ref=f23e140] [cursor=pointer]:
+                - /url: https://www.tceq.texas.gov/agency/decisions/cc/cc_db.html
+            - text: Tracks status of all matters pending before the commissioners and executive director for approval.
+          - paragraph [ref=f23e141]:
+            - strong [ref=f23e142]:
+              - link "Search for TCEQ Public Notices" [ref=f23e143] [cursor=pointer]:
+                - /url: https://www.tceq.texas.gov/agency/decisions/cc/pub_notice.html
+            - text: Public notices mailed by the TCEQ Chief Clerk's Office.
+          - paragraph [ref=f23e144]:
+            - strong [ref=f23e145]:
+              - link "Search the TCEQ Central Registry" [ref=f23e146] [cursor=pointer]:
+                - /url: https://www.tceq.texas.gov/goto/centralregistry
+            - text: Find basic information on facilities, organizations, and people we regulate. Search by permit/registration number, name/company, or facility/site.
+  - contentinfo [ref=f23e147]:
+    - generic [ref=f23e149]:
+      - generic [ref=f23e151]:
+        - generic [ref=f23e155]:
+          - generic [ref=f23e156]:
+            - link "Home" [ref=f23e157] [cursor=pointer]:
+              - /url: /
+            - link "About Us" [ref=f23e158] [cursor=pointer]:
+              - /url: /agency/about-the-tceq
+            - link "About the TCEQ":
+              - /url: /agency/about-the-tceq
+            - link "Online Services" [ref=f23e159] [cursor=pointer]:
+              - /url: /agency/tceq-online-services
+            - link "Environmental Emergencies" [ref=f23e160] [cursor=pointer]:
+              - /url: /response
+          - generic [ref=f23e161]:
+            - strong [ref=f23e162]: PROGRAMS
+            - link "Air" [ref=f23e163] [cursor=pointer]:
+              - /url: /agency/air_main.html
+            - link "Land" [ref=f23e164] [cursor=pointer]:
+              - /url: /agency/land_main.html
+            - link "Water" [ref=f23e165] [cursor=pointer]:
+              - /url: /agency/water_main.html
+            - link "Permits" [ref=f23e166] [cursor=pointer]:
+              - /url: /permitting/business_permitting.html
+            - link "Licenses" [ref=f23e167] [cursor=pointer]:
+              - /url: /licensing
+            - link "Reporting" [ref=f23e168] [cursor=pointer]:
+              - /url: /permitting/reporting.html
+          - generic [ref=f23e169]:
+            - strong [ref=f23e170]: DOCUMENTS
+            - link "Data and Records" [ref=f23e171] [cursor=pointer]:
+              - /url: /agency/data
+            - link "Rules" [ref=f23e172] [cursor=pointer]:
+              - /url: /rules/rules_rulemaking.html
+            - link "Forms" [ref=f23e173] [cursor=pointer]:
+              - /url: /publications/search_forms.html
+            - link "Publications" [ref=f23e174] [cursor=pointer]:
+              - /url: /publications/search-pubs
+            - link "Maps" [ref=f23e175] [cursor=pointer]:
+              - /url: /agency/data/maps.html
+            - link "Public Notices" [ref=f23e176] [cursor=pointer]:
+              - /url: /agency/decisions/cc/pub_notice.html
+          - generic [ref=f23e177]:
+            - strong [ref=f23e178]: CONNECT
+            - link "Contact Us" [ref=f23e179] [cursor=pointer]:
+              - /url: /agency/directory
+            - link "Working with Us" [ref=f23e180] [cursor=pointer]:
+              - /url: /agency/public_workingwithus.html
+            - link [ref=f23e181] [cursor=pointer]:
+              - /url: /agency/employees.html
+              - button [ref=f23e182]:
+                - strong [ref=f23e183]: For TCEQEmployees
+          - generic [ref=f23e184]:
+            - link "Sign Up for Updates" [ref=f23e187] [cursor=pointer]:
+              - /url: https://www.tceq.texas.gov/goto/govdelivery
+            - link "Twitter" [ref=f23e190] [cursor=pointer]:
+              - /url: https://twitter.com/TCEQ
+            - link "Facebook" [ref=f23e193] [cursor=pointer]:
+              - /url: https://www.facebook.com/TexasCommissionOnEnvironmentalQuality/
+            - link "Instagram" [ref=f23e196] [cursor=pointer]:
+              - /url: https://www.instagram.com/the_tceq/
+            - link "LinkedIn" [ref=f23e199] [cursor=pointer]:
+              - /url: https://www.linkedin.com/company/tceq
+            - link "YouTube" [ref=f23e202] [cursor=pointer]:
+              - /url: http://www.youtube.com/user/TCEQNews
+        - paragraph [ref=f23e208]:
+          - strong [ref=f23e209]:
+            - link "Site Help" [ref=f23e210] [cursor=pointer]:
+              - /url: /help
+          - text: "|"
+          - link "Disclaimer" [ref=f23e211] [cursor=pointer]:
+            - /url: /help/policies/disclaimer_policy.html
+          - text: "|"
+          - link "Site Policies" [ref=f23e212] [cursor=pointer]:
+            - /url: /help/policies/index.html
+          - text: "|"
+          - link "Accessibility" [ref=f23e213] [cursor=pointer]:
+            - /url: /help/policies/accessibility_policy.html
+          - text: "|"
+          - link "Website Archive" [ref=f23e214] [cursor=pointer]:
+            - /url: https://www.tceq.texas.gov/agency/data/tceq-website-content-archive
+          - text: "|"
+          - link "Our Compact with Texans" [ref=f23e215] [cursor=pointer]:
+            - /url: /agency/decisions/participation/permitting-participation/compact.html
+          - text: "|"
+          - link "TCEQ Homeland Security" [ref=f23e216] [cursor=pointer]:
+            - /url: /response/security/index.html
+          - text: "Statewide Links:"
+          - link "Texas.gov" [ref=f23e217] [cursor=pointer]:
+            - /url: http://www.texas.gov/
+          - text: "|"
+          - link "Texas Homeland Security" [ref=f23e221] [cursor=pointer]:
+            - /url: https://gov.texas.gov/organization/cjd
+          - text: "|"
+          - link "TRAIL Statewide Archive" [ref=f23e225] [cursor=pointer]:
+            - /url: https://www.tsl.texas.gov/trail/index.html
+          - text: "|"
+          - link "Texas Veterans Portal" [ref=f23e229] [cursor=pointer]:
+            - /url: https://veterans.portal.texas.gov/
+          - text: © 2002-2026 Texas Commission on Environmental Quality
+      - generic [ref=f23e233]: Last Modified 2026-10-14
+  - generic "Back to top" [ref=f23e234] [cursor=pointer]: 

@@ -1,0 +1,926 @@
+- generic [active] [ref=f41e1]:
+  - link "Skip to main content" [ref=f41e2] [cursor=pointer]:
+    - /url: "#main"
+  - generic [ref=f41e3]:
+    - navigation [ref=f41e4]:
+      - link:
+        - /url: https://www.puc.texas.gov/
+        - img [ref=f41e5] [cursor=pointer]
+      - generic [ref=f41e6]: Public Utility Commission of Texas Interchange Filing Search
+    - main [ref=f41e7]:
+      - heading "Filings for 59142" [level=1] [ref=f41e9]
+      - menu [ref=f41e11]:
+        - menuitem [ref=f41e12]:
+          - link [ref=f41e13] [cursor=pointer]:
+            - /url: /
+            - emphasis [ref=f41e14]: 
+            - text: Filing Search
+        - menuitem [ref=f41e15]:
+          - link [ref=f41e16] [cursor=pointer]:
+            - /url: /search/daily/
+            - emphasis [ref=f41e17]: 
+            - text: Daily Filing Search
+        - menuitem [ref=f41e18]:
+          - link [ref=f41e19] [cursor=pointer]:
+            - /url: https://www.puc.texas.gov/industry/filings/Default.aspx
+            - emphasis [ref=f41e20]: 
+            - text: Learn More
+        - menuitem [ref=f41e21]:
+          - link [ref=f41e22] [cursor=pointer]:
+            - /url: https://portal.puc.texas.gov/portal/
+            - emphasis [ref=f41e23]: 
+            - text: Filing Notification System
+        - menuitem [ref=f41e24]:
+          - link [ref=f41e25] [cursor=pointer]:
+            - /url: https://interchange.puc.texas.gov/filer
+            - emphasis [ref=f41e26]: 
+            - text: PUC Interchange Filer
+      - text:      
+      - paragraph [ref=f41e27]:
+        - strong [ref=f41e28]: Case Style
+        - text: REVIEW OF ERCOT'S INTERCONNECTION PROCESSES FOR LARGE LOADS
+      - paragraph [ref=f41e29]: 85 filing(s).
+      - table [ref=f41e30]:
+        - rowgroup [ref=f41e31]:
+          - row [ref=f41e32]:
+            - cell "«« « 1 » »» Export to Excel" [ref=f41e33]:
+              - generic:
+                - generic:
+                  - list:
+                    - listitem:
+                      - generic [ref=f41e34]: ««
+                    - listitem:
+                      - generic [ref=f41e35]: «
+                    - listitem:
+                      - generic [ref=f41e36]: "1"
+                    - listitem:
+                      - generic [ref=f41e37]: »
+                    - listitem:
+                      - generic [ref=f41e38]: »»
+              - link "Export to Excel" [ref=f41e40] [cursor=pointer]:
+                - /url: /search/exportfilings/?ControlNumber=59142&ItemMatch=0&SortBy=ItemNumber&SortOrder=Ascending
+                - text: Export to Excel
+                - generic [aria-hidden] [ref=f41e41]: 
+          - row [ref=f41e42]:
+            - columnheader "Item sorted ascending" [ref=f41e43]:
+              - link "Item sorted ascending" [ref=f41e44] [cursor=pointer]:
+                - /url: /search/filings/?ControlNumber=59142&ItemMatch=0&SortBy=ItemNumber&SortOrder=Descending
+                - text: Item ▲
+                - generic [ref=f41e45]: sorted ascending
+            - columnheader "File Stamp" [ref=f41e46]:
+              - link "File Stamp" [ref=f41e47] [cursor=pointer]:
+                - /url: /search/filings/?ControlNumber=59142&ItemMatch=0&SortBy=FileStamp&SortOrder=Ascending
+            - columnheader "Party" [ref=f41e48]:
+              - link "Party" [ref=f41e49] [cursor=pointer]:
+                - /url: /search/filings/?ControlNumber=59142&ItemMatch=0&SortBy=FilingParty&SortOrder=Ascending
+            - columnheader "Item Type" [ref=f41e50]:
+              - link "Item Type" [ref=f41e51] [cursor=pointer]:
+                - /url: /search/filings/?ControlNumber=59142&ItemMatch=0&SortBy=ItemType&SortOrder=Ascending
+            - columnheader "Filing Description" [ref=f41e52]:
+              - link "Filing Description" [ref=f41e53] [cursor=pointer]:
+                - /url: /search/filings/?ControlNumber=59142&ItemMatch=0&SortBy=FilingDescription&SortOrder=Ascending
+          - row [ref=f41e54]:
+            - cell [ref=f41e55]:
+              - strong [ref=f41e56]:
+                - link "1" [ref=f41e57] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=59142&itemNumber=1
+            - cell "12/17/2025" [ref=f41e58]
+            - cell "PUC EXECUTIVE DIRECTOR" [ref=f41e59]
+            - cell "LTRS" [ref=f41e60]
+            - cell "CONTROL NUMBER REQUEST" [ref=f41e61]
+          - row [ref=f41e62]:
+            - cell [ref=f41e63]:
+              - strong [ref=f41e64]:
+                - link "2" [ref=f41e65] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=59142&itemNumber=2
+            - cell "12/18/2025" [ref=f41e66]
+            - cell "GOOGLE LLC, LANCIUM LLC" [ref=f41e67]
+            - cell "COM" [ref=f41e68]
+            - cell "Joint Comments of Google LLC and Lancium LLC as it pertains to ERCOT's Large Load Process Reforms" [ref=f41e69]
+          - row [ref=f41e70]:
+            - cell [ref=f41e71]:
+              - strong [ref=f41e72]:
+                - link "3" [ref=f41e73] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=59142&itemNumber=3
+            - cell "12/19/2025" [ref=f41e74]
+            - cell "SCHAPER ENERGY CONSULTING LLC" [ref=f41e75]
+            - cell "COM" [ref=f41e76]
+            - cell "PROJECT NO. 59142_REVIEW OF ERCOT'S INTERCONNECTION PROCESSES FOR LARGE LOADS_SCHAPER ENERGY CONSULTING LLC COMMENTS" [ref=f41e77]
+          - row [ref=f41e78]:
+            - cell [ref=f41e79]:
+              - strong [ref=f41e80]:
+                - link "4" [ref=f41e81] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=59142&itemNumber=4
+            - cell "1/12/2026" [ref=f41e82]
+            - cell "ERCOT" [ref=f41e83]
+            - cell "LTRS" [ref=f41e84]
+            - cell "LETTER RE ERCOT LARGE LOAD BATCH STUDY PROCESS UPDATE" [ref=f41e85]
+          - row [ref=f41e86]:
+            - cell [ref=f41e87]:
+              - strong [ref=f41e88]:
+                - link "5" [ref=f41e89] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=59142&itemNumber=5
+            - cell "1/16/2026" [ref=f41e90]
+            - cell "ERCOT" [ref=f41e91]
+            - cell "LTRS" [ref=f41e92]
+            - cell "LETTER RE FEBRUARY 3 2026 BATCH STUDY WORKSHOP" [ref=f41e93]
+          - row [ref=f41e94]:
+            - cell [ref=f41e95]:
+              - strong [ref=f41e96]:
+                - link "6" [ref=f41e97] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=59142&itemNumber=6
+            - cell "1/26/2026" [ref=f41e98]
+            - cell "ERCOT" [ref=f41e99]
+            - cell "LTRS" [ref=f41e100]
+            - cell "LETTER RE ERCOT LARGE LOAD BATCH STUDY PROCESS UPDATE" [ref=f41e101]
+          - row [ref=f41e102]:
+            - cell [ref=f41e103]:
+              - strong [ref=f41e104]:
+                - link "7" [ref=f41e105] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=59142&itemNumber=7
+            - cell "1/29/2026" [ref=f41e106]
+            - cell "Rose City Partners, Schaper Energy Consulting, Crusoe Energy Systems, Outlaw Ventures, Solomon Data Systems, Eolic Development Partners, Zero Emission Grid, Juvo Energy, Belisari, and V-Wire" [ref=f41e107]
+            - cell "COM" [ref=f41e108]
+            - cell "OPEN LETTER TO THE COMMISSION REGARDING ERCOT'S INTERCONNECTION PROCESS FOR LARGE LOADS" [ref=f41e109]
+          - row [ref=f41e110]:
+            - cell [ref=f41e111]:
+              - strong [ref=f41e112]:
+                - link "8" [ref=f41e113] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=59142&itemNumber=8
+            - cell "1/30/2026" [ref=f41e114]
+            - cell "ERCOT" [ref=f41e115]
+            - cell "LTRS" [ref=f41e116]
+            - cell "ERCOT LARGE LOAD BATCH STUDY PROCESS DRAFT FRAMEWORK PRESENTATIONS" [ref=f41e117]
+          - row [ref=f41e118]:
+            - cell [ref=f41e119]:
+              - strong [ref=f41e120]:
+                - link "9" [ref=f41e121] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=59142&itemNumber=9
+            - cell "2/2/2026" [ref=f41e122]
+            - cell "OPUC" [ref=f41e123]
+            - cell "PRJ" [ref=f41e124]
+            - cell "OPUC NOTICE OF PARTICIPATION LETTER" [ref=f41e125]
+          - row [ref=f41e126]:
+            - cell [ref=f41e127]:
+              - strong [ref=f41e128]:
+                - link "10" [ref=f41e129] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=59142&itemNumber=10
+            - cell "2/2/2026" [ref=f41e130]
+            - cell "LARRY MARTIN" [ref=f41e131]
+            - cell "COM" [ref=f41e132]
+            - cell "75kW Sculptawave Infrastructure Standard and Sovereign Disclosure by Larry Power Versatility Martin.Formal Notice of the 75kW Ready State Technology for Large Load Interconnection" [ref=f41e133]
+          - row [ref=f41e134]:
+            - cell [ref=f41e135]:
+              - strong [ref=f41e136]:
+                - link "11" [ref=f41e137] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=59142&itemNumber=11
+            - cell "2/5/2026" [ref=f41e138]
+            - cell "ERCOT" [ref=f41e139]
+            - cell "LTRS" [ref=f41e140]
+            - cell "ERCOT LARGE LOAD BATCH STUDY PROCESS UPDATE" [ref=f41e141]
+          - row [ref=f41e142]:
+            - cell [ref=f41e143]:
+              - strong [ref=f41e144]:
+                - link "12" [ref=f41e145] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=59142&itemNumber=12
+            - cell "2/6/2026" [ref=f41e146]
+            - cell "TEXAS BLOCKCHAIN COUNCIL" [ref=f41e147]
+            - cell "PC" [ref=f41e148]
+            - cell "TBC ERCOT Large Load Interconnection Batch Study Comments" [ref=f41e149]
+          - row [ref=f41e150]:
+            - cell [ref=f41e151]:
+              - strong [ref=f41e152]:
+                - link "13" [ref=f41e153] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=59142&itemNumber=13
+            - cell "2/13/2026" [ref=f41e154]
+            - cell "ERCOT" [ref=f41e155]
+            - cell "LTRS" [ref=f41e156]
+            - cell "ERCOT LARGE LOAD BATCH STUDY UPDATE" [ref=f41e157]
+          - row [ref=f41e158]:
+            - cell [ref=f41e159]:
+              - strong [ref=f41e160]:
+                - link "14" [ref=f41e161] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=59142&itemNumber=14
+            - cell "3/5/2026" [ref=f41e162]
+            - cell "ERCOT" [ref=f41e163]
+            - cell "PRJ" [ref=f41e164]
+            - cell "ERCOT LARGE LOAD BATCH STUDY UPDATE" [ref=f41e165]
+          - row [ref=f41e166]:
+            - cell [ref=f41e167]:
+              - strong [ref=f41e168]:
+                - link "15" [ref=f41e169] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=59142&itemNumber=15
+            - cell "3/9/2026" [ref=f41e170]
+            - cell "SCHAPER ENERGY CONSULTING LLC" [ref=f41e171]
+            - cell "COM" [ref=f41e172]
+            - cell "PUC PROJECT NO. 59142 - BATCH STUDY CONSIDERATIONS AND PGRR145" [ref=f41e173]
+          - row [ref=f41e174]:
+            - cell [ref=f41e175]:
+              - strong [ref=f41e176]:
+                - link "16" [ref=f41e177] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=59142&itemNumber=16
+            - cell "3/20/2026" [ref=f41e178]
+            - cell "VISTRA CORP." [ref=f41e179]
+            - cell "PRJ" [ref=f41e180]
+            - cell "Vistra Corp.'s Comments on Planning Guide Revision Request 145 for Project 59142" [ref=f41e181]
+          - row [ref=f41e182]:
+            - cell [ref=f41e183]:
+              - strong [ref=f41e184]:
+                - link "17" [ref=f41e185] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=59142&itemNumber=17
+            - cell "3/30/2026" [ref=f41e186]
+            - cell "ERCOT" [ref=f41e187]
+            - cell "PRJ" [ref=f41e188]
+            - cell "ERCOT LARGE LOAD BATCH STUDY UPDATE" [ref=f41e189]
+          - row [ref=f41e190]:
+            - cell [ref=f41e191]:
+              - strong [ref=f41e192]:
+                - link "18" [ref=f41e193] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=59142&itemNumber=18
+            - cell "4/9/2026" [ref=f41e194]
+            - cell "VISTRA CORP." [ref=f41e195]
+            - cell "COM" [ref=f41e196]
+            - cell "Vistra Corp.'s Comments on Planning Guide Revision Request 145 for Project 59142" [ref=f41e197]
+          - row [ref=f41e198]:
+            - cell [ref=f41e199]:
+              - strong [ref=f41e200]:
+                - link "19" [ref=f41e201] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=59142&itemNumber=19
+            - cell "4/10/2026" [ref=f41e202]
+            - cell "ONCOR ELECTRIC DELIVERY COMPANY LLC" [ref=f41e203]
+            - cell "COM" [ref=f41e204]
+            - cell "ONCOR ELECTRIC DELIVERY COMPANY LLC’S COMMENTS ON ERCOT’S PGRR 145" [ref=f41e205]
+          - row [ref=f41e206]:
+            - cell [ref=f41e207]:
+              - strong [ref=f41e208]:
+                - link "20" [ref=f41e209] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=59142&itemNumber=20
+            - cell "4/10/2026" [ref=f41e210]
+            - cell "ERCOT" [ref=f41e211]
+            - cell "PRJ" [ref=f41e212]
+            - cell "ERCOT LARGE LOAD BATCH STUDY UPDATE" [ref=f41e213]
+          - row [ref=f41e214]:
+            - cell [ref=f41e215]:
+              - strong [ref=f41e216]:
+                - link "21" [ref=f41e217] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=59142&itemNumber=21
+            - cell "4/11/2026" [ref=f41e218]
+            - cell "SCHAPER ENERGY CONSULTING LLC" [ref=f41e219]
+            - cell "COM" [ref=f41e220]
+            - cell "PGRR145 & ERCOT BATCH ZERO CRITERIA CONSIDERATION" [ref=f41e221]
+          - row [ref=f41e222]:
+            - cell [ref=f41e223]:
+              - strong [ref=f41e224]:
+                - link "22" [ref=f41e225] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=59142&itemNumber=22
+            - cell "4/13/2026" [ref=f41e226]
+            - cell "PUC RULES & PROJECTS" [ref=f41e227]
+            - cell "PRJ" [ref=f41e228]
+            - cell "Staff Memo" [ref=f41e229]
+          - row [ref=f41e230]:
+            - cell [ref=f41e231]:
+              - strong [ref=f41e232]:
+                - link "23" [ref=f41e233] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=59142&itemNumber=23
+            - cell "4/16/2026" [ref=f41e234]
+            - cell "Eolic Development Partners" [ref=f41e235]
+            - cell "COM" [ref=f41e236]
+            - cell "Eolic Development Partners Comments on Proposed New 16 TAC 25.194" [ref=f41e237]
+          - row [ref=f41e238]:
+            - cell [ref=f41e239]:
+              - strong [ref=f41e240]:
+                - link "24" [ref=f41e241] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=59142&itemNumber=24
+            - cell "4/16/2026" [ref=f41e242]
+            - cell "Google LLC, Lancium LLC, Eolic Development LLC" [ref=f41e243]
+            - cell "COM" [ref=f41e244]
+            - cell "Joint Comments of Google LLC, Lancium LLC, and Eolic Development LLC" [ref=f41e245]
+          - row [ref=f41e246]:
+            - cell [ref=f41e247]:
+              - strong [ref=f41e248]:
+                - link "25" [ref=f41e249] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=59142&itemNumber=25
+            - cell "4/16/2026" [ref=f41e250]
+            - cell "Tract Holding Company I, LLC" [ref=f41e251]
+            - cell "COM" [ref=f41e252]
+            - cell "TRACT HOLDING COMPANY I, LLC’S COMMENTS ON THE COMMISSION’S STAFF MEMO DATED APRIL 12, 2026" [ref=f41e253]
+          - row [ref=f41e254]:
+            - cell [ref=f41e255]:
+              - strong [ref=f41e256]:
+                - link "26" [ref=f41e257] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=59142&itemNumber=26
+            - cell "4/16/2026" [ref=f41e258]
+            - cell "Stream Data Centers, L.P. and Provident Corp." [ref=f41e259]
+            - cell "COM" [ref=f41e260]
+            - cell "Joint Comments of Stream Data Centers and Provident" [ref=f41e261]
+          - row [ref=f41e262]:
+            - cell [ref=f41e263]:
+              - strong [ref=f41e264]:
+                - link "27" [ref=f41e265] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=59142&itemNumber=27
+            - cell "4/16/2026" [ref=f41e266]
+            - cell "Engine No. 1" [ref=f41e267]
+            - cell "COM" [ref=f41e268]
+            - cell "Comments in Response to Staff Memo" [ref=f41e269]
+          - row [ref=f41e270]:
+            - cell [ref=f41e271]:
+              - strong [ref=f41e272]:
+                - link "28" [ref=f41e273] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=59142&itemNumber=28
+            - cell "4/16/2026" [ref=f41e274]
+            - cell "Agentic Infrastructure LLC" [ref=f41e275]
+            - cell "COM" [ref=f41e276]
+            - cell "Agentic Infrastructure Comments regarding 59142 in relations to comments file under 58481" [ref=f41e277]
+          - row [ref=f41e278]:
+            - cell [ref=f41e279]:
+              - strong [ref=f41e280]:
+                - link "29" [ref=f41e281] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=59142&itemNumber=29
+            - cell "4/17/2026" [ref=f41e282]
+            - cell "CyrusOne, LP" [ref=f41e283]
+            - cell "COM" [ref=f41e284]
+            - cell "CyrusOne Project No. 59142 Batch Study Considerations and PGRR145" [ref=f41e285]
+          - row [ref=f41e286]:
+            - cell [ref=f41e287]:
+              - strong [ref=f41e288]:
+                - link "30" [ref=f41e289] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=59142&itemNumber=30
+            - cell "4/29/2026" [ref=f41e290]
+            - cell "PUC DEPUTY EXECUTIVE DIRECTOR" [ref=f41e291]
+            - cell "PC" [ref=f41e292]
+            - cell "Staff's April 29, 2026 comments on PGRR 145" [ref=f41e293]
+          - row [ref=f41e294]:
+            - cell [ref=f41e295]:
+              - strong [ref=f41e296]:
+                - link "31" [ref=f41e297] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=59142&itemNumber=31
+            - cell "5/4/2026" [ref=f41e298]
+            - cell "Tract Holding Company I, LLC" [ref=f41e299]
+            - cell "COM" [ref=f41e300]
+            - cell "TRACT HOLDING COMPANY I, LLC’S COMMENTS ON THE COMMISSION’S STAFF MEMO DATED APRIL 12, 2026" [ref=f41e301]
+          - row [ref=f41e302]:
+            - cell [ref=f41e303]:
+              - strong [ref=f41e304]:
+                - link "32" [ref=f41e305] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=59142&itemNumber=32
+            - cell "5/5/2026" [ref=f41e306]
+            - cell "ERCOT" [ref=f41e307]
+            - cell "PRJ" [ref=f41e308]
+            - cell "ERCOT LARGE LOAD BATCH STUDY UPDATE" [ref=f41e309]
+          - row [ref=f41e310]:
+            - cell [ref=f41e311]:
+              - strong [ref=f41e312]:
+                - link "33" [ref=f41e313] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=59142&itemNumber=33
+            - cell "5/6/2026" [ref=f41e314]
+            - cell "PUC DEPUTY EXECUTIVE DIRECTOR" [ref=f41e315]
+            - cell "PRJ" [ref=f41e316]
+            - cell "Staff memo on Batch 0 entry criteria" [ref=f41e317]
+          - row [ref=f41e318]:
+            - cell [ref=f41e319]:
+              - strong [ref=f41e320]:
+                - link "34" [ref=f41e321] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=59142&itemNumber=34
+            - cell "5/14/2026" [ref=f41e322]
+            - cell "Data Center Coalition (DCC)" [ref=f41e323]
+            - cell "COM" [ref=f41e324]
+            - cell "DCC Comments on Net Metering Arrangements in Batch Zero" [ref=f41e325]
+          - row [ref=f41e326]:
+            - cell [ref=f41e327]:
+              - strong [ref=f41e328]:
+                - link "35" [ref=f41e329] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=59142&itemNumber=35
+            - cell "5/21/2026" [ref=f41e330]
+            - cell "LARRY MARTIN" [ref=f41e331]
+            - cell "PC" [ref=f41e332]
+            - cell "75 kw large load" [ref=f41e333]
+          - row [ref=f41e334]:
+            - cell [ref=f41e335]:
+              - strong [ref=f41e336]:
+                - link "36" [ref=f41e337] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=59142&itemNumber=36
+            - cell "5/26/2026" [ref=f41e338]
+            - cell "Nightpeak Energy LLC" [ref=f41e339]
+            - cell "COM" [ref=f41e340]
+            - cell "Comments on May 6th Staff Memorandum" [ref=f41e341]
+          - row [ref=f41e342]:
+            - cell [ref=f41e343]:
+              - strong [ref=f41e344]:
+                - link "37" [ref=f41e345] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=59142&itemNumber=37
+            - cell "6/12/2026" [ref=f41e346]
+            - cell "Crusoe Technologies, LLC" [ref=f41e347]
+            - cell "PL" [ref=f41e348]
+            - cell "Crusoe Technologies, LLC Comments on Recommended Approval of PGRR 145 by the ERCOT Board of Directors" [ref=f41e349]
+          - row [ref=f41e350]:
+            - cell [ref=f41e351]:
+              - strong [ref=f41e352]:
+                - link "38" [ref=f41e353] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=59142&itemNumber=38
+            - cell "6/16/2026" [ref=f41e354]
+            - cell "CyrusOne" [ref=f41e355]
+            - cell "COM" [ref=f41e356]
+            - cell "CYRUSONE COMMENTS REGARDING PLANNING GUIDE REVISION REQUEST PGRR145" [ref=f41e357]
+          - row [ref=f41e358]:
+            - cell [ref=f41e359]:
+              - strong [ref=f41e360]:
+                - link "39" [ref=f41e361] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=59142&itemNumber=39
+            - cell "6/17/2026" [ref=f41e362]
+            - cell "First Ammonia LLC" [ref=f41e363]
+            - cell "COM" [ref=f41e364]
+            - cell "First Ammonia LLC's Comments on Commission Consideration of PGRR 145, Batch Zero Process for Large Load Interconnections" [ref=f41e365]
+          - row [ref=f41e366]:
+            - cell [ref=f41e367]:
+              - strong [ref=f41e368]:
+                - link "40" [ref=f41e369] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=59142&itemNumber=40
+            - cell "7/10/2026" [ref=f41e370]
+            - cell "Trailblazer Infrastructure LLC" [ref=f41e371]
+            - cell "LTRS" [ref=f41e372]
+            - cell "Project Trailblazer – Request for Legacy and/or batch zero Interconnection Process Consideration" [ref=f41e373]
+          - row [ref=f41e374]:
+            - cell [ref=f41e375]:
+              - strong [ref=f41e376]:
+                - link "41" [ref=f41e377] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=59142&itemNumber=41
+            - cell "7/13/2026" [ref=f41e378]
+            - cell "Trailblazer Infrastrructure LLC." [ref=f41e379]
+            - cell "PL" [ref=f41e380]
+            - cell "Notice of Withdrawal – This filing formally withdraws Trailblazer Infrastructure LLC's previously submitted Informational Memorandum in PUCT Project No. 59142. The notice advises the Commission that, due to ongoing discussions among the relevant parties." [ref=f41e381]
+          - row [ref=f41e382]:
+            - cell [ref=f41e383]:
+              - strong [ref=f41e384]:
+                - link "42" [ref=f41e385] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=59142&itemNumber=42
+            - cell "8/10/2026" [ref=f41e386]
+            - cell "ERCOT" [ref=f41e387]
+            - cell "PRJ" [ref=f41e388]
+            - cell "ELECTRIC RELIABILITY COUNCIL OF TEXAS, INC.’S REQUESTS FOR GOOD CAUSE EXCEPTIONS RELATING TO BATCH ZERO DEADLINES AND STATUS UPDATE ON ADDITIONAL MATTERS INCLUDING THE LONG-TERM LOAD FORECAST" [ref=f41e389]
+          - row [ref=f41e390]:
+            - cell [ref=f41e391]:
+              - strong [ref=f41e392]:
+                - link "43" [ref=f41e393] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=59142&itemNumber=43
+            - cell "8/13/2026" [ref=f41e394]
+            - cell "Matthew Horany" [ref=f41e395]
+            - cell "COM" [ref=f41e396]
+            - cell "Public Comment of Matt Horany" [ref=f41e397]
+          - row [ref=f41e398]:
+            - cell [ref=f41e399]:
+              - strong [ref=f41e400]:
+                - link "44" [ref=f41e401] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=59142&itemNumber=44
+            - cell "8/13/2026" [ref=f41e402]
+            - cell "First Ammonia LLC" [ref=f41e403]
+            - cell "LTRS" [ref=f41e404]
+            - cell "Letter regarding ERCOT's Requests for Exceptions Relating to Batch Zero Deadlines" [ref=f41e405]
+          - row [ref=f41e406]:
+            - cell [ref=f41e407]:
+              - strong [ref=f41e408]:
+                - link "45" [ref=f41e409] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=59142&itemNumber=45
+            - cell "8/13/2026" [ref=f41e410]
+            - cell "Octa Data Center Development Company LLC" [ref=f41e411]
+            - cell "COM" [ref=f41e412]
+            - cell "Octa's Comments on ERCOT's August 10, 2026 Status Update" [ref=f41e413]
+          - row [ref=f41e414]:
+            - cell [ref=f41e415]:
+              - strong [ref=f41e416]:
+                - link "46" [ref=f41e417] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=59142&itemNumber=46
+            - cell "8/16/2026" [ref=f41e418]
+            - cell "Sandra Gail Gilbreath Wright" [ref=f41e419]
+            - cell "PC" [ref=f41e420]
+            - cell "Public Comment – Audit Standards Required Under Governor’s Directive" [ref=f41e421]
+          - row [ref=f41e422]:
+            - cell [ref=f41e423]:
+              - strong [ref=f41e424]:
+                - link "47" [ref=f41e425] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=59142&itemNumber=47
+            - cell "8/16/2026" [ref=f41e426]
+            - cell "Pallara, Inc." [ref=f41e427]
+            - cell "COM" [ref=f41e428]
+            - cell "Comments of Pallara, Inc. on ERCOT's Requests for Good Cause Exceptions Relating to Batch Zero Deadlines" [ref=f41e429]
+          - row [ref=f41e430]:
+            - cell [ref=f41e431]:
+              - strong [ref=f41e432]:
+                - link "48" [ref=f41e433] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=59142&itemNumber=48
+            - cell "8/19/2026" [ref=f41e434]
+            - cell "Ionic Digital Inc." [ref=f41e435]
+            - cell "COM" [ref=f41e436]
+            - cell "Ionic Digital Inc.'s Comments Regarding ERCOT's Requests for Good Cause Exceptions Relating to Batch Zero Deadlines" [ref=f41e437]
+          - row [ref=f41e438]:
+            - cell [ref=f41e439]:
+              - strong [ref=f41e440]:
+                - link "49" [ref=f41e441] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=59142&itemNumber=49
+            - cell "8/19/2026" [ref=f41e442]
+            - cell "PowerHouse CloudPeak Venture Alpha LLC and PowerHouse CloudPeak Venture C LLC" [ref=f41e443]
+            - cell "LTRS" [ref=f41e444]
+            - cell "Request for Commission Action on Batch Zero Eligibility (CloudPeak BZ-259 & BZ-180)" [ref=f41e445]
+          - row [ref=f41e446]:
+            - cell [ref=f41e447]:
+              - strong [ref=f41e448]:
+                - link "50" [ref=f41e449] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=59142&itemNumber=50
+            - cell "8/19/2026" [ref=f41e450]
+            - cell "Jordan Smith" [ref=f41e451]
+            - cell "PC" [ref=f41e452]
+            - cell "Review of ERCOT's Interconnection Process for Large Loads" [ref=f41e453]
+          - row [ref=f41e454]:
+            - cell [ref=f41e455]:
+              - strong [ref=f41e456]:
+                - link "51" [ref=f41e457] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=59142&itemNumber=51
+            - cell "8/19/2026" [ref=f41e458]
+            - cell "Anthony D Smith" [ref=f41e459]
+            - cell "PC" [ref=f41e460]
+            - cell "Review of ERCOT's Interconnection Process for Large Loads" [ref=f41e461]
+          - row [ref=f41e462]:
+            - cell [ref=f41e463]:
+              - strong [ref=f41e464]:
+                - link "52" [ref=f41e465] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=59142&itemNumber=52
+            - cell "8/20/2026" [ref=f41e466]
+            - cell "ERCOT" [ref=f41e467]
+            - cell "LTRS" [ref=f41e468]
+            - cell "ERCOT UPDATES – GOOD CAUSE EXCEPTIONS FOR PGRR 145, BATCH ZERO VERIFICATION AND AUDIT PROCESS, AND COMMUNITY IMPACT REVIEW PROCESS" [ref=f41e469]
+          - row [ref=f41e470]:
+            - cell [ref=f41e471]:
+              - strong [ref=f41e472]:
+                - link "53" [ref=f41e473] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=59142&itemNumber=53
+            - cell "8/20/2026" [ref=f41e474]
+            - cell "PUC OPDM" [ref=f41e475]
+            - cell "PRJ" [ref=f41e476]
+            - cell "ORDER GRANTING GOOD CAUSE EXCEPTIONS" [ref=f41e477]
+          - row [ref=f41e478]:
+            - cell [ref=f41e479]:
+              - strong [ref=f41e480]:
+                - link "54" [ref=f41e481] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=59142&itemNumber=54
+            - cell "8/20/2026" [ref=f41e482]
+            - cell "SCHAPER ENERGY CONSULTING LLC" [ref=f41e483]
+            - cell "COM" [ref=f41e484]
+            - cell "SCHAPER ENERGY CONSULTING PROPOSED APPROACH TO PUBLIC BENEFIT DISCLOSURE IN THE COMMUNITY IMPACT COMPONENT OF THE LARGE LOAD AUDIT" [ref=f41e485]
+          - row [ref=f41e486]:
+            - cell [ref=f41e487]:
+              - strong [ref=f41e488]:
+                - link "55" [ref=f41e489] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=59142&itemNumber=55
+            - cell "9/11/2026" [ref=f41e490]
+            - cell "ERCOT" [ref=f41e491]
+            - cell "LTRS" [ref=f41e492]
+            - cell "ERCOT UPDATE FOR SEPTEMBER 11, 2026 OPEN MEETING – BATCH ZERO AND STATE AND COMMUNITY IMPACT RFI PROCESS" [ref=f41e493]
+          - row [ref=f41e494]:
+            - cell [ref=f41e495]:
+              - strong [ref=f41e496]:
+                - link "56" [ref=f41e497] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=59142&itemNumber=56
+            - cell "9/11/2026" [ref=f41e498]
+            - cell "Laura Lindemann" [ref=f41e499]
+            - cell "PC" [ref=f41e500]
+            - cell "Request for Audit for Project Raptor" [ref=f41e501]
+          - row [ref=f41e502]:
+            - cell [ref=f41e503]:
+              - strong [ref=f41e504]:
+                - link "57" [ref=f41e505] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=59142&itemNumber=57
+            - cell "9/11/2026" [ref=f41e506]
+            - cell "Synergen Green Energy, Inc." [ref=f41e507]
+            - cell "PL" [ref=f41e508]
+            - cell "Synergen's Request for Good Cause Exception Relating To Batch Zero Eligibility Deadlines" [ref=f41e509]
+          - row [ref=f41e510]:
+            - cell [ref=f41e511]:
+              - strong [ref=f41e512]:
+                - link "58" [ref=f41e513] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=59142&itemNumber=58
+            - cell "9/13/2026" [ref=f41e514]
+            - cell "Ray Baggett" [ref=f41e515]
+            - cell "PC" [ref=f41e516]
+            - cell "Request of audit for Project Raptor" [ref=f41e517]
+          - row [ref=f41e518]:
+            - cell [ref=f41e519]:
+              - strong [ref=f41e520]:
+                - link "59" [ref=f41e521] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=59142&itemNumber=59
+            - cell "9/13/2026" [ref=f41e522]
+            - cell "Megan Atchison" [ref=f41e523]
+            - cell "PC" [ref=f41e524]
+            - cell "Audit Request- Project Raptor" [ref=f41e525]
+          - row [ref=f41e526]:
+            - cell [ref=f41e527]:
+              - strong [ref=f41e528]:
+                - link "60" [ref=f41e529] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=59142&itemNumber=60
+            - cell "9/13/2026" [ref=f41e530]
+            - cell "Andrew Atchison" [ref=f41e531]
+            - cell "PC" [ref=f41e532]
+            - cell "Audit Request- Project Raptor" [ref=f41e533]
+          - row [ref=f41e534]:
+            - cell [ref=f41e535]:
+              - strong [ref=f41e536]:
+                - link "61" [ref=f41e537] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=59142&itemNumber=61
+            - cell "9/13/2026" [ref=f41e538]
+            - cell "Merri Dawn Bolton" [ref=f41e539]
+            - cell "PC" [ref=f41e540]
+            - cell "Audit Request- Project Raptor" [ref=f41e541]
+          - row [ref=f41e542]:
+            - cell [ref=f41e543]:
+              - strong [ref=f41e544]:
+                - link "62" [ref=f41e545] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=59142&itemNumber=62
+            - cell "9/13/2026" [ref=f41e546]
+            - cell "Brad Bolton" [ref=f41e547]
+            - cell "PC" [ref=f41e548]
+            - cell "Audit Request- Project Raptor" [ref=f41e549]
+          - row [ref=f41e550]:
+            - cell [ref=f41e551]:
+              - strong [ref=f41e552]:
+                - link "63" [ref=f41e553] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=59142&itemNumber=63
+            - cell "9/13/2026" [ref=f41e554]
+            - cell "Mark Steel" [ref=f41e555]
+            - cell "PC" [ref=f41e556]
+            - cell "Audit Request- Project Raptor" [ref=f41e557]
+          - row [ref=f41e558]:
+            - cell [ref=f41e559]:
+              - strong [ref=f41e560]:
+                - link "64" [ref=f41e561] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=59142&itemNumber=64
+            - cell "9/13/2026" [ref=f41e562]
+            - cell "Holly Steel" [ref=f41e563]
+            - cell "PC" [ref=f41e564]
+            - cell "Audit Request- Project Raptor" [ref=f41e565]
+          - row [ref=f41e566]:
+            - cell [ref=f41e567]:
+              - strong [ref=f41e568]:
+                - link "65" [ref=f41e569] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=59142&itemNumber=65
+            - cell "9/14/2026" [ref=f41e570]
+            - cell "Adam Lindemann" [ref=f41e571]
+            - cell "PC" [ref=f41e572]
+            - cell "Request for audit -Project Raptor" [ref=f41e573]
+          - row [ref=f41e574]:
+            - cell [ref=f41e575]:
+              - strong [ref=f41e576]:
+                - link "66" [ref=f41e577] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=59142&itemNumber=66
+            - cell "9/14/2026" [ref=f41e578]
+            - cell "Katrina Farmer" [ref=f41e579]
+            - cell "PC" [ref=f41e580]
+            - cell "Request for audit - Project Raptor" [ref=f41e581]
+          - row [ref=f41e582]:
+            - cell [ref=f41e583]:
+              - strong [ref=f41e584]:
+                - link "67" [ref=f41e585] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=59142&itemNumber=67
+            - cell "9/14/2026" [ref=f41e586]
+            - cell "Project Raptor" [ref=f41e587]
+            - cell "PRJ" [ref=f41e588]
+            - 'cell "Review Project Raptor #59142" [ref=f41e589]'
+          - row [ref=f41e590]:
+            - cell [ref=f41e591]:
+              - strong [ref=f41e592]:
+                - link "68" [ref=f41e593] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=59142&itemNumber=68
+            - cell "9/14/2026" [ref=f41e594]
+            - cell "Project Raptor" [ref=f41e595]
+            - cell "PC" [ref=f41e596]
+            - cell "Project Raptor" [ref=f41e597]
+          - row [ref=f41e598]:
+            - cell [ref=f41e599]:
+              - strong [ref=f41e600]:
+                - link "69" [ref=f41e601] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=59142&itemNumber=69
+            - cell "9/14/2026" [ref=f41e602]
+            - cell "Chad Peysen" [ref=f41e603]
+            - cell "COM" [ref=f41e604]
+            - cell "My name is Chad Peysen and I live at 1116 Three Way Rd, Wichita Falls, TX 76310. The 1000 MW request sits 1200 ft from my home. I would like the audit applied to Project Raptor specifically." [ref=f41e605]
+          - row [ref=f41e606]:
+            - cell [ref=f41e607]:
+              - strong [ref=f41e608]:
+                - link "70" [ref=f41e609] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=59142&itemNumber=70
+            - cell "9/14/2026" [ref=f41e610]
+            - cell "Heather Peysen" [ref=f41e611]
+            - cell "COM" [ref=f41e612]
+            - cell "My name is Heather Peysen and I live at 1116 Three Way Rd, Wichita Falls, TX 76310. The 1000 MW request sits 1200 ft from my home. I would like the audit applied to Project Raptor specifically." [ref=f41e613]
+          - row [ref=f41e614]:
+            - cell [ref=f41e615]:
+              - strong [ref=f41e616]:
+                - link "71" [ref=f41e617] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=59142&itemNumber=71
+            - cell "9/14/2026" [ref=f41e618]
+            - cell "John Peysen" [ref=f41e619]
+            - cell "COM" [ref=f41e620]
+            - cell "My name is John Peysen and I live at 433 Mahler Rd, Wichita Falls, TX 76310. The 1000 MW request sits 1 road over from my home. I would like the audit applied to Project Raptor specifically." [ref=f41e621]
+          - row [ref=f41e622]:
+            - cell [ref=f41e623]:
+              - strong [ref=f41e624]:
+                - link "72" [ref=f41e625] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=59142&itemNumber=72
+            - cell "9/14/2026" [ref=f41e626]
+            - cell "Rhonda Peysen" [ref=f41e627]
+            - cell "COM" [ref=f41e628]
+            - cell "My name is Rhonda Peysen and I live at 433 Mahler Rd, Wichita Falls, TX 76310. The 1000 MW request sits 1 road over from my home. I would like the audit applied to Project Raptor specifically." [ref=f41e629]
+          - row [ref=f41e630]:
+            - cell [ref=f41e631]:
+              - strong [ref=f41e632]:
+                - link "73" [ref=f41e633] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=59142&itemNumber=73
+            - cell "9/21/2026" [ref=f41e634]
+            - cell "ERCOT" [ref=f41e635]
+            - cell "LTRS" [ref=f41e636]
+            - cell "ERCOT UPDATE – BATCH ZERO ELIGIBILITY VERIFICATION AND STATE AND COMMUNITY IMPACT RFI PROCESS" [ref=f41e637]
+          - row [ref=f41e638]:
+            - cell [ref=f41e639]:
+              - strong [ref=f41e640]:
+                - link "74" [ref=f41e641] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=59142&itemNumber=74
+            - cell "9/25/2026" [ref=f41e642]
+            - cell "Douglas Lindemann" [ref=f41e643]
+            - cell "PC" [ref=f41e644]
+            - cell "Request for Audit for Project Raptor" [ref=f41e645]
+          - row [ref=f41e646]:
+            - cell [ref=f41e647]:
+              - strong [ref=f41e648]:
+                - link "75" [ref=f41e649] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=59142&itemNumber=75
+            - cell "9/25/2026" [ref=f41e650]
+            - cell "Jennifer Lindemann" [ref=f41e651]
+            - cell "PC" [ref=f41e652]
+            - cell "Request for Audit for Project Raptor" [ref=f41e653]
+          - row [ref=f41e654]:
+            - cell [ref=f41e655]:
+              - strong [ref=f41e656]:
+                - link "76" [ref=f41e657] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=59142&itemNumber=76
+            - cell "9/25/2026" [ref=f41e658]
+            - cell "Bob Lindemann" [ref=f41e659]
+            - cell "PC" [ref=f41e660]
+            - cell "Request for Audit for Project Raptor" [ref=f41e661]
+          - row [ref=f41e662]:
+            - cell [ref=f41e663]:
+              - strong [ref=f41e664]:
+                - link "77" [ref=f41e665] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=59142&itemNumber=77
+            - cell "9/25/2026" [ref=f41e666]
+            - cell "Becky Lindemann" [ref=f41e667]
+            - cell "PC" [ref=f41e668]
+            - cell "Request for Audit for Project Raptor" [ref=f41e669]
+          - row [ref=f41e670]:
+            - cell [ref=f41e671]:
+              - strong [ref=f41e672]:
+                - link "78" [ref=f41e673] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=59142&itemNumber=78
+            - cell "11/4/2026" [ref=f41e674]
+            - cell "ERCOT" [ref=f41e675]
+            - cell "PRJ" [ref=f41e676]
+            - 'cell "ERCOT UPDATES: BATCH ZERO VERIFICATION AND AUDIT PROCESS, DATA CENTER STATE AND COMMUNITY IMPACT RFI, AND MEDIUM LOAD RFI" [ref=f41e677]'
+          - row [ref=f41e678]:
+            - cell [ref=f41e679]:
+              - strong [ref=f41e680]:
+                - link "79" [ref=f41e681] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=59142&itemNumber=79
+            - cell "11/11/2026" [ref=f41e682]
+            - cell "Becky Wied" [ref=f41e683]
+            - cell "PC" [ref=f41e684]
+            - cell "Project 59142 - Opposition to Synergen's Request for Good Cause Exception Relating to Batch Zero Eligibility Deadlines" [ref=f41e685]
+          - row [ref=f41e686]:
+            - cell [ref=f41e687]:
+              - strong [ref=f41e688]:
+                - link "80" [ref=f41e689] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=59142&itemNumber=80
+            - cell "11/12/2026" [ref=f41e690]
+            - cell "PATTY WALKER" [ref=f41e691]
+            - cell "PC" [ref=f41e692]
+            - cell "Formal Public Comment Opposing Special Consideration for Synergen Green Energy PUCT No. 59142 Item No. 57" [ref=f41e693]
+          - row [ref=f41e694]:
+            - cell [ref=f41e695]:
+              - strong [ref=f41e696]:
+                - link "81" [ref=f41e697] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=59142&itemNumber=81
+            - cell "11/12/2026" [ref=f41e698]
+            - cell "Kim Vanek" [ref=f41e699]
+            - cell "PC" [ref=f41e700]
+            - cell "Formal Public Comment Opposing Special Consideration for Synergen Green Energy PUCT No. 59142 Item No. 57" [ref=f41e701]
+          - row [ref=f41e702]:
+            - cell [ref=f41e703]:
+              - strong [ref=f41e704]:
+                - link "82" [ref=f41e705] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=59142&itemNumber=82
+            - cell "11/12/2026" [ref=f41e706]
+            - cell "Kim Vanek" [ref=f41e707]
+            - cell "PC" [ref=f41e708]
+            - cell "Review of ERCOT's Interconnection Processes for Large Loads Public Comments Opposing Synergen Green Energy, Inc.'s Request for a Good Cause Exception" [ref=f41e709]
+          - row [ref=f41e710]:
+            - cell [ref=f41e711]:
+              - strong [ref=f41e712]:
+                - link "83" [ref=f41e713] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=59142&itemNumber=83
+            - cell "11/17/2026" [ref=f41e714]
+            - cell "Ann Flores" [ref=f41e715]
+            - cell "PC" [ref=f41e716]
+            - cell "FORMAL LETTER OF OPPOSITION 59142_57_1682331" [ref=f41e717]
+          - row [ref=f41e718]:
+            - cell [ref=f41e719]:
+              - strong [ref=f41e720]:
+                - link "84" [ref=f41e721] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=59142&itemNumber=84
+            - cell "11/18/2026" [ref=f41e722]
+            - cell "Roger Broussard" [ref=f41e723]
+            - cell "LTRS" [ref=f41e724]
+            - cell "PUBLIC COMMENT IN OPPOSITION TO SYNERGEN GREEN ENERGY, INC.'S REQUEST FOR GOOD CAUSE EXCEPTION" [ref=f41e725]
+          - row [ref=f41e726]:
+            - cell [ref=f41e727]:
+              - strong [ref=f41e728]:
+                - link "85" [ref=f41e729] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=59142&itemNumber=85
+            - cell "11/18/2026" [ref=f41e730]
+            - cell "Michelle McCabe" [ref=f41e731]
+            - cell "PC" [ref=f41e732]
+            - cell "Formal Public Comment Opposing Special Consideration for Synergen Green Energy PUCT No. 59142 Item No. 57" [ref=f41e733]
+          - row [ref=f41e734]:
+            - cell "«« « 1 » »» Export to Excel" [ref=f41e735]:
+              - generic:
+                - generic:
+                  - list:
+                    - listitem:
+                      - generic [ref=f41e736]: ««
+                    - listitem:
+                      - generic [ref=f41e737]: «
+                    - listitem:
+                      - generic [ref=f41e738]: "1"
+                    - listitem:
+                      - generic [ref=f41e739]: »
+                    - listitem:
+                      - generic [ref=f41e740]: »»
+              - link "Export to Excel" [ref=f41e742] [cursor=pointer]:
+                - /url: /search/exportfilings/?ControlNumber=59142&ItemMatch=0&SortBy=ItemNumber&SortOrder=Ascending
+                - text: Export to Excel
+                - generic [aria-hidden] [ref=f41e743]: 
+  - contentinfo [ref=f41e744]:
+    - generic [ref=f41e745]:
+      - generic [ref=f41e746]:
+        - generic [ref=f41e747]:
+          - heading "Public Utility Commission of Texas" [level=5] [ref=f41e748]
+          - generic [ref=f41e749]: 1701 N. Congress Ave. PO Box 13326 Austin, TX 78711-3326
+          - generic [ref=f41e750]:
+            - link " Phone 512-936-7000" [ref=f41e752] [cursor=pointer]:
+              - /url: tel://1-512-936-7000
+              - generic [ref=f41e753]: 
+              - generic "Phone"
+              - text: 512-936-7000
+            - link " Contact Us" [ref=f41e755] [cursor=pointer]:
+              - /url: https://www.puc.texas.gov/agency/about/contact/Default.aspx
+              - generic [ref=f41e756]: 
+              - text: Contact Us
+        - generic [ref=f41e757]:
+          - heading "AGENCY INFO" [level=5] [ref=f41e758]
+          - list [ref=f41e759]:
+            - listitem [ref=f41e760]:
+              - link "Site Policies" [ref=f41e761] [cursor=pointer]:
+                - /url: http://www.puc.texas.gov/agency/about/policies/Default.aspx
+            - listitem [ref=f41e762]:
+              - link "Sitemap" [ref=f41e763] [cursor=pointer]:
+                - /url: http://www.puc.texas.gov/agency/Sitemap.aspx
+        - generic [ref=f41e764]:
+          - heading "OTHER GOVERNMENT RESOURCES" [level=5] [ref=f41e765]
+          - list [ref=f41e766]:
+            - listitem [ref=f41e767]:
+              - link "Report Fraud, Waste or Abuse" [ref=f41e768] [cursor=pointer]:
+                - /url: http://sao.fraud.state.tx.us/
+            - listitem [ref=f41e769]:
+              - link "Texas Homeland Security" [ref=f41e770] [cursor=pointer]:
+                - /url: http://governor.state.tx.us/homeland
+            - listitem [ref=f41e771]:
+              - link "Ready.gov" [ref=f41e772] [cursor=pointer]:
+                - /url: http://www.ready.gov/
+            - listitem [ref=f41e773]:
+              - link "Texas.gov" [ref=f41e774] [cursor=pointer]:
+                - /url: http://texas.gov
+            - listitem [ref=f41e775]:
+              - link "Texas Veterans" [ref=f41e776] [cursor=pointer]:
+                - /url: https://veterans.portal.texas.gov/
+            - listitem [ref=f41e777]:
+              - link "TRAIL" [ref=f41e778] [cursor=pointer]:
+                - /url: https://www.tsl.state.tx.us/trail/index.html
+      - navigation [ref=f41e781]:
+        - list [ref=f41e782]:
+          - listitem [ref=f41e783]:
+            - link "PUC Calendar RSS Feed" [ref=f41e784] [cursor=pointer]:
+              - /url: http://www.puc.texas.gov/agency/calendar/GetCalendarRss.aspx
+              - generic [ref=f41e785]: 
+          - listitem [ref=f41e786]:
+            - link "Facebook" [ref=f41e787] [cursor=pointer]:
+              - /url: http://www.facebook.com/pages/Public-Utility-Commission-of-Texas/207063229365425
+              - generic [ref=f41e788]: 
+          - listitem [ref=f41e789]:
+            - link "Twitter" [ref=f41e790] [cursor=pointer]:
+              - /url: https://twitter.com/PUCTx
+              - generic [ref=f41e791]: 
+      - generic [ref=f41e792]: Copyright © 2026 Public Utility Commission of Texas Version 2.2.11.0

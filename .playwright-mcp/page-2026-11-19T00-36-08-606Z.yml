@@ -1,0 +1,1009 @@
+- generic [active] [ref=f48e1]:
+  - iframe [ref=f48e2]
+  - link "Skip navigation" [ref=f48e3] [cursor=pointer]:
+    - /url: "#skip_nav_bar_target"
+  - table [ref=f48e4]:
+    - rowgroup [ref=f48e5]:
+      - row [ref=f48e6]:
+        - cell [ref=f48e7]:
+          - link [ref=f48e8] [cursor=pointer]:
+            - /url: /cs/idcplg?IdcService=TCEQ_SEARCH
+            - img "Oracle Content Management Home" [ref=f48e9]
+        - cell [ref=f48e10]:
+          - link "Welcome to the TCEQ Records Online" [ref=f48e11] [cursor=pointer]:
+            - /url: /cs/idcplg?IdcService=TCEQ_SEARCH
+  - generic [ref=f48e12]: This application will allow you to search and view publicly available electronic recordsand information on many of the facilities regulated by the agency.
+  - generic [ref=f48e13]:
+    - generic:
+      - option "1" [selected]
+      - option "2"
+      - option "3"
+      - option "4"
+      - option "5"
+      - option "6"
+      - option "7"
+      - option "8"
+      - option "9"
+      - option "10"
+      - option "11"
+      - option "12"
+      - option "13"
+      - option "14"
+      - option "15"
+      - option "16"
+      - option "17"
+      - option "18"
+      - option "19"
+      - option "20"
+      - option "21"
+      - option "22"
+      - option "23"
+      - option "24"
+      - option "25"
+      - option "26"
+      - option "27"
+      - option "28"
+      - option "29"
+      - option "30"
+    - heading "Search Results" [level=1] [ref=f48e14]
+    - text: Potential items 1-20 of 53
+    - generic [ref=f48e15]:
+      - button "Search Within" [ref=f48e16]
+      - text: Use the Search Within function to narrow search results.
+    - generic [ref=f48e17]:
+      - generic:
+        - table:
+          - rowgroup:
+            - row:
+              - cell
+              - cell
+    - table [ref=f48e18]:
+      - rowgroup [ref=f48e19]:
+        - row [ref=f48e20]:
+          - cell "Filter by Category:" [ref=f48e21]
+          - cell [ref=f48e22]:
+            - generic [ref=f48e23]:
+              - img "xItemType" [ref=f48e24]
+              - text: Item Type
+          - cell [ref=f48e25]:
+            - generic [ref=f48e26]:
+              - img "xRecordSeries" [ref=f48e27]
+              - text: Record Series
+          - cell "Security Group:Public" [ref=f48e28]
+          - cell [ref=f48e29]:
+            - generic [ref=f48e30]:
+              - img "xAssignedLocation" [ref=f48e31]
+              - text: Assigned Location
+          - cell [ref=f48e32]:
+            - generic [ref=f48e33]:
+              - img "xMedia" [ref=f48e34]
+              - text: Media
+    - link "Search form" [ref=f48e35] [cursor=pointer]:
+      - /url: /cs/idcplg?IdcService=TCEQ_SEARCH
+    - text: "--> Search Results"
+    - table [ref=f48e37]:
+      - rowgroup [ref=f48e38]:
+        - row [ref=f48e39]:
+          - cell [ref=f48e40]
+          - cell "Page" [ref=f48e41]
+          - cell [ref=f48e43]:
+            - combobox "Page" [ref=f48e45]:
+              - option "1" [selected]
+              - option "2"
+              - option "3"
+          - cell "of 3" [ref=f48e46]
+          - cell [ref=f48e48]:
+            - link [ref=f48e49] [cursor=pointer]:
+              - /url: /cs/idcplg?IdcService=TCEQ_PERFORM_SEARCH&QueryText=dSecurityGroup+%3cmatches%3e+%60Public%60%3cAND%3e%28xRegEntName+%3csubstring%3e+%60SpaceX%60%29&SortField=dInDate&SortOrder=Desc&ResultCount=20&SearchEngineName=ELASTICSEARCH&SearchQueryFormat=UNIVERSAL&searchFormType=standard&listTemplateId=SearchResultsHeadline&SearchProviders=tceq4avrwccecmp_4444&SortSpec=xRecordSeries%20asc%2cxPrimaryID%20asc%2cxSecondaryID%20asc%2cxInsightDocumentType%20asc%2cdDocTitle%20asc%2cxBeginDate%20asc&SearchEngineName=ELASTICSEARCH&&IsExternalSearch=1&PageNumber=2&StartRow=21&EndRow=40&columnsString=dDocName,xRecordSeries,xPrimaryID,xSecondaryID,xInsightDocumentType,dDocTitle,xBeginDate,xEndDate,xLitigationHold,xRegEntName,xMedia,xComments,dSecurityGroup&accessID=7859185&newSearch=0
+              - img "Link To More Results" [ref=f48e50]
+    - table
+    - table [ref=f48e51]:
+      - rowgroup [ref=f48e52]:
+        - row [ref=f48e53]:
+          - cell [ref=f48e54]:
+            - table [ref=f48e56]:
+              - rowgroup [ref=f48e57]:
+                - row [ref=f48e58]:
+                  - cell [ref=f48e59]:
+                    - button "Hide/Show" [ref=f48e60]
+                - row [ref=f48e61]:
+                  - cell "Select Columns" [ref=f48e62]
+          - cell [ref=f48e63]:
+            - table [ref=f48e69]:
+              - rowgroup [ref=f48e70]:
+                - row [ref=f48e71]:
+                  - cell [ref=f48e72]:
+                    - list [ref=f48e75]:
+                      - listitem [ref=f48e76]:
+                        - link "Select" [ref=f48e77] [cursor=pointer]:
+                          - /url: "#menu_1_DOCUMENTS_SELECT"
+                      - listitem [ref=f48e78]:
+                        - link "Change View" [ref=f48e79] [cursor=pointer]:
+                          - /url: "#menu_1_VIEWS"
+                      - listitem [ref=f48e80]:
+                        - link "Search Actions" [ref=f48e81] [cursor=pointer]:
+                          - /url: "#menu_1_QUERY_ACTIONS"
+                      - listitem [ref=f48e82]:
+                        - link "Request" [ref=f48e83] [cursor=pointer]:
+                          - /url: javascript:searchRequest()
+                      - listitem [ref=f48e84]:
+                        - link "Tag" [ref=f48e85] [cursor=pointer]:
+                          - /url: javascript:addTag()
+                      - listitem [ref=f48e86]:
+                        - link "Remove Tag" [ref=f48e87] [cursor=pointer]:
+                          - /url: javascript:removeTag()
+                      - listitem [ref=f48e88]:
+                        - link "Records Tagged" [ref=f48e89] [cursor=pointer]:
+                          - /url: javascript:taggedSearch()
+                      - listitem [ref=f48e90]:
+                        - link "Full Search" [ref=f48e91] [cursor=pointer]:
+                          - /url: javascript:fullSearch()
+                  - cell [ref=f48e92]
+            - table "Table with a list of content items resulting from a search." [ref=f48e93]:
+              - rowgroup [ref=f48e94]:
+                - row [ref=f48e95]:
+                  - cell "Select" [ref=f48e96]
+                  - cell "Spacer Column" [ref=f48e98]
+                  - cell "Content ID" [ref=f48e99]
+                  - cell "Spacer Column" [ref=f48e101]
+                  - cell "Record Series" [ref=f48e102]
+                  - cell "Spacer Column" [ref=f48e104]
+                  - cell [ref=f48e105]:
+                    - generic "Click to sort ascending" [ref=f48e106]:
+                      - link "Primary ID" [ref=f48e107] [cursor=pointer]:
+                        - /url: /cs/idcplg?IdcService=TCEQ_PERFORM_SEARCH&QueryText=dSecurityGroup+%3cmatches%3e+%60Public%60%3cAND%3e%28xRegEntName+%3csubstring%3e+%60SpaceX%60%29&SortField=xPrimaryID&SortOrder=Asc&ResultCount=20&SearchEngineName=ELASTICSEARCH&SearchQueryFormat=UNIVERSAL&searchFormType=standard&listTemplateId=SearchResultsHeadline&SearchProviders=tceq4avrwccecmp_4444&SortSpec=xRecordSeries%20asc%2cxPrimaryID%20asc%2cxSecondaryID%20asc%2cxInsightDocumentType%20asc%2cdDocTitle%20asc%2cxBeginDate%20asc&SearchEngineName=ELASTICSEARCH&&IsExternalSearch=1&columnsString=dDocName,xRecordSeries,xPrimaryID,xSecondaryID,xInsightDocumentType,dDocTitle,xBeginDate,xEndDate,xLitigationHold,xRegEntName,xMedia,xComments,dSecurityGroup&accessID=7859185&sortSearch=1&newSearch=0
+                  - cell "Spacer Column" [ref=f48e108]
+                  - cell [ref=f48e109]:
+                    - generic "Click to sort ascending" [ref=f48e110]:
+                      - link "Secondary ID" [ref=f48e111] [cursor=pointer]:
+                        - /url: /cs/idcplg?IdcService=TCEQ_PERFORM_SEARCH&QueryText=dSecurityGroup+%3cmatches%3e+%60Public%60%3cAND%3e%28xRegEntName+%3csubstring%3e+%60SpaceX%60%29&SortField=xSecondaryID&SortOrder=Asc&ResultCount=20&SearchEngineName=ELASTICSEARCH&SearchQueryFormat=UNIVERSAL&searchFormType=standard&listTemplateId=SearchResultsHeadline&SearchProviders=tceq4avrwccecmp_4444&SortSpec=xRecordSeries%20asc%2cxPrimaryID%20asc%2cxSecondaryID%20asc%2cxInsightDocumentType%20asc%2cdDocTitle%20asc%2cxBeginDate%20asc&SearchEngineName=ELASTICSEARCH&&IsExternalSearch=1&columnsString=dDocName,xRecordSeries,xPrimaryID,xSecondaryID,xInsightDocumentType,dDocTitle,xBeginDate,xEndDate,xLitigationHold,xRegEntName,xMedia,xComments,dSecurityGroup&accessID=7859185&sortSearch=1&newSearch=0
+                  - cell "Spacer Column" [ref=f48e112]
+                  - cell [ref=f48e113]:
+                    - generic "Click to sort ascending" [ref=f48e114]:
+                      - link "Document Type" [ref=f48e115] [cursor=pointer]:
+                        - /url: /cs/idcplg?IdcService=TCEQ_PERFORM_SEARCH&QueryText=dSecurityGroup+%3cmatches%3e+%60Public%60%3cAND%3e%28xRegEntName+%3csubstring%3e+%60SpaceX%60%29&SortField=xInsightDocumentType&SortOrder=Asc&ResultCount=20&SearchEngineName=ELASTICSEARCH&SearchQueryFormat=UNIVERSAL&searchFormType=standard&listTemplateId=SearchResultsHeadline&SearchProviders=tceq4avrwccecmp_4444&SortSpec=xRecordSeries%20asc%2cxPrimaryID%20asc%2cxSecondaryID%20asc%2cxInsightDocumentType%20asc%2cdDocTitle%20asc%2cxBeginDate%20asc&SearchEngineName=ELASTICSEARCH&&IsExternalSearch=1&columnsString=dDocName,xRecordSeries,xPrimaryID,xSecondaryID,xInsightDocumentType,dDocTitle,xBeginDate,xEndDate,xLitigationHold,xRegEntName,xMedia,xComments,dSecurityGroup&accessID=7859185&sortSearch=1&newSearch=0
+                  - cell "Spacer Column" [ref=f48e116]
+                  - cell [ref=f48e117]:
+                    - generic "Click to sort ascending" [ref=f48e118]:
+                      - link "Title" [ref=f48e119] [cursor=pointer]:
+                        - /url: /cs/idcplg?IdcService=TCEQ_PERFORM_SEARCH&QueryText=dSecurityGroup+%3cmatches%3e+%60Public%60%3cAND%3e%28xRegEntName+%3csubstring%3e+%60SpaceX%60%29&SortField=dDocTitle&SortOrder=Asc&ResultCount=20&SearchEngineName=ELASTICSEARCH&SearchQueryFormat=UNIVERSAL&searchFormType=standard&listTemplateId=SearchResultsHeadline&SearchProviders=tceq4avrwccecmp_4444&SortSpec=xRecordSeries%20asc%2cxPrimaryID%20asc%2cxSecondaryID%20asc%2cxInsightDocumentType%20asc%2cdDocTitle%20asc%2cxBeginDate%20asc&SearchEngineName=ELASTICSEARCH&&IsExternalSearch=1&columnsString=dDocName,xRecordSeries,xPrimaryID,xSecondaryID,xInsightDocumentType,dDocTitle,xBeginDate,xEndDate,xLitigationHold,xRegEntName,xMedia,xComments,dSecurityGroup&accessID=7859185&sortSearch=1&newSearch=0
+                  - cell "Spacer Column" [ref=f48e120]
+                  - cell [ref=f48e121]:
+                    - generic "Click to sort ascending" [ref=f48e122]:
+                      - link "Begin Date" [ref=f48e123] [cursor=pointer]:
+                        - /url: /cs/idcplg?IdcService=TCEQ_PERFORM_SEARCH&QueryText=dSecurityGroup+%3cmatches%3e+%60Public%60%3cAND%3e%28xRegEntName+%3csubstring%3e+%60SpaceX%60%29&SortField=xBeginDate&SortOrder=Asc&ResultCount=20&SearchEngineName=ELASTICSEARCH&SearchQueryFormat=UNIVERSAL&searchFormType=standard&listTemplateId=SearchResultsHeadline&SearchProviders=tceq4avrwccecmp_4444&SortSpec=xRecordSeries%20asc%2cxPrimaryID%20asc%2cxSecondaryID%20asc%2cxInsightDocumentType%20asc%2cdDocTitle%20asc%2cxBeginDate%20asc&SearchEngineName=ELASTICSEARCH&&IsExternalSearch=1&columnsString=dDocName,xRecordSeries,xPrimaryID,xSecondaryID,xInsightDocumentType,dDocTitle,xBeginDate,xEndDate,xLitigationHold,xRegEntName,xMedia,xComments,dSecurityGroup&accessID=7859185&sortSearch=1&newSearch=0
+                  - cell "Spacer Column" [ref=f48e124]
+                  - cell "End Date" [ref=f48e125]
+                  - cell "Spacer Column" [ref=f48e127]
+                  - cell "Litigation Hold" [ref=f48e128]
+                  - cell "Spacer Column" [ref=f48e130]
+                  - cell "Regulated Entity Name" [ref=f48e131]
+                  - cell "Spacer Column" [ref=f48e133]
+                  - cell "Media" [ref=f48e134]
+                  - cell "Spacer Column" [ref=f48e136]
+                  - cell "Description" [ref=f48e137]
+                  - cell "Spacer Column" [ref=f48e139]
+                  - cell [ref=f48e140]:
+                    - generic "Click to sort ascending" [ref=f48e141]:
+                      - link "Security Group" [ref=f48e142] [cursor=pointer]:
+                        - /url: /cs/idcplg?IdcService=TCEQ_PERFORM_SEARCH&QueryText=dSecurityGroup+%3cmatches%3e+%60Public%60%3cAND%3e%28xRegEntName+%3csubstring%3e+%60SpaceX%60%29&SortField=dSecurityGroup&SortOrder=Asc&ResultCount=20&SearchEngineName=ELASTICSEARCH&SearchQueryFormat=UNIVERSAL&searchFormType=standard&listTemplateId=SearchResultsHeadline&SearchProviders=tceq4avrwccecmp_4444&SortSpec=xRecordSeries%20asc%2cxPrimaryID%20asc%2cxSecondaryID%20asc%2cxInsightDocumentType%20asc%2cdDocTitle%20asc%2cxBeginDate%20asc&SearchEngineName=ELASTICSEARCH&&IsExternalSearch=1&columnsString=dDocName,xRecordSeries,xPrimaryID,xSecondaryID,xInsightDocumentType,dDocTitle,xBeginDate,xEndDate,xLitigationHold,xRegEntName,xMedia,xComments,dSecurityGroup&accessID=7859185&sortSearch=1&newSearch=0
+                  - cell "Spacer Column" [ref=f48e143]
+                  - cell "Actions" [ref=f48e144]
+                - row [ref=f48e146]:
+                  - cell [ref=f48e147]:
+                    - generic [ref=f48e149]:
+                      - generic: Select '8558136'
+                      - checkbox "Select '8558136'" [ref=f48e150]
+                  - cell [ref=f48e151]
+                  - cell [ref=f48e152]:
+                    - link "8558136" [ref=f48e154] [cursor=pointer]:
+                      - /url: /cs/idcplg?IdcService=TCEQ_EXTERNAL_SEARCH_GET_FILE&dID=10069928&Rendition=Web&SearchID=20746263&searchType=External
+                  - cell [ref=f48e155]
+                  - cell "AIR / Federal Operating Permit" [ref=f48e156]
+                  - cell [ref=f48e158]
+                  - cell "4198" [ref=f48e159]
+                  - cell [ref=f48e161]
+                  - cell "38406" [ref=f48e162]
+                  - cell [ref=f48e164]
+                  - cell "Permits" [ref=f48e165]
+                  - cell [ref=f48e167]
+                  - cell "Agency Review" [ref=f48e168]
+                  - cell [ref=f48e170]
+                  - cell "4/15/2026 12:00AM" [ref=f48e171]
+                  - cell [ref=f48e173]
+                  - cell "4/15/2026 12:00AM" [ref=f48e174]
+                  - cell [ref=f48e176]
+                  - cell "No" [ref=f48e177]
+                  - cell [ref=f48e179]
+                  - cell "SPACEX ROCKET DEVELOPMENT FACILITY" [ref=f48e180]
+                  - cell [ref=f48e182]
+                  - cell "Electronic" [ref=f48e183]
+                  - cell [ref=f48e185]
+                  - cell [ref=f48e186]
+                  - cell [ref=f48e188]
+                  - cell "Public" [ref=f48e189]
+                  - cell [ref=f48e191]
+                  - cell [ref=f48e192]:
+                    - link [ref=f48e194] [cursor=pointer]:
+                      - /url: /cs/idcplg?IdcService=TCEQ_EXTERNAL_SEARCH_DOC_INFO&dID=10069928&dDocName=8558136&SearchID=20746263&searchType=External&coreContentOnly=1&IsExternalSearch=1
+                      - img "Info" [ref=f48e195]
+                - row [ref=f48e196]:
+                  - cell [ref=f48e197]:
+                    - generic [ref=f48e199]:
+                      - generic: Select '3683425'
+                      - checkbox "Select '3683425'" [ref=f48e200]
+                  - cell [ref=f48e201]
+                  - cell [ref=f48e202]:
+                    - link "3683425" [ref=f48e204] [cursor=pointer]:
+                      - /url: /cs/idcplg?IdcService=TCEQ_EXTERNAL_SEARCH_GET_FILE&dID=3867711&Rendition=Web&SearchID=20746263&searchType=External
+                  - cell [ref=f48e205]
+                  - cell "AIR / New Source Review Permit" [ref=f48e206]
+                  - cell [ref=f48e208]
+                  - cell "152725" [ref=f48e209]
+                  - cell [ref=f48e211]
+                  - cell "287853" [ref=f48e212]
+                  - cell [ref=f48e214]
+                  - cell "Permits" [ref=f48e215]
+                  - cell [ref=f48e217]
+                  - cell "Applications" [ref=f48e218]
+                  - cell [ref=f48e220]
+                  - cell "8/7/2018 12:00AM" [ref=f48e221]
+                  - cell [ref=f48e223]
+                  - cell "8/7/2018 12:00AM" [ref=f48e224]
+                  - cell [ref=f48e226]
+                  - cell "No" [ref=f48e227]
+                  - cell [ref=f48e229]
+                  - cell "SPACEX TEXAS LAUNCH SITE" [ref=f48e230]
+                  - cell [ref=f48e232]
+                  - cell "Electronic" [ref=f48e233]
+                  - cell [ref=f48e235]
+                  - cell [ref=f48e236]
+                  - cell [ref=f48e238]
+                  - cell "Public" [ref=f48e239]
+                  - cell [ref=f48e241]
+                  - cell [ref=f48e242]:
+                    - link [ref=f48e244] [cursor=pointer]:
+                      - /url: /cs/idcplg?IdcService=TCEQ_EXTERNAL_SEARCH_DOC_INFO&dID=3867711&dDocName=3683425&SearchID=20746263&searchType=External&coreContentOnly=1&IsExternalSearch=1
+                      - img "Info" [ref=f48e245]
+                - row [ref=f48e246]:
+                  - cell [ref=f48e247]:
+                    - generic [ref=f48e249]:
+                      - generic: Select '3683426'
+                      - checkbox "Select '3683426'" [ref=f48e250]
+                  - cell [ref=f48e251]
+                  - cell [ref=f48e252]:
+                    - link "3683426" [ref=f48e254] [cursor=pointer]:
+                      - /url: /cs/idcplg?IdcService=TCEQ_EXTERNAL_SEARCH_GET_FILE&dID=3867712&Rendition=Web&SearchID=20746263&searchType=External
+                  - cell [ref=f48e255]
+                  - cell "AIR / New Source Review Permit" [ref=f48e256]
+                  - cell [ref=f48e258]
+                  - cell "152725" [ref=f48e259]
+                  - cell [ref=f48e261]
+                  - cell "287853" [ref=f48e262]
+                  - cell [ref=f48e264]
+                  - cell "Permits" [ref=f48e265]
+                  - cell [ref=f48e267]
+                  - cell "Applications" [ref=f48e268]
+                  - cell [ref=f48e270]
+                  - cell "8/7/2018 12:00AM" [ref=f48e271]
+                  - cell [ref=f48e273]
+                  - cell "8/7/2018 12:00AM" [ref=f48e274]
+                  - cell [ref=f48e276]
+                  - cell "No" [ref=f48e277]
+                  - cell [ref=f48e279]
+                  - cell "SPACEX TEXAS LAUNCH SITE" [ref=f48e280]
+                  - cell [ref=f48e282]
+                  - cell "Electronic" [ref=f48e283]
+                  - cell [ref=f48e285]
+                  - cell [ref=f48e286]
+                  - cell [ref=f48e288]
+                  - cell "Public" [ref=f48e289]
+                  - cell [ref=f48e291]
+                  - cell [ref=f48e292]:
+                    - link [ref=f48e294] [cursor=pointer]:
+                      - /url: /cs/idcplg?IdcService=TCEQ_EXTERNAL_SEARCH_DOC_INFO&dID=3867712&dDocName=3683426&SearchID=20746263&searchType=External&coreContentOnly=1&IsExternalSearch=1
+                      - img "Info" [ref=f48e295]
+                - row [ref=f48e296]:
+                  - cell [ref=f48e297]:
+                    - generic [ref=f48e299]:
+                      - generic: Select '3648946'
+                      - checkbox "Select '3648946'" [ref=f48e300]
+                  - cell [ref=f48e301]
+                  - cell [ref=f48e302]:
+                    - link "3648946" [ref=f48e304] [cursor=pointer]:
+                      - /url: /cs/idcplg?IdcService=TCEQ_EXTERNAL_SEARCH_GET_FILE&dID=3830854&Rendition=Web&SearchID=20746263&searchType=External
+                  - cell [ref=f48e305]
+                  - cell "AIR / New Source Review Permit" [ref=f48e306]
+                  - cell [ref=f48e308]
+                  - cell "152725" [ref=f48e309]
+                  - cell [ref=f48e311]
+                  - cell "287853" [ref=f48e312]
+                  - cell [ref=f48e314]
+                  - cell "Permits" [ref=f48e315]
+                  - cell [ref=f48e317]
+                  - cell "Applications" [ref=f48e318]
+                  - cell [ref=f48e320]
+                  - cell "8/7/2018 12:00AM" [ref=f48e321]
+                  - cell [ref=f48e323]
+                  - cell "8/7/2018 12:00AM" [ref=f48e324]
+                  - cell [ref=f48e326]
+                  - cell "No" [ref=f48e327]
+                  - cell [ref=f48e329]
+                  - cell "SPACEX TEXAS LAUNCH SITE" [ref=f48e330]
+                  - cell [ref=f48e332]
+                  - cell "Electronic" [ref=f48e333]
+                  - cell [ref=f48e335]
+                  - cell [ref=f48e336]
+                  - cell [ref=f48e338]
+                  - cell "Public" [ref=f48e339]
+                  - cell [ref=f48e341]
+                  - cell [ref=f48e342]:
+                    - link [ref=f48e344] [cursor=pointer]:
+                      - /url: /cs/idcplg?IdcService=TCEQ_EXTERNAL_SEARCH_DOC_INFO&dID=3830854&dDocName=3648946&SearchID=20746263&searchType=External&coreContentOnly=1&IsExternalSearch=1
+                      - img "Info" [ref=f48e345]
+                - row [ref=f48e346]:
+                  - cell [ref=f48e347]:
+                    - generic [ref=f48e349]:
+                      - generic: Select '3653037'
+                      - checkbox "Select '3653037'" [ref=f48e350]
+                  - cell [ref=f48e351]
+                  - cell [ref=f48e352]:
+                    - link "3653037" [ref=f48e354] [cursor=pointer]:
+                      - /url: /cs/idcplg?IdcService=TCEQ_EXTERNAL_SEARCH_GET_FILE&dID=3835256&Rendition=Web&SearchID=20746263&searchType=External
+                  - cell [ref=f48e355]
+                  - cell "AIR / New Source Review Permit" [ref=f48e356]
+                  - cell [ref=f48e358]
+                  - cell "152725" [ref=f48e359]
+                  - cell [ref=f48e361]
+                  - cell "287853" [ref=f48e362]
+                  - cell [ref=f48e364]
+                  - cell "Permits" [ref=f48e365]
+                  - cell [ref=f48e367]
+                  - cell "Final Action" [ref=f48e368]
+                  - cell [ref=f48e370]
+                  - cell "8/7/2018 12:00AM" [ref=f48e371]
+                  - cell [ref=f48e373]
+                  - cell "8/7/2018 12:00AM" [ref=f48e374]
+                  - cell [ref=f48e376]
+                  - cell "No" [ref=f48e377]
+                  - cell [ref=f48e379]
+                  - cell "SPACEX TEXAS LAUNCH SITE" [ref=f48e380]
+                  - cell [ref=f48e382]
+                  - cell "Electronic" [ref=f48e383]
+                  - cell [ref=f48e385]
+                  - cell [ref=f48e386]
+                  - cell [ref=f48e388]
+                  - cell "Public" [ref=f48e389]
+                  - cell [ref=f48e391]
+                  - cell [ref=f48e392]:
+                    - link [ref=f48e394] [cursor=pointer]:
+                      - /url: /cs/idcplg?IdcService=TCEQ_EXTERNAL_SEARCH_DOC_INFO&dID=3835256&dDocName=3653037&SearchID=20746263&searchType=External&coreContentOnly=1&IsExternalSearch=1
+                      - img "Info" [ref=f48e395]
+                - row [ref=f48e396]:
+                  - cell [ref=f48e397]:
+                    - generic [ref=f48e399]:
+                      - generic: Select '3653036'
+                      - checkbox "Select '3653036'" [ref=f48e400]
+                  - cell [ref=f48e401]
+                  - cell [ref=f48e402]:
+                    - link "3653036" [ref=f48e404] [cursor=pointer]:
+                      - /url: /cs/idcplg?IdcService=TCEQ_EXTERNAL_SEARCH_GET_FILE&dID=3835255&Rendition=Web&SearchID=20746263&searchType=External
+                  - cell [ref=f48e405]
+                  - cell "AIR / New Source Review Permit" [ref=f48e406]
+                  - cell [ref=f48e408]
+                  - cell "152725" [ref=f48e409]
+                  - cell [ref=f48e411]
+                  - cell "287853" [ref=f48e412]
+                  - cell [ref=f48e414]
+                  - cell "Permits" [ref=f48e415]
+                  - cell [ref=f48e417]
+                  - cell "Technical Review" [ref=f48e418]
+                  - cell [ref=f48e420]
+                  - cell "8/7/2018 12:00AM" [ref=f48e421]
+                  - cell [ref=f48e423]
+                  - cell "8/7/2018 12:00AM" [ref=f48e424]
+                  - cell [ref=f48e426]
+                  - cell "No" [ref=f48e427]
+                  - cell [ref=f48e429]
+                  - cell "SPACEX TEXAS LAUNCH SITE" [ref=f48e430]
+                  - cell [ref=f48e432]
+                  - cell "Electronic" [ref=f48e433]
+                  - cell [ref=f48e435]
+                  - cell [ref=f48e436]
+                  - cell [ref=f48e438]
+                  - cell "Public" [ref=f48e439]
+                  - cell [ref=f48e441]
+                  - cell [ref=f48e442]:
+                    - link [ref=f48e444] [cursor=pointer]:
+                      - /url: /cs/idcplg?IdcService=TCEQ_EXTERNAL_SEARCH_DOC_INFO&dID=3835255&dDocName=3653036&SearchID=20746263&searchType=External&coreContentOnly=1&IsExternalSearch=1
+                      - img "Info" [ref=f48e445]
+                - row [ref=f48e446]:
+                  - cell [ref=f48e447]:
+                    - generic [ref=f48e449]:
+                      - generic: Select '3968073'
+                      - checkbox "Select '3968073'" [ref=f48e450]
+                  - cell [ref=f48e451]
+                  - cell [ref=f48e452]:
+                    - link "3968073" [ref=f48e454] [cursor=pointer]:
+                      - /url: /cs/idcplg?IdcService=TCEQ_EXTERNAL_SEARCH_GET_FILE&dID=4202703&Rendition=Web&SearchID=20746263&searchType=External
+                  - cell [ref=f48e455]
+                  - cell "AIR / New Source Review Permit" [ref=f48e456]
+                  - cell [ref=f48e458]
+                  - cell "155544" [ref=f48e459]
+                  - cell [ref=f48e461]
+                  - cell "296290" [ref=f48e462]
+                  - cell [ref=f48e464]
+                  - cell "Permits" [ref=f48e465]
+                  - cell [ref=f48e467]
+                  - cell "Agency Review" [ref=f48e468]
+                  - cell [ref=f48e470]
+                  - cell "3/15/2019 12:00AM" [ref=f48e471]
+                  - cell [ref=f48e473]
+                  - cell "3/15/2019 12:00AM" [ref=f48e474]
+                  - cell [ref=f48e476]
+                  - cell "No" [ref=f48e477]
+                  - cell [ref=f48e479]
+                  - cell "SPACEX TEXAS LAUNCH SITE GENERATOR" [ref=f48e480]
+                  - cell [ref=f48e482]
+                  - cell "Electronic" [ref=f48e483]
+                  - cell [ref=f48e485]
+                  - cell [ref=f48e486]
+                  - cell [ref=f48e488]
+                  - cell "Public" [ref=f48e489]
+                  - cell [ref=f48e491]
+                  - cell [ref=f48e492]:
+                    - link [ref=f48e494] [cursor=pointer]:
+                      - /url: /cs/idcplg?IdcService=TCEQ_EXTERNAL_SEARCH_DOC_INFO&dID=4202703&dDocName=3968073&SearchID=20746263&searchType=External&coreContentOnly=1&IsExternalSearch=1
+                      - img "Info" [ref=f48e495]
+                - row [ref=f48e496]:
+                  - cell [ref=f48e497]:
+                    - generic [ref=f48e499]:
+                      - generic: Select '4079023'
+                      - checkbox "Select '4079023'" [ref=f48e500]
+                  - cell [ref=f48e501]
+                  - cell [ref=f48e502]:
+                    - link "4079023" [ref=f48e504] [cursor=pointer]:
+                      - /url: /cs/idcplg?IdcService=TCEQ_EXTERNAL_SEARCH_GET_FILE&dID=4322368&Rendition=Web&SearchID=20746263&searchType=External
+                  - cell [ref=f48e505]
+                  - cell "AIR / New Source Review Permit" [ref=f48e506]
+                  - cell [ref=f48e508]
+                  - cell "155544" [ref=f48e509]
+                  - cell [ref=f48e511]
+                  - cell "296290" [ref=f48e512]
+                  - cell [ref=f48e514]
+                  - cell "Permits" [ref=f48e515]
+                  - cell [ref=f48e517]
+                  - cell "Applications" [ref=f48e518]
+                  - cell [ref=f48e520]
+                  - cell "3/15/2019 12:00AM" [ref=f48e521]
+                  - cell [ref=f48e523]
+                  - cell "3/15/2019 12:00AM" [ref=f48e524]
+                  - cell [ref=f48e526]
+                  - cell "No" [ref=f48e527]
+                  - cell [ref=f48e529]
+                  - cell "SPACEX TEXAS LAUNCH SITE GENERATOR" [ref=f48e530]
+                  - cell [ref=f48e532]
+                  - cell "Electronic" [ref=f48e533]
+                  - cell [ref=f48e535]
+                  - cell [ref=f48e536]
+                  - cell [ref=f48e538]
+                  - cell "Public" [ref=f48e539]
+                  - cell [ref=f48e541]
+                  - cell [ref=f48e542]:
+                    - link [ref=f48e544] [cursor=pointer]:
+                      - /url: /cs/idcplg?IdcService=TCEQ_EXTERNAL_SEARCH_DOC_INFO&dID=4322368&dDocName=4079023&SearchID=20746263&searchType=External&coreContentOnly=1&IsExternalSearch=1
+                      - img "Info" [ref=f48e545]
+                - row [ref=f48e546]:
+                  - cell [ref=f48e547]:
+                    - generic [ref=f48e549]:
+                      - generic: Select '4079022'
+                      - checkbox "Select '4079022'" [ref=f48e550]
+                  - cell [ref=f48e551]
+                  - cell [ref=f48e552]:
+                    - link "4079022" [ref=f48e554] [cursor=pointer]:
+                      - /url: /cs/idcplg?IdcService=TCEQ_EXTERNAL_SEARCH_GET_FILE&dID=4322367&Rendition=Web&SearchID=20746263&searchType=External
+                  - cell [ref=f48e555]
+                  - cell "AIR / New Source Review Permit" [ref=f48e556]
+                  - cell [ref=f48e558]
+                  - cell "155544" [ref=f48e559]
+                  - cell [ref=f48e561]
+                  - cell "296290" [ref=f48e562]
+                  - cell [ref=f48e564]
+                  - cell "Permits" [ref=f48e565]
+                  - cell [ref=f48e567]
+                  - cell "Applications" [ref=f48e568]
+                  - cell [ref=f48e570]
+                  - cell "3/15/2019 12:00AM" [ref=f48e571]
+                  - cell [ref=f48e573]
+                  - cell "3/15/2019 12:00AM" [ref=f48e574]
+                  - cell [ref=f48e576]
+                  - cell "No" [ref=f48e577]
+                  - cell [ref=f48e579]
+                  - cell "SPACEX TEXAS LAUNCH SITE GENERATOR" [ref=f48e580]
+                  - cell [ref=f48e582]
+                  - cell "Electronic" [ref=f48e583]
+                  - cell [ref=f48e585]
+                  - cell [ref=f48e586]
+                  - cell [ref=f48e588]
+                  - cell "Public" [ref=f48e589]
+                  - cell [ref=f48e591]
+                  - cell [ref=f48e592]:
+                    - link [ref=f48e594] [cursor=pointer]:
+                      - /url: /cs/idcplg?IdcService=TCEQ_EXTERNAL_SEARCH_DOC_INFO&dID=4322367&dDocName=4079022&SearchID=20746263&searchType=External&coreContentOnly=1&IsExternalSearch=1
+                      - img "Info" [ref=f48e595]
+                - row [ref=f48e596]:
+                  - cell [ref=f48e597]:
+                    - generic [ref=f48e599]:
+                      - generic: Select '4079021'
+                      - checkbox "Select '4079021'" [ref=f48e600]
+                  - cell [ref=f48e601]
+                  - cell [ref=f48e602]:
+                    - link "4079021" [ref=f48e604] [cursor=pointer]:
+                      - /url: /cs/idcplg?IdcService=TCEQ_EXTERNAL_SEARCH_GET_FILE&dID=4322366&Rendition=Web&SearchID=20746263&searchType=External
+                  - cell [ref=f48e605]
+                  - cell "AIR / New Source Review Permit" [ref=f48e606]
+                  - cell [ref=f48e608]
+                  - cell "155544" [ref=f48e609]
+                  - cell [ref=f48e611]
+                  - cell "296290" [ref=f48e612]
+                  - cell [ref=f48e614]
+                  - cell "Permits" [ref=f48e615]
+                  - cell [ref=f48e617]
+                  - cell "Applications" [ref=f48e618]
+                  - cell [ref=f48e620]
+                  - cell "3/15/2019 12:00AM" [ref=f48e621]
+                  - cell [ref=f48e623]
+                  - cell "3/15/2019 12:00AM" [ref=f48e624]
+                  - cell [ref=f48e626]
+                  - cell "No" [ref=f48e627]
+                  - cell [ref=f48e629]
+                  - cell "SPACEX TEXAS LAUNCH SITE GENERATOR" [ref=f48e630]
+                  - cell [ref=f48e632]
+                  - cell "Electronic" [ref=f48e633]
+                  - cell [ref=f48e635]
+                  - cell [ref=f48e636]
+                  - cell [ref=f48e638]
+                  - cell "Public" [ref=f48e639]
+                  - cell [ref=f48e641]
+                  - cell [ref=f48e642]:
+                    - link [ref=f48e644] [cursor=pointer]:
+                      - /url: /cs/idcplg?IdcService=TCEQ_EXTERNAL_SEARCH_DOC_INFO&dID=4322366&dDocName=4079021&SearchID=20746263&searchType=External&coreContentOnly=1&IsExternalSearch=1
+                      - img "Info" [ref=f48e645]
+                - row [ref=f48e646]:
+                  - cell [ref=f48e647]:
+                    - generic [ref=f48e649]:
+                      - generic: Select '4079020'
+                      - checkbox "Select '4079020'" [ref=f48e650]
+                  - cell [ref=f48e651]
+                  - cell [ref=f48e652]:
+                    - link "4079020" [ref=f48e654] [cursor=pointer]:
+                      - /url: /cs/idcplg?IdcService=TCEQ_EXTERNAL_SEARCH_GET_FILE&dID=4322365&Rendition=Web&SearchID=20746263&searchType=External
+                  - cell [ref=f48e655]
+                  - cell "AIR / New Source Review Permit" [ref=f48e656]
+                  - cell [ref=f48e658]
+                  - cell "155544" [ref=f48e659]
+                  - cell [ref=f48e661]
+                  - cell "296290" [ref=f48e662]
+                  - cell [ref=f48e664]
+                  - cell "Permits" [ref=f48e665]
+                  - cell [ref=f48e667]
+                  - cell "Final Action" [ref=f48e668]
+                  - cell [ref=f48e670]
+                  - cell "3/15/2019 12:00AM" [ref=f48e671]
+                  - cell [ref=f48e673]
+                  - cell "3/15/2019 12:00AM" [ref=f48e674]
+                  - cell [ref=f48e676]
+                  - cell "No" [ref=f48e677]
+                  - cell [ref=f48e679]
+                  - cell "SPACEX TEXAS LAUNCH SITE GENERATOR" [ref=f48e680]
+                  - cell [ref=f48e682]
+                  - cell "Electronic" [ref=f48e683]
+                  - cell [ref=f48e685]
+                  - cell [ref=f48e686]
+                  - cell [ref=f48e688]
+                  - cell "Public" [ref=f48e689]
+                  - cell [ref=f48e691]
+                  - cell [ref=f48e692]:
+                    - link [ref=f48e694] [cursor=pointer]:
+                      - /url: /cs/idcplg?IdcService=TCEQ_EXTERNAL_SEARCH_DOC_INFO&dID=4322365&dDocName=4079020&SearchID=20746263&searchType=External&coreContentOnly=1&IsExternalSearch=1
+                      - img "Info" [ref=f48e695]
+                - row [ref=f48e696]:
+                  - cell [ref=f48e697]:
+                    - generic [ref=f48e699]:
+                      - generic: Select '4030513'
+                      - checkbox "Select '4030513'" [ref=f48e700]
+                  - cell [ref=f48e701]
+                  - cell [ref=f48e702]:
+                    - link "4030513" [ref=f48e704] [cursor=pointer]:
+                      - /url: /cs/idcplg?IdcService=TCEQ_EXTERNAL_SEARCH_GET_FILE&dID=4270929&Rendition=Web&SearchID=20746263&searchType=External
+                  - cell [ref=f48e705]
+                  - cell "AIR / New Source Review Permit" [ref=f48e706]
+                  - cell [ref=f48e708]
+                  - cell "155544" [ref=f48e709]
+                  - cell [ref=f48e711]
+                  - cell "296290" [ref=f48e712]
+                  - cell [ref=f48e714]
+                  - cell "Permits" [ref=f48e715]
+                  - cell [ref=f48e717]
+                  - cell "Technical Review" [ref=f48e718]
+                  - cell [ref=f48e720]
+                  - cell "3/15/2019 12:00AM" [ref=f48e721]
+                  - cell [ref=f48e723]
+                  - cell "3/15/2019 12:00AM" [ref=f48e724]
+                  - cell [ref=f48e726]
+                  - cell "No" [ref=f48e727]
+                  - cell [ref=f48e729]
+                  - cell "SPACEX TEXAS LAUNCH SITE GENERATOR" [ref=f48e730]
+                  - cell [ref=f48e732]
+                  - cell "Electronic" [ref=f48e733]
+                  - cell [ref=f48e735]
+                  - cell [ref=f48e736]
+                  - cell [ref=f48e738]
+                  - cell "Public" [ref=f48e739]
+                  - cell [ref=f48e741]
+                  - cell [ref=f48e742]:
+                    - link [ref=f48e744] [cursor=pointer]:
+                      - /url: /cs/idcplg?IdcService=TCEQ_EXTERNAL_SEARCH_DOC_INFO&dID=4270929&dDocName=4030513&SearchID=20746263&searchType=External&coreContentOnly=1&IsExternalSearch=1
+                      - img "Info" [ref=f48e745]
+                - row [ref=f48e746]:
+                  - cell [ref=f48e747]:
+                    - generic [ref=f48e749]:
+                      - generic: Select '4085477'
+                      - checkbox "Select '4085477'" [ref=f48e750]
+                  - cell [ref=f48e751]
+                  - cell [ref=f48e752]:
+                    - link "4085477" [ref=f48e754] [cursor=pointer]:
+                      - /url: /cs/idcplg?IdcService=TCEQ_EXTERNAL_SEARCH_GET_FILE&dID=4328920&Rendition=Web&SearchID=20746263&searchType=External
+                  - cell [ref=f48e755]
+                  - cell "AIR / New Source Review Permit" [ref=f48e756]
+                  - cell [ref=f48e758]
+                  - cell "156011" [ref=f48e759]
+                  - cell [ref=f48e761]
+                  - cell "298538" [ref=f48e762]
+                  - cell [ref=f48e764]
+                  - cell "Permits" [ref=f48e765]
+                  - cell [ref=f48e767]
+                  - cell "Applications" [ref=f48e768]
+                  - cell [ref=f48e770]
+                  - cell "4/1/2019 12:00AM" [ref=f48e771]
+                  - cell [ref=f48e773]
+                  - cell "4/1/2019 12:00AM" [ref=f48e774]
+                  - cell [ref=f48e776]
+                  - cell "No" [ref=f48e777]
+                  - cell [ref=f48e779]
+                  - cell "SPACEX TEXAS LAUNCH SITE" [ref=f48e780]
+                  - cell [ref=f48e782]
+                  - cell "Electronic" [ref=f48e783]
+                  - cell [ref=f48e785]
+                  - cell [ref=f48e786]
+                  - cell [ref=f48e788]
+                  - cell "Public" [ref=f48e789]
+                  - cell [ref=f48e791]
+                  - cell [ref=f48e792]:
+                    - link [ref=f48e794] [cursor=pointer]:
+                      - /url: /cs/idcplg?IdcService=TCEQ_EXTERNAL_SEARCH_DOC_INFO&dID=4328920&dDocName=4085477&SearchID=20746263&searchType=External&coreContentOnly=1&IsExternalSearch=1
+                      - img "Info" [ref=f48e795]
+                - row [ref=f48e796]:
+                  - cell [ref=f48e797]:
+                    - generic [ref=f48e799]:
+                      - generic: Select '4085479'
+                      - checkbox "Select '4085479'" [ref=f48e800]
+                  - cell [ref=f48e801]
+                  - cell [ref=f48e802]:
+                    - link "4085479" [ref=f48e804] [cursor=pointer]:
+                      - /url: /cs/idcplg?IdcService=TCEQ_EXTERNAL_SEARCH_GET_FILE&dID=4328922&Rendition=Web&SearchID=20746263&searchType=External
+                  - cell [ref=f48e805]
+                  - cell "AIR / New Source Review Permit" [ref=f48e806]
+                  - cell [ref=f48e808]
+                  - cell "156011" [ref=f48e809]
+                  - cell [ref=f48e811]
+                  - cell "298538" [ref=f48e812]
+                  - cell [ref=f48e814]
+                  - cell "Permits" [ref=f48e815]
+                  - cell [ref=f48e817]
+                  - cell "Applications" [ref=f48e818]
+                  - cell [ref=f48e820]
+                  - cell "4/1/2019 12:00AM" [ref=f48e821]
+                  - cell [ref=f48e823]
+                  - cell "4/1/2019 12:00AM" [ref=f48e824]
+                  - cell [ref=f48e826]
+                  - cell "No" [ref=f48e827]
+                  - cell [ref=f48e829]
+                  - cell "SPACEX TEXAS LAUNCH SITE" [ref=f48e830]
+                  - cell [ref=f48e832]
+                  - cell "Electronic" [ref=f48e833]
+                  - cell [ref=f48e835]
+                  - cell [ref=f48e836]
+                  - cell [ref=f48e838]
+                  - cell "Public" [ref=f48e839]
+                  - cell [ref=f48e841]
+                  - cell [ref=f48e842]:
+                    - link [ref=f48e844] [cursor=pointer]:
+                      - /url: /cs/idcplg?IdcService=TCEQ_EXTERNAL_SEARCH_DOC_INFO&dID=4328922&dDocName=4085479&SearchID=20746263&searchType=External&coreContentOnly=1&IsExternalSearch=1
+                      - img "Info" [ref=f48e845]
+                - row [ref=f48e846]:
+                  - cell [ref=f48e847]:
+                    - generic [ref=f48e849]:
+                      - generic: Select '4085478'
+                      - checkbox "Select '4085478'" [ref=f48e850]
+                  - cell [ref=f48e851]
+                  - cell [ref=f48e852]:
+                    - link "4085478" [ref=f48e854] [cursor=pointer]:
+                      - /url: /cs/idcplg?IdcService=TCEQ_EXTERNAL_SEARCH_GET_FILE&dID=4328921&Rendition=Web&SearchID=20746263&searchType=External
+                  - cell [ref=f48e855]
+                  - cell "AIR / New Source Review Permit" [ref=f48e856]
+                  - cell [ref=f48e858]
+                  - cell "156011" [ref=f48e859]
+                  - cell [ref=f48e861]
+                  - cell "298538" [ref=f48e862]
+                  - cell [ref=f48e864]
+                  - cell "Permits" [ref=f48e865]
+                  - cell [ref=f48e867]
+                  - cell "Applications" [ref=f48e868]
+                  - cell [ref=f48e870]
+                  - cell "4/1/2019 12:00AM" [ref=f48e871]
+                  - cell [ref=f48e873]
+                  - cell "4/1/2019 12:00AM" [ref=f48e874]
+                  - cell [ref=f48e876]
+                  - cell "No" [ref=f48e877]
+                  - cell [ref=f48e879]
+                  - cell "SPACEX TEXAS LAUNCH SITE" [ref=f48e880]
+                  - cell [ref=f48e882]
+                  - cell "Electronic" [ref=f48e883]
+                  - cell [ref=f48e885]
+                  - cell [ref=f48e886]
+                  - cell [ref=f48e888]
+                  - cell "Public" [ref=f48e889]
+                  - cell [ref=f48e891]
+                  - cell [ref=f48e892]:
+                    - link [ref=f48e894] [cursor=pointer]:
+                      - /url: /cs/idcplg?IdcService=TCEQ_EXTERNAL_SEARCH_DOC_INFO&dID=4328921&dDocName=4085478&SearchID=20746263&searchType=External&coreContentOnly=1&IsExternalSearch=1
+                      - img "Info" [ref=f48e895]
+                - row [ref=f48e896]:
+                  - cell [ref=f48e897]:
+                    - generic [ref=f48e899]:
+                      - generic: Select '4085476'
+                      - checkbox "Select '4085476'" [ref=f48e900]
+                  - cell [ref=f48e901]
+                  - cell [ref=f48e902]:
+                    - link "4085476" [ref=f48e904] [cursor=pointer]:
+                      - /url: /cs/idcplg?IdcService=TCEQ_EXTERNAL_SEARCH_GET_FILE&dID=4328919&Rendition=Web&SearchID=20746263&searchType=External
+                  - cell [ref=f48e905]
+                  - cell "AIR / New Source Review Permit" [ref=f48e906]
+                  - cell [ref=f48e908]
+                  - cell "156011" [ref=f48e909]
+                  - cell [ref=f48e911]
+                  - cell "298538" [ref=f48e912]
+                  - cell [ref=f48e914]
+                  - cell "Permits" [ref=f48e915]
+                  - cell [ref=f48e917]
+                  - cell "Final Action" [ref=f48e918]
+                  - cell [ref=f48e920]
+                  - cell "4/1/2019 12:00AM" [ref=f48e921]
+                  - cell [ref=f48e923]
+                  - cell "4/1/2019 12:00AM" [ref=f48e924]
+                  - cell [ref=f48e926]
+                  - cell "No" [ref=f48e927]
+                  - cell [ref=f48e929]
+                  - cell "SPACEX TEXAS LAUNCH SITE" [ref=f48e930]
+                  - cell [ref=f48e932]
+                  - cell "Electronic" [ref=f48e933]
+                  - cell [ref=f48e935]
+                  - cell [ref=f48e936]
+                  - cell [ref=f48e938]
+                  - cell "Public" [ref=f48e939]
+                  - cell [ref=f48e941]
+                  - cell [ref=f48e942]:
+                    - link [ref=f48e944] [cursor=pointer]:
+                      - /url: /cs/idcplg?IdcService=TCEQ_EXTERNAL_SEARCH_DOC_INFO&dID=4328919&dDocName=4085476&SearchID=20746263&searchType=External&coreContentOnly=1&IsExternalSearch=1
+                      - img "Info" [ref=f48e945]
+                - row [ref=f48e946]:
+                  - cell [ref=f48e947]:
+                    - generic [ref=f48e949]:
+                      - generic: Select '4010502'
+                      - checkbox "Select '4010502'" [ref=f48e950]
+                  - cell [ref=f48e951]
+                  - cell [ref=f48e952]:
+                    - link "4010502" [ref=f48e954] [cursor=pointer]:
+                      - /url: /cs/idcplg?IdcService=TCEQ_EXTERNAL_SEARCH_GET_FILE&dID=4249190&Rendition=Web&SearchID=20746263&searchType=External
+                  - cell [ref=f48e955]
+                  - cell "AIR / New Source Review Permit" [ref=f48e956]
+                  - cell [ref=f48e958]
+                  - cell "156011" [ref=f48e959]
+                  - cell [ref=f48e961]
+                  - cell "298538" [ref=f48e962]
+                  - cell [ref=f48e964]
+                  - cell "Permits" [ref=f48e965]
+                  - cell [ref=f48e967]
+                  - cell "Technical Review" [ref=f48e968]
+                  - cell [ref=f48e970]
+                  - cell "4/1/2019 12:00AM" [ref=f48e971]
+                  - cell [ref=f48e973]
+                  - cell "4/1/2019 12:00AM" [ref=f48e974]
+                  - cell [ref=f48e976]
+                  - cell "No" [ref=f48e977]
+                  - cell [ref=f48e979]
+                  - cell "SPACEX TEXAS LAUNCH SITE" [ref=f48e980]
+                  - cell [ref=f48e982]
+                  - cell "Electronic" [ref=f48e983]
+                  - cell [ref=f48e985]
+                  - cell [ref=f48e986]
+                  - cell [ref=f48e988]
+                  - cell "Public" [ref=f48e989]
+                  - cell [ref=f48e991]
+                  - cell [ref=f48e992]:
+                    - link [ref=f48e994] [cursor=pointer]:
+                      - /url: /cs/idcplg?IdcService=TCEQ_EXTERNAL_SEARCH_DOC_INFO&dID=4249190&dDocName=4010502&SearchID=20746263&searchType=External&coreContentOnly=1&IsExternalSearch=1
+                      - img "Info" [ref=f48e995]
+                - row [ref=f48e996]:
+                  - cell [ref=f48e997]:
+                    - generic [ref=f48e999]:
+                      - generic: Select '5372693'
+                      - checkbox "Select '5372693'" [ref=f48e1000]
+                  - cell [ref=f48e1001]
+                  - cell [ref=f48e1002]:
+                    - link "5372693" [ref=f48e1004] [cursor=pointer]:
+                      - /url: /cs/idcplg?IdcService=TCEQ_EXTERNAL_SEARCH_GET_FILE&dID=5760116&Rendition=Web&SearchID=20746263&searchType=External
+                  - cell [ref=f48e1005]
+                  - cell "AIR / New Source Review Permit" [ref=f48e1006]
+                  - cell [ref=f48e1008]
+                  - cell "161598" [ref=f48e1009]
+                  - cell [ref=f48e1011]
+                  - cell "316610" [ref=f48e1012]
+                  - cell [ref=f48e1014]
+                  - cell "Permits" [ref=f48e1015]
+                  - cell [ref=f48e1017]
+                  - cell "Applications" [ref=f48e1018]
+                  - cell [ref=f48e1020]
+                  - cell "6/24/2020 12:00AM" [ref=f48e1021]
+                  - cell [ref=f48e1023]
+                  - cell "6/24/2020 12:00AM" [ref=f48e1024]
+                  - cell [ref=f48e1026]
+                  - cell "No" [ref=f48e1027]
+                  - cell [ref=f48e1029]
+                  - cell "SPACEX TEXAS LAUNCH SITE" [ref=f48e1030]
+                  - cell [ref=f48e1032]
+                  - cell "Electronic" [ref=f48e1033]
+                  - cell [ref=f48e1035]
+                  - cell [ref=f48e1036]
+                  - cell [ref=f48e1038]
+                  - cell "Public" [ref=f48e1039]
+                  - cell [ref=f48e1041]
+                  - cell [ref=f48e1042]:
+                    - link [ref=f48e1044] [cursor=pointer]:
+                      - /url: /cs/idcplg?IdcService=TCEQ_EXTERNAL_SEARCH_DOC_INFO&dID=5760116&dDocName=5372693&SearchID=20746263&searchType=External&coreContentOnly=1&IsExternalSearch=1
+                      - img "Info" [ref=f48e1045]
+                - row [ref=f48e1046]:
+                  - cell [ref=f48e1047]:
+                    - generic [ref=f48e1049]:
+                      - generic: Select '5372692'
+                      - checkbox "Select '5372692'" [ref=f48e1050]
+                  - cell [ref=f48e1051]
+                  - cell [ref=f48e1052]:
+                    - link "5372692" [ref=f48e1054] [cursor=pointer]:
+                      - /url: /cs/idcplg?IdcService=TCEQ_EXTERNAL_SEARCH_GET_FILE&dID=5760115&Rendition=Web&SearchID=20746263&searchType=External
+                  - cell [ref=f48e1055]
+                  - cell "AIR / New Source Review Permit" [ref=f48e1056]
+                  - cell [ref=f48e1058]
+                  - cell "161598" [ref=f48e1059]
+                  - cell [ref=f48e1061]
+                  - cell "316610" [ref=f48e1062]
+                  - cell [ref=f48e1064]
+                  - cell "Permits" [ref=f48e1065]
+                  - cell [ref=f48e1067]
+                  - cell "Applications" [ref=f48e1068]
+                  - cell [ref=f48e1070]
+                  - cell "6/24/2020 12:00AM" [ref=f48e1071]
+                  - cell [ref=f48e1073]
+                  - cell "6/24/2020 12:00AM" [ref=f48e1074]
+                  - cell [ref=f48e1076]
+                  - cell "No" [ref=f48e1077]
+                  - cell [ref=f48e1079]
+                  - cell "SPACEX TEXAS LAUNCH SITE" [ref=f48e1080]
+                  - cell [ref=f48e1082]
+                  - cell "Electronic" [ref=f48e1083]
+                  - cell [ref=f48e1085]
+                  - cell [ref=f48e1086]
+                  - cell [ref=f48e1088]
+                  - cell "Public" [ref=f48e1089]
+                  - cell [ref=f48e1091]
+                  - cell [ref=f48e1092]:
+                    - link [ref=f48e1094] [cursor=pointer]:
+                      - /url: /cs/idcplg?IdcService=TCEQ_EXTERNAL_SEARCH_DOC_INFO&dID=5760115&dDocName=5372692&SearchID=20746263&searchType=External&coreContentOnly=1&IsExternalSearch=1
+                      - img "Info" [ref=f48e1095]
+                - row [ref=f48e1096]:
+                  - cell [ref=f48e1097]:
+                    - generic [ref=f48e1099]:
+                      - generic: Select '5372691'
+                      - checkbox "Select '5372691'" [ref=f48e1100]
+                  - cell [ref=f48e1101]
+                  - cell [ref=f48e1102]:
+                    - link "5372691" [ref=f48e1104] [cursor=pointer]:
+                      - /url: /cs/idcplg?IdcService=TCEQ_EXTERNAL_SEARCH_GET_FILE&dID=5760114&Rendition=Web&SearchID=20746263&searchType=External
+                  - cell [ref=f48e1105]
+                  - cell "AIR / New Source Review Permit" [ref=f48e1106]
+                  - cell [ref=f48e1108]
+                  - cell "161598" [ref=f48e1109]
+                  - cell [ref=f48e1111]
+                  - cell "316610" [ref=f48e1112]
+                  - cell [ref=f48e1114]
+                  - cell "Permits" [ref=f48e1115]
+                  - cell [ref=f48e1117]
+                  - cell "Final Action" [ref=f48e1118]
+                  - cell [ref=f48e1120]
+                  - cell "6/24/2020 12:00AM" [ref=f48e1121]
+                  - cell [ref=f48e1123]
+                  - cell "6/24/2020 12:00AM" [ref=f48e1124]
+                  - cell [ref=f48e1126]
+                  - cell "No" [ref=f48e1127]
+                  - cell [ref=f48e1129]
+                  - cell "SPACEX TEXAS LAUNCH SITE" [ref=f48e1130]
+                  - cell [ref=f48e1132]
+                  - cell "Electronic" [ref=f48e1133]
+                  - cell [ref=f48e1135]
+                  - cell [ref=f48e1136]
+                  - cell [ref=f48e1138]
+                  - cell "Public" [ref=f48e1139]
+                  - cell [ref=f48e1141]
+                  - cell [ref=f48e1142]:
+                    - link [ref=f48e1144] [cursor=pointer]:
+                      - /url: /cs/idcplg?IdcService=TCEQ_EXTERNAL_SEARCH_DOC_INFO&dID=5760114&dDocName=5372691&SearchID=20746263&searchType=External&coreContentOnly=1&IsExternalSearch=1
+                      - img "Info" [ref=f48e1145]
+    - table
+    - table [ref=f48e1146]:
+      - rowgroup [ref=f48e1147]:
+        - row [ref=f48e1148]:
+          - cell [ref=f48e1149]
+          - cell "Page" [ref=f48e1150]
+          - cell [ref=f48e1152]:
+            - combobox "Page" [ref=f48e1154]:
+              - option "1" [selected]
+              - option "2"
+              - option "3"
+          - cell "of 3" [ref=f48e1155]
+          - cell [ref=f48e1157]:
+            - link [ref=f48e1158] [cursor=pointer]:
+              - /url: /cs/idcplg?IdcService=TCEQ_PERFORM_SEARCH&QueryText=dSecurityGroup+%3cmatches%3e+%60Public%60%3cAND%3e%28xRegEntName+%3csubstring%3e+%60SpaceX%60%29&SortField=dInDate&SortOrder=Desc&ResultCount=20&SearchEngineName=ELASTICSEARCH&SearchQueryFormat=UNIVERSAL&searchFormType=standard&listTemplateId=SearchResultsHeadline&SearchProviders=tceq4avrwccecmp_4444&SortSpec=xRecordSeries%20asc%2cxPrimaryID%20asc%2cxSecondaryID%20asc%2cxInsightDocumentType%20asc%2cdDocTitle%20asc%2cxBeginDate%20asc&type=item&SearchEngineName=ELASTICSEARCH&&IsExternalSearch=1&PageNumber=2&StartRow=21&EndRow=40&columnsString=dDocName,xRecordSeries,xPrimaryID,xSecondaryID,xInsightDocumentType,dDocTitle,xBeginDate,xEndDate,xLitigationHold,xRegEntName,xMedia,xComments,dSecurityGroup&accessID=7859185&newSearch=0
+              - img "Link To More Results" [ref=f48e1159]
+  - table [ref=f48e1160]:
+    - rowgroup [ref=f48e1161]:
+      - row [ref=f48e1162]:
+        - cell [ref=f48e1163]
+      - row [ref=f48e1164]:
+        - cell [ref=f48e1165]
+        - cell [ref=f48e1166]:
+          - generic [ref=f48e1168]:
+            - generic [ref=f48e1169]:
+              - link "Site Help" [ref=f48e1170] [cursor=pointer]:
+                - /url: http://www.tceq.texas.gov/help
+              - text: "|"
+              - link "Disclaimer" [ref=f48e1171] [cursor=pointer]:
+                - /url: http://www.tceq.texas.gov/help/policies/disclaimer_policy.html
+              - text: "|"
+              - link "Web Policies" [ref=f48e1172] [cursor=pointer]:
+                - /url: http://www.tceq.texas.gov/help/policies/index.html
+              - text: "|"
+              - link "Our Compact with Texas" [ref=f48e1173] [cursor=pointer]:
+                - /url: http://www.tceq.texas.gov/agency/working-with-us/compact.html
+              - text: "|"
+              - link "TCEQ Homeland Security" [ref=f48e1174] [cursor=pointer]:
+                - /url: http://www.tceq.texas.gov/response/security/index.html
+              - text: "|"
+              - link "Contact Us" [ref=f48e1175] [cursor=pointer]:
+                - /url: http://www.tceq.texas.gov/agency/directory/
+              - text: "|"
+              - link "Central Registry" [ref=f48e1176] [cursor=pointer]:
+                - /url: http://www15.tceq.texas.gov/crpub/
+            - generic [ref=f48e1177]:
+              - text: "Statewide Links:"
+              - link "Texas.gov" [ref=f48e1178] [cursor=pointer]:
+                - /url: http://www.texas.gov/
+              - text: "|"
+              - link "Texas Homeland Security" [ref=f48e1179] [cursor=pointer]:
+                - /url: https://gov.texas.gov/organization/hsgd
+              - text: "|"
+              - link "TRAIL Statewide Archive" [ref=f48e1180] [cursor=pointer]:
+                - /url: https://www.tsl.texas.gov/trail/index.html
+              - text: "|"
+              - link "Texas Veterans Portal" [ref=f48e1181] [cursor=pointer]:
+                - /url: https://veterans.portal.texas.gov/

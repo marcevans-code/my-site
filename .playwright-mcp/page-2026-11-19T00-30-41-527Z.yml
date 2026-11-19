@@ -1,0 +1,558 @@
+- generic [active] [ref=f2e1]:
+  - complementary [ref=f2e2]
+  - generic [ref=f2e3]:
+    - link "Skip to content" [ref=f2e4] [cursor=pointer]:
+      - /url: "#main"
+    - banner [ref=f2e5]:
+      - generic [ref=f2e7]:
+        - generic [ref=f2e8]:
+          - link [ref=f2e9] [cursor=pointer]:
+            - /url: https://www.texastribune.org/
+            - img "The Texas Tribune" [ref=f2e10]
+          - paragraph [ref=f2e11]:
+            - link "The Texas Tribune" [ref=f2e12] [cursor=pointer]:
+              - /url: https://www.texastribune.org/
+        - generic [ref=f2e13]:
+          - navigation "Tertiary Menu" [ref=f2e15]:
+            - list [ref=f2e16]:
+              - listitem [ref=f2e17]:
+                - link "ABOUT" [ref=f2e18] [cursor=pointer]:
+                  - /url: https://www.texastribune.org/about/
+              - listitem [ref=f2e19]:
+                - link "DONATE" [ref=f2e20] [cursor=pointer]:
+                  - /url: https://give.texastribune.org/campaign/814363/donate?c_src=website&c_src2=donatebutton
+          - button "Open Search" [ref=f2e22]
+      - generic:
+        - generic:
+          - generic:
+            - navigation "Top Menu":
+              - list:
+                - listitem [ref=f2e28]:
+                  - link "Elections 2026" [ref=f2e29] [cursor=pointer]:
+                    - /url: https://apps.texastribune.org/features/2026/texas-general-election-live-results-2026/
+                - listitem [ref=f2e30]:
+                  - link "Politics & Policy" [ref=f2e31] [cursor=pointer]:
+                    - /url: "#"
+                  - button "Open dropdown menu"
+                  - list:
+                    - listitem:
+                      - link "All Politics Coverage":
+                        - /url: https://www.texastribune.org/topics/politics/
+                    - listitem:
+                      - link "Elections":
+                        - /url: https://www.texastribune.org/series/texas-2026-election-voting/
+                  - list:
+                    - listitem:
+                      - link "Congress":
+                        - /url: https://www.texastribune.org/topics/congress/
+                    - listitem:
+                      - link "Courts":
+                        - /url: https://www.texastribune.org/topics/courts/
+                    - listitem:
+                      - link "State Government":
+                        - /url: https://www.texastribune.org/topics/state-government/
+                  - list:
+                    - listitem:
+                      - list:
+                        - listitem:
+                          - link "K-12 Education":
+                            - /url: https://www.texastribune.org/topics/public-education/
+                        - listitem:
+                          - link "Higher Education":
+                            - /url: https://www.texastribune.org/topics/higher-education/
+                        - listitem:
+                          - link "Criminal Justice":
+                            - /url: https://www.texastribune.org/topics/criminal-justice/
+                        - listitem:
+                          - link "Economy":
+                            - /url: https://www.texastribune.org/topics/economy/
+                    - listitem:
+                      - list:
+                        - listitem:
+                          - link "Energy":
+                            - /url: https://www.texastribune.org/topics/energy/
+                        - listitem:
+                          - link "Environment":
+                            - /url: https://www.texastribune.org/topics/environment/
+                        - listitem:
+                          - link "Healthcare":
+                            - /url: https://www.texastribune.org/topics/health-care/
+                        - listitem:
+                          - link "Immigration":
+                            - /url: https://www.texastribune.org/topics/immigration/
+                  - list:
+                    - listitem:
+                      - link "TribCast is the Tribune’s weekly politics podcast.":
+                        - /url: https://www.texastribune.org/audio/
+                        - strong: TribCast
+                        - text: is the Tribune’s weekly politics podcast.
+                    - listitem:
+                      - link "The Brief is your daily politics and government newsletter.":
+                        - /url: https://www.texastribune.org/newsletters/the-brief/
+                        - strong: The Brief
+                        - text: is your daily politics and government newsletter.
+                - listitem [ref=f2e32]:
+                  - link "Across Texas" [ref=f2e33] [cursor=pointer]:
+                    - /url: "#"
+                  - button "Open dropdown menu"
+                  - list:
+                    - listitem:
+                      - link "Regional Coverage Every story from our reporters across the state, in one place":
+                        - /url: https://www.texastribune.org/texas-regional-news/
+                        - text: Regional Coverage
+                        - generic: Every story from our reporters across the state, in one place
+                    - listitem:
+                      - link "By Region":
+                        - /url: "#"
+                      - list:
+                        - listitem:
+                          - link "North Texas":
+                            - /url: https://www.texastribune.org/tag/north-texas/
+                        - listitem:
+                          - link "South Plains and Panhandle":
+                            - /url: https://www.texastribune.org/tag/south-plains-panhandle/
+                        - listitem:
+                          - link "West Texas":
+                            - /url: https://www.texastribune.org/tag/west-texas/
+                        - listitem:
+                          - link "Gulf Coast Region":
+                            - /url: https://www.texastribune.org/tag/gulf-coast/
+                        - listitem:
+                          - link "East Texas":
+                            - /url: https://www.texastribune.org/tag/east-texas/
+                        - listitem:
+                          - link "Rio Grande Valley":
+                            - /url: https://www.texastribune.org/tag/rio-grande-valley/
+                  - list:
+                    - listitem:
+                      - link "Austin Current Reporting local news on education, government and growth/development for Austinites":
+                        - /url: https://austincurrent.org/
+                        - text: Austin Current
+                        - generic: Reporting local news on education, government and growth/development for Austinites
+                    - listitem:
+                      - link "Waco Bridge Dedicated to empowering Wacoans with high-quality local news and information":
+                        - /url: https://wacobridge.org/
+                        - text: Waco Bridge
+                        - generic: Dedicated to empowering Wacoans with high-quality local news and information
+                  - list:
+                    - listitem:
+                      - link "The Y’all is a weekly dispatch from our reporters embedded in communities across Texas.":
+                        - /url: https://www.texastribune.org/newsletters/the-yall/
+                        - strong: The Y’all
+                        - text: is a weekly dispatch from our reporters embedded in communities across Texas.
+                - listitem [ref=f2e34]:
+                  - link "Tools" [ref=f2e35] [cursor=pointer]:
+                    - /url: "#"
+                  - button "Open dropdown menu"
+                  - list:
+                    - listitem:
+                      - link "Public Schools Explorer Ratings, enrollment and spending for every district and campus":
+                        - /url: https://schools.texastribune.org/
+                        - text: Public Schools Explorer
+                        - generic: Ratings, enrollment and spending for every district and campus
+                    - listitem:
+                      - link "Government Salaries Explorer What hundreds of thousands of public employees are paid":
+                        - /url: https://salaries.texastribune.org/
+                        - text: Government Salaries Explorer
+                        - generic: What hundreds of thousands of public employees are paid
+                    - listitem:
+                      - link "Elected Officials Directory Who holds office in Texas, with their bios and contacts":
+                        - /url: https://directory.texastribune.org/
+                        - text: Elected Officials Directory
+                        - generic: Who holds office in Texas, with their bios and contacts
+                - listitem [ref=f2e36]:
+                  - link "More" [ref=f2e37] [cursor=pointer]:
+                    - /url: "#"
+                  - button "Open dropdown menu"
+      - navigation "Highlight Menu" [ref=f2e40]:
+        - list [ref=f2e41]:
+          - listitem [ref=f2e42]:
+            - link "School Takeovers" [ref=f2e43] [cursor=pointer]:
+              - /url: https://www.texastribune.org/2026/11/06/texas-school-takeovers-board-managers-gina-hinojosa/
+          - listitem [ref=f2e44]:
+            - link "Education Savings Accounts" [ref=f2e45] [cursor=pointer]:
+              - /url: https://www.texastribune.org/2026/11/07/texas-school-vouchers-hinojosa-abbott/
+          - listitem [ref=f2e46]:
+            - link "Texas Economy" [ref=f2e47] [cursor=pointer]:
+              - /url: https://www.texastribune.org/2026/11/06/texas-economy-business-oil-and-gas-tech-companies-data-centers/
+          - listitem [ref=f2e48]:
+            - link "Border Security" [ref=f2e49] [cursor=pointer]:
+              - /url: https://www.texastribune.org/2026/11/06/texas-immigration-operation-lonestar-democrats-election/
+          - listitem [ref=f2e50]:
+            - link "State vs. Cities" [ref=f2e51] [cursor=pointer]:
+              - /url: https://www.texastribune.org/2026/11/07/texas-local-control-wars-over-cities-counties/
+    - iframe [ref=f2e55]:
+      - link [ref=f6e2] [cursor=pointer]:
+        - /url: https://googleads.g.doubleclick.net/pcs/click?xai=AKAOjsvFX12VkDFyfOPFlRinjrYJOew3fCAY2h7KH3QlJdnOXH6LWN_QOBQf7ES5GXvXIi5GznvFaHLYcKhvZoGgfJmnbUTIxxcmr8a_n1oHHwduWkqL2A-zHtqSA0Pz1nenG-mpj196810tVnUTZwYW99dLJCePT7-7LyOC2UPi-X4Dh3acfD7HYFWbqy1KOV3qL3CpulX1D19SApA2a7p4P4b-ZmJhb60ctP23QVtFiuGlgDcCbbMZXWqCL1x1jCgDZLmPqzS94fmotjMcNmwQTLaoRxuzEbZdsYqwapuFdiehEV1gCRgJBPcTS_mR49PjSX_jFQLBv01Qp8-Xc-lISstrfVI-_ty3ukY46T5SR2bWY0I4tfJgxfvpUHz0JdCDgMHeiuTtuVNO6-X8g-4FVCxeCAmMsi8GR5fSbVKF3U1Z2FbnZK4-lb_WPJmOWWX8HrEosdCrRP3LcXgVJ4eM9gRN-VM3U92okmA&sai=AMfl-YT7-8XNugNI_qoiruHckIBAal9PF3cmsL5GpEBcdXmYAgIsg_Q0pNcYqSB8GDSfpQZhKQfMVOBvB1ScNdX7E3IRSlhiNnrfLkGdlZMSZCkeoEknRbh0_QaSkqtTT0jITiHJ6BxnPE4iood4GfBdiKs67qTih-h6sW937GhEenp8yctG0zpJXEZE5roqvbBEqObtZ8uMFxqVQkeZK9T8nb77gf0tuHf8tWJsX08NnGAlAHmbPWGw9VKpvvtf2hzAqL-dBLezvp4B5Zk-xkNuANIp2lck-qc1lJBB3p0Ap9R58DzdhdlHIhIrQSrr2CbjDLDPM7z-_6Xv35AfYoNsJebdASurPyGpCBotWahoE35oMF63zTL_BLx44y7PJnnZ4lK9b9DAawIUzCY9O8FM3zdOF-BaiYhkIEJo980PJA&sig=Cg0ArKJSzKOj-uD-cLkQ&fbs_aeid=%5Bgw_fbsaeid%5D&adurl=https://trib.it/bhptfp
+    - generic [ref=f2e56]:
+      - generic [ref=f2e57]:
+        - heading "Data Centers in Texas" [level=1] [ref=f2e60]
+        - main [ref=f2e62]:
+          - article [ref=f2e63]:
+            - figure [ref=f2e64]:
+              - link [aria-hidden] [ref=f2e65] [cursor=pointer]:
+                - /url: https://www.texastribune.org/2026/11/17/tceq-environmental-data-center-permits-resume/
+            - generic [ref=f2e67]:
+              - heading [level=2] [ref=f2e69]:
+                - link "Texas regulators are resuming environmental permits for data centers" [ref=f2e70] [cursor=pointer]:
+                  - /url: https://www.texastribune.org/2026/11/17/tceq-environmental-data-center-permits-resume/
+              - generic [ref=f2e71]:
+                - generic [ref=f2e72]:
+                  - text: by
+                  - link "Emily Foxhall" [ref=f2e74] [cursor=pointer]:
+                    - /url: https://www.texastribune.org/author/emily-foxhall/
+                - link [ref=f2e76] [cursor=pointer]:
+                  - /url: https://www.texastribune.org/2026/11/17/tceq-environmental-data-center-permits-resume/
+                  - time [ref=f2e77]: Nov. 17, 2026
+              - paragraph [ref=f2e79]: Gov. Greg Abbott, who lost his reelection, had ordered the Texas Commission on Environmental Quality to pause permit approvals related to data centers.
+          - article [ref=f2e80]:
+            - figure [ref=f2e81]:
+              - link [aria-hidden] [ref=f2e82] [cursor=pointer]:
+                - /url: https://www.texastribune.org/2026/11/17/texas-data-centers-local-property-tax-breaks/
+            - generic [ref=f2e83]:
+              - heading [level=2] [ref=f2e85]:
+                - link "Texas cities and counties forgo $1 billion in taxes to data centers in exchange for few job guarantees" [ref=f2e86] [cursor=pointer]:
+                  - /url: https://www.texastribune.org/2026/11/17/texas-data-centers-local-property-tax-breaks/
+              - generic [ref=f2e87]:
+                - generic [ref=f2e88]:
+                  - text: By
+                  - link "Paul Cobler" [ref=f2e90] [cursor=pointer]:
+                    - /url: https://www.texastribune.org/author/paul-cobler/
+                  - text: Data analysis by
+                  - link "Dan Keemahill" [ref=f2e92] [cursor=pointer]:
+                    - /url: https://www.texastribune.org/author/dan-keemahill/
+                - link [ref=f2e94] [cursor=pointer]:
+                  - /url: https://www.texastribune.org/2026/11/17/texas-data-centers-local-property-tax-breaks/
+                  - time [ref=f2e95]: Nov. 17, 2026
+              - paragraph [ref=f2e97]: The Tribune found 53 local tax agreements across 34 data centers guaranteed a total of 465 jobs. Roughly half of the agreements had no job stipulations.
+          - article [ref=f2e98]:
+            - figure [ref=f2e99]:
+              - link [aria-hidden] [ref=f2e100] [cursor=pointer]:
+                - /url: https://www.texastribune.org/2026/11/10/texas-spacex-data-center-power-plant/
+            - generic [ref=f2e102]:
+              - heading [level=2] [ref=f2e104]:
+                - link "SpaceX to build $24 billion data center in South Texas, sidestepping moratorium" [ref=f2e105] [cursor=pointer]:
+                  - /url: https://www.texastribune.org/2026/11/10/texas-spacex-data-center-power-plant/
+              - generic [ref=f2e106]:
+                - generic [ref=f2e107]:
+                  - text: by
+                  - link "Berenice Garcia" [ref=f2e109] [cursor=pointer]:
+                    - /url: https://www.texastribune.org/author/berenice-garcia/
+                - link [ref=f2e111] [cursor=pointer]:
+                  - /url: https://www.texastribune.org/2026/11/10/texas-spacex-data-center-power-plant/
+                  - time [ref=f2e112]: Nov. 10, 2026
+              - paragraph [ref=f2e114]: The city of Starbase has scheduled a public hearing on a possible tax abatement agreement for the data center and power plant project.
+          - article [ref=f2e115]:
+            - figure [ref=f2e116]:
+              - link [aria-hidden] [ref=f2e117] [cursor=pointer]:
+                - /url: https://www.texastribune.org/2026/11/04/data-center-texas-pause-gina-hinojosa-governor-policies/
+            - generic [ref=f2e119]:
+              - heading [level=2] [ref=f2e121]:
+                - link "Gina Hinojosa won the governor’s race. What happens to Texas data centers now?" [ref=f2e122] [cursor=pointer]:
+                  - /url: https://www.texastribune.org/2026/11/04/data-center-texas-pause-gina-hinojosa-governor-policies/
+              - generic [ref=f2e123]:
+                - generic [ref=f2e124]:
+                  - text: by
+                  - link "Emily Foxhall" [ref=f2e126] [cursor=pointer]:
+                    - /url: https://www.texastribune.org/author/emily-foxhall/
+                - link [ref=f2e128] [cursor=pointer]:
+                  - /url: https://www.texastribune.org/2026/11/04/data-center-texas-pause-gina-hinojosa-governor-policies/
+                  - time [ref=f2e129]: Nov. 4, 2026
+              - paragraph [ref=f2e131]: The governor-elect has called for a data center moratorium to last until the Texas Legislature meets in January to pass “real protections so Texans can have a seat at the table.”
+          - article [ref=f2e132]:
+            - figure [ref=f2e133]:
+              - link [aria-hidden] [ref=f2e134] [cursor=pointer]:
+                - /url: https://www.texastribune.org/2026/10/30/rick-perry-texas-data-center-fermi-project-matador/
+            - generic [ref=f2e136]:
+              - heading [level=2] [ref=f2e138]:
+                - link "Rick Perry loses reelection to board of Fermi, the data center company he co-founded" [ref=f2e139] [cursor=pointer]:
+                  - /url: https://www.texastribune.org/2026/10/30/rick-perry-texas-data-center-fermi-project-matador/
+              - generic [ref=f2e140]:
+                - generic [ref=f2e141]:
+                  - text: by
+                  - link "Taylor Goldenstein" [ref=f2e143] [cursor=pointer]:
+                    - /url: https://www.texastribune.org/author/taylor-goldenstein/
+                - link [ref=f2e145] [cursor=pointer]:
+                  - /url: https://www.texastribune.org/2026/10/30/rick-perry-texas-data-center-fermi-project-matador/
+                  - time [ref=f2e146]: "Updated: Oct. 30, 2026"
+              - paragraph [ref=f2e148]: A spokesperson for Fermi says Perry can remain on the board until his successor is elected, and he remains eligible for reelection.
+          - article [ref=f2e149]:
+            - figure [ref=f2e150]:
+              - link [aria-hidden] [ref=f2e151] [cursor=pointer]:
+                - /url: https://www.texastribune.org/2026/10/21/data-center-permits-tceq-texas/
+            - generic [ref=f2e153]:
+              - heading [level=2] [ref=f2e155]:
+                - link "Texas environmental agency shuts down online permit filing system after data center controversy" [ref=f2e156] [cursor=pointer]:
+                  - /url: https://www.texastribune.org/2026/10/21/data-center-permits-tceq-texas/
+              - generic [ref=f2e157]:
+                - generic [ref=f2e158]:
+                  - text: by
+                  - link "Emily Foxhall" [ref=f2e160] [cursor=pointer]:
+                    - /url: https://www.texastribune.org/author/emily-foxhall/
+                - link [ref=f2e162] [cursor=pointer]:
+                  - /url: https://www.texastribune.org/2026/10/21/data-center-permits-tceq-texas/
+                  - time [ref=f2e163]: Oct. 21, 2026
+              - paragraph [ref=f2e165]: Texas environmental officials disabled an online filing system after watchdog groups raised concerns about the agency issuing permits related to data centers.
+          - article [ref=f2e166]:
+            - figure [ref=f2e167]:
+              - link [aria-hidden] [ref=f2e168] [cursor=pointer]:
+                - /url: https://www.texastribune.org/2026/10/20/data-center-permits-tceq-abbott-texas-pause/
+            - generic [ref=f2e170]:
+              - heading [level=2] [ref=f2e172]:
+                - link "Greg Abbott ordered a pause on data center permits. Critics say some plans still moved forward." [ref=f2e173] [cursor=pointer]:
+                  - /url: https://www.texastribune.org/2026/10/20/data-center-permits-tceq-abbott-texas-pause/
+              - generic [ref=f2e174]:
+                - generic [ref=f2e175]:
+                  - text: by
+                  - link "Emily Foxhall" [ref=f2e177] [cursor=pointer]:
+                    - /url: https://www.texastribune.org/author/emily-foxhall/
+                - link [ref=f2e179] [cursor=pointer]:
+                  - /url: https://www.texastribune.org/2026/10/20/data-center-permits-tceq-abbott-texas-pause/
+                  - time [ref=f2e180]: Oct. 20, 2026
+              - paragraph [ref=f2e182]: Public Citizen said the Texas Commission on Environmental Quality hadn’t stopped issuing data center permits as required. The agency said it was complying with the directive.
+          - article [ref=f2e183]:
+            - figure [ref=f2e184]:
+              - link [aria-hidden] [ref=f2e185] [cursor=pointer]:
+                - /url: https://www.texastribune.org/2026/10/20/data-centers-texas-air-quality-report-pollution-health-risks/
+            - generic [ref=f2e187]:
+              - heading [level=2] [ref=f2e189]:
+                - link "Texas data center boom could erase decades of progress on air quality" [ref=f2e190] [cursor=pointer]:
+                  - /url: https://www.texastribune.org/2026/10/20/data-centers-texas-air-quality-report-pollution-health-risks/
+              - generic [ref=f2e191]:
+                - generic [ref=f2e192]:
+                  - text: by
+                  - link "Alejandra Martinez" [ref=f2e194] [cursor=pointer]:
+                    - /url: https://www.texastribune.org/author/alejandra-martinez/
+                - link [ref=f2e196] [cursor=pointer]:
+                  - /url: https://www.texastribune.org/2026/10/20/data-centers-texas-air-quality-report-pollution-health-risks/
+                  - time [ref=f2e197]: Oct. 20, 2026
+              - paragraph [ref=f2e199]: A new report warns that the state’s air quality progress could be reversed by the end of the decade, especially if facilities use natural gas power.
+          - article [ref=f2e200]:
+            - figure [ref=f2e201]:
+              - link [aria-hidden] [ref=f2e202] [cursor=pointer]:
+                - /url: https://www.texastribune.org/2026/10/19/greg-abbott-data-center-donors-texas/
+            - generic [ref=f2e203]:
+              - heading [level=2] [ref=f2e205]:
+                - link "Greg Abbott raked in $9 million from data center-related donors as he called for regulations" [ref=f2e206] [cursor=pointer]:
+                  - /url: https://www.texastribune.org/2026/10/19/greg-abbott-data-center-donors-texas/
+              - generic [ref=f2e207]:
+                - generic [ref=f2e208]:
+                  - text: by
+                  - link "Apurva Mahajan" [ref=f2e210] [cursor=pointer]:
+                    - /url: https://www.texastribune.org/author/apurva-mahajan/
+                  - text: and
+                  - link "Taylor Goldenstein" [ref=f2e212] [cursor=pointer]:
+                    - /url: https://www.texastribune.org/author/taylor-goldenstein/
+                - link [ref=f2e214] [cursor=pointer]:
+                  - /url: https://www.texastribune.org/2026/10/19/greg-abbott-data-center-donors-texas/
+                  - time [ref=f2e215]: Oct. 19, 2026
+              - paragraph [ref=f2e217]: About $4.9 million of the haul came from donors who develop, own or operate data centers, a Tribune analysis found. The other share of the donations came from people and groups with indirect financial ties.
+          - article [ref=f2e218]:
+            - figure [ref=f2e219]:
+              - link [aria-hidden] [ref=f2e220] [cursor=pointer]:
+                - /url: https://www.texastribune.org/2026/10/14/texas-data-centers-water-use-penalties-enforcement/
+            - generic [ref=f2e221]:
+              - heading [level=2] [ref=f2e223]:
+                - link "Despite tough talk from Abbott and Paxton, Texas penalties for data center violations are light" [ref=f2e224] [cursor=pointer]:
+                  - /url: https://www.texastribune.org/2026/10/14/texas-data-centers-water-use-penalties-enforcement/
+              - generic [ref=f2e225]:
+                - generic [ref=f2e226]:
+                  - text: By
+                  - link "Alejandra Martinez" [ref=f2e228] [cursor=pointer]:
+                    - /url: https://www.texastribune.org/author/alejandra-martinez/
+                  - text: ", data analysis by"
+                  - link "Alex Ford" [ref=f2e230] [cursor=pointer]:
+                    - /url: https://www.texastribune.org/author/alex-ford/
+                - link [ref=f2e232] [cursor=pointer]:
+                  - /url: https://www.texastribune.org/2026/10/14/texas-data-centers-water-use-penalties-enforcement/
+                  - time [ref=f2e233]: Oct. 14, 2026
+              - paragraph [ref=f2e235]: Texas officials are promising tougher enforcement on data centers, but the existing law may offer limited leverage over the industry that has largely failed to report its water use.
+          - navigation "Posts pagination" [ref=f2e236]:
+            - heading "Posts pagination" [level=2] [ref=f2e237]
+            - generic [ref=f2e238]:
+              - generic [ref=f2e239]: "1"
+              - link "2" [ref=f2e240] [cursor=pointer]:
+                - /url: https://www.texastribune.org/series/data-centers-in-texas/page/2/
+              - link "3" [ref=f2e241] [cursor=pointer]:
+                - /url: https://www.texastribune.org/series/data-centers-in-texas/page/3/
+              - link "4" [ref=f2e242] [cursor=pointer]:
+                - /url: https://www.texastribune.org/series/data-centers-in-texas/page/4/
+              - link "Older posts" [ref=f2e243] [cursor=pointer]:
+                - /url: https://www.texastribune.org/series/data-centers-in-texas/page/2/
+      - iframe [ref=f2e251]:
+        - link [ref=f7e2] [cursor=pointer]:
+          - /url: https://googleads.g.doubleclick.net/pcs/click?xai=AKAOjsuM7BEtPxBinwm9cYFYaUqeltFA64Nu1oukHZI494V5i0tN-U4z3IuWbtKiT7tPVUt85REMpq6bsRv2rlqmWx3Y5IiRxOr0sWqoDkdfrtvZySW271Qpmb1BE_Xlat-txCGj4ufSnmtewTluWFCvYWaGffDMPf_O77YDtrEJSSCrggcN07A-7AZOkhQHG_EdojTW23xRjihGeuyPzyGZ-7wAi4GNxf1bTLX0gPDzZBbOjzr_PMbg4mK5eQXNk0mf7GI6366a6FO3B1XZgD26UESreBYDKcac77cmwGWiuK_f-1RKQX-wSnawhMSYV6N_S_XexAAIaJjI0rwqNvDxdrdMsdPxgY15Zh4dVmgKVhW0fX4uKWKp90WLBDP42kwsKVgjc14YLVlqY5DrIqoy2nraNTy2XyQXQ1I-wcZRRRNMQBcoxfoBUwd_0HmlZQUnhQZ15JeuWTftdCq-x4EJHA1LnV-nROdO2gNq0W-1SXroo7Atb0P6&sai=AMfl-YR66MKpVERQZr5CK_ISiW0H-lsJ5bYyRPT8wPLDJgoS1bc7mWPi3bPk3vrSy4QPZMfqWH4bECb-n8SlY3BqrP8BHNEPta6kpEHJXP0lsNfenK4JTIneFzge5q_eGMvUXV5qH5eQGshp_o3xYL5Leu5Aw5h24DWskR7kfJXC5cR_-SrC4_WCQCVnJACetyRjOLURTWQtArICfvZxQCGI4v4lYaD4Qw1z1Bk0Oe4iQdSUMRZESAx1l5Z8KxS0jJQMTqkk5aSccQD0M5_Nf18SjSVsHjiMTEe-jhJVFZbVxBL8kFzyf00jcqYetI4l6EEYtuFAITLpKt86JB3RWXLBnwSWriu-vnaebhE8qa4UdUZT2y6UoHm3Lnp8u7nwFr565NZ_KkAhltaohpv2Sn1znYVK2C9iIqwXmSUeatmp3A&sig=Cg0ArKJSzM2OAGetSpIT&fbs_aeid=%5Bgw_fbsaeid%5D&adurl=https://www.texastribune.org/the-blast-the-texas-tribune/
+    - contentinfo [ref=f2e252]:
+      - complementary "Footer" [ref=f2e253]:
+        - generic [ref=f2e256]:
+          - generic [ref=f2e257]:
+            - figure [ref=f2e258]
+            - separator
+            - list [ref=f2e261]:
+              - listitem [ref=f2e262]:
+                - link "Donate" [ref=f2e263] [cursor=pointer]:
+                  - /url: https://give.texastribune.org/campaign/814363/donate?c_src=website&c_src2=footer
+              - listitem [ref=f2e264]:
+                - link "Contact Us" [ref=f2e265] [cursor=pointer]:
+                  - /url: https://www.texastribune.org/contact/
+              - listitem [ref=f2e266]:
+                - link "Advertise" [ref=f2e267] [cursor=pointer]:
+                  - /url: https://mediakit.texastribune.org/
+              - listitem [ref=f2e268]:
+                - link "Send us a confidential tip" [ref=f2e269] [cursor=pointer]:
+                  - /url: https://www.texastribune.org/about/tips/
+              - listitem [ref=f2e270]:
+                - 'link "Our Mission: We pursue the truth so Texans can shape our future." [ref=f2e271] [cursor=pointer]':
+                  - /url: https://www.texastribune.org/about/?footer
+          - generic [ref=f2e273]:
+            - heading "Topics" [level=2] [ref=f2e274]
+            - list [ref=f2e276]:
+              - listitem [ref=f2e277]:
+                - link "Congress" [ref=f2e278] [cursor=pointer]:
+                  - /url: https://www.texastribune.org/topics/congress/
+              - listitem [ref=f2e279]:
+                - link "Courts" [ref=f2e280] [cursor=pointer]:
+                  - /url: https://www.texastribune.org/topics/courts/
+              - listitem [ref=f2e281]:
+                - link "Criminal Justice" [ref=f2e282] [cursor=pointer]:
+                  - /url: https://www.texastribune.org/topics/criminal-justice/
+              - listitem [ref=f2e283]:
+                - link "Demographics" [ref=f2e284] [cursor=pointer]:
+                  - /url: https://www.texastribune.org/topics/demographics/
+              - listitem [ref=f2e285]:
+                - link "Economy" [ref=f2e286] [cursor=pointer]:
+                  - /url: https://www.texastribune.org/topics/economy/
+              - listitem [ref=f2e287]:
+                - link "Energy" [ref=f2e288] [cursor=pointer]:
+                  - /url: https://www.texastribune.org/topics/energy/
+              - listitem [ref=f2e289]:
+                - link "Environment" [ref=f2e290] [cursor=pointer]:
+                  - /url: https://www.texastribune.org/topics/environment/
+              - listitem [ref=f2e291]:
+                - link "Health Care" [ref=f2e292] [cursor=pointer]:
+                  - /url: https://www.texastribune.org/topics/health-care/
+              - listitem [ref=f2e293]:
+                - link "Higher Education" [ref=f2e294] [cursor=pointer]:
+                  - /url: https://www.texastribune.org/topics/higher-education/
+              - listitem [ref=f2e295]:
+                - link "Immigration" [ref=f2e296] [cursor=pointer]:
+                  - /url: https://www.texastribune.org/topics/immigration/
+              - listitem [ref=f2e297]:
+                - link "Politics" [ref=f2e298] [cursor=pointer]:
+                  - /url: https://www.texastribune.org/topics/politics/
+              - listitem [ref=f2e299]:
+                - link "Public Education" [ref=f2e300] [cursor=pointer]:
+                  - /url: https://www.texastribune.org/topics/public-education/
+              - listitem [ref=f2e301]:
+                - link "State Government" [ref=f2e302] [cursor=pointer]:
+                  - /url: https://www.texastribune.org/topics/state-government/
+              - listitem [ref=f2e303]:
+                - link "Transportation" [ref=f2e304] [cursor=pointer]:
+                  - /url: https://www.texastribune.org/topics/transportation/
+          - generic [ref=f2e306]:
+            - heading "Info" [level=2] [ref=f2e307]
+            - list [ref=f2e309]:
+              - listitem [ref=f2e310]:
+                - link "About Us" [ref=f2e311] [cursor=pointer]:
+                  - /url: http://www.texastribune.org/about/
+              - listitem [ref=f2e312]:
+                - link "Our Staff" [ref=f2e313] [cursor=pointer]:
+                  - /url: https://www.texastribune.org/about/staff/
+              - listitem [ref=f2e314]:
+                - link "Board of Directors" [ref=f2e315] [cursor=pointer]:
+                  - /url: https://www.texastribune.org/board/
+              - listitem [ref=f2e316]:
+                - link "Jobs" [ref=f2e317] [cursor=pointer]:
+                  - /url: https://www.texastribune.org/jobs/
+              - listitem [ref=f2e318]:
+                - link "Who Funds Us?" [ref=f2e319] [cursor=pointer]:
+                  - /url: https://support.texastribune.org/members
+              - listitem [ref=f2e320]:
+                - link "Strategic Plan" [ref=f2e321] [cursor=pointer]:
+                  - /url: https://www.texastribune.org/about/texas-tribune-strategic-plan/
+              - listitem [ref=f2e322]:
+                - link "Republishing Guidelines" [ref=f2e323] [cursor=pointer]:
+                  - /url: https://www.texastribune.org/republishing-guidelines/
+              - listitem [ref=f2e324]:
+                - link "Code of Ethics" [ref=f2e325] [cursor=pointer]:
+                  - /url: https://www.texastribune.org/about/ethics
+              - listitem [ref=f2e326]:
+                - link "Terms of Service" [ref=f2e327] [cursor=pointer]:
+                  - /url: https://www.texastribune.org/terms-of-service/
+              - listitem [ref=f2e328]:
+                - link "Privacy Policy" [ref=f2e329] [cursor=pointer]:
+                  - /url: https://www.texastribune.org/privacy-policy/
+              - listitem [ref=f2e330]:
+                - link "Corrections" [ref=f2e331] [cursor=pointer]:
+                  - /url: https://www.texastribune.org/corrections/
+              - listitem [ref=f2e332]:
+                - link "Newsletters" [ref=f2e333] [cursor=pointer]:
+                  - /url: https://www.texastribune.org/newsletters/
+              - listitem [ref=f2e334]:
+                - link "Audio" [ref=f2e335] [cursor=pointer]:
+                  - /url: https://www.texastribune.org/audio/
+              - listitem [ref=f2e336]:
+                - link "Video" [ref=f2e337] [cursor=pointer]:
+                  - /url: https://www.texastribune.org/video/
+              - listitem [ref=f2e338]:
+                - link "RSS Feeds" [ref=f2e339] [cursor=pointer]:
+                  - /url: https://www.texastribune.org/feeds/
+          - generic [ref=f2e340]:
+            - heading "Social Media" [level=2] [ref=f2e341]
+            - list [ref=f2e344]:
+              - listitem [ref=f2e345]:
+                - link "Facebook" [ref=f2e346] [cursor=pointer]:
+                  - /url: https://facebook.com/texastribune
+              - listitem [ref=f2e349]:
+                - link "X" [ref=f2e350] [cursor=pointer]:
+                  - /url: https://twitter.com/texastribune
+              - listitem [ref=f2e353]:
+                - link "YouTube" [ref=f2e354] [cursor=pointer]:
+                  - /url: https://youtube.com/user/thetexastribune?sub_confirmation=1
+              - listitem [ref=f2e357]:
+                - link "Instagram" [ref=f2e358] [cursor=pointer]:
+                  - /url: https://instagram.com/texas_tribune
+              - listitem [ref=f2e361]:
+                - link "LinkedIn" [ref=f2e362] [cursor=pointer]:
+                  - /url: http://www.linkedin.com/company/texas-tribune
+              - listitem [ref=f2e365]:
+                - link "Reddit" [ref=f2e366] [cursor=pointer]:
+                  - /url: https://www.reddit.com/user/texastribune
+              - listitem [ref=f2e369]:
+                - link "TikTok" [ref=f2e370] [cursor=pointer]:
+                  - /url: https://www.tiktok.com/@texastribune
+      - generic [ref=f2e374]:
+        - generic [ref=f2e375]: © 2026 The Texas Tribune
+        - link "Powered by Newspack" [ref=f2e376] [cursor=pointer]:
+          - /url: https://newspack.com/
+        - link "Privacy Policy" [ref=f2e377] [cursor=pointer]:
+          - /url: https://www.texastribune.org/privacy-policy/
+  - button [ref=f2e378]:
+    - generic [ref=f2e380]:
+      - generic [ref=f2e383]:
+        - figure [ref=f2e388]
+        - generic [ref=f2e391]:
+          - heading "You came here for Texas news." [level=2] [ref=f2e392]
+          - paragraph [ref=f2e393]: Never miss a story with The Brief, our free newsletter.
+      - button "Close Pop-up" [ref=f2e394] [cursor=pointer]
+    - button [ref=f2e397]
+  - button [ref=f2e398]:
+    - generic [ref=f2e400]:
+      - generic [ref=f2e403]:
+        - figure [ref=f2e408]
+        - generic [ref=f2e410]:
+          - generic [ref=f2e411]:
+            - heading "Our coverage continues" [level=3] [ref=f2e412]
+            - paragraph [ref=f2e413]: Track flood recovery, water supply, and land use with our Friday roundup.
+          - generic [ref=f2e416]:
+            - textbox "Email Address" [ref=f2e417]
+            - button "SIGN UP FOR FREE" [ref=f2e418] [cursor=pointer]
+      - button "Close Pop-up" [ref=f2e419] [cursor=pointer]
+    - button [ref=f2e422]
+  - complementary:
+    - complementary [aria-hidden] [ref=f2e423]:
+      - button [ref=f2e424] [cursor=pointer]
+      - generic [ref=f2e437]:
+        - paragraph [ref=f2e438]: Make a difference!
+        - paragraph [ref=f2e439]: Finish your donation to create an impact today.
+      - button [ref=f2e440] [cursor=pointer]: Give Now

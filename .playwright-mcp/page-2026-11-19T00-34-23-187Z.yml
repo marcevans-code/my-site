@@ -1,0 +1,179 @@
+- generic [active] [ref=f34e1]:
+  - link "Skip to main content" [ref=f34e2] [cursor=pointer]:
+    - /url: "#main"
+  - generic [ref=f34e3]:
+    - navigation [ref=f34e4]:
+      - link:
+        - /url: https://www.puc.texas.gov/
+        - img [ref=f34e5] [cursor=pointer]
+      - generic [ref=f34e6]: Public Utility Commission of Texas Interchange Filing Search
+    - main [ref=f34e7]:
+      - heading "Filings for 59388" [level=1] [ref=f34e9]
+      - menu [ref=f34e11]:
+        - menuitem [ref=f34e12]:
+          - link [ref=f34e13] [cursor=pointer]:
+            - /url: /
+            - emphasis [ref=f34e14]: 
+            - text: Filing Search
+        - menuitem [ref=f34e15]:
+          - link [ref=f34e16] [cursor=pointer]:
+            - /url: /search/daily/
+            - emphasis [ref=f34e17]: 
+            - text: Daily Filing Search
+        - menuitem [ref=f34e18]:
+          - link [ref=f34e19] [cursor=pointer]:
+            - /url: https://www.puc.texas.gov/industry/filings/Default.aspx
+            - emphasis [ref=f34e20]: 
+            - text: Learn More
+        - menuitem [ref=f34e21]:
+          - link [ref=f34e22] [cursor=pointer]:
+            - /url: https://portal.puc.texas.gov/portal/
+            - emphasis [ref=f34e23]: 
+            - text: Filing Notification System
+        - menuitem [ref=f34e24]:
+          - link [ref=f34e25] [cursor=pointer]:
+            - /url: https://interchange.puc.texas.gov/filer
+            - emphasis [ref=f34e26]: 
+            - text: PUC Interchange Filer
+      - text:      
+      - paragraph [ref=f34e27]:
+        - strong [ref=f34e28]: Case Style
+        - text: APPLICATION OF NEXUS DATA CENTERS, LLC FOR A SERVICE PROVIDER CERTIFICATE OF OPERATING AUTHORITY
+      - paragraph [ref=f34e29]: 2 filing(s).
+      - table [ref=f34e30]:
+        - rowgroup [ref=f34e31]:
+          - row [ref=f34e32]:
+            - cell "«« « 1 » »» Export to Excel" [ref=f34e33]:
+              - generic:
+                - generic:
+                  - list:
+                    - listitem:
+                      - generic [ref=f34e34]: ««
+                    - listitem:
+                      - generic [ref=f34e35]: «
+                    - listitem:
+                      - generic [ref=f34e36]: "1"
+                    - listitem:
+                      - generic [ref=f34e37]: »
+                    - listitem:
+                      - generic [ref=f34e38]: »»
+              - link "Export to Excel" [ref=f34e40] [cursor=pointer]:
+                - /url: /search/exportfilings/?UtilityType=A&ControlNumber=59388&ItemMatch=Equal&DocumentType=ALL&FilingDescription=data%20center&SortBy=ItemNumber&SortOrder=Ascending
+                - text: Export to Excel
+                - generic [aria-hidden] [ref=f34e41]: 
+          - row [ref=f34e42]:
+            - columnheader "Item sorted ascending" [ref=f34e43]:
+              - link "Item sorted ascending" [ref=f34e44] [cursor=pointer]:
+                - /url: /search/filings/?UtilityType=A&ControlNumber=59388&ItemMatch=Equal&DocumentType=ALL&SortBy=ItemNumber&SortOrder=Descending
+                - text: Item ▲
+                - generic [ref=f34e45]: sorted ascending
+            - columnheader "File Stamp" [ref=f34e46]:
+              - link "File Stamp" [ref=f34e47] [cursor=pointer]:
+                - /url: /search/filings/?UtilityType=A&ControlNumber=59388&ItemMatch=Equal&DocumentType=ALL&SortBy=FileStamp&SortOrder=Ascending
+            - columnheader "Party" [ref=f34e48]:
+              - link "Party" [ref=f34e49] [cursor=pointer]:
+                - /url: /search/filings/?UtilityType=A&ControlNumber=59388&ItemMatch=Equal&DocumentType=ALL&SortBy=FilingParty&SortOrder=Ascending
+            - columnheader "Item Type" [ref=f34e50]:
+              - link "Item Type" [ref=f34e51] [cursor=pointer]:
+                - /url: /search/filings/?UtilityType=A&ControlNumber=59388&ItemMatch=Equal&DocumentType=ALL&SortBy=ItemType&SortOrder=Ascending
+            - columnheader "Filing Description" [ref=f34e52]:
+              - link "Filing Description" [ref=f34e53] [cursor=pointer]:
+                - /url: /search/filings/?UtilityType=A&ControlNumber=59388&ItemMatch=Equal&DocumentType=ALL&SortBy=FilingDescription&SortOrder=Ascending
+          - row [ref=f34e54]:
+            - cell [ref=f34e55]:
+              - strong [ref=f34e56]:
+                - link "5" [ref=f34e57] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=59388&itemNumber=5
+            - cell "2/19/2026" [ref=f34e58]
+            - cell "NEXUS DATA CENTERS LLC" [ref=f34e59]
+            - cell "PL" [ref=f34e60]
+            - cell "Email exchange between Nexus Data Centers LLC and the CSEC confirming they are in receipt of our CLEC/SPCOA application and have been notified in accordance with 16 TAC § 26.111." [ref=f34e61]
+          - row [ref=f34e62]:
+            - cell [ref=f34e63]:
+              - strong [ref=f34e64]:
+                - link "9" [ref=f34e65] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=59388&itemNumber=9
+            - cell "3/4/2026" [ref=f34e66]
+            - cell "NEXUS DATA CENTERS LLC" [ref=f34e67]
+            - cell "CONF" [ref=f34e68]
+            - cell "Attachment to SPCOA/CLEC Application by Nexus Data Centers LLC - Attachment C - Unaudited Balance Sheet — per P.U.C. Subst. R. 26.111(f)(CONFIDENTIAL)" [ref=f34e69]
+          - row [ref=f34e70]:
+            - cell "«« « 1 » »» Export to Excel" [ref=f34e71]:
+              - generic:
+                - generic:
+                  - list:
+                    - listitem:
+                      - generic [ref=f34e72]: ««
+                    - listitem:
+                      - generic [ref=f34e73]: «
+                    - listitem:
+                      - generic [ref=f34e74]: "1"
+                    - listitem:
+                      - generic [ref=f34e75]: »
+                    - listitem:
+                      - generic [ref=f34e76]: »»
+              - link "Export to Excel" [ref=f34e78] [cursor=pointer]:
+                - /url: /search/exportfilings/?UtilityType=A&ControlNumber=59388&ItemMatch=Equal&DocumentType=ALL&FilingDescription=data%20center&SortBy=ItemNumber&SortOrder=Ascending
+                - text: Export to Excel
+                - generic [aria-hidden] [ref=f34e79]: 
+  - contentinfo [ref=f34e80]:
+    - generic [ref=f34e81]:
+      - generic [ref=f34e82]:
+        - generic [ref=f34e83]:
+          - heading "Public Utility Commission of Texas" [level=5] [ref=f34e84]
+          - generic [ref=f34e85]: 1701 N. Congress Ave. PO Box 13326 Austin, TX 78711-3326
+          - generic [ref=f34e86]:
+            - link " Phone 512-936-7000" [ref=f34e88] [cursor=pointer]:
+              - /url: tel://1-512-936-7000
+              - generic [ref=f34e89]: 
+              - generic "Phone"
+              - text: 512-936-7000
+            - link " Contact Us" [ref=f34e91] [cursor=pointer]:
+              - /url: https://www.puc.texas.gov/agency/about/contact/Default.aspx
+              - generic [ref=f34e92]: 
+              - text: Contact Us
+        - generic [ref=f34e93]:
+          - heading "AGENCY INFO" [level=5] [ref=f34e94]
+          - list [ref=f34e95]:
+            - listitem [ref=f34e96]:
+              - link "Site Policies" [ref=f34e97] [cursor=pointer]:
+                - /url: http://www.puc.texas.gov/agency/about/policies/Default.aspx
+            - listitem [ref=f34e98]:
+              - link "Sitemap" [ref=f34e99] [cursor=pointer]:
+                - /url: http://www.puc.texas.gov/agency/Sitemap.aspx
+        - generic [ref=f34e100]:
+          - heading "OTHER GOVERNMENT RESOURCES" [level=5] [ref=f34e101]
+          - list [ref=f34e102]:
+            - listitem [ref=f34e103]:
+              - link "Report Fraud, Waste or Abuse" [ref=f34e104] [cursor=pointer]:
+                - /url: http://sao.fraud.state.tx.us/
+            - listitem [ref=f34e105]:
+              - link "Texas Homeland Security" [ref=f34e106] [cursor=pointer]:
+                - /url: http://governor.state.tx.us/homeland
+            - listitem [ref=f34e107]:
+              - link "Ready.gov" [ref=f34e108] [cursor=pointer]:
+                - /url: http://www.ready.gov/
+            - listitem [ref=f34e109]:
+              - link "Texas.gov" [ref=f34e110] [cursor=pointer]:
+                - /url: http://texas.gov
+            - listitem [ref=f34e111]:
+              - link "Texas Veterans" [ref=f34e112] [cursor=pointer]:
+                - /url: https://veterans.portal.texas.gov/
+            - listitem [ref=f34e113]:
+              - link "TRAIL" [ref=f34e114] [cursor=pointer]:
+                - /url: https://www.tsl.state.tx.us/trail/index.html
+      - navigation [ref=f34e117]:
+        - list [ref=f34e118]:
+          - listitem [ref=f34e119]:
+            - link "PUC Calendar RSS Feed" [ref=f34e120] [cursor=pointer]:
+              - /url: http://www.puc.texas.gov/agency/calendar/GetCalendarRss.aspx
+              - generic [ref=f34e121]: 
+          - listitem [ref=f34e122]:
+            - link "Facebook" [ref=f34e123] [cursor=pointer]:
+              - /url: http://www.facebook.com/pages/Public-Utility-Commission-of-Texas/207063229365425
+              - generic [ref=f34e124]: 
+          - listitem [ref=f34e125]:
+            - link "Twitter" [ref=f34e126] [cursor=pointer]:
+              - /url: https://twitter.com/PUCTx
+              - generic [ref=f34e127]: 
+      - generic [ref=f34e128]: Copyright © 2026 Public Utility Commission of Texas Version 2.2.11.0

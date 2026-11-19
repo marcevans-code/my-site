@@ -1,0 +1,324 @@
+- generic [active] [ref=f45e1]:
+  - link "Skip to main content" [ref=f45e2] [cursor=pointer]:
+    - /url: "#main"
+  - generic [ref=f45e3]:
+    - navigation [ref=f45e4]:
+      - link:
+        - /url: https://www.puc.texas.gov/
+        - img [ref=f45e5] [cursor=pointer]
+      - generic [ref=f45e6]: Public Utility Commission of Texas Interchange Filing Search
+    - main [ref=f45e7]:
+      - heading "Search Results" [level=1] [ref=f45e9]
+      - menu [ref=f45e11]:
+        - menuitem [ref=f45e12]:
+          - link [ref=f45e13] [cursor=pointer]:
+            - /url: /
+            - emphasis [ref=f45e14]: 
+            - text: Filing Search
+        - menuitem [ref=f45e15]:
+          - link [ref=f45e16] [cursor=pointer]:
+            - /url: /search/daily/
+            - emphasis [ref=f45e17]: 
+            - text: Daily Filing Search
+        - menuitem [ref=f45e18]:
+          - link [ref=f45e19] [cursor=pointer]:
+            - /url: https://www.puc.texas.gov/industry/filings/Default.aspx
+            - emphasis [ref=f45e20]: 
+            - text: Learn More
+        - menuitem [ref=f45e21]:
+          - link [ref=f45e22] [cursor=pointer]:
+            - /url: https://portal.puc.texas.gov/portal/
+            - emphasis [ref=f45e23]: 
+            - text: Filing Notification System
+        - menuitem [ref=f45e24]:
+          - link [ref=f45e25] [cursor=pointer]:
+            - /url: https://interchange.puc.texas.gov/filer
+            - emphasis [ref=f45e26]: 
+            - text: PUC Interchange Filer
+      - text:      
+      - paragraph [ref=f45e27]: Utility Type = All, filing date >= 11/18/2025, filing date <= 11/18/2026, Filing Description contains "data center"
+      - paragraph [ref=f45e28]: 21 record(s) found.
+      - table [ref=f45e29]:
+        - rowgroup [ref=f45e30]:
+          - row [ref=f45e31]:
+            - cell "«« « 1 » »» Export to Excel" [ref=f45e32]:
+              - generic:
+                - generic:
+                  - list:
+                    - listitem:
+                      - generic [ref=f45e33]: ««
+                    - listitem:
+                      - generic [ref=f45e34]: «
+                    - listitem:
+                      - generic [ref=f45e35]: "1"
+                    - listitem:
+                      - generic [ref=f45e36]: »
+                    - listitem:
+                      - generic [ref=f45e37]: »»
+              - link "Export to Excel" [ref=f45e39] [cursor=pointer]:
+                - /url: /search/exportdockets/?UtilityType=A&ItemMatch=Equal&DocumentType=ALL&DateFiledFrom=11%2F18%2F2025%2000%3A00%3A00&DateFiledTo=11%2F18%2F2026%2000%3A00%3A00&FilingDescription=data%20center&SortBy=ControlNumber&SortOrder=Ascending
+                - text: Export to Excel
+                - generic [aria-hidden] [ref=f45e40]: 
+          - row [ref=f45e41]:
+            - columnheader "Control sorted ascending" [ref=f45e42]:
+              - link "Control sorted ascending" [ref=f45e43] [cursor=pointer]:
+                - /url: /search/dockets/?UtilityType=A&ItemMatch=Equal&DocumentType=ALL&DateFiledFrom=11%2F18%2F2025%2000%3A00%3A00&DateFiledTo=11%2F18%2F2026%2000%3A00%3A00&SortBy=ControlNumber&SortOrder=Descending
+                - text: Control ▲
+                - generic [ref=f45e44]: sorted ascending
+            - columnheader "Filings" [ref=f45e45]:
+              - link "Filings" [ref=f45e46] [cursor=pointer]:
+                - /url: /search/dockets/?UtilityType=A&ItemMatch=Equal&DocumentType=ALL&DateFiledFrom=11%2F18%2F2025%2000%3A00%3A00&DateFiledTo=11%2F18%2F2026%2000%3A00%3A00&SortBy=FilingCount&SortOrder=Ascending
+            - columnheader "Utility" [ref=f45e47]:
+              - link "Utility" [ref=f45e48] [cursor=pointer]:
+                - /url: /search/dockets/?UtilityType=A&ItemMatch=Equal&DocumentType=ALL&DateFiledFrom=11%2F18%2F2025%2000%3A00%3A00&DateFiledTo=11%2F18%2F2026%2000%3A00%3A00&SortBy=Utility&SortOrder=Ascending
+            - columnheader "Description (Case Style)" [ref=f45e49]:
+              - link "Description (Case Style)" [ref=f45e50] [cursor=pointer]:
+                - /url: /search/dockets/?UtilityType=A&ItemMatch=Equal&DocumentType=ALL&DateFiledFrom=11%2F18%2F2025%2000%3A00%3A00&DateFiledTo=11%2F18%2F2026%2000%3A00%3A00&SortBy=Description&SortOrder=Ascending
+          - row [ref=f45e51]:
+            - cell [ref=f45e52]:
+              - strong [ref=f45e53]:
+                - link "43222" [ref=f45e54] [cursor=pointer]:
+                  - /url: /search/filings/?ControlNumber=43222&UtilityType=A&ItemMatch=Equal&DocumentType=ALL&DateFiledFrom=11%2F18%2F2025%2000%3A00%3A00&DateFiledTo=11%2F18%2F2026%2000%3A00%3A00&FilingDescription=data%20center
+            - cell "1" [ref=f45e55]
+            - cell "RICE WATER SUPPLY & SEWER SUPPLY COPRORATION" [ref=f45e56]
+            - cell "RICE WATER SUPPLY & SEWER SUPPLY CORP UPDATE LETTERS TARIFF CCN NO. 10808" [ref=f45e57]
+          - row [ref=f45e58]:
+            - cell [ref=f45e59]:
+              - strong [ref=f45e60]:
+                - link "54445" [ref=f45e61] [cursor=pointer]:
+                  - /url: /search/filings/?ControlNumber=54445&UtilityType=A&ItemMatch=Equal&DocumentType=ALL&DateFiledFrom=11%2F18%2F2025%2000%3A00%3A00&DateFiledTo=11%2F18%2F2026%2000%3A00%3A00&FilingDescription=data%20center
+            - cell "1" [ref=f45e62]
+            - cell "PUC MARKET ANALYSIS" [ref=f45e63]
+            - cell "Review of Protocols Adopted by the Independent Organization" [ref=f45e64]
+          - row [ref=f45e65]:
+            - cell [ref=f45e66]:
+              - strong [ref=f45e67]:
+                - link "55999" [ref=f45e68] [cursor=pointer]:
+                  - /url: /search/filings/?ControlNumber=55999&UtilityType=A&ItemMatch=Equal&DocumentType=ALL&DateFiledFrom=11%2F18%2F2025%2000%3A00%3A00&DateFiledTo=11%2F18%2F2026%2000%3A00%3A00&FilingDescription=data%20center
+            - cell "1" [ref=f45e69]
+            - cell "PUC MARKET ANALYSIS" [ref=f45e70]
+            - cell "REPORTS OF THE ELECTRIC RELIABILITY COUNCIL OF TEXAS" [ref=f45e71]
+          - row [ref=f45e72]:
+            - cell [ref=f45e73]:
+              - strong [ref=f45e74]:
+                - link "58317" [ref=f45e75] [cursor=pointer]:
+                  - /url: /search/filings/?ControlNumber=58317&UtilityType=A&ItemMatch=Equal&DocumentType=ALL&DateFiledFrom=11%2F18%2F2025%2000%3A00%3A00&DateFiledTo=11%2F18%2F2026%2000%3A00%3A00&FilingDescription=data%20center
+            - cell "69" [ref=f45e76]
+            - cell "PUC RULES AND PROJECTS" [ref=f45e77]
+            - cell "SB 6 IMPLEMENTATION" [ref=f45e78]
+          - row [ref=f45e79]:
+            - cell [ref=f45e80]:
+              - strong [ref=f45e81]:
+                - link "58481" [ref=f45e82] [cursor=pointer]:
+                  - /url: /search/filings/?ControlNumber=58481&UtilityType=A&ItemMatch=Equal&DocumentType=ALL&DateFiledFrom=11%2F18%2F2025%2000%3A00%3A00&DateFiledTo=11%2F18%2F2026%2000%3A00%3A00&FilingDescription=data%20center
+            - cell "3" [ref=f45e83]
+            - cell "PUC RULES & PROJECTS" [ref=f45e84]
+            - cell "RULEMAKING TO IMPLEMENT LARGE LOAD INTERCONNECTION STANDARDS UNDER PURA 37.0561" [ref=f45e85]
+          - row [ref=f45e86]:
+            - cell [ref=f45e87]:
+              - strong [ref=f45e88]:
+                - link "58482" [ref=f45e89] [cursor=pointer]:
+                  - /url: /search/filings/?ControlNumber=58482&UtilityType=A&ItemMatch=Equal&DocumentType=ALL&DateFiledFrom=11%2F18%2F2025%2000%3A00%3A00&DateFiledTo=11%2F18%2F2026%2000%3A00%3A00&FilingDescription=data%20center
+            - cell "1" [ref=f45e90]
+            - cell "PUC RULES AND PROJECTS" [ref=f45e91]
+            - cell "Large Load Demand Management Service" [ref=f45e92]
+          - row [ref=f45e93]:
+            - cell [ref=f45e94]:
+              - strong [ref=f45e95]:
+                - link "58561" [ref=f45e96] [cursor=pointer]:
+                  - /url: /search/filings/?ControlNumber=58561&UtilityType=A&ItemMatch=Equal&DocumentType=ALL&DateFiledFrom=11%2F18%2F2025%2000%3A00%3A00&DateFiledTo=11%2F18%2F2026%2000%3A00%3A00&FilingDescription=data%20center
+            - cell "1" [ref=f45e97]
+            - cell "ONCOR ELECTRIC DELIVERY COMPANY LLC" [ref=f45e98]
+            - cell "PUBLIC INPUT REGARDING THE EXPECTED FUTURE CCN FILING FOR THE APPLICATION OF ONCOR ELECTRIC DELIVERY COMPANY LLC TO AMEND ITS CERTIFICATE OF CONVENIENCE AND NECESSITY FOR THE DINOSAUR SWITCH TO LONGSHORE SWITCH 765-KV TRANSMISSION LINE PROJECT IN GLASSCOCK, HOWARD, MITCHELL, STERLING, COKE, NOLAN, TAYLOR, RUNNELS, COLEMAN, CALLAHAN, EASTLAND, BROWN, COMANCHE, ERATH, HOOD, AND SOMERVELL COUNTIES" [ref=f45e99]
+          - row [ref=f45e100]:
+            - cell [ref=f45e101]:
+              - strong [ref=f45e102]:
+                - link "58777" [ref=f45e103] [cursor=pointer]:
+                  - /url: /search/filings/?ControlNumber=58777&UtilityType=A&ItemMatch=Equal&DocumentType=ALL&DateFiledFrom=11%2F18%2F2025%2000%3A00%3A00&DateFiledTo=11%2F18%2F2026%2000%3A00%3A00&FilingDescription=data%20center
+            - cell "1" [ref=f45e104]
+            - cell "PUC MARKET ANALYSIS" [ref=f45e105]
+            - cell "Triennial Reliability Assessment for the ERCOT Region under §25.508" [ref=f45e106]
+          - row [ref=f45e107]:
+            - cell [ref=f45e108]:
+              - strong [ref=f45e109]:
+                - link "58964" [ref=f45e110] [cursor=pointer]:
+                  - /url: /search/filings/?ControlNumber=58964&UtilityType=A&ItemMatch=Equal&DocumentType=ALL&DateFiledFrom=11%2F18%2F2025%2000%3A00%3A00&DateFiledTo=11%2F18%2F2026%2000%3A00%3A00&FilingDescription=data%20center
+            - cell "24" [ref=f45e111]
+            - cell "TEXAS-NEW MEXICO POWER COMPANY" [ref=f45e112]
+            - cell "APPLICATION OF TEXAS-NEW MEXICO POWER COMPANY FOR AUTHORITY TO CHANGE RATES" [ref=f45e113]
+          - row [ref=f45e114]:
+            - cell [ref=f45e115]:
+              - strong [ref=f45e116]:
+                - link "59076" [ref=f45e117] [cursor=pointer]:
+                  - /url: /search/filings/?ControlNumber=59076&UtilityType=A&ItemMatch=Equal&DocumentType=ALL&DateFiledFrom=11%2F18%2F2025%2000%3A00%3A00&DateFiledTo=11%2F18%2F2026%2000%3A00%3A00&FilingDescription=data%20center
+            - cell "1" [ref=f45e118]
+            - cell "EL PASO ELECTRIC COMPANY" [ref=f45e119]
+            - cell "APPLICATION OF EL PASO ELECTRIC COMPANY TO AMEND ITS CERTIFICATE OF CONVENIENCE AND NECESSITY FOR A 366 MW NATURAL GAS GENERATION FACILITY" [ref=f45e120]
+          - row [ref=f45e121]:
+            - cell [ref=f45e122]:
+              - strong [ref=f45e123]:
+                - link "59142" [ref=f45e124] [cursor=pointer]:
+                  - /url: /search/filings/?ControlNumber=59142&UtilityType=A&ItemMatch=Equal&DocumentType=ALL&DateFiledFrom=11%2F18%2F2025%2000%3A00%3A00&DateFiledTo=11%2F18%2F2026%2000%3A00%3A00&FilingDescription=data%20center
+            - cell "2" [ref=f45e125]
+            - cell "PUC EXECUTIVE DIRECTOR" [ref=f45e126]
+            - cell "REVIEW OF ERCOT'S INTERCONNECTION PROCESSES FOR LARGE LOADS" [ref=f45e127]
+          - row [ref=f45e128]:
+            - cell [ref=f45e129]:
+              - strong [ref=f45e130]:
+                - link "59281" [ref=f45e131] [cursor=pointer]:
+                  - /url: /search/filings/?ControlNumber=59281&UtilityType=A&ItemMatch=Equal&DocumentType=ALL&DateFiledFrom=11%2F18%2F2025%2000%3A00%3A00&DateFiledTo=11%2F18%2F2026%2000%3A00%3A00&FilingDescription=data%20center
+            - cell "2" [ref=f45e132]
+            - cell "PUC RULES & PROJECTS" [ref=f45e133]
+            - cell "Data Collection to Study the Water Use of Data Centers and Virtual Currency Mining Facilities (General Appropriations Act of the 89th Legislative Session at Vlll-57 (\"Rider 6\")" [ref=f45e134]
+          - row [ref=f45e135]:
+            - cell [ref=f45e136]:
+              - strong [ref=f45e137]:
+                - link "59315" [ref=f45e138] [cursor=pointer]:
+                  - /url: /search/filings/?ControlNumber=59315&UtilityType=A&ItemMatch=Equal&DocumentType=ALL&DateFiledFrom=11%2F18%2F2025%2000%3A00%3A00&DateFiledTo=11%2F18%2F2026%2000%3A00%3A00&FilingDescription=data%20center
+            - cell "3" [ref=f45e139]
+            - cell "ONCOR ELECTRIC DELIVERY COMPANY LLC" [ref=f45e140]
+            - cell "APPLICATION OF ONCOR ELECTRIC DELIVERY COMPANY LLC TO AMEND ITS CERTIFICATE OF CONVENIENCE AND NECESSITY FOR THE DINOSAUR SWITCH - LONGSHORE SWITCH 765 KV TRANSMISSION LINE PROJECT IN BORDEN, BOSQUE, BROWN, CALLAHAN, COKE, COLEMAN, COMANCHE, EASTLAND, ERATH, GLASSCOCK, HAMILTON, HOOD, HOWARD, JONES, MITCHELL, NOLAN, RUNNELS, SHACKELFORD, SOMERVELL, STEPHENS, STERLING, AND TAYLOR COUNTIES" [ref=f45e141]
+          - row [ref=f45e142]:
+            - cell [ref=f45e143]:
+              - strong [ref=f45e144]:
+                - link "59388" [ref=f45e145] [cursor=pointer]:
+                  - /url: /search/filings/?ControlNumber=59388&UtilityType=A&ItemMatch=Equal&DocumentType=ALL&DateFiledFrom=11%2F18%2F2025%2000%3A00%3A00&DateFiledTo=11%2F18%2F2026%2000%3A00%3A00&FilingDescription=data%20center
+            - cell "2" [ref=f45e146]
+            - cell "NEXUS DATA CENTERS LLC" [ref=f45e147]
+            - cell "APPLICATION OF NEXUS DATA CENTERS, LLC FOR A SERVICE PROVIDER CERTIFICATE OF OPERATING AUTHORITY" [ref=f45e148]
+          - row [ref=f45e149]:
+            - cell [ref=f45e150]:
+              - strong [ref=f45e151]:
+                - link "59475" [ref=f45e152] [cursor=pointer]:
+                  - /url: /search/filings/?ControlNumber=59475&UtilityType=A&ItemMatch=Equal&DocumentType=ALL&DateFiledFrom=11%2F18%2F2025%2000%3A00%3A00&DateFiledTo=11%2F18%2F2026%2000%3A00%3A00&FilingDescription=data%20center
+            - cell "1" [ref=f45e153]
+            - cell "ONCOR ELECTRIC DELIVERY COMPANY LLC AND LCRA TRANSMISSION SERVICES CORPORATION" [ref=f45e154]
+            - cell "JOINT APPLICATION OF ONCOR ELECTRIC DELIVERY COMPANY LLC AND LCRA TRANSMISSION SERVICE CORPORATION TO AMEND THEIR CERTIFICATES OF CONVENIENCE AND NECESSITY FOR THE BELL COUNTY EAST SWITCH TO BIG HILL SUBSTATION 765-KV TRANSMISSION LINE PROJECT IN BELL, BURNET, CONCHO, CORYELL, LAMPASAS, LLANO, MASON, MCCULLOCH, MENARD, MILAM, MILLS, SAN SABA, SCHLEICHER, TOM GREEN, AND WILLIAMSON COUNTIES" [ref=f45e155]
+          - row [ref=f45e156]:
+            - cell [ref=f45e157]:
+              - strong [ref=f45e158]:
+                - link "59824" [ref=f45e159] [cursor=pointer]:
+                  - /url: /search/filings/?ControlNumber=59824&UtilityType=A&ItemMatch=Equal&DocumentType=ALL&DateFiledFrom=11%2F18%2F2025%2000%3A00%3A00&DateFiledTo=11%2F18%2F2026%2000%3A00%3A00&FilingDescription=data%20center
+            - cell "9" [ref=f45e160]
+            - cell "MARGARET ELIZABETH HILL AND THE TEXAS RESIDENTS AND RATEPAYERS" [ref=f45e161]
+            - cell "PETITION OF MARGARET ELIZABETH HILL AND THE TEXAS RESIDENTS AND RATEPAYERS FOR RULEMAKING TO AMEND 16 TEXAS ADMINISTRATIVE CODE § 22.281" [ref=f45e162]
+          - row [ref=f45e163]:
+            - cell [ref=f45e164]:
+              - strong [ref=f45e165]:
+                - link "59948" [ref=f45e166] [cursor=pointer]:
+                  - /url: /search/filings/?ControlNumber=59948&UtilityType=A&ItemMatch=Equal&DocumentType=ALL&DateFiledFrom=11%2F18%2F2025%2000%3A00%3A00&DateFiledTo=11%2F18%2F2026%2000%3A00%3A00&FilingDescription=data%20center
+            - cell "2" [ref=f45e167]
+            - cell "EL PASO ELECTRIC COMAPNY" [ref=f45e168]
+            - cell "APPLICATION OF EL PASO ELECTRIC COMPANY FOR APPROVAL OF AN UPDATE TO ITS RATE SCHEDULES 33A AND 33B ECONOMIC DEVELOPMENT RATE RIDER FOR A NEW DATA CENTER" [ref=f45e169]
+          - row [ref=f45e170]:
+            - cell [ref=f45e171]:
+              - strong [ref=f45e172]:
+                - link "60084" [ref=f45e173] [cursor=pointer]:
+                  - /url: /search/filings/?ControlNumber=60084&UtilityType=A&ItemMatch=Equal&DocumentType=ALL&DateFiledFrom=11%2F18%2F2025%2000%3A00%3A00&DateFiledTo=11%2F18%2F2026%2000%3A00%3A00&FilingDescription=data%20center
+            - cell "1" [ref=f45e174]
+            - cell "PUC RULES & PROJECTS" [ref=f45e175]
+            - cell "PETITION OF GREEN RECURSIVE UTILITY SERVICE LLC FOR ADOPTION OF A MEASUREMENT STANDARD AND REGULATORY FRAMEWORK FOR LARGE COMPUTATIONAL LOADS" [ref=f45e176]
+          - row [ref=f45e177]:
+            - cell [ref=f45e178]:
+              - strong [ref=f45e179]:
+                - link "60332" [ref=f45e180] [cursor=pointer]:
+                  - /url: /search/filings/?ControlNumber=60332&UtilityType=A&ItemMatch=Equal&DocumentType=ALL&DateFiledFrom=11%2F18%2F2025%2000%3A00%3A00&DateFiledTo=11%2F18%2F2026%2000%3A00%3A00&FilingDescription=data%20center
+            - cell "1" [ref=f45e181]
+            - cell "SOUTHWESTERN PUBLIC SERVICE COMPANY" [ref=f45e182]
+            - cell "APPLICATION OF SOUTHWESTERN PUBLIC SERVICE COMPANY FOR APPROVAL OF LARGE LOAD CUSTOMER TARIFF PROVISIONS" [ref=f45e183]
+          - row [ref=f45e184]:
+            - cell [ref=f45e185]:
+              - strong [ref=f45e186]:
+                - link "60410" [ref=f45e187] [cursor=pointer]:
+                  - /url: /search/filings/?ControlNumber=60410&UtilityType=A&ItemMatch=Equal&DocumentType=ALL&DateFiledFrom=11%2F18%2F2025%2000%3A00%3A00&DateFiledTo=11%2F18%2F2026%2000%3A00%3A00&FilingDescription=data%20center
+            - cell "1" [ref=f45e188]
+            - cell "MESQUITE H2, LLC" [ref=f45e189]
+            - cell "MESQUITE H2, LLC COMPLAINT AND APPEAL OF THE DECISIONS OF THE ELECTRIC RELIABILITY COUNCIL OF TEXAS, INC." [ref=f45e190]
+          - row [ref=f45e191]:
+            - cell [ref=f45e192]:
+              - strong [ref=f45e193]:
+                - link "60431" [ref=f45e194] [cursor=pointer]:
+                  - /url: /search/filings/?ControlNumber=60431&UtilityType=A&ItemMatch=Equal&DocumentType=ALL&DateFiledFrom=11%2F18%2F2025%2000%3A00%3A00&DateFiledTo=11%2F18%2F2026%2000%3A00%3A00&FilingDescription=data%20center
+            - cell "5" [ref=f45e195]
+            - cell "SKYBOX DATACENTERS, LLC" [ref=f45e196]
+            - cell "COMPLAINT OF SKYBOX DATACENTERS, LLC AGAINST THE ELECTRIC RELIABILITY COUNCIL OF TEXAS, INC." [ref=f45e197]
+          - row [ref=f45e198]:
+            - cell "«« « 1 » »» Export to Excel" [ref=f45e199]:
+              - generic:
+                - generic:
+                  - list:
+                    - listitem:
+                      - generic [ref=f45e200]: ««
+                    - listitem:
+                      - generic [ref=f45e201]: «
+                    - listitem:
+                      - generic [ref=f45e202]: "1"
+                    - listitem:
+                      - generic [ref=f45e203]: »
+                    - listitem:
+                      - generic [ref=f45e204]: »»
+              - link "Export to Excel" [ref=f45e206] [cursor=pointer]:
+                - /url: /search/exportdockets/?UtilityType=A&ItemMatch=Equal&DocumentType=ALL&DateFiledFrom=11%2F18%2F2025%2000%3A00%3A00&DateFiledTo=11%2F18%2F2026%2000%3A00%3A00&FilingDescription=data%20center&SortBy=ControlNumber&SortOrder=Ascending
+                - text: Export to Excel
+                - generic [aria-hidden] [ref=f45e207]: 
+  - contentinfo [ref=f45e208]:
+    - generic [ref=f45e209]:
+      - generic [ref=f45e210]:
+        - generic [ref=f45e211]:
+          - heading "Public Utility Commission of Texas" [level=5] [ref=f45e212]
+          - generic [ref=f45e213]: 1701 N. Congress Ave. PO Box 13326 Austin, TX 78711-3326
+          - generic [ref=f45e214]:
+            - link " Phone 512-936-7000" [ref=f45e216] [cursor=pointer]:
+              - /url: tel://1-512-936-7000
+              - generic [ref=f45e217]: 
+              - generic "Phone"
+              - text: 512-936-7000
+            - link " Contact Us" [ref=f45e219] [cursor=pointer]:
+              - /url: https://www.puc.texas.gov/agency/about/contact/Default.aspx
+              - generic [ref=f45e220]: 
+              - text: Contact Us
+        - generic [ref=f45e221]:
+          - heading "AGENCY INFO" [level=5] [ref=f45e222]
+          - list [ref=f45e223]:
+            - listitem [ref=f45e224]:
+              - link "Site Policies" [ref=f45e225] [cursor=pointer]:
+                - /url: http://www.puc.texas.gov/agency/about/policies/Default.aspx
+            - listitem [ref=f45e226]:
+              - link "Sitemap" [ref=f45e227] [cursor=pointer]:
+                - /url: http://www.puc.texas.gov/agency/Sitemap.aspx
+        - generic [ref=f45e228]:
+          - heading "OTHER GOVERNMENT RESOURCES" [level=5] [ref=f45e229]
+          - list [ref=f45e230]:
+            - listitem [ref=f45e231]:
+              - link "Report Fraud, Waste or Abuse" [ref=f45e232] [cursor=pointer]:
+                - /url: http://sao.fraud.state.tx.us/
+            - listitem [ref=f45e233]:
+              - link "Texas Homeland Security" [ref=f45e234] [cursor=pointer]:
+                - /url: http://governor.state.tx.us/homeland
+            - listitem [ref=f45e235]:
+              - link "Ready.gov" [ref=f45e236] [cursor=pointer]:
+                - /url: http://www.ready.gov/
+            - listitem [ref=f45e237]:
+              - link "Texas.gov" [ref=f45e238] [cursor=pointer]:
+                - /url: http://texas.gov
+            - listitem [ref=f45e239]:
+              - link "Texas Veterans" [ref=f45e240] [cursor=pointer]:
+                - /url: https://veterans.portal.texas.gov/
+            - listitem [ref=f45e241]:
+              - link "TRAIL" [ref=f45e242] [cursor=pointer]:
+                - /url: https://www.tsl.state.tx.us/trail/index.html
+      - navigation [ref=f45e245]:
+        - list [ref=f45e246]:
+          - listitem [ref=f45e247]:
+            - link "PUC Calendar RSS Feed" [ref=f45e248] [cursor=pointer]:
+              - /url: http://www.puc.texas.gov/agency/calendar/GetCalendarRss.aspx
+              - generic [ref=f45e249]: 
+          - listitem [ref=f45e250]:
+            - link "Facebook" [ref=f45e251] [cursor=pointer]:
+              - /url: http://www.facebook.com/pages/Public-Utility-Commission-of-Texas/207063229365425
+              - generic [ref=f45e252]: 
+          - listitem [ref=f45e253]:
+            - link "Twitter" [ref=f45e254] [cursor=pointer]:
+              - /url: https://twitter.com/PUCTx
+              - generic [ref=f45e255]: 
+      - generic [ref=f45e256]: Copyright © 2026 Public Utility Commission of Texas Version 2.2.11.0

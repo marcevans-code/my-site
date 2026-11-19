@@ -1,0 +1,233 @@
+- generic [active] [ref=f50e1]:
+  - generic [ref=f50e2]:
+    - heading "Content Information" [level=1] [ref=f50e3]
+    - option "1" [selected]
+    - option "2"
+    - option "3"
+    - option "4"
+    - option "5"
+    - option "6"
+    - option "7"
+    - option "8"
+    - option "9"
+    - option "10"
+    - option "11"
+    - option "12"
+    - option "13"
+    - option "14"
+    - option "15"
+    - option "16"
+    - option "17"
+    - option "18"
+    - option "19"
+    - option "20"
+    - option "21"
+    - option "22"
+    - option "23"
+    - option "24"
+    - option "25"
+    - option "26"
+    - option "27"
+    - option "28"
+    - option "29"
+    - option "30"
+    - generic [ref=f50e4]: Content Information
+    - generic [ref=f50e5]:
+      - text: "["
+      - link "Show" [ref=f50e6] [cursor=pointer]:
+        - /url: javascript:showHideMetaGroup('dDocName_showHideLink','Content Information',true)
+      - text: "]"
+    - generic [ref=f50e7]: Filing Criteria
+    - generic [ref=f50e8]:
+      - text: "["
+      - link "Hide" [ref=f50e9] [cursor=pointer]:
+        - /url: javascript:showHideMetaGroup('xRecordSeries_showHideLink','Filing Criteria',true)
+      - text: "]"
+    - generic [ref=f50e10]:
+      - text: "Record Series:"
+      - generic: (Required:)
+    - text: AIR / Federal Operating Permit
+    - img "The full Record Series Name" [ref=f50e11]
+    - text: "Record Series Code: AIR OP"
+    - img "The abbreviation of the Record Series" [ref=f50e12]
+    - generic [ref=f50e13]:
+      - text: "Document Type:"
+      - generic: (Required:)
+    - text: Permits
+    - img "The type of Document" [ref=f50e14]
+    - generic [ref=f50e15]:
+      - text: "Title:"
+      - generic: (Required:)
+    - text: Agency Review
+    - img "The Title or name of the document" [ref=f50e16]
+    - generic [ref=f50e17]:
+      - text: "Security Group:"
+      - generic: (Required:)
+    - text: Public
+    - img "Security Group/classification of the content item" [ref=f50e18]
+    - generic [ref=f50e19]:
+      - text: "Media:"
+      - generic: (Required:)
+    - text: Electronic
+    - img "The Media Type the content item is stored as" [ref=f50e20]
+    - generic [ref=f50e21]:
+      - text: "Item Type:"
+      - generic: (Required:)
+    - text: Document
+    - img "A further and more specific breakdown of Media" [ref=f50e22]
+    - generic [ref=f50e23]:
+      - text: "Primary ID:"
+      - generic: (Required:)
+    - text: "4198"
+    - img "The primary filing criteria" [ref=f50e24]
+    - text: "Secondary ID: 38406"
+    - img "The secondary filing criteria" [ref=f50e25]
+    - text: "Tertiary ID:"
+    - generic [ref=f50e26]:
+      - text: "Begin Date:"
+      - generic: (Required:)
+    - text: 4/15/2026 12:00AM
+    - img "The document's date or the earliest date if the content item represents multiple documents" [ref=f50e27]
+    - text: "End Date: 4/15/2026 12:00AM"
+    - img "The latest date of the document" [ref=f50e28]
+    - text: "Volume Number:"
+    - img "Sequential number used to distinguish multiple volumes with the same filing criteria" [ref=f50e29]
+    - generic [ref=f50e30]: Additional Information
+    - generic [ref=f50e31]:
+      - text: "["
+      - link "Hide" [ref=f50e32] [cursor=pointer]:
+        - /url: javascript:showHideMetaGroup('xComments_showHideLink','Additional Information',true)
+      - text: "]"
+    - text: "Description:"
+    - img "Additional and various notes and comments" [ref=f50e33]
+    - text: "Page Count: 0"
+    - generic [ref=f50e34]: Physical Location
+    - generic [ref=f50e35]:
+      - text: "["
+      - link "Hide" [ref=f50e36] [cursor=pointer]:
+        - /url: javascript:showHideMetaGroup('xAssignedLocation_showHideLink','Physical Location',true)
+      - text: "]"
+    - generic [ref=f50e37]:
+      - text: "Assigned Location:"
+      - generic: (Required:)
+    - text: EDoc
+    - img "The content item's assigned location" [ref=f50e38]
+    - generic [ref=f50e39]:
+      - text: "Current Location:"
+      - generic: (Required:)
+    - text: EDoc
+    - img "The current physical location of the content item" [ref=f50e40]
+    - text: "Previous Location:"
+    - img "The previous place the content item was." [ref=f50e41]
+    - text: "Shelf Location:"
+    - img "The location on the shelf. This is more specified than assigned location." [ref=f50e42]
+    - text: "CFR Check In Date:"
+    - img "The last time the content was checked in" [ref=f50e43]
+    - text: "CFR Check Out Date:"
+    - img "The last time the content was checked out" [ref=f50e44]
+    - text: "Checked Out Flag:"
+    - img "A flag indicating whether the content item is currently checked out" [ref=f50e45]
+    - generic [ref=f50e46]: Hold Information
+    - generic [ref=f50e47]:
+      - text: "["
+      - link "Hide" [ref=f50e48] [cursor=pointer]:
+        - /url: javascript:showHideMetaGroup('xLitigationHold_showHideLink','Hold Information',true)
+      - text: "]"
+    - text: "Litigation Hold: No"
+    - img "Yes/No flag indicating whether or not the content item is currently on hold" [ref=f50e49]
+    - text: "Litigation Hold Data:"
+    - img "The name of the Hold" [ref=f50e50]
+    - generic [ref=f50e51]: Central Registry
+    - generic [ref=f50e52]:
+      - text: "["
+      - link "Hide" [ref=f50e53] [cursor=pointer]:
+        - /url: javascript:showHideMetaGroup('xRefNumTxt_showHideLink','Central Registry',true)
+      - text: "]"
+    - text: "Regulated Entity Number: RN100250844"
+    - img "Central Registy RN Number" [ref=f50e54]
+    - text: "Regulated Entity Name: SPACEX ROCKET DEVELOPMENT FACILITY"
+    - img "Site Name" [ref=f50e55]
+    - text: "Central Registry Additional ID: 4198"
+    - img "A formatted version of the Primary and Secondary Ids matching Central Registry" [ref=f50e56]
+    - text: "Legacy Address:"
+    - img "The address with its original formatting carried over from an old database" [ref=f50e57]
+    - text: "Address Type: AI ADDRESS Physical Address: 1 ROCKET RD Delivery Text Line 2: City Name: MCGREGOR State Code: TX County: MCLENNAN Zip Code: 76657 Zip Plus 4: 3991 Country Code: USA Foreign Postal Code: Region Number (1-16): 9"
+    - generic [ref=f50e58]: Physical Container Information
+    - generic [ref=f50e59]:
+      - text: "["
+      - link "Hide" [ref=f50e60] [cursor=pointer]:
+        - /url: javascript:showHideMetaGroup('xItemBarcode_showHideLink','Physical Container Information',true)
+      - text: "]"
+    - text: "Item Barcode:"
+    - img "A unique barcode identifier used for hard copy items" [ref=f50e61]
+    - text: "Container Barcode:"
+    - img "A unique barcode identifier used for the conatiner of hard copy items" [ref=f50e62]
+    - text: "Container Type:"
+    - img "The type of container used for hard copy items" [ref=f50e63]
+    - text: "Box Barcode:"
+    - img "A name of the box, often used to cross check Box Barcode" [ref=f50e64]
+    - text: "Box ID: Microfilm Roll:"
+    - img "The name of the Microfilm Roll" [ref=f50e65]
+    - text: "Microfilm Frame:"
+    - img "The name of the Fram on the Microfilm Roll" [ref=f50e66]
+    - text: "Original Microform:"
+    - img "Flag indicating whether the content item is an Original or Copy" [ref=f50e67]
+    - generic [ref=f50e68]: Retention Information
+    - generic [ref=f50e69]:
+      - text: "["
+      - link "Show" [ref=f50e70] [cursor=pointer]:
+        - /url: javascript:showHideMetaGroup('xDriveDate_showHideLink','Retention Information',true)
+      - text: "]"
+    - generic [ref=f50e71]: Record Number
+    - generic [ref=f50e72]:
+      - text: "["
+      - link "Show" [ref=f50e73] [cursor=pointer]:
+        - /url: javascript:showHideMetaGroup('xRecordNumber_showHideLink','Record Number',true)
+      - text: "]"
+    - text: "Checked Out By: Status: Released Formats: application/pdf"
+    - generic [ref=f50e74]: Links
+    - text: "Web Location:"
+    - link "https://wccp.oci.tceq.texas.gov/cs/groups/public/@centralrecords/documents/centralrecord/mda4/ntu4/~edisp/8558136.pdf" [ref=f50e76] [cursor=pointer]:
+      - /url: /cs/idcplg?IdcService=TCEQ_EXTERNAL_SEARCH_GET_FILE&dID=10069928&Rendition=Web&SearchID=20746263&searchType=External
+  - table [ref=f50e77]:
+    - rowgroup [ref=f50e78]:
+      - row [ref=f50e79]:
+        - cell [ref=f50e80]
+      - row [ref=f50e81]:
+        - cell [ref=f50e82]
+        - cell [ref=f50e83]:
+          - generic [ref=f50e85]:
+            - generic [ref=f50e86]:
+              - link "Site Help" [ref=f50e87] [cursor=pointer]:
+                - /url: http://www.tceq.texas.gov/help
+              - text: "|"
+              - link "Disclaimer" [ref=f50e88] [cursor=pointer]:
+                - /url: http://www.tceq.texas.gov/help/policies/disclaimer_policy.html
+              - text: "|"
+              - link "Web Policies" [ref=f50e89] [cursor=pointer]:
+                - /url: http://www.tceq.texas.gov/help/policies/index.html
+              - text: "|"
+              - link "Our Compact with Texas" [ref=f50e90] [cursor=pointer]:
+                - /url: http://www.tceq.texas.gov/agency/working-with-us/compact.html
+              - text: "|"
+              - link "TCEQ Homeland Security" [ref=f50e91] [cursor=pointer]:
+                - /url: http://www.tceq.texas.gov/response/security/index.html
+              - text: "|"
+              - link "Contact Us" [ref=f50e92] [cursor=pointer]:
+                - /url: http://www.tceq.texas.gov/agency/directory/
+              - text: "|"
+              - link "Central Registry" [ref=f50e93] [cursor=pointer]:
+                - /url: http://www15.tceq.texas.gov/crpub/
+            - generic [ref=f50e94]:
+              - text: "Statewide Links:"
+              - link "Texas.gov" [ref=f50e95] [cursor=pointer]:
+                - /url: http://www.texas.gov/
+              - text: "|"
+              - link "Texas Homeland Security" [ref=f50e96] [cursor=pointer]:
+                - /url: https://gov.texas.gov/organization/hsgd
+              - text: "|"
+              - link "TRAIL Statewide Archive" [ref=f50e97] [cursor=pointer]:
+                - /url: https://www.tsl.texas.gov/trail/index.html
+              - text: "|"
+              - link "Texas Veterans Portal" [ref=f50e98] [cursor=pointer]:
+                - /url: https://veterans.portal.texas.gov/

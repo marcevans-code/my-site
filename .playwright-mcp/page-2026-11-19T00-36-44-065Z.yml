@@ -1,0 +1,1203 @@
+- generic [active] [ref=f53e1]:
+  - iframe [ref=f53e2]
+  - link "Skip navigation" [ref=f53e3] [cursor=pointer]:
+    - /url: "#skip_nav_bar_target"
+  - table [ref=f53e4]:
+    - rowgroup [ref=f53e5]:
+      - row [ref=f53e6]:
+        - cell [ref=f53e7]:
+          - link [ref=f53e8] [cursor=pointer]:
+            - /url: /cs/idcplg?IdcService=TCEQ_SEARCH
+            - img "Oracle Content Management Home" [ref=f53e9]
+        - cell [ref=f53e10]:
+          - link "Welcome to the TCEQ Records Online" [ref=f53e11] [cursor=pointer]:
+            - /url: /cs/idcplg?IdcService=TCEQ_SEARCH
+  - generic [ref=f53e12]: This application will allow you to search and view publicly available electronic recordsand information on many of the facilities regulated by the agency.
+  - generic [ref=f53e13]:
+    - generic:
+      - option "1" [selected]
+      - option "2"
+      - option "3"
+      - option "4"
+      - option "5"
+      - option "6"
+      - option "7"
+      - option "8"
+      - option "9"
+      - option "10"
+      - option "11"
+      - option "12"
+      - option "13"
+      - option "14"
+      - option "15"
+      - option "16"
+      - option "17"
+      - option "18"
+      - option "19"
+      - option "20"
+      - option "21"
+      - option "22"
+      - option "23"
+      - option "24"
+      - option "25"
+      - option "26"
+      - option "27"
+      - option "28"
+      - option "29"
+      - option "30"
+    - heading "Search Results" [level=1] [ref=f53e14]
+    - text: Potential items 1-20 of 72122
+    - generic [ref=f53e15]:
+      - button "Search Within" [ref=f53e16]
+      - text: Use the Search Within function to narrow search results.
+    - generic [ref=f53e17]:
+      - generic:
+        - table:
+          - rowgroup:
+            - row:
+              - cell
+              - cell
+    - table [ref=f53e18]:
+      - rowgroup [ref=f53e19]:
+        - row [ref=f53e20]:
+          - cell "Filter by Category:" [ref=f53e21]
+          - cell [ref=f53e22]:
+            - generic [ref=f53e23]:
+              - img "xItemType" [ref=f53e24]
+              - text: Item Type
+          - cell [ref=f53e25]:
+            - generic [ref=f53e26]:
+              - img "xRecordSeries" [ref=f53e27]
+              - text: Record Series
+          - cell "Security Group:Public" [ref=f53e28]
+          - cell [ref=f53e29]:
+            - generic [ref=f53e30]:
+              - img "xAssignedLocation" [ref=f53e31]
+              - text: Assigned Location
+          - cell [ref=f53e32]:
+            - generic [ref=f53e33]:
+              - img "xMedia" [ref=f53e34]
+              - text: Media
+    - link "Search form" [ref=f53e35] [cursor=pointer]:
+      - /url: /cs/idcplg?IdcService=TCEQ_SEARCH
+    - text: "--> Search Results"
+    - table [ref=f53e37]:
+      - rowgroup [ref=f53e38]:
+        - row [ref=f53e39]:
+          - cell [ref=f53e40]
+          - cell "Page" [ref=f53e41]
+          - cell [ref=f53e43]:
+            - combobox "Page" [ref=f53e45]:
+              - option "1" [selected]
+              - option "2"
+              - option "3"
+              - option "4"
+              - option "5"
+              - option "6"
+              - option "7"
+              - option "8"
+              - option "9"
+              - option "10"
+              - option "11"
+              - option "12"
+              - option "13"
+              - option "14"
+              - option "15"
+              - option "16"
+              - option "17"
+              - option "18"
+              - option "19"
+              - option "20"
+              - option "21"
+              - option "22"
+              - option "23"
+              - option "24"
+              - option "25"
+              - option "26"
+              - option "27"
+              - option "28"
+              - option "29"
+              - option "30"
+              - option "31"
+              - option "32"
+              - option "33"
+              - option "34"
+              - option "35"
+              - option "36"
+              - option "37"
+              - option "38"
+              - option "39"
+              - option "40"
+              - option "41"
+              - option "42"
+              - option "43"
+              - option "44"
+              - option "45"
+              - option "46"
+              - option "47"
+              - option "48"
+              - option "49"
+              - option "50"
+              - option "51"
+              - option "52"
+              - option "53"
+              - option "54"
+              - option "55"
+              - option "56"
+              - option "57"
+              - option "58"
+              - option "59"
+              - option "60"
+              - option "61"
+              - option "62"
+              - option "63"
+              - option "64"
+              - option "65"
+              - option "66"
+              - option "67"
+              - option "68"
+              - option "69"
+              - option "70"
+              - option "71"
+              - option "72"
+              - option "73"
+              - option "74"
+              - option "75"
+              - option "76"
+              - option "77"
+              - option "78"
+              - option "79"
+              - option "80"
+              - option "81"
+              - option "82"
+              - option "83"
+              - option "84"
+              - option "85"
+              - option "86"
+              - option "87"
+              - option "88"
+              - option "89"
+              - option "90"
+              - option "91"
+              - option "92"
+              - option "93"
+              - option "94"
+              - option "95"
+              - option "96"
+              - option "97"
+              - option "98"
+              - option "99"
+              - option "100"
+          - cell "of 100" [ref=f53e46]
+          - cell [ref=f53e48]:
+            - link [ref=f53e49] [cursor=pointer]:
+              - /url: /cs/idcplg?IdcService=TCEQ_PERFORM_SEARCH&QueryText=dSecurityGroup+%3cmatches%3e+%60Public%60%3cAND%3e%28%3cftx%3edata+center%3c%2fftx%3e%29&SortField=dInDate&SortOrder=Desc&ResultCount=20&SearchEngineName=ELASTICSEARCH&SearchQueryFormat=UNIVERSAL&searchFormType=standard&listTemplateId=SearchResultsHeadline&SearchProviders=tceq4avrwccecmp_4444&ftx=1&SortSpec=xRecordSeries%20asc%2cxPrimaryID%20asc%2cxSecondaryID%20asc%2cxInsightDocumentType%20asc%2cdDocTitle%20asc%2cxBeginDate%20asc&SearchEngineName=ELASTICSEARCH&&IsExternalSearch=1&PageNumber=2&StartRow=21&EndRow=40&columnsString=dDocName,xRecordSeries,xPrimaryID,xSecondaryID,xInsightDocumentType,dDocTitle,xBeginDate,xEndDate,xLitigationHold,xRegEntName,xMedia,xComments,dSecurityGroup&accessID=7859186&newSearch=0
+              - img "Link To More Results" [ref=f53e50]
+    - table
+    - table [ref=f53e51]:
+      - rowgroup [ref=f53e52]:
+        - row [ref=f53e53]:
+          - cell [ref=f53e54]:
+            - table [ref=f53e56]:
+              - rowgroup [ref=f53e57]:
+                - row [ref=f53e58]:
+                  - cell [ref=f53e59]:
+                    - button "Hide/Show" [ref=f53e60]
+                - row [ref=f53e61]:
+                  - cell "Select Columns" [ref=f53e62]
+          - cell [ref=f53e63]:
+            - table [ref=f53e69]:
+              - rowgroup [ref=f53e70]:
+                - row [ref=f53e71]:
+                  - cell [ref=f53e72]:
+                    - list [ref=f53e75]:
+                      - listitem [ref=f53e76]:
+                        - link "Select" [ref=f53e77] [cursor=pointer]:
+                          - /url: "#menu_1_DOCUMENTS_SELECT"
+                      - listitem [ref=f53e78]:
+                        - link "Change View" [ref=f53e79] [cursor=pointer]:
+                          - /url: "#menu_1_VIEWS"
+                      - listitem [ref=f53e80]:
+                        - link "Search Actions" [ref=f53e81] [cursor=pointer]:
+                          - /url: "#menu_1_QUERY_ACTIONS"
+                      - listitem [ref=f53e82]:
+                        - link "Request" [ref=f53e83] [cursor=pointer]:
+                          - /url: javascript:searchRequest()
+                      - listitem [ref=f53e84]:
+                        - link "Tag" [ref=f53e85] [cursor=pointer]:
+                          - /url: javascript:addTag()
+                      - listitem [ref=f53e86]:
+                        - link "Remove Tag" [ref=f53e87] [cursor=pointer]:
+                          - /url: javascript:removeTag()
+                      - listitem [ref=f53e88]:
+                        - link "Records Tagged" [ref=f53e89] [cursor=pointer]:
+                          - /url: javascript:taggedSearch()
+                      - listitem [ref=f53e90]:
+                        - link "Full Search" [ref=f53e91] [cursor=pointer]:
+                          - /url: javascript:fullSearch()
+                  - cell [ref=f53e92]
+            - table "Table with a list of content items resulting from a search." [ref=f53e93]:
+              - rowgroup [ref=f53e94]:
+                - row [ref=f53e95]:
+                  - cell "Select" [ref=f53e96]
+                  - cell "Spacer Column" [ref=f53e98]
+                  - cell "Content ID" [ref=f53e99]
+                  - cell "Spacer Column" [ref=f53e101]
+                  - cell "Record Series" [ref=f53e102]
+                  - cell "Spacer Column" [ref=f53e104]
+                  - cell [ref=f53e105]:
+                    - generic "Click to sort ascending" [ref=f53e106]:
+                      - link "Primary ID" [ref=f53e107] [cursor=pointer]:
+                        - /url: /cs/idcplg?IdcService=TCEQ_PERFORM_SEARCH&QueryText=dSecurityGroup+%3cmatches%3e+%60Public%60%3cAND%3e%28%3cftx%3edata+center%3c%2fftx%3e%29&SortField=xPrimaryID&SortOrder=Asc&ResultCount=20&SearchEngineName=ELASTICSEARCH&SearchQueryFormat=UNIVERSAL&searchFormType=standard&listTemplateId=SearchResultsHeadline&SearchProviders=tceq4avrwccecmp_4444&ftx=1&SortSpec=xRecordSeries%20asc%2cxPrimaryID%20asc%2cxSecondaryID%20asc%2cxInsightDocumentType%20asc%2cdDocTitle%20asc%2cxBeginDate%20asc&SearchEngineName=ELASTICSEARCH&&IsExternalSearch=1&columnsString=dDocName,xRecordSeries,xPrimaryID,xSecondaryID,xInsightDocumentType,dDocTitle,xBeginDate,xEndDate,xLitigationHold,xRegEntName,xMedia,xComments,dSecurityGroup&accessID=7859186&sortSearch=1&newSearch=0
+                  - cell "Spacer Column" [ref=f53e108]
+                  - cell [ref=f53e109]:
+                    - generic "Click to sort ascending" [ref=f53e110]:
+                      - link "Secondary ID" [ref=f53e111] [cursor=pointer]:
+                        - /url: /cs/idcplg?IdcService=TCEQ_PERFORM_SEARCH&QueryText=dSecurityGroup+%3cmatches%3e+%60Public%60%3cAND%3e%28%3cftx%3edata+center%3c%2fftx%3e%29&SortField=xSecondaryID&SortOrder=Asc&ResultCount=20&SearchEngineName=ELASTICSEARCH&SearchQueryFormat=UNIVERSAL&searchFormType=standard&listTemplateId=SearchResultsHeadline&SearchProviders=tceq4avrwccecmp_4444&ftx=1&SortSpec=xRecordSeries%20asc%2cxPrimaryID%20asc%2cxSecondaryID%20asc%2cxInsightDocumentType%20asc%2cdDocTitle%20asc%2cxBeginDate%20asc&SearchEngineName=ELASTICSEARCH&&IsExternalSearch=1&columnsString=dDocName,xRecordSeries,xPrimaryID,xSecondaryID,xInsightDocumentType,dDocTitle,xBeginDate,xEndDate,xLitigationHold,xRegEntName,xMedia,xComments,dSecurityGroup&accessID=7859186&sortSearch=1&newSearch=0
+                  - cell "Spacer Column" [ref=f53e112]
+                  - cell [ref=f53e113]:
+                    - generic "Click to sort ascending" [ref=f53e114]:
+                      - link "Document Type" [ref=f53e115] [cursor=pointer]:
+                        - /url: /cs/idcplg?IdcService=TCEQ_PERFORM_SEARCH&QueryText=dSecurityGroup+%3cmatches%3e+%60Public%60%3cAND%3e%28%3cftx%3edata+center%3c%2fftx%3e%29&SortField=xInsightDocumentType&SortOrder=Asc&ResultCount=20&SearchEngineName=ELASTICSEARCH&SearchQueryFormat=UNIVERSAL&searchFormType=standard&listTemplateId=SearchResultsHeadline&SearchProviders=tceq4avrwccecmp_4444&ftx=1&SortSpec=xRecordSeries%20asc%2cxPrimaryID%20asc%2cxSecondaryID%20asc%2cxInsightDocumentType%20asc%2cdDocTitle%20asc%2cxBeginDate%20asc&SearchEngineName=ELASTICSEARCH&&IsExternalSearch=1&columnsString=dDocName,xRecordSeries,xPrimaryID,xSecondaryID,xInsightDocumentType,dDocTitle,xBeginDate,xEndDate,xLitigationHold,xRegEntName,xMedia,xComments,dSecurityGroup&accessID=7859186&sortSearch=1&newSearch=0
+                  - cell "Spacer Column" [ref=f53e116]
+                  - cell [ref=f53e117]:
+                    - generic "Click to sort ascending" [ref=f53e118]:
+                      - link "Title" [ref=f53e119] [cursor=pointer]:
+                        - /url: /cs/idcplg?IdcService=TCEQ_PERFORM_SEARCH&QueryText=dSecurityGroup+%3cmatches%3e+%60Public%60%3cAND%3e%28%3cftx%3edata+center%3c%2fftx%3e%29&SortField=dDocTitle&SortOrder=Asc&ResultCount=20&SearchEngineName=ELASTICSEARCH&SearchQueryFormat=UNIVERSAL&searchFormType=standard&listTemplateId=SearchResultsHeadline&SearchProviders=tceq4avrwccecmp_4444&ftx=1&SortSpec=xRecordSeries%20asc%2cxPrimaryID%20asc%2cxSecondaryID%20asc%2cxInsightDocumentType%20asc%2cdDocTitle%20asc%2cxBeginDate%20asc&SearchEngineName=ELASTICSEARCH&&IsExternalSearch=1&columnsString=dDocName,xRecordSeries,xPrimaryID,xSecondaryID,xInsightDocumentType,dDocTitle,xBeginDate,xEndDate,xLitigationHold,xRegEntName,xMedia,xComments,dSecurityGroup&accessID=7859186&sortSearch=1&newSearch=0
+                  - cell "Spacer Column" [ref=f53e120]
+                  - cell [ref=f53e121]:
+                    - generic "Click to sort ascending" [ref=f53e122]:
+                      - link "Begin Date" [ref=f53e123] [cursor=pointer]:
+                        - /url: /cs/idcplg?IdcService=TCEQ_PERFORM_SEARCH&QueryText=dSecurityGroup+%3cmatches%3e+%60Public%60%3cAND%3e%28%3cftx%3edata+center%3c%2fftx%3e%29&SortField=xBeginDate&SortOrder=Asc&ResultCount=20&SearchEngineName=ELASTICSEARCH&SearchQueryFormat=UNIVERSAL&searchFormType=standard&listTemplateId=SearchResultsHeadline&SearchProviders=tceq4avrwccecmp_4444&ftx=1&SortSpec=xRecordSeries%20asc%2cxPrimaryID%20asc%2cxSecondaryID%20asc%2cxInsightDocumentType%20asc%2cdDocTitle%20asc%2cxBeginDate%20asc&SearchEngineName=ELASTICSEARCH&&IsExternalSearch=1&columnsString=dDocName,xRecordSeries,xPrimaryID,xSecondaryID,xInsightDocumentType,dDocTitle,xBeginDate,xEndDate,xLitigationHold,xRegEntName,xMedia,xComments,dSecurityGroup&accessID=7859186&sortSearch=1&newSearch=0
+                  - cell "Spacer Column" [ref=f53e124]
+                  - cell "End Date" [ref=f53e125]
+                  - cell "Spacer Column" [ref=f53e127]
+                  - cell "Litigation Hold" [ref=f53e128]
+                  - cell "Spacer Column" [ref=f53e130]
+                  - cell "Regulated Entity Name" [ref=f53e131]
+                  - cell "Spacer Column" [ref=f53e133]
+                  - cell "Media" [ref=f53e134]
+                  - cell "Spacer Column" [ref=f53e136]
+                  - cell "Description" [ref=f53e137]
+                  - cell "Spacer Column" [ref=f53e139]
+                  - cell [ref=f53e140]:
+                    - generic "Click to sort ascending" [ref=f53e141]:
+                      - link "Security Group" [ref=f53e142] [cursor=pointer]:
+                        - /url: /cs/idcplg?IdcService=TCEQ_PERFORM_SEARCH&QueryText=dSecurityGroup+%3cmatches%3e+%60Public%60%3cAND%3e%28%3cftx%3edata+center%3c%2fftx%3e%29&SortField=dSecurityGroup&SortOrder=Asc&ResultCount=20&SearchEngineName=ELASTICSEARCH&SearchQueryFormat=UNIVERSAL&searchFormType=standard&listTemplateId=SearchResultsHeadline&SearchProviders=tceq4avrwccecmp_4444&ftx=1&SortSpec=xRecordSeries%20asc%2cxPrimaryID%20asc%2cxSecondaryID%20asc%2cxInsightDocumentType%20asc%2cdDocTitle%20asc%2cxBeginDate%20asc&SearchEngineName=ELASTICSEARCH&&IsExternalSearch=1&columnsString=dDocName,xRecordSeries,xPrimaryID,xSecondaryID,xInsightDocumentType,dDocTitle,xBeginDate,xEndDate,xLitigationHold,xRegEntName,xMedia,xComments,dSecurityGroup&accessID=7859186&sortSearch=1&newSearch=0
+                  - cell "Spacer Column" [ref=f53e143]
+                  - cell "Actions" [ref=f53e144]
+                - row [ref=f53e146]:
+                  - cell [ref=f53e147]:
+                    - generic [ref=f53e149]:
+                      - generic: Select '7533691'
+                      - checkbox "Select '7533691'" [ref=f53e150]
+                  - cell [ref=f53e151]
+                  - cell [ref=f53e152]:
+                    - link "7533691" [ref=f53e154] [cursor=pointer]:
+                      - /url: /cs/idcplg?IdcService=TCEQ_EXTERNAL_SEARCH_GET_FILE&dID=8555320&Rendition=Web&SearchID=20746266&searchType=External
+                  - cell [ref=f53e155]
+                  - cell "AIR / Clean Air Interstate Rule (CAIR)" [ref=f53e156]
+                  - cell [ref=f53e158]
+                  - cell "CHANNEL ENERGY CENTER LP" [ref=f53e159]
+                  - cell [ref=f53e161]
+                  - cell "NUP" [ref=f53e162]
+                  - cell [ref=f53e164]
+                  - cell "Applications" [ref=f53e165]
+                  - cell [ref=f53e167]
+                  - cell "Applications" [ref=f53e168]
+                  - cell [ref=f53e170]
+                  - cell "6/26/2009 12:00AM" [ref=f53e171]
+                  - cell [ref=f53e173]
+                  - cell "6/26/2009 12:00AM" [ref=f53e174]
+                  - cell [ref=f53e176]
+                  - cell "No" [ref=f53e177]
+                  - cell [ref=f53e179]
+                  - cell [ref=f53e180]
+                  - cell [ref=f53e182]
+                  - cell "Electronic" [ref=f53e183]
+                  - cell [ref=f53e185]
+                  - cell [ref=f53e186]
+                  - cell [ref=f53e188]
+                  - cell "Public" [ref=f53e189]
+                  - cell [ref=f53e191]
+                  - cell [ref=f53e192]:
+                    - link [ref=f53e194] [cursor=pointer]:
+                      - /url: /cs/idcplg?IdcService=TCEQ_EXTERNAL_SEARCH_DOC_INFO&dID=8555320&dDocName=7533691&SearchID=20746266&searchType=External&coreContentOnly=1&IsExternalSearch=1
+                      - img "Info" [ref=f53e195]
+                - row [ref=f53e196]:
+                  - cell [ref=f53e197]:
+                    - generic [ref=f53e199]:
+                      - generic: Select '7533692'
+                      - checkbox "Select '7533692'" [ref=f53e200]
+                  - cell [ref=f53e201]
+                  - cell [ref=f53e202]:
+                    - link "7533692" [ref=f53e204] [cursor=pointer]:
+                      - /url: /cs/idcplg?IdcService=TCEQ_EXTERNAL_SEARCH_GET_FILE&dID=8555321&Rendition=Web&SearchID=20746266&searchType=External
+                  - cell [ref=f53e205]
+                  - cell "AIR / Clean Air Interstate Rule (CAIR)" [ref=f53e206]
+                  - cell [ref=f53e208]
+                  - cell "CHANNEL ENERGY CENTER LP" [ref=f53e209]
+                  - cell [ref=f53e211]
+                  - cell "NUP" [ref=f53e212]
+                  - cell [ref=f53e214]
+                  - cell "Applications" [ref=f53e215]
+                  - cell [ref=f53e217]
+                  - cell "Applications" [ref=f53e218]
+                  - cell [ref=f53e220]
+                  - cell "4/30/2010 12:00AM" [ref=f53e221]
+                  - cell [ref=f53e223]
+                  - cell "4/30/2010 12:00AM" [ref=f53e224]
+                  - cell [ref=f53e226]
+                  - cell "No" [ref=f53e227]
+                  - cell [ref=f53e229]
+                  - cell [ref=f53e230]
+                  - cell [ref=f53e232]
+                  - cell "Electronic" [ref=f53e233]
+                  - cell [ref=f53e235]
+                  - cell [ref=f53e236]
+                  - cell [ref=f53e238]
+                  - cell "Public" [ref=f53e239]
+                  - cell [ref=f53e241]
+                  - cell [ref=f53e242]:
+                    - link [ref=f53e244] [cursor=pointer]:
+                      - /url: /cs/idcplg?IdcService=TCEQ_EXTERNAL_SEARCH_DOC_INFO&dID=8555321&dDocName=7533692&SearchID=20746266&searchType=External&coreContentOnly=1&IsExternalSearch=1
+                      - img "Info" [ref=f53e245]
+                - row [ref=f53e246]:
+                  - cell [ref=f53e247]:
+                    - generic [ref=f53e249]:
+                      - generic: Select '7533750'
+                      - checkbox "Select '7533750'" [ref=f53e250]
+                  - cell [ref=f53e251]
+                  - cell [ref=f53e252]:
+                    - link "7533750" [ref=f53e254] [cursor=pointer]:
+                      - /url: /cs/idcplg?IdcService=TCEQ_EXTERNAL_SEARCH_GET_FILE&dID=8555379&Rendition=Web&SearchID=20746266&searchType=External
+                  - cell [ref=f53e255]
+                  - cell "AIR / Clean Air Interstate Rule (CAIR)" [ref=f53e256]
+                  - cell [ref=f53e258]
+                  - cell "DEER PARK ENERGY CENTER LP" [ref=f53e259]
+                  - cell [ref=f53e261]
+                  - cell "NUP" [ref=f53e262]
+                  - cell [ref=f53e264]
+                  - cell "Applications" [ref=f53e265]
+                  - cell [ref=f53e267]
+                  - cell "Applications" [ref=f53e268]
+                  - cell [ref=f53e270]
+                  - cell "6/26/2009 12:00AM" [ref=f53e271]
+                  - cell [ref=f53e273]
+                  - cell "6/26/2009 12:00AM" [ref=f53e274]
+                  - cell [ref=f53e276]
+                  - cell "No" [ref=f53e277]
+                  - cell [ref=f53e279]
+                  - cell [ref=f53e280]
+                  - cell [ref=f53e282]
+                  - cell "Electronic" [ref=f53e283]
+                  - cell [ref=f53e285]
+                  - cell [ref=f53e286]
+                  - cell [ref=f53e288]
+                  - cell "Public" [ref=f53e289]
+                  - cell [ref=f53e291]
+                  - cell [ref=f53e292]:
+                    - link [ref=f53e294] [cursor=pointer]:
+                      - /url: /cs/idcplg?IdcService=TCEQ_EXTERNAL_SEARCH_DOC_INFO&dID=8555379&dDocName=7533750&SearchID=20746266&searchType=External&coreContentOnly=1&IsExternalSearch=1
+                      - img "Info" [ref=f53e295]
+                - row [ref=f53e296]:
+                  - cell [ref=f53e297]:
+                    - generic [ref=f53e299]:
+                      - generic: Select '7533751'
+                      - checkbox "Select '7533751'" [ref=f53e300]
+                  - cell [ref=f53e301]
+                  - cell [ref=f53e302]:
+                    - link "7533751" [ref=f53e304] [cursor=pointer]:
+                      - /url: /cs/idcplg?IdcService=TCEQ_EXTERNAL_SEARCH_GET_FILE&dID=8555380&Rendition=Web&SearchID=20746266&searchType=External
+                  - cell [ref=f53e305]
+                  - cell "AIR / Clean Air Interstate Rule (CAIR)" [ref=f53e306]
+                  - cell [ref=f53e308]
+                  - cell "DEER PARK ENERGY CENTER LP" [ref=f53e309]
+                  - cell [ref=f53e311]
+                  - cell "NUP" [ref=f53e312]
+                  - cell [ref=f53e314]
+                  - cell "Applications" [ref=f53e315]
+                  - cell [ref=f53e317]
+                  - cell "Applications" [ref=f53e318]
+                  - cell [ref=f53e320]
+                  - cell "4/30/2010 12:00AM" [ref=f53e321]
+                  - cell [ref=f53e323]
+                  - cell "4/30/2010 12:00AM" [ref=f53e324]
+                  - cell [ref=f53e326]
+                  - cell "No" [ref=f53e327]
+                  - cell [ref=f53e329]
+                  - cell [ref=f53e330]
+                  - cell [ref=f53e332]
+                  - cell "Electronic" [ref=f53e333]
+                  - cell [ref=f53e335]
+                  - cell [ref=f53e336]
+                  - cell [ref=f53e338]
+                  - cell "Public" [ref=f53e339]
+                  - cell [ref=f53e341]
+                  - cell [ref=f53e342]:
+                    - link [ref=f53e344] [cursor=pointer]:
+                      - /url: /cs/idcplg?IdcService=TCEQ_EXTERNAL_SEARCH_DOC_INFO&dID=8555380&dDocName=7533751&SearchID=20746266&searchType=External&coreContentOnly=1&IsExternalSearch=1
+                      - img "Info" [ref=f53e345]
+                - row [ref=f53e346]:
+                  - cell [ref=f53e347]:
+                    - generic [ref=f53e349]:
+                      - generic: Select '7533844'
+                      - checkbox "Select '7533844'" [ref=f53e350]
+                  - cell [ref=f53e351]
+                  - cell [ref=f53e352]:
+                    - link "7533844" [ref=f53e354] [cursor=pointer]:
+                      - /url: /cs/idcplg?IdcService=TCEQ_EXTERNAL_SEARCH_GET_FILE&dID=8555474&Rendition=Web&SearchID=20746266&searchType=External
+                  - cell [ref=f53e355]
+                  - cell "AIR / Clean Air Interstate Rule (CAIR)" [ref=f53e356]
+                  - cell [ref=f53e358]
+                  - cell "FRONTERA GENERATION LP" [ref=f53e359]
+                  - cell [ref=f53e361]
+                  - cell "GP" [ref=f53e362]
+                  - cell [ref=f53e364]
+                  - cell "Applications" [ref=f53e365]
+                  - cell [ref=f53e367]
+                  - cell "Applications" [ref=f53e368]
+                  - cell [ref=f53e370]
+                  - cell "6/13/2014 12:00AM" [ref=f53e371]
+                  - cell [ref=f53e373]
+                  - cell "6/13/2014 12:00AM" [ref=f53e374]
+                  - cell [ref=f53e376]
+                  - cell "No" [ref=f53e377]
+                  - cell [ref=f53e379]
+                  - cell [ref=f53e380]
+                  - cell [ref=f53e382]
+                  - cell "Electronic" [ref=f53e383]
+                  - cell [ref=f53e385]
+                  - cell [ref=f53e386]
+                  - cell [ref=f53e388]
+                  - cell "Public" [ref=f53e389]
+                  - cell [ref=f53e391]
+                  - cell [ref=f53e392]:
+                    - link [ref=f53e394] [cursor=pointer]:
+                      - /url: /cs/idcplg?IdcService=TCEQ_EXTERNAL_SEARCH_DOC_INFO&dID=8555474&dDocName=7533844&SearchID=20746266&searchType=External&coreContentOnly=1&IsExternalSearch=1
+                      - img "Info" [ref=f53e395]
+                - row [ref=f53e396]:
+                  - cell [ref=f53e397]:
+                    - generic [ref=f53e399]:
+                      - generic: Select '1284767'
+                      - checkbox "Select '1284767'" [ref=f53e400]
+                  - cell [ref=f53e401]
+                  - cell [ref=f53e402]:
+                    - link "1284767" [ref=f53e404] [cursor=pointer]:
+                      - /url: /cs/idcplg?IdcService=TCEQ_EXTERNAL_SEARCH_GET_FILE&dID=1448607&Rendition=Web&SearchID=20746266&searchType=External
+                  - cell [ref=f53e405]
+                  - cell "AIR / Discrete Emissions Reduction Credit (DERC)" [ref=f53e406]
+                  - cell [ref=f53e408]
+                  - cell "100210350" [ref=f53e409]
+                  - cell [ref=f53e411]
+                  - cell "406809" [ref=f53e412]
+                  - cell [ref=f53e414]
+                  - cell "Uses" [ref=f53e415]
+                  - cell [ref=f53e417]
+                  - cell "Uses" [ref=f53e418]
+                  - cell [ref=f53e420]
+                  - cell "7/25/2012 12:00AM" [ref=f53e421]
+                  - cell [ref=f53e423]
+                  - cell "7/25/2012 12:00AM" [ref=f53e424]
+                  - cell [ref=f53e426]
+                  - cell "No" [ref=f53e427]
+                  - cell [ref=f53e429]
+                  - cell "HUNTSMAN" [ref=f53e430]
+                  - cell [ref=f53e432]
+                  - cell "Electronic" [ref=f53e433]
+                  - cell [ref=f53e435]
+                  - cell [ref=f53e436]
+                  - cell [ref=f53e438]
+                  - cell "Public" [ref=f53e439]
+                  - cell [ref=f53e441]
+                  - cell [ref=f53e442]:
+                    - link [ref=f53e444] [cursor=pointer]:
+                      - /url: /cs/idcplg?IdcService=TCEQ_EXTERNAL_SEARCH_DOC_INFO&dID=1448607&dDocName=1284767&SearchID=20746266&searchType=External&coreContentOnly=1&IsExternalSearch=1
+                      - img "Info" [ref=f53e445]
+                - row [ref=f53e446]:
+                  - cell [ref=f53e447]:
+                    - generic [ref=f53e449]:
+                      - generic: Select '1325710'
+                      - checkbox "Select '1325710'" [ref=f53e450]
+                  - cell [ref=f53e451]
+                  - cell [ref=f53e452]:
+                    - link "1325710" [ref=f53e454] [cursor=pointer]:
+                      - /url: /cs/idcplg?IdcService=TCEQ_EXTERNAL_SEARCH_GET_FILE&dID=1488951&Rendition=Web&SearchID=20746266&searchType=External
+                  - cell [ref=f53e455]
+                  - cell "AIR / Discrete Emissions Reduction Credit (DERC)" [ref=f53e456]
+                  - cell [ref=f53e458]
+                  - cell "100210350" [ref=f53e459]
+                  - cell [ref=f53e461]
+                  - cell "407877" [ref=f53e462]
+                  - cell [ref=f53e464]
+                  - cell "Uses" [ref=f53e465]
+                  - cell [ref=f53e467]
+                  - cell "Uses" [ref=f53e468]
+                  - cell [ref=f53e470]
+                  - cell "4/5/2013 12:00AM" [ref=f53e471]
+                  - cell [ref=f53e473]
+                  - cell "4/5/2013 12:00AM" [ref=f53e474]
+                  - cell [ref=f53e476]
+                  - cell "No" [ref=f53e477]
+                  - cell [ref=f53e479]
+                  - cell "HUNTSMAN" [ref=f53e480]
+                  - cell [ref=f53e482]
+                  - cell "Electronic" [ref=f53e483]
+                  - cell [ref=f53e485]
+                  - cell [ref=f53e486]
+                  - cell [ref=f53e488]
+                  - cell "Public" [ref=f53e489]
+                  - cell [ref=f53e491]
+                  - cell [ref=f53e492]:
+                    - link [ref=f53e494] [cursor=pointer]:
+                      - /url: /cs/idcplg?IdcService=TCEQ_EXTERNAL_SEARCH_DOC_INFO&dID=1488951&dDocName=1325710&SearchID=20746266&searchType=External&coreContentOnly=1&IsExternalSearch=1
+                      - img "Info" [ref=f53e495]
+                - row [ref=f53e496]:
+                  - cell [ref=f53e497]:
+                    - generic [ref=f53e499]:
+                      - generic: Select '1325711'
+                      - checkbox "Select '1325711'" [ref=f53e500]
+                  - cell [ref=f53e501]
+                  - cell [ref=f53e502]:
+                    - link "1325711" [ref=f53e504] [cursor=pointer]:
+                      - /url: /cs/idcplg?IdcService=TCEQ_EXTERNAL_SEARCH_GET_FILE&dID=1488952&Rendition=Web&SearchID=20746266&searchType=External
+                  - cell [ref=f53e505]
+                  - cell "AIR / Discrete Emissions Reduction Credit (DERC)" [ref=f53e506]
+                  - cell [ref=f53e508]
+                  - cell "100210350" [ref=f53e509]
+                  - cell [ref=f53e511]
+                  - cell "407877" [ref=f53e512]
+                  - cell [ref=f53e514]
+                  - cell "Uses" [ref=f53e515]
+                  - cell [ref=f53e517]
+                  - cell "Uses" [ref=f53e518]
+                  - cell [ref=f53e520]
+                  - cell "4/5/2013 12:00AM" [ref=f53e521]
+                  - cell [ref=f53e523]
+                  - cell "4/5/2013 12:00AM" [ref=f53e524]
+                  - cell [ref=f53e526]
+                  - cell "No" [ref=f53e527]
+                  - cell [ref=f53e529]
+                  - cell "HUNTSMAN" [ref=f53e530]
+                  - cell [ref=f53e532]
+                  - cell "Electronic" [ref=f53e533]
+                  - cell [ref=f53e535]
+                  - cell [ref=f53e536]
+                  - cell [ref=f53e538]
+                  - cell "Public" [ref=f53e539]
+                  - cell [ref=f53e541]
+                  - cell [ref=f53e542]:
+                    - link [ref=f53e544] [cursor=pointer]:
+                      - /url: /cs/idcplg?IdcService=TCEQ_EXTERNAL_SEARCH_DOC_INFO&dID=1488952&dDocName=1325711&SearchID=20746266&searchType=External&coreContentOnly=1&IsExternalSearch=1
+                      - img "Info" [ref=f53e545]
+                - row [ref=f53e546]:
+                  - cell [ref=f53e547]:
+                    - generic [ref=f53e549]:
+                      - generic: Select '1325714'
+                      - checkbox "Select '1325714'" [ref=f53e550]
+                  - cell [ref=f53e551]
+                  - cell [ref=f53e552]:
+                    - link "1325714" [ref=f53e554] [cursor=pointer]:
+                      - /url: /cs/idcplg?IdcService=TCEQ_EXTERNAL_SEARCH_GET_FILE&dID=1488955&Rendition=Web&SearchID=20746266&searchType=External
+                  - cell [ref=f53e555]
+                  - cell "AIR / Discrete Emissions Reduction Credit (DERC)" [ref=f53e556]
+                  - cell [ref=f53e558]
+                  - cell "100210350" [ref=f53e559]
+                  - cell [ref=f53e561]
+                  - cell "407877" [ref=f53e562]
+                  - cell [ref=f53e564]
+                  - cell "Uses" [ref=f53e565]
+                  - cell [ref=f53e567]
+                  - cell "Uses" [ref=f53e568]
+                  - cell [ref=f53e570]
+                  - cell "4/5/2013 12:00AM" [ref=f53e571]
+                  - cell [ref=f53e573]
+                  - cell "4/5/2013 12:00AM" [ref=f53e574]
+                  - cell [ref=f53e576]
+                  - cell "No" [ref=f53e577]
+                  - cell [ref=f53e579]
+                  - cell "HUNTSMAN" [ref=f53e580]
+                  - cell [ref=f53e582]
+                  - cell "Electronic" [ref=f53e583]
+                  - cell [ref=f53e585]
+                  - cell [ref=f53e586]
+                  - cell [ref=f53e588]
+                  - cell "Public" [ref=f53e589]
+                  - cell [ref=f53e591]
+                  - cell [ref=f53e592]:
+                    - link [ref=f53e594] [cursor=pointer]:
+                      - /url: /cs/idcplg?IdcService=TCEQ_EXTERNAL_SEARCH_DOC_INFO&dID=1488955&dDocName=1325714&SearchID=20746266&searchType=External&coreContentOnly=1&IsExternalSearch=1
+                      - img "Info" [ref=f53e595]
+                - row [ref=f53e596]:
+                  - cell [ref=f53e597]:
+                    - generic [ref=f53e599]:
+                      - generic: Select '1325712'
+                      - checkbox "Select '1325712'" [ref=f53e600]
+                  - cell [ref=f53e601]
+                  - cell [ref=f53e602]:
+                    - link "1325712" [ref=f53e604] [cursor=pointer]:
+                      - /url: /cs/idcplg?IdcService=TCEQ_EXTERNAL_SEARCH_GET_FILE&dID=1488953&Rendition=Web&SearchID=20746266&searchType=External
+                  - cell [ref=f53e605]
+                  - cell "AIR / Discrete Emissions Reduction Credit (DERC)" [ref=f53e606]
+                  - cell [ref=f53e608]
+                  - cell "100210350" [ref=f53e609]
+                  - cell [ref=f53e611]
+                  - cell "407877" [ref=f53e612]
+                  - cell [ref=f53e614]
+                  - cell "Uses" [ref=f53e615]
+                  - cell [ref=f53e617]
+                  - cell "Uses" [ref=f53e618]
+                  - cell [ref=f53e620]
+                  - cell "4/5/2013 12:00AM" [ref=f53e621]
+                  - cell [ref=f53e623]
+                  - cell "4/5/2013 12:00AM" [ref=f53e624]
+                  - cell [ref=f53e626]
+                  - cell "No" [ref=f53e627]
+                  - cell [ref=f53e629]
+                  - cell "HUNTSMAN" [ref=f53e630]
+                  - cell [ref=f53e632]
+                  - cell "Electronic" [ref=f53e633]
+                  - cell [ref=f53e635]
+                  - cell [ref=f53e636]
+                  - cell [ref=f53e638]
+                  - cell "Public" [ref=f53e639]
+                  - cell [ref=f53e641]
+                  - cell [ref=f53e642]:
+                    - link [ref=f53e644] [cursor=pointer]:
+                      - /url: /cs/idcplg?IdcService=TCEQ_EXTERNAL_SEARCH_DOC_INFO&dID=1488953&dDocName=1325712&SearchID=20746266&searchType=External&coreContentOnly=1&IsExternalSearch=1
+                      - img "Info" [ref=f53e645]
+                - row [ref=f53e646]:
+                  - cell [ref=f53e647]:
+                    - generic [ref=f53e649]:
+                      - generic: Select '1325713'
+                      - checkbox "Select '1325713'" [ref=f53e650]
+                  - cell [ref=f53e651]
+                  - cell [ref=f53e652]:
+                    - link "1325713" [ref=f53e654] [cursor=pointer]:
+                      - /url: /cs/idcplg?IdcService=TCEQ_EXTERNAL_SEARCH_GET_FILE&dID=1488954&Rendition=Web&SearchID=20746266&searchType=External
+                  - cell [ref=f53e655]
+                  - cell "AIR / Discrete Emissions Reduction Credit (DERC)" [ref=f53e656]
+                  - cell [ref=f53e658]
+                  - cell "100210350" [ref=f53e659]
+                  - cell [ref=f53e661]
+                  - cell "407877" [ref=f53e662]
+                  - cell [ref=f53e664]
+                  - cell "Uses" [ref=f53e665]
+                  - cell [ref=f53e667]
+                  - cell "Uses" [ref=f53e668]
+                  - cell [ref=f53e670]
+                  - cell "4/5/2013 12:00AM" [ref=f53e671]
+                  - cell [ref=f53e673]
+                  - cell "4/5/2013 12:00AM" [ref=f53e674]
+                  - cell [ref=f53e676]
+                  - cell "No" [ref=f53e677]
+                  - cell [ref=f53e679]
+                  - cell "HUNTSMAN" [ref=f53e680]
+                  - cell [ref=f53e682]
+                  - cell "Electronic" [ref=f53e683]
+                  - cell [ref=f53e685]
+                  - cell [ref=f53e686]
+                  - cell [ref=f53e688]
+                  - cell "Public" [ref=f53e689]
+                  - cell [ref=f53e691]
+                  - cell [ref=f53e692]:
+                    - link [ref=f53e694] [cursor=pointer]:
+                      - /url: /cs/idcplg?IdcService=TCEQ_EXTERNAL_SEARCH_DOC_INFO&dID=1488954&dDocName=1325713&SearchID=20746266&searchType=External&coreContentOnly=1&IsExternalSearch=1
+                      - img "Info" [ref=f53e695]
+                - row [ref=f53e696]:
+                  - cell [ref=f53e697]:
+                    - generic [ref=f53e699]:
+                      - generic: Select '1281271'
+                      - checkbox "Select '1281271'" [ref=f53e700]
+                  - cell [ref=f53e701]
+                  - cell [ref=f53e702]:
+                    - link "1281271" [ref=f53e704] [cursor=pointer]:
+                      - /url: /cs/idcplg?IdcService=TCEQ_EXTERNAL_SEARCH_GET_FILE&dID=1445265&Rendition=Web&SearchID=20746266&searchType=External
+                  - cell [ref=f53e705]
+                  - cell "AIR / Discrete Emissions Reduction Credit (DERC)" [ref=f53e706]
+                  - cell [ref=f53e708]
+                  - cell "100210350" [ref=f53e709]
+                  - cell [ref=f53e711]
+                  - cell "407877" [ref=f53e712]
+                  - cell [ref=f53e714]
+                  - cell "Uses" [ref=f53e715]
+                  - cell [ref=f53e717]
+                  - cell "Uses" [ref=f53e718]
+                  - cell [ref=f53e720]
+                  - cell "4/5/2013 12:00AM" [ref=f53e721]
+                  - cell [ref=f53e723]
+                  - cell "4/5/2013 12:00AM" [ref=f53e724]
+                  - cell [ref=f53e726]
+                  - cell "No" [ref=f53e727]
+                  - cell [ref=f53e729]
+                  - cell "HUNTSMAN" [ref=f53e730]
+                  - cell [ref=f53e732]
+                  - cell "Electronic" [ref=f53e733]
+                  - cell [ref=f53e735]
+                  - cell [ref=f53e736]
+                  - cell [ref=f53e738]
+                  - cell "Public" [ref=f53e739]
+                  - cell [ref=f53e741]
+                  - cell [ref=f53e742]:
+                    - link [ref=f53e744] [cursor=pointer]:
+                      - /url: /cs/idcplg?IdcService=TCEQ_EXTERNAL_SEARCH_DOC_INFO&dID=1445265&dDocName=1281271&SearchID=20746266&searchType=External&coreContentOnly=1&IsExternalSearch=1
+                      - img "Info" [ref=f53e745]
+                - row [ref=f53e746]:
+                  - cell [ref=f53e747]:
+                    - generic [ref=f53e749]:
+                      - generic: Select '1284953'
+                      - checkbox "Select '1284953'" [ref=f53e750]
+                  - cell [ref=f53e751]
+                  - cell [ref=f53e752]:
+                    - link "1284953" [ref=f53e754] [cursor=pointer]:
+                      - /url: /cs/idcplg?IdcService=TCEQ_EXTERNAL_SEARCH_GET_FILE&dID=1448793&Rendition=Web&SearchID=20746266&searchType=External
+                  - cell [ref=f53e755]
+                  - cell "AIR / Discrete Emissions Reduction Credit (DERC)" [ref=f53e756]
+                  - cell [ref=f53e758]
+                  - cell "100210350" [ref=f53e759]
+                  - cell [ref=f53e761]
+                  - cell "408483" [ref=f53e762]
+                  - cell [ref=f53e764]
+                  - cell "Trades" [ref=f53e765]
+                  - cell [ref=f53e767]
+                  - cell "Trades" [ref=f53e768]
+                  - cell [ref=f53e770]
+                  - cell "11/25/2013 12:00AM" [ref=f53e771]
+                  - cell [ref=f53e773]
+                  - cell "11/25/2013 12:00AM" [ref=f53e774]
+                  - cell [ref=f53e776]
+                  - cell "No" [ref=f53e777]
+                  - cell [ref=f53e779]
+                  - cell "HUNTSMAN" [ref=f53e780]
+                  - cell [ref=f53e782]
+                  - cell "Electronic" [ref=f53e783]
+                  - cell [ref=f53e785]
+                  - cell [ref=f53e786]
+                  - cell [ref=f53e788]
+                  - cell "Public" [ref=f53e789]
+                  - cell [ref=f53e791]
+                  - cell [ref=f53e792]:
+                    - link [ref=f53e794] [cursor=pointer]:
+                      - /url: /cs/idcplg?IdcService=TCEQ_EXTERNAL_SEARCH_DOC_INFO&dID=1448793&dDocName=1284953&SearchID=20746266&searchType=External&coreContentOnly=1&IsExternalSearch=1
+                      - img "Info" [ref=f53e795]
+                - row [ref=f53e796]:
+                  - cell [ref=f53e797]:
+                    - generic [ref=f53e799]:
+                      - generic: Select '1284957'
+                      - checkbox "Select '1284957'" [ref=f53e800]
+                  - cell [ref=f53e801]
+                  - cell [ref=f53e802]:
+                    - link "1284957" [ref=f53e804] [cursor=pointer]:
+                      - /url: /cs/idcplg?IdcService=TCEQ_EXTERNAL_SEARCH_GET_FILE&dID=1448797&Rendition=Web&SearchID=20746266&searchType=External
+                  - cell [ref=f53e805]
+                  - cell "AIR / Discrete Emissions Reduction Credit (DERC)" [ref=f53e806]
+                  - cell [ref=f53e808]
+                  - cell "100210350" [ref=f53e809]
+                  - cell [ref=f53e811]
+                  - cell "408483" [ref=f53e812]
+                  - cell [ref=f53e814]
+                  - cell "Trades" [ref=f53e815]
+                  - cell [ref=f53e817]
+                  - cell "Trades" [ref=f53e818]
+                  - cell [ref=f53e820]
+                  - cell "11/25/2013 12:00AM" [ref=f53e821]
+                  - cell [ref=f53e823]
+                  - cell "11/25/2013 12:00AM" [ref=f53e824]
+                  - cell [ref=f53e826]
+                  - cell "No" [ref=f53e827]
+                  - cell [ref=f53e829]
+                  - cell "HUNTSMAN" [ref=f53e830]
+                  - cell [ref=f53e832]
+                  - cell "Electronic" [ref=f53e833]
+                  - cell [ref=f53e835]
+                  - cell [ref=f53e836]
+                  - cell [ref=f53e838]
+                  - cell "Public" [ref=f53e839]
+                  - cell [ref=f53e841]
+                  - cell [ref=f53e842]:
+                    - link [ref=f53e844] [cursor=pointer]:
+                      - /url: /cs/idcplg?IdcService=TCEQ_EXTERNAL_SEARCH_DOC_INFO&dID=1448797&dDocName=1284957&SearchID=20746266&searchType=External&coreContentOnly=1&IsExternalSearch=1
+                      - img "Info" [ref=f53e845]
+                - row [ref=f53e846]:
+                  - cell [ref=f53e847]:
+                    - generic [ref=f53e849]:
+                      - generic: Select '1284952'
+                      - checkbox "Select '1284952'" [ref=f53e850]
+                  - cell [ref=f53e851]
+                  - cell [ref=f53e852]:
+                    - link "1284952" [ref=f53e854] [cursor=pointer]:
+                      - /url: /cs/idcplg?IdcService=TCEQ_EXTERNAL_SEARCH_GET_FILE&dID=1448792&Rendition=Web&SearchID=20746266&searchType=External
+                  - cell [ref=f53e855]
+                  - cell "AIR / Discrete Emissions Reduction Credit (DERC)" [ref=f53e856]
+                  - cell [ref=f53e858]
+                  - cell "100210350" [ref=f53e859]
+                  - cell [ref=f53e861]
+                  - cell "408484" [ref=f53e862]
+                  - cell [ref=f53e864]
+                  - cell "Uses" [ref=f53e865]
+                  - cell [ref=f53e867]
+                  - cell "Uses" [ref=f53e868]
+                  - cell [ref=f53e870]
+                  - cell "1/6/2014 12:00AM" [ref=f53e871]
+                  - cell [ref=f53e873]
+                  - cell "1/6/2014 12:00AM" [ref=f53e874]
+                  - cell [ref=f53e876]
+                  - cell "No" [ref=f53e877]
+                  - cell [ref=f53e879]
+                  - cell "HUNTSMAN" [ref=f53e880]
+                  - cell [ref=f53e882]
+                  - cell "Electronic" [ref=f53e883]
+                  - cell [ref=f53e885]
+                  - cell [ref=f53e886]
+                  - cell [ref=f53e888]
+                  - cell "Public" [ref=f53e889]
+                  - cell [ref=f53e891]
+                  - cell [ref=f53e892]:
+                    - link [ref=f53e894] [cursor=pointer]:
+                      - /url: /cs/idcplg?IdcService=TCEQ_EXTERNAL_SEARCH_DOC_INFO&dID=1448792&dDocName=1284952&SearchID=20746266&searchType=External&coreContentOnly=1&IsExternalSearch=1
+                      - img "Info" [ref=f53e895]
+                - row [ref=f53e896]:
+                  - cell [ref=f53e897]:
+                    - generic [ref=f53e899]:
+                      - generic: Select '1288294'
+                      - checkbox "Select '1288294'" [ref=f53e900]
+                  - cell [ref=f53e901]
+                  - cell [ref=f53e902]:
+                    - link "1288294" [ref=f53e904] [cursor=pointer]:
+                      - /url: /cs/idcplg?IdcService=TCEQ_EXTERNAL_SEARCH_GET_FILE&dID=1451955&Rendition=Web&SearchID=20746266&searchType=External
+                  - cell [ref=f53e905]
+                  - cell "AIR / Discrete Emissions Reduction Credit (DERC)" [ref=f53e906]
+                  - cell [ref=f53e908]
+                  - cell "100214428" [ref=f53e909]
+                  - cell [ref=f53e911]
+                  - cell "402943" [ref=f53e912]
+                  - cell [ref=f53e914]
+                  - cell "Uses" [ref=f53e915]
+                  - cell [ref=f53e917]
+                  - cell "Uses" [ref=f53e918]
+                  - cell [ref=f53e920]
+                  - cell "10/14/2010 12:00AM" [ref=f53e921]
+                  - cell [ref=f53e923]
+                  - cell "10/14/2010 12:00AM" [ref=f53e924]
+                  - cell [ref=f53e926]
+                  - cell "No" [ref=f53e927]
+                  - cell [ref=f53e929]
+                  - cell "INTERNATIONAL PAPER ORANGE MILL" [ref=f53e930]
+                  - cell [ref=f53e932]
+                  - cell "Electronic" [ref=f53e933]
+                  - cell [ref=f53e935]
+                  - cell [ref=f53e936]
+                  - cell [ref=f53e938]
+                  - cell "Public" [ref=f53e939]
+                  - cell [ref=f53e941]
+                  - cell [ref=f53e942]:
+                    - link [ref=f53e944] [cursor=pointer]:
+                      - /url: /cs/idcplg?IdcService=TCEQ_EXTERNAL_SEARCH_DOC_INFO&dID=1451955&dDocName=1288294&SearchID=20746266&searchType=External&coreContentOnly=1&IsExternalSearch=1
+                      - img "Info" [ref=f53e945]
+                - row [ref=f53e946]:
+                  - cell [ref=f53e947]:
+                    - generic [ref=f53e949]:
+                      - generic: Select '1291678'
+                      - checkbox "Select '1291678'" [ref=f53e950]
+                  - cell [ref=f53e951]
+                  - cell [ref=f53e952]:
+                    - link "1291678" [ref=f53e954] [cursor=pointer]:
+                      - /url: /cs/idcplg?IdcService=TCEQ_EXTERNAL_SEARCH_GET_FILE&dID=1455284&Rendition=Web&SearchID=20746266&searchType=External
+                  - cell [ref=f53e955]
+                  - cell "AIR / Discrete Emissions Reduction Credit (DERC)" [ref=f53e956]
+                  - cell [ref=f53e958]
+                  - cell "100219351" [ref=f53e959]
+                  - cell [ref=f53e961]
+                  - cell "402060" [ref=f53e962]
+                  - cell [ref=f53e964]
+                  - cell "Trades" [ref=f53e965]
+                  - cell [ref=f53e967]
+                  - cell "Trades" [ref=f53e968]
+                  - cell [ref=f53e970]
+                  - cell "2/2/2009 12:00AM" [ref=f53e971]
+                  - cell [ref=f53e973]
+                  - cell "2/2/2009 12:00AM" [ref=f53e974]
+                  - cell [ref=f53e976]
+                  - cell "No" [ref=f53e977]
+                  - cell [ref=f53e979]
+                  - cell "UNION CARBIDE TEXAS CITY" [ref=f53e980]
+                  - cell [ref=f53e982]
+                  - cell "Electronic" [ref=f53e983]
+                  - cell [ref=f53e985]
+                  - cell [ref=f53e986]
+                  - cell [ref=f53e988]
+                  - cell "Public" [ref=f53e989]
+                  - cell [ref=f53e991]
+                  - cell [ref=f53e992]:
+                    - link [ref=f53e994] [cursor=pointer]:
+                      - /url: /cs/idcplg?IdcService=TCEQ_EXTERNAL_SEARCH_DOC_INFO&dID=1455284&dDocName=1291678&SearchID=20746266&searchType=External&coreContentOnly=1&IsExternalSearch=1
+                      - img "Info" [ref=f53e995]
+                - row [ref=f53e996]:
+                  - cell [ref=f53e997]:
+                    - generic [ref=f53e999]:
+                      - generic: Select '5627770'
+                      - checkbox "Select '5627770'" [ref=f53e1000]
+                  - cell [ref=f53e1001]
+                  - cell [ref=f53e1002]:
+                    - link "5627770" [ref=f53e1004] [cursor=pointer]:
+                      - /url: /cs/idcplg?IdcService=TCEQ_EXTERNAL_SEARCH_GET_FILE&dID=6112295&Rendition=Web&SearchID=20746266&searchType=External
+                  - cell [ref=f53e1005]
+                  - cell "AIR / Discrete Emissions Reduction Credit (DERC)" [ref=f53e1006]
+                  - cell [ref=f53e1008]
+                  - cell "100219963" [ref=f53e1009]
+                  - cell [ref=f53e1011]
+                  - cell "416306" [ref=f53e1012]
+                  - cell [ref=f53e1014]
+                  - cell "Trades" [ref=f53e1015]
+                  - cell [ref=f53e1017]
+                  - cell "Trades" [ref=f53e1018]
+                  - cell [ref=f53e1020]
+                  - cell "5/10/2021 12:00AM" [ref=f53e1021]
+                  - cell [ref=f53e1023]
+                  - cell [ref=f53e1024]
+                  - cell [ref=f53e1026]
+                  - cell "No" [ref=f53e1027]
+                  - cell [ref=f53e1029]
+                  - cell "SOLAR TURBINES DLS OVERHAUL CENTER" [ref=f53e1030]
+                  - cell [ref=f53e1032]
+                  - cell "Electronic" [ref=f53e1033]
+                  - cell [ref=f53e1035]
+                  - cell [ref=f53e1036]
+                  - cell [ref=f53e1038]
+                  - cell "Public" [ref=f53e1039]
+                  - cell [ref=f53e1041]
+                  - cell [ref=f53e1042]:
+                    - link [ref=f53e1044] [cursor=pointer]:
+                      - /url: /cs/idcplg?IdcService=TCEQ_EXTERNAL_SEARCH_DOC_INFO&dID=6112295&dDocName=5627770&SearchID=20746266&searchType=External&coreContentOnly=1&IsExternalSearch=1
+                      - img "Info" [ref=f53e1045]
+                - row [ref=f53e1046]:
+                  - cell [ref=f53e1047]:
+                    - generic [ref=f53e1049]:
+                      - generic: Select '5627771'
+                      - checkbox "Select '5627771'" [ref=f53e1050]
+                  - cell [ref=f53e1051]
+                  - cell [ref=f53e1052]:
+                    - link "5627771" [ref=f53e1054] [cursor=pointer]:
+                      - /url: /cs/idcplg?IdcService=TCEQ_EXTERNAL_SEARCH_GET_FILE&dID=6112296&Rendition=Web&SearchID=20746266&searchType=External
+                  - cell [ref=f53e1055]
+                  - cell "AIR / Discrete Emissions Reduction Credit (DERC)" [ref=f53e1056]
+                  - cell [ref=f53e1058]
+                  - cell "100219963" [ref=f53e1059]
+                  - cell [ref=f53e1061]
+                  - cell "416306" [ref=f53e1062]
+                  - cell [ref=f53e1064]
+                  - cell "Trades" [ref=f53e1065]
+                  - cell [ref=f53e1067]
+                  - cell "Trades" [ref=f53e1068]
+                  - cell [ref=f53e1070]
+                  - cell "5/10/2021 12:00AM" [ref=f53e1071]
+                  - cell [ref=f53e1073]
+                  - cell [ref=f53e1074]
+                  - cell [ref=f53e1076]
+                  - cell "No" [ref=f53e1077]
+                  - cell [ref=f53e1079]
+                  - cell "SOLAR TURBINES DLS OVERHAUL CENTER" [ref=f53e1080]
+                  - cell [ref=f53e1082]
+                  - cell "Electronic" [ref=f53e1083]
+                  - cell [ref=f53e1085]
+                  - cell [ref=f53e1086]
+                  - cell [ref=f53e1088]
+                  - cell "Public" [ref=f53e1089]
+                  - cell [ref=f53e1091]
+                  - cell [ref=f53e1092]:
+                    - link [ref=f53e1094] [cursor=pointer]:
+                      - /url: /cs/idcplg?IdcService=TCEQ_EXTERNAL_SEARCH_DOC_INFO&dID=6112296&dDocName=5627771&SearchID=20746266&searchType=External&coreContentOnly=1&IsExternalSearch=1
+                      - img "Info" [ref=f53e1095]
+                - row [ref=f53e1096]:
+                  - cell [ref=f53e1097]:
+                    - generic [ref=f53e1099]:
+                      - generic: Select '5627796'
+                      - checkbox "Select '5627796'" [ref=f53e1100]
+                  - cell [ref=f53e1101]
+                  - cell [ref=f53e1102]:
+                    - link "5627796" [ref=f53e1104] [cursor=pointer]:
+                      - /url: /cs/idcplg?IdcService=TCEQ_EXTERNAL_SEARCH_GET_FILE&dID=6112323&Rendition=Web&SearchID=20746266&searchType=External
+                  - cell [ref=f53e1105]
+                  - cell "AIR / Discrete Emissions Reduction Credit (DERC)" [ref=f53e1106]
+                  - cell [ref=f53e1108]
+                  - cell "100219963" [ref=f53e1109]
+                  - cell [ref=f53e1111]
+                  - cell "416306" [ref=f53e1112]
+                  - cell [ref=f53e1114]
+                  - cell "Trades" [ref=f53e1115]
+                  - cell [ref=f53e1117]
+                  - cell "Trades" [ref=f53e1118]
+                  - cell [ref=f53e1120]
+                  - cell "5/10/2021 12:00AM" [ref=f53e1121]
+                  - cell [ref=f53e1123]
+                  - cell [ref=f53e1124]
+                  - cell [ref=f53e1126]
+                  - cell "No" [ref=f53e1127]
+                  - cell [ref=f53e1129]
+                  - cell "SOLAR TURBINES DLS OVERHAUL CENTER" [ref=f53e1130]
+                  - cell [ref=f53e1132]
+                  - cell "Electronic" [ref=f53e1133]
+                  - cell [ref=f53e1135]
+                  - cell [ref=f53e1136]
+                  - cell [ref=f53e1138]
+                  - cell "Public" [ref=f53e1139]
+                  - cell [ref=f53e1141]
+                  - cell [ref=f53e1142]:
+                    - link [ref=f53e1144] [cursor=pointer]:
+                      - /url: /cs/idcplg?IdcService=TCEQ_EXTERNAL_SEARCH_DOC_INFO&dID=6112323&dDocName=5627796&SearchID=20746266&searchType=External&coreContentOnly=1&IsExternalSearch=1
+                      - img "Info" [ref=f53e1145]
+    - table
+    - table [ref=f53e1146]:
+      - rowgroup [ref=f53e1147]:
+        - row [ref=f53e1148]:
+          - cell [ref=f53e1149]
+          - cell "Page" [ref=f53e1150]
+          - cell [ref=f53e1152]:
+            - combobox "Page" [ref=f53e1154]:
+              - option "1" [selected]
+              - option "2"
+              - option "3"
+              - option "4"
+              - option "5"
+              - option "6"
+              - option "7"
+              - option "8"
+              - option "9"
+              - option "10"
+              - option "11"
+              - option "12"
+              - option "13"
+              - option "14"
+              - option "15"
+              - option "16"
+              - option "17"
+              - option "18"
+              - option "19"
+              - option "20"
+              - option "21"
+              - option "22"
+              - option "23"
+              - option "24"
+              - option "25"
+              - option "26"
+              - option "27"
+              - option "28"
+              - option "29"
+              - option "30"
+              - option "31"
+              - option "32"
+              - option "33"
+              - option "34"
+              - option "35"
+              - option "36"
+              - option "37"
+              - option "38"
+              - option "39"
+              - option "40"
+              - option "41"
+              - option "42"
+              - option "43"
+              - option "44"
+              - option "45"
+              - option "46"
+              - option "47"
+              - option "48"
+              - option "49"
+              - option "50"
+              - option "51"
+              - option "52"
+              - option "53"
+              - option "54"
+              - option "55"
+              - option "56"
+              - option "57"
+              - option "58"
+              - option "59"
+              - option "60"
+              - option "61"
+              - option "62"
+              - option "63"
+              - option "64"
+              - option "65"
+              - option "66"
+              - option "67"
+              - option "68"
+              - option "69"
+              - option "70"
+              - option "71"
+              - option "72"
+              - option "73"
+              - option "74"
+              - option "75"
+              - option "76"
+              - option "77"
+              - option "78"
+              - option "79"
+              - option "80"
+              - option "81"
+              - option "82"
+              - option "83"
+              - option "84"
+              - option "85"
+              - option "86"
+              - option "87"
+              - option "88"
+              - option "89"
+              - option "90"
+              - option "91"
+              - option "92"
+              - option "93"
+              - option "94"
+              - option "95"
+              - option "96"
+              - option "97"
+              - option "98"
+              - option "99"
+              - option "100"
+          - cell "of 100" [ref=f53e1155]
+          - cell [ref=f53e1157]:
+            - link [ref=f53e1158] [cursor=pointer]:
+              - /url: /cs/idcplg?IdcService=TCEQ_PERFORM_SEARCH&QueryText=dSecurityGroup+%3cmatches%3e+%60Public%60%3cAND%3e%28%3cftx%3edata+center%3c%2fftx%3e%29&SortField=dInDate&SortOrder=Desc&ResultCount=20&SearchEngineName=ELASTICSEARCH&SearchQueryFormat=UNIVERSAL&searchFormType=standard&listTemplateId=SearchResultsHeadline&SearchProviders=tceq4avrwccecmp_4444&ftx=1&SortSpec=xRecordSeries%20asc%2cxPrimaryID%20asc%2cxSecondaryID%20asc%2cxInsightDocumentType%20asc%2cdDocTitle%20asc%2cxBeginDate%20asc&type=item&SearchEngineName=ELASTICSEARCH&&IsExternalSearch=1&PageNumber=2&StartRow=21&EndRow=40&columnsString=dDocName,xRecordSeries,xPrimaryID,xSecondaryID,xInsightDocumentType,dDocTitle,xBeginDate,xEndDate,xLitigationHold,xRegEntName,xMedia,xComments,dSecurityGroup&accessID=7859186&newSearch=0
+              - img "Link To More Results" [ref=f53e1159]
+  - table [ref=f53e1160]:
+    - rowgroup [ref=f53e1161]:
+      - row [ref=f53e1162]:
+        - cell [ref=f53e1163]
+      - row [ref=f53e1164]:
+        - cell [ref=f53e1165]
+        - cell [ref=f53e1166]:
+          - generic [ref=f53e1168]:
+            - generic [ref=f53e1169]:
+              - link "Site Help" [ref=f53e1170] [cursor=pointer]:
+                - /url: http://www.tceq.texas.gov/help
+              - text: "|"
+              - link "Disclaimer" [ref=f53e1171] [cursor=pointer]:
+                - /url: http://www.tceq.texas.gov/help/policies/disclaimer_policy.html
+              - text: "|"
+              - link "Web Policies" [ref=f53e1172] [cursor=pointer]:
+                - /url: http://www.tceq.texas.gov/help/policies/index.html
+              - text: "|"
+              - link "Our Compact with Texas" [ref=f53e1173] [cursor=pointer]:
+                - /url: http://www.tceq.texas.gov/agency/working-with-us/compact.html
+              - text: "|"
+              - link "TCEQ Homeland Security" [ref=f53e1174] [cursor=pointer]:
+                - /url: http://www.tceq.texas.gov/response/security/index.html
+              - text: "|"
+              - link "Contact Us" [ref=f53e1175] [cursor=pointer]:
+                - /url: http://www.tceq.texas.gov/agency/directory/
+              - text: "|"
+              - link "Central Registry" [ref=f53e1176] [cursor=pointer]:
+                - /url: http://www15.tceq.texas.gov/crpub/
+            - generic [ref=f53e1177]:
+              - text: "Statewide Links:"
+              - link "Texas.gov" [ref=f53e1178] [cursor=pointer]:
+                - /url: http://www.texas.gov/
+              - text: "|"
+              - link "Texas Homeland Security" [ref=f53e1179] [cursor=pointer]:
+                - /url: https://gov.texas.gov/organization/hsgd
+              - text: "|"
+              - link "TRAIL Statewide Archive" [ref=f53e1180] [cursor=pointer]:
+                - /url: https://www.tsl.texas.gov/trail/index.html
+              - text: "|"
+              - link "Texas Veterans Portal" [ref=f53e1181] [cursor=pointer]:
+                - /url: https://veterans.portal.texas.gov/

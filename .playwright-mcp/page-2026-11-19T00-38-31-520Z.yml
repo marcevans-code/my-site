@@ -1,0 +1,2132 @@
+- generic [active] [ref=f65e1]:
+  - link "Skip to main content" [ref=f65e2] [cursor=pointer]:
+    - /url: "#main"
+  - generic [ref=f65e3]:
+    - navigation [ref=f65e4]:
+      - link:
+        - /url: https://www.puc.texas.gov/
+        - img [ref=f65e5] [cursor=pointer]
+      - generic [ref=f65e6]: Public Utility Commission of Texas Interchange Filing Search
+    - main [ref=f65e7]:
+      - heading "Filings for 58481" [level=1] [ref=f65e9]
+      - menu [ref=f65e11]:
+        - menuitem [ref=f65e12]:
+          - link [ref=f65e13] [cursor=pointer]:
+            - /url: /
+            - emphasis [ref=f65e14]: 
+            - text: Filing Search
+        - menuitem [ref=f65e15]:
+          - link [ref=f65e16] [cursor=pointer]:
+            - /url: /search/daily/
+            - emphasis [ref=f65e17]: 
+            - text: Daily Filing Search
+        - menuitem [ref=f65e18]:
+          - link [ref=f65e19] [cursor=pointer]:
+            - /url: https://www.puc.texas.gov/industry/filings/Default.aspx
+            - emphasis [ref=f65e20]: 
+            - text: Learn More
+        - menuitem [ref=f65e21]:
+          - link [ref=f65e22] [cursor=pointer]:
+            - /url: https://portal.puc.texas.gov/portal/
+            - emphasis [ref=f65e23]: 
+            - text: Filing Notification System
+        - menuitem [ref=f65e24]:
+          - link [ref=f65e25] [cursor=pointer]:
+            - /url: https://interchange.puc.texas.gov/filer
+            - emphasis [ref=f65e26]: 
+            - text: PUC Interchange Filer
+      - text:      
+      - paragraph [ref=f65e27]:
+        - strong [ref=f65e28]: Case Style
+        - text: RULEMAKING TO IMPLEMENT LARGE LOAD INTERCONNECTION STANDARDS UNDER PURA 37.0561
+      - paragraph [ref=f65e29]: 219 filing(s).
+      - table [ref=f65e30]:
+        - rowgroup [ref=f65e31]:
+          - row [ref=f65e32]:
+            - cell "«« « 1 » »» Export to Excel" [ref=f65e33]:
+              - generic:
+                - generic:
+                  - list:
+                    - listitem:
+                      - generic [ref=f65e34]: ««
+                    - listitem:
+                      - generic [ref=f65e35]: «
+                    - listitem:
+                      - generic [ref=f65e36]: "1"
+                    - listitem:
+                      - generic [ref=f65e37]: »
+                    - listitem:
+                      - generic [ref=f65e38]: »»
+              - link "Export to Excel" [ref=f65e40] [cursor=pointer]:
+                - /url: /search/exportfilings/?ControlNumber=58481&ItemMatch=0&SortBy=ItemNumber&SortOrder=Ascending
+                - text: Export to Excel
+                - generic [aria-hidden] [ref=f65e41]: 
+          - row [ref=f65e42]:
+            - columnheader "Item sorted ascending" [ref=f65e43]:
+              - link "Item sorted ascending" [ref=f65e44] [cursor=pointer]:
+                - /url: /search/filings/?ControlNumber=58481&ItemMatch=0&SortBy=ItemNumber&SortOrder=Descending
+                - text: Item ▲
+                - generic [ref=f65e45]: sorted ascending
+            - columnheader "File Stamp" [ref=f65e46]:
+              - link "File Stamp" [ref=f65e47] [cursor=pointer]:
+                - /url: /search/filings/?ControlNumber=58481&ItemMatch=0&SortBy=FileStamp&SortOrder=Ascending
+            - columnheader "Party" [ref=f65e48]:
+              - link "Party" [ref=f65e49] [cursor=pointer]:
+                - /url: /search/filings/?ControlNumber=58481&ItemMatch=0&SortBy=FilingParty&SortOrder=Ascending
+            - columnheader "Item Type" [ref=f65e50]:
+              - link "Item Type" [ref=f65e51] [cursor=pointer]:
+                - /url: /search/filings/?ControlNumber=58481&ItemMatch=0&SortBy=ItemType&SortOrder=Ascending
+            - columnheader "Filing Description" [ref=f65e52]:
+              - link "Filing Description" [ref=f65e53] [cursor=pointer]:
+                - /url: /search/filings/?ControlNumber=58481&ItemMatch=0&SortBy=FilingDescription&SortOrder=Ascending
+          - row [ref=f65e54]:
+            - cell [ref=f65e55]:
+              - strong [ref=f65e56]:
+                - link "1" [ref=f65e57] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=58481&itemNumber=1
+            - cell "7/31/2025" [ref=f65e58]
+            - cell "PUC RULES & PROJECTS" [ref=f65e59]
+            - cell "PRJ" [ref=f65e60]
+            - cell "Request for Control Number" [ref=f65e61]
+          - row [ref=f65e62]:
+            - cell [ref=f65e63]:
+              - strong [ref=f65e64]:
+                - link "2" [ref=f65e65] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=58481&itemNumber=2
+            - cell "9/12/2025" [ref=f65e66]
+            - cell "PUC RULES & PROJECTS" [ref=f65e67]
+            - cell "PRJ" [ref=f65e68]
+            - cell "Staff Memo and Questions for Comment w/Oct. 10 Comment Deadline" [ref=f65e69]
+          - row [ref=f65e70]:
+            - cell [ref=f65e71]:
+              - strong [ref=f65e72]:
+                - link "3" [ref=f65e73] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=58481&itemNumber=3
+            - cell "9/24/2025" [ref=f65e74]
+            - cell "OPUC" [ref=f65e75]
+            - cell "PRJ" [ref=f65e76]
+            - cell "OPUC NOTICE OF PARTICIPATION LETTER" [ref=f65e77]
+          - row [ref=f65e78]:
+            - cell [ref=f65e79]:
+              - strong [ref=f65e80]:
+                - link "4" [ref=f65e81] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=58481&itemNumber=4
+            - cell "9/30/2025" [ref=f65e82]
+            - cell "Schaper Energy Consulting LLC" [ref=f65e83]
+            - cell "PC" [ref=f65e84]
+            - cell "SCHAPER ENERGY CONSULTING LLC RESPONSE TO STAFF’s QUESTIONS ON PROJECT NO. 58481; RULEMAKING TO IMPLEMENT LARGE LOAD INTERCONNECTION STANDARDS UNDER PURA §37.0561" [ref=f65e85]
+          - row [ref=f65e86]:
+            - cell [ref=f65e87]:
+              - strong [ref=f65e88]:
+                - link "5" [ref=f65e89] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=58481&itemNumber=5
+            - cell "10/9/2025" [ref=f65e90]
+            - cell "Cholla, Inc." [ref=f65e91]
+            - cell "PC" [ref=f65e92]
+            - cell "Cholla, Inc. Response to Staff Questions on Project No. 58481; Large Load Interconnection Framework Recommendations" [ref=f65e93]
+          - row [ref=f65e94]:
+            - cell [ref=f65e95]:
+              - strong [ref=f65e96]:
+                - link "6" [ref=f65e97] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=58481&itemNumber=6
+            - cell "10/10/2025" [ref=f65e98]
+            - cell "TCPA" [ref=f65e99]
+            - cell "COM" [ref=f65e100]
+            - cell "TCPA Response to Staff Questions" [ref=f65e101]
+          - row [ref=f65e102]:
+            - cell [ref=f65e103]:
+              - strong [ref=f65e104]:
+                - link "7" [ref=f65e105] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=58481&itemNumber=7
+            - cell "10/10/2025" [ref=f65e106]
+            - cell "EdgeConneX" [ref=f65e107]
+            - cell "PC" [ref=f65e108]
+            - cell "EDGECONNEX RESPONSE TO STAFF’S QUESTIONS ON PROJECT NO. 58481; RULEMAKING TO IMPLEMENT LARGE LOAD INTERCONNECTION STANDARDS UNDER PURA §37.0561" [ref=f65e109]
+          - row [ref=f65e110]:
+            - cell [ref=f65e111]:
+              - strong [ref=f65e112]:
+                - link "8" [ref=f65e113] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=58481&itemNumber=8
+            - cell "10/10/2025" [ref=f65e114]
+            - cell "NRG ENERGY, INC." [ref=f65e115]
+            - cell "PC" [ref=f65e116]
+            - cell "NRG Energy, Inc.'s Comments on PUCT Staff's Questions" [ref=f65e117]
+          - row [ref=f65e118]:
+            - cell [ref=f65e119]:
+              - strong [ref=f65e120]:
+                - link "9" [ref=f65e121] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=58481&itemNumber=9
+            - cell "10/10/2025" [ref=f65e122]
+            - cell "TPPA" [ref=f65e123]
+            - cell "COM" [ref=f65e124]
+            - cell "Texas Public Power Association (TPPA) Response to Questions for Comment" [ref=f65e125]
+          - row [ref=f65e126]:
+            - cell [ref=f65e127]:
+              - strong [ref=f65e128]:
+                - link "10" [ref=f65e129] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=58481&itemNumber=10
+            - cell "10/10/2025" [ref=f65e130]
+            - cell "CENTERPOINT ENERGY HOUSTON ELECTRIC" [ref=f65e131]
+            - cell "COM" [ref=f65e132]
+            - cell "Comments of CenterPoint Energy Houston Electric, LLC" [ref=f65e133]
+          - row [ref=f65e134]:
+            - cell [ref=f65e135]:
+              - strong [ref=f65e136]:
+                - link "11" [ref=f65e137] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=58481&itemNumber=11
+            - cell "10/10/2025" [ref=f65e138]
+            - cell "ONCOR ELECTRIC DELIVERY COMPANY LLC" [ref=f65e139]
+            - cell "COM" [ref=f65e140]
+            - cell "ONCOR'S RESPONSE TO COMMISSION STAFF’S FIRST SET OF QUESTIONS FOR COMMENTS" [ref=f65e141]
+          - row [ref=f65e142]:
+            - cell [ref=f65e143]:
+              - strong [ref=f65e144]:
+                - link "12" [ref=f65e145] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=58481&itemNumber=12
+            - cell "10/10/2025" [ref=f65e146]
+            - cell "LCRA TRANSMISSION SERVICE CORPORATION" [ref=f65e147]
+            - cell "PRJ" [ref=f65e148]
+            - cell "RESPONSE TO QUESTIONS FOR COMMENT" [ref=f65e149]
+          - row [ref=f65e150]:
+            - cell [ref=f65e151]:
+              - strong [ref=f65e152]:
+                - link "13" [ref=f65e153] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=58481&itemNumber=13
+            - cell "10/10/2025" [ref=f65e154]
+            - cell "Data Center Coalition" [ref=f65e155]
+            - cell "COM" [ref=f65e156]
+            - cell "DCC Comments on Project 58481, Rulemaking to Implement Large Load Interconnection Standards" [ref=f65e157]
+          - row [ref=f65e158]:
+            - cell [ref=f65e159]:
+              - strong [ref=f65e160]:
+                - link "14" [ref=f65e161] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=58481&itemNumber=14
+            - cell "10/10/2025" [ref=f65e162]
+            - cell "EOLIAN, L.P." [ref=f65e163]
+            - cell "COM" [ref=f65e164]
+            - cell "Comments of Eolian, L.P." [ref=f65e165]
+          - row [ref=f65e166]:
+            - cell [ref=f65e167]:
+              - strong [ref=f65e168]:
+                - link "15" [ref=f65e169] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=58481&itemNumber=15
+            - cell "10/10/2025" [ref=f65e170]
+            - cell "Texas Electric Cooperatives, Inc." [ref=f65e171]
+            - cell "PL" [ref=f65e172]
+            - cell "Responses of Texas Electric Cooperatives, Inc." [ref=f65e173]
+          - row [ref=f65e174]:
+            - cell [ref=f65e175]:
+              - strong [ref=f65e176]:
+                - link "16" [ref=f65e177] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=58481&itemNumber=16
+            - cell "10/10/2025" [ref=f65e178]
+            - cell "SHARYLAND UTILITIES, L.L.C." [ref=f65e179]
+            - cell "COM" [ref=f65e180]
+            - cell "Sharyland Utilities, L.L.C's Comments to Commission Staff's Questions for Comments" [ref=f65e181]
+          - row [ref=f65e182]:
+            - cell [ref=f65e183]:
+              - strong [ref=f65e184]:
+                - link "17" [ref=f65e185] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=58481&itemNumber=17
+            - cell "10/10/2025" [ref=f65e186]
+            - cell "ENCHANTED ROCK, LLC" [ref=f65e187]
+            - cell "COM" [ref=f65e188]
+            - cell "VOID-SEE ITEM 30" [ref=f65e189]
+          - row [ref=f65e190]:
+            - cell [ref=f65e191]:
+              - strong [ref=f65e192]:
+                - link "18" [ref=f65e193] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=58481&itemNumber=18
+            - cell "10/10/2025" [ref=f65e194]
+            - cell "TIEC" [ref=f65e195]
+            - cell "COM" [ref=f65e196]
+            - cell "TEXAS INDUSTRIAL ENERGY CONSUMERS’ COMMENTS" [ref=f65e197]
+          - row [ref=f65e198]:
+            - cell [ref=f65e199]:
+              - strong [ref=f65e200]:
+                - link "19" [ref=f65e201] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=58481&itemNumber=19
+            - cell "10/10/2025" [ref=f65e202]
+            - cell "Eneus Energy" [ref=f65e203]
+            - cell "COM" [ref=f65e204]
+            - cell "Eneus Response to Staff Questions on Project No. 58481" [ref=f65e205]
+          - row [ref=f65e206]:
+            - cell [ref=f65e207]:
+              - strong [ref=f65e208]:
+                - link "20" [ref=f65e209] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=58481&itemNumber=20
+            - cell "10/10/2025" [ref=f65e210]
+            - cell "OPUC" [ref=f65e211]
+            - cell "COM" [ref=f65e212]
+            - cell "OPUC’S RESPONSES TO QUESTIONS FOR PUBLIC COMMENT RELATED TO THE IMPLEMENTATION OF PURA § 37.0561" [ref=f65e213]
+          - row [ref=f65e214]:
+            - cell [ref=f65e215]:
+              - strong [ref=f65e216]:
+                - link "21" [ref=f65e217] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=58481&itemNumber=21
+            - cell "10/10/2025" [ref=f65e218]
+            - cell "ERCOT" [ref=f65e219]
+            - cell "COM" [ref=f65e220]
+            - cell "ELECTRIC RELIABILITY COUNCIL OF TEXAS, INC.’S RESPONSES TO STAFF QUESTIONS" [ref=f65e221]
+          - row [ref=f65e222]:
+            - cell [ref=f65e223]:
+              - strong [ref=f65e224]:
+                - link "22" [ref=f65e225] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=58481&itemNumber=22
+            - cell "10/10/2025" [ref=f65e226]
+            - cell "AEP TEXAS INC." [ref=f65e227]
+            - cell "COM" [ref=f65e228]
+            - cell "AEP Texas Responses to Questions for Public Comment" [ref=f65e229]
+          - row [ref=f65e230]:
+            - cell [ref=f65e231]:
+              - strong [ref=f65e232]:
+                - link "23" [ref=f65e233] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=58481&itemNumber=23
+            - cell "10/10/2025" [ref=f65e234]
+            - cell "COMPASS, Bureau of Economic Geology" [ref=f65e235]
+            - cell "PC" [ref=f65e236]
+            - 'cell "COMMENTS OF THE BUREAU OF ECONOMIC GEOLOGY, THE UNIVERSITY OF TEXAS AT AUSTIN Filed by: COMPASS - Collaborative Optimization & Management of Power Allocation – Surface & Subsurface strategies" [ref=f65e237]'
+          - row [ref=f65e238]:
+            - cell [ref=f65e239]:
+              - strong [ref=f65e240]:
+                - link "24" [ref=f65e241] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=58481&itemNumber=24
+            - cell "10/10/2025" [ref=f65e242]
+            - cell "TEXAS ENERGY BUYERS ALLIANCE" [ref=f65e243]
+            - cell "COM" [ref=f65e244]
+            - cell "TEBA Responses to Staff Questions on Project 58481" [ref=f65e245]
+          - row [ref=f65e246]:
+            - cell [ref=f65e247]:
+              - strong [ref=f65e248]:
+                - link "25" [ref=f65e249] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=58481&itemNumber=25
+            - cell "10/10/2025" [ref=f65e250]
+            - cell "TESLA, INC." [ref=f65e251]
+            - cell "COM" [ref=f65e252]
+            - cell "TESLA comments on Project 58481" [ref=f65e253]
+          - row [ref=f65e254]:
+            - cell [ref=f65e255]:
+              - strong [ref=f65e256]:
+                - link "26" [ref=f65e257] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=58481&itemNumber=26
+            - cell "10/10/2025" [ref=f65e258]
+            - cell "SIERRA CLUB" [ref=f65e259]
+            - cell "COM" [ref=f65e260]
+            - cell "COMMENTS ON LARGE LOAD INTERCONNECTION STANDARDS UNDER PURA §37.0561" [ref=f65e261]
+          - row [ref=f65e262]:
+            - cell [ref=f65e263]:
+              - strong [ref=f65e264]:
+                - link "27" [ref=f65e265] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=58481&itemNumber=27
+            - cell "10/10/2025" [ref=f65e266]
+            - cell "TEXAS-NEW MEXICO POWER COMPANY" [ref=f65e267]
+            - cell "COM" [ref=f65e268]
+            - cell "Texas-New Mexico Power Company's Comments to Commission Staff's Questions for Comment" [ref=f65e269]
+          - row [ref=f65e270]:
+            - cell [ref=f65e271]:
+              - strong [ref=f65e272]:
+                - link "28" [ref=f65e273] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=58481&itemNumber=28
+            - cell "10/10/2025" [ref=f65e274]
+            - cell "LANCIUM, LLC" [ref=f65e275]
+            - cell "COM" [ref=f65e276]
+            - cell "Lancium Comments on Project No. 58481" [ref=f65e277]
+          - row [ref=f65e278]:
+            - cell [ref=f65e279]:
+              - strong [ref=f65e280]:
+                - link "29" [ref=f65e281] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=58481&itemNumber=29
+            - cell "10/10/2025" [ref=f65e282]
+            - cell "SATOSHI ENERGY CORP." [ref=f65e283]
+            - cell "COM" [ref=f65e284]
+            - cell "Satoshi Comments on Project No. 58481" [ref=f65e285]
+          - row [ref=f65e286]:
+            - cell [ref=f65e287]:
+              - strong [ref=f65e288]:
+                - link "30" [ref=f65e289] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=58481&itemNumber=30
+            - cell "10/14/2025" [ref=f65e290]
+            - cell "ENCHANTED ROCK, LLC" [ref=f65e291]
+            - cell "COM" [ref=f65e292]
+            - cell "Enchanted Rock, LLC's Responses to Commission Staff's Questions for Comment" [ref=f65e293]
+          - row [ref=f65e294]:
+            - cell [ref=f65e295]:
+              - strong [ref=f65e296]:
+                - link "31" [ref=f65e297] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=58481&itemNumber=31
+            - cell "12/1/2025" [ref=f65e298]
+            - cell "PUC RULES & PROJECTS" [ref=f65e299]
+            - cell "PRJ" [ref=f65e300]
+            - cell "Discussion Draft w/12.19 Comment Deadline" [ref=f65e301]
+          - row [ref=f65e302]:
+            - cell [ref=f65e303]:
+              - strong [ref=f65e304]:
+                - link "32" [ref=f65e305] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=58481&itemNumber=32
+            - cell "12/8/2025" [ref=f65e306]
+            - cell "Schaper Energy Consulting LLC" [ref=f65e307]
+            - cell "COM" [ref=f65e308]
+            - cell "SCHAPER ENERGY CONSULTING LLC RESPONSE TO PROJECT NO. 58481, COMMENTS TO STAFF’s QUESTIONS AND DRAFT 16 TAC §25.194" [ref=f65e309]
+          - row [ref=f65e310]:
+            - cell [ref=f65e311]:
+              - strong [ref=f65e312]:
+                - link "33" [ref=f65e313] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=58481&itemNumber=33
+            - cell "12/16/2025" [ref=f65e314]
+            - cell "PUC RULES & PROJECTS" [ref=f65e315]
+            - cell "PRJ" [ref=f65e316]
+            - cell "Notice of January 9 Workshop" [ref=f65e317]
+          - row [ref=f65e318]:
+            - cell [ref=f65e319]:
+              - strong [ref=f65e320]:
+                - link "34" [ref=f65e321] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=58481&itemNumber=34
+            - cell "12/16/2025" [ref=f65e322]
+            - cell "Cholla Petroleum, Inc." [ref=f65e323]
+            - cell "COM" [ref=f65e324]
+            - cell "Cholla Comments on Draft Rule" [ref=f65e325]
+          - row [ref=f65e326]:
+            - cell [ref=f65e327]:
+              - strong [ref=f65e328]:
+                - link "35" [ref=f65e329] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=58481&itemNumber=35
+            - cell "12/17/2025" [ref=f65e330]
+            - cell "Cholla Petroleum, Inc." [ref=f65e331]
+            - cell "COM" [ref=f65e332]
+            - cell "Cholla Comments on Draft Rule Amended" [ref=f65e333]
+          - row [ref=f65e334]:
+            - cell [ref=f65e335]:
+              - strong [ref=f65e336]:
+                - link "36" [ref=f65e337] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=58481&itemNumber=36
+            - cell "12/18/2025" [ref=f65e338]
+            - cell "SIERRA CLUB" [ref=f65e339]
+            - cell "COM" [ref=f65e340]
+            - cell "Comments on proposed staff draft on large load interconnection standards." [ref=f65e341]
+          - row [ref=f65e342]:
+            - cell [ref=f65e343]:
+              - strong [ref=f65e344]:
+                - link "37" [ref=f65e345] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=58481&itemNumber=37
+            - cell "12/18/2025" [ref=f65e346]
+            - cell "Digital Power Network" [ref=f65e347]
+            - cell "COM" [ref=f65e348]
+            - cell "Digital Power Network comments on PUCT PROJECT NO. 58481." [ref=f65e349]
+          - row [ref=f65e350]:
+            - cell [ref=f65e351]:
+              - strong [ref=f65e352]:
+                - link "38" [ref=f65e353] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=58481&itemNumber=38
+            - cell "12/18/2025" [ref=f65e354]
+            - cell "SIERRA CLUB" [ref=f65e355]
+            - cell "COM" [ref=f65e356]
+            - cell "Comments from Sierra Club on Large Load Interconnection Standards" [ref=f65e357]
+          - row [ref=f65e358]:
+            - cell [ref=f65e359]:
+              - strong [ref=f65e360]:
+                - link "39" [ref=f65e361] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=58481&itemNumber=39
+            - cell "12/18/2025" [ref=f65e362]
+            - cell "FREEPORT LNG DEVELOPMENT, L.P." [ref=f65e363]
+            - cell "COM" [ref=f65e364]
+            - cell "Freeport LNG Development, L.P. comments to address new proposed §25.194(l)." [ref=f65e365]
+          - row [ref=f65e366]:
+            - cell [ref=f65e367]:
+              - strong [ref=f65e368]:
+                - link "40" [ref=f65e369] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=58481&itemNumber=40
+            - cell "12/18/2025" [ref=f65e370]
+            - cell "GOOGLE LLC, LANCIUM LLC" [ref=f65e371]
+            - cell "COM" [ref=f65e372]
+            - cell "Joint Comments of Google LLC and Lancium LLC to 58481 Large Load Interconnection Standards" [ref=f65e373]
+          - row [ref=f65e374]:
+            - cell [ref=f65e375]:
+              - strong [ref=f65e376]:
+                - link "41" [ref=f65e377] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=58481&itemNumber=41
+            - cell "12/19/2025" [ref=f65e378]
+            - cell "NORTH CENTRAL TEXAS COUNCIL OF GOVERNMENTS" [ref=f65e379]
+            - cell "COM" [ref=f65e380]
+            - cell "NCTCOG Comments on Draft 16 TAC §25.194 Project No 58481" [ref=f65e381]
+          - row [ref=f65e382]:
+            - cell [ref=f65e383]:
+              - strong [ref=f65e384]:
+                - link "42" [ref=f65e385] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=58481&itemNumber=42
+            - cell "12/19/2025" [ref=f65e386]
+            - cell "TCPA" [ref=f65e387]
+            - cell "COM" [ref=f65e388]
+            - cell "TCPA Comments on Staff Questions & Discussion Draft" [ref=f65e389]
+          - row [ref=f65e390]:
+            - cell [ref=f65e391]:
+              - strong [ref=f65e392]:
+                - link "43" [ref=f65e393] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=58481&itemNumber=43
+            - cell "12/19/2025" [ref=f65e394]
+            - cell "Skybox Datacenters LLC" [ref=f65e395]
+            - cell "COM" [ref=f65e396]
+            - cell "Comments of Skybox Datacenters LLC to 58481 Large Load Interconnection Standards" [ref=f65e397]
+          - row [ref=f65e398]:
+            - cell [ref=f65e399]:
+              - strong [ref=f65e400]:
+                - link "44" [ref=f65e401] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=58481&itemNumber=44
+            - cell "12/19/2025" [ref=f65e402]
+            - cell "PRIORITY POWER MANAGEMENT, LLC" [ref=f65e403]
+            - cell "PC" [ref=f65e404]
+            - cell "Priority Power Comments on Draft 16 TAC §25.194 Project No 58481" [ref=f65e405]
+          - row [ref=f65e406]:
+            - cell [ref=f65e407]:
+              - strong [ref=f65e408]:
+                - link "45" [ref=f65e409] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=58481&itemNumber=45
+            - cell "12/19/2025" [ref=f65e410]
+            - cell "TEXAS BLOCKCHAIN COUNCIL" [ref=f65e411]
+            - cell "COM" [ref=f65e412]
+            - cell "Project No. 58481 – Rulemaking to Implement Large Load Interconnection Standards (16 TAC §25.194) Comment Letter" [ref=f65e413]
+          - row [ref=f65e414]:
+            - cell [ref=f65e415]:
+              - strong [ref=f65e416]:
+                - link "46" [ref=f65e417] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=58481&itemNumber=46
+            - cell "12/19/2025" [ref=f65e418]
+            - cell "MONARCH ENERGY DEVELOPMENT LLC" [ref=f65e419]
+            - cell "COM" [ref=f65e420]
+            - cell "COMMENTS OF MONARCH ENERGY DEVELOPMENT LLC ON STAFF’s QUESTIONS AND DISCUSSION DRAFT OF NEW 16 TAC §25.194" [ref=f65e421]
+          - row [ref=f65e422]:
+            - cell [ref=f65e423]:
+              - strong [ref=f65e424]:
+                - link "47" [ref=f65e425] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=58481&itemNumber=47
+            - cell "12/19/2025" [ref=f65e426]
+            - cell "Dallas County Public Works" [ref=f65e427]
+            - cell "COM" [ref=f65e428]
+            - cell "Dallas County Public Works Comments on Implementation of SB 6" [ref=f65e429]
+          - row [ref=f65e430]:
+            - cell [ref=f65e431]:
+              - strong [ref=f65e432]:
+                - link "48" [ref=f65e433] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=58481&itemNumber=48
+            - cell "12/19/2025" [ref=f65e434]
+            - cell "Texas Electric Cooperatives, Inc." [ref=f65e435]
+            - cell "PRJ" [ref=f65e436]
+            - cell "Comments of Texas Electric Cooperatives, Inc." [ref=f65e437]
+          - row [ref=f65e438]:
+            - cell [ref=f65e439]:
+              - strong [ref=f65e440]:
+                - link "49" [ref=f65e441] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=58481&itemNumber=49
+            - cell "12/19/2025" [ref=f65e442]
+            - cell "CENTERPOINT ENERGY HOUSTON ELECTRIC, LLC" [ref=f65e443]
+            - cell "COM" [ref=f65e444]
+            - cell "Comments of CenterPoint Energy Houston Electric, LLC" [ref=f65e445]
+          - row [ref=f65e446]:
+            - cell [ref=f65e447]:
+              - strong [ref=f65e448]:
+                - link "50" [ref=f65e449] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=58481&itemNumber=50
+            - cell "12/19/2025" [ref=f65e450]
+            - cell "NRG ENERGY, INC." [ref=f65e451]
+            - cell "COM" [ref=f65e452]
+            - cell "NRG Energy, Inc.'s Comments on Staff's Discussion Draft" [ref=f65e453]
+          - row [ref=f65e454]:
+            - cell [ref=f65e455]:
+              - strong [ref=f65e456]:
+                - link "51" [ref=f65e457] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=58481&itemNumber=51
+            - cell "12/19/2025" [ref=f65e458]
+            - cell "Wise Energy Resources" [ref=f65e459]
+            - cell "COM" [ref=f65e460]
+            - cell "Wise Energy Resources Comments on Discussion Draft and Questions" [ref=f65e461]
+          - row [ref=f65e462]:
+            - cell [ref=f65e463]:
+              - strong [ref=f65e464]:
+                - link "52" [ref=f65e465] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=58481&itemNumber=52
+            - cell "12/19/2025" [ref=f65e466]
+            - cell "BASF" [ref=f65e467]
+            - cell "COM" [ref=f65e468]
+            - cell "BASF Comments on Rule Project 58481" [ref=f65e469]
+          - row [ref=f65e470]:
+            - cell [ref=f65e471]:
+              - strong [ref=f65e472]:
+                - link "53" [ref=f65e473] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=58481&itemNumber=53
+            - cell "12/19/2025" [ref=f65e474]
+            - cell "LCRA TRANSMISSION SERVICES CORPORATION" [ref=f65e475]
+            - cell "PRJ" [ref=f65e476]
+            - cell "RESPONSE TO QUESTIONS FOR COMMENT AND DRAFT NEW 16 TAC § 25.194" [ref=f65e477]
+          - row [ref=f65e478]:
+            - cell [ref=f65e479]:
+              - strong [ref=f65e480]:
+                - link "54" [ref=f65e481] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=58481&itemNumber=54
+            - cell "12/19/2025" [ref=f65e482]
+            - cell "THE DOW CHEMICAL COMPANY AND AFFILIATES" [ref=f65e483]
+            - cell "COM" [ref=f65e484]
+            - cell "P.58481 - Dow Comments.pdf" [ref=f65e485]
+          - row [ref=f65e486]:
+            - cell [ref=f65e487]:
+              - strong [ref=f65e488]:
+                - link "55" [ref=f65e489] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=58481&itemNumber=55
+            - cell "12/19/2025" [ref=f65e490]
+            - cell "Aperture" [ref=f65e491]
+            - cell "COM" [ref=f65e492]
+            - cell "Comments on Staff new Draft 16 TAC §25.194" [ref=f65e493]
+          - row [ref=f65e494]:
+            - cell [ref=f65e495]:
+              - strong [ref=f65e496]:
+                - link "56" [ref=f65e497] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=58481&itemNumber=56
+            - cell "12/19/2025" [ref=f65e498]
+            - cell "Hood County Clean Air Coalition" [ref=f65e499]
+            - cell "COM" [ref=f65e500]
+            - cell "Hood County Clean Air Coalition Comment for Rulemaking to Implement Large Load Interconnection Standards" [ref=f65e501]
+          - row [ref=f65e502]:
+            - cell [ref=f65e503]:
+              - strong [ref=f65e504]:
+                - link "57" [ref=f65e505] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=58481&itemNumber=57
+            - cell "12/19/2025" [ref=f65e506]
+            - cell "ERCOT STEEL MILLS" [ref=f65e507]
+            - cell "COM" [ref=f65e508]
+            - cell "ERCOT Steel Mills' Comments on Staff's Discussion Draft for Project No. 58481" [ref=f65e509]
+          - row [ref=f65e510]:
+            - cell [ref=f65e511]:
+              - strong [ref=f65e512]:
+                - link "58" [ref=f65e513] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=58481&itemNumber=58
+            - cell "12/19/2025" [ref=f65e514]
+            - cell "Golden Spread Electric Cooperative, Inc." [ref=f65e515]
+            - cell "COM" [ref=f65e516]
+            - cell "Comments of Golden Spread Electric Cooperative" [ref=f65e517]
+          - row [ref=f65e518]:
+            - cell [ref=f65e519]:
+              - strong [ref=f65e520]:
+                - link "59" [ref=f65e521] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=58481&itemNumber=59
+            - cell "12/19/2025" [ref=f65e522]
+            - cell "TPPA" [ref=f65e523]
+            - cell "COM" [ref=f65e524]
+            - cell "Texas Public Power Association (TPPA) Comments on Discussion Draft" [ref=f65e525]
+          - row [ref=f65e526]:
+            - cell [ref=f65e527]:
+              - strong [ref=f65e528]:
+                - link "60" [ref=f65e529] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=58481&itemNumber=60
+            - cell "12/19/2025" [ref=f65e530]
+            - cell "ROWAN DIGITAL INFRASTRUCTURE LLC" [ref=f65e531]
+            - cell "COM" [ref=f65e532]
+            - cell "ROWAN DIGITAL INFRASTRUCTURE LLC REPLY COMMENTS" [ref=f65e533]
+          - row [ref=f65e534]:
+            - cell [ref=f65e535]:
+              - strong [ref=f65e536]:
+                - link "61" [ref=f65e537] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=58481&itemNumber=61
+            - cell "12/19/2025" [ref=f65e538]
+            - cell "ONCOR ELECTRIC DELIVERY COMPANY LLC" [ref=f65e539]
+            - cell "COM" [ref=f65e540]
+            - cell "ONCOR ELECTRIC DELIVERY'S COMMENTS ON COMMISSION STAFF'S RULE 25.194 DISCUSSION DRAFT" [ref=f65e541]
+          - row [ref=f65e542]:
+            - cell [ref=f65e543]:
+              - strong [ref=f65e544]:
+                - link "62" [ref=f65e545] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=58481&itemNumber=62
+            - cell "12/19/2025" [ref=f65e546]
+            - cell "Provident Inc." [ref=f65e547]
+            - cell "COM" [ref=f65e548]
+            - cell "Provident Inc. comments on staff discussion draft" [ref=f65e549]
+          - row [ref=f65e550]:
+            - cell [ref=f65e551]:
+              - strong [ref=f65e552]:
+                - link "63" [ref=f65e553] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=58481&itemNumber=63
+            - cell "12/19/2025" [ref=f65e554]
+            - cell "TEXAS OIL & GAS ASSOCIATION" [ref=f65e555]
+            - cell "COM" [ref=f65e556]
+            - cell "TEXAS OIL & GAS ASSOCIATION'S COMMENTS ON DISCUSSION DRAFT 16 TAC §25.194" [ref=f65e557]
+          - row [ref=f65e558]:
+            - cell [ref=f65e559]:
+              - strong [ref=f65e560]:
+                - link "64" [ref=f65e561] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=58481&itemNumber=64
+            - cell "12/19/2025" [ref=f65e562]
+            - cell "OPUC" [ref=f65e563]
+            - cell "COM" [ref=f65e564]
+            - cell "OFFICE OF PUBLIC UTILITY COUNSEL’S COMMENTS ON DISCUSSION DRAFT AND QUESTIONS FOR PUBLIC COMMENTS RELATED TO NEW 16 TAC § 25.194" [ref=f65e565]
+          - row [ref=f65e566]:
+            - cell [ref=f65e567]:
+              - strong [ref=f65e568]:
+                - link "65" [ref=f65e569] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=58481&itemNumber=65
+            - cell "12/19/2025" [ref=f65e570]
+            - cell "TIEC" [ref=f65e571]
+            - cell "COM" [ref=f65e572]
+            - cell "TEXAS INDUSTRIAL ENERGY CONSUMERS’ COMMENTS" [ref=f65e573]
+          - row [ref=f65e574]:
+            - cell [ref=f65e575]:
+              - strong [ref=f65e576]:
+                - link "66" [ref=f65e577] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=58481&itemNumber=66
+            - cell "12/19/2025" [ref=f65e578]
+            - cell "Data Center Coalition" [ref=f65e579]
+            - cell "COM" [ref=f65e580]
+            - cell "DCC's Comments on the Discussion Draft (Project 58481)" [ref=f65e581]
+          - row [ref=f65e582]:
+            - cell [ref=f65e583]:
+              - strong [ref=f65e584]:
+                - link "67" [ref=f65e585] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=58481&itemNumber=67
+            - cell "12/19/2025" [ref=f65e586]
+            - cell "INFINIUM OPERATIONS, LLC" [ref=f65e587]
+            - cell "COM" [ref=f65e588]
+            - cell "INFINIUM'S COMMENTS ON LARGE LOAD INTERCONNECTION STANDARDS DISCUSSION DRAFT" [ref=f65e589]
+          - row [ref=f65e590]:
+            - cell [ref=f65e591]:
+              - strong [ref=f65e592]:
+                - link "68" [ref=f65e593] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=58481&itemNumber=68
+            - cell "12/19/2025" [ref=f65e594]
+            - cell "Eolian, L.P." [ref=f65e595]
+            - cell "PRJ" [ref=f65e596]
+            - cell "Eolian, L.P.'s Second Set of Comments on Rulemaking" [ref=f65e597]
+          - row [ref=f65e598]:
+            - cell [ref=f65e599]:
+              - strong [ref=f65e600]:
+                - link "69" [ref=f65e601] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=58481&itemNumber=69
+            - cell "12/19/2025" [ref=f65e602]
+            - cell "Splight Inc." [ref=f65e603]
+            - cell "COM" [ref=f65e604]
+            - cell "SPLIGHT COMMENTS ON STAFF'S DRAFT DISCUSSION RULE § 25.194" [ref=f65e605]
+          - row [ref=f65e606]:
+            - cell [ref=f65e607]:
+              - strong [ref=f65e608]:
+                - link "70" [ref=f65e609] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=58481&itemNumber=70
+            - cell "12/19/2025" [ref=f65e610]
+            - cell "CROSS TEXAS TRANSMISSION, LLC" [ref=f65e611]
+            - cell "COM" [ref=f65e612]
+            - cell "Comments of Cross Texas Transmission, LLC" [ref=f65e613]
+          - row [ref=f65e614]:
+            - cell [ref=f65e615]:
+              - strong [ref=f65e616]:
+                - link "71" [ref=f65e617] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=58481&itemNumber=71
+            - cell "12/19/2025" [ref=f65e618]
+            - cell "AEP TEXAS INC." [ref=f65e619]
+            - cell "PRJ" [ref=f65e620]
+            - cell "AEP TEXAS INC.’S COMMENTS ON STAFF DISCUSSION DRAFT" [ref=f65e621]
+          - row [ref=f65e622]:
+            - cell [ref=f65e623]:
+              - strong [ref=f65e624]:
+                - link "72" [ref=f65e625] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=58481&itemNumber=72
+            - cell "12/19/2025" [ref=f65e626]
+            - cell "Targa Resources LLC" [ref=f65e627]
+            - cell "COM" [ref=f65e628]
+            - cell "Targa Resources LLC's Comments in Response to Commission Staff's Discussion Draft" [ref=f65e629]
+          - row [ref=f65e630]:
+            - cell [ref=f65e631]:
+              - strong [ref=f65e632]:
+                - link "73" [ref=f65e633] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=58481&itemNumber=73
+            - cell "12/19/2025" [ref=f65e634]
+            - cell "TEXAS-NEW MEXICO POWER COMPANY" [ref=f65e635]
+            - cell "COM" [ref=f65e636]
+            - cell "Texas-New Mexico Power Company’s Comments To Commission Staff’s Questions For Comment On Draft New 16 Tac § 25.194" [ref=f65e637]
+          - row [ref=f65e638]:
+            - cell [ref=f65e639]:
+              - strong [ref=f65e640]:
+                - link "74" [ref=f65e641] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=58481&itemNumber=74
+            - cell "12/19/2025" [ref=f65e642]
+            - cell "OCCIDENTAL PERMIAN LTD" [ref=f65e643]
+            - cell "COM" [ref=f65e644]
+            - cell "Occidental Permian, LTD. Comments" [ref=f65e645]
+          - row [ref=f65e646]:
+            - cell [ref=f65e647]:
+              - strong [ref=f65e648]:
+                - link "75" [ref=f65e649] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=58481&itemNumber=75
+            - cell "12/19/2025" [ref=f65e650]
+            - cell "CRUSOE ENERGY SYSTEMS LLC" [ref=f65e651]
+            - cell "PL" [ref=f65e652]
+            - cell "CRUSOE ENERGY SYSTEMS LLC’S COMMENTS ON STAFF’S DRAFT DISCUSSION RULE 16 TAC § 25.194" [ref=f65e653]
+          - row [ref=f65e654]:
+            - cell [ref=f65e655]:
+              - strong [ref=f65e656]:
+                - link "76" [ref=f65e657] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=58481&itemNumber=76
+            - cell "12/19/2025" [ref=f65e658]
+            - cell "ERCOT" [ref=f65e659]
+            - cell "COM" [ref=f65e660]
+            - cell "ELECTRIC RELIABILITY COUNCIL OF TEXAS, INC.’S COMMENTS ON DISCUSSION DRAFT" [ref=f65e661]
+          - row [ref=f65e662]:
+            - cell [ref=f65e663]:
+              - strong [ref=f65e664]:
+                - link "77" [ref=f65e665] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=58481&itemNumber=77
+            - cell "12/19/2025" [ref=f65e666]
+            - cell "SATOSHI ENERGY CORP." [ref=f65e667]
+            - cell "COM" [ref=f65e668]
+            - cell "SATOSHI ENERGY COMMENTS ON DRAFT NEW 16 TAC §25.194 ON PROJECT NO. 58481, RULEMAKING TO IMPLEMENT LARGE LOAD INTERCONNECTION STANDARDS UNDER PURA §37.0561" [ref=f65e669]
+          - row [ref=f65e670]:
+            - cell [ref=f65e671]:
+              - strong [ref=f65e672]:
+                - link "78" [ref=f65e673] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=58481&itemNumber=78
+            - cell "12/19/2025" [ref=f65e674]
+            - cell "TEXAS ENERGY BUYERS ALLIANCE" [ref=f65e675]
+            - cell "COM" [ref=f65e676]
+            - cell "TEBA's Comments on Commission Staff's Questions and Discussion Draft" [ref=f65e677]
+          - row [ref=f65e678]:
+            - cell [ref=f65e679]:
+              - strong [ref=f65e680]:
+                - link "79" [ref=f65e681] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=58481&itemNumber=79
+            - cell "12/19/2025" [ref=f65e682]
+            - cell "BLACK MOUNTAIN POWER" [ref=f65e683]
+            - cell "COM" [ref=f65e684]
+            - cell "BLACK MOUNTAIN POWER COMMENTS ON PROJECT NO. 58481 DISCUSSION DRAFT" [ref=f65e685]
+          - row [ref=f65e686]:
+            - cell [ref=f65e687]:
+              - strong [ref=f65e688]:
+                - link "80" [ref=f65e689] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=58481&itemNumber=80
+            - cell "12/19/2025" [ref=f65e690]
+            - cell "Exxon Mobil Corporation" [ref=f65e691]
+            - cell "COM" [ref=f65e692]
+            - cell "Exxon Mobil Corporation comments on 58481 Discussion Draft" [ref=f65e693]
+          - row [ref=f65e694]:
+            - cell [ref=f65e695]:
+              - strong [ref=f65e696]:
+                - link "81" [ref=f65e697] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=58481&itemNumber=81
+            - cell "12/19/2025" [ref=f65e698]
+            - cell "Soluna Digital" [ref=f65e699]
+            - cell "COM" [ref=f65e700]
+            - cell "SOLUNA DIGITAL’S SUPPORTIVE COMMENTS FOR COMMENTS SUBMITTED BY SATOSHI ENERGY ON STAFF'S DISCUSSION DRAFT NEW 16 TAC §25.194" [ref=f65e701]
+          - row [ref=f65e702]:
+            - cell [ref=f65e703]:
+              - strong [ref=f65e704]:
+                - link "82" [ref=f65e705] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=58481&itemNumber=82
+            - cell "1/2/2026" [ref=f65e706]
+            - cell "PUC RULES & PROJECTS" [ref=f65e707]
+            - cell "PRJ" [ref=f65e708]
+            - cell "Staff Memo and January 9 Workshop Agenda w/Attachments" [ref=f65e709]
+          - row [ref=f65e710]:
+            - cell [ref=f65e711]:
+              - strong [ref=f65e712]:
+                - link "83" [ref=f65e713] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=58481&itemNumber=83
+            - cell "1/16/2026" [ref=f65e714]
+            - cell "SATOSHI ENERGY CORP." [ref=f65e715]
+            - cell "COM" [ref=f65e716]
+            - cell "SATOSHI ENERGY COMMENTS ON STAFF'S SECOND DISCUSSION DRAFT ON PROJECT NO. 58481, RULEMAKING TO IMPLEMENT LARGE LOAD INTERCONNECTION STANDARDS UNDER PURA §37.0561" [ref=f65e717]
+          - row [ref=f65e718]:
+            - cell [ref=f65e719]:
+              - strong [ref=f65e720]:
+                - link "84" [ref=f65e721] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=58481&itemNumber=84
+            - cell "1/16/2026" [ref=f65e722]
+            - cell "CRUSOE ENERGY SYSTEMS LLC" [ref=f65e723]
+            - cell "COM" [ref=f65e724]
+            - cell "CRUSOE ENERGY SYSTEMS LLC’S COMMENTS ON STAFF’S SECOND DRAFT DISCUSSION RULE 16 TAC § 25.194" [ref=f65e725]
+          - row [ref=f65e726]:
+            - cell [ref=f65e727]:
+              - strong [ref=f65e728]:
+                - link "85" [ref=f65e729] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=58481&itemNumber=85
+            - cell "1/16/2026" [ref=f65e730]
+            - cell "TIEC" [ref=f65e731]
+            - cell "COM" [ref=f65e732]
+            - cell "TEXAS INDUSTRIAL ENERGY CONSUMERS’ COMMENTS" [ref=f65e733]
+          - row [ref=f65e734]:
+            - cell [ref=f65e735]:
+              - strong [ref=f65e736]:
+                - link "86" [ref=f65e737] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=58481&itemNumber=86
+            - cell "1/16/2026" [ref=f65e738]
+            - cell "Cormint" [ref=f65e739]
+            - cell "COM" [ref=f65e740]
+            - cell "Existing load increases are inherently not speculative" [ref=f65e741]
+          - row [ref=f65e742]:
+            - cell [ref=f65e743]:
+              - strong [ref=f65e744]:
+                - link "87" [ref=f65e745] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=58481&itemNumber=87
+            - cell "1/16/2026" [ref=f65e746]
+            - cell "GOOGLE LLC, LANCIUM LLC" [ref=f65e747]
+            - cell "COM" [ref=f65e748]
+            - cell "Google and Lancium Joint Comments to STaff Questions and 2nd Discussion Draft" [ref=f65e749]
+          - row [ref=f65e750]:
+            - cell [ref=f65e751]:
+              - strong [ref=f65e752]:
+                - link "88" [ref=f65e753] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=58481&itemNumber=88
+            - cell "1/16/2026" [ref=f65e754]
+            - cell "TEXAS ELECTRIC COOPERATIVES, INC." [ref=f65e755]
+            - cell "PRJ" [ref=f65e756]
+            - cell "POST-WORKSHOP COMMENTS OF TEXAS ELECTRIC COOPERATIVES, INC." [ref=f65e757]
+          - row [ref=f65e758]:
+            - cell [ref=f65e759]:
+              - strong [ref=f65e760]:
+                - link "89" [ref=f65e761] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=58481&itemNumber=89
+            - cell "1/16/2026" [ref=f65e762]
+            - cell "SERENA ENERGY" [ref=f65e763]
+            - cell "COM" [ref=f65e764]
+            - cell "COMMENTS OF SERENA ENERGY" [ref=f65e765]
+          - row [ref=f65e766]:
+            - cell [ref=f65e767]:
+              - strong [ref=f65e768]:
+                - link "90" [ref=f65e769] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=58481&itemNumber=90
+            - cell "1/16/2026" [ref=f65e770]
+            - cell "CENTERPOINT ENERGY HOUSTON ELECTRIC" [ref=f65e771]
+            - cell "PRJ" [ref=f65e772]
+            - cell "Comments of CenterPoint Energy Houston Electric, LLC" [ref=f65e773]
+          - row [ref=f65e774]:
+            - cell [ref=f65e775]:
+              - strong [ref=f65e776]:
+                - link "91" [ref=f65e777] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=58481&itemNumber=91
+            - cell "1/16/2026" [ref=f65e778]
+            - cell "Sierra Club" [ref=f65e779]
+            - cell "COM" [ref=f65e780]
+            - cell "Further comments from Sierra Club on Large Load Interconnection Standards" [ref=f65e781]
+          - row [ref=f65e782]:
+            - cell [ref=f65e783]:
+              - strong [ref=f65e784]:
+                - link "92" [ref=f65e785] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=58481&itemNumber=92
+            - cell "1/16/2026" [ref=f65e786]
+            - cell "ELECTRIC TRANSMISSION TEXAS, LLC" [ref=f65e787]
+            - cell "COM" [ref=f65e788]
+            - cell "ETT’S COMMENTS ON STAFF’S 2ND DISCUSSION DRAFT" [ref=f65e789]
+          - row [ref=f65e790]:
+            - cell [ref=f65e791]:
+              - strong [ref=f65e792]:
+                - link "93" [ref=f65e793] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=58481&itemNumber=93
+            - cell "1/16/2026" [ref=f65e794]
+            - cell "CPS ENERGY" [ref=f65e795]
+            - cell "COM" [ref=f65e796]
+            - cell "CPS Energy's Response to Questions for Comment" [ref=f65e797]
+          - row [ref=f65e798]:
+            - cell [ref=f65e799]:
+              - strong [ref=f65e800]:
+                - link "94" [ref=f65e801] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=58481&itemNumber=94
+            - cell "1/16/2026" [ref=f65e802]
+            - cell "ROWAN DIGITAL INFRASTRUCTURE LLC" [ref=f65e803]
+            - cell "PRJ" [ref=f65e804]
+            - cell "Comments on Staff's Second Draft Discussion Rule in 16 TAC 25.194" [ref=f65e805]
+          - row [ref=f65e806]:
+            - cell [ref=f65e807]:
+              - strong [ref=f65e808]:
+                - link "95" [ref=f65e809] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=58481&itemNumber=95
+            - cell "1/16/2026" [ref=f65e810]
+            - cell "ONCOR ELECTRIC DELIVERY COMPANY LLC" [ref=f65e811]
+            - cell "COM" [ref=f65e812]
+            - cell "ONCOR ELECTRIC DELIVERY’S COMMENTS ON COMMISSION STAFF’S SECOND RULE 25.194 DISCUSSION DRAFT" [ref=f65e813]
+          - row [ref=f65e814]:
+            - cell [ref=f65e815]:
+              - strong [ref=f65e816]:
+                - link "96" [ref=f65e817] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=58481&itemNumber=96
+            - cell "1/16/2026" [ref=f65e818]
+            - cell "BLACK MOUNTAIN POWER" [ref=f65e819]
+            - cell "COM" [ref=f65e820]
+            - cell "BLACK MOUNTAIN POWER COMMENTS ON PROJECT NO. 58481" [ref=f65e821]
+          - row [ref=f65e822]:
+            - cell [ref=f65e823]:
+              - strong [ref=f65e824]:
+                - link "97" [ref=f65e825] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=58481&itemNumber=97
+            - cell "1/16/2026" [ref=f65e826]
+            - cell "AEP TEXAS INC." [ref=f65e827]
+            - cell "COM" [ref=f65e828]
+            - cell "AEP TEXAS' COMMENTS ON STAFF’S SECOND DISCUSSION DRAFT" [ref=f65e829]
+          - row [ref=f65e830]:
+            - cell [ref=f65e831]:
+              - strong [ref=f65e832]:
+                - link "98" [ref=f65e833] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=58481&itemNumber=98
+            - cell "1/16/2026" [ref=f65e834]
+            - cell "Data Center Coalition" [ref=f65e835]
+            - cell "COM" [ref=f65e836]
+            - cell "Additional Comment's on Second Discussion Draft" [ref=f65e837]
+          - row [ref=f65e838]:
+            - cell [ref=f65e839]:
+              - strong [ref=f65e840]:
+                - link "99" [ref=f65e841] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=58481&itemNumber=99
+            - cell "1/16/2026" [ref=f65e842]
+            - cell "SCHAPER ENERGY CONSULTING LLC" [ref=f65e843]
+            - cell "COM" [ref=f65e844]
+            - cell "Project No. 58481_Schaper Energy Consulting_Supplemental Comments" [ref=f65e845]
+          - row [ref=f65e846]:
+            - cell [ref=f65e847]:
+              - strong [ref=f65e848]:
+                - link "100" [ref=f65e849] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=58481&itemNumber=100
+            - cell "1/16/2026" [ref=f65e850]
+            - cell "OPUC" [ref=f65e851]
+            - cell "COM" [ref=f65e852]
+            - cell "OPUC’S COMMENTS ON STAFF’S SECOND SET OF QUESTIONS FOR PUBLIC COMMENT AND SECOND DISCUSSION DRAFT RELATED TO NEW 16 TAC § 25.194" [ref=f65e853]
+          - row [ref=f65e854]:
+            - cell [ref=f65e855]:
+              - strong [ref=f65e856]:
+                - link "101" [ref=f65e857] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=58481&itemNumber=101
+            - cell "1/16/2026" [ref=f65e858]
+            - cell "CITY OF RED OAK" [ref=f65e859]
+            - cell "COM" [ref=f65e860]
+            - cell "City of Red Oak Comments on the 2nd Discussion Draft" [ref=f65e861]
+          - row [ref=f65e862]:
+            - cell [ref=f65e863]:
+              - strong [ref=f65e864]:
+                - link "102" [ref=f65e865] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=58481&itemNumber=102
+            - cell "1/16/2026" [ref=f65e866]
+            - cell "TEXAS BLOCKCHAIN COUNCIL" [ref=f65e867]
+            - cell "COM" [ref=f65e868]
+            - cell "Feedback Post January 9, 2026 PUC Hearing Regarding PUCT Project No. 58481 (Large Load Interconnection Standards)" [ref=f65e869]
+          - row [ref=f65e870]:
+            - cell [ref=f65e871]:
+              - strong [ref=f65e872]:
+                - link "103" [ref=f65e873] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=58481&itemNumber=103
+            - cell "1/16/2026" [ref=f65e874]
+            - cell "Cholla, Inc." [ref=f65e875]
+            - cell "COM" [ref=f65e876]
+            - cell "Comments of Cholla on Revised Draft Rule." [ref=f65e877]
+          - row [ref=f65e878]:
+            - cell [ref=f65e879]:
+              - strong [ref=f65e880]:
+                - link "104" [ref=f65e881] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=58481&itemNumber=104
+            - cell "1/17/2026" [ref=f65e882]
+            - cell "Tract" [ref=f65e883]
+            - cell "COM" [ref=f65e884]
+            - cell "Tract Post-Workshop Comments on Staff's Second Discussion Draft" [ref=f65e885]
+          - row [ref=f65e886]:
+            - cell [ref=f65e887]:
+              - strong [ref=f65e888]:
+                - link "105" [ref=f65e889] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=58481&itemNumber=105
+            - cell "1/20/2026" [ref=f65e890]
+            - cell "TEXAS-NEW MEXICO POWER COMPANY" [ref=f65e891]
+            - cell "COM" [ref=f65e892]
+            - cell "Comments of Texas-New Mexico Power Company" [ref=f65e893]
+          - row [ref=f65e894]:
+            - cell [ref=f65e895]:
+              - strong [ref=f65e896]:
+                - link "106" [ref=f65e897] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=58481&itemNumber=106
+            - cell "2/12/2026" [ref=f65e898]
+            - cell "Leaptran, Inc." [ref=f65e899]
+            - cell "COM" [ref=f65e900]
+            - cell "Comments of Leaptran, Inc." [ref=f65e901]
+          - row [ref=f65e902]:
+            - cell [ref=f65e903]:
+              - strong [ref=f65e904]:
+                - link "107" [ref=f65e905] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=58481&itemNumber=107
+            - cell "2/13/2026" [ref=f65e906]
+            - cell "PUC RULES & PROJECTS" [ref=f65e907]
+            - cell "PRJ" [ref=f65e908]
+            - cell "OM Item No. 27 - Staff Memo & PFP w/March 27 Comment Deadline" [ref=f65e909]
+          - row [ref=f65e910]:
+            - cell [ref=f65e911]:
+              - strong [ref=f65e912]:
+                - link "108" [ref=f65e913] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=58481&itemNumber=108
+            - cell "2/17/2026" [ref=f65e914]
+            - cell "Cholla, Inc." [ref=f65e915]
+            - cell "COM" [ref=f65e916]
+            - cell "Comments regarding Fee recommendation by Staff" [ref=f65e917]
+          - row [ref=f65e918]:
+            - cell [ref=f65e919]:
+              - strong [ref=f65e920]:
+                - link "109" [ref=f65e921] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=58481&itemNumber=109
+            - cell "2/18/2026" [ref=f65e922]
+            - cell "SCHAPER ENERGY CONSULTING LLC" [ref=f65e923]
+            - cell "COM" [ref=f65e924]
+            - cell "SCHAPER ENERGY ENERGY CONSULTING COMMENTS TO STAFF DISCUSSION DRAFT 16 (TAC) §25.194 DATED FEBRUARY 13, 2026" [ref=f65e925]
+          - row [ref=f65e926]:
+            - cell [ref=f65e927]:
+              - strong [ref=f65e928]:
+                - link "110" [ref=f65e929] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=58481&itemNumber=110
+            - cell "2/19/2026" [ref=f65e930]
+            - cell "Google LLC, Lancium LLC" [ref=f65e931]
+            - cell "COM" [ref=f65e932]
+            - cell "Google and Lancium Joint Comments to Proposed PFP" [ref=f65e933]
+          - row [ref=f65e934]:
+            - cell [ref=f65e935]:
+              - strong [ref=f65e936]:
+                - link "111" [ref=f65e937] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=58481&itemNumber=111
+            - cell "2/26/2026" [ref=f65e938]
+            - cell "Luminary Strategies,LLC" [ref=f65e939]
+            - cell "PC" [ref=f65e940]
+            - cell "Speed to Power Concept Paper for ERCOT Large Load Batch Study Proceedings" [ref=f65e941]
+          - row [ref=f65e942]:
+            - cell [ref=f65e943]:
+              - strong [ref=f65e944]:
+                - link "112" [ref=f65e945] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=58481&itemNumber=112
+            - cell "3/4/2026" [ref=f65e946]
+            - cell "IREN" [ref=f65e947]
+            - cell "COM" [ref=f65e948]
+            - cell "IREN Comments on Proposed PFP" [ref=f65e949]
+          - row [ref=f65e950]:
+            - cell [ref=f65e951]:
+              - strong [ref=f65e952]:
+                - link "113" [ref=f65e953] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=58481&itemNumber=113
+            - cell "3/4/2026" [ref=f65e954]
+            - cell "Monarch Energy Development LLC" [ref=f65e955]
+            - cell "COM" [ref=f65e956]
+            - cell "Monarch Energy Comments on Proposal for Publication" [ref=f65e957]
+          - row [ref=f65e958]:
+            - cell [ref=f65e959]:
+              - strong [ref=f65e960]:
+                - link "114" [ref=f65e961] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=58481&itemNumber=114
+            - cell "3/4/2026" [ref=f65e962]
+            - cell "Provident, Inc." [ref=f65e963]
+            - cell "COM" [ref=f65e964]
+            - cell "Provident, Inc. Comments on Proposed Proposal for Publication" [ref=f65e965]
+          - row [ref=f65e966]:
+            - cell [ref=f65e967]:
+              - strong [ref=f65e968]:
+                - link "115" [ref=f65e969] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=58481&itemNumber=115
+            - cell "3/10/2026" [ref=f65e970]
+            - cell "GOOGLE LLC, LANCIUM LLC" [ref=f65e971]
+            - cell "COM" [ref=f65e972]
+            - cell "JOINT REDLINES FOR THE PROPOSED PROPOSAL FOR PUBLICATION" [ref=f65e973]
+          - row [ref=f65e974]:
+            - cell [ref=f65e975]:
+              - strong [ref=f65e976]:
+                - link "116" [ref=f65e977] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=58481&itemNumber=116
+            - cell "3/11/2026" [ref=f65e978]
+            - cell "Cipher Digital" [ref=f65e979]
+            - cell "COM" [ref=f65e980]
+            - cell "CIPHER DIGITAL INC. COMMENTS TO STAFF PROPOSED PROPOSAL FOR PUBLICATION" [ref=f65e981]
+          - row [ref=f65e982]:
+            - cell [ref=f65e983]:
+              - strong [ref=f65e984]:
+                - link "117" [ref=f65e985] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=58481&itemNumber=117
+            - cell "3/11/2026" [ref=f65e986]
+            - cell "EdgeConnex" [ref=f65e987]
+            - cell "COM" [ref=f65e988]
+            - cell "EDGECONNEX COMMENTS TO STAFF'S PROPOSED PROPOSAL FOR PUBLICATION" [ref=f65e989]
+          - row [ref=f65e990]:
+            - cell [ref=f65e991]:
+              - strong [ref=f65e992]:
+                - link "118" [ref=f65e993] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=58481&itemNumber=118
+            - cell "3/11/2026" [ref=f65e994]
+            - cell "PUC OPDM" [ref=f65e995]
+            - cell "PL" [ref=f65e996]
+            - cell "CHAIRMAN GLEESON MEMORANDUM" [ref=f65e997]
+          - row [ref=f65e998]:
+            - cell [ref=f65e999]:
+              - strong [ref=f65e1000]:
+                - link "119" [ref=f65e1001] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=58481&itemNumber=119
+            - cell "3/11/2026" [ref=f65e1002]
+            - cell "Engine 1" [ref=f65e1003]
+            - cell "COM" [ref=f65e1004]
+            - cell "Engine 1's Comments on PUCT Staff's Proposal for Publication" [ref=f65e1005]
+          - row [ref=f65e1006]:
+            - cell [ref=f65e1007]:
+              - strong [ref=f65e1008]:
+                - link "120" [ref=f65e1009] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=58481&itemNumber=120
+            - cell "3/11/2026" [ref=f65e1010]
+            - cell "Hut 8 Corp" [ref=f65e1011]
+            - cell "COM" [ref=f65e1012]
+            - cell "Hut 8 Comments on Staff's Proposal for Publication" [ref=f65e1013]
+          - row [ref=f65e1014]:
+            - cell [ref=f65e1015]:
+              - strong [ref=f65e1016]:
+                - link "121" [ref=f65e1017] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=58481&itemNumber=121
+            - cell "3/11/2026" [ref=f65e1018]
+            - cell "Nightpeak Energy" [ref=f65e1019]
+            - cell "COM" [ref=f65e1020]
+            - cell "Nightpeak Energy Comments on Staff's Proposal for Publication" [ref=f65e1021]
+          - row [ref=f65e1022]:
+            - cell [ref=f65e1023]:
+              - strong [ref=f65e1024]:
+                - link "122" [ref=f65e1025] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=58481&itemNumber=122
+            - cell "3/12/2026" [ref=f65e1026]
+            - cell "PUC OPDM" [ref=f65e1027]
+            - cell "PRJ" [ref=f65e1028]
+            - cell "PROPOSAL FOR PUBLICATION OF NEW 16 TAC §25.194" [ref=f65e1029]
+          - row [ref=f65e1030]:
+            - cell [ref=f65e1031]:
+              - strong [ref=f65e1032]:
+                - link "123" [ref=f65e1033] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=58481&itemNumber=123
+            - cell "3/12/2026" [ref=f65e1034]
+            - cell "PUC RULES & PROJECTS" [ref=f65e1035]
+            - cell "PRJ" [ref=f65e1036]
+            - cell "Texas Register Acknowledgement of Receipt - Comments Due 04/17/2026" [ref=f65e1037]
+          - row [ref=f65e1038]:
+            - cell [ref=f65e1039]:
+              - strong [ref=f65e1040]:
+                - link "124" [ref=f65e1041] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=58481&itemNumber=124
+            - cell "3/16/2026" [ref=f65e1042]
+            - cell "PUC RULES & PROJECTS" [ref=f65e1043]
+            - cell "PRJ" [ref=f65e1044]
+            - cell "Staff Memo w/MS Word Version of PFP" [ref=f65e1045]
+          - row [ref=f65e1046]:
+            - cell [ref=f65e1047]:
+              - strong [ref=f65e1048]:
+                - link "125" [ref=f65e1049] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=58481&itemNumber=125
+            - cell "3/19/2026" [ref=f65e1050]
+            - cell "MONARCH ENERGY" [ref=f65e1051]
+            - cell "COM" [ref=f65e1052]
+            - cell "Monarch Energy Additional Comments on Proposal for Publication" [ref=f65e1053]
+          - row [ref=f65e1054]:
+            - cell [ref=f65e1055]:
+              - strong [ref=f65e1056]:
+                - link "126" [ref=f65e1057] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=58481&itemNumber=126
+            - cell "3/19/2026" [ref=f65e1058]
+            - cell "Serena Power" [ref=f65e1059]
+            - cell "COM" [ref=f65e1060]
+            - cell "Serena Power Comments" [ref=f65e1061]
+          - row [ref=f65e1062]:
+            - cell [ref=f65e1063]:
+              - strong [ref=f65e1064]:
+                - link "127" [ref=f65e1065] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=58481&itemNumber=127
+            - cell "3/20/2026" [ref=f65e1066]
+            - cell "VISTRA CORP." [ref=f65e1067]
+            - cell "PRJ" [ref=f65e1068]
+            - cell "Vistra Corp.'s Comments on Planning Guide Revision Request 145 for Project 58481" [ref=f65e1069]
+          - row [ref=f65e1070]:
+            - cell [ref=f65e1071]:
+              - strong [ref=f65e1072]:
+                - link "128" [ref=f65e1073] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=58481&itemNumber=128
+            - cell "3/27/2026" [ref=f65e1074]
+            - cell "Cipher Digital" [ref=f65e1075]
+            - cell "COM" [ref=f65e1076]
+            - cell "Cipher Digital Comments on PUC Docket 58481" [ref=f65e1077]
+          - row [ref=f65e1078]:
+            - cell [ref=f65e1079]:
+              - strong [ref=f65e1080]:
+                - link "129" [ref=f65e1081] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=58481&itemNumber=129
+            - cell "3/29/2026" [ref=f65e1082]
+            - cell "SCHAPER ENERGY CONSULTING LLC" [ref=f65e1083]
+            - cell "COM" [ref=f65e1084]
+            - cell "PUC Project No. 58481 - Interconnection Agreement Standards Applicability to Batch Zero" [ref=f65e1085]
+          - row [ref=f65e1086]:
+            - cell [ref=f65e1087]:
+              - strong [ref=f65e1088]:
+                - link "130" [ref=f65e1089] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=58481&itemNumber=130
+            - cell "3/30/2026" [ref=f65e1090]
+            - cell "Jason Buster" [ref=f65e1091]
+            - cell "COM" [ref=f65e1092]
+            - cell "Comments on Proposal for Publication of 16 TAC §25.194 – Project No. 58481" [ref=f65e1093]
+          - row [ref=f65e1094]:
+            - cell [ref=f65e1095]:
+              - strong [ref=f65e1096]:
+                - link "131" [ref=f65e1097] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=58481&itemNumber=131
+            - cell "3/31/2026" [ref=f65e1098]
+            - cell "SCHAPER ENERGY CONSULTING LLC" [ref=f65e1099]
+            - cell "COM" [ref=f65e1100]
+            - cell "Project No. 58481 PFP Comments and Proposed Draft Redlines" [ref=f65e1101]
+          - row [ref=f65e1102]:
+            - cell [ref=f65e1103]:
+              - strong [ref=f65e1104]:
+                - link "132" [ref=f65e1105] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=58481&itemNumber=132
+            - cell "4/6/2026" [ref=f65e1106]
+            - cell "Competitive Power Ventures" [ref=f65e1107]
+            - cell "COM" [ref=f65e1108]
+            - cell "CPV Comments on Proposal for Publication of 16 TAC §25.194" [ref=f65e1109]
+          - row [ref=f65e1110]:
+            - cell [ref=f65e1111]:
+              - strong [ref=f65e1112]:
+                - link "133" [ref=f65e1113] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=58481&itemNumber=133
+            - cell "4/7/2026" [ref=f65e1114]
+            - cell "Cholla, Inc." [ref=f65e1115]
+            - cell "COM" [ref=f65e1116]
+            - cell "Cholla comments on Proposal for Publication" [ref=f65e1117]
+          - row [ref=f65e1118]:
+            - cell [ref=f65e1119]:
+              - strong [ref=f65e1120]:
+                - link "134" [ref=f65e1121] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=58481&itemNumber=134
+            - cell "4/9/2026" [ref=f65e1122]
+            - cell "VISTRA CORP." [ref=f65e1123]
+            - cell "COM" [ref=f65e1124]
+            - cell "Vistra Corp.'s Additional Comments on Planning Guide Revision Request 145 for Project 58481" [ref=f65e1125]
+          - row [ref=f65e1126]:
+            - cell [ref=f65e1127]:
+              - strong [ref=f65e1128]:
+                - link "135" [ref=f65e1129] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=58481&itemNumber=135
+            - cell "4/10/2026" [ref=f65e1130]
+            - cell "SKYBOX DATACENTERS, LLC" [ref=f65e1131]
+            - cell "COM" [ref=f65e1132]
+            - cell "Skybox Datacenters, LLC's Initial Comments" [ref=f65e1133]
+          - row [ref=f65e1134]:
+            - cell [ref=f65e1135]:
+              - strong [ref=f65e1136]:
+                - link "136" [ref=f65e1137] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=58481&itemNumber=136
+            - cell "4/10/2026" [ref=f65e1138]
+            - cell "Zachary Butler, Blind Mice Labs" [ref=f65e1139]
+            - cell "COM" [ref=f65e1140]
+            - cell "Public Comment on SB 6 Large-Load Interconnection Standards — Satellite-Based Evidence of Data Center Roof Thermal Degradation and Grid Demand Impact (403 TX Facilities, 27M SF, $101M Annual Energy Waste, 247M Gallons Avoidable Water)" [ref=f65e1141]
+          - row [ref=f65e1142]:
+            - cell [ref=f65e1143]:
+              - strong [ref=f65e1144]:
+                - link "137" [ref=f65e1145] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=58481&itemNumber=137
+            - cell "4/10/2026" [ref=f65e1146]
+            - cell "Zachary Butler, Blind Mice Labs" [ref=f65e1147]
+            - cell "COM" [ref=f65e1148]
+            - cell "Supplemental Filing — Revised 2-Page Summary (Corrects and supersedes initial filing FCROOJZE dated 4/10/2026)" [ref=f65e1149]
+          - row [ref=f65e1150]:
+            - cell [ref=f65e1151]:
+              - strong [ref=f65e1152]:
+                - link "138" [ref=f65e1153] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=58481&itemNumber=138
+            - cell "4/12/2026" [ref=f65e1154]
+            - cell "Zack Butler | EnerShield AI | Blind Mice Labs" [ref=f65e1155]
+            - cell "PC" [ref=f65e1156]
+            - cell "Supplemental Comments and Request for Public Hearing of Zack Butler / EnerShield AI Regarding Passive Infrastructure Degradation and ERCOT Coincident Peak Demand — Supersedes Item No. 136" [ref=f65e1157]
+          - row [ref=f65e1158]:
+            - cell [ref=f65e1159]:
+              - strong [ref=f65e1160]:
+                - link "139" [ref=f65e1161] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=58481&itemNumber=139
+            - cell "4/13/2026" [ref=f65e1162]
+            - cell "AEP COMPANIES" [ref=f65e1163]
+            - cell "COM" [ref=f65e1164]
+            - cell "AEP COMPANIES’ COMMENTS ON COMMISSION’S PROPOSAL FOR PUBLICATION" [ref=f65e1165]
+          - row [ref=f65e1166]:
+            - cell [ref=f65e1167]:
+              - strong [ref=f65e1168]:
+                - link "140" [ref=f65e1169] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=58481&itemNumber=140
+            - cell "4/13/2026" [ref=f65e1170]
+            - cell "CCNG, Inc." [ref=f65e1171]
+            - cell "COM" [ref=f65e1172]
+            - cell "CCNG Comments and Redlines for the Proposal for Publication in Project 58481" [ref=f65e1173]
+          - row [ref=f65e1174]:
+            - cell [ref=f65e1175]:
+              - strong [ref=f65e1176]:
+                - link "141" [ref=f65e1177] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=58481&itemNumber=141
+            - cell "4/13/2026" [ref=f65e1178]
+            - cell "Tract Holding Company I, LLC" [ref=f65e1179]
+            - cell "COM" [ref=f65e1180]
+            - cell "TRACT HOLDING COMPANY I, LLC’S COMMENTS ON THE COMMISSION’S PROPOSAL FOR PUBLICATION TO IMPLEMENT LARGE LOAD INTERCONNECTION STANDARDS (“STANDARDS”)" [ref=f65e1181]
+          - row [ref=f65e1182]:
+            - cell [ref=f65e1183]:
+              - strong [ref=f65e1184]:
+                - link "142" [ref=f65e1185] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=58481&itemNumber=142
+            - cell "4/14/2026" [ref=f65e1186]
+            - cell "SARAH DUNHAM" [ref=f65e1187]
+            - cell "COM" [ref=f65e1188]
+            - cell "Project# Rule 25.194 The people demand full and extensive transparency on all water and gas studies, usage records and future plans pertaining to industrial use especially for large scale data centers in bell county" [ref=f65e1189]
+          - row [ref=f65e1190]:
+            - cell [ref=f65e1191]:
+              - strong [ref=f65e1192]:
+                - link "143" [ref=f65e1193] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=58481&itemNumber=143
+            - cell "4/14/2026" [ref=f65e1194]
+            - cell "Zack Butler / EnerShield AI" [ref=f65e1195]
+            - cell "PC" [ref=f65e1196]
+            - cell "Supplemental Filing — Environmental Justice Findings, supplement to FCROOJZE and IYFIPWNQ" [ref=f65e1197]
+          - row [ref=f65e1198]:
+            - cell [ref=f65e1199]:
+              - strong [ref=f65e1200]:
+                - link "144" [ref=f65e1201] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=58481&itemNumber=144
+            - cell "4/14/2026" [ref=f65e1202]
+            - cell "HUT 8 CORP" [ref=f65e1203]
+            - cell "PC" [ref=f65e1204]
+            - cell "HUT 8 COMMENTS ON PUC PROPOSAL FOR PUBLICATION" [ref=f65e1205]
+          - row [ref=f65e1206]:
+            - cell [ref=f65e1207]:
+              - strong [ref=f65e1208]:
+                - link "145" [ref=f65e1209] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=58481&itemNumber=145
+            - cell "4/14/2026" [ref=f65e1210]
+            - cell "INTERSECT POWER, LLC." [ref=f65e1211]
+            - cell "COM" [ref=f65e1212]
+            - cell "Intersect Power, LLC's Initial Comments" [ref=f65e1213]
+          - row [ref=f65e1214]:
+            - cell [ref=f65e1215]:
+              - strong [ref=f65e1216]:
+                - link "146" [ref=f65e1217] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=58481&itemNumber=146
+            - cell "4/15/2026" [ref=f65e1218]
+            - cell "Zack Butler | EnerShield AI" [ref=f65e1219]
+            - cell "PC" [ref=f65e1220]
+            - cell "Suplement filing to comment XYAWFICE - Updated analytic methodology attribution of SVI/TRI addition to research" [ref=f65e1221]
+          - row [ref=f65e1222]:
+            - cell [ref=f65e1223]:
+              - strong [ref=f65e1224]:
+                - link "147" [ref=f65e1225] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=58481&itemNumber=147
+            - cell "4/15/2026" [ref=f65e1226]
+            - cell "LOWER COLORADO RIVER AUTHORITY AND LCRA TRANSMISSION SERVICES CORPORATION" [ref=f65e1227]
+            - cell "COM" [ref=f65e1228]
+            - cell "COMMENTS ON THE PROPOSAL FOR PUBLICATION" [ref=f65e1229]
+          - row [ref=f65e1230]:
+            - cell [ref=f65e1231]:
+              - strong [ref=f65e1232]:
+                - link "148" [ref=f65e1233] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=58481&itemNumber=148
+            - cell "4/15/2026" [ref=f65e1234]
+            - cell "CENTERPOINT ENERGY HOUSTON ELECTRIC, LLC" [ref=f65e1235]
+            - cell "COM" [ref=f65e1236]
+            - cell "COMMENTS OF CENTERPOINT ENERGY HOUSTON ELECTRIC, LLC" [ref=f65e1237]
+          - row [ref=f65e1238]:
+            - cell [ref=f65e1239]:
+              - strong [ref=f65e1240]:
+                - link "149" [ref=f65e1241] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=58481&itemNumber=149
+            - cell "4/15/2026" [ref=f65e1242]
+            - cell "Cholla, Inc." [ref=f65e1243]
+            - cell "COM" [ref=f65e1244]
+            - cell "Cholla, Inc. Supplemental Comments" [ref=f65e1245]
+          - row [ref=f65e1246]:
+            - cell [ref=f65e1247]:
+              - strong [ref=f65e1248]:
+                - link "150" [ref=f65e1249] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=58481&itemNumber=150
+            - cell "4/15/2026" [ref=f65e1250]
+            - cell "MONARCH ENERGY" [ref=f65e1251]
+            - cell "COM" [ref=f65e1252]
+            - cell "Monarch Energy Comments on Proposed New 16 TAC 25.194" [ref=f65e1253]
+          - row [ref=f65e1254]:
+            - cell [ref=f65e1255]:
+              - strong [ref=f65e1256]:
+                - link "151" [ref=f65e1257] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=58481&itemNumber=151
+            - cell "4/15/2026" [ref=f65e1258]
+            - cell "STACK Infrastructure" [ref=f65e1259]
+            - cell "COM" [ref=f65e1260]
+            - cell "STACK INFRASTRUCTURE COMMENTS TO PROPOSAL FOR PUBLICATION IN PROJECT NO. 58481" [ref=f65e1261]
+          - row [ref=f65e1262]:
+            - cell [ref=f65e1263]:
+              - strong [ref=f65e1264]:
+                - link "152" [ref=f65e1265] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=58481&itemNumber=152
+            - cell "4/15/2026" [ref=f65e1266]
+            - cell "Sierra Club" [ref=f65e1267]
+            - cell "COM" [ref=f65e1268]
+            - cell "Sierra Club Comments on Proposed Large Load Interconnection Standards" [ref=f65e1269]
+          - row [ref=f65e1270]:
+            - cell [ref=f65e1271]:
+              - strong [ref=f65e1272]:
+                - link "153" [ref=f65e1273] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=58481&itemNumber=153
+            - cell "4/16/2026" [ref=f65e1274]
+            - cell "Eolic Development Partners" [ref=f65e1275]
+            - cell "COM" [ref=f65e1276]
+            - cell "Eolic Development Partners Comments on Proposed New 16 TAC 25.194" [ref=f65e1277]
+          - row [ref=f65e1278]:
+            - cell [ref=f65e1279]:
+              - strong [ref=f65e1280]:
+                - link "154" [ref=f65e1281] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=58481&itemNumber=154
+            - cell "4/16/2026" [ref=f65e1282]
+            - cell "DC Energy Texas, LLC" [ref=f65e1283]
+            - cell "COM" [ref=f65e1284]
+            - cell "COMMENTS OF DC ENERGY TEXAS, LLC" [ref=f65e1285]
+          - row [ref=f65e1286]:
+            - cell [ref=f65e1287]:
+              - strong [ref=f65e1288]:
+                - link "155" [ref=f65e1289] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=58481&itemNumber=155
+            - cell "4/16/2026" [ref=f65e1290]
+            - cell "HIF USA LLC" [ref=f65e1291]
+            - cell "PC" [ref=f65e1292]
+            - cell "PROJECT NO 58481 - HIF USA LLC Comments" [ref=f65e1293]
+          - row [ref=f65e1294]:
+            - cell [ref=f65e1295]:
+              - strong [ref=f65e1296]:
+                - link "156" [ref=f65e1297] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=58481&itemNumber=156
+            - cell "4/16/2026" [ref=f65e1298]
+            - cell "SATOSHI ENERGY CORP." [ref=f65e1299]
+            - cell "COM" [ref=f65e1300]
+            - cell "SATOSHI ENERGY COMMENTS ON STAFF'S PROPOSAL FOR PUBLICATION ON PROJECT NO. 58481, RULEMAKING TO IMPLEMENT LARGE LOAD INTERCONNECTION STANDARDS UNDER PURA §37.0561" [ref=f65e1301]
+          - row [ref=f65e1302]:
+            - cell [ref=f65e1303]:
+              - strong [ref=f65e1304]:
+                - link "157" [ref=f65e1305] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=58481&itemNumber=157
+            - cell "4/16/2026" [ref=f65e1306]
+            - cell "The City of Bryan, Texas" [ref=f65e1307]
+            - cell "COM" [ref=f65e1308]
+            - cell "Letter from the City of Bryan Mayor to the Public Utilities Commission of Texas regarding Large Load Interconnection Rules" [ref=f65e1309]
+          - row [ref=f65e1310]:
+            - cell [ref=f65e1311]:
+              - strong [ref=f65e1312]:
+                - link "158" [ref=f65e1313] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=58481&itemNumber=158
+            - cell "4/16/2026" [ref=f65e1314]
+            - cell "LANDMARK DEVELOPMENT SERVICES AND ECOPARTNER ALLIANCE" [ref=f65e1315]
+            - cell "COM" [ref=f65e1316]
+            - cell "COMMENTS OF LANDMARK DEVELOPMENT SERVICES LLC AND ECOPARTNER ALLIANCE ON PROPOSED 16 TAC §25.194" [ref=f65e1317]
+          - row [ref=f65e1318]:
+            - cell [ref=f65e1319]:
+              - strong [ref=f65e1320]:
+                - link "159" [ref=f65e1321] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=58481&itemNumber=159
+            - cell "4/16/2026" [ref=f65e1322]
+            - cell "INFINIUM OPERATIONS, LLC" [ref=f65e1323]
+            - cell "COM" [ref=f65e1324]
+            - cell "INFINIUM'S COMMENTS ON LARGE LOAD INTERCONNECTION STANDARDS PROPOSAL FOR PUBLICATION" [ref=f65e1325]
+          - row [ref=f65e1326]:
+            - cell [ref=f65e1327]:
+              - strong [ref=f65e1328]:
+                - link "160" [ref=f65e1329] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=58481&itemNumber=160
+            - cell "4/16/2026" [ref=f65e1330]
+            - cell "PRIORITY POWER MANAGEMENT LLC" [ref=f65e1331]
+            - cell "COM" [ref=f65e1332]
+            - cell "COMMENTS OF PRIORITY POWER MANAGEMENT LLC ON PROPOSED NEW 16 TAC §25.194" [ref=f65e1333]
+          - row [ref=f65e1334]:
+            - cell [ref=f65e1335]:
+              - strong [ref=f65e1336]:
+                - link "161" [ref=f65e1337] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=58481&itemNumber=161
+            - cell "4/16/2026" [ref=f65e1338]
+            - cell "Agentic Infrastructure LLC" [ref=f65e1339]
+            - cell "PC" [ref=f65e1340]
+            - cell "Agentic Infrastructure (\"Agentic\") comments regarding project no.58481" [ref=f65e1341]
+          - row [ref=f65e1342]:
+            - cell [ref=f65e1343]:
+              - strong [ref=f65e1344]:
+                - link "162" [ref=f65e1345] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=58481&itemNumber=162
+            - cell "4/16/2026" [ref=f65e1346]
+            - cell "TCPA" [ref=f65e1347]
+            - cell "COM" [ref=f65e1348]
+            - cell "TCPA Comments on Large Load Interconnection PfP & Issues" [ref=f65e1349]
+          - row [ref=f65e1350]:
+            - cell [ref=f65e1351]:
+              - strong [ref=f65e1352]:
+                - link "163" [ref=f65e1353] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=58481&itemNumber=163
+            - cell "4/16/2026" [ref=f65e1354]
+            - cell "Electric Hydrogen Co." [ref=f65e1355]
+            - cell "COM" [ref=f65e1356]
+            - cell "Electric Hydrogen Comments on Proposed 16 TAC 25.194" [ref=f65e1357]
+          - row [ref=f65e1358]:
+            - cell [ref=f65e1359]:
+              - strong [ref=f65e1360]:
+                - link "164" [ref=f65e1361] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=58481&itemNumber=164
+            - cell "4/16/2026" [ref=f65e1362]
+            - cell "HUNT ENERGY NETWORK L.L.C." [ref=f65e1363]
+            - cell "PC" [ref=f65e1364]
+            - cell "HUNT ENERGY NETWORK'S COMMENTS ON COMMISSION’S PROPOSAL FOR PUBLICATION" [ref=f65e1365]
+          - row [ref=f65e1366]:
+            - cell [ref=f65e1367]:
+              - strong [ref=f65e1368]:
+                - link "165" [ref=f65e1369] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=58481&itemNumber=165
+            - cell "4/16/2026" [ref=f65e1370]
+            - cell "GOOGLE LLC, LANCIUM LLC, TOTALENERGIES RENEWABLES USA" [ref=f65e1371]
+            - cell "COM" [ref=f65e1372]
+            - cell "Joint Comments of Google LLC, Lancium LLC, and TotalEnergies Renewables USA" [ref=f65e1373]
+          - row [ref=f65e1374]:
+            - cell [ref=f65e1375]:
+              - strong [ref=f65e1376]:
+                - link "166" [ref=f65e1377] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=58481&itemNumber=166
+            - cell "4/16/2026" [ref=f65e1378]
+            - cell "TEXAS ENERGY BUYERS ALLIANCE" [ref=f65e1379]
+            - cell "COM" [ref=f65e1380]
+            - cell "TEBA's Comments on Commission Staff's Proposal for Publication" [ref=f65e1381]
+          - row [ref=f65e1382]:
+            - cell [ref=f65e1383]:
+              - strong [ref=f65e1384]:
+                - link "167" [ref=f65e1385] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=58481&itemNumber=167
+            - cell "4/17/2026" [ref=f65e1386]
+            - cell "VOLTUS, INC." [ref=f65e1387]
+            - cell "COM" [ref=f65e1388]
+            - cell "VOLTUS COMMENTS ON LARGE LOAD INTERCONNECTION STANDARDS" [ref=f65e1389]
+          - row [ref=f65e1390]:
+            - cell [ref=f65e1391]:
+              - strong [ref=f65e1392]:
+                - link "168" [ref=f65e1393] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=58481&itemNumber=168
+            - cell "4/17/2026" [ref=f65e1394]
+            - cell "Advanced Power Alliance and American Clean Power Association" [ref=f65e1395]
+            - cell "COM" [ref=f65e1396]
+            - cell "Comments of the Advanced Power Alliance and American Clean Power Association" [ref=f65e1397]
+          - row [ref=f65e1398]:
+            - cell [ref=f65e1399]:
+              - strong [ref=f65e1400]:
+                - link "169" [ref=f65e1401] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=58481&itemNumber=169
+            - cell "4/17/2026" [ref=f65e1402]
+            - cell "Trammell Crow Company" [ref=f65e1403]
+            - cell "COM" [ref=f65e1404]
+            - cell "Trammell Crow Company's Comments on Proposal for Publication of 16 TAC§ 25.194" [ref=f65e1405]
+          - row [ref=f65e1406]:
+            - cell [ref=f65e1407]:
+              - strong [ref=f65e1408]:
+                - link "170" [ref=f65e1409] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=58481&itemNumber=170
+            - cell "4/17/2026" [ref=f65e1410]
+            - cell "House State Affairs Committee" [ref=f65e1411]
+            - cell "LTRS" [ref=f65e1412]
+            - cell "SB 6 Implementation" [ref=f65e1413]
+          - row [ref=f65e1414]:
+            - cell [ref=f65e1415]:
+              - strong [ref=f65e1416]:
+                - link "171" [ref=f65e1417] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=58481&itemNumber=171
+            - cell "4/17/2026" [ref=f65e1418]
+            - cell "Serena Power" [ref=f65e1419]
+            - cell "COM" [ref=f65e1420]
+            - cell "Additional Comments of Serena Power on Proposed New 16 TAC 25.194" [ref=f65e1421]
+          - row [ref=f65e1422]:
+            - cell [ref=f65e1423]:
+              - strong [ref=f65e1424]:
+                - link "172" [ref=f65e1425] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=58481&itemNumber=172
+            - cell "4/17/2026" [ref=f65e1426]
+            - cell "ENVIRONMENTAL DEFENSE FUND INC" [ref=f65e1427]
+            - cell "COM" [ref=f65e1428]
+            - cell "EDF Comments on Large Load Interconnection Standards - PUCT 58481" [ref=f65e1429]
+          - row [ref=f65e1430]:
+            - cell [ref=f65e1431]:
+              - strong [ref=f65e1432]:
+                - link "173" [ref=f65e1433] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=58481&itemNumber=173
+            - cell "4/17/2026" [ref=f65e1434]
+            - cell "NRG ENERGY INC" [ref=f65e1435]
+            - cell "COM" [ref=f65e1436]
+            - cell "PUCT 58481 Large Load Interconnection Standards PfP - NRG Comments - FINAL" [ref=f65e1437]
+          - row [ref=f65e1438]:
+            - cell [ref=f65e1439]:
+              - strong [ref=f65e1440]:
+                - link "174" [ref=f65e1441] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=58481&itemNumber=174
+            - cell "4/17/2026" [ref=f65e1442]
+            - cell "TPPA" [ref=f65e1443]
+            - cell "COM" [ref=f65e1444]
+            - cell "Texas Public Power Association (TPPA) Comments on PFP" [ref=f65e1445]
+          - row [ref=f65e1446]:
+            - cell [ref=f65e1447]:
+              - strong [ref=f65e1448]:
+                - link "175" [ref=f65e1449] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=58481&itemNumber=175
+            - cell "4/17/2026" [ref=f65e1450]
+            - cell "Targa Resources LLC" [ref=f65e1451]
+            - cell "COM" [ref=f65e1452]
+            - cell "Targa Resources LLC's Comments and Proposed Redlines in Response to Proposal for Publication of 16 TAC § 25.194" [ref=f65e1453]
+          - row [ref=f65e1454]:
+            - cell [ref=f65e1455]:
+              - strong [ref=f65e1456]:
+                - link "176" [ref=f65e1457] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=58481&itemNumber=176
+            - cell "4/17/2026" [ref=f65e1458]
+            - cell "Permian Basin Petroleum Association" [ref=f65e1459]
+            - cell "COM" [ref=f65e1460]
+            - cell "Permian Basin Petroleum Association's Comments in Response to Proposal for Publication of 16 TAC § 25.194" [ref=f65e1461]
+          - row [ref=f65e1462]:
+            - cell [ref=f65e1463]:
+              - strong [ref=f65e1464]:
+                - link "177" [ref=f65e1465] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=58481&itemNumber=177
+            - cell "4/17/2026" [ref=f65e1466]
+            - cell "BLACK MOUNTAIN POWER" [ref=f65e1467]
+            - cell "COM" [ref=f65e1468]
+            - cell "BLACK MOUNTAIN POWER COMMENTS ON PROJECT NO. 58481 PROPOSAL FOR PUBLICATION" [ref=f65e1469]
+          - row [ref=f65e1470]:
+            - cell [ref=f65e1471]:
+              - strong [ref=f65e1472]:
+                - link "178" [ref=f65e1473] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=58481&itemNumber=178
+            - cell "4/17/2026" [ref=f65e1474]
+            - cell "CONSTELLATION ENERGY GENERATION, LLC" [ref=f65e1475]
+            - cell "COM" [ref=f65e1476]
+            - cell "CONSTELLATION ENERGY GENERATION, LLC’S COMMENTS ON COMMISSION STAFF’S PROPOSAL FOR PUBLICATION OF NEW 16 TAC § 25.194" [ref=f65e1477]
+          - row [ref=f65e1478]:
+            - cell [ref=f65e1479]:
+              - strong [ref=f65e1480]:
+                - link "179" [ref=f65e1481] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=58481&itemNumber=179
+            - cell "4/17/2026" [ref=f65e1482]
+            - cell "ROWAN DIGITAL INFRASTRUCTURE LLC" [ref=f65e1483]
+            - cell "COM" [ref=f65e1484]
+            - cell "ROWAN DIGITAL INFRASTRUCTURE LLC COMMENTS ON PROPOSAL FOR PUBLICATION OF NEW 16 TAC § 25.194" [ref=f65e1485]
+          - row [ref=f65e1486]:
+            - cell [ref=f65e1487]:
+              - strong [ref=f65e1488]:
+                - link "180" [ref=f65e1489] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=58481&itemNumber=180
+            - cell "4/17/2026" [ref=f65e1490]
+            - cell "Data Center Coalition (DCC)" [ref=f65e1491]
+            - cell "COM" [ref=f65e1492]
+            - cell "Comments on Proposal for Publication on Proposed New 16 TAC §25.194" [ref=f65e1493]
+          - row [ref=f65e1494]:
+            - cell [ref=f65e1495]:
+              - strong [ref=f65e1496]:
+                - link "181" [ref=f65e1497] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=58481&itemNumber=181
+            - cell "4/17/2026" [ref=f65e1498]
+            - cell "Crow Holdings" [ref=f65e1499]
+            - cell "COM" [ref=f65e1500]
+            - cell "INITIAL COMMENTS OF CROW HOLDINGS" [ref=f65e1501]
+          - row [ref=f65e1502]:
+            - cell [ref=f65e1503]:
+              - strong [ref=f65e1504]:
+                - link "182" [ref=f65e1505] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=58481&itemNumber=182
+            - cell "4/17/2026" [ref=f65e1506]
+            - cell "TEXAS ELECTRIC COOPERATIVES, INC." [ref=f65e1507]
+            - cell "COM" [ref=f65e1508]
+            - cell "Comments of Texas Electric Cooperatives, Inc." [ref=f65e1509]
+          - row [ref=f65e1510]:
+            - cell [ref=f65e1511]:
+              - strong [ref=f65e1512]:
+                - link "183" [ref=f65e1513] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=58481&itemNumber=183
+            - cell "4/17/2026" [ref=f65e1514]
+            - cell "STEERING COMMITTEE OF CITIES SERVED BY ONCOR AND TEXAS COALITION FOR AFFORDABLE POWER" [ref=f65e1515]
+            - cell "PC" [ref=f65e1516]
+            - cell "The Steering Committee of Cities Served by Oncor and Texas Coalition for Affordable Power's Comments on Proposal for Publication of New 16 TAC § 25.194" [ref=f65e1517]
+          - row [ref=f65e1518]:
+            - cell [ref=f65e1519]:
+              - strong [ref=f65e1520]:
+                - link "184" [ref=f65e1521] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=58481&itemNumber=184
+            - cell "4/17/2026" [ref=f65e1522]
+            - cell "ONCOR ELECTRIC DELIVERY COMPANY LLC" [ref=f65e1523]
+            - cell "COM" [ref=f65e1524]
+            - cell "ONCOR ELECTRIC DELIVERY'S COMMENTS ON THE PROPOSAL FOR PUBLICATION OF NEW 16 TAC §25.194" [ref=f65e1525]
+          - row [ref=f65e1526]:
+            - cell [ref=f65e1527]:
+              - strong [ref=f65e1528]:
+                - link "185" [ref=f65e1529] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=58481&itemNumber=185
+            - cell "4/17/2026" [ref=f65e1530]
+            - cell "ERCOT STEEL MILLS" [ref=f65e1531]
+            - cell "COM" [ref=f65e1532]
+            - cell "ERCOT Steel Mills Comments on Proposal for Publication of New Rule 16 TAC §25.194" [ref=f65e1533]
+          - row [ref=f65e1534]:
+            - cell [ref=f65e1535]:
+              - strong [ref=f65e1536]:
+                - link "186" [ref=f65e1537] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=58481&itemNumber=186
+            - cell "4/17/2026" [ref=f65e1538]
+            - cell "CloudHQ LLC" [ref=f65e1539]
+            - cell "COM" [ref=f65e1540]
+            - cell "CloudHQ LLC's Comments" [ref=f65e1541]
+          - row [ref=f65e1542]:
+            - cell [ref=f65e1543]:
+              - strong [ref=f65e1544]:
+                - link "187" [ref=f65e1545] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=58481&itemNumber=187
+            - cell "4/17/2026" [ref=f65e1546]
+            - cell "EOLIAN, L.P." [ref=f65e1547]
+            - cell "COM" [ref=f65e1548]
+            - cell "COMMENTS OF EOLIAN, L.P. ON PROPOSED NEW 16 TAC §25.194" [ref=f65e1549]
+          - row [ref=f65e1550]:
+            - cell [ref=f65e1551]:
+              - strong [ref=f65e1552]:
+                - link "188" [ref=f65e1553] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=58481&itemNumber=188
+            - cell "4/17/2026" [ref=f65e1554]
+            - cell "TEXAS OIL & GAS ASSOCIATION" [ref=f65e1555]
+            - cell "COM" [ref=f65e1556]
+            - cell "TXOGA Comments on Proposal for Publication on Proposed New 16 TAC §25.194" [ref=f65e1557]
+          - row [ref=f65e1558]:
+            - cell [ref=f65e1559]:
+              - strong [ref=f65e1560]:
+                - link "189" [ref=f65e1561] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=58481&itemNumber=189
+            - cell "4/17/2026" [ref=f65e1562]
+            - cell "GUADALUPE VALLEY ELECTRIC COOPERATIVE, INC" [ref=f65e1563]
+            - cell "COM" [ref=f65e1564]
+            - cell "GVEC's Comments on Proposal for Publication" [ref=f65e1565]
+          - row [ref=f65e1566]:
+            - cell [ref=f65e1567]:
+              - strong [ref=f65e1568]:
+                - link "190" [ref=f65e1569] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=58481&itemNumber=190
+            - cell "4/17/2026" [ref=f65e1570]
+            - cell "Texas Public Policy Foundation" [ref=f65e1571]
+            - cell "COM" [ref=f65e1572]
+            - cell "Texas Public Policy Foundation's Comments on the Proposed New 16 TAC §25.194" [ref=f65e1573]
+          - row [ref=f65e1574]:
+            - cell [ref=f65e1575]:
+              - strong [ref=f65e1576]:
+                - link "191" [ref=f65e1577] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=58481&itemNumber=191
+            - cell "4/17/2026" [ref=f65e1578]
+            - cell "Thor Equities LLC" [ref=f65e1579]
+            - cell "COM" [ref=f65e1580]
+            - cell "Thor Equities’ Comments on PUCT Staff’s Proposal for Publication" [ref=f65e1581]
+          - row [ref=f65e1582]:
+            - cell [ref=f65e1583]:
+              - strong [ref=f65e1584]:
+                - link "192" [ref=f65e1585] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=58481&itemNumber=192
+            - cell "4/17/2026" [ref=f65e1586]
+            - cell "TESLA" [ref=f65e1587]
+            - cell "COM" [ref=f65e1588]
+            - cell "Tesla, Inc. Comments on Proposal for Publication on Proposed New 16 TAC §25.194" [ref=f65e1589]
+          - row [ref=f65e1590]:
+            - cell [ref=f65e1591]:
+              - strong [ref=f65e1592]:
+                - link "193" [ref=f65e1593] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=58481&itemNumber=193
+            - cell "4/17/2026" [ref=f65e1594]
+            - cell "TIEC" [ref=f65e1595]
+            - cell "COM" [ref=f65e1596]
+            - cell "TEXAS INDUSTRIAL ENERGY CONSUMERS’ PROPOSED COMMENTS TO PROPOSAL FOR PUBLICATION OF NEW 16 TAC § 25.194" [ref=f65e1597]
+          - row [ref=f65e1598]:
+            - cell [ref=f65e1599]:
+              - strong [ref=f65e1600]:
+                - link "194" [ref=f65e1601] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=58481&itemNumber=194
+            - cell "4/17/2026" [ref=f65e1602]
+            - cell "WIND ENERGY TRANSMISSION TEXAS, LLC" [ref=f65e1603]
+            - cell "COM" [ref=f65e1604]
+            - cell "Joint TSPs’ Comments on Proposal for Publication" [ref=f65e1605]
+          - row [ref=f65e1606]:
+            - cell [ref=f65e1607]:
+              - strong [ref=f65e1608]:
+                - link "195" [ref=f65e1609] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=58481&itemNumber=195
+            - cell "4/17/2026" [ref=f65e1610]
+            - cell "OPUC" [ref=f65e1611]
+            - cell "COM" [ref=f65e1612]
+            - cell "OPUC’S COMMENTS REGARDING THE PROPOSAL FOR PUBLICATION OF NEW 16 TAC §25.194" [ref=f65e1613]
+          - row [ref=f65e1614]:
+            - cell [ref=f65e1615]:
+              - strong [ref=f65e1616]:
+                - link "196" [ref=f65e1617] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=58481&itemNumber=196
+            - cell "4/17/2026" [ref=f65e1618]
+            - cell "BKV Corporation" [ref=f65e1619]
+            - cell "COM" [ref=f65e1620]
+            - cell "58481 - BKV Initial Comments (04.17.26)" [ref=f65e1621]
+          - row [ref=f65e1622]:
+            - cell [ref=f65e1623]:
+              - strong [ref=f65e1624]:
+                - link "197" [ref=f65e1625] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=58481&itemNumber=197
+            - cell "4/17/2026" [ref=f65e1626]
+            - cell "TEXAS-NEW MEXICO POWER COMPANY" [ref=f65e1627]
+            - cell "COM" [ref=f65e1628]
+            - cell "TNMP’s Comments To Proposal For Publication Of New 16 TAC § 25.194" [ref=f65e1629]
+          - row [ref=f65e1630]:
+            - cell [ref=f65e1631]:
+              - strong [ref=f65e1632]:
+                - link "198" [ref=f65e1633] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=58481&itemNumber=198
+            - cell "4/17/2026" [ref=f65e1634]
+            - cell "BRAZOS ELECTRIC POWER COOPERATIVE, INC" [ref=f65e1635]
+            - cell "COM" [ref=f65e1636]
+            - cell "Comments of Transmission Service Provider Cooperatives" [ref=f65e1637]
+          - row [ref=f65e1638]:
+            - cell [ref=f65e1639]:
+              - strong [ref=f65e1640]:
+                - link "199" [ref=f65e1641] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=58481&itemNumber=199
+            - cell "4/17/2026" [ref=f65e1642]
+            - cell "Crusoe Technologies LLC" [ref=f65e1643]
+            - cell "COM" [ref=f65e1644]
+            - cell "CRUSOE TECHNOLOGIES LLC’S COMMENTS ON STAFF’S PROPOSAL FOR PUBLICATION OF NEW 16 TAC § 25.194" [ref=f65e1645]
+          - row [ref=f65e1646]:
+            - cell [ref=f65e1647]:
+              - strong [ref=f65e1648]:
+                - link "200" [ref=f65e1649] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=58481&itemNumber=200
+            - cell "4/17/2026" [ref=f65e1650]
+            - cell "VISTRA CORPORATE SERVICES COMPANY" [ref=f65e1651]
+            - cell "COM" [ref=f65e1652]
+            - cell "Vistra's Comments - Project 58481" [ref=f65e1653]
+          - row [ref=f65e1654]:
+            - cell [ref=f65e1655]:
+              - strong [ref=f65e1656]:
+                - link "201" [ref=f65e1657] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=58481&itemNumber=201
+            - cell "4/17/2026" [ref=f65e1658]
+            - cell "MISSION POWER" [ref=f65e1659]
+            - cell "PC" [ref=f65e1660]
+            - cell "BRIEF COMMENTS IN SUPPORT OF CHAIRMAN GLEESON'S \"GRADUAL ESCALATOR FRAMEWORK\" FOR GRADUAL POSTING OF THE $50,000 IA SECURITY POSTING" [ref=f65e1661]
+          - row [ref=f65e1662]:
+            - cell [ref=f65e1663]:
+              - strong [ref=f65e1664]:
+                - link "202" [ref=f65e1665] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=58481&itemNumber=202
+            - cell "4/18/2026" [ref=f65e1666]
+            - cell "Aurora Jean Brown" [ref=f65e1667]
+            - cell "PC" [ref=f65e1668]
+            - cell "Supplemental Public Comment regarding Project 58481 - Utility Telemetry and Grid Stability." [ref=f65e1669]
+          - row [ref=f65e1670]:
+            - cell [ref=f65e1671]:
+              - strong [ref=f65e1672]:
+                - link "203" [ref=f65e1673] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=58481&itemNumber=203
+            - cell "4/20/2026" [ref=f65e1674]
+            - cell "Cormint Data Systems" [ref=f65e1675]
+            - cell "COM" [ref=f65e1676]
+            - cell "Cormint Data Systems Comments on Staff PforP in 58481" [ref=f65e1677]
+          - row [ref=f65e1678]:
+            - cell [ref=f65e1679]:
+              - strong [ref=f65e1680]:
+                - link "204" [ref=f65e1681] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=58481&itemNumber=204
+            - cell "8/24/2026" [ref=f65e1682]
+            - cell "PUC RULES & PROJECTS" [ref=f65e1683]
+            - cell "PRJ" [ref=f65e1684]
+            - cell "VOID SEE ITEM 205" [ref=f65e1685]
+          - row [ref=f65e1686]:
+            - cell [ref=f65e1687]:
+              - strong [ref=f65e1688]:
+                - link "205" [ref=f65e1689] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=58481&itemNumber=205
+            - cell "8/24/2026" [ref=f65e1690]
+            - cell "PUC RULES & PROJECTS" [ref=f65e1691]
+            - cell "PRJ" [ref=f65e1692]
+            - cell "Memo Requesting CR Void Item No. 204" [ref=f65e1693]
+          - row [ref=f65e1694]:
+            - cell [ref=f65e1695]:
+              - strong [ref=f65e1696]:
+                - link "206" [ref=f65e1697] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=58481&itemNumber=206
+            - cell "8/24/2026" [ref=f65e1698]
+            - cell "PUC RULES & PROJECTS" [ref=f65e1699]
+            - cell "PRJ" [ref=f65e1700]
+            - cell "Staff Memo w/Draft Recommended Changes to Proposed Rule" [ref=f65e1701]
+          - row [ref=f65e1702]:
+            - cell [ref=f65e1703]:
+              - strong [ref=f65e1704]:
+                - link "207" [ref=f65e1705] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=58481&itemNumber=207
+            - cell "9/2/2026" [ref=f65e1706]
+            - cell "Great Bay Royalties" [ref=f65e1707]
+            - cell "LTRS" [ref=f65e1708]
+            - cell "Letter Regarding Proposed New 16 TAC § 25.194" [ref=f65e1709]
+          - row [ref=f65e1710]:
+            - cell [ref=f65e1711]:
+              - strong [ref=f65e1712]:
+                - link "208" [ref=f65e1713] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=58481&itemNumber=208
+            - cell "9/3/2026" [ref=f65e1714]
+            - cell "PUC RULES & PROJECTS" [ref=f65e1715]
+            - cell "PRJ" [ref=f65e1716]
+            - cell "OM Item No. 24 - (Staff Recommendation) Order Adopting New §25.194" [ref=f65e1717]
+          - row [ref=f65e1718]:
+            - cell [ref=f65e1719]:
+              - strong [ref=f65e1720]:
+                - link "209" [ref=f65e1721] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=58481&itemNumber=209
+            - cell "9/4/2026" [ref=f65e1722]
+            - cell "Bailey Wells" [ref=f65e1723]
+            - cell "PC" [ref=f65e1724]
+            - cell "Public Comment by residential ratepayer opposing local transmission cost socialization for the Louetta Road data center development under SB 6 rules." [ref=f65e1725]
+          - row [ref=f65e1726]:
+            - cell [ref=f65e1727]:
+              - strong [ref=f65e1728]:
+                - link "210" [ref=f65e1729] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=58481&itemNumber=210
+            - cell "9/4/2026" [ref=f65e1730]
+            - cell "Clinton Brooks Herman" [ref=f65e1731]
+            - cell "PC" [ref=f65e1732]
+            - 'cell "Re: Project No. 58481 - Large Load Interconnection Standards" [ref=f65e1733]'
+          - row [ref=f65e1734]:
+            - cell [ref=f65e1735]:
+              - strong [ref=f65e1736]:
+                - link "211" [ref=f65e1737] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=58481&itemNumber=211
+            - cell "9/8/2026" [ref=f65e1738]
+            - cell "VISTRA CORPORATE SERVICES COMPANY" [ref=f65e1739]
+            - cell "COM" [ref=f65e1740]
+            - cell "Vistra's Comments on Project 58481 Recommended Adoption Order" [ref=f65e1741]
+          - row [ref=f65e1742]:
+            - cell [ref=f65e1743]:
+              - strong [ref=f65e1744]:
+                - link "212" [ref=f65e1745] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=58481&itemNumber=212
+            - cell "9/9/2026" [ref=f65e1746]
+            - cell "Soluna Holdings" [ref=f65e1747]
+            - cell "COM" [ref=f65e1748]
+            - cell "SOLUNA HOLDINGS, INC. COMMENTS TO PROPOSAL FOR ADOPTION OF NEW 16 TAC § 25.194" [ref=f65e1749]
+          - row [ref=f65e1750]:
+            - cell [ref=f65e1751]:
+              - strong [ref=f65e1752]:
+                - link "213" [ref=f65e1753] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=58481&itemNumber=213
+            - cell "9/9/2026" [ref=f65e1754]
+            - cell "Good Company Associates" [ref=f65e1755]
+            - cell "COM" [ref=f65e1756]
+            - cell "GOOD COMPANY ASSOOCIATES COMMENTS ON THE COMMISSION’S PROPOSAL FOR ADOPTION (PFA)" [ref=f65e1757]
+          - row [ref=f65e1758]:
+            - cell [ref=f65e1759]:
+              - strong [ref=f65e1760]:
+                - link "214" [ref=f65e1761] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=58481&itemNumber=214
+            - cell "9/9/2026" [ref=f65e1762]
+            - cell "SATOSHI ENERGY CORP." [ref=f65e1763]
+            - cell "COM" [ref=f65e1764]
+            - cell "SATOSHI ENERGY COMMENTS ON STAFF'S RECOMMENDED ADOPTION ORDER ON PROJECT NO. 58481, RULEMAKING TO IMPLEMENT LARGE LOAD INTERCONNECTION STANDARDS UNDER PURA §37.0561" [ref=f65e1765]
+          - row [ref=f65e1766]:
+            - cell [ref=f65e1767]:
+              - strong [ref=f65e1768]:
+                - link "215" [ref=f65e1769] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=58481&itemNumber=215
+            - cell "9/9/2026" [ref=f65e1770]
+            - cell "Lancium LLC" [ref=f65e1771]
+            - cell "COM" [ref=f65e1772]
+            - cell "Comments of Lancium LLC on Project 58481 Recommended Adoption Order" [ref=f65e1773]
+          - row [ref=f65e1774]:
+            - cell [ref=f65e1775]:
+              - strong [ref=f65e1776]:
+                - link "216" [ref=f65e1777] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=58481&itemNumber=216
+            - cell "9/10/2026" [ref=f65e1778]
+            - cell "McAdams Energy Group" [ref=f65e1779]
+            - cell "COM" [ref=f65e1780]
+            - cell "COMMENTS OF MCADAMS ENERGY GROUP ON STAFF’S RECOMMENDED ADOPTION ORDER" [ref=f65e1781]
+          - row [ref=f65e1782]:
+            - cell [ref=f65e1783]:
+              - strong [ref=f65e1784]:
+                - link "217" [ref=f65e1785] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=58481&itemNumber=217
+            - cell "9/14/2026" [ref=f65e1786]
+            - cell "PROJECT NO. 58481" [ref=f65e1787]
+            - cell "PC" [ref=f65e1788]
+            - cell "PUBLIC COMMENT – PROJECT NO. 58481 Rulemaking to Implement Large Load Interconnection Standards Under PURA §37.0561" [ref=f65e1789]
+          - row [ref=f65e1790]:
+            - cell [ref=f65e1791]:
+              - strong [ref=f65e1792]:
+                - link "218" [ref=f65e1793] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=58481&itemNumber=218
+            - cell "9/18/2026" [ref=f65e1794]
+            - cell "PUC OPDM" [ref=f65e1795]
+            - cell "PRJ" [ref=f65e1796]
+            - cell "ORDER ADOPTING NEW 16 TAC §25.194" [ref=f65e1797]
+          - row [ref=f65e1798]:
+            - cell [ref=f65e1799]:
+              - strong [ref=f65e1800]:
+                - link "219" [ref=f65e1801] [cursor=pointer]:
+                  - /url: /search/documents/?controlNumber=58481&itemNumber=219
+            - cell "9/18/2026" [ref=f65e1802]
+            - cell "RULES & PROJECTS" [ref=f65e1803]
+            - cell "PRJ" [ref=f65e1804]
+            - cell "Texas Register Acknowledgement of Receipt - Effective 10.08.2026" [ref=f65e1805]
+          - row [ref=f65e1806]:
+            - cell "«« « 1 » »» Export to Excel" [ref=f65e1807]:
+              - generic:
+                - generic:
+                  - list:
+                    - listitem:
+                      - generic [ref=f65e1808]: ««
+                    - listitem:
+                      - generic [ref=f65e1809]: «
+                    - listitem:
+                      - generic [ref=f65e1810]: "1"
+                    - listitem:
+                      - generic [ref=f65e1811]: »
+                    - listitem:
+                      - generic [ref=f65e1812]: »»
+              - link "Export to Excel" [ref=f65e1814] [cursor=pointer]:
+                - /url: /search/exportfilings/?ControlNumber=58481&ItemMatch=0&SortBy=ItemNumber&SortOrder=Ascending
+                - text: Export to Excel
+                - generic [aria-hidden] [ref=f65e1815]: 
+  - contentinfo [ref=f65e1816]:
+    - generic [ref=f65e1817]:
+      - generic [ref=f65e1818]:
+        - generic [ref=f65e1819]:
+          - heading "Public Utility Commission of Texas" [level=5] [ref=f65e1820]
+          - generic [ref=f65e1821]: 1701 N. Congress Ave. PO Box 13326 Austin, TX 78711-3326
+          - generic [ref=f65e1822]:
+            - link " Phone 512-936-7000" [ref=f65e1824] [cursor=pointer]:
+              - /url: tel://1-512-936-7000
+              - generic [ref=f65e1825]: 
+              - generic "Phone"
+              - text: 512-936-7000
+            - link " Contact Us" [ref=f65e1827] [cursor=pointer]:
+              - /url: https://www.puc.texas.gov/agency/about/contact/Default.aspx
+              - generic [ref=f65e1828]: 
+              - text: Contact Us
+        - generic [ref=f65e1829]:
+          - heading "AGENCY INFO" [level=5] [ref=f65e1830]
+          - list [ref=f65e1831]:
+            - listitem [ref=f65e1832]:
+              - link "Site Policies" [ref=f65e1833] [cursor=pointer]:
+                - /url: http://www.puc.texas.gov/agency/about/policies/Default.aspx
+            - listitem [ref=f65e1834]:
+              - link "Sitemap" [ref=f65e1835] [cursor=pointer]:
+                - /url: http://www.puc.texas.gov/agency/Sitemap.aspx
+        - generic [ref=f65e1836]:
+          - heading "OTHER GOVERNMENT RESOURCES" [level=5] [ref=f65e1837]
+          - list [ref=f65e1838]:
+            - listitem [ref=f65e1839]:
+              - link "Report Fraud, Waste or Abuse" [ref=f65e1840] [cursor=pointer]:
+                - /url: http://sao.fraud.state.tx.us/
+            - listitem [ref=f65e1841]:
+              - link "Texas Homeland Security" [ref=f65e1842] [cursor=pointer]:
+                - /url: http://governor.state.tx.us/homeland
+            - listitem [ref=f65e1843]:
+              - link "Ready.gov" [ref=f65e1844] [cursor=pointer]:
+                - /url: http://www.ready.gov/
+            - listitem [ref=f65e1845]:
+              - link "Texas.gov" [ref=f65e1846] [cursor=pointer]:
+                - /url: http://texas.gov
+            - listitem [ref=f65e1847]:
+              - link "Texas Veterans" [ref=f65e1848] [cursor=pointer]:
+                - /url: https://veterans.portal.texas.gov/
+            - listitem [ref=f65e1849]:
+              - link "TRAIL" [ref=f65e1850] [cursor=pointer]:
+                - /url: https://www.tsl.state.tx.us/trail/index.html
+      - navigation [ref=f65e1853]:
+        - list [ref=f65e1854]:
+          - listitem [ref=f65e1855]:
+            - link "PUC Calendar RSS Feed" [ref=f65e1856] [cursor=pointer]:
+              - /url: http://www.puc.texas.gov/agency/calendar/GetCalendarRss.aspx
+              - generic [ref=f65e1857]: 
+          - listitem [ref=f65e1858]:
+            - link "Facebook" [ref=f65e1859] [cursor=pointer]:
+              - /url: http://www.facebook.com/pages/Public-Utility-Commission-of-Texas/207063229365425
+              - generic [ref=f65e1860]: 
+          - listitem [ref=f65e1861]:
+            - link "Twitter" [ref=f65e1862] [cursor=pointer]:
+              - /url: https://twitter.com/PUCTx
+              - generic [ref=f65e1863]: 
+      - generic [ref=f65e1864]: Copyright © 2026 Public Utility Commission of Texas Version 2.2.11.0
